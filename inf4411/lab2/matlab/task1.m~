@@ -61,8 +61,9 @@ HPE3631_SetVolt (2, 0);
 HPE3631_SetVolt (3, 0);
 %HPE3631_Disable ();
 
-%% Plot results
+
 s = 200;
+
 f1 = figure;
 %set(f1, 'Position', [500, 500, 4*s, 3*s]);
 f1.Position = [500, 500, 4*s, 3*s];
