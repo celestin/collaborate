@@ -1,0 +1,1358 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.7)  1 OCT 2015 14:11
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**ifikompendium.tex
+(./ifikompendium.tex
+LaTeX2e <2014/05/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(/opt/texlive/uio-texmf/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/opt/texlive/uio-texmf/texmf-dist/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/opt/texlive/uio-texmf/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2013/10/06 v2.0d eso-pic (RN)
+
+(/opt/texlive/uio-texmf/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+
+(/opt/texlive/uio-texmf/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/opt/texlive/uio-texmf/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+(/opt/texlive/uio-texmf/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+))
+(/opt/texlive/uio-texmf/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+! Missing \endcsname inserted.
+<to be read again> 
+                   \@classoptionslist 
+l.253 \ProcessOptionsWithKV{ESO}
+                                %
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\@ifundefined ...dafter \ifx \csname #1\endcsname 
+                                                  \relax \expandafter \@firs...
+l.253 \ProcessOptionsWithKV{ESO}
+                                %
+I'm ignoring this, since I wasn't doing a \csname.
+
+(/opt/texlive/uio-texmf/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/opt/texlive/uio-texmf/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/opt/texlive/uio-texmf/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+\Gread@gobject=\count79
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+))
+(/opt/texlive/uio-texmf/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/opt/texlive/uio-texmf/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
+
+(/opt/texlive/uio-texmf/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/opt/texlive/uio-texmf/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+)
+\Gin@req@height=\dimen102
+\Gin@req@width=\dimen103
+)
+(/opt/texlive/uio-texmf/texmf-dist/tex/latex/xifthen/xifthen.sty
+Package: xifthen 2009/04/17 v1.3 Extended ifthen features
+
+(/opt/texlive/uio-texmf/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
+\et@xins=\count80
+)
+(/opt/texlive/uio-texmf/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count81
+\calc@Bcount=\count82
+\calc@Adimen=\dimen104
+\calc@Bdimen=\dimen105
+\calc@Askip=\skip41
+\calc@Bskip=\skip42
+LaTeX Info: Redefining \setlength on input line 75.
+LaTeX Info: Redefining \addtolength on input line 76.
+\calc@Ccount=\count83
+\calc@Cskip=\skip43
+)
+(/opt/texlive/uio-texmf/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/opt/texlive/uio-texmf/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
+Package: ifmtarg 2009/09/02 v1.2a check for an empty argument
+))
+(/opt/texlive/uio-texmf/texmf-dist/tex/latex/type1cm/type1cm.sty
+Package: type1cm 2002/09/05 v0.04 BlueSky/Y&Y Type1 CM font definitions (DPC, p
+atched RF)
+)
+(/opt/texlive/uio-texmf/texmf-dist/tex/latex/cm-super/type1ec.sty
+Package: type1ec 2002/09/07 v1.1 Type1 EC font definitions (for CM-Super fonts)
+
+
+(/opt/texlive/uio-texmf/texmf-dist/tex/latex/base/t1cmr.fd
+File: t1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+))
+! Undefined control sequence.
+l.39 \define
+            @key{IfiF@keys}{dept}{\def \IfiF@dept {#1}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 \define@
+             key{IfiF@keys}{dept}{\def \IfiF@dept {#1}}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Illegal parameter number in definition of \IfiF.
+<to be read again> 
+                   1
+l.39 ...e@key{IfiF@keys}{dept}{\def \IfiF@dept {#1
+                                                  }}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Undefined control sequence.
+l.40 \define
+            @key{IfiF@keys}{fac}{\def \IfiF@fac {#1}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Illegal parameter number in definition of \IfiF.
+<to be read again> 
+                   1
+l.40 ...ine@key{IfiF@keys}{fac}{\def \IfiF@fac {#1
+                                                  }}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Undefined control sequence.
+l.41 \define
+            @key{IfiF@keys}{isbn}{\def \IfiF@isbn {#1}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Illegal parameter number in definition of \IfiF.
+<to be read again> 
+                   1
+l.41 ...e@key{IfiF@keys}{isbn}{\def \IfiF@isbn {#1
+                                                  }}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Undefined control sequence.
+l.42 \define
+            @key{IfiF@keys}{issn}{\def \IfiF@issn {#1}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Illegal parameter number in definition of \IfiF.
+<to be read again> 
+                   1
+l.42 ...e@key{IfiF@keys}{issn}{\def \IfiF@issn {#1
+                                                  }}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Undefined control sequence.
+l.43 \define
+            @key{IfiF@keys}{kind}{\def \IfiF@kind {#1}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Illegal parameter number in definition of \IfiF.
+<to be read again> 
+                   1
+l.43 ...e@key{IfiF@keys}{kind}{\def \IfiF@kind {#1
+                                                  }}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Undefined control sequence.
+l.44 \define
+            @key{IfiF@keys}{n}{\def \IfiF@rrnum {#1}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Illegal parameter number in definition of \IfiF.
+<to be read again> 
+                   1
+l.44 ...ine@key{IfiF@keys}{n}{\def \IfiF@rrnum {#1
+                                                  }}
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+Overfull \hbox (104.0628pt too wide) in paragraph at lines 39--45
+[]\T1/cmr/m/n/10 @keyIfiF@keysdept
+ []
+
+
+Overfull \hbox (25.82703pt too wide) in paragraph at lines 39--45
+\T1/cmr/m/n/10 @key-
+ []
+
+
+Overfull \hbox (6.94275pt too wide) in paragraph at lines 39--45
+\T1/cmr/m/n/10 I-
+ []
+
+
+Overfull \hbox (51.01532pt too wide) in paragraph at lines 39--45
+\T1/cmr/m/n/10 fiF@keysfac
+ []
+
+
+Overfull \hbox (25.82703pt too wide) in paragraph at lines 39--45
+\T1/cmr/m/n/10 @key-
+ []
+
+
+Overfull \hbox (6.94275pt too wide) in paragraph at lines 39--45
+\T1/cmr/m/n/10 I-
+ []
+
+
+Overfull \hbox (56.34735pt too wide) in paragraph at lines 39--45
+\T1/cmr/m/n/10 fiF@keysisbn
+ []
+
+
+Overfull \hbox (25.82703pt too wide) in paragraph at lines 39--45
+\T1/cmr/m/n/10 @key-
+ []
+
+
+Overfull \hbox (6.94275pt too wide) in paragraph at lines 39--45
+\T1/cmr/m/n/10 I-
+ []
+
+
+Overfull \hbox (54.73663pt too wide) in paragraph at lines 39--45
+\T1/cmr/m/n/10 fiF@keysissn
+ []
+
+
+Overfull \hbox (25.82703pt too wide) in paragraph at lines 39--45
+\T1/cmr/m/n/10 @key-
+ []
+
+
+Overfull \hbox (6.94275pt too wide) in paragraph at lines 39--45
+\T1/cmr/m/n/10 I-
+ []
+
+
+Overfull \hbox (57.68036pt too wide) in paragraph at lines 39--45
+\T1/cmr/m/n/10 fiF@keyskind
+ []
+
+
+Overfull \hbox (25.82703pt too wide) in paragraph at lines 39--45
+\T1/cmr/m/n/10 @key-
+ []
+
+
+Overfull \hbox (6.94275pt too wide) in paragraph at lines 39--45
+\T1/cmr/m/n/10 I-
+ []
+
+
+Overfull \hbox (44.07257pt too wide) in paragraph at lines 39--45
+\T1/cmr/m/n/10 fiF@keysn 
+ []
+
+
+! LaTeX Error: Command \IfiF already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70           \vfill}}}}}
+                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70           \vfill}}}}}
+                          
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.70           \vfill}}}}}
+                          
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! You already have nine parameters.
+\reserved@a ... \expandafter \IfiF \reserved@b #10
+                                                  p{
+l.70           \vfill}}}}}
+                          
+I'm going to ignore the # sign you just used.
+
+! Argument of \IfiF has an extra }.
+<inserted text> 
+                \par 
+l.70           \vfill}}}}}
+                          
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \IfiF was complete.
+<to be read again> 
+                   \par 
+l.70           \vfill}}}}}
+                          
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \IfiF has an extra }.
+<inserted text> 
+                \par 
+l.70           \vfill}}}}}
+                          
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+und-forside
+! Paragraph ended before \IfiF was complete.
+<to be read again> 
+                   \par 
+l.70           \vfill}}}}}
+                          
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+
+Overfull \hbox (18.88428pt too wide) in paragraph at lines 70--70
+ []\T1/cmr/m/n/10 .png 
+ []
+
+
+Overfull \hbox (17.21802pt too wide) in paragraph at lines 70--70
+ []\T1/cmr/m/n/10 .pdf 
+ []
+
+
+Overfull \hbox (16.38489pt too wide) in paragraph at lines 70--70
+ []\T1/cmr/m/n/10 .jpg 
+ []
+
+
+Overfull \hbox (20.60608pt too wide) in paragraph at lines 70--70
+ []\T1/cmr/m/n/10 .mps 
+ []
+
+
+Overfull \hbox (21.10596pt too wide) in paragraph at lines 70--70
+ []\T1/cmr/m/n/10 .jpeg 
+ []
+
+
+Overfull \hbox (24.16077pt too wide) in paragraph at lines 70--70
+ []\T1/cmr/m/n/10 .jbig2 
+ []
+
+
+Overfull \hbox (16.38489pt too wide) in paragraph at lines 70--70
+ []\T1/cmr/m/n/10 .jb2 
+ []
+
+
+Overfull \hbox (24.92447pt too wide) in paragraph at lines 70--70
+ []\T1/cmr/m/n/10 .PNG 
+ []
+
+
+Overfull \hbox (23.7442pt too wide) in paragraph at lines 70--70
+ []\T1/cmr/m/n/10 .PDF 
+ []
+
+
+Overfull \hbox (22.56393pt too wide) in paragraph at lines 70--70
+ []\T1/cmr/m/n/10 .JPG 
+ []
+
+
+Overfull \hbox (29.36783pt too wide) in paragraph at lines 70--70
+ []\T1/cmr/m/n/10 .JPEG 
+ []
+
+
+Overfull \hbox (31.45065pt too wide) in paragraph at lines 70--70
+ []\T1/cmr/m/n/10 .JBIG2 
+ []
+
+
+! Argument of \IfiF has an extra }.
+<inserted text> 
+                \par 
+l.70           \vfill}}}}}
+                          
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+und-forside' not found.
+
+See the LaTeX manual or LaTeX Companion for ex\ETC.
+! Paragraph ended before \IfiF was complete.
+<to be read again> 
+                   \par 
+l.70           \vfill}}}}}
+                          
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! LaTeX Error: File `uio-\par .
+<recently read>  
+                 
+l.70           \vfill}}}}}
+                          
+I could not locate the file with any of these extensions:
+.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (19.99512pt too wide) in paragraph at lines 70--70
+ []\T1/cmr/m/n/10 .JB2 
+ []
+
+
+Overfull \hbox (99.7583pt too wide) in paragraph at lines 70--71
+[]\T1/cmr/m/n/10 print@background[] 
+ []
+
+
+! LaTeX Error: Command \IfiF already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83         \IfiF@fac}}}}
+                                                           % quite like it.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83         \IfiF@fac}}}}
+                                                           % quite like it.
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.83         \IfiF@fac}}}}
+                                                           % quite like it.
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! You already have nine parameters.
+\reserved@a ... \expandafter \IfiF \reserved@b #10
+                                                  p{
+l.83         \IfiF@fac}}}}
+                                                           % quite like it.
+I'm going to ignore the # sign you just used.
+
+! Undefined control sequence.
+<argument> \rm 
+               \fontfamily {\IfiF @font}\fontseries {b}\fontsize {24}{0pt}\s...
+l.83         \IfiF@fac}}}}
+                                                           % quite like it.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Argument of \IfiF has an extra }.
+<inserted text> 
+                \par 
+l.83         \IfiF@fac}}}}
+                                                           % quite like it.
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \IfiF was complete.
+<to be read again> 
+                   \par 
+l.83         \IfiF@fac}}}}
+                                                           % quite like it.
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \par 
+l.83         \IfiF@fac}}}}
+                                                           % quite like it.
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\font@name ->\T1/ \par /b/n/24\endcsname 
+                                         
+l.83         \IfiF@fac}}}}
+                                                           % quite like it.
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Argument of \IfiF has an extra }.
+<inserted text> 
+                \par 
+l.83         \IfiF@fac}}}}
+                                                           % quite like it.
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \IfiF was complete.
+<to be read again> 
+                   \par 
+l.83         \IfiF@fac}}}}
+                                                           % quite like it.
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Extra }, or forgotten \endgroup.
+<recently read> }
+                 
+l.83         \IfiF@fac}}}}
+                                                           % quite like it.
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Undefined control sequence.
+<argument> \rm 
+               \fontfamily {pnc}\fontsize {17}{0pt}\selectfont \IfiF @fac
+l.83         \IfiF@fac}}}}
+                                                           % quite like it.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Try loading font information for T1+pnc on input line 83.
+(/opt/texlive/uio-texmf/texmf-dist/tex/latex/psnfss/t1pnc.fd
+File: t1pnc.fd 2001/06/04 font definitions for T1/pnc.
+)
+! Argument of \IfiF has an extra }.
+<inserted text> 
+                \par 
+l.83         \IfiF@fac}}}}
+                                                           % quite like it.
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \IfiF was complete.
+<to be read again> 
+                   \par 
+l.83         \IfiF@fac}}}}
+                                                           % quite like it.
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Extra }, or forgotten \endgroup.
+<recently read> }
+                 
+l.83         \IfiF@fac}}}}
+                                                           % quite like it.
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten \endgroup.
+<argument> ...e {17}{0pt}\selectfont \IfiF @fac}}}
+                                                  
+l.83         \IfiF@fac}}}}
+                                                           % quite like it.
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten \endgroup.
+\@argdef ...definable #1{\@yargdef #1\@ne {#2}{#3}
+                                                  }
+l.83         \IfiF@fac}}}}
+                                                           % quite like it.
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten \endgroup.
+\@argdef ...efinable #1{\@yargdef #1\@ne {#2}{#3}}
+                                                  
+l.83         \IfiF@fac}}}}
+                                                           % quite like it.
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: Command \IfiF already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130      \vfill}}}}}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   p
+l.130      \vfill}}}}}
+                      
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! You already have nine parameters.
+\reserved@a ... \expandafter \IfiF \reserved@b #10
+                                                  p{
+l.130      \vfill}}}}}
+                      
+I'm going to ignore the # sign you just used.
+
+! Argument of \IfiF has an extra }.
+<inserted text> 
+                \par 
+l.130      \vfill}}}}}
+                      
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \IfiF was complete.
+<to be read again> 
+                   \par 
+l.130      \vfill}}}}}
+                      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \par 
+l.130      \vfill}}}}}
+                      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130      \vfill}}}}}
+                      
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Extra \endcsname.
+\font@name ->\T1/ \par /m/n/32\endcsname 
+                                         
+l.130      \vfill}}}}}
+                      
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \par 
+l.130      \vfill}}}}}
+                      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130      \vfill}}}}}
+                      
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Extra \endcsname.
+\font@name ->\T1/ \par /m/n/17\endcsname 
+                                         
+l.130      \vfill}}}}}
+                      
+I'm ignoring this, since I wasn't doing a \csname.
+
+! Argument of \IfiF has an extra }.
+<inserted text> 
+                \par 
+l.130      \vfill}}}}}
+                      
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \IfiF was complete.
+<to be read again> 
+                   \par 
+l.130      \vfill}}}}}
+                      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \IfiF has an extra }.
+<inserted text> 
+                \par 
+l.130      \vfill}}}}}
+                      
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \IfiF was complete.
+<to be read again> 
+                   \par 
+l.130      \vfill}}}}}
+                      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Argument of \IfiF has an extra }.
+<inserted text> 
+                \par 
+l.130      \vfill}}}}}
+                      
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \IfiF was complete.
+<to be read again> 
+                   \par 
+l.130      \vfill}}}}}
+                      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \par 
+l.130      \vfill}}}}}
+                      
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130      \vfill}}}}}
+                      
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Extra \endcsname.
+\font@name ->\T1/ \par /m/n/17\endcsname 
+                                         
+l.130      \vfill}}}}}
+                      
+I'm ignoring this, since I wasn't doing a \csname.
+
+LaTeX Font Info:    Calculating math sizes for size <17> on input line 130.
+! Argument of \IfiF has an extra }.
+<inserted text> 
+                \par 
+l.130      \vfill}}}}}
+                      
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+.5ex] ISSN& \IfiF @issn\\ \end {tabular} \vfill 
+! Paragraph ended before \IfiF was complete.
+<to be read again> 
+                   \par 
+l.130      \vfill}}}}}
+                      
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Missing \cr inserted.
+<inserted text> 
+                \cr 
+l.130      \vfill}}}}}
+                      
+I'm guessing that you meant to end an alignment here.
+
+! Missing { inserted.
+<inserted text> 
+                {
+l.130      \vfill}}}}}
+                      
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten $.
+\@argdef ...definable #1{\@yargdef #1\@ne {#2}{#3}
+                                                  }
+l.130      \vfill}}}}}
+                      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten $.
+\@argdef ...efinable #1{\@yargdef #1\@ne {#2}{#3}}
+                                                  
+l.130      \vfill}}}}}
+                      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.131 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! LaTeX Error: Command \IfiF already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135 \newcommand{\IfiF@font}{phv}
+                                    % Helvetica is always available, but use
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   f
+l.135 \newcommand{\IfiF@font}{phv}
+                                    % Helvetica is always available, but use
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! You already have nine parameters.
+\reserved@a ... \expandafter \IfiF \reserved@b #10
+                                                  f{
+l.135 \newcommand{\IfiF@font}{phv}
+                                    % Helvetica is always available, but use
+I'm going to ignore the # sign you just used.
+
+
+! LaTeX Error: \IfiF @fontundefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.136 ...ua1.fd}{\renewcommand{\IfiF@font}{ua1}}{}
+                                                   % Arial if possible.
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\c@IfiF@cur@year=\count84
+\c@IfiF@cur@month=\count85
+! Undefined control sequence.
+<inserted text> \theIfiF 
+                         @cur@month<7
+l.144 \ifthenelse{\theIfiF@cur@month<7}
+                                       
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   @
+l.144 \ifthenelse{\theIfiF@cur@month<7}
+                                       
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   @
+l.144 \ifthenelse{\theIfiF@cur@month<7}
+                                       
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   @
+l.144 \ifthenelse{\theIfiF@cur@month<7}
+                                       
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+! LaTeX Error: Command \IfiF already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.150    \newcommand{\IfiF@term@nn}{hausten}}
+                                             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   t
+l.150    \newcommand{\IfiF@term@nn}{hausten}}
+                                             
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! You already have nine parameters.
+\reserved@a ... \expandafter \IfiF \reserved@b #10
+                                                  t{
+l.150    \newcommand{\IfiF@term@nn}{hausten}}
+                                             
+I'm going to ignore the # sign you just used.
+
+
+! LaTeX Error: Command \IfiF already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.150    \newcommand{\IfiF@term@nn}{hausten}}
+                                             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   t
+l.150    \newcommand{\IfiF@term@nn}{hausten}}
+                                             
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! You already have nine parameters.
+\reserved@a ... \expandafter \IfiF \reserved@b #10
+                                                  t{
+l.150    \newcommand{\IfiF@term@nn}{hausten}}
+                                             
+I'm going to ignore the # sign you just used.
+
+
+! LaTeX Error: Command \IfiF already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.150    \newcommand{\IfiF@term@nn}{hausten}}
+                                             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   t
+l.150    \newcommand{\IfiF@term@nn}{hausten}}
+                                             
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! You already have nine parameters.
+\reserved@a ... \expandafter \IfiF \reserved@b #10
+                                                  t{
+l.150    \newcommand{\IfiF@term@nn}{hausten}}
+                                             
+I'm going to ignore the # sign you just used.
+
+
+! LaTeX Error: Command \IfiF already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.151 ...}{\csname IfiF@term@\IfiF@lang\endcsname}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   t
+l.151 ...}{\csname IfiF@term@\IfiF@lang\endcsname}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! You already have nine parameters.
+\reserved@a ... \expandafter \IfiF \reserved@b #10
+                                                  t{
+l.151 ...}{\csname IfiF@term@\IfiF@lang\endcsname}
+                                                  
+I'm going to ignore the # sign you just used.
+
+! Argument of \IfiF has an extra }.
+<inserted text> 
+                \par 
+l.151 ...}{\csname IfiF@term@\IfiF@lang\endcsname}
+                                                  
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+! Paragraph ended before \IfiF was complete.
+<to be read again> 
+                   \par 
+l.151 ...}{\csname IfiF@term@\IfiF@lang\endcsname}
+                                                  
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \par 
+l.151 ...}{\csname IfiF@term@\IfiF@lang\endcsname}
+                                                  
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+
+! LaTeX Error: Command \IfiF already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.152 ...mmand{\IfiF@year}{\arabic{IfiF@cur@year}}
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   y
+l.152 ...mmand{\IfiF@year}{\arabic{IfiF@cur@year}}
+                                                  
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! You already have nine parameters.
+\reserved@a ... \expandafter \IfiF \reserved@b #10
+                                                  y{
+l.152 ...mmand{\IfiF@year}{\arabic{IfiF@cur@year}}
+                                                  
+I'm going to ignore the # sign you just used.
+
+
+! LaTeX Error: Command \IfiF already defined.
+               Or name \end... illegal, see p.192 of the manual.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.160     \newpage}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   b
+l.160     \newpage}
+                   
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! You already have nine parameters.
+\reserved@a ... \expandafter \IfiF \reserved@b #10
+                                                  b{
+l.160     \newpage}
+                   
+I'm going to ignore the # sign you just used.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.160     \newpage}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.160     \newpage}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.160     \newpage}
+                   
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (88.40858pt too wide) in paragraph at lines 130--160
+[]\T1/cmr/m/n/10 /m/n/17[]  
+ []
+
+! Extra }, or forgotten \endgroup.
+\@argdef ...definable #1{\@yargdef #1\@ne {#2}{#3}
+                                                  }
+l.160     \newpage}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Extra }, or forgotten \endgroup.
+\@argdef ...efinable #1{\@yargdef #1\@ne {#2}{#3}}
+                                                  
+l.160     \newpage}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+)
+! Emergency stop.
+<*> ifikompendium.tex
+                     
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 1885 strings out of 493109
+ 27447 string characters out of 6122467
+ 82582 words of memory out of 5000000
+ 5357 multiletter control sequences out of 15000+600000
+ 9175 words of font info for 28 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 30i,11n,37p,310b,214s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
