@@ -64,7 +64,6 @@ HPE3631_SetVolt (3, 0);
 %% Plot results
 s = 200;
 f1 = figure;
-%set(f1, 'Position', [500, 500, 4*s, 3*s]);
 f1.Position = [500, 500, 4*s, 3*s];
 
 figure(f1)
@@ -74,3 +73,5 @@ grid on;
 title('pMOS as a current source - Ids vs Vds');
 xlabel('Vds');
 ylabel('Ids');
+
+legend('Vgs: -1.194V')

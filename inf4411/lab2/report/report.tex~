@@ -1,0 +1,11 @@
+
+
+    \usepackage{ifimasterforside}
+
+    \title{Typografi i hverdagen}
+    \subtitle{Hvilke fonter liker vanlige mennesker best?}
+    \author{Dag Langmyhr}
+
+    \begin{document}
+    \ififorside
+    \end{document}
