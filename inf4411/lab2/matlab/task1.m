@@ -11,14 +11,16 @@ addpath(genpath('/hom/mes/src/matlab/gpib/linux'));
 amps = 8e-3;
 %multimeter_addr = HP34401_DefaultAdr();
 multimeter_addr = K617_DefaultAdr();
-v_bias = 1.194;
+v_dd = 5;
+v_bias1 = 1.196; % at Vds = 2.5V
+%v_bias2 = 1.194;
 v_sweep = 5;
 num_samples = 100;
 
 % init equiment
 HPE3631_Init;
 
-HPE3631_SetILimit (1, amps);
+HPE3631_SetILimit (1, amps); 
 HPE3631_SetILimit (2, amps);
 HPE3631_SetILimit (3, amps);
 
@@ -31,20 +33,23 @@ K617_SetMode ('A');
 %K617_SetRange (9);
 
 % create sampling intervall
-v = linspace (v_sweep, 0, num_samples);
+v = linspace (0 , v_sweep , num_samples);
 
 % Define i-vector
 im = zeros(1, size(v, 2)); 
 
 %HPE3631_SetVolt (2, vdd);
-HPE3631_SetVolt (1, v_bias);
+%HPE3631_SetVolt (3, v_bias1); % Uses port 3 (-25V) as v_bias1
+HPE3631_SetVolt (2, v_dd); % Uses port 2 (+25V) as v_dd
 %HPE3631_Operate();
 
 % Do experiment
+pause(1);
 for i = 1:size(v, 2)
     
     %HPE3631_SetVolt(1, v(1, i));
-    HPE3631_SetVolt(2, v(1, i));
+    HPE3631_SetVolt(1, v(1, i)); % Uses port 1 (+6V) as the sweep voltage
+   
     % im(1, i) = HP34401_ReadQuick(multimeter_addr);
     
     % Do a read to get instrument to change resolution
@@ -67,11 +72,15 @@ f1 = figure;
 f1.Position = [500, 500, 4*s, 3*s];
 
 figure(f1)
-plot(v, im, 'LineWidth', 2);
+plot(flip(v), im, 'LineWidth', 2);
 grid on;
+
+dy=diff(flip(v))./diff(im);
+plot(flip(v(2:end)), dy);
+mean(dy)
 
 title('pMOS as a current source - Ids vs Vds');
 xlabel('Vds');
 ylabel('Ids');
 
-legend('Vgs: -1.194V')
+legend(sprintf('Vgs: %2f', v_bias1));

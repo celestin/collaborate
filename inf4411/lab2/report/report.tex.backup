@@ -1,0 +1,103 @@
+%\documentclass[a4paper,english,11pt,twoside]{article}
+\documentclass[a4paper,english,11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc, url}
+\usepackage[english]{babel}
+%\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathtools}
+\usepackage{pstricks}
+\usepackage{subfig}
+\usepackage{epstopdf}
+\usepackage{varioref}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage[]{mcode}
+\usepackage{verbatim}
+\lstset{ 
+  captionpos=b,
+  frame=tb,
+  numbers=left}
+\urlstyle{sf}
+\usepackage[margin=1 in]{geometry} % Setter margene til word standard
+
+\usepackage{ifikompendiumforside}
+
+
+\newcommand{\tab}[1]{\hspace{.2\textwidth}\rlap{#1}}
+
+%%%%%%%%%%%%%%%%%% END HEADER
+
+\title{Laboratory Assignment 2}
+\subtitle{INF4411\\ 
+          Analog Microelectronics}
+
+\author{
+\begin{tabular}{ r c l }
+  Rikesh Chauhan & & rikesh.chauhan@fys.uio.no\\
+  Espen Klein Nilsen & & e.a.k.nilsen@fys.uio.no\\
+  Vegard Midtbøen & & vegard.midtboen@fys.uio.no
+\end{tabular}
+}
+%{Rikesh Chauhan rikesh.chauhan@fys.uio.no\\
+%	Espen Klein Nilsen e.a.k.nilsen@fys.uio.no\\
+%	Vegard Midtbøen vegard.midtboen@fys.uio.no} 
+
+\begin{document}
+\ififorside
+    
+    
+\section{Task 1}
+V$_{p\_bias}$ = 1.194V\\
+rds = 90.81k$\varOmega$\\
+minimal V$_{out}$ = 1.818V\\
+Headroom voltage is required to keep the device in active region MORE DETAILS!\\
+    
+\begin{figure}[htbp]
+ \centering
+  \fbox{\includegraphics[width=\textwidth]{img/Transistor_setup.jpg}}
+  \caption{Transistor setup.}
+  \label{fig:tran-setup}	
+\end{figure}
+
+\begin{figure}[htbp]
+ \centering
+  \fbox{\includegraphics[width=\textwidth]{img/task1_pmos_as_a_current_source.png}}
+  \caption{pmos as a current source.}
+  \label{fig:pmos-as-current-source}	
+\end{figure}
+
+\newpage
+\section{Task 2}
+Notes:\\
+- Used three different voltage sources.\\
+- Had to use an external voltage source in order to get the desired voltage.\\
+- VDD (+25V port) = 5V
+- V$_{GS1}$ = 1.194V\\
+- V$_{GS2}$ = 3.455V at 20 mu A leas to a V$_{p\_bias2}$  at 1.545V\\
+- Minimum voltage different is VDD - V$_{p\_bias2}$ = 5V - 1.545V = \underline{\underline{3.455V}}\\
+- Minimun output voltage is 2.83V as seen in Figure \ref{fig:pfet-cascode-pfet}.\\
+- Output resistance is 109.31k$\Omega$\\
+\\
+Figure \ref{fig:pfet-cascode-pfet} shows plot of output current as function of V$_{out}$.
+\begin{figure}[htbp]
+ \centering
+  \fbox{\includegraphics[width=\textwidth]{img/task2_pmos_as_a_current_source.png}}
+  \caption{pFET and cascode pFET as a current cource.}
+  \label{fig:pfet-cascode-pfet}	
+\end{figure}
+
+\newpage
+\section{Task 4}
+Doing the same as we did in Task 1 and Task 2, but here we uses nmos transistors instead.\\
+\\
+1. First we maually find the new V$_n\_bias$ for the first nmos transistor at 20 uA.\\
+Uses the same nmos transistor as we did in the lab 1. (port 6(G),7(S) and 8(D))\\
+2. Then we use the voltage that we found in the first task and use it in the next task, whis is applying one more nmos transistor. Here we
+use the ports 9 (S), 10 (G) and 12 (D). (Reference to picture of setup)
+
+
+\end{document}
