@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.7)  19 OCT 2015 12:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.7)  19 OCT 2015 14:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1007,63 +1007,99 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!{/opt/texlive/uio-texmf/texmf-var/fonts/map/pdftex/updm
 ap/pdftex.map} <./ifi-kompendium-forside-eng.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 53--61
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
 
  []
 
-<img/Transistor_setup.jpg, id=41, 3276.24pt x 2457.18pt>
-File: img/Transistor_setup.jpg Graphic file (type jpg)
 
-<use img/Transistor_setup.jpg>
-Package pdftex.def Info: img/Transistor_setup.jpg used on input line 64.
-(pdftex.def)             Requested size: 452.9679pt x 339.6911pt.
+Underfull \hbox (badness 10000) in paragraph at lines 67--75
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 64--65
+ []
+
+<img/inf4411_lab2_task1_schematics.png, id=41, 536.26434pt x 470.2787pt>
+File: img/inf4411_lab2_task1_schematics.png Graphic file (type png)
+
+<use img/inf4411_lab2_task1_schematics.png>
+Package pdftex.def Info: img/inf4411_lab2_task1_schematics.png used on input li
+ne 78.
+(pdftex.def)             Requested size: 452.9679pt x 397.23439pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 78--79
  [][] 
  []
 
-<img/task1_pmos_as_a_current_source.png, id=42, 621.67741pt x 466.25807pt>
+<img/Transistor_setup.jpg, id=42, 3276.24pt x 2457.18pt>
+File: img/Transistor_setup.jpg Graphic file (type jpg)
+
+<use img/Transistor_setup.jpg>
+Package pdftex.def Info: img/Transistor_setup.jpg used on input line 86.
+(pdftex.def)             Requested size: 452.9679pt x 339.6911pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 86--87
+ [][] 
+ []
+
+<img/task1_pmos_as_a_current_source.png, id=43, 621.67741pt x 466.25807pt>
 File: img/task1_pmos_as_a_current_source.png Graphic file (type png)
 
 <use img/task1_pmos_as_a_current_source.png>
 Package pdftex.def Info: img/task1_pmos_as_a_current_source.png used on input l
-ine 71.
+ine 93.
 (pdftex.def)             Requested size: 452.9679pt x 339.73236pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 71--72
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 93--94
  [][] 
  []
 
-[1 <./img/Transistor_setup.jpg>] [2 <./img/task1_pmos_as_a_current_source.png (
-PNG copy)>]
-<img/task2_pmos_as_a_current_source.png, id=56, 621.67741pt x 466.25807pt>
+[1] [2 <./img/inf4411_lab2_task1_schematics.png>] [3 <./img/Transistor_setup.jp
+g>] [4 <./img/task1_pmos_as_a_current_source.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 100--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--119
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--119
+
+ []
+
+<img/task2_pmos_as_a_current_source.png, id=63, 621.67741pt x 466.25807pt>
 File: img/task2_pmos_as_a_current_source.png Graphic file (type png)
 
 <use img/task2_pmos_as_a_current_source.png>
 Package pdftex.def Info: img/task2_pmos_as_a_current_source.png used on input l
-ine 91.
+ine 123.
 (pdftex.def)             Requested size: 452.9679pt x 339.73236pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 91--92
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 123--124
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--95
+Underfull \hbox (badness 10000) in paragraph at lines 129--135
 
  []
 
-[3 <./img/task2_pmos_as_a_current_source.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 98--104
+[5] [6 <./img/task2_pmos_as_a_current_source.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 138--147
 
  []
 
-[4] (./report.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 138--147
+
+ []
+
+[7] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 14754 strings out of 493109
- 247109 string characters out of 6122467
- 314992 words of memory out of 5000000
- 17950 multiletter control sequences out of 15000+600000
+ 14762 strings out of 493109
+ 247351 string characters out of 6122467
+ 316000 words of memory out of 5000000
+ 17957 multiletter control sequences out of 15000+600000
  26651 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  61i,15n,96p,403b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1074,14 +1110,15 @@ Here is how much of TeX's memory you used:
 t/texlive/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/t
 exlive/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/texl
 ive/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/texlive/
-uio-texmf/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></opt/texlive/uio
--texmf/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></opt/texlive/uio-te
-xmf/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></opt/texlive/uio-texmf
-/texmf-local/fonts/type1/urw/arial/ua1r8a.pfb>
-Output written on report.pdf (5 pages, 6549222 bytes).
+uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/texlive/ui
+o-texmf/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></opt/texlive/uio-t
+exmf/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></opt/texlive/uio-texm
+f/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></opt/texlive/uio-texmf/t
+exmf-local/fonts/type1/urw/arial/ua1r8a.pfb>
+Output written on report.pdf (8 pages, 6584355 bytes).
 PDF statistics:
- 95 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
+ 111 PDF objects out of 1000 (max. 8388607)
+ 65 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

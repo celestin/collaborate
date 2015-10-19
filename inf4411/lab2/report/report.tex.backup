@@ -50,15 +50,37 @@
 \ififorside
         
 \section{Task 1}
-In order to get a voltage reference to V$_{p_bias1}$, we used a potentiometer as seen in figure (figure reference).
-For the task, we used a Vdd = 5V, which is more enough for this task. This voltage is fixed trough the hole simulation. 
+
+\colorbox{red!30}{FIXME}\\
+In order to get a voltage reference to V$_{p_bias1}$, we used a potentiometer as seen in figure \ref{fig:sch:task1}.
+\colorbox{red!30}{ENDFIXME}\\
+
+For the task, we used a Vdd = 5V, which is enough for this task (Vds = 5V). 
+This voltage is fixed trough the whole experiment. In the task it is given that the transitor should supply a 20mA current. 
+In order too get this current we created the circut shown in figure \ref{fig:sch:task1}. In this setup we tuned the potensiometer to set the bias voltage V$_{p_bias1}$.
+
+The results for the experiment is shown in the figure REF*******************
+The minimal Vout for this cuircuit to act as an current source is  **************
+Since we probably want to be able to have an ac input, we need some headroom in order to acomodate the signal, both in the positive and negative direction from the setpoint.
+The amount of headroom should be big enugh so the transistor never goes out of the active region.*********
+
+\colorbox{red!30}{FIXME}\\
 When we selected the V$_{p_bias1}$, we coupled up the circuit as shown in figure (figure ref). In the labdescription it was
 gived that the bias current should be 20$\mu$A for the transistor to be in the active region.
 V$_{p\_bias}$ = 1.196V\\
 rds = 391k$\varOmega$\\
 minimal V$_{out}$ = 1.818V\\
 Headroom voltage is required to keep the device in active region MORE DETAILS!\\
+\colorbox{red!30}{ENDFIXME}\\
     
+\begin{figure}[htbp]
+ \centering
+  \fbox{\includegraphics[width=\textwidth]{img/inf4411_lab2_task1_schematics.png}}
+  \caption{Transistor setup.}
+  \label{fig:sch:task1}	
+\end{figure}
+
+
 \begin{figure}[htbp]
  \centering
   \fbox{\includegraphics[width=\textwidth]{img/Transistor_setup.jpg}}
@@ -75,6 +97,14 @@ Headroom voltage is required to keep the device in active region MORE DETAILS!\\
 
 \newpage
 \section{Task 2}
+Now we extend our circut to a current source with a cascode transistor. This is transistor also need proper biasing. The bias for new transistor is also set by potensiometer as seen i figure *****REF.
+Now the minimal voltage difference between Vdd and V$_{p_bias2}$ is ************ in order to get the cuircuit to act as an constant current source.
+Figure ***** shows a plot of the \colorbox{blue!30}{output current} as a function of V$_{out}$. \\
+The output resistance of this cuircuit is estmated to ***********.\\
+The minimial voltage $Vdd - V_{out}$ for the cuircuit is ***************.\\
+
+
+\colorbox{red!30}{FIXME}\\
 Notes:\\
 - Used two potentiometers to make the desirable voltage for V$_{p_bias1}$ and V$_{p_bias2}$.\\
 - VDD (+25V port) = 5V\\
@@ -85,6 +115,8 @@ Notes:\\
 - Minimun output voltage is 2.83V as seen in Figure \ref{fig:pfet-cascode-pfet}.\\
 - Output resistance is 13.35M$\Omega$\\
 \\
+\colorbox{red!30}{ENDFIXME}\\
+
 Figure \ref{fig:pfet-cascode-pfet} shows plot of output current as function of V$_{out}$.
 \begin{figure}[htbp]
  \centering
@@ -93,8 +125,17 @@ Figure \ref{fig:pfet-cascode-pfet} shows plot of output current as function of V
   \label{fig:pfet-cascode-pfet}	
 \end{figure}
 
+\section{Task 3}
+Using the results form task 1 and task 2 we can estimate values for $V_{eff}$ and the treshold voltage $V_{tp}$.
+For task 1 $V_{eff}$ is calculated from the relationship $Vdd - V_{out}$. For task 2 $V_{eff}$ is calculated from the relationship between $V_{out}$ and $V_{p_bias2}$
+\\
+In task 1 we found the minimal voltage for $Vdd - V_{out}$ to be **************. Using this value to estimate $V_{eff}$ we get ***********.\\
+\\
+Our results are consistent/not-consistent.....
+
 \newpage
 \section{Task 4}
+Now we want to create an
 Doing the same as we did in Task 1 and Task 2, but here we uses nmos transistors instead.\\
 \\
 1. First we maually find the new V$_n\_bias$ for the first nmos transistor at 20 uA.\\
