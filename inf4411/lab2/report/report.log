@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.7)  16 OCT 2015 15:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.7)  19 OCT 2015 12:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -840,29 +840,6 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \verbatim@line=\toks40
 \verbatim@in@stream=\read1
 )
-(/opt/texlive/uio-texmf/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2010/09/12 v5.6 Page Geometry
-
-(/opt/texlive/uio-texmf/texmf-dist/tex/generic/oberdiek/ifvtex.sty
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
-Package ifvtex Info: VTeX not detected.
-)
-(/opt/texlive/uio-texmf/texmf-dist/tex/generic/ifxetex/ifxetex.sty
-Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
-)
-\Gm@cnth=\count154
-\Gm@cntv=\count155
-\c@Gm@tempcnt=\count156
-\Gm@bindingoffset=\dimen174
-\Gm@wd@mp=\dimen175
-\Gm@odd@mp=\dimen176
-\Gm@even@mp=\dimen177
-\Gm@layoutwidth=\dimen178
-\Gm@layoutheight=\dimen179
-\Gm@layouthoffset=\dimen180
-\Gm@layoutvoffset=\dimen181
-\Gm@dimlist=\toks41
-)
 (./ifikompendiumforside.sty
 Package: ifikompendiumforside 2015/05/28 v1.2d Ifi document class
  (./ifikompendium.tex
@@ -884,7 +861,7 @@ Package: xifthen 2009/04/17 v1.3 Extended ifthen features
 
 (/opt/texlive/uio-texmf/texmf-dist/tex/latex/etex-pkg/etex.sty
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
-\et@xins=\count157
+\et@xins=\count154
 )
 (/opt/texlive/uio-texmf/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
@@ -903,8 +880,8 @@ Package: type1ec 2002/09/07 v1.1 Type1 EC font definitions (for CM-Super fonts)
 (/opt/texlive/uio-texmf/texmf-dist/tex/latex/base/t1cmr.fd
 File: t1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ))
-\c@IfiF@cur@year=\count158
-\c@IfiF@cur@month=\count159
+\c@IfiF@cur@year=\count155
+\c@IfiF@cur@month=\count156
 )) (./report.aux)
 \openout1 = `report.aux'.
 
@@ -930,61 +907,26 @@ LaTeX Font Info:    ... okay on input line 49.
 
 (/opt/texlive/uio-texmf/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count160
-\scratchdimen=\dimen182
+\scratchcounter=\count157
+\scratchdimen=\dimen174
 \scratchbox=\box36
-\nofMPsegments=\count161
-\nofMParguments=\count162
-\everyMPshowfont=\toks42
-\MPscratchCnt=\count163
-\MPscratchDim=\dimen183
-\MPnumerator=\count164
-\makeMPintoPDFobject=\count165
-\everyMPtoPDFconversion=\toks43
+\nofMPsegments=\count158
+\nofMParguments=\count159
+\everyMPshowfont=\toks41
+\MPscratchCnt=\count160
+\MPscratchDim=\dimen175
+\MPnumerator=\count161
+\makeMPintoPDFobject=\count162
+\everyMPtoPDFconversion=\toks42
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count166
-
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(72.26999pt, 452.9679pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 700.50687pt, 72.26999pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=452.9679pt
-* \textheight=700.50687pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
-* \topmargin=-37.0pt
-* \headheight=12.0pt
-* \headsep=25.0pt
-* \topskip=11.0pt
-* \footskip=30.0pt
-* \marginparwidth=50.0pt
-* \marginparsep=10.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
+\c@lstlisting=\count163
 \AtBeginShipoutBox=\box37
-<ifi-kompendium-forside-eng.pdf, id=1, 639.66579pt x 887.2046pt>
+ <ifi-kompendium-forside-eng.pdf, id=1, 639.66579pt x 887.2046pt>
 File: ifi-kompendium-forside-eng.pdf Graphic file (type pdf)
 
 <use ifi-kompendium-forside-eng.pdf>
@@ -1007,7 +949,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!{/opt/texlive/uio-texmf/texmf-var/fonts/map/pdftex/updm
 ap/pdftex.map} <./ifi-kompendium-forside-eng.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 54--58
+Underfull \hbox (badness 10000) in paragraph at lines 54--59
 
  []
 
@@ -1015,10 +957,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--58
 File: img/Transistor_setup.jpg Graphic file (type jpg)
 
 <use img/Transistor_setup.jpg>
-Package pdftex.def Info: img/Transistor_setup.jpg used on input line 61.
-(pdftex.def)             Requested size: 452.9679pt x 339.6911pt.
+Package pdftex.def Info: img/Transistor_setup.jpg used on input line 62.
+(pdftex.def)             Requested size: 360.0pt x 269.99069pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 61--62
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 62--63
  [][] 
  []
 
@@ -1027,60 +969,61 @@ File: img/task1_pmos_as_a_current_source.png Graphic file (type png)
 
 <use img/task1_pmos_as_a_current_source.png>
 Package pdftex.def Info: img/task1_pmos_as_a_current_source.png used on input l
-ine 68.
-(pdftex.def)             Requested size: 452.9679pt x 339.73236pt.
+ine 69.
+(pdftex.def)             Requested size: 360.0pt x 270.00299pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 68--69
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 69--70
  [][] 
  []
 
 [1 <./img/Transistor_setup.jpg>] [2 <./img/task1_pmos_as_a_current_source.png (
 PNG copy)>]
-<img/task2_pmos_as_a_current_source.png, id=54, 621.67741pt x 466.25807pt>
+<img/task2_pmos_as_a_current_source.png, id=56, 621.67741pt x 466.25807pt>
 File: img/task2_pmos_as_a_current_source.png Graphic file (type png)
 
 <use img/task2_pmos_as_a_current_source.png>
 Package pdftex.def Info: img/task2_pmos_as_a_current_source.png used on input l
-ine 88.
-(pdftex.def)             Requested size: 452.9679pt x 339.73236pt.
+ine 89.
+(pdftex.def)             Requested size: 360.0pt x 270.00299pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 88--89
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 89--90
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--92
+Underfull \hbox (badness 10000) in paragraph at lines 76--93
 
  []
 
 [3 <./img/task2_pmos_as_a_current_source.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 95--101
+Underfull \hbox (badness 10000) in paragraph at lines 96--102
 
  []
 
 [4] (./report.aux) ) 
 Here is how much of TeX's memory you used:
- 14754 strings out of 493109
- 247109 string characters out of 6122467
- 313992 words of memory out of 5000000
- 17950 multiletter control sequences out of 15000+600000
+ 14278 strings out of 493109
+ 240097 string characters out of 6122467
+ 302112 words of memory out of 5000000
+ 17485 multiletter control sequences out of 15000+600000
  26651 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 61i,15n,96p,403b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,15n,96p,403b,363s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/opt/texlive/uio-texmf/texmf-dist/fonts/enc/dvips/cm-super
 /cm-super-t1.enc}{/opt/texlive/uio-texmf/texmf-dist/fonts/enc/dvips/base/8r.enc
 }</opt/texlive/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/opt/texlive/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></op
-t/texlive/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/t
-exlive/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/texli
-ve/uio-texmf/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></opt/texlive/
-uio-texmf/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></opt/texlive/uio
--texmf/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></opt/texlive/uio-te
-xmf/texmf-local/fonts/type1/urw/arial/ua1r8a.pfb>
-Output written on report.pdf (5 pages, 6541455 bytes).
+/opt/texlive/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></op
+t/texlive/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/t
+exlive/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/texl
+ive/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/texlive/
+uio-texmf/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></opt/texlive/uio
+-texmf/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></opt/texlive/uio-te
+xmf/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></opt/texlive/uio-texmf
+/texmf-local/fonts/type1/urw/arial/ua1r8a.pfb>
+Output written on report.pdf (5 pages, 6548655 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
+ 95 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

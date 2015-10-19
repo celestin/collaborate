@@ -69,16 +69,27 @@ s = 200;
 f1 = figure;
 f1.Position = [500, 500, 4*s, 3*s];
 
+f2 = figure;
+f2.Position = [500, 500, 4*s, 3*s];
+
 figure(f1)
 plot(flip(v), im, 'LineWidth', 2);
 grid on;
-
-%dy=diff(flip(v))./diff(im);
-%plot(flip(v(2:end)), dy);
-%mean(dy)
 
 title('pMOS as a current source - Ids vs Vds');
 xlabel('Vds');
 ylabel('Ids');
 
 legend(sprintf('V_{bias2}: %2f', v_bias2));
+
+
+figure(f2)
+dy=diff(flip(v))./diff(im);
+plot(flip(v(2:end)), dy);
+mean(dy(1:50))
+ 
+title('Plot of average rds');
+xlabel('Vds');
+ylabel('rds');
+
+legend(sprintf('average rds'));

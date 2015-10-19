@@ -51,8 +51,9 @@
     
     
 \section{Task 1}
-V$_{p\_bias}$ = 1.194V\\
-rds = 90.81k$\varOmega$\\
+In order to get an voltage reference to V$_{p_bias1}$, we used a potentiometer as seen in (figure reference)
+V$_{p\_bias}$ = 1.196V\\
+rds = 391k$\varOmega$\\
 minimal V$_{out}$ = 1.818V\\
 Headroom voltage is required to keep the device in active region MORE DETAILS!\\
     
@@ -73,14 +74,14 @@ Headroom voltage is required to keep the device in active region MORE DETAILS!\\
 \newpage
 \section{Task 2}
 Notes:\\
-- Used three different voltage sources.\\
-- Had to use an external voltage source in order to get the desired voltage.\\
-- VDD (+25V port) = 5V
-- V$_{GS1}$ = 1.194V\\
-- V$_{GS2}$ = 3.455V at 20 mu A leas to a V$_{p\_bias2}$  at 1.545V\\
-- Minimum voltage different is VDD - V$_{p\_bias2}$ = 5V - 1.545V = \underline{\underline{3.455V}}\\
+- Used two potentiometers to make the desirable voltage for V$_{p_bias1}$ and V$_{p_bias2}$.\\
+- VDD (+25V port) = 5V\\
+- V$_{sweep}$ = 2.5V\\
+- V$_{p_bias1}$ = 1.196V (From last task)\\
+- V$_{p_bias2}$ = 3.39V at 20\mu A\\
+- Minimum voltage different is VDD - V$_{p\_bias2}$ = 5V - 3.39V = \underline{\underline{1.61V}}\\
 - Minimun output voltage is 2.83V as seen in Figure \ref{fig:pfet-cascode-pfet}.\\
-- Output resistance is 109.31k$\Omega$\\
+- Output resistance is 13.35M$\Omega$\\
 \\
 Figure \ref{fig:pfet-cascode-pfet} shows plot of output current as function of V$_{out}$.
 \begin{figure}[htbp]
