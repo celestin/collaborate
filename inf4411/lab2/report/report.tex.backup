@@ -48,10 +48,12 @@
 
 \begin{document}
 \ififorside
-    
-    
+        
 \section{Task 1}
-In order to get an voltage reference to V$_{p_bias1}$, we used a potentiometer as seen in (figure reference)
+In order to get a voltage reference to V$_{p_bias1}$, we used a potentiometer as seen in figure (figure reference).
+For the task, we used a Vdd = 5V, which is more enough for this task. This voltage is fixed trough the hole simulation. 
+When we selected the V$_{p_bias1}$, we coupled up the circuit as shown in figure (figure ref). In the labdescription it was
+gived that the bias current should be 20$\mu$A for the transistor to be in the active region.
 V$_{p\_bias}$ = 1.196V\\
 rds = 391k$\varOmega$\\
 minimal V$_{out}$ = 1.818V\\
@@ -78,7 +80,7 @@ Notes:\\
 - VDD (+25V port) = 5V\\
 - V$_{sweep}$ = 2.5V\\
 - V$_{p_bias1}$ = 1.196V (From last task)\\
-- V$_{p_bias2}$ = 3.39V at 20\mu A\\
+- V$_{p_bias2}$ = 3.39V at 20 $\mu$ A\\
 - Minimum voltage different is VDD - V$_{p\_bias2}$ = 5V - 3.39V = \underline{\underline{1.61V}}\\
 - Minimun output voltage is 2.83V as seen in Figure \ref{fig:pfet-cascode-pfet}.\\
 - Output resistance is 13.35M$\Omega$\\
