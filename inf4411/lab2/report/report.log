@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.7)  19 OCT 2015 14:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.7)  22 OCT 2015 21:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -905,28 +905,31 @@ File: t1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 ))
 \c@IfiF@cur@year=\count158
 \c@IfiF@cur@month=\count159
-)) (./report.aux)
+)) (./report.aux
+
+LaTeX Warning: Label `fig:pfet-cascode-pfet' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 49.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 49.
-
-(/opt/texlive/uio-texmf/texmf-dist/tex/latex/base/ts1cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
+LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 51.
+ (/opt/texlive/uio-texmf/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    ... okay on input line 51.
 
 (/opt/texlive/uio-texmf/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -988,14 +991,14 @@ Package caption Info: End \AtBeginDocument code.
 File: ifi-kompendium-forside-eng.pdf Graphic file (type pdf)
 
 <use ifi-kompendium-forside-eng.pdf>
-Package pdftex.def Info: ifi-kompendium-forside-eng.pdf used on input line 51.
+Package pdftex.def Info: ifi-kompendium-forside-eng.pdf used on input line 54.
 (pdftex.def)             Requested size: 639.66422pt x 887.20244pt.
-LaTeX Font Info:    Try loading font information for T1+ua1 on input line 51.
+LaTeX Font Info:    Try loading font information for T1+ua1 on input line 54.
 
 (/opt/texlive/uio-texmf/texmf-local/tex/latex/ua1/t1ua1.fd
 File: t1ua1.fd 2006/03/21 Fontinst v1.928 font definitions for T1/ua1.
 )
-LaTeX Font Info:    Calculating math sizes for size <17> on input line 51.
+LaTeX Font Info:    Calculating math sizes for size <17> on input line 54.
  [1
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1007,118 +1010,219 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!{/opt/texlive/uio-texmf/texmf-var/fonts/map/pdftex/updm
 ap/pdftex.map} <./ifi-kompendium-forside-eng.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 54--57
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--75
-
- []
-
 <img/inf4411_lab2_task1_schematics.png, id=41, 536.26434pt x 470.2787pt>
 File: img/inf4411_lab2_task1_schematics.png Graphic file (type png)
 
 <use img/inf4411_lab2_task1_schematics.png>
 Package pdftex.def Info: img/inf4411_lab2_task1_schematics.png used on input li
-ne 78.
-(pdftex.def)             Requested size: 452.9679pt x 397.23439pt.
+ne 63.
+(pdftex.def)             Requested size: 226.48395pt x 198.6136pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 78--79
- [][] 
- []
-
-<img/Transistor_setup.jpg, id=42, 3276.24pt x 2457.18pt>
-File: img/Transistor_setup.jpg Graphic file (type jpg)
-
-<use img/Transistor_setup.jpg>
-Package pdftex.def Info: img/Transistor_setup.jpg used on input line 86.
-(pdftex.def)             Requested size: 452.9679pt x 339.6911pt.
-
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 86--87
- [][] 
- []
-
-<img/task1_pmos_as_a_current_source.png, id=43, 621.67741pt x 466.25807pt>
+<img/task1_pmos_as_a_current_source.png, id=42, 621.67741pt x 466.25807pt>
 File: img/task1_pmos_as_a_current_source.png Graphic file (type png)
 
 <use img/task1_pmos_as_a_current_source.png>
 Package pdftex.def Info: img/task1_pmos_as_a_current_source.png used on input l
-ine 93.
+ine 71.
 (pdftex.def)             Requested size: 452.9679pt x 339.73236pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 71--72
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--78
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--87
+
+ []
+
+<img/Transistor_setup.jpg, id=43, 3276.24pt x 2457.18pt>
+File: img/Transistor_setup.jpg Graphic file (type jpg)
+
+<use img/Transistor_setup.jpg>
+Package pdftex.def Info: img/Transistor_setup.jpg used on input line 93.
+(pdftex.def)             Requested size: 452.9679pt x 339.6911pt.
 
 Overfull \hbox (6.79999pt too wide) in paragraph at lines 93--94
  [][] 
  []
 
-[1] [2 <./img/inf4411_lab2_task1_schematics.png>] [3 <./img/Transistor_setup.jp
-g>] [4 <./img/task1_pmos_as_a_current_source.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 100--105
+[1 <./img/inf4411_lab2_task1_schematics.png>] [2 <./img/task1_pmos_as_a_current
+_source.png (PNG copy)>] [3 <./img/Transistor_setup.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 103--108
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--119
+Underfull \hbox (badness 10000) in paragraph at lines 110--122
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 107--119
+Underfull \hbox (badness 10000) in paragraph at lines 110--122
 
  []
 
-<img/task2_pmos_as_a_current_source.png, id=63, 621.67741pt x 466.25807pt>
+<img/task2_pmos_as_a_current_source.png, id=62, 621.67741pt x 466.25807pt>
 File: img/task2_pmos_as_a_current_source.png Graphic file (type png)
 
 <use img/task2_pmos_as_a_current_source.png>
 Package pdftex.def Info: img/task2_pmos_as_a_current_source.png used on input l
-ine 123.
+ine 126.
 (pdftex.def)             Requested size: 452.9679pt x 339.73236pt.
 
-Overfull \hbox (6.79999pt too wide) in paragraph at lines 123--124
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 126--127
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 129--135
+Underfull \hbox (badness 10000) in paragraph at lines 133--139
 
  []
 
-[5] [6 <./img/task2_pmos_as_a_current_source.png (PNG copy)>]
-Underfull \hbox (badness 10000) in paragraph at lines 138--147
+[4] [5 <./img/task2_pmos_as_a_current_source.png (PNG copy)>]
+<img/inf4411_lab2_task4_schematics.png, id=69, 420.48pt x 469.755pt>
+File: img/inf4411_lab2_task4_schematics.png Graphic file (type png)
+
+<use img/inf4411_lab2_task4_schematics.png>
+Package pdftex.def Info: img/inf4411_lab2_task4_schematics.png used on input li
+ne 147.
+(pdftex.def)             Requested size: 226.48395pt x 253.02599pt.
+
+<img/pmos_and_nmos_setup.jpg, id=70, 3276.24pt x 2457.18pt>
+File: img/pmos_and_nmos_setup.jpg Graphic file (type jpg)
+
+<use img/pmos_and_nmos_setup.jpg>
+Package pdftex.def Info: img/pmos_and_nmos_setup.jpg used on input line 153.
+(pdftex.def)             Requested size: 271.7835pt x 203.81467pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--168
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 138--147
+Underfull \hbox (badness 10000) in paragraph at lines 143--168
 
  []
 
-[7] (./report.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--168
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 143--168
+
+ []
+
+[6 <./img/inf4411_lab2_task4_schematics.png> <./img/pmos_and_nmos_setup.jpg>]
+<img/task4_nmos_as_a_current_source.png, id=75, 621.67741pt x 466.25807pt>
+File: img/task4_nmos_as_a_current_source.png Graphic file (type png)
+
+<use img/task4_nmos_as_a_current_source.png>
+Package pdftex.def Info: img/task4_nmos_as_a_current_source.png used on input l
+ine 171.
+(pdftex.def)             Requested size: 452.9679pt x 339.73236pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 171--172
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 187--190
+
+ []
+
+[7 <./img/task4_nmos_as_a_current_source.png (PNG copy)>]
+<img/task5_vin_vs_vout.png, id=79, 621.67741pt x 466.25807pt>
+File: img/task5_vin_vs_vout.png Graphic file (type png)
+
+<use img/task5_vin_vs_vout.png>
+Package pdftex.def Info: img/task5_vin_vs_vout.png used on input line 208.
+(pdftex.def)             Requested size: 452.9679pt x 339.73236pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 208--209
+ [][] 
+ []
+
+
+<img/task5_single_stage_amplifier_tangent.png, id=80, 621.67741pt x 466.25807pt
+>
+File: img/task5_single_stage_amplifier_tangent.png Graphic file (type png)
+ <use img/task5_single_stage_amplifier_tangent.png>
+Package pdftex.def Info: img/task5_single_stage_amplifier_tangent.png used on i
+nput line 215.
+(pdftex.def)             Requested size: 452.9679pt x 339.73236pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 215--216
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--233
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 225--233
+
+ []
+
+[8 <./img/task5_vin_vs_vout.png (PNG copy)>] [9 <./img/task5_single_stage_ampli
+fier_tangent.png (PNG copy)>]
+File: img/task2_pmos_as_a_current_source.png Graphic file (type png)
+ <use img/task2_pmos_as_a_current_source.png>
+Package pdftex.def Info: img/task2_pmos_as_a_current_source.png used on input l
+ine 236.
+(pdftex.def)             Requested size: 452.9679pt x 339.73236pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 236--237
+ [][] 
+ []
+
+[10] (./report.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 14762 strings out of 493109
- 247351 string characters out of 6122467
- 316000 words of memory out of 5000000
- 17957 multiletter control sequences out of 15000+600000
+ 14793 strings out of 493109
+ 248361 string characters out of 6122467
+ 317094 words of memory out of 5000000
+ 17983 multiletter control sequences out of 15000+600000
  26651 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  61i,15n,96p,403b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/opt/texlive/uio-texmf/texmf-dist/fonts/enc/dvips/cm-super
-/cm-super-t1.enc}{/opt/texlive/uio-texmf/texmf-dist/fonts/enc/dvips/base/8r.enc
-}</opt/texlive/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/opt/texlive/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></op
-t/texlive/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/t
-exlive/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/texl
-ive/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/texlive/
-uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/texlive/ui
-o-texmf/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></opt/texlive/uio-t
-exmf/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></opt/texlive/uio-texm
-f/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></opt/texlive/uio-texmf/t
-exmf-local/fonts/type1/urw/arial/ua1r8a.pfb>
-Output written on report.pdf (8 pages, 6584355 bytes).
+{/opt/texlive/uio-texmf/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{
+/opt/texlive/uio-texmf/texmf-dist/fonts/enc/dvips/base/8r.enc}</opt/texlive/uio
+-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/texlive/uio-t
+exmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></opt/texlive/uio-texm
+f/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/texlive/uio-texmf/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/texlive/uio-texmf/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></opt/texlive/uio-texmf/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/texlive/uio-texmf/texmf-dist
+/fonts/type1/public/cm-super/sfbx1440.pfb></opt/texlive/uio-texmf/texmf-dist/fo
+nts/type1/public/cm-super/sfrm0800.pfb></opt/texlive/uio-texmf/texmf-dist/fonts
+/type1/public/cm-super/sfrm1095.pfb></opt/texlive/uio-texmf/texmf-local/fonts/t
+ype1/urw/arial/ua1r8a.pfb>
+Output written on report.pdf (11 pages, 8264670 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
+ 125 PDF objects out of 1000 (max. 8388607)
+ 71 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

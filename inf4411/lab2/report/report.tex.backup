@@ -29,6 +29,8 @@
 
 \newcommand{\tab}[1]{\hspace{.2\textwidth}\rlap{#1}}
 
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+
 %%%%%%%%%%%%%%%%%% END HEADER
 
 \title{Laboratory Assignment 2}
@@ -48,20 +50,18 @@
 
 \begin{document}
 \ififorside
-        
+%//////////////////////////////////////Task1///////////////////////////////////////////////////////////////////////        
 \section{Task 1}
-
-\colorbox{red!30}{FIXME}\\
-In order to get a voltage reference to V$_{p_bias1}$, we used a potentiometer as seen in figure \ref{fig:sch:task1}.
-\colorbox{red!30}{ENDFIXME}\\
-
-For the task, we used a Vdd = 5V, which is enough for this task (Vds = 5V). 
+The first task was to find a proper bias voltage in order to get a pMOS transitor to deliver a current of $20 \mu A$.
+We chose Vdd to be $5 V$, which is enough for this task (Vds = 5V). 
 This voltage is fixed trough the whole experiment. In the task it is given that the transitor should supply a 20mA current. 
-In order too get this current we created the circut shown in figure \ref{fig:sch:task1}. In this setup we tuned the potensiometer to set the bias voltage V$_{p_bias1}$.
+In order too get this current we created the circut shown in figure \ref{fig:sch:task1}. In order to get a voltage reference to V$_{p_bias1}$, 
+we used a potentiometer of $10k\Omega$ as seen in figure \ref{fig:sch:task1}.
+In this setup we tuned the potensiometer to set the bias voltage V$_{p_bias1}$.
 
 The results for the experiment is shown in the figure REF*******************
 The minimal Vout for this cuircuit to act as an current source is  **************
-Since we probably want to be able to have an ac input, we need some headroom in order to acomodate the signal, both in the positive and negative direction from the setpoint.
+Since we probably want to be able to have an AC input, we need some headroom in order to acomodate the signal, both in the positive and negative direction from the setpoint.
 The amount of headroom should be big enugh so the transistor never goes out of the active region.*********
 
 \colorbox{red!30}{FIXME}\\
@@ -75,7 +75,7 @@ Headroom voltage is required to keep the device in active region MORE DETAILS!\\
     
 \begin{figure}[htbp]
  \centering
-  \fbox{\includegraphics[width=\textwidth]{img/inf4411_lab2_task1_schematics.png}}
+  \fbox{\includegraphics[width=0.5\textwidth]{img/inf4411_lab2_task1_schematics.png}}
   \caption{Transistor setup.}
   \label{fig:sch:task1}	
 \end{figure}
@@ -96,6 +96,7 @@ Headroom voltage is required to keep the device in active region MORE DETAILS!\\
 \end{figure}
 
 \newpage
+%//////////////////////////////////////Task2///////////////////////////////////////////////////////////////////////
 \section{Task 2}
 Now we extend our circut to a current source with a cascode transistor. This is transistor also need proper biasing. The bias for new transistor is also set by potensiometer as seen i figure *****REF.
 Now the minimal voltage difference between Vdd and V$_{p_bias2}$ is ************ in order to get the cuircuit to act as an constant current source.
@@ -125,6 +126,7 @@ Figure \ref{fig:pfet-cascode-pfet} shows plot of output current as function of V
   \label{fig:pfet-cascode-pfet}	
 \end{figure}
 
+%//////////////////////////////////////Task3///////////////////////////////////////////////////////////////////////
 \section{Task 3}
 Using the results form task 1 and task 2 we can estimate values for $V_{eff}$ and the treshold voltage $V_{tp}$.
 For task 1 $V_{eff}$ is calculated from the relationship $Vdd - V_{out}$. For task 2 $V_{eff}$ is calculated from the relationship between $V_{out}$ and $V_{p_bias2}$
@@ -134,14 +136,104 @@ In task 1 we found the minimal voltage for $Vdd - V_{out}$ to be **************.
 Our results are consistent/not-consistent.....
 
 \newpage
+%//////////////////////////////////////Task4///////////////////////////////////////////////////////////////////////
 \section{Task 4}
-Now we want to create an
-Doing the same as we did in Task 1 and Task 2, but here we uses nmos transistors instead.\\
+In this task we were supose to use two nMOS transistors and repete what we did in task 2. Figure \ref{fig:sch:task4} shows the shematics for this setup. 
+Since the package that was used for the previous task only can be configured for three different gate voltages, we had to add an extra package.\\
+\begin{figure}[htbp]
+ \centering
+  \fbox{\includegraphics[width=0.5\textwidth]{img/inf4411_lab2_task4_schematics}}
+  \caption{nMOS transistor setup.}
+  \label{fig:sch:task4}	
+\end{figure}
+\begin{figure}[htbp]
+ \centering
+  \fbox{\includegraphics[width=0.6\textwidth]{img/pmos_and_nmos_setup}}
+  \caption{pMOS and nMOS PCB setup.}
+  \label{fig:pmos_nmos}	
+\end{figure}
 \\
-1. First we maually find the new V$_n\_bias$ for the first nmos transistor at 20 uA.\\
+Also here, we used two potensiometers at $10k\Omega$ to adjust the bias voltages for the transistors. By using a supply voltage at Vdd = 5V, we adjusted the potensiometers
+so that the transistors mached the requrement for a current of $20 {\mu}A$. We found the fist gate voltage ($Vin$) of transistor M3 to be $3.39 V$ refered to $Vdd$.\\ 
+\\
+This voltage was found by applying $5 V$ at Vdd and then keep the sweeping voltage ($V_{sweep}$) constant at $2.5 V$. This was done in order to get a wide range above
+and below $I_D$ of $20 {\mu}A$.\\
+\\
+The second gate voltage ($V_{n\_bias}$) for transistor M4, was then selected by keeping $Vdd$, $V_{n\_bias}$ and $Vin$ constant at the respectively voltages $5$, $2.5$ and $3 V$.
+Then the potensiometer was adjusten to mach the requrement for $20 {\mu}A$. This voltage was found to be $1.95 V$ refered to Vdd.\\
+\\
+The plot of the current as a function of the voltage is shown in Figure \ref{fig:task4_plot}.\\ 
+
+\begin{figure}[htbp]
+ \centering
+  \fbox{\includegraphics[width=\textwidth]{img/task4_nmos_as_a_current_source}}
+  \caption{nMOS transistor as current source.}
+  \label{fig:task4_plot}	
+\end{figure}
+
+Single stage amplifier.
+\\
+1. First we maually find the new $V_{n\_bias}$ for the first nmos transistor at 20 uA.\\
 Uses the same nmos transistor as we did in the lab 1. (port 6(G),7(S) and 8(D))\\
 2. Then we use the voltage that we found in the first task and use it in the next task, whis is applying one more nmos transistor. Here we
 use the ports 9 (S), 10 (G) and 12 (D). (Reference to picture of setup)
 
+
+
+%//////////////////////////////////////Task5///////////////////////////////////////////////////////////////////////
+\section{Task 5}
+We now want to determine a good DC voltage for the input for the amplifier. Since our goal is to have an output voltage 
+verry close to $Vdd/2$, we need to find good bias voltages for $V_{n_bias1}$ and $V_{in}$. We found this volage to be $16 V$, 
+in order to ensure that all transistors are operating. For the bias voltages we used the same relationships to $Vdd$ as in the previos tasks.\\
+
+\begin{enumerate}
+\item \itab{$V_{p_bias1}$:} \tab{1.19 V}
+\item \itab{$V_{p_bias2}$:} \tab{3.39 V}     
+\item \itab{$V_{n_bias1}$:} \tab{12.99V} 
+      \tab{Almost 100\%} 
+\item \itab{SPEC 04:} \tab{Exposure time}
+      \tab{As short as we can get}
+\item \itab{SPEC 05:} \tab{Resolution} 
+      \tab{As high as time lets us}    
+\item \itab{SPEC 06:} \tab{Technology} 
+      \tab{Cadence AMS 0.35 opto}
+\item \itab{SPEC 07:} \tab{Voltage} 
+      \tab{3.3V}
+\end{enumerate}
+
+\begin{figure}[htbp]
+ \centering
+  \fbox{\includegraphics[width=\textwidth]{img/task5_vin_vs_vout}}
+  \caption{Linear amplification.}
+  \label{fig:lin-amp}	
+\end{figure}
+
+\begin{figure}[htbp]
+ \centering
+  \fbox{\includegraphics[width=\textwidth]{img/task5_single_stage_amplifier_tangent}}
+  \caption{Linear amplification with tangent line.}
+  \label{fig:lin-amp-tan}	
+\end{figure}
+
+%//////////////////////////////////////Task4///////////////////////////////////////////////////////////////////////
+\section{Task 6}
+
+%//////////////////////////////////////Task4///////////////////////////////////////////////////////////////////////
+\section{Task 7}
+Qestions to answer:\\
+\\
+If an external capacitance is used, what value? Exact value is needed.\\
+Derive the shematics for the resistive division and include it in the plot.\\
+Plot the -3dB frequency as well as the unity-gain frequency.\\
+Plot the frequency responce of the gain bandwidth with measurement point for at least 20 frequencies, clearly covering the pass-band and cut-off regions.\\
+How can we verify that the RC circuit is not dominating the cut-off?\\
+Dokumenter alle stegene i denne oppgaven veldig detaljert.\\
+
+\begin{figure}[htbp]
+ \centering
+  \fbox{\includegraphics[width=\textwidth]{img/task2_pmos_as_a_current_source.png}}
+  \caption{pFET and cascode pFET as a current cource.}
+  \label{fig:pfet-cascode-pfet}	
+\end{figure}
 
 \end{document}
