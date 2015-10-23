@@ -71,7 +71,21 @@ s = 200;
 f1 = figure;
 f1.Position = [500, 500, 4*s, 3*s];
 
+f2 = figure;
+f2.Position = [500, 500, 4*s, 3*s];
+
 figure(f1)
+plot(-1*flip(v), -1*im, 'LineWidth', 2);
+grid on;
+
+
+title('pMOS as a current source - Ids vs Vds');
+xlabel('Vds');
+ylabel('Ids');
+
+
+
+figure(f2)
 plot(flip(v), im, 'LineWidth', 2);
 grid on;
 

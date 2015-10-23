@@ -73,11 +73,11 @@ f2 = figure;
 f2.Position = [500, 500, 4*s, 3*s];
 
 figure(f1)
-plot(v, im, 'LineWidth', 2);
+plot(flip(v), im, 'LineWidth', 2);
 grid on;
 
-title('nMOS as a current source - Ids vs Vds');
-xlabel('Vds');
+title('nMOS as a current source - Ids vs Vout');
+xlabel('Vout');
 ylabel('Ids');
 
 legend(sprintf('V_{in}: %2f', v_in));

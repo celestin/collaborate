@@ -19,7 +19,7 @@ v_n_bias1 = 3.010;  % (GND)
 v_in = 2; % (GND)
 
 v_sweep = 2.2;
-num_samples = 250;
+num_samples = 100;
 
 % init equiment
 HPE3631_Init;
@@ -102,11 +102,11 @@ figure(f1)
 plot(v, im, 'LineWidth', 2);
 grid on;
 
-title('nMOS as a current source - Ids vs Vds');
-xlabel('Vds');
+title('nMOS as a current source - Ids vs Vin');
+xlabel('Vin');
 ylabel('Ids');
 
-legend(sprintf('V_{in}: %2f', v_in));
+%legend(sprintf('V_{in}: %2f', v_in));
 
 
 figure(f2)

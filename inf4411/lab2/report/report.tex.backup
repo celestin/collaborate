@@ -50,99 +50,90 @@
 
 \begin{document}
 \ififorside
+
+\tableofcontents
+
+\newpage
 %//////////////////////////////////////Task1///////////////////////////////////////////////////////////////////////        
 \section{Task 1}
-The first task was to find a proper bias voltage in order to get a pMOS transitor to deliver a current of $20 \mu A$.
-We chose Vdd to be $5 V$, which is enough for this task (Vds = 5V). 
-This voltage is fixed trough the whole experiment. In the task it is given that the transitor should supply a 20mA current. 
-In order too get this current we created the circut shown in figure \ref{fig:sch:task1}. In order to get a voltage reference to V$_{p_bias1}$, 
-we used a potentiometer of $10k\Omega$ as seen in figure \ref{fig:sch:task1}.
-In this setup we tuned the potensiometer to set the bias voltage V$_{p_bias1}$.
-
-The results for the experiment is shown in the figure REF*******************
-The minimal Vout for this cuircuit to act as an current source is  **************
-Since we probably want to be able to have an AC input, we need some headroom in order to acomodate the signal, both in the positive and negative direction from the setpoint.
-The amount of headroom should be big enugh so the transistor never goes out of the active region.*********
-
-\colorbox{red!30}{FIXME}\\
-When we selected the V$_{p_bias1}$, we coupled up the circuit as shown in figure (figure ref). In the labdescription it was
-gived that the bias current should be 20$\mu$A for the transistor to be in the active region.
-V$_{p\_bias}$ = 1.196V\\
-rds = 391k$\varOmega$\\
-minimal V$_{out}$ = 1.818V\\
-Headroom voltage is required to keep the device in active region MORE DETAILS!\\
-\colorbox{red!30}{ENDFIXME}\\
-    
-\begin{figure}[htbp]
+The first task was to find a proper bias voltage in order to get a pMOS transitor to deliver a current of $20 {\mu} A$.
+The transistor that was used is a MC14007UBCP.
+We chose $V_{DD}$ i.e. $V_s$ to be $5 V$ and $V_d$ to be $2.5 V$, which results Vsd to be $2.5 V$. We choose this so that the $20 {\mu} A$ point
+lies around the middle when sweeing $V_{sweep} = 0-5V$ and hence we can see the plot before and after this point. 
+\\
+The circut is shown in Figure \ref{fig:sch:task1}.\\
+\begin{figure}[!htbp]
  \centering
   \fbox{\includegraphics[width=0.5\textwidth]{img/inf4411_lab2_task1_schematics.png}}
   \caption{Transistor setup.}
   \label{fig:sch:task1}	
 \end{figure}
-
-
-\begin{figure}[htbp]
+\\
+In order to get a proper bias voltage ($V_{p\_bias1}$), 
+we used a potentiometer of $10k\Omega$ which is used as a voltage divider in order to bias pMOS. 
+This bias voltage was found to be $1.196 V$ realtive to $V_{DD}$ in order to match the given drain current.\\
+Similarly output resistance $r_{ds} = 391k\varOmega$.
+The result of the experiment is shown in the Figure \ref{fig:pmos-as-current-source}.\\
+\\
+The minimal Vout for this circuit to act as an current source is $V_{DD} - V_{ds} = V_{out}$, $5 V - 0.5 V = 4.5 V$
+\begin{figure}[!htbp]
  \centering
-  \fbox{\includegraphics[width=\textwidth]{img/Transistor_setup.jpg}}
+  \fbox{\includegraphics[width=0.5\textwidth]{img/Transistor_setup.jpg}}
   \caption{Transistor setup.}
   \label{fig:tran-setup}	
 \end{figure}
-
-\begin{figure}[htbp]
+\newpage
+\begin{figure}[!htbp]
  \centering
   \fbox{\includegraphics[width=\textwidth]{img/task1_pmos_as_a_current_source.png}}
   \caption{pmos as a current source.}
   \label{fig:pmos-as-current-source}	
-\end{figure}
-
+\end{figure}    
 \newpage
 %//////////////////////////////////////Task2///////////////////////////////////////////////////////////////////////
 \section{Task 2}
-Now we extend our circut to a current source with a cascode transistor. This is transistor also need proper biasing. The bias for new transistor is also set by potensiometer as seen i figure *****REF.
-Now the minimal voltage difference between Vdd and V$_{p_bias2}$ is ************ in order to get the cuircuit to act as an constant current source.
-Figure ***** shows a plot of the \colorbox{blue!30}{output current} as a function of V$_{out}$. \\
-The output resistance of this cuircuit is estmated to ***********.\\
-The minimial voltage $Vdd - V_{out}$ for the cuircuit is ***************.\\
-
-
-\colorbox{red!30}{FIXME}\\
-Notes:\\
-- Used two potentiometers to make the desirable voltage for V$_{p_bias1}$ and V$_{p_bias2}$.\\
-- VDD (+25V port) = 5V\\
-- V$_{sweep}$ = 2.5V\\
-- V$_{p_bias1}$ = 1.196V (From last task)\\
-- V$_{p_bias2}$ = 3.39V at 20 $\mu$ A\\
-- Minimum voltage different is VDD - V$_{p\_bias2}$ = 5V - 3.39V = \underline{\underline{1.61V}}\\
-- Minimun output voltage is 2.83V as seen in Figure \ref{fig:pfet-cascode-pfet}.\\
-- Output resistance is 13.35M$\Omega$\\
-\\
-\colorbox{red!30}{ENDFIXME}\\
-
-Figure \ref{fig:pfet-cascode-pfet} shows plot of output current as function of V$_{out}$.
+Now we extend our circut to a current source with a cascode transistor. This transistor also need proper biasing. 
+The bias for new transistor is also set by potentiometer as seen i figure \ref{fig:sch:task2}.\\
 \begin{figure}[htbp]
+ \centering
+  \fbox{\includegraphics[width=0.5\textwidth]{img/inf4411_lab2_task2_schematics}}
+  \caption{pMOS schematics.}
+  \label{fig:sch:task2}	
+\end{figure}\\
+Now the minimal voltage difference between $V_{DD}$ and $V_{p\_bias2}$ is $3.39 V$ relative to $V_{DD}$ in order to get the circuit 
+to act as an constant current source. Figure \ref{fig:pfet-cascode-pfet} shows a plot of the output current as a function 
+of $V_{out}$. \\
+The output resistance of this cuircuit is estmated to $13.35 M\Omega$.\\
+The minimial voltage $V_{DD} - V_{out}$ for the cuircuit is $5V - 3V = 2V$. \\
+\newpage
+Figure \ref{fig:pfet-cascode-pfet} shows plot of output current as function of $V_{out}$.
+\begin{figure}[!htbp]
  \centering
   \fbox{\includegraphics[width=\textwidth]{img/task2_pmos_as_a_current_source.png}}
   \caption{pFET and cascode pFET as a current cource.}
   \label{fig:pfet-cascode-pfet}	
 \end{figure}
-
+\newpage
 %//////////////////////////////////////Task3///////////////////////////////////////////////////////////////////////
 \section{Task 3}
 Using the results form task 1 and task 2 we can estimate values for $V_{eff}$ and the treshold voltage $V_{tp}$.
-For task 1 $V_{eff}$ is calculated from the relationship $Vdd - V_{out}$. For task 2 $V_{eff}$ is calculated from the relationship between $V_{out}$ and $V_{p_bias2}$
+For task 1 $V_{eff}$ is calculated from the relationship $V_{DD} - V_{out}$. For task 2 $V_{eff}$ is calculated from the 
+relationship between $V_{out}$ and $V_{p\_bias2}$
 \\
-In task 1 we found the minimal voltage for $Vdd - V_{out}$ to be **************. Using this value to estimate $V_{eff}$ we get ***********.\\
+In task 1 we found the minimal voltage for $V_{DD} - V_{out}$ to be . Using this value to estimate $V_{eff}$ we get ***********.\\
 \\
 Our results are consistent/not-consistent.....
 
 \newpage
 %//////////////////////////////////////Task4///////////////////////////////////////////////////////////////////////
 \section{Task 4}
-In this task we were supose to use two nMOS transistors and repete what we did in task 2. Figure \ref{fig:sch:task4} shows the shematics for this setup. 
-Since the package that was used for the previous task only can be configured for three different gate voltages, we had to add an extra package.\\
+In this task we were supose to use two nMOS transistors and repeat what we did in task 2. Figure \ref{fig:sch:task4} shows 
+the shematics for this setup. Since the package that was used for the previous task only can be configured for three 
+different gate voltages, we had to add an extra package.\\
+\\
 \begin{figure}[htbp]
  \centering
-  \fbox{\includegraphics[width=0.5\textwidth]{img/inf4411_lab2_task4_schematics}}
+  \fbox{\includegraphics[width=0.5\textwidth]{img/inf4411_lab2_task4_schematics_corrected}}
   \caption{nMOS transistor setup.}
   \label{fig:sch:task4}	
 \end{figure}
@@ -153,14 +144,22 @@ Since the package that was used for the previous task only can be configured for
   \label{fig:pmos_nmos}	
 \end{figure}
 \\
-Also here, we used two potensiometers at $10k\Omega$ to adjust the bias voltages for the transistors. By using a supply voltage at Vdd = 5V, we adjusted the potensiometers
-so that the transistors mached the requrement for a current of $20 {\mu}A$. We found the fist gate voltage ($Vin$) of transistor M3 to be $3.39 V$ refered to $Vdd$.\\ 
+Also here, we used two potentiometers at $10k\Omega$ to adjust the bias voltages for the nMOS transistors. By using a 
+supply voltage at $V_{DD} = 5V$, we adjusted the potentiometers so that the transistors macthed the requirements for a current 
+of $20 {\mu}A$. We found the first gate voltage ($V_{in}$) i.e. point of operation of transistor M3 to be $3.39 V$ refered 
+to $V_{DD}$.\\ 
 \\
-This voltage was found by applying $5 V$ at Vdd and then keep the sweeping voltage ($V_{sweep}$) constant at $2.5 V$. This was done in order to get a wide range above
-and below $I_D$ of $20 {\mu}A$.\\
+This voltage was found by applying $5 V$ at $V_{DD}$ and then keep the sweeping voltage ($V_{sweep}$) constant at $2.5 V$. 
+$V_{sweep}$ is kept constant in order to get a wide range above and below $I_D$ of $20 {\mu}A$.\\
 \\
-The second gate voltage ($V_{n\_bias}$) for transistor M4, was then selected by keeping $Vdd$, $V_{n\_bias}$ and $Vin$ constant at the respectively voltages $5$, $2.5$ and $3 V$.
-Then the potensiometer was adjusten to mach the requrement for $20 {\mu}A$. This voltage was found to be $1.95 V$ refered to Vdd.\\
+The second gate voltage ($V_{n\_bias}$) for transistor M4, was then selected by keeping $V_{DD}$, $V_{n\_bias}$ and $V_{in}$ 
+constant at the respectively voltages $5$, $2.5$ and $3 V$.Then the potensiometer was adjusted to mach the requrement for $20 {\mu}A$. 
+This voltage was found to be $1.95 V$ refered to $V_{DD}$.\\
+\\
+$V_{n\_bias}$ is set somewhat bigger than minimum value in order to keep both nMOS transistors in deep saturation and in order to
+keep the point of operation in linear region.\\
+\\
+By finding $r_{out}$ we divided the delta voltage by the delta current (${\Delta V}/{\Delta I} = r_{out}$) and got $28M {\Omega}$.\\
 \\
 The plot of the current as a function of the voltage is shown in Figure \ref{fig:task4_plot}.\\ 
 
@@ -170,54 +169,59 @@ The plot of the current as a function of the voltage is shown in Figure \ref{fig
   \caption{nMOS transistor as current source.}
   \label{fig:task4_plot}	
 \end{figure}
-
-Single stage amplifier.
-\\
-1. First we maually find the new $V_{n\_bias}$ for the first nmos transistor at 20 uA.\\
-Uses the same nmos transistor as we did in the lab 1. (port 6(G),7(S) and 8(D))\\
-2. Then we use the voltage that we found in the first task and use it in the next task, whis is applying one more nmos transistor. Here we
-use the ports 9 (S), 10 (G) and 12 (D). (Reference to picture of setup)
-
-
-
+\newpage
 %//////////////////////////////////////Task5///////////////////////////////////////////////////////////////////////
 \section{Task 5}
 We now want to determine a good DC voltage for the input for the amplifier. Since our goal is to have an output voltage 
-verry close to $Vdd/2$, we need to find good bias voltages for $V_{n_bias1}$ and $V_{in}$. We found this volage to be $16 V$, 
+verry close to $Vdd/2$, we need to find good bias voltages for $V_{n\_bias1}$ and $V_{in}$. We found this volage to be $16 V$, 
 in order to ensure that all transistors are operating. For the bias voltages we used the same relationships to $Vdd$ as in the previos tasks.\\
-
+\\
+Tabel:\\
 \begin{enumerate}
-\item \itab{$V_{p_bias1}$:} \tab{1.19 V}
+\item \itab{$V_{DD}$:} \tab{16 V}
+\item \itab{$V_{p_bias1}$:} \tab{1.196 V}
 \item \itab{$V_{p_bias2}$:} \tab{3.39 V}     
-\item \itab{$V_{n_bias1}$:} \tab{12.99V} 
-      \tab{Almost 100\%} 
-\item \itab{SPEC 04:} \tab{Exposure time}
-      \tab{As short as we can get}
-\item \itab{SPEC 05:} \tab{Resolution} 
-      \tab{As high as time lets us}    
-\item \itab{SPEC 06:} \tab{Technology} 
-      \tab{Cadence AMS 0.35 opto}
-\item \itab{SPEC 07:} \tab{Voltage} 
-      \tab{3.3V}
+\item \itab{$V_{n_bias1}$:} \tab{3.01 V}  
+\item \itab{$V_{sweep}$} \tab{0 - 6 V}
 \end{enumerate}
-
+Note: All voltages is with respect to $V_{DD}$.\\ 
+\\
+The plot of the measurement is shown in Figure \ref{fig:lin-amp}.\\
+\\
 \begin{figure}[htbp]
  \centering
   \fbox{\includegraphics[width=\textwidth]{img/task5_vin_vs_vout}}
   \caption{Linear amplification.}
   \label{fig:lin-amp}	
 \end{figure}
-
+\\
+The input range for which the amplifier behaves linearly is approximantely between $1.962 V$ and $1.994 V$ which is $32mV$. 
+The output linear range is between $14.05 V$ and $0.2334 V$ which is $13.82 V$.\\
+From the plot in Figure \ref{fig:lin-amp-tan}, we find the the amplification to be $A_v = -619.25$.\\
+The center of the linear region is in the point $(1.9847 , 7.7073)$ in the plot in Figure \ref{fig:lin-amp-tan}.\\
+Equation for linear approximation is $V_{out} = A_v ( V_{in} - 1.9847 ) + 7.7073$. The linear approximation plot is 
+shown in Figure \ref{fig:lin-amp-tan}.\\
 \begin{figure}[htbp]
  \centering
   \fbox{\includegraphics[width=\textwidth]{img/task5_single_stage_amplifier_tangent}}
   \caption{Linear amplification with tangent line.}
   \label{fig:lin-amp-tan}	
 \end{figure}
-
+\newpage
 %//////////////////////////////////////Task4///////////////////////////////////////////////////////////////////////
 \section{Task 6}
-
+Our configuration of cascoded amplifier is a telescopic cascade amplifier whose voltage gain is given as
+$Av = -g_m || R_L$
+where $g_m$ is product of transconductance of M3 and M4 and $R_L$ is result of parallel resitance from task 2 and task 4.\\
+\\
+A plot of $I_{DS}$ and $V_{in}$ is shown in Figure \ref{fig:ids_vs_vin}.\\
+\begin{figure}[htbp]
+ \centering
+  \fbox{\includegraphics[width=\textwidth]{img/task5_vin_vs_ids}}
+  \caption{$I_{DS}$ as funtion of $V_{in}$.}
+  \label{fig:ids_vs_vin}	
+\end{figure}
+\newpage
 %//////////////////////////////////////Task4///////////////////////////////////////////////////////////////////////
 \section{Task 7}
 Qestions to answer:\\
@@ -233,7 +237,7 @@ Dokumenter alle stegene i denne oppgaven veldig detaljert.\\
  \centering
   \fbox{\includegraphics[width=\textwidth]{img/task2_pmos_as_a_current_source.png}}
   \caption{pFET and cascode pFET as a current cource.}
-  \label{fig:pfet-cascode-pfet}	
+  \label{fig:pfet-cascode-pfet1}	
 \end{figure}
 
 \end{document}
