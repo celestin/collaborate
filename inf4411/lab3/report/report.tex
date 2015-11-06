@@ -56,9 +56,48 @@
 \newpage
 %//////////////////////////////////////Task1///////////////////////////////////////////////////////////////////////        
 \section{Task 1}
+The circuit shown in Figure \ref{fig:chem} shows the chematic drawn in Cadence for the given curcuit.
+\begin{figure}[!htbp]
+ \centering
+  \fbox{\includegraphics[width=\textwidth]{img/chematic_bi-color}}
+  \caption{Chematic drawing from Cadence.}
+  \label{fig:chem}	
+\end{figure}
+
 
 \section{Task 2}
-
+\textbf{1.1}\\
+The simulation parameters we used for this simulation is listed below:\\
+\begin{enumerate}
+  \item \itab{$V_{DD}$:} \tab{3.3 V}
+  \item \itab{$V_{nzero}$:} \tab{500 mV} \tab{(DC-Offset)}
+  \item \itab{$V_{step}$:} 
+  \begin{enumerate}
+    \item \itab{$Amplitude$:} \tab{$50 mV$}
+    \item \itab{$Rise time$:} \tab{$100 ns$}
+  \end{enumerate}
+  \item \itab{W/L} \tab{$10\mu m/0.35\mu m$}  
+  \item \itab{$V_{sweep}$} \tab{0 - 6 V}
+\end{enumerate}
+A plot of the outpu and input for the circuit is shown in Figure \ref{fig:sim:ring}. From the plot we can se that 
+after a \textit{steep} step we get oscillations on the output that reaches $Vdd$. The peak to peak voltage is $1.2 V$.
+The simulation is so resource intencive that we were forced to only run the simulation for a short time (or shorter 
+than the task spesified).\\
+\begin{figure}[!htbp]
+ \centering
+  \fbox{\includegraphics[width=\textwidth]{img/simulation_with_ringing}}
+  \caption{Simulation with ringing.}
+  \label{fig:sim:ring}	
+\end{figure}
+\newpage
+\textbf{1.2}\\
+The AC responce is plottet in Figure \ref{fig:ac:responce}\\
+\begin{figure}[!htbp]
+ \centering
+  \fbox{\includegraphics[width=\textwidth]{img/ac_responce}}
+  \caption{Plot of AC responce.}
+  \label{fig:ac:responce}	
+\end{figure}
 \section{Task 3}
 
 \section{Task 4}

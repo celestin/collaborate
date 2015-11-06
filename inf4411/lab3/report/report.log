@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.7)  30 OCT 2015 13:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.7)  5 NOV 2015 16:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1012,25 +1012,71 @@ m/ifi-kompendium-forside-eng.pdf>] (./report.toc)
 \tf@toc=\write3
 \openout3 = `report.toc'.
 
- [1] [2] (./report.aux) ) 
+ [1]
+<img/chematic_bi-color.png, id=47, 1296.34312pt x 689.57625pt>
+File: img/chematic_bi-color.png Graphic file (type png)
+
+<use img/chematic_bi-color.png>
+Package pdftex.def Info: img/chematic_bi-color.png used on input line 62.
+(pdftex.def)             Requested size: 452.9679pt x 240.95546pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 62--63
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 69--71
+
+ []
+
+<img/simulation_with_ringing.png, id=49, 1431.84938pt x 705.38531pt>
+File: img/simulation_with_ringing.png Graphic file (type png)
+
+<use img/simulation_with_ringing.png>
+Package pdftex.def Info: img/simulation_with_ringing.png used on input line 88.
+
+(pdftex.def)             Requested size: 452.9679pt x 223.14471pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 88--89
+ [][] 
+ []
+
+[2 <./img/chematic_bi-color.png>]
+<img/ac_responce.png, id=58, 1431.84938pt x 705.38531pt>
+File: img/ac_responce.png Graphic file (type png)
+
+<use img/ac_responce.png>
+Package pdftex.def Info: img/ac_responce.png used on input line 97.
+(pdftex.def)             Requested size: 452.9679pt x 223.14471pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 97--98
+ [][] 
+ []
+
+[3 <./img/simulation_with_ringing.png> <./img/ac_responce.png>] (./report.aux) 
+) 
 Here is how much of TeX's memory you used:
- 14718 strings out of 493109
- 246449 string characters out of 6122467
- 313981 words of memory out of 5000000
- 17919 multiletter control sequences out of 15000+600000
- 22793 words of font info for 35 fonts, out of 8000000 for 9000
+ 14758 strings out of 493109
+ 247187 string characters out of 6122467
+ 316005 words of memory out of 5000000
+ 17951 multiletter control sequences out of 15000+600000
+ 26593 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 61i,15n,96p,403b,341s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/opt/texlive/uio-texmf/texmf-dist/fonts/enc/dvips/cm-
-super/cm-super-t1.enc}{/opt/texlive/uio-texmf/texmf-dist/fonts/enc/dvips/base/8
-r.enc}</opt/texlive/uio-texmf/texmf-dist/fonts/type1/public/cm-super/sfbx1095.p
-fb></opt/texlive/uio-texmf/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb>
-</opt/texlive/uio-texmf/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></o
-pt/texlive/uio-texmf/texmf-local/fonts/type1/urw/arial/ua1r8a.pfb>
-Output written on report.pdf (3 pages, 5021124 bytes).
+ 61i,15n,96p,403b,361s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/opt/texlive/uio-texmf/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/
+opt/texlive/uio-texmf/texmf-dist/fonts/enc/dvips/base/8r.enc}</opt/texlive/uio-
+texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></opt/texlive/uio-te
+xmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/texlive/uio-texmf
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/texlive/uio-texmf/te
+xmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></opt/texlive/uio-texmf/texmf
+-dist/fonts/type1/public/cm-super/sfbx1440.pfb></opt/texlive/uio-texmf/texmf-di
+st/fonts/type1/public/cm-super/sfrm1095.pfb></opt/texlive/uio-texmf/texmf-dist/
+fonts/type1/public/cm-super/sfti1095.pfb></opt/texlive/uio-texmf/texmf-local/fo
+nts/type1/urw/arial/ua1r8a.pfb>
+Output written on report.pdf (4 pages, 5223014 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 35 compressed objects within 1 object stream
+ 92 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

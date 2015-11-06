@@ -1,0 +1,19 @@
+(envOpts analysisOrder) ("tran" "ac")
+(envOpts autoDisplay) t
+(envOpts cmd64bit) nil
+(envOpts cpfIsPommardEnabled) t
+(envOpts emirEnable) nil
+(envOpts emirSumList) nil
+(envOpts enableArclength) nil
+(envOpts firstRun) t
+(envOpts paramRangeCheckFile) "/ifi/asgard/project0/nanos/design_kit/AMS_C035_HK410_opto/spectre/ams_range.lmts"
+(envOpts pllPlugin) ""
+(envOpts pllWizardinfo) ""
+(envOpts printComments) nil
+(envOpts restart) ""
+(envOpts savestate) ""
+(envOpts sst2usecolon) nil
+(envOpts stopViewList) ("spectre" "ahdl" "veriloga")
+(envOpts switchViewList) ("spectre" "cmos_sch" "schematic")
+(envOpts userCmdLineOption) ""
+(envOpts vcoType) ""
