@@ -83,6 +83,9 @@ A plot of the outpu and input for the circuit is shown in Figure \ref{fig:sim:ri
 after a \textit{steep} step we get oscillations on the output that reaches $Vdd$. The peak to peak voltage is $1.2 V$.
 The simulation is so resource intencive that we were forced to only run the simulation for a short time (or shorter 
 than the task spesified).\\
+
+
+
 \begin{figure}[!htbp]
  \centering
   \fbox{\includegraphics[width=\textwidth]{img/simulation_with_ringing}}
@@ -98,6 +101,9 @@ The AC responce is plottet in Figure \ref{fig:ac:responce}\\
   \caption{Plot of AC responce.}
   \label{fig:ac:responce}	
 \end{figure}
+
+The frequency of the oscillations is about 24 MHz in the cadence simulation. There is a maximum at 120MHz in the AC-simulation. The   resonance appears to start at 24MHz, witch could give rise to the ringing on the output. 
+
 \section{Task 3}
 
 \section{Task 4}
