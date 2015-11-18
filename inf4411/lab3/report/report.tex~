@@ -79,10 +79,13 @@ The simulation parameters we used for this simulation is listed below:\\
   \item \itab{W/L} \tab{$10\mu m/0.35\mu m$}  
   \item \itab{$V_{sweep}$} \tab{0 - 6 V}
 \end{enumerate}
-A plot of the outpu and input for the circuit is shown in Figure \ref{fig:sim:ring}. From the plot we can se that 
+A plot of the output and input for the circuit is shown in Figure \ref{fig:sim:ring}. From the plot we can se that 
 after a \textit{steep} step we get oscillations on the output that reaches $Vdd$. The peak to peak voltage is $1.2 V$.
 The simulation is so resource intencive that we were forced to only run the simulation for a short time (or shorter 
 than the task spesified).\\
+
+
+
 \begin{figure}[!htbp]
  \centering
   \fbox{\includegraphics[width=\textwidth]{img/simulation_with_ringing}}
@@ -98,9 +101,33 @@ The AC responce is plottet in Figure \ref{fig:ac:responce}\\
   \caption{Plot of AC responce.}
   \label{fig:ac:responce}	
 \end{figure}
+
+The frequency of the oscillations is about 24 MHz in the cadence simulation. There is a maximum at 120MHz in the AC-simulation. The   resonance appears to start at 24MHz, witch could give rise to the ringing on the output. 
+
 \section{Task 3}
 
 \section{Task 4}
+
+\section{Task 5}
+Figure \ref{fig:pcb} shows the PCB for this task. We decided to make a new PCB because the awailable transistor in the lab, was not the same as in the previos labs.
+\begin{figure}[!htbp]
+ \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{img/pcb}}
+  \caption{PCB for task 5.}
+  \label{fig:pcb}	
+\end{figure}
+In the task, it was given that $V_{DD}$ was suppose to be $10 V$. For $V_{DD}$ we used the voltage source available in the lab, and used the $+ 25V$ port.
+The voltage for $V_{nzero}$ was also provided from the voltage source, using the $+ 6V$ port.\\
+\\
+To find a proper $V_{nzero}$, we connenced the oscilloscope to the output. By doing this, we could determine which value for $V_{nzero}$ that gave the 
+most symetrical outout. We found this bias voltage to be $3.8V$. When this was set, we made a simple matlab script (see appendix X), controlling the 
+voltage supply and the oscilloscope. The plot for the output can be seen in Figure \ref{fig:oscil:out}.
+\begin{figure}[!htbp]
+ \centering
+  \fbox{\includegraphics[width=\textwidth]{img/task5_oscillating_output}}
+  \caption{Oscillating output at Vdd/2.}
+  \label{fig:oscil:out}	
+\end{figure}
 
 %\begin{figure}[htbp]
 % \centering
