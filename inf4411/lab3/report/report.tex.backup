@@ -119,9 +119,12 @@ Figure \ref{fig:pcb} shows the PCB for this task. We decided to make a new PCB b
 In the task, it was given that $V_{DD}$ was suppose to be $10 V$. For $V_{DD}$ we used the voltage source available in the lab, and used the $+ 25V$ port.
 The voltage for $V_{nzero}$ was also provided from the voltage source, using the $+ 6V$ port.\\
 \\
-To find a proper $V_{nzero}$, we connenced the oscilloscope to the output. By doing this, we could determine which value for $V_{nzero}$ that gave the 
+To find a proper $V_{nzero}$, we connencted the oscilloscope to the output. By doing this, we could determine which value for $V_{nzero}$ that gave the 
 most symetrical outout. We found this bias voltage to be $3.8V$. When this was set, we made a simple matlab script (see appendix X), controlling the 
-voltage supply and the oscilloscope. The plot for the output can be seen in Figure \ref{fig:oscil:out}.
+voltage supply and the oscilloscope. The plot for the output can be seen in Figure \ref{fig:oscil:out}.\\
+\\
+The circuit is not stable. What we see from the plot in Figure \ref{fig:oscil:out} is oscillation/ringing. The frequency for the oscillation is
+$5.348 MHz$.
 \begin{figure}[!htbp]
  \centering
   \fbox{\includegraphics[width=\textwidth]{img/task5_oscillating_output}}
@@ -129,6 +132,27 @@ voltage supply and the oscilloscope. The plot for the output can be seen in Figu
   \label{fig:oscil:out}	
 \end{figure}
 
+\section{Task 6}
+In this task, we have cutted the feedback loop. Since voltage sources are in the lab, we soldered a potensiometer to the PCB
+in order to make a proper $V_{nzero}$. The task is saying that we need to separate the two inputs for $V_{nzero}$, and create a proper $V_{pzero}$.
+Instead of breaking the circuit at the point where $V_{pzero}$ is labled (labeled) in the lab descrition, we applied different voltages for the two 
+$V_{nzero}$ points, and found a proper $V_{pzero}$. 
+\\
+\\
+The linear point in the plot, is probably a average plot of the oscillation. This can be shown if we compare the two points in figures \ref{fig:vnzero:vout} and \ref{fig:scope:plot:lin}.
+
+\begin{figure}[!htbp]
+ \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{img/task6_vnbias_vs_vout}}
+  \caption{Plot og $V_{nzero}$ vs Vout.}
+  \label{fig:vnzero:vout}	
+\end{figure}
+\begin{figure}[!htbp]
+ \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{img/task6_scope_plot_lin_area}}
+  \caption{Plot from oscilloscope for the linear area.}
+  \label{fig:scope:plot:lin}	
+\end{figure}
 %\begin{figure}[htbp]
 % \centering
 %  \fbox{\includegraphics[width=\textwidth]{img/pcb_setup}}

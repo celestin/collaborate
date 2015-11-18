@@ -12,7 +12,7 @@ amps = 10e-3;
 
 v_dd = 10; % port +25V
 v_bias = 3.8; % port +6V
-num_samples = 100;
+num_samples = 20;
 
 % init equiment
 HPE3631_Init;
@@ -61,7 +61,7 @@ HPE3631_SetVolt (2, 0);
 HPE3631_SetVolt (3, 0);
 %HPE3631_Disable ();
 
-
+[time, data] = HP54622_GetData(HP54622_DefaultAdr);
 %% Plot results
 s = 200;
 f1 = figure;

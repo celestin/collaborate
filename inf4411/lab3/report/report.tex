@@ -132,6 +132,43 @@ $5.348 MHz$.
   \label{fig:oscil:out}	
 \end{figure}
 
+\section{Task 6}
+In this task, we have cutted the feedback loop. Since voltage sources are in the lab, we soldered a potensiometer to the PCB
+in order to make a proper $V_{nzero}$. The task is saying that we need to separate the two inputs for $V_{nzero}$, and create a proper $V_{pzero}$.
+Instead of breaking the circuit at the point where $V_{pzero}$ is labled (labeled) in the lab descrition, we applied different voltages for the two 
+$V_{nzero}$ points, and found a proper $V_{pzero}$. 
+\\
+\\
+The linear line segment in the plot, is the an average plot of the oscillatios. As the bias voltage change the duty cycle of the osccilations change, moving the avraged DC value measured. The frequency of the oscillations is about 135 MHz. 
+The estimated line (shown in red) is probably a more acurate depiction of the gain.
+This can be seen if we compare the two points in figures \ref{fig:vnzero:vout} and \ref{fig:scope:plot:lin}.\\
+\\
+From the measurment we calculate the gain to be -99,3226.\\
+\\
+Points:\\
+P1 = (3,926 , 9,973)\\
+P2 = (4,019 , 0,736)\\
+\\
+Equation:
+\begin{center}
+$m = (Y2 - Y1) / (X2 - X1)$\\
+$Y = m(X - X1) + Y1$\\
+$Y = -99,3 * (X - 3,926) + 9,973$
+\end{center}
+We were not able to get the exact point of operation do to oscillations at the output. 
+
+\begin{figure}[!htbp]
+ \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{img/task6_vnbias_vs_vout}}
+  \caption{Plot og $V_{nzero}$ vs Vout.}
+  \label{fig:vnzero:vout}	
+\end{figure}
+\begin{figure}[!htbp]
+ \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{img/task6_scope_plot_lin_area}}
+  \caption{Plot from oscilloscope for the linear area.}
+  \label{fig:scope:plot:lin}	
+\end{figure}
 %\begin{figure}[htbp]
 % \centering
 %  \fbox{\includegraphics[width=\textwidth]{img/pcb_setup}}
