@@ -21,15 +21,14 @@ HPE3631_SetILimit (2, amps);
 % HP33120_Init;
 
 HPE3631_SetVolt (2, v_dd); % Uses port 2 (+25V) as v_dd
-HPE3631_SetVolt (1, v_bias); % Uses port 1 (+6V) as the sweep voltage
+ HPE3631_SetVolt (1, v_bias); % Uses port 1 (+6V) as the sweep voltage
 
 % HP33120_SetFreq(100e3);
 
- pause (1.8);
- HP54622_AutoScale(1);
+  pause (1.8);
+  HP54622_AutoScale(1);
 
-[time, data] = HP54622_GetData(HP54622_DefaultAdr);
-
+ [time, data] = HP54622_GetData(HP54622_DefaultAdr);
 
 
 %% Plot results
