@@ -21,6 +21,10 @@ HPE3631_SetILimit (2, amps);
 HP34401_Init;
 HP34401_SetMode('VD');
 
+% % init equiment function generator
+% HP33120_Init;
+% HP33120_SetFreq(100e3); % Set a frewuency
+
 HPE3631_SetVolt (2, v_dd); % Uses port 2 (+25V) as v_dd
 
 v = linspace (3.76 , 3.82, num_samples);

@@ -2,6 +2,12 @@
 \contentsline {section}{\numberline {1}Task 1}{2}
 \contentsline {section}{\numberline {2}Task 2}{2}
 \contentsline {section}{\numberline {3}Task 3}{3}
+<<<<<<< HEAD
 \contentsline {section}{\numberline {4}Task 4}{5}
 \contentsline {section}{\numberline {5}Task 5}{5}
 \contentsline {section}{\numberline {6}Task 6}{5}
+=======
+\contentsline {section}{\numberline {4}Task 4}{6}
+\contentsline {section}{\numberline {5}Task 5}{8}
+\contentsline {section}{\numberline {6}Task 6}{9}
+>>>>>>> cae21a330f37b17a249ebd41bf443968cc6a9834

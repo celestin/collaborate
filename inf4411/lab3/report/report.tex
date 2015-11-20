@@ -108,6 +108,7 @@ The frequency of the oscillations is about 24 MHz in the cadence simulation. The
 \section{Task 3}
 In order to find the value of $C_{c1}$ which corresponds to different phase margins, we looked table 5.1 of the text books and found that$ 20\degree$, $40\degree$ and $60\degree$  phase margin is equal to 56.95\%, 28.93\% and 8.77\% overshoot. So we ran transient simulation with varying  $C_{c1}$ to get these overshoot.\\
 
+Figure \ref{pm20} is the overshoot plot that we got for  $C_{c1} = 1.13 nF$ where overshoot is 56.95\%. This corresponds to the phase margin of $20\degree$
 \begin{figure}[H]
  \centering
   \includegraphics[width=0.8\textwidth]{img/cad_pm/pm_20_1_13nF.png}
@@ -115,7 +116,7 @@ In order to find the value of $C_{c1}$ which corresponds to different phase marg
   \label{pm20}	
 \end{figure}
 
-
+Figure \ref{pm40} is the overshoot plot that we got for  $C_{c1} = 1.35 nF$ where overshoot is 28.93\%. This corresponds to the phase margin of $40\degree$
 \begin{figure}[H]
  \centering
   \includegraphics[width=0.8\textwidth]{img/cad_pm/pm_40_1_35nF.png}
@@ -123,15 +124,39 @@ In order to find the value of $C_{c1}$ which corresponds to different phase marg
   \label{pm40}	
 \end{figure}
 
+Figure \ref{pm60} is the overshoot plot that we got for  $C_{c1} = 2 nF$ where overshoot is 8.77\%. This corresponds to the phase margin of $60\degree$
 \begin{figure}[H]
  \centering
   \includegraphics[width=0.8\textwidth]{img/cad_pm/pm_60_2nF.png}
   \caption{8.77\% overshoot for $C_{c1} = 2nF$}
   \label{pm60}	
 \end{figure}
-
-
 \section{Task 4}
+In task 3, we found the values of  $C_{c1}$ which corresponds to $ 20\degree$, $40\degree$ and $60\degree$  phase margin. Here we are checking if those values of capacitors actually gives the corresponding phase margins. For doing this, we broke the feedback loop and calculated the phase margin of open loop amplifier.
+
+Figure \ref{pm20check} is the magnitude and phase plot for open loop amplifier with $C_{c1} = 1.13nF$ where the gain is very high as expected and the phase margin is $-98.82\degree$, not as expected because  we were expecting phase margin to be $20\degree$.
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{img/cad_pm/pm_113nF.png}
+  \caption{Phase and Magnitude for $C_{c1} = 1.13nF$}
+  \label{pm20check}	
+\end{figure}
+
+Figure \ref{pm40check} is the magnitude and phase plot for open loop amplifier with $C_{c1} = 1.35nF$ where the gain is very high as expected and the phase margin is $-97.02\degree$, not as expected because  we were expecting phase margin to be $40\degree$.
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{img/cad_pm/pm_135nF.png}
+  \caption{Phase and Magnitude for $C_{c1} = 1.35nF$}
+  \label{pm40check}	
+\end{figure}
+
+Figure \ref{pm60check} is the magnitude and phase plot for open loop amplifier with $C_{c1} = 2nF$ where the gain is very high as expected and the phase margin is $-95.56\degree$, not as expected because  we were expecting phase margin to be $60\degree$.
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{img/cad_pm/pm_2nF.png}
+  \caption{Phase and Magnitude $C_{c1} = 2nF$}
+  \label{pm60check}	
+\end{figure}
 
 \section{Task 5}
 Figure \ref{fig:pcb} shows the PCB for this task. We decided to make a new PCB because the awailable transistor in the lab, was not the same as in the previos labs.
