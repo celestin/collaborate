@@ -183,6 +183,7 @@ $5.348 MHz$.
 \end{figure}
 
 \section{Task 6}
+\subsection*{DC analysis}
 In this task, we have cutted the feedback loop. Since voltage sources are limited in the lab, we soldered a potensiometer to the PCB
 in order to make a proper $V_{nzero}$. The task is saying that we need to separate the two inputs for $V_{nzero}$, and create a proper $V_{pzero}$.
 Instead of breaking the circuit at the point where $V_{pzero}$ is labeled in the lab descrition, we applied different voltages for the two 
@@ -229,13 +230,43 @@ point for calculating the gain. We were not able to get the exact point of opera
   \label{fig:mes:approx:gain}	
 \end{figure}
 
-%\begin{figure}[htbp]
-% \centering
-%  \fbox{\includegraphics[width=\textwidth]{img/pcb_setup}}
-%  \caption{Final PCB board.}
-%  \label{fig:pcb}	
-%s\end{figure}
+\subsection*{AC analysis}
+With above DC bias conditions, we are now analysing how the output behaves for a varying input frequency. We provided a 50mV sinus signal with varying frequency from  $V_{nzero}$ and we have the following observations.
 
 
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{img/task6_b_1.png}
+  \caption{ $V_{nzero}$ and  $V_{out}$}
+  \label{freq1}	
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{img/task_b_2.png}
+  \caption{ $V_{nzero}$ and  $V_{out}$}
+  \label{freq2}	
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{img/task6_b_3.png}
+  \caption{ $V_{nzero}$ and  $V_{out}$}
+  \label{freq3}	
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{img/task6_b_4.png}
+  \caption{ $V_{nzero}$ and  $V_{out}$}
+  \label{freq4}	
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{img/task6_b_5.png}
+  \caption{ $V_{nzero}$ and  $V_{out}$}
+  \label{freq5}	
+\end{figure}
 
 \end{document}
