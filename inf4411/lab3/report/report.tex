@@ -17,6 +17,9 @@
 \usepackage{float}
 \usepackage[]{mcode}
 \usepackage{verbatim}
+\usepackage{gensymb}
+\usepackage{caption}
+
 \lstset{ 
   captionpos=b,
   frame=tb,
@@ -84,8 +87,6 @@ after a \textit{steep} step we get oscillations on the output that reaches $Vdd$
 The simulation is so resource intencive that we were forced to only run the simulation for a short time (or shorter 
 than the task spesified).\\
 
-
-
 \begin{figure}[!htbp]
  \centering
   \fbox{\includegraphics[width=\textwidth]{img/simulation_with_ringing}}
@@ -105,6 +106,30 @@ The AC responce is plottet in Figure \ref{fig:ac:responce}\\
 The frequency of the oscillations is about 24 MHz in the cadence simulation. There is a maximum at 120MHz in the AC-simulation. The   resonance appears to start at 24MHz, witch could give rise to the ringing on the output. 
 
 \section{Task 3}
+In order to find the value of $C_{c1}$ which corresponds to different phase margins, we looked table 5.1 of the text books and found that$ 20\degree$, $40\degree$ and $60\degree$  phase margin is equal to 56.95\%, 28.93\% and 8.77\% overshoot. So we ran transient simulation with varying  $C_{c1}$ to get these overshoot.\\
+
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{img/cad_pm/pm_20_1_13nF.png}
+  \caption{56.95\% overshoot for $C_{c1} = 1.13nF$}
+  \label{pm20}	
+\end{figure}
+
+
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{img/cad_pm/pm_40_1_35nF.png}
+  \caption{28.93\% overshoot for $C_{c1} = 1.35nF$}
+  \label{pm40}	
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{img/cad_pm/pm_60_2nF.png}
+  \caption{8.77\% overshoot for $C_{c1} = 2nF$}
+  \label{pm60}	
+\end{figure}
+
 
 \section{Task 4}
 
