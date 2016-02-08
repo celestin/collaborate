@@ -1,0 +1,215 @@
+\documentclass[english, 11pt, booklet]{ifimaster}
+
+\usepackage[utf8]{inputenc}
+\usepackage[toc,page]{appendix}
+\usepackage{babel,textcomp,csquotes,ifimasterforside, varioref,graphicx}
+% \usepackage[backend=biber,style=numeric-comp]{biblatex} 			Biblatex
+
+% --------------------------------------------------
+\title{Ultra-wideband antenna for snow analysis}
+% \subtitle{Legg til en sub title dersom det trengs}
+\author{By Vegard Midtbøen}
+% --------------------------------------------------
+
+\begin{document}
+
+\ififorside
+
+\frontmatter{}
+
+% \bibliography{mybib} 
+
+\chapter*{Abstract}
+
+\tableofcontents{}
+\listoffigures{}
+\listoftables{}
+
+\chapter*{Preface}
+
+\mainmatter{}
+\part{Introduction}
+
+To test my designs I started with simulating and making the la
+yout for a
+350nm chip. This process was a fairly straight forward proce
+ss as several
+chips in this process has been design at the group. This chip r
+esulted in a
+working parallel and serial multiplier. Also test elements
+of structures used
+in the respective multipliers was made and available for tak
+ing measure-
+ments on this chip. An auto-zero element, the multiple-inpu
+t semi-floating-
+gate inverter and the memory module are among these test elem
+ents. Dur-
+ing the project a possibility for producing a chip in a for us n
+ew technology,
+a 112nm technology became available. Two fellow students wo
+rking on an
+ultra-wideband project had free pads on their chip and was wi
+lling to let
+me use some of the available pins. Originally I intended to ma
+ke a 8x8
+array-multiplier on this chip. But as we got more knowledge o
+n the new
+process we found several challenges. What affected my test e
+lement on this
+chip the most at first was that the number of pins was reduced. In
+our ori-
+ginal assessment of the availability of pins we thought it wo
+uld be about as
+on the other processes we knew where for instance one pin is en
+ough for
+Vdd for padframe and circuit elements and another pin for GND
+for pad-
+frame and circuit elements. But that was not the case here, no
+t only was
+it required to separate the pad-ring and the elements powers
+upply, it was
+also required to have powersupply pads for the padframe even
+ly spaced
+around the frame. Due to this the test element made for this ch
+ip was re-
+duced to a 2x2 parallel multiplier. Also the ultra-wideband
+test elements
+required possibilities for high frequency input and output
+s. So a PCB was
+produced to accommodate these requirements. Therefore I al
+so construc-
+ted my 120nm test element to be measured at a high frequency.
+The two processes used in this thesis is of two different gene
+rations when
+it comes to CMOS processing. Whereas the 350 nm technology is a
+s one
+would expect, a process where the gate and line delay is reduc
+ed from the
+previous processes (600 and 800nm). The 120nm process may be
+the first
+35
+process utilized here at this group where the gate delay cont
+inues to reduce
+in a new process, but the transmission delay between gates is
+significant
+increased. Resulting in more area available for design of lo
+gic circuits, but
+not necessary giving anything in the way of increase in speed
+[23]. Other
+challenges one faces utilizing minimum transistors in a pro
+cess like the 120
+nm process is the very short tunnel one gets under the gate of t
+he transistor.
+Also due to the small sizes of the structures in the 120nm proc
+ess the poly
+can not only be n-doped. The gate over the p-MOS is p-doped. Thi
+s is to
+make the p-MOS better.
+4.1  The 350nm chip
+The implementation in the 350 nm technology was done as a norm
+al design
+process. First the circuit was made in schematic to test the l
+ogic functions
+of the circuit. Then the system was transferred to layout and
+further sim-
+ulations was conducted to verify the design. Finally the des
+ign was tested
+physically by measuring on an actual chip.
+The circuit elements implemented on the 350nm chip is made us
+ing min-
+imum sized transistors and as small capacitors as was practi
+cal to balance
+(5fF) as the minimum or unit capacitor. The circuits was desi
+gned to func-
+tion at a supply voltage of 2V. The circuit elements on this ch
+ip was found
+to be working as illustrated by the measurements of the paral
+lel multiplier
+in figure 4.1. The parallel multiplier multiplies two three bi
+t numbers. The
+serial multiplier implemented has only three memory elemen
+ts limiting the
+size of the numbers it can multiply.
+On this chip I also implemented some of the circuits used in th
+e system by
+themselves so it would be possible to measure them on their ow
+n. In figure
+4.2 such a measurement is made of the auto-zero circuit. That
+this circuit
+functions properly is very important as it is used for all the
+input-signals in
+all the systems implemented.
+4.2  The 120nm chip
+Designing systemsin the 120nm process was more challenging
+than design-
+ing the systemfor the 350nm chip. The circuits on this chip wa
+s designed to
+function with a supply voltage of 900mV. As mentioned before
+the pad-ring
+was one obstacle. In the 350nm design I used simple poly poly c
+apacitors
+to make the needed capacitors for the design. In the 120nm pro
+cess use
+
+
+\chapter{Background}                  
+
+
+\part{The project}                    
+
+\chapter{Planning the project}        
+
+
+\part{Conclusion}                     
+
+\chapter{Results}                     
+
+
+% \chapter{Background}
+% \chapter{Method}
+% \chapter{Results}
+% \chapter{Future Work}
+% \chapter{Conclusions}
+
+\backmatter{}
+% \printbibliography
+
+\begin{appendices}
+\chapter{Software and instrument overview}
+\end{appendices}
+
+
+
+% --------------------------------------------------------------------
+% Fotnote eksempel
+% Hei \footnote{\url{http://www.google.fi/}}
+% --------------------------------------------------------------------
+% Figur eksempel
+% \begin{figure}[!ht]
+%   \centering
+%     \includegraphics[width=0.5\textwidth]{filplassering}
+%     \caption{Bildetekst}
+%     \label{fig:}
+% \end{figure}
+% ---------------------------------------------------------------------
+% For en mer bestemt plassering:
+% 
+% \begin{wrapfigure}{r}{0.5\textwidth}
+%   \begin{center}
+%     \includegraphics[width=0.48\textwidth]{filplassering}
+%   \end{center}
+%   \caption{Bildetekst}
+%   \label{fig:}
+% \end{wrapfigure}
+% 
+% Plasseringer for bilde:
+% r 	R 	right side of the text
+% l 	L 	left side of the text
+% i 	I 	inside edge–near the binding (in a twoside document)
+% o 	O 	outside edge–far from the binding
+% ----------------------------------------------------------------------
+
+
+\end{document}
+
+

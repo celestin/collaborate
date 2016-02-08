@@ -1,0 +1,96 @@
+\documentclass[english, 11pt]{ifimaster}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontex,url}
+\urlstyle{sf}
+\usepackage[toc,page]{appendix}
+\usepackage{babel,textcomp,csquotes,ifimasterforside, varioref,graphicx}
+% \usepackage[backend=biber,style=numeric-comp]{biblatex} 			Biblatex
+
+% --------------------------------------------------
+\title{Ultra-wideband antenna for snow analysis}
+% \subtitle{Legg til en sub title dersom det trengs}
+\author{By Vegard Midtbøen}
+% --------------------------------------------------
+
+\begin{document}
+
+\ififorside{}
+\frontmatter{}
+\maketitle{}
+
+% \bibliography{mybib} 
+
+\chapter*{Abstract}
+Hei dette er en tekst
+
+\tableofcontents{}
+\listoffigures{}
+\listoftables{}
+
+\chapter*{Preface}
+
+\mainmatter{}
+\part{Introduction}
+
+\chapter{Background}                  
+
+
+\part{The project}                    
+
+\chapter{Planning the project}        
+
+
+\part{Conclusion}                     
+
+\chapter{Results}                     
+
+
+% \chapter{Background}
+% \chapter{Method}
+% \chapter{Results}
+% \chapter{Future Work}
+% \chapter{Conclusions}
+
+\backmatter{}
+% \printbibliography
+
+\begin{appendices}
+\chapter{Software and instrument overview}
+\end{appendices}
+
+
+
+% --------------------------------------------------------------------
+% Fotnote eksempel
+% Hei \footnote{\url{http://www.google.fi/}}
+% --------------------------------------------------------------------
+% Figur eksempel
+% \begin{figure}[!ht]
+%   \centering
+%     \includegraphics[width=0.5\textwidth]{filplassering}
+%     \caption{Bildetekst}
+%     \label{fig:}
+% \end{figure}
+% ---------------------------------------------------------------------
+% For en mer bestemt plassering:
+% 
+% \begin{wrapfigure}{r}{0.5\textwidth}
+%   \begin{center}
+%     \includegraphics[width=0.48\textwidth]{filplassering}
+%   \end{center}
+%   \caption{Bildetekst}
+%   \label{fig:}
+% \end{wrapfigure}
+% 
+% Plasseringer for bilde:
+% r 	R 	right side of the text
+% l 	L 	left side of the text
+% i 	I 	inside edge–near the binding (in a twoside document)
+% o 	O 	outside edge–far from the binding
+% ----------------------------------------------------------------------
+
+
+\end{document}
+
+

@@ -1,0 +1,27 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {english}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.1}Overview of the report}{1}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Summary}{1}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Background}{3}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Planning the project}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Results}{7}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Discussion and conclusion}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Discussion}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {5.1.1}Proposal of improvement}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Conclusion}{9}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Appendices}{11}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {A}Software and instrument overview}{13}

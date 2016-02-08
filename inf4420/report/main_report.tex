@@ -1,0 +1,128 @@
+\documentclass[english, 12pt, a4paper]{ifimaster}
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc,url} %url
+\urlstyle{sf} %sf
+% \usepackage{lmodern}  % For times new roman : mathptmx
+% \usepackage{mathptmx}
+\usepackage[toc,page]{appendix}
+\usepackage{babel,textcomp,csquotes,ifikompendiumforside, varioref,graphicx, gensymb}
+% \usepackage[]{circuitikz}
+% \usepackage{tikz}
+\usepackage[backend=biber,style=numeric-comp, sortcites]{biblatex} 
+
+% --------------------------------------------------
+\title{ \huge{Successive Approximation Register (SAR) Analog-to-Digital Converter (ADC)}}
+% \subtitle{Legg til en subtitle dersom det trengs}
+\author{By Espen Klein Nilsen\\ and Vegard Midtbøen}
+% --------------------------------------------------
+
+\bibliography{ref} 
+
+
+\begin{document}
+
+\ififorside{}
+\frontmatter{}
+\maketitle{}
+%-----------Acknowledgment---
+\chapter*{Acknowledgment}
+
+%-----------Abstract---------
+\chapter*{Abstract}
+
+\tableofcontents{}
+\listoffigures{}
+\listoftables{}
+
+%-----------Preface----------
+\chapter*{Preface}
+
+
+%-----------Introduksjon-----
+\mainmatter{}        
+
+\chapter{Introduction}         
+
+\section{Overview of the report}
+
+\section{Summary}
+
+%-----------Background-------
+\chapter{Background}
+
+
+%-----------Main part--------          
+\chapter{Planning the project}        
+
+
+%-----------Results----------
+\chapter{Results} 
+\chapter{Discussion and conclusion}
+\section{Discussion}
+\subsection{Proposal of improvement}
+\section{Conclusion}
+
+\backmatter{}
+
+
+\begin{appendices}
+\chapter{Software and instrument overview}
+\end{appendices}
+
+\printbibliography{}
+
+\end{document}
+
+
+% --------------------------------------------------------------------
+% Fotnote eksempel
+% Hei \footnote{\url{http://www.google.fi/}}
+% --------------------------------------------------------------------
+% Figur eksempel
+% \begin{figure}[!ht]
+%   \centering
+%     \includegraphics[width=0.5\textwidth]{filplassering}
+%     \caption{Bildetekst}
+%     \label{fig:}
+% \end{figure}
+% ---------------------------------------------------------------------
+% For en mer bestemt plassering:
+% 
+% \begin{wrapfigure}{r}{0.5\textwidth}
+%   \begin{center}
+%     \includegraphics[width=0.48\textwidth]{filplassering}
+%   \end{center}
+%   \caption{Bildetekst}
+%   \label{fig:}
+% \end{wrapfigure}
+% 
+% Plasseringer for bilde:
+% r 	R 	right side of the text
+% l 	L 	left side of the text
+% i 	I 	inside edge–near the binding (in a twoside document)
+% o 	O 	outside edge–far from the binding
+% ----------------------------------------------------------------------
+% For å innkludere skjematiske tegninger:
+%
+%\begin{circuitikz}[scale=1.25]
+
+% \draw (-1,0) node[anchor=east] {} to [short, *-*] (1,0);
+% \draw (-1,2) node[anchor=east] {} to [inductor, *-*,  l=$\Delta x L$] (1,2);
+% \draw (-1,0) to [open, l=$\cdots$] (-1,2);    
+% \draw (3, 0) to (1, 0) to [capacitor, l=$\Delta x C$, *-*] (1, 2) to [inductor, *-*, l=$\Delta x L$] (3, 2);
+% \draw (5, 0) to (3, 0) to [capacitor, l=$\Delta x C$, *-*] (3, 2) to [inductor, *-*, l=$\Delta x L$] (5, 2);
+% \draw (7, 0) to (5, 0) to [capacitor, l=$\Delta x C$, *-*] (5, 2) to [inductor, *-*, l=$\Delta x L$] (7, 2);
+% \draw (9, 0) to (7, 0) to [capacitor, l=$\Delta x C$, *-*] (7, 2) to [inductor, *-*, l=$\Delta x L$] (9, 2);
+% \draw (9,0) node[anchor=east] {} to [short, *-*] (9,0);
+% \draw (10,0) to [open, l=$\cdots$] (10,2);
+
+% \end{circuitikz}
+% ----------------------------------------------------------------------
+% Paranteser
+% 
+% \big( \Big( \bigg( \Bigg( 	
+% \big] \Big] \bigg] \Bigg] 	
+% \big\{ \Big\{ \bigg\{ \Bigg\{ 	
+% \big \langle \Big \langle \bigg \langle \Bigg \langle 	
+% \big \rangle \Big \rangle \bigg \rangle \Bigg \rangle 	
+% -----------------------------------------------------------------------
