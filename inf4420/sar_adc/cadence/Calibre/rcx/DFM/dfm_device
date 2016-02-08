@@ -1,0 +1,8 @@
+
+INCLUDE ./DFM/variable_file
+INCLUDE ./DFM/logic_operation_encrypt
+INCLUDE ./DFM/dfm_pmos_macro_file_encrypt
+INCLUDE ./DFM/dfm_nmos_macro_file_encrypt
+
+
+

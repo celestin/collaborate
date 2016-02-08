@@ -1,0 +1,2007 @@
+(nch_18
+	(tsmcN90rf nch_18 symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(nch_dnw
+	(tsmcN90rf nch_dnw symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(nch_33_dnw
+	(tsmcN90rf nch_33_dnw symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(nch_25_dnw
+	(tsmcN90rf nch_25_dnw symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(nch_na
+	(tsmcN90rf nch_na symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(nch_18_dnw
+	(tsmcN90rf nch_18_dnw symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(nch_hvt
+	(tsmcN90rf nch_hvt symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(nch_na33
+	(tsmcN90rf nch_na33 symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(nch_na25
+	(tsmcN90rf nch_na25 symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(nch_lvt
+	(tsmcN90rf nch_lvt symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(nch_na18
+	(tsmcN90rf nch_na18 symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(nch_hvt_dnw
+	(tsmcN90rf nch_hvt_dnw symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(nch_lvt_dnw
+	(tsmcN90rf nch_lvt_dnw symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(nch
+	(tsmcN90rf nch symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(nch_33
+	(tsmcN90rf nch_33 symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(nch_25
+	(tsmcN90rf nch_25 symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(pch_33
+	(tsmcN90rf pch_33 symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(pch_lvt
+	(tsmcN90rf pch_lvt symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(pch_25
+	(tsmcN90rf pch_25 symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(pch_18
+	(tsmcN90rf pch_18 symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(pch
+	(tsmcN90rf pch symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(pch_hvt
+	(tsmcN90rf pch_hvt symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(pnp2
+	(tsmcN90rf pnp symbol)
+	(
+		(c C)
+		(b B)
+		(e E)
+	)
+)
+
+(npn5
+	(tsmcN90rf npn symbol)
+	(
+		(c C)
+		(b B)
+		(e E)
+	)
+)
+
+(pnp5
+	(tsmcN90rf pnp symbol)
+	(
+		(c C)
+		(b B)
+		(e E)
+	)
+)
+
+(npn10
+	(tsmcN90rf npn symbol)
+	(
+		(c C)
+		(b B)
+		(e E)
+	)
+)
+
+(npn2
+	(tsmcN90rf npn symbol)
+	(
+		(c C)
+		(b B)
+		(e E)
+	)
+)
+
+(pnp10
+	(tsmcN90rf pnp symbol)
+	(
+		(c C)
+		(b B)
+		(e E)
+	)
+)
+
+(ndio_na18
+	(tsmcN90rf ndio_na18 symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+)
+
+(pdio_lvt
+	(tsmcN90rf pdio_lvt symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+)
+
+(nwdio
+	(tsmcN90rf nwdio symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+)
+
+(ndio_esd
+	(tsmcN90rf ndio_esd symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+)
+
+(ndio
+	(tsmcN90rf ndio symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+)
+
+(pdio
+	(tsmcN90rf pdio symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+)
+
+(pwdnw
+	(tsmcN90rf pwdnw symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+)
+
+(dnwpsub
+	(tsmcN90rf dnwpsub symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+)
+
+(ndio_33
+	(tsmcN90rf ndio_33 symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+)
+
+(ndio_25
+	(tsmcN90rf ndio_25 symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+)
+
+(pdio_33
+	(tsmcN90rf pdio_33 symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+)
+
+(ndio_18
+	(tsmcN90rf ndio_18 symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+)
+
+(pdio_25
+	(tsmcN90rf pdio_25 symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+)
+
+(pdio_18
+	(tsmcN90rf pdio_18 symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+)
+
+(ndio_na
+	(tsmcN90rf ndio_na symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+)
+
+(ndio_hvt
+	(tsmcN90rf ndio_hvt symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+)
+
+(pdio_hvt
+	(tsmcN90rf pdio_hvt symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+)
+
+(ndio_na33
+	(tsmcN90rf ndio_na33 symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+)
+
+(ndio_na25
+	(tsmcN90rf ndio_na25 symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+)
+
+(ndio_lvt
+	(tsmcN90rf ndio_lvt symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+)
+
+(rpodl
+	(tsmcN90rf rpod symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(rnods
+	(tsmcN90rf rnod symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(rnwsti
+	(tsmcN90rf rnwsti symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	) 
+)
+
+(rpods
+	(tsmcN90rf rpod symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(rnwod
+	(tsmcN90rf rnwod symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	) 
+)
+
+(rnpolywo
+	(tsmcN90rf rnpolywo symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(rppolywo
+	(tsmcN90rf rppolywo symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(rm1
+	(tsmcN90rf rm1 symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	) 
+)
+(rm1w
+	(tsmcN90rf rm1 symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	) 
+)
+
+(rnpolyl
+	(tsmcN90rf rnpoly symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(rm2
+	(tsmcN90rf rm2 symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	) 
+)
+(rm2_7w
+	(tsmcN90rf rm2 symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	) 
+)
+(rm8_9w
+	(tsmcN90rf rm8 symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	) 
+)
+
+(nmoscap
+	(tsmcN90rf nmoscap symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+)
+
+(rm3
+	(tsmcN90rf rm3 symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	) 
+)
+
+(rppolyl
+	(tsmcN90rf rppoly symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(rm4
+	(tsmcN90rf rm4 symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	) 
+)
+
+(rm5
+	(tsmcN90rf rm5 symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	) 
+)
+
+(rm6
+	(tsmcN90rf rm6 symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	) 
+)
+
+(rm7
+	(tsmcN90rf rm7 symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	) 
+)
+
+(nmoscap_33
+	(tsmcN90rf nmoscap_33 symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+)
+
+(rm8
+	(tsmcN90rf rm8 symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	) 
+)
+
+(nmoscap_25
+	(tsmcN90rf nmoscap_25 symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+)
+
+(rnpolys
+	(tsmcN90rf rnpoly symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(rm9
+	(tsmcN90rf rm9 symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	) 
+)
+
+(rm10
+	(tsmcN90rf rm10 symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	) 
+)
+
+(nmoscap_18
+	(tsmcN90rf nmoscap_18 symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+)
+
+(rnodwo
+	(tsmcN90rf rnodwo symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(rppolys
+	(tsmcN90rf rppoly symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(rpodwo
+	(tsmcN90rf rpodwo symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(rnodl
+	(tsmcN90rf rnod symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(mimcap_1p5_sin
+        (tsmcN90rf mimcap symbol)
+        (
+                (plus PLUS)
+                (minus MINUS)
+        )
+  	(
+  	  ( nil mf 1 )
+  	  ( nil total_m 1 )
+	)  
+)
+
+(mimcap_2p0_sin
+        (tsmcN90rf mimcap symbol)
+        (
+                (plus PLUS)
+                (minus MINUS)
+        )
+  	(
+  	  ( nil mf 1 )
+  	  ( nil total_m 1 )
+	)  
+)
+
+(mimcap_1p5_sin_udc
+        (tsmcN90rf mimcap_udc symbol)
+        (
+                (plus PLUS)
+                (minus MINUS)
+        )
+  	(
+  	  ( nil mf 1 )
+  	  ( nil total_m 1 )
+	)  
+)
+
+(mimcap_2p0_sin_udc
+        (tsmcN90rf mimcap_udc symbol)
+        (
+                (plus PLUS)
+                (minus MINUS)
+        )
+  	(
+  	  ( nil mf 1 )
+  	  ( nil total_m 1 )
+	)  
+)
+
+(mimcap_1p5_sin_3t
+        (tsmcN90rf mimcap_3t symbol)
+        (
+                (plus PLUS)
+                (minus MINUS)
+                (bulk BULK)
+        )
+  	(
+  	  ( nil mf 1 )
+  	  ( nil total_m 1 )
+	)  
+)
+
+(mimcap_2p0_sin_3t
+        (tsmcN90rf mimcap_3t symbol)
+        (
+                (plus PLUS)
+                (minus MINUS)
+                (bulk BULK)
+        )
+  	(
+  	  ( nil mf 1 )
+  	  ( nil total_m 1 )
+	)  
+)
+
+(mimcap_1p5_sin_udc_3t
+        (tsmcN90rf mimcap_udc_3t symbol)
+        (
+                (plus PLUS)
+                (minus MINUS)
+                (bulk BULK)
+        )
+  	(
+  	  ( nil mf 1 )
+  	  ( nil total_m 1 )
+	)  
+)
+
+(mimcap_2p0_sin_udc_3t
+        (tsmcN90rf mimcap_udc_3t symbol)
+        (
+                (plus PLUS)
+                (minus MINUS)
+                (bulk BULK)
+        )
+  	(
+  	  ( nil mf 1 )
+  	  ( nil total_m 1 )
+	)  
+)
+
+(rnodwo_m
+        (tsmcN90rf rnodwo_m symbol)
+        (
+                (plus PLUS)
+                (minus MINUS)
+                (bulk BULK)
+        )
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(rpodwo_m
+        (tsmcN90rf rpodwo_m symbol)
+        (
+                (plus PLUS)
+                (minus MINUS)
+                (bulk BULK)
+        )
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(rnodl_m
+        (tsmcN90rf rnod_m symbol)
+        (
+                (plus PLUS)
+                (minus MINUS)
+                (bulk BULK)
+        )
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(rpodl_m
+        (tsmcN90rf rpod_m symbol)
+        (
+                (plus PLUS)
+                (minus MINUS)
+                (bulk BULK)
+        )
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(rnods_m
+        (tsmcN90rf rnod_m symbol)
+        (
+                (plus PLUS)
+                (minus MINUS)
+                (bulk BULK)
+        )
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(rpods_m
+        (tsmcN90rf rpod_m symbol)
+        (
+                (plus PLUS)
+                (minus MINUS)
+                (bulk BULK)
+        )
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(rnwod_m
+        (tsmcN90rf rnwod_m symbol)
+        (
+                (plus PLUS)
+                (minus MINUS)
+                (bulk BULK)
+        )
+  	(
+  	  ( nil mf 1 )
+  	) 
+)
+
+(rnwsti_m
+        (tsmcN90rf rnwsti_m symbol)
+        (
+                (plus PLUS)
+                (minus MINUS)
+                (bulk BULK)
+        )
+  	(
+  	  ( nil mf 1 )
+  	) 
+)
+
+(rnpolywo_dis
+        (tsmcN90rf rnpolywo_dis symbol)
+        (
+                (plus PLUS)
+                (minus MINUS)
+                (bulk BULK)
+        )
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(rppolywo_dis
+        (tsmcN90rf rppolywo_dis symbol)
+        (
+                (plus PLUS)
+                (minus MINUS)
+                (bulk BULK)
+        )
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(rnpolyl_dis
+        (tsmcN90rf rnpoly_dis symbol)
+        (
+                (plus PLUS)
+                (minus MINUS)
+                (bulk BULK)
+        )
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(rppolyl_dis
+        (tsmcN90rf rppoly_dis symbol)
+        (
+                (plus PLUS)
+                (minus MINUS)
+                (bulk BULK)
+        )
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(rnpolys_dis
+        (tsmcN90rf rnpoly_dis symbol)
+        (
+                (plus PLUS)
+                (minus MINUS)
+                (bulk BULK)
+        )
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+(rppolys_dis
+        (tsmcN90rf rppoly_dis symbol)
+        (
+                (plus PLUS)
+                (minus MINUS)
+                (bulk BULK)
+        )
+  	(
+  	  ( nil mf 1 )
+  	  ( nil segments 1 )
+  	) 
+)
+
+((p cap c)  
+	(analogLib cap symbol)  
+	(    
+	        (PLUS)
+        	(MINUS)
+        )
+)
+
+((p res r)
+        (analogLib res symbol)
+        (
+                (PLUS)
+                (MINUS)
+        )
+)
+((p  ind  l)
+	(analogLib  ind  symbol)
+	(
+		(PLUS)
+		(MINUS)
+	)
+)
+(mimcap_um_1p5_sin_rf
+  (tsmcN90rf mimcap_um symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
+
+(mimcap_um_2p0_sin_rf
+  (tsmcN90rf mimcap_um symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
+
+(mimcap_um_1p5_sin_udc_rf
+  (tsmcN90rf mimcap_um_udc symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
+
+(mimcap_um_2p0_sin_udc_rf
+  (tsmcN90rf mimcap_um_udc symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
+
+(mimcap_woum_1p5_sin_rf
+  (tsmcN90rf mimcap_woum symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
+
+(mimcap_woum_2p0_sin_rf
+  (tsmcN90rf mimcap_woum symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
+
+(mimcap_woum_1p5_sin_udc_rf
+  (tsmcN90rf mimcap_woum_udc symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
+
+(mimcap_woum_2p0_sin_udc_rf
+  (tsmcN90rf mimcap_woum_udc symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
+
+(nmos_rf
+  (tsmcN90rf nmos_rf symbol)
+  (
+    (b B)
+    (d D)
+    (g G)
+    (s S)
+  )
+)
+
+(nmos_rf25
+  (tsmcN90rf nmos_rf25 symbol)
+  (
+    (b B)
+    (d D)
+    (g G)
+    (s S)
+  )
+)
+
+(nmos_rf33
+  (tsmcN90rf nmos_rf33 symbol)
+  (
+    (b B)
+    (d D)
+    (g G)
+    (s S)
+  )
+)
+
+(pmos_rf
+  (tsmcN90rf pmos_rf symbol)
+  (
+    (b B)
+    (d D)
+    (g G)
+    (s S)
+  )
+)
+
+(pmos_rf25
+  (tsmcN90rf pmos_rf25 symbol)
+  (
+    (b B)
+    (d D)
+    (g G)
+    (s S)
+  )
+)
+
+(pmos_rf33
+  (tsmcN90rf pmos_rf33 symbol)
+  (
+    (b B)
+    (d D)
+    (g G)
+    (s S)
+  )
+)
+
+(xjvar
+  (tsmcN90rf xjvar symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
+
+(moscap_rf
+  (tsmcN90rf moscap_rf symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
+
+(moscap_rf25
+  (tsmcN90rf moscap_rf25 symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
+
+(moscap_rf33
+  (tsmcN90rf moscap_rf33 symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
+
+(rppolyl_rf
+  (tsmcN90rf rppoly_rf symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+  	(
+  	  ( nil mf 1 )
+  	) 
+)
+
+(rppolywo_rf
+  (tsmcN90rf rppolywo_rf symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+  	(
+  	  ( nil mf 1 )
+  	) 
+)
+
+(crtmom
+  (tsmcN90rf crtmom symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
+
+(crtmom_rf
+  (tsmcN90rf crtmom_rf symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
+
+(spiral_std
+  (tsmcN90rf spiral_std symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
+
+(spiral_sym
+  (tsmcN90rf spiral_sym symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
+
+(spiral_sym_ct
+  (tsmcN90rf spiral_sym_ct symbol)
+  (
+    (bulk BULK)
+    (ctap CTAP)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
+
+(rppolys_rf
+  (tsmcN90rf rppoly_rf symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+  	(
+  	  ( nil mf 1 )
+  	) 
+)
+
+(nch_mac
+	(tsmcN90rf nch_mac symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+    	  ( nil multi 1 )
+    	  ( nil rgflag 0 )
+	) 
+)
+
+(nch_33_mac
+	(tsmcN90rf nch_33_mac symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+    	  ( nil multi 1 )
+    	  ( nil rgflag 0 )
+	) 
+)
+
+(nch_lvt_mac
+	(tsmcN90rf nch_lvt_mac symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+    	  ( nil multi 1 )
+    	  ( nil rgflag 0 )
+	) 
+)
+
+(nch_hvt_mac
+	(tsmcN90rf nch_hvt_mac symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+    	  ( nil multi 1 )
+    	  ( nil rgflag 0 )
+	) 
+)
+
+(nch_na_mac
+	(tsmcN90rf nch_na_mac symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+    	  ( nil rgflag 0 )
+	) 
+)
+
+(nch_na33_mac
+	(tsmcN90rf nch_na33_mac symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+    	  ( nil rgflag 0 )
+	) 
+)
+
+(nch_na25_mac
+	(tsmcN90rf nch_na25_mac symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+    	  ( nil rgflag 0 )
+	) 
+)
+
+(pch_mac
+	(tsmcN90rf pch_mac symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+    	  ( nil multi 1 )
+    	  ( nil rgflag 0 )
+	) 
+)
+
+(pch_33_mac
+	(tsmcN90rf pch_33_mac symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+    	  ( nil multi 1 )
+    	  ( nil rgflag 0 )
+	) 
+)
+
+(pch_lvt_mac
+	(tsmcN90rf pch_lvt_mac symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+    	  ( nil multi 1 )
+    	  ( nil rgflag 0 )
+	) 
+)
+
+(pch_hvt_mac
+	(tsmcN90rf pch_hvt_mac symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+    	  ( nil multi 1 )
+    	  ( nil rgflag 0 )
+	) 
+)
+
+(nch_dnw_mac
+	(tsmcN90rf nch_dnw_mac symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+    	  ( nil multi 1 )
+    	  ( nil rgflag 0 )
+	) 
+)
+
+(nch_33_dnw_mac
+	(tsmcN90rf nch_33_dnw_mac symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+    	  ( nil multi 1 )
+    	  ( nil rgflag 0 )
+	) 
+)
+
+(nch_lvt_dnw_mac
+	(tsmcN90rf nch_lvt_dnw_mac symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+    	  ( nil multi 1 )
+    	  ( nil rgflag 0 )
+	) 
+)
+
+(nch_hvt_dnw_mac
+	(tsmcN90rf nch_hvt_dnw_mac symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+    	  ( nil multi 1 )
+    	  ( nil rgflag 0 )
+	) 
+)
+
+(pnp2_mis
+	(tsmcN90rf pnp_mis symbol)
+	(
+		(c C)
+		(b B)
+		(e E)
+	)
+)
+
+(npn5_mis
+	(tsmcN90rf npn_mis symbol)
+	(
+		(c C)
+		(b B)
+		(e E)
+	)
+)
+
+(pnp5_mis
+	(tsmcN90rf pnp_mis symbol)
+	(
+		(c C)
+		(b B)
+		(e E)
+	)
+)
+
+(npn10_mis
+	(tsmcN90rf npn_mis symbol)
+	(
+		(c C)
+		(b B)
+		(e E)
+	)
+)
+
+(npn2_mis
+	(tsmcN90rf npn_mis symbol)
+	(
+		(c C)
+		(b B)
+		(e E)
+	)
+)
+
+(pnp10_mis
+	(tsmcN90rf pnp_mis symbol)
+	(
+		(c C)
+		(b B)
+		(e E)
+	)
+)
+
+
+
+
+
+(nch_25_mac
+  (tsmcN90rf nch_25_mac symbol)
+  (
+    (b B)
+    (d D)
+    (g G)
+    (s S)
+  )
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+    	  ( nil multi 1 )
+    	  ( nil rgflag 0 )
+	) 
+)
+
+(pch_25_mac
+  (tsmcN90rf pch_25_mac symbol)
+  (
+    (b B)
+    (d D)
+    (g G)
+    (s S)
+  )
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+    	  ( nil multi 1 )
+    	  ( nil rgflag 0 )
+	) 
+)
+
+(m5m1
+	(tsmcN90rf m5m1 symbol)
+	(
+		(ul UL)
+		(ur UR)
+		(bulk BULK)
+	)
+)
+
+(m6m1
+	(tsmcN90rf m6m1 symbol)
+	(
+		(ul UL)
+		(ur UR)
+		(bulk BULK)
+	)
+)
+
+(m5m1s
+	(tsmcN90rf m5m1s symbol)
+	(
+		(ul UL)
+		(ur UR)
+		(ll LL)
+		(lr LR)
+		(bulk BULK)
+	)
+)
+
+(m6m1s
+	(tsmcN90rf m6m1s symbol)
+	(
+		(ul UL)
+		(ur UR)
+		(ll LL)
+		(lr LR)
+		(bulk BULK)
+	)
+)
+(rmt
+	(tsmcN90rf rm9 symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	) 
+)
+
+(rm10w
+	(tsmcN90rf rm10 symbol)
+	(
+		(plus PLUS)
+		(minus MINUS)
+	)
+  	(
+  	  ( nil mf 1 )
+  	) 
+)
+(moscap_rf_nw
+  (tsmcN90rf moscap_rf_nw symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
+
+(moscap_rf25_nw
+  (tsmcN90rf moscap_rf25_nw symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
+
+(moscap_rf33_nw
+  (tsmcN90rf moscap_rf33_nw symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
+
+(xjvar_nw
+  (tsmcN90rf xjvar_nw symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
+
+(tlmi_sl_tm
+	(tsmcN90rf tlmi_sl_tm symbol)
+	(
+		(ul UL)
+		(ur UR)
+		(bulk BULK)
+	)
+)
+
+(tlmi_sl_utm
+	(tsmcN90rf tlmi_sl_utm symbol)
+	(
+		(ul UL)
+		(ur UR)
+		(bulk BULK)
+	)
+)
+
+(tlmi_cl_utm
+	(tsmcN90rf tlmi_cl_utm symbol)
+	(
+		(ul UL)
+		(ur UR)
+		(ll LL)
+		(lr LR)
+		(bulk BULK)
+	)
+)
+
+(tlmi_cl_tm
+	(tsmcN90rf tlmi_cl_tm symbol)
+	(
+		(ul UL)
+		(ur UR)
+		(ll LL)
+		(lr LR)
+		(bulk BULK)
+	)
+)
+
+
+(crtmom_mx
+         (tsmcN90rf crtmom_mx symbol)
+         (
+           (minus1 MINUS1)
+           (plus1 PLUS1)
+           (minus2 MINUS2)
+           (plus2 PLUS2)
+           (bulk BULK)
+         )
+        ( 
+          ( nil m 1 )
+        )
+)
+
+(nch_ulvt
+	(tsmcN90rf nch_ulvt symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(pch_ulvt
+	(tsmcN90rf pch_ulvt symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(nch_ulvt_dnw
+	(tsmcN90rf nch_ulvt_dnw symbol)
+	(
+		(g G)
+		(s S)
+		(d D)
+		(b B)
+	)
+	(
+    	  ( nil simM 1 )
+          ( w wf )
+          ( nil fingers 1 )
+	) 
+)
+
+(ndio_ulvt
+	(tsmcN90rf ndio_ulvt symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+)
+
+(pdio_ulvt
+	(tsmcN90rf pdio_ulvt symbol)
+	(
+		(pos PLUS)
+		(neg MINUS)
+	)
+)
+
+(sbd_rf
+  (tsmcN90rf sbd_rf symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
+
+(sbd_rf_nw
+  (tsmcN90rf sbd_rf_nw symbol)
+  (
+    (bulk BULK)
+    (minus MINUS)
+    (plus PLUS)
+  )
+)
