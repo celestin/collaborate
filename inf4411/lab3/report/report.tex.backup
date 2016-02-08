@@ -17,6 +17,9 @@
 \usepackage{float}
 \usepackage[]{mcode}
 \usepackage{verbatim}
+\usepackage{gensymb}
+\usepackage{caption}
+
 \lstset{ 
   captionpos=b,
   frame=tb,
@@ -84,8 +87,6 @@ after a \textit{steep} step we get oscillations on the output that reaches $Vdd$
 The simulation is so resource intencive that we were forced to only run the simulation for a short time (or shorter 
 than the task spesified).\\
 
-
-
 \begin{figure}[!htbp]
  \centering
   \fbox{\includegraphics[width=\textwidth]{img/simulation_with_ringing}}
@@ -105,11 +106,66 @@ The AC responce is plottet in Figure \ref{fig:ac:responce}\\
 The frequency of the oscillations is about 24 MHz in the cadence simulation. There is a maximum at 120MHz in the AC-simulation. The   resonance appears to start at 24MHz, witch could give rise to the ringing on the output. 
 
 \section{Task 3}
+In order to find the value of $C_{c1}$ which corresponds to different phase margins, we looked table 5.1 of the text books and found that$ 20\degree$, $40\degree$ and $60\degree$  phase margin is equal to 56.95\%, 28.93\% and 8.77\% overshoot. So we ran transient simulation with varying  $C_{c1}$ to get these overshoot.\\
 
+Figure \ref{pm20} is the overshoot plot that we got for  $C_{c1} = 1.13 nF$ where overshoot is 56.95\%. This corresponds to the phase margin of $20\degree$
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{img/cad_pm/pm_20_1_13nF.png}
+  \caption{56.95\% overshoot for $C_{c1} = 1.13nF$}
+  \label{pm20}	
+\end{figure}
+
+Figure \ref{pm40} is the overshoot plot that we got for  $C_{c1} = 1.35 nF$ where overshoot is 28.93\%. This corresponds to the phase margin of $40\degree$
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{img/cad_pm/pm_40_1_35nF.png}
+  \caption{28.93\% overshoot for $C_{c1} = 1.35nF$}
+  \label{pm40}	
+\end{figure}
+
+Figure \ref{pm60} is the overshoot plot that we got for  $C_{c1} = 2 nF$ where overshoot is 8.77\%. This corresponds to the phase margin of $60\degree$
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{img/cad_pm/pm_60_2nF.png}
+  \caption{8.77\% overshoot for $C_{c1} = 2nF$}
+  \label{pm60}	
+\end{figure}
 \section{Task 4}
+In task 3, we found the values of  $C_{c1}$ which corresponds to $ 20\degree$, $40\degree$ and $60\degree$  phase margin. Here we are checking if those values of capacitors actually gives the corresponding phase margins. For doing this, we broke the feedback loop and calculated the phase margin of open loop amplifier.
+
+Figure \ref{pm20check} is the magnitude and phase plot for open loop amplifier with $C_{c1} = 1.13nF$ where the gain is very high as expected and the phase margin is $-98.82\degree$, not as expected because  we were expecting phase margin to be $20\degree$.
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{img/cad_pm/pm_113nF.png}
+  \caption{Phase and Magnitude for $C_{c1} = 1.13nF$}
+  \label{pm20check}	
+\end{figure}
+
+Figure \ref{pm40check} is the magnitude and phase plot for open loop amplifier with $C_{c1} = 1.35nF$ where the gain is very high as expected and the phase margin is $-97.02\degree$, not as expected because  we were expecting phase margin to be $40\degree$.
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{img/cad_pm/pm_135nF.png}
+  \caption{Phase and Magnitude for $C_{c1} = 1.35nF$}
+  \label{pm40check}	
+\end{figure}
+
+Figure \ref{pm60check} is the magnitude and phase plot for open loop amplifier with $C_{c1} = 2nF$ where the gain is very high as expected and the phase margin is $-95.56\degree$, not as expected because  we were expecting phase margin to be $60\degree$.
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{img/cad_pm/pm_2nF.png}
+  \caption{Phase and Magnitude $C_{c1} = 2nF$}
+  \label{pm60check}	
+\end{figure}
 
 \section{Task 5}
 Figure \ref{fig:pcb} shows the PCB for this task. We decided to make a new PCB because the awailable transistor in the lab, was not the same as in the previos labs.
+\begin{figure}[!htbp]
+ \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{img/schematic}}
+  \caption{PCB for task 5.}
+  \label{fig:pcb}	
+\end{figure}
 \begin{figure}[!htbp]
  \centering
   \fbox{\includegraphics[width=0.8\textwidth]{img/pcb}}
@@ -132,34 +188,96 @@ $5.348 MHz$.
   \label{fig:oscil:out}	
 \end{figure}
 
+\newpage
 \section{Task 6}
-In this task, we have cutted the feedback loop. Since voltage sources are in the lab, we soldered a potensiometer to the PCB
+NOTE: We belive we had some issues with the current limiting in the "Lab DC power supply". We had this set to 10 miliamps (the total current for one transistor package) 
+which probably disturbed our mesurments.
+
+\subsection*{DC analysis}
+In this task, we have cutted the feedback loop. Since voltage sources are limited in the lab, we soldered a potensiometer to the PCB
 in order to make a proper $V_{nzero}$. The task is saying that we need to separate the two inputs for $V_{nzero}$, and create a proper $V_{pzero}$.
-Instead of breaking the circuit at the point where $V_{pzero}$ is labled (labeled) in the lab descrition, we applied different voltages for the two 
-$V_{nzero}$ points, and found a proper $V_{pzero}$. 
+Instead of breaking the circuit at the point where $V_{pzero}$ is labeled in the lab descrition, we applied different voltages for the two 
+$V_{nzero}$ points, and found a proper $V_{pzero}$ by meauring the point. We found it best to sweep the $V_{nzero}$ point, and keeping the $V_{pzero}$ constant.
 \\
 \\
-The linear point in the plot, is probably a average plot of the oscillation. This can be shown if we compare the two points in figures \ref{fig:vnzero:vout} and \ref{fig:scope:plot:lin}.
+
+% The linear line segment in the plot, is the an average plot of the oscillatios. As the bias voltage change the duty cycle of the osccilations change, moving the 
+% avraged DC value measured. The frequency of the oscillations is about 135 MHz. 
+% The estimated line (shown in red, Figure \ref{fig:mes:approx:gain}) is probably a more acurate depiction of the gain.
+% (This can be seen if we compare the two points in figures \ref{fig:vnzero:vout} and \ref{fig:scope:plot:lin}.)\\
+% \\
+From the measurment we calculate the gain to be \underline{-8520}.\\
+\\
+Points:\\
+P1 = (3,789 , 9,165)\\
+P2 = (3,79 , 0,6435)\\
+\\
+Equation:
+\begin{center}
+$m = (Y2 - Y1) / (X2 - X1)$\\
+$Y = m(X - X1) + Y1$\\
+$Y = -8520 * (X - 3,789) + 9,165$
+\end{center}
+We can se from the plot in Figure \ref{fig:vnzero:vout}, that the gain in the area 3.789 - 3-790, is very large.  
 
 \begin{figure}[!htbp]
  \centering
-  \fbox{\includegraphics[width=0.8\textwidth]{img/task6_vnbias_vs_vout}}
+  \fbox{\includegraphics[width=0.8\textwidth]{img/task6_a_finding_trigger_point}}
   \caption{Plot og $V_{nzero}$ vs Vout.}
   \label{fig:vnzero:vout}	
 \end{figure}
-\begin{figure}[!htbp]
+
+\newpage
+\subsection*{AC analysis}
+With above DC bias conditions, we are now analysing how the output behaves for a varying input frequency. We provided a 50mV sinus signal with varying frequency from  
+$V_{nzero}$ and we have the following observations. The AC signal was divided in a voltage divider in order to get a low enough signal. Figure 
+\begin{figure}[H]
  \centering
-  \fbox{\includegraphics[width=0.8\textwidth]{img/task6_scope_plot_lin_area}}
-  \caption{Plot from oscilloscope for the linear area.}
-  \label{fig:scope:plot:lin}	
+  \includegraphics[width=0.8\textwidth]{img/ac_og_cd}
+  \caption{ voltage divider}
+  \label{fig:voltage:div}	
 \end{figure}
-%\begin{figure}[htbp]
-% \centering
-%  \fbox{\includegraphics[width=\textwidth]{img/pcb_setup}}
-%  \caption{Final PCB board.}
-%  \label{fig:pcb}	
-%s\end{figure}
 
 
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{img/task6_b_1.png}
+  \caption{ $V_{nzero}$ and  $V_{out}$}
+  \label{freq1}	
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{img/task_b_2.png}
+  \caption{ $V_{nzero}$ and  $V_{out}$}
+  \label{freq2}	
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{img/task6_b_3.png}
+  \caption{ $V_{nzero}$ and  $V_{out}$}
+  \label{freq3}	
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{img/task6_b_4.png}
+  \caption{ $V_{nzero}$ and  $V_{out}$}
+  \label{freq4}	
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+  \includegraphics[width=0.8\textwidth]{img/task6_b_5.png}
+  \caption{ $V_{nzero}$ and  $V_{out}$}
+  \label{freq5}	
+\end{figure}
+
+From observing above plots, we conclude that the DC biasing have not been reasonable enough to see a good response. However, proivded the DC conditions discussed above, we can see that there is significant change in gain of amp from about 500kHz which we can assume to be the first pole. 
+
+\section{Task 7}
+We added a 2.2nF capacitor to the circut. In cadence we got 60 deg phase margin for a capacitor value of 2nF. 
+We did not have time to complete the task. 
 
 \end{document}
