@@ -12,6 +12,10 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Planning the project}{5}
 \defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Task 1}{5}
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.1}Task 1.B}{5}
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Results}{7}
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Discussion and conclusion}{9}

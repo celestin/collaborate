@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.7)  19 FEB 2016 13:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.7)  19 FEB 2016 15:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1145,6 +1145,17 @@ Chapter 2.
 
 ]
 Chapter 3.
+LaTeX Font Info:    Font shape `T1/jgi/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/jgi/b/n' tried instead on input line 57.
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 58.
+
+
+Overfull \hbox (130.12753pt too wide) in paragraph at lines 62--69
+ [][] 
+ []
+
 [5] [6
 
 ]
@@ -1153,8 +1164,6 @@ Chapter 4.
 
 ]
 Chapter 5.
-LaTeX Font Info:    Font shape `T1/jgi/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/jgi/b/n' tried instead on input line 62.
 [9] [10
 
 ] [11
@@ -1163,7 +1172,7 @@ LaTeX Font Info:    Font shape `T1/jgi/bx/n' in size <14.4> not available
 ] [12]
 Appendix A.
 
-LaTeX Warning: Empty bibliography on input line 72.
+LaTeX Warning: Empty bibliography on input line 87.
 
 [13
 
@@ -1173,10 +1182,10 @@ Package logreq Info: Writing requests to 'main_report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 10131 strings out of 493109
- 163882 string characters out of 6122467
- 559401 words of memory out of 5000000
- 13358 multiletter control sequences out of 15000+600000
+ 10132 strings out of 493109
+ 163892 string characters out of 6122467
+ 560411 words of memory out of 5000000
+ 13359 multiletter control sequences out of 15000+600000
  72968 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,11n,39p,866b,1516s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1184,7 +1193,7 @@ Here is how much of TeX's memory you used:
 uio-texmf/texmf-local/fonts/type1/private/microsoft/georgia/jgib8a.pfa></opt/te
 xlive/uio-texmf/texmf-local/fonts/type1/private/microsoft/georgia/jgir8a.pfa></
 opt/texlive/uio-texmf/texmf-local/fonts/type1/urw/arial/ua1r8a.pfb>
-Output written on main_report.pdf (29 pages, 5031590 bytes).
+Output written on main_report.pdf (29 pages, 5033891 bytes).
 PDF statistics:
  144 PDF objects out of 1000 (max. 8388607)
  88 compressed objects within 1 object stream
