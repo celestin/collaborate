@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.7)  19 FEB 2016 14:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.7)  19 FEB 2016 14:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -999,11 +999,35 @@ File: ts1jgi.fd 2010/05/10 Fontinst v1.927 font definitions for TS1/jgi.
 {/opt/texlive/uio-texmf/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/jgi/bx/n' in size <17.28> not available
 (Font)              Font shape `T1/jgi/b/n' tried instead on input line 20.
- [2]
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--48
+
+ []
+
+[2]
 LaTeX Font Info:    Font shape `T1/jgi/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/jgi/b/n' tried instead on input line 59.
- [3]
-(./project_description.aux)
+(Font)              Font shape `T1/jgi/b/n' tried instead on input line 57.
+
+Underfull \hbox (badness 10000) in paragraph at lines 58--63
+
+ []
+
+[3] (./project_description.aux)
 Package logreq Info: Writing requests to 'project_description.run.xml'.
 \openout1 = `project_description.run.xml'.
 
@@ -1011,7 +1035,7 @@ Package logreq Info: Writing requests to 'project_description.run.xml'.
 Here is how much of TeX's memory you used:
  9033 strings out of 493109
  144340 string characters out of 6122467
- 542097 words of memory out of 5000000
+ 543097 words of memory out of 5000000
  12326 multiletter control sequences out of 15000+600000
  33118 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1021,7 +1045,7 @@ uio-texmf/texmf-local/fonts/type1/private/microsoft/georgia/jgib8a.pfa></opt/te
 xlive/uio-texmf/texmf-local/fonts/type1/private/microsoft/georgia/jgir8a.pfa></
 opt/texlive/uio-texmf/texmf-local/fonts/type1/private/microsoft/georgia/jgiri8a
 .pfa>
-Output written on project_description.pdf (3 pages, 64821 bytes).
+Output written on project_description.pdf (3 pages, 65022 bytes).
 PDF statistics:
  27 PDF objects out of 1000 (max. 8388607)
  18 compressed objects within 1 object stream

@@ -22,51 +22,54 @@ In this project we are going to design a Successive Approximation Register (SAR)
 of the cource INF-4420 at the University of Oslo, department of Informatics. The purpose of data converting is to interface the analog to the 
 digital diomain, which is essential in almost every circuit.\\
 \\
-The SAR-ADC is buildt up by several modules, all of which we are going to design our self with the exception of the digital logic (we are using ideal logic circuits) for the system. 
-The project covers all aspects of designing and implementing the SAR-ADC system, going from schematics to a circuit implemented in CMOS technology. We are given some minimum reqirements our solution
-must meet. The diffrent modules of the system is to be simulated in cadence (schematics) and later simulated in layout. The parasitics is also going to be included in the simulation in cadence.
-
-Since we are creating layout we must also make the circuit comply with the schematics by runing Layout-Vs-Schematics (LVS), Design-rule-check (DRC) and antenna tests. 
-There are sevral other considerations in order to make a good layout, 
-the task is therefore to identify theese chalanages and find solutions to mitigate the situation. There are several noise sources in the system whitch must be handled.
-
+The SAR-ADC is buildt up by several modules, including sample-and-hold (S\&H), comparator and dataconversion. It is out task to design each of this modules, except the digital logic 
+(we are using ideal logic circuits) for the system. The project covers all aspects of designing and implementing the SAR-ADC system, going from schematics to a circuit implemented in 
+CMOS technology. There are given some minimum requirements that we must meet. The different modules of the system is to be simulated in Cadence (schematics) and later simulated in layout. 
+The parasitics is also going to be included in the simulation in Cadence.\\
+\\
+Since we are creating layout we must also make the circuit comply with the schematics by running Layout-Vs-Schematics (LVS), Design-rule-check (DRC) and antenna tests. 
+There are several other considerations in order to make a good layout. The task is therefore to identify theese chalanages and find solutions to mitigate the situation. 
+There are also several noise sources in the system whitch must be handled.\\
+\\
 The system consists of sevral parts, mainly:
-
 \begin{itemize}
  \item Sample \& hold
  \item Comparator
  \item Digital to Analog Converter
  \item Digital SAR logic
 \end{itemize}
-
-
-The task is given in such a way that we are free to choose the implementation of the diffrent modules as long as it meet the reqirements. 
-We must therefore resarch circuits that can preform theese tasks and meet the spesifications. 
+The task is given in such a way that we are free to choose the implementation of the different modules as long as it meet the requirements. 
+We must therefore research circuits that can perform these tasks and meet the specifications. 
 
 \section*{Project plan}
-The assignment is devided into subtasks where the diffrent parts of the design is to be designed.
-The order is 
+The assignment is divided into subtasks where the different parts of the design is to be designed.\\
+\\
+The order is: 
 \begin{itemize}
  \item Design testbench
  \item DAC design
  \item Implementation of S\&H, Comparator and SAR logic
  \item Implementation of DAC into SAR-ADC
 \end{itemize}
+The final deadline is: 09.05.2016, 5pm.
 
-Final deadline: 09.05.2016, 5pm.
+SKAL VI LAGE SKJEMATIKK FØR LAYOT ELLER PARALELLT?
 
 \section*{Execution}
+
 \subsection*{Task1: Design testbench}
 The purpose of this task is to create a simulation enviroment for testing our solution. This setup should encourage testdriven development so we can spot implementation flaws early.
-In this testbench we want to identify correctnes and performance (and limitations and stability).
-
-To create a suitable test enviroment we are going to create multiple (\textit{simple}) test benches to test the diffrent modules.
+In this testbench we want to identify correctnes and performance (and limitations and stability).\\
+\\
+To create a suitable test enviroment we are going to create multiple (\textit{simple}) test benches to test the different modules.
 We are also going to create a high-level testbench to simulate the complete system.
 
 \subsection*{Task2: DAC design}
-
+In this task, we will study different DAC designs and make a schematic in Cadence. When designing DACs, there are several importaint specifications that needs to be considerated. It is
+our task to identify different specifications to fit our requirements.
 
 \subsection*{Task3: S\&H, Comparator, SAR logic}
+There are many different approces to create S\&H, comparator and SAR logic. Also here we need to investigate different designes.
 
 
 \subsection*{Task4: Implementation of DAC into SAR-ADC}
