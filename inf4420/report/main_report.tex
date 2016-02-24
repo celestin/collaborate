@@ -47,6 +47,18 @@ Critical parts in SAR ADCs
  \item Comparator
  \item DAC
 \end{itemize}
+SAR ADCs limitations:
+\begin{itemize}
+ \item The settling time is the DAC, whick must settle within the resolution of the overall converterm for example, 1/2 LSB (Least significant bit)
+ \item The comparator, which must resolve small differences in $V_{in}$ and $V_{DAC}$ within the specified time
+ \item The logic overhead
+\end{itemize}
+Comparator:
+\begin{itemize}
+ \item The comparator does not effect the overall linearity 
+\end{itemize}
+
+
 
 
 \section{Overview of the report}
