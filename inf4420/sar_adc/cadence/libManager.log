@@ -1,86 +1,88 @@
 \o Program:		@(#)$CDS: libManager version 6.1.6 - CAT33 05/07/2013 21:21 (sjfnl896) $
 \o Sub version:		sub-version  s001 
-\o Arguments:		-mpssession virtuoso11647 -mpshost vor.ifi.uio.no 
+\o Arguments:		-unmapped -mpssession virtuoso13987 -mpshost vor.ifi.uio.no 
 \o Working Directory:	vor.ifi.uio.no:/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence
 \o 64-bit offsets
+\o Qt version: 		4.7.2
 \o changeWorkingDir("/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence") unnecessary.
 \o ddSetForcedLib("") unnecessary.
-\a nrSetWindowVisibility(cdsLibManager "show")
-\o MPS service: map window
-\o Qt version: 		4.7.2
 \o Log file is "/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/libManager.log".
 \o Opening libManager window.
+\a nrSetWindowVisibility(cdsLibManager "show")
+\o MPS service: map window
 \o Library Manager customization server connected.
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrResizeWindow(cdsLibManager list(1 28 1920 1099))
+\a cdsLibManager->libListBox->value = "sar"
+\a cdsLibManager->libLineEdit->value = "sar"
+\a cdsLibManager->cellListBox->value = "symbol"
+\a cdsLibManager->cellListBox->value = "veriloga"
+\a cdsLibManager->cellListBox->value = "symbol"
+\a cdsLibManager->cellListBox->value = "veriloga"
+\a cdsLibManager->cellListBox->value = "symbol"
+\a cdsLibManager->cellListBox->value = "veriloga"
+\a cdsLibManager->cellListBox->value = "symbol"
+\a cdsLibManager->cellListBox->value = "veriloga"
+\a cdsLibManager->cellListBox->value = "symbol"
+\a cdsLibManager->cellLineEdit->value = "symbol"
 \a cdsLibManager->libListBox->value = "sar_adc"
-\a cdsLibManager->libLineEdit->value = "sar_adc"
-\a cdsLibManager->cellListBox->value = "sample_hold"
-\a cdsLibManager->cellLineEdit->value = "sample_hold"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_sample_hold"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_dac"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_comparator"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_SAR_logic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SAR_system"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SAR_logic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "SAR_logic"
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SAR_system"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "SAR_system"
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "sar"
+\a cdsLibManager->libLineEdit->value = "sar"
+\a cdsLibManager->cellListBox->value = "veriloga"
+\a cdsLibManager->cellListBox->value = "symbol"
+\a cdsLibManager->cellLineEdit->value = "symbol"
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "SIM_system"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "SIM_system"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "veriloga"
+\a cdsLibManager->cellListBox->value = "symbol"
+\a cdsLibManager->cellLineEdit->value = "symbol"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->fileLoadDefaultsButton->value = t
+\a nrSetWindowVisibility(LoadDefaultEnvironment "show")
+\a LoadDefaultEnvironment->QLineEdit2->value = "/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/"
+\a nrSetCurrentWindow(LoadDefaultEnvironment)
+\a nrResizeWindow(LoadDefaultEnvironment list(0 0 470 400))
+\a LoadDefaultEnvironment->QLineEdit2->value = "/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/"
+\a LoadDefaultEnvironment->QLineEdit2->value = "/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/symbol/"
+\a nrSetFileFilter(LoadDefaultEnvironment "All Files (*)")
+\a LoadDefaultEnvironment->QLineEdit1->value = "symbol.oa"
+\a LoadDefaultEnvironment->OK->value = t
+\a LoadDefaultEnvironment->value = '("/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/symbol" "/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/symbol/symbol.oa")
+\w Warning: (reader): illegal character '#' ignored at line 1 of file /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/symbol/symbol.oa 
+\w Warning: (reader): illegal character '\1' ignored at line 1 of file /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/symbol/symbol.oa 
+\o 
+\o gE#SYNTAX ERROR found at line 1 column 5 of file /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/symbol/symbol.oa
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "tcbn90lphpcg_220a"
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "sar"
+\a cdsLibManager->libLineEdit->value = "sar"
+\a cdsLibManager->cellListBox->value = "symbol"
+\a cdsLibManager->cellListBox->value = "veriloga"
+\a nrListItemAction(cdsLibManager->cellListBox 1 0)
 \o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrResizeWindow(cdsLibManager list(1 28 1920 1127))
-\a nrResizeWindow(cdsLibManager list(1 28 1920 1099))
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "sar"
+\a cdsLibManager->libLineEdit->value = "sar"
+\a cdsLibManager->cellListBox->value = "veriloga"
+\a cdsLibManager->cellLineEdit->value = "veriloga"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "symbol"
+\a nrListItemAction(cdsLibManager->cellListBox 0 0)
+\o MPS request: edit design
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "sar"
+\a cdsLibManager->libLineEdit->value = "sar"
+\a cdsLibManager->cellListBox->value = "symbol"
+\a cdsLibManager->cellLineEdit->value = "symbol"
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \o libManager is exiting.
