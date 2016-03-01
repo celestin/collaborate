@@ -10,3 +10,5 @@ DEFINE tpdn90lpnv2_210a /ifi/asgard/project0/nanos/referance/cadence616OA_90nmRF
 DEFINE tpbn90v_220a /ifi/asgard/project0/nanos/referance/cadence616OA_90nmRFLP/tpbn90v_220a
 DEFINE Sealring_for_miniasic /ifi/asgard/project0/nanos/referance/cadence616OA_90nmRFLP/Sealring_for_miniasic
 DEFINE ep_pack_2012 /ifi/asgard/project0/nanos/referance/cadence616OA_90nmRFLP/ep_pack_2012
+DEFINE sar_adc /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc
+DEFINE sar /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar

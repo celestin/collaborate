@@ -1,0 +1,74 @@
+ncvlog: *W,DLNOHV: Unable to find an 'hdl.var' file to load in.
+TOOL:	ncvlog(64)	13.10-s005: Started on Mar 01, 2016 at 13:06:29 CET
+ncvlog
+    -use5x
+    -work __nclib
+    -view module
+    -logfile ncvlog.log
+    -cdslib /tmp/ihdl_cdslibb6970_56970
+    -messages
+    -nostdout
+    -nocopyright
+    -ESCAPEDNAME
+    /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/veriloga/veriloga.va
+
+file: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/veriloga/veriloga.va
+`include "constants.vams"
+                        |
+ncvlog: *E,COFILX (/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/veriloga/veriloga.va,3|24): cannot open include file 'constants.vams'.
+`include "disciplines.vams"
+                          |
+ncvlog: *E,COFILX (/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/veriloga/veriloga.va,4|26): cannot open include file 'disciplines.vams'.
+   electrical done;
+                  |
+ncvlog: *E,EXPLPA (/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/veriloga/veriloga.va,15|18): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+   electrical clk;
+                 |
+ncvlog: *E,EXPLPA (/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/veriloga/veriloga.va,16|17): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+   electrical keep;
+                  |
+ncvlog: *E,EXPLPA (/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/veriloga/veriloga.va,17|18): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+   electrical [`NUM_BITS-1:0] dout;
+              |
+ncvlog: *E,EXPLPA (/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/veriloga/veriloga.va,18|14): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+   electrical [`NUM_BITS-1:0] dout;
+                                  |
+ncvlog: *E,EXPLPA (/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/veriloga/veriloga.va,18|34): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+   parameter real slack = 10p;
+                            |
+ncvlog: *E,EXPSMC (/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/veriloga/veriloga.va,21|28): expecting a semicolon (';') [3.10(IEEE)].
+   parameter real trise = 1n;
+                           |
+ncvlog: *E,EXPSMC (/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/veriloga/veriloga.va,22|27): expecting a semicolon (';') [3.10(IEEE)].
+   analog begin
+              |
+ncvlog: *E,EXPLPA (/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/veriloga/veriloga.va,29|14): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+      @(initial_step or initial_step("dc","ac","tran","xf"))  begin
+                      |
+ncvlog: *E,EXPRPA (/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/veriloga/veriloga.va,31|22): expecting a right parenthesis (')') [12.1.2][7.1(IEEE)].
+      @(initial_step or initial_step("dc","ac","tran","xf"))  begin
+                                                           |
+ncvlog: *E,EXPSMC (/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/veriloga/veriloga.va,31|59): expecting a semicolon (';') [7.1(IEEE)].
+      @(initial_step or initial_step("dc","ac","tran","xf"))  begin
+                                                                  |
+ncvlog: *E,EXPSMC (/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/veriloga/veriloga.va,31|66): expecting a semicolon (';') [7.1(IEEE)].
+	 state = 0;
+	       |
+ncvlog: *E,EXPLPA (/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/veriloga/veriloga.va,32|8): expecting a left parenthesis ('(') [7.1(IEEE)].
+	 old_state = 0;
+	           |
+ncvlog: *E,EXPLPA (/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/veriloga/veriloga.va,33|12): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+	 bit_num = `NUM_BITS-1;
+	         |
+ncvlog: *E,EXPLPA (/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/veriloga/veriloga.va,34|10): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+	 doneval = 0;
+	         |
+ncvlog: *E,EXPLPA (/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/veriloga/veriloga.va,35|10): expecting a left parenthesis ('(') [12.1.2][7.1(IEEE)].
+      end
+        |
+ncvlog: *E,EXPENM (/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar/veriloga/veriloga.va,36|8): expecting the keyword 'endmodule' [12.1(IEEE)].
+	module __nclib.SAR_ideal:module
+		errors: 16, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 2, warnings: 1
+TOOL:	ncvlog(64)	13.10-s005: Exiting on Mar 01, 2016 at 13:06:29 CET  (total: 00:00:00)

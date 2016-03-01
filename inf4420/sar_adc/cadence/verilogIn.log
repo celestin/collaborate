@@ -1,0 +1,7 @@
+@(#)$CDS: ihdl version 6.1.6-64b 07/05/2013 16:43 (sjfnl155) $  Tue Mar  1 13:06:28 2016
+
+WARNING (VERILOGIN-19): The library, sample, is not specified in the cds.lib file. Add the library in the
+cds.lib file and run the command again.
+ERROR (VERILOGIN-547): The parser ncvlog failed to parse the text file. Refer to the file 'ncvlog.log'
+for compilation messages and errors.
+INFO (VERILOGIN-206): End of Logfile.
