@@ -1,0 +1,64 @@
+// VerilogA for INF4420_2009, SAR_ideal, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+`define NUM_BITS 8 
+
+module SAR_ideal( clk, keep, dout, done );
+
+   input clk;
+   input keep;
+   output [`NUM_BITS-1:0] dout;
+   output done;
+
+   electrical done;
+   electrical clk;
+   electrical keep;
+   electrical [`NUM_BITS-1:0] dout;
+
+   parameter real vth = 0.5;
+   parameter real slack = 10p;
+   parameter real trise = 1n;
+
+   integer doneval;
+   integer state;
+   integer old_state;
+   integer bit_num;
+
+   analog begin
+      
+      @(initial_step or initial_step("dc","ac","tran","xf"))  begin
+	 state = 0;
+	 old_state = 0;
+	 bit_num = `NUM_BITS-1;
+	 doneval = 0;
+      end
+
+      @(cross (V(clk)-vth, 1, slack, clk.potential.abstol)) begin
+	 // drive the bit we are testing on positive clock edge
+	 old_state = state;
+	 if( bit_num >= 0 )
+	   state = state | (1<<bit_num);
+	 else
+	   doneval = 1;
+      end
+
+      @(cross (V(clk)-vth, -1, slack, clk.potential.abstol)) begin
+	 // if input flipped, dout was too high
+	 if( V(keep)-vth < 0 )
+	   state = old_state;
+	 if( bit_num >= 0 )
+	   bit_num = bit_num - 1;
+      end
+
+      generate i (`NUM_BITS-1,0) begin
+	 V(dout[i]) <+ transition( ((state&(1<<i))?1:0), trise, trise, trise );
+      end
+	 
+      V(done) <+ transition( doneval, trise, trise, trise );
+    end
+	 
+endmodule
+
+`undef NUM_BITS
