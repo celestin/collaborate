@@ -6,11 +6,11 @@
 LockStakeVersion               1.1
 LoginName                      vegardmi
 HostName                       vetur.ifi.uio.no
-ProcessIdentifier              24538
-ProcessCreationTime_UTC        1457979197
-ProcessCreationTime_Readable   Mon Mar 14 19:13:17 2016 CET
+ProcessIdentifier              46095
+ProcessCreationTime_UTC        1458043048
+ProcessCreationTime_Readable   Tue Mar 15 12:57:28 2016 CET
 AppIdentifier                  /projects/nanos/programsrhel6/IC616/tools.lnx86/dfII/bin/64bit/virtuoso
 OSType                         lnx86
 ReasonForPlacingEditLock       Set lock by hiiLockFile
 FilePathUsedToEditLock         /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/logs_vegardmi/logs0/Job1.log
-TimeEditLocked                 Mon Mar 14 19:13:27 2016 CET
+TimeEditLocked                 Tue Mar 15 12:57:35 2016 CET

@@ -1,5 +1,5 @@
-\# Program start time UTC 2016.03.14 18:13:27.765
-\# Local time Monday 14 March 2016, 7:13 pm
+\# Program start time UTC 2016.03.15 11:57:35.553
+\# Local time Tuesday 15 March 2016, 12:57 pm
 \o Program:		@(#)$CDS: virtuoso version 6.1.6-64b 07/05/2013 16:49 (sjfnl163) $
 \o Hierarchy:		/ifi/asgard/project0/nanos/programsrhel6/IC616/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.6-64b.500.1  (64-bit addresses)
@@ -13,22 +13,22 @@
 \# Depth of Visual (Root):	16 (16)
 \# Number of Planes Used:	16
 \# X version:		11.0 (vendor release 3370)
-\# X resource pool:	base 0x800000, mask 0x3fffff (4194303), shift 0
+\# X resource pool:	base 0x1000000, mask 0x3fffff (4194303), shift 0
 \# 			current id 0x0, current max 0x3ffffa (4194298)
 \# Max data seg size:	     unlimited
 \# Max process size:	     35,840 MB
-\# Initial sbrk value:	        324 MB
-\# Available memory:	    110,517 MB
+\# Initial sbrk value:	        308 MB
+\# Available memory:	    109,840 MB
 \# System memory:	    139,281 MB
-\# Maximum memory size:	     35,566 MB
-\# Max mem available:	     35,566 MB
+\# Maximum memory size:	     35,582 MB
+\# Max mem available:	     35,582 MB
 \# Initial memory used:	         50 MB
 \#        process size:	        700 MB
 \# Qt version:		4.7.2
 \# Window Manager:	other
 \# User Name:		vegardmi
 \o Working Directory:	vetur.ifi.uio.no:/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence
-\# Process Id:		24538
+\# Process Id:		46095
 \o 
 \o COPYRIGHT © 1992-2013  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           © 1992-2013  UNIX SYSTEMS Laboratories INC.,
@@ -41,7 +41,7 @@
 \o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
 \o Use/reproduction/disclosure is subject to restriction
 \o set forth at FAR 1252.227-19 or its equivalent.
-\# Available memory:        110,493 MB at UTC 2016.03.14 18:13:28.434
+\# Available memory:        109,795 MB at UTC 2016.03.15 11:57:36.156
 \o Loading geView.cxt 
 \o Loading menuBuilder.cxt 
 \o Loading schView.cxt 
@@ -68,7 +68,7 @@
 \o Loading adexl.cxt 
 \o *Info*    Exporting services from client ... 
 \o 
-\# Memory report: using         152 MB, process size 930 MB at UTC 2016.03.14 18:13:35.032
+\# Memory report: using         152 MB, process size 930 MB at UTC 2016.03.15 11:57:41.726
 \w *WARNING* The directory: '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar' does not exist
 \w 	but was defined in libFile '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/cds.lib' for Lib 'sar'.
 \o END OF USER CUSTOMIZATION
@@ -90,16 +90,16 @@
 \o *Info*    Configuring the session ...
 \o 
 \o 	Library      = sar_adc
-\o 	Cell         = SIM_op_amp
+\o 	Cell         = SIM_op_amp_2
 \o 	View         = schematic
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = sar_adc:SIM_op_amp:1_none_Interactive.0
-\o 	Results DB   = /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0.rdb
-\o 	Results Dir  = /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/1/sar_adc:SIM_op_amp:1
-\o 	Results Loc  = /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data
+\o 	State Name   = sar_adc:SIM_op_amp_2:1_none_Interactive.0
+\o 	Results DB   = /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.0.rdb
+\o 	Results Dir  = /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.0/1/sar_adc:SIM_op_amp_2:1
+\o 	Results Loc  = /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data
 \o 	Project Dir  = /ifi/bifrost/m00/vegardmi/simulation
-\o 	Setup DB loc = /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp/adexl
+\o 	Setup DB loc = /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp_2/adexl
 \o 	File Encoding = 0
 \o 
 \o 
@@ -303,32 +303,35 @@
 \o         Its internal default value will be used.
 \o Loading devCheck.cxt 
 \o //  Could not initialize Calibre layout-server socket on at localhost:9189. Trying to find free socket ...
-\o //  Calibre layout-server initialized successfully at socket 5000, host localhost.
+\o //  Calibre layout-server initialized successfully at socket 5005, host localhost.
 \o 
 \o 
 \o 
 \o 
 \o 
 \o *Info*    Run start for Point ID (0 1) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
+\o           sar_adc:SIM_op_amp_2:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var S_AC = "0.6"
-\o Setting var S_AMPLITUDE = "0.6"
+\o Setting var S_AC = "1"
+\o Setting var S_AMPLITUDE = "1.2"
 \o Setting var S_DC = "0.6"
 \o Setting var S_FREQ = "10k"
-\o Setting var VBIAS = "0.2"
 \o Setting temp(T) = 27
+\o Setting var v = "500m"
+\o Setting var v_bias1 = "800m"
+\o Setting var v_bias2 = "800m"
+\o Setting var v_neg = "500m"
 \o 
 \o *Info*    Netlist Directory =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/1/sar_adc:SIM_op_amp:1/netlist
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.0/1/sar_adc:SIM_op_amp_2:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/1/sar_adc:SIM_op_amp:1
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.0/1/sar_adc:SIM_op_amp_2:1
 \o 
 \o 
 \o *Info*    Creating Netlist for Point ID (0 1)
@@ -336,17 +339,17 @@
 \o generate netlist...
 \o Loading seCore.cxt 
 \o Initializing the control file using cp:
-\o     cp /ifi/asgard/project0/nanos/programsrhel6/IC616/tools.lnx86/dfII/etc/si/control.spectre /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/1/sar_adc:SIM_op_amp:1/netlist/control
+\o     cp /ifi/asgard/project0/nanos/programsrhel6/IC616/tools.lnx86/dfII/etc/si/control.spectre /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.0/1/sar_adc:SIM_op_amp_2:1/netlist/control
 \o Copying Spectre source file 'spectre.inp'
 \o Copying Spectre command file 'spectre.sim'
-\o Begin Incremental Netlisting Mar 14 19:13:41 2016
-\# Memory report: using         253 MB, process size 1,031 MB at UTC 2016.03.14 18:13:41.947
-\o End netlisting Mar 14 19:13:41 2016
+\o Begin Incremental Netlisting Mar 15 12:57:47 2016
+\# Memory report: using         253 MB, process size 1,031 MB at UTC 2016.03.15 11:57:47.904
+\o End netlisting Mar 15 12:57:47 2016
 \o 
 \o Netlisting Statistics:
-\o 	Number of components:   11
+\o 	Number of components:   16
 \o 
-\o 	Elapsed time:          1.0s (11.00/s)
+\o 	Elapsed time:          1.0s (16.00/s)
 \o Errors: 0	Warnings: 0
 \o       ...successful.
 \o compose simulator input file...
@@ -354,10 +357,10 @@
 \o       ...successful.
 \o Loading elec.cxt 
 \o 
-\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp:1 ]
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
 \o           for Point ID (0 1).
 \o 
-\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/1/sar_adc:SIM_op_amp:1/psf.
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.0/1/sar_adc:SIM_op_amp_2:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -374,596 +377,7 @@
 \o 
 \o 
 \o *Info*    Run complete for Point ID (0 1) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (0 2) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/2/sar_adc:SIM_op_amp:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/2/sar_adc:SIM_op_amp:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (0 2)
-\o 
-\o generate netlist...
-\o Begin Incremental Netlisting Mar 14 19:13:48 2016
-\o End netlisting Mar 14 19:13:48 2016
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp:1 ]
-\o           for Point ID (0 2).
-\o 
-\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/2/sar_adc:SIM_op_amp:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 2) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (0 3) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VBIAS = "0.311111111111111"
-\o 
-\o *Info*    Netlist Directory =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/3/sar_adc:SIM_op_amp:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/3/sar_adc:SIM_op_amp:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (0 3)
-\o 
-\o generate netlist...
-\o Begin Incremental Netlisting Mar 14 19:13:52 2016
-\o End netlisting Mar 14 19:13:52 2016
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp:1 ]
-\o           for Point ID (0 3).
-\o 
-\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/3/sar_adc:SIM_op_amp:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 3) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (0 4) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VBIAS = "0.422222222222222"
-\o 
-\o *Info*    Netlist Directory =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/4/sar_adc:SIM_op_amp:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/4/sar_adc:SIM_op_amp:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (0 4)
-\o 
-\o generate netlist...
-\o Begin Incremental Netlisting Mar 14 19:13:57 2016
-\o End netlisting Mar 14 19:13:57 2016
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp:1 ]
-\o           for Point ID (0 4).
-\o 
-\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/4/sar_adc:SIM_op_amp:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 4) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (0 5) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VBIAS = "0.533333333333333"
-\o 
-\o *Info*    Netlist Directory =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/5/sar_adc:SIM_op_amp:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/5/sar_adc:SIM_op_amp:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (0 5)
-\o 
-\o generate netlist...
-\o Begin Incremental Netlisting Mar 14 19:14:01 2016
-\o End netlisting Mar 14 19:14:01 2016
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp:1 ]
-\o           for Point ID (0 5).
-\o 
-\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/5/sar_adc:SIM_op_amp:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 5) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (0 6) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VBIAS = "0.644444444444444"
-\o 
-\o *Info*    Netlist Directory =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/6/sar_adc:SIM_op_amp:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/6/sar_adc:SIM_op_amp:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (0 6)
-\o 
-\o generate netlist...
-\o Begin Incremental Netlisting Mar 14 19:14:05 2016
-\o End netlisting Mar 14 19:14:05 2016
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp:1 ]
-\o           for Point ID (0 6).
-\o 
-\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/6/sar_adc:SIM_op_amp:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 6) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (0 7) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VBIAS = "0.755555555555556"
-\o 
-\o *Info*    Netlist Directory =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/7/sar_adc:SIM_op_amp:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/7/sar_adc:SIM_op_amp:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (0 7)
-\o 
-\o generate netlist...
-\o Begin Incremental Netlisting Mar 14 19:14:10 2016
-\o End netlisting Mar 14 19:14:10 2016
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp:1 ]
-\o           for Point ID (0 7).
-\o 
-\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/7/sar_adc:SIM_op_amp:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 7) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (0 8) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VBIAS = "0.866666666666667"
-\o 
-\o *Info*    Netlist Directory =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/8/sar_adc:SIM_op_amp:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/8/sar_adc:SIM_op_amp:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (0 8)
-\o 
-\o generate netlist...
-\o Begin Incremental Netlisting Mar 14 19:14:14 2016
-\o End netlisting Mar 14 19:14:14 2016
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp:1 ]
-\o           for Point ID (0 8).
-\o 
-\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/8/sar_adc:SIM_op_amp:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 8) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (0 9) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VBIAS = "0.977777777777778"
-\o 
-\o *Info*    Netlist Directory =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/9/sar_adc:SIM_op_amp:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/9/sar_adc:SIM_op_amp:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (0 9)
-\o 
-\o generate netlist...
-\o Begin Incremental Netlisting Mar 14 19:14:19 2016
-\o End netlisting Mar 14 19:14:19 2016
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp:1 ]
-\o           for Point ID (0 9).
-\o 
-\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/9/sar_adc:SIM_op_amp:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 9) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (0 10) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VBIAS = "1.08888888888889"
-\o 
-\o *Info*    Netlist Directory =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/10/sar_adc:SIM_op_amp:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/10/sar_adc:SIM_op_amp:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (0 10)
-\o 
-\o generate netlist...
-\o Begin Incremental Netlisting Mar 14 19:14:23 2016
-\o End netlisting Mar 14 19:14:23 2016
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp:1 ]
-\o           for Point ID (0 10).
-\o 
-\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/10/sar_adc:SIM_op_amp:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 10) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (0 11) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VBIAS = "1.2"
-\o 
-\o *Info*    Netlist Directory =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/11/sar_adc:SIM_op_amp:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/11/sar_adc:SIM_op_amp:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (0 11)
-\o 
-\o generate netlist...
-\o Begin Incremental Netlisting Mar 14 19:14:28 2016
-\o End netlisting Mar 14 19:14:28 2016
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp:1 ]
-\o           for Point ID (0 11).
-\o 
-\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0/11/sar_adc:SIM_op_amp:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (0 11) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
+\o           sar_adc:SIM_op_amp_2:1 ].
 \o 
 \o 
 \o 
@@ -977,16 +391,16 @@
 \o *Info*    Configuring the session ...
 \o 
 \o 	Library      = sar_adc
-\o 	Cell         = SIM_op_amp
+\o 	Cell         = SIM_op_amp_2
 \o 	View         = schematic
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = sar_adc:SIM_op_amp:1_none_Interactive.1
-\o 	Results DB   = /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp/adexl/results/data/Interactive.1.rdb
-\o 	Results Dir  = /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.1/1/sar_adc:SIM_op_amp:1
-\o 	Results Loc  = /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data
+\o 	State Name   = sar_adc:SIM_op_amp_2:1_none_Interactive.1
+\o 	Results DB   = /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.1.rdb
+\o 	Results Dir  = /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.1/1/sar_adc:SIM_op_amp_2:1
+\o 	Results Loc  = /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data
 \o 	Project Dir  = /ifi/bifrost/m00/vegardmi/simulation
-\o 	Setup DB loc = /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp/adexl
+\o 	Setup DB loc = /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp_2/adexl
 \o 	File Encoding = 0
 \o 
 \o 
@@ -998,46 +412,49 @@
 \o 
 \o 
 \o *Info*    Run start for Point ID (1 1) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
+\o           sar_adc:SIM_op_amp_2:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var S_AC = "0.6"
-\o Setting var S_AMPLITUDE = "0.6"
+\o Setting var S_AC = "1"
+\o Setting var S_AMPLITUDE = "1.2"
 \o Setting var S_DC = "0.6"
 \o Setting var S_FREQ = "10k"
-\o Setting var VBIAS = "0.1"
 \o Setting temp(T) = 27
+\o Setting var v = "500m"
+\o Setting var v_bias1 = "800m"
+\o Setting var v_bias2 = "800m"
+\o Setting var v_neg = "500m"
 \o 
 \o *Info*    Netlist Directory =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.1/1/sar_adc:SIM_op_amp:1/netlist
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.1/1/sar_adc:SIM_op_amp_2:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.1/1/sar_adc:SIM_op_amp:1
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.1/1/sar_adc:SIM_op_amp_2:1
 \o 
 \o 
 \o *Info*    Creating Netlist for Point ID (1 1)
 \o 
 \o generate netlist...
-\o Begin Incremental Netlisting Mar 14 19:19:07 2016
-\o End netlisting Mar 14 19:19:08 2016
+\o Begin Incremental Netlisting Mar 15 13:02:15 2016
+\o End netlisting Mar 15 13:02:15 2016
 \o 
 \o Netlisting Statistics:
-\o 	Number of components:   11
+\o 	Number of components:   16
 \o 
-\o 	Elapsed time:          1.0s (11.00/s)
+\o 	Elapsed time:          1.0s (16.00/s)
 \o Errors: 0	Warnings: 0
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp:1 ]
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
 \o           for Point ID (1 1).
 \o 
-\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.1/1/sar_adc:SIM_op_amp:1/psf.
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.1/1/sar_adc:SIM_op_amp_2:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -1053,191 +470,2601 @@
 \o 
 \o 
 \o *Info*    Run complete for Point ID (1 1) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
+\o           sar_adc:SIM_op_amp_2:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (1 2) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VBIAS = "0.466666666666667"
-\o 
-\o *Info*    Netlist Directory =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.1/2/sar_adc:SIM_op_amp:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.1/2/sar_adc:SIM_op_amp:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (1 2)
-\o 
-\o generate netlist...
-\o Begin Incremental Netlisting Mar 14 19:19:13 2016
-\o End netlisting Mar 14 19:19:13 2016
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp:1 ]
-\o           for Point ID (1 2).
-\o 
-\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.1/2/sar_adc:SIM_op_amp:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 2) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (1 3) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VBIAS = "0.833333333333333"
-\o 
-\o *Info*    Netlist Directory =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.1/3/sar_adc:SIM_op_amp:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.1/3/sar_adc:SIM_op_amp:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (1 3)
-\o 
-\o generate netlist...
-\o Begin Incremental Netlisting Mar 14 19:19:18 2016
-\o End netlisting Mar 14 19:19:18 2016
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp:1 ]
-\o           for Point ID (1 3).
-\o 
-\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.1/3/sar_adc:SIM_op_amp:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 3) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (1 4) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VBIAS = "1.2"
-\o 
-\o *Info*    Netlist Directory =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.1/4/sar_adc:SIM_op_amp:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.1/4/sar_adc:SIM_op_amp:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (1 4)
-\o 
-\o generate netlist...
-\o Begin Incremental Netlisting Mar 14 19:19:22 2016
-\o End netlisting Mar 14 19:19:22 2016
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp:1 ]
-\o           for Point ID (1 4).
-\o 
-\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.1/4/sar_adc:SIM_op_amp:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (1 4) on testbench [
-\o           sar_adc:SIM_op_amp:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Job 1 timed out after no activity in 300 seconds.
+\# Available memory:         99,599 MB at UTC 2016.03.15 12:03:16.368
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables20".
 \o To save future changes, copy variables to cellView before exiting.
-\p > 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = sar_adc
+\o 	Cell         = SIM_op_amp_2
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = sar_adc:SIM_op_amp_2:1_none_Interactive.2
+\o 	Results DB   = /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.2.rdb
+\o 	Results Dir  = /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.2/1/sar_adc:SIM_op_amp_2:1
+\o 	Results Loc  = /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data
+\o 	Project Dir  = /ifi/bifrost/m00/vegardmi/simulation
+\o 	Setup DB loc = /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp_2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 1) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var S_AC = "0"
+\o Setting var S_AMPLITUDE = "0"
+\o Setting var S_DC = "1.2"
+\o Setting var S_FREQ = "10k"
+\o Setting temp(T) = 27
+\o Setting var v_bias1 = "800m"
+\o Setting var v_bias2 = "800m"
+\o Setting var v_neg = "0"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.2/1/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.2/1/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 1)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:04:45 2016
+\o End netlisting Mar 15 13:04:45 2016
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   16
+\o 
+\o 	Elapsed time:          1.0s (16.00/s)
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (2 1).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.2/1/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 1) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Available memory:         90,311 MB at UTC 2016.03.15 12:05:56.387
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables20".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = sar_adc
+\o 	Cell         = SIM_op_amp_2
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = sar_adc:SIM_op_amp_2:1_none_Interactive.3
+\o 	Results DB   = /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3.rdb
+\o 	Results Dir  = /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/1/sar_adc:SIM_op_amp_2:1
+\o 	Results Loc  = /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data
+\o 	Project Dir  = /ifi/bifrost/m00/vegardmi/simulation
+\o 	Setup DB loc = /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp_2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 1) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var S_AC = "0"
+\o Setting var S_AMPLITUDE = "0"
+\o Setting var S_DC = "1.2"
+\o Setting var S_FREQ = "10k"
+\o Setting temp(T) = 27
+\o Setting var v_bias1 = "0"
+\o Setting var v_bias2 = "0"
+\o Setting var v_neg = "0"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/1/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/1/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 1)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:08:03 2016
+\o End netlisting Mar 15 13:08:03 2016
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   16
+\o 
+\o 	Elapsed time:          1.0s (16.00/s)
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 1).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/1/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Available memory:         82,013 MB at UTC 2016.03.15 12:08:06.413
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 1) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 2) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "0.3"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/2/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/2/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 2)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:08:08 2016
+\o End netlisting Mar 15 13:08:08 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 2).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/2/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 2) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 3) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "0.6"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/3/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/3/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 3)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:08:12 2016
+\o End netlisting Mar 15 13:08:12 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 3).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/3/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 3) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 4) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "0.9"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/4/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/4/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 4)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:08:16 2016
+\o End netlisting Mar 15 13:08:16 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 4).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/4/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 4) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 5) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "1.2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/5/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/5/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 5)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:08:20 2016
+\o End netlisting Mar 15 13:08:20 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 5).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/5/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 5) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 6) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias1 = "0.3"
+\o Setting var v_bias2 = "0"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/6/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/6/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 6)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:08:25 2016
+\o End netlisting Mar 15 13:08:25 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 6).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/6/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Available memory:        109,117 MB at UTC 2016.03.15 12:08:26.466
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 6) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 7) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "0.3"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/7/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/7/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 7)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:08:29 2016
+\o End netlisting Mar 15 13:08:29 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 7).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/7/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 7) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 8) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "0.6"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/8/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/8/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 8)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:08:32 2016
+\o End netlisting Mar 15 13:08:32 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 8).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/8/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 8) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 9) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "0.9"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/9/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/9/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 9)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:08:36 2016
+\o End netlisting Mar 15 13:08:36 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 9).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/9/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 9) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 10) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "1.2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/10/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/10/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 10)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:08:40 2016
+\o End netlisting Mar 15 13:08:40 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 10).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/10/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 10) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 11) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias1 = "0.6"
+\o Setting var v_bias2 = "0"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/11/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/11/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 11)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:08:44 2016
+\o End netlisting Mar 15 13:08:44 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 11).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/11/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 11) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 12) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "0.3"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/12/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/12/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 12)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:08:49 2016
+\o End netlisting Mar 15 13:08:49 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 12).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/12/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 12) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 13) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "0.6"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/13/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/13/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 13)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:08:52 2016
+\o End netlisting Mar 15 13:08:52 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 13).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/13/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 13) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 14) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "0.9"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/14/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/14/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 14)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:08:57 2016
+\o End netlisting Mar 15 13:08:57 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 14).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/14/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 14) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 15) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "1.2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/15/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/15/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 15)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:09:01 2016
+\o End netlisting Mar 15 13:09:01 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 15).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/15/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 15) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 16) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias1 = "0.9"
+\o Setting var v_bias2 = "0"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/16/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/16/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 16)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:09:06 2016
+\o End netlisting Mar 15 13:09:06 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 16).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/16/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 16) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 17) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "0.3"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/17/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/17/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 17)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:09:10 2016
+\o End netlisting Mar 15 13:09:10 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 17).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/17/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 17) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 18) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "0.6"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/18/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/18/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 18)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:09:14 2016
+\o End netlisting Mar 15 13:09:15 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 18).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/18/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 18) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 19) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "0.9"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/19/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/19/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 19)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:09:18 2016
+\o End netlisting Mar 15 13:09:18 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 19).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/19/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 19) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 20) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "1.2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/20/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/20/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 20)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:09:22 2016
+\o End netlisting Mar 15 13:09:22 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 20).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/20/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 20) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 21) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias1 = "1.2"
+\o Setting var v_bias2 = "0"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/21/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/21/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 21)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:09:26 2016
+\o End netlisting Mar 15 13:09:26 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 21).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/21/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 21) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 22) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "0.3"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/22/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/22/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 22)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:09:30 2016
+\o End netlisting Mar 15 13:09:30 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 22).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/22/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 22) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 23) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "0.6"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/23/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/23/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 23)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:09:34 2016
+\o End netlisting Mar 15 13:09:34 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 23).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/23/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 23) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 24) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "0.9"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/24/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/24/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 24)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:09:39 2016
+\o End netlisting Mar 15 13:09:39 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 24).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/24/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 24) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 25) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "1.2"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/25/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/25/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 25)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:09:43 2016
+\o End netlisting Mar 15 13:09:43 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (3 25).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3/25/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 25) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables20".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = sar_adc
+\o 	Cell         = SIM_op_amp_2
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = sar_adc:SIM_op_amp_2:1_none_Interactive.4
+\o 	Results DB   = /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4.rdb
+\o 	Results Dir  = /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/1/sar_adc:SIM_op_amp_2:1
+\o 	Results Loc  = /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data
+\o 	Project Dir  = /ifi/bifrost/m00/vegardmi/simulation
+\o 	Setup DB loc = /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp_2/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o *Info*    Spectre controlMode is set "batch".
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 1) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var S_AC = "0"
+\o Setting var S_AMPLITUDE = "0"
+\o Setting var S_DC = "1.2"
+\o Setting var S_FREQ = "10k"
+\o Setting temp(T) = 27
+\o Setting var v_bias1 = "0"
+\o Setting var v_bias2 = "0"
+\o Setting var v_neg = "0"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/1/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/1/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 1)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:11:46 2016
+\o End netlisting Mar 15 13:11:46 2016
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   16
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (4 1).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/1/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 1) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 2) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "66.66666667m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/2/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/2/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 2)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:11:51 2016
+\o End netlisting Mar 15 13:11:51 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (4 2).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/2/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 2) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 3) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "133.3333333m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/3/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/3/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 3)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:11:56 2016
+\o End netlisting Mar 15 13:11:56 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (4 3).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/3/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 3) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 4) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "200m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/4/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/4/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 4)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:12:01 2016
+\o End netlisting Mar 15 13:12:01 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (4 4).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/4/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 4) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 5) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias1 = "66.66666667m"
+\o Setting var v_bias2 = "0"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/5/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/5/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 5)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:12:05 2016
+\o End netlisting Mar 15 13:12:05 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (4 5).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/5/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 5) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 6) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "66.66666667m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/6/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/6/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 6)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:12:10 2016
+\o End netlisting Mar 15 13:12:10 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (4 6).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/6/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 6) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 7) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "133.3333333m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/7/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/7/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 7)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:12:15 2016
+\o End netlisting Mar 15 13:12:15 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (4 7).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/7/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 7) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 8) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "200m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/8/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/8/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 8)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:12:20 2016
+\o End netlisting Mar 15 13:12:20 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (4 8).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/8/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 8) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 9) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias1 = "133.3333333m"
+\o Setting var v_bias2 = "0"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/9/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/9/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 9)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:12:25 2016
+\o End netlisting Mar 15 13:12:25 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (4 9).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/9/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 9) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 10) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "66.66666667m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/10/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/10/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 10)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:12:30 2016
+\o End netlisting Mar 15 13:12:30 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (4 10).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/10/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 10) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 11) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "133.3333333m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/11/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/11/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 11)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:12:34 2016
+\o End netlisting Mar 15 13:12:35 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (4 11).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/11/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 11) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 12) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "200m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/12/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/12/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 12)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:12:39 2016
+\o End netlisting Mar 15 13:12:39 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (4 12).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/12/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 12) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 13) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias1 = "200m"
+\o Setting var v_bias2 = "0"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/13/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/13/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 13)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:12:44 2016
+\o End netlisting Mar 15 13:12:44 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (4 13).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/13/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 13) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 14) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "66.66666667m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/14/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/14/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 14)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:12:48 2016
+\o End netlisting Mar 15 13:12:48 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (4 14).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/14/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 14) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 15) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "133.3333333m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/15/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/15/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 15)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:12:52 2016
+\o End netlisting Mar 15 13:12:52 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (4 15).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/15/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 15) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (4 16) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var v_bias2 = "200m"
+\o 
+\o *Info*    Netlist Directory =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/16/sar_adc:SIM_op_amp_2:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/16/sar_adc:SIM_op_amp_2:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (4 16)
+\o 
+\o generate netlist...
+\o Begin Incremental Netlisting Mar 15 13:12:56 2016
+\o End netlisting Mar 15 13:12:57 2016
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ sar_adc:SIM_op_amp_2:1 ]
+\o           for Point ID (4 16).
+\o 
+\o Delete psf data in /ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4/16/sar_adc:SIM_op_amp_2:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (4 16) on testbench [
+\o           sar_adc:SIM_op_amp_2:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Received signal SIGINT.
+\o 
+\o 
