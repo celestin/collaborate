@@ -113,20 +113,24 @@ We have not completed the schematics for the SAR logic.
    \caption{DAC}
    \label{dac}
 \end{figure}
-This DAC circuit is based on the R-2R ladder from the book Analog Integrated Circuit Design by Carusone, Johns and Martin \cite{Analog-integrated}.
+This DAC circuit is based on the R-2R ladder from the book Analog Integrated Circuit Design by Carusone, Johns and Martin \cite{Analog-integrated}. This design commonly used in many applicaions, and
+is therefor the main reason for why we have choosen to make this design.
 
 \section*{Schematic: op\_amp}
-% \begin{figure}[!ht]
-%  \centering
-%    \includegraphics[width=0.4\textwidth]{img/timing_sample_hold.jpg}
-%    \caption{Single-ended S/H opartion \cite{CMOS-baker}}
-%    \label{timing}
-% \end{figure}
-The op-amp circuit is based on a design from CMOSedu.com (R. Jacob Baker). 
+The op-amp circuit is based on a design from CMOSedu.com (R. Jacob Baker), and is a commonly used differential pair op-amp. We have tried some different designs, but we have not succeded in 
+any of the other designs. This is not the final version, since it is not fully tested. The dimentrions for the NMOS and PMOS transistors are based on a former thesis that R. Jacob Baker has 
+reffered to in his webpage. For the NMOS and the PMOS, we have used the relation 10/2 and 22/2 respectivly. The final design can be seen in Figure \ref{opamp}\\
+\\
+To test the opamp, we have made a simple testbech that can be seen in section \textbf{Schematic: SIM\_op\_amp}.
+\begin{figure}[!ht]
+ \centering
+   \includegraphics[width=\textwidth]{img/op_amp_3}
+   \caption{Opamp}
+   \label{opamp}
+\end{figure}
 
 \section{Test bench}
 In this section a short overview of the different test-beches for our components is presented.
-
 
 \section*{Schematic: SIM\_system}
 \begin{figure}[!ht]

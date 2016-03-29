@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.19)  29 MAR 2016 15:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.19)  29 MAR 2016 16:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1343,50 +1343,60 @@ Package pdftex.def Info: img/dac.png used on input line 112.
 LaTeX Warning: Citation 'Analog-integrated' on page 3 undefined on input line 1
 16.
 
-[3 <./img/timing_sample_hold.jpg> <./img/sample_hold.png>]
-<img/SIM_system.png, id=32, 1295.59032pt x 707.64375pt>
+<img/op_amp_3.png, id=28, 1296.34312pt x 692.5875pt>
+File: img/op_amp_3.png Graphic file (type png)
+ <use img/op_amp_3.png>
+Package pdftex.def Info: img/op_amp_3.png used on input line 127.
+(pdftex.def)             Requested size: 360.0pt x 192.33797pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--131
+
+ []
+
+[3 <./img/timing_sample_hold.jpg> <./img/sample_hold.png>] [4 <./img/comparator
+.png> <./img/dac.png>] <img/SIM_system.png, id=38, 1295.59032pt x 707.64375pt>
 File: img/SIM_system.png Graphic file (type png)
 
 <use img/SIM_system.png>
-Package pdftex.def Info: img/SIM_system.png used on input line 134.
+Package pdftex.def Info: img/SIM_system.png used on input line 138.
 (pdftex.def)             Requested size: 360.0pt x 196.62721pt.
- [4 <./img/comparator.png> <./img/dac.png>]
-<img/SIM_sample_hold.png, id=38, 1295.59032pt x 707.64375pt>
+
+<img/SIM_sample_hold.png, id=39, 1295.59032pt x 707.64375pt>
 File: img/SIM_sample_hold.png Graphic file (type png)
 
 <use img/SIM_sample_hold.png>
-Package pdftex.def Info: img/SIM_sample_hold.png used on input line 146.
+Package pdftex.def Info: img/SIM_sample_hold.png used on input line 150.
 (pdftex.def)             Requested size: 360.0pt x 196.62721pt.
-
-<img/SIM_comparator.png, id=39, 1295.59032pt x 706.89093pt>
+ [5 <./img/op_amp_3.png>]
+<img/SIM_comparator.png, id=44, 1295.59032pt x 706.89093pt>
 File: img/SIM_comparator.png Graphic file (type png)
 
 <use img/SIM_comparator.png>
-Package pdftex.def Info: img/SIM_comparator.png used on input line 157.
+Package pdftex.def Info: img/SIM_comparator.png used on input line 161.
 (pdftex.def)             Requested size: 360.0pt x 196.41803pt.
 
-<img/SIM_SAR_logic.png, id=40, 1295.59032pt x 706.89093pt>
+<img/SIM_SAR_logic.png, id=45, 1295.59032pt x 706.89093pt>
 File: img/SIM_SAR_logic.png Graphic file (type png)
 
 <use img/SIM_SAR_logic.png>
-Package pdftex.def Info: img/SIM_SAR_logic.png used on input line 167.
+Package pdftex.def Info: img/SIM_SAR_logic.png used on input line 171.
 (pdftex.def)             Requested size: 360.0pt x 196.41803pt.
- [5 <./img/SIM_system.png>]
-<img/SIM_dac.png, id=45, 1296.34312pt x 707.64375pt>
+ [6 <./img/SIM_system.png> <./img/SIM_sample_hold.png>] <img/SIM_dac.png, id=51
+, 1296.34312pt x 707.64375pt>
 File: img/SIM_dac.png Graphic file (type png)
  <use img/SIM_dac.png>
-Package pdftex.def Info: img/SIM_dac.png used on input line 180.
+Package pdftex.def Info: img/SIM_dac.png used on input line 184.
 (pdftex.def)             Requested size: 360.0pt x 196.51923pt.
 
-[6 <./img/SIM_sample_hold.png> <./img/SIM_comparator.png>]
-<img/SIM_op_amp.png, id=51, 1295.59032pt x 707.64375pt>
+[7 <./img/SIM_comparator.png> <./img/SIM_SAR_logic.png>]
+<img/SIM_op_amp.png, id=58, 1295.59032pt x 707.64375pt>
 File: img/SIM_op_amp.png Graphic file (type png)
 
 <use img/SIM_op_amp.png>
-Package pdftex.def Info: img/SIM_op_amp.png used on input line 190.
+Package pdftex.def Info: img/SIM_op_amp.png used on input line 194.
 (pdftex.def)             Requested size: 360.0pt x 196.62721pt.
- [7 <./img/SIM_SAR_logic.png> <./img/SIM_dac.png>]
-[8 <./img/SIM_op_amp.png>] (./system_test_bench.aux)
+ [8 <./img/SIM_dac.png> <./img/SIM_op_amp.png>]
+[9] (./system_test_bench.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1400,10 +1410,10 @@ Package logreq Info: Writing requests to 'system_test_bench.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21407 strings out of 493033
- 429121 string characters out of 6121489
- 849790 words of memory out of 5000000
- 24555 multiletter control sequences out of 15000+600000
+ 21413 strings out of 493033
+ 429223 string characters out of 6121489
+ 849799 words of memory out of 5000000
+ 24560 multiletter control sequences out of 15000+600000
  13274 words of font info for 36 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,8n,67p,823b,1429s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1417,10 +1427,10 @@ o-texmf/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></opt/texlive/uio-t
 exmf/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></opt/texlive/uio-texm
 f/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></opt/texlive/uio-texmf/t
 exmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb>
-Output written on system_test_bench.pdf (8 pages, 442957 bytes).
+Output written on system_test_bench.pdf (9 pages, 507391 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
- 52 compressed objects within 1 object stream
+ 98 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 68 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
