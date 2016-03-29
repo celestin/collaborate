@@ -1,0 +1,7 @@
+#!/bin/sh
+cdsVncserver :80
+sleep 3
+cd /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence
+virtuoso -noautostart -mpssession "virtuoso35031" -mpshost "vetur.ifi.uio.no" -davinciService "DaVinciService_35031_1459255704" -log '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/logs_vegardmi/logs0/Job5.log'  -licenseLockFileName '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/.tmp_vegardmi/.vetur.ifi.uio.no_35031'  -axlChildIdFlag 5 1>/dev/null  2>/dev/null 
+exit $?
+
