@@ -2,12 +2,12 @@
         author = {R. Jacob Baker},
         title = {CMOS Mixed-Signal Circuit Design},
         publisher = {IEEE Press and John Wiley and Sons},       
-        year = {2009},
+        year = {"2009"},
 }
 
 @book{carusone,
-        author = {Carusone and Tony Chan and Johns and David and Martin Kenneth},
-        title = {Analog Integrated Circuit Design, 2nd. edition},
+        author = {"Carusone, Tony Chan, Johns, David and Martin, Kenneth"},
+        title = {"Analog Integrated Circuit Design, 2nd. edition"},
         publisher = {John Wiley and Sons},
-        year = {2013},
+        year = {"2013"},
 }

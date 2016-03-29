@@ -1,0 +1,64 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.5 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist{nty}{nty}
+    \entry{baker}{book}{}
+      \name{author}{1}{}{%
+        {{hash=95e0d3bf2c279c467eccf405c815079e}{Baker}{B\bibinitperiod}{R.\bibnamedelimi Jacob}{R\bibinitperiod\bibinitdelim J\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{3}{%
+        {IEEE Press}%
+        {John Wiley}%
+        {Sons}%
+      }
+      \strng{namehash}{95e0d3bf2c279c467eccf405c815079e}
+      \strng{fullhash}{95e0d3bf2c279c467eccf405c815079e}
+      \field{sortinit}{B}
+      \field{sortinithash}{4ecbea03efd0532989d3836d1a048c32}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{CMOS Mixed-Signal Circuit Design}
+      \field{year}{2009}
+    \endentry
+    \entry{carusone}{book}{}
+      \name{author}{5}{}{%
+        {{hash=c0fa4d2252906b477ccfd42c84d7a3d1}{Carusone}{C\bibinitperiod}{}{}{}{}{}{}}%
+        {{hash=44f70ff973c59ee0935aae9279223d8e}{Chan}{C\bibinitperiod}{Tony}{T\bibinitperiod}{}{}{}{}}%
+        {{hash=b6757cdd9fc3411b298625530497bf8b}{Johns}{J\bibinitperiod}{}{}{}{}{}{}}%
+        {{hash=464e07afc9e46359fb480839150595c5}{David}{D\bibinitperiod}{}{}{}{}{}{}}%
+        {{hash=0a56281227331be416c0d9b84c646bca}{Kenneth}{K\bibinitperiod}{Martin}{M\bibinitperiod}{}{}{}{}}%
+      }
+      \list{publisher}{2}{%
+        {John Wiley}%
+        {Sons}%
+      }
+      \strng{namehash}{02a3c5c1869794fff845954f568a13d5}
+      \strng{fullhash}{f0a79addb4b7f848cee813c3d3fc87ba}
+      \field{sortinit}{C}
+      \field{sortinithash}{59f25d509f3381b07695554a9f35ecb2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Analog Integrated Circuit Design, 2nd. edition}
+      \field{year}{2013}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+

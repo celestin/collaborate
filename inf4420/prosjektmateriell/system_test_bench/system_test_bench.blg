@@ -1,48 +1,15 @@
-This is BibTeX, Version 0.99d (TeX Live 2015)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: system_test_bench.aux
-I found no \citation commands---while reading file system_test_bench.aux
-I found no \bibdata command---while reading file system_test_bench.aux
-I found no \bibstyle command---while reading file system_test_bench.aux
-You've used 0 entries,
-            0 wiz_defined-function locations,
-            83 strings with 508 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
-int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
-purify$ -- 0
-quote$ -- 0
-skip$ -- 0
-stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 0
-(There were 3 error messages)
+[2] Config.pm:327> INFO - This is Biber 2.3
+[3] Config.pm:330> INFO - Logfile is 'system_test_bench.blg'
+[60] biber:287> INFO - === Tue Mar 29, 2016, 17:20:16
+[80] Biber.pm:346> INFO - Reading 'system_test_bench.bcf'
+[187] Biber.pm:689> INFO - Found 2 citekeys in bib section 0
+[193] Biber.pm:3066> INFO - Processing section 0
+[206] Biber.pm:3206> INFO - Looking for bibtex format file 'ref.bib' for section 0
+[207] bibtex.pm:1062> INFO - Decoding LaTeX character macros into UTF-8
+[207] bibtex.pm:923> INFO - Found BibTeX data source 'ref.bib'
+[242] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[242] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[242] Biber.pm:2943> INFO - Sorting list 'nty' of type 'entry' with scheme 'nty' and locale 'en-US'
+[242] Biber.pm:2947> INFO - No sort tailoring available for locale 'en-US'
+[245] bbl.pm:505> INFO - Writing 'system_test_bench.bbl' with encoding 'UTF-8'
+[245] bbl.pm:596> INFO - Output to system_test_bench.bbl
