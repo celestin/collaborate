@@ -2240,12 +2240,7 @@
   <bcf:section number="0">
     <bcf:citekey order="1">CMOS-baker</bcf:citekey>
     <bcf:citekey order="2">CMOS-baker</bcf:citekey>
-    <bcf:citekey order="3">CMOS-baker</bcf:citekey>
-    <bcf:citekey order="4">CMOS-baker</bcf:citekey>
-    <bcf:citekey order="5">CMOS-baker</bcf:citekey>
-    <bcf:citekey order="6">CMOS-baker</bcf:citekey>
-    <bcf:citekey order="7">CMOS-baker</bcf:citekey>
-    <bcf:citekey order="8">CMOS-baker</bcf:citekey>
-    <bcf:citekey order="9">CMOS-baker</bcf:citekey>
+    <bcf:citekey order="3">Analog-integrated</bcf:citekey>
+    <bcf:citekey order="4">Analog-integrated</bcf:citekey>
   </bcf:section>
 </bcf:controlfile>

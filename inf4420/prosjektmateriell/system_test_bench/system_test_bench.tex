@@ -54,7 +54,9 @@ The overall structure of the system is seen in Figure \ref{block_diagram}.
   \label{block_diagram}
 \end{figure}
 
-\section{Schematic}  
+\section{Schematic}
+We have not completed our resarch in circuits to use in this project. We have created schematics for some simple circuitis but we expect that some (or all) of the circuits is going to change.
+
 \section*{Schematic: SAR\_system}
 The SAR\_system is the complete schematic for the whole system. It consists of a sample and hold block, a comarator block, the SAR logic and the digital-to-analog converter block. Figure 
 \ref{sar:system} shows the schematic that has been created.\\
@@ -64,10 +66,11 @@ The SAR\_system is the complete schematic for the whole system. It consists of a
    \caption{SAR\_system}
    \label{sar:system}
 \end{figure}
+
 \section*{Schematic: sample\_hold}
 The sample and hold (S/H) is based on a circuit provided by R. Jacob Baker in the book CMOS Mixed-Signal Circut Design \cite{CMOS-baker}. The implementation is a single-ended S/H implementation. 
 When $\phi_{1}$ and $\phi_{2}$ is high, $\phi_{3}$ is low, and the bottom plate of the hold capacitor is charged by the input signal, while the top plate is held to ground by the feedback around the 
-op amp. When the $\phi_{2}$ is turned off, its charge will bee injected into the low impedance input, VIN, since the impedance looking into the left of the $\phi_{2}$ switch is large.\\
+op amp. When the $\phi_{2}$ is turned off, its charge will be injected into the low impedance input, VIN, since the impedance looking into the left of the $\phi_{2}$ switch is large.\\
 \\
 This implementation has not yet beed tested, and may therefor be changed during the project.\\
 \begin{figure}[!ht]
@@ -104,57 +107,79 @@ The design of the comparator is based on a design in the book Analog Integrated 
    \caption{DAC}
    \label{dac}
 \end{figure}
+This DAC circuit is based on the R-2R ladder from the book Analog Integrated Circuit Design by Carusone, Johns and Martin \cite{Analog-integrated}.
+
 \section*{Schematic: op\_amp}
-\begin{figure}[!ht]
- \centering
-   \includegraphics[width=0.4\textwidth]{img/timing_sample_hold.jpg}
-   \caption{Single-ended S/H opartion \cite{CMOS-baker}}
-   \label{timing}
-\end{figure}
+% \begin{figure}[!ht]
+%  \centering
+%    \includegraphics[width=0.4\textwidth]{img/timing_sample_hold.jpg}
+%    \caption{Single-ended S/H opartion \cite{CMOS-baker}}
+%    \label{timing}
+% \end{figure}
+The op-amp circuit is ....
 
 \section{Test bench}
+In this section a short overview of the different test-beches for our components is presented.
+
+
 \section*{Schematic: SIM\_system}
-\begin{figure}[!ht]
- \centering
-   \includegraphics[width=0.4\textwidth]{img/timing_sample_hold.jpg}
-   \caption{Single-ended S/H opartion \cite{CMOS-baker}}
-   \label{timing}
-\end{figure}
+% \begin{figure}[!ht]
+%  \centering
+%    \includegraphics[width=0.4\textwidth]{img/timing_sample_hold.jpg}
+%    \caption{Single-ended S/H opartion \cite{CMOS-baker}}
+%    \label{timing}
+% \end{figure}
+This is a complete system test bench. Here all the different components come together to form the full SAR-ADC architechture. 
+Testing on a system level is nessesary to enshure that the circuit performes according to the interface the circuit provides to the outside world.
+This test senario is quite hard to set up since many signals have to be timed to each other. The verification of the circuit is also challanging since many signals has to be considerd.
+In order to manage this test we need to generate a test procedure with the spesified stimuli and check the results to a expected pattern.
+
 \section*{Schematic: SIM\_sample\_hold}
-\begin{figure}[!ht]
- \centering
-   \includegraphics[width=0.4\textwidth]{img/timing_sample_hold.jpg}
-   \caption{Single-ended S/H opartion \cite{CMOS-baker}}
-   \label{timing}
-\end{figure}
+% \begin{figure}[!ht]
+%  \centering
+%    \includegraphics[width=0.4\textwidth]{img/timing_sample_hold.jpg}
+%    \caption{Single-ended S/H opartion \cite{CMOS-baker}}
+%    \label{timing}
+% \end{figure}
+
+
+
 \section*{Schematic: SIM\_comparator}
-\begin{figure}[!ht]
- \centering
-   \includegraphics[width=0.4\textwidth]{img/timing_sample_hold.jpg}
-   \caption{Single-ended S/H opartion \cite{CMOS-baker}}
-   \label{timing}
-\end{figure}
+% \begin{figure}[!ht]
+%  \centering
+%    \includegraphics[width=0.4\textwidth]{img/timing_sample_hold.jpg}
+%    \caption{Single-ended S/H opartion \cite{CMOS-baker}}
+%    \label{timing}
+% \end{figure}
+
+
 \section*{Schematic: SIM\_SAR\_logic}
-\begin{figure}[!ht]
- \centering
-   \includegraphics[width=0.4\textwidth]{img/timing_sample_hold.jpg}
-   \caption{Single-ended S/H opartion \cite{CMOS-baker}}
-   \label{timing}
-\end{figure}
+% \begin{figure}[!ht]
+%  \centering
+%    \includegraphics[width=0.4\textwidth]{img/timing_sample_hold.jpg}
+%    \caption{Single-ended S/H opartion \cite{CMOS-baker}}
+%    \label{timing}
+% \end{figure}
+
+
 \section*{Schematic: SIM\_dac}
-\begin{figure}[!ht]
- \centering
-   \includegraphics[width=0.4\textwidth]{img/timing_sample_hold.jpg}
-   \caption{Single-ended S/H opartion \cite{CMOS-baker}}
-   \label{timing}
-\end{figure}
+% \begin{figure}[!ht]
+%  \centering
+%    \includegraphics[width=0.4\textwidth]{img/timing_sample_hold.jpg}
+%    \caption{Single-ended S/H opartion \cite{CMOS-baker}}
+%    \label{timing}
+% \end{figure}
+
+
 \section*{Schematic: SIM\_op\_amp}
-\begin{figure}[!ht]
- \centering
-   \includegraphics[width=0.4\textwidth]{img/timing_sample_hold.jpg}
-   \caption{Single-ended S/H opartion \cite{CMOS-baker}}
-   \label{timing}
-\end{figure}
+% \begin{figure}[!ht]
+%  \centering
+%    \includegraphics[width=0.4\textwidth]{img/timing_sample_hold.jpg}
+%    \caption{Single-ended S/H opartion \cite{CMOS-baker}}
+%    \label{timing}
+% \end{figure}
+
+
 
 %\printbibliography{}
 \end{document}
