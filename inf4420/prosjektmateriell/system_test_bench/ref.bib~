@@ -11,9 +11,6 @@
         publisher = {John Wiley and Sons},
         year = {2013},
 }
-@thesis{Saxena,
-	author = {Saxena, Vishal},
-	school = {Boise State University},
-	title = {INDIRECT FEEDBACK COMPENSATI ON TECHNIQUES FOR MULTI-STAGE OPERATIONAL AMPLIFIERS},
-	year = {"2007"},
+@thesis{
+
 }

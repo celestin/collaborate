@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.19)  29 MAR 2016 17:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.19)  29 MAR 2016 21:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1299,17 +1299,17 @@ Package pdftex.def Info: img/SAR_system.png used on input line 69.
 File: img/timing_sample_hold.jpg Graphic file (type jpg)
 
 <use img/timing_sample_hold.jpg>
-Package pdftex.def Info: img/timing_sample_hold.jpg used on input line 82.
+Package pdftex.def Info: img/timing_sample_hold.jpg used on input line 83.
 (pdftex.def)             Requested size: 108.0011pt x 115.74625pt.
 
 <img/sample_hold.png, id=7, 1432.35126pt x 943.525pt>
 File: img/sample_hold.png Graphic file (type png)
 
 <use img/sample_hold.png>
-Package pdftex.def Info: img/sample_hold.png used on input line 88.
+Package pdftex.def Info: img/sample_hold.png used on input line 89.
 (pdftex.def)             Requested size: 360.0pt x 237.13321pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--92
+Underfull \hbox (badness 10000) in paragraph at lines 75--93
 
  []
 
@@ -1319,92 +1319,106 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--92
 <img/comparator.png, id=20, 1568.86125pt x 943.525pt>
 File: img/comparator.png Graphic file (type png)
  <use img/comparator.png>
-Package pdftex.def Info: img/comparator.png used on input line 98.
+Package pdftex.def Info: img/comparator.png used on input line 99.
 (pdftex.def)             Requested size: 360.0pt x 216.50229pt.
 
-<img/dac.png, id=21, 1564.84625pt x 942.52126pt>
+[2 <./img/SAR_system.png>] <img/dac.png, id=26, 1564.84625pt x 942.52126pt>
 File: img/dac.png Graphic file (type png)
- <use img/dac.png>
-Package pdftex.def Info: img/dac.png used on input line 116.
-(pdftex.def)             Requested size: 360.0pt x 216.83286pt.
- [2 <./img/SAR_system.png>] <img/op_amp_3.png, id=27, 904.37875pt x 923.45pt>
-File: img/op_amp_3.png Graphic file (type png)
 
-<use img/op_amp_3.png>
-Package pdftex.def Info: img/op_amp_3.png used on input line 131.
+<use img/dac.png>
+Package pdftex.def Info: img/dac.png used on input line 117.
+(pdftex.def)             Requested size: 360.0pt x 216.83286pt.
+ [3 <./img/timing_sample_hold.jpg> <./img/sample_hold.png>]
+
+LaTeX Warning: Reference `opamp' on page 4 undefined on input line 127.
+
+<img/op_amp_3.png, id=31, 904.37875pt x 923.45pt>
+File: img/op_amp_3.png Graphic file (type png)
+ <use img/op_amp_3.png>
+Package pdftex.def Info: img/op_amp_3.png used on input line 132.
 (pdftex.def)             Requested size: 360.0pt x 367.58394pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 124--135
+Underfull \hbox (badness 10000) in paragraph at lines 125--136
 
  []
 
-[3 <./img/timing_sample_hold.jpg> <./img/sample_hold.png>] [4 <./img/comparator
-.png> <./img/dac.png>] <img/SIM_system.png, id=37, 1478.52374pt x 943.525pt>
+[4 <./img/comparator.png> <./img/dac.png>] [5 <./img/op_amp_3.png>]
+<img/SIM_system.png, id=42, 1478.52374pt x 943.525pt>
 File: img/SIM_system.png Graphic file (type png)
-
-<use img/SIM_system.png>
-Package pdftex.def Info: img/SIM_system.png used on input line 143.
+ <use img/SIM_system.png>
+Package pdftex.def Info: img/SIM_system.png used on input line 144.
 (pdftex.def)             Requested size: 360.0pt x 229.73314pt.
- [5 <./img/op_amp_3.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--155
+
+ []
+
 <img/SIM_sample_hold.png, id=43, 1432.35126pt x 943.525pt>
 File: img/SIM_sample_hold.png Graphic file (type png)
 
 <use img/SIM_sample_hold.png>
-Package pdftex.def Info: img/SIM_sample_hold.png used on input line 158.
+Package pdftex.def Info: img/SIM_sample_hold.png used on input line 159.
 (pdftex.def)             Requested size: 360.0pt x 237.13321pt.
-
-<img/SIM_comparator.png, id=44, 1441.385pt x 942.52126pt>
+ [6 <./img/SIM_system.png>]
+<img/SIM_comparator.png, id=48, 1441.385pt x 942.52126pt>
 File: img/SIM_comparator.png Graphic file (type png)
 
 <use img/SIM_comparator.png>
-Package pdftex.def Info: img/SIM_comparator.png used on input line 169.
+Package pdftex.def Info: img/SIM_comparator.png used on input line 170.
 (pdftex.def)             Requested size: 360.0pt x 235.39963pt.
 
-<img/SIM_SAR_logic.png, id=45, 1446.40375pt x 942.52126pt>
+<img/SIM_SAR_logic.png, id=49, 1446.40375pt x 942.52126pt>
 File: img/SIM_SAR_logic.png Graphic file (type png)
 
 <use img/SIM_SAR_logic.png>
-Package pdftex.def Info: img/SIM_SAR_logic.png used on input line 180.
+Package pdftex.def Info: img/SIM_SAR_logic.png used on input line 181.
 (pdftex.def)             Requested size: 360.0pt x 234.57986pt.
- [6 <./img/SIM_system.png>]
-Overfull \vbox (3.23071pt too high) has occurred while \output is active []
-
-
-[7 <./img/SIM_sample_hold.png> <./img/SIM_comparator.png>]
-<img/SIM_dac.png, id=56, 1461.46pt x 943.525pt>
+ <img/SIM_dac.png, id=50, 1461.46pt x 943.525pt>
 File: img/SIM_dac.png Graphic file (type png)
- <use img/SIM_dac.png>
-Package pdftex.def Info: img/SIM_dac.png used on input line 193.
-(pdftex.def)             Requested size: 360.0pt x 232.41098pt.
 
-<img/SIM_op_amp_3.png, id=57, 1437.37pt x 922.44624pt>
+<use img/SIM_dac.png>
+Package pdftex.def Info: img/SIM_dac.png used on input line 194.
+(pdftex.def)             Requested size: 360.0pt x 232.41098pt.
+ <img/SIM_op_amp_3.png, id=51, 1437.37pt x 922.44624pt>
 File: img/SIM_op_amp_3.png Graphic file (type png)
 
 <use img/SIM_op_amp_3.png>
-Package pdftex.def Info: img/SIM_op_amp_3.png used on input line 204.
+Package pdftex.def Info: img/SIM_op_amp_3.png used on input line 205.
 (pdftex.def)             Requested size: 360.0pt x 231.03325pt.
+ [7 <./img/SIM_sample_hold.png>]
+Overfull \vbox (0.67737pt too high) has occurred while \output is active []
 
-<img/ac_responce_and_bode_plot.png, id=58, 1431.84938pt x 705.38531pt>
+
+[8 <./img/SIM_comparator.png> <./img/SIM_SAR_logic.png>] [9 <./img/SIM_dac.png>
+ <./img/SIM_op_amp_3.png>]
+<img/ac_responce_and_bode_plot.png, id=67, 1431.84938pt x 705.38531pt>
 File: img/ac_responce_and_bode_plot.png Graphic file (type png)
 
 <use img/ac_responce_and_bode_plot.png>
 Package pdftex.def Info: img/ac_responce_and_bode_plot.png used on input line 2
-16.
+17.
 (pdftex.def)             Requested size: 270.0pt x 133.00209pt.
- [8 <./img/SIM_SAR_logic.png>] [9 <./img/SIM_dac.png> <./img/SIM_op_amp_3.png>]
- [10 <./img/ac_responce_and_bode_plot.png>] (./system_test_bench.aux)
+ [10 <./img/ac_responce_and_bode_plot.png>] [11] (./system_test_bench.aux)
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'system_test_bench.run.xml'.
 \openout1 = `system_test_bench.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21434 strings out of 493033
- 429734 string characters out of 6121489
- 850797 words of memory out of 5000000
- 24579 multiletter control sequences out of 15000+600000
+ 21438 strings out of 493033
+ 429800 string characters out of 6121489
+ 851804 words of memory out of 5000000
+ 24583 multiletter control sequences out of 15000+600000
  13963 words of font info for 37 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,8n,67p,823b,1427s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,8n,67p,823b,1429s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/opt/texlive/uio-texmf/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<
 /opt/texlive/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></o
 pt/texlive/uio-texmf/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></opt/
@@ -1416,10 +1430,10 @@ exmf/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></opt/texlive/uio-texm
 f/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></opt/texlive/uio-texmf/t
 exmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></opt/texlive/uio-texmf/texm
 f-dist/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on system_test_bench.pdf (10 pages, 574729 bytes).
+Output written on system_test_bench.pdf (11 pages, 634726 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 110 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  78 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -58,6 +58,22 @@
       \field{title}{Analog Integrated Circuit Design, 2nd. edition}
       \field{year}{2013}
     \endentry
+    \entry{Saxena}{thesis}{}
+      \name{author}{1}{}{%
+        {{hash=2a2f6cf329ff60b529d4d8724d2a6f82}{Saxena}{S\bibinitperiod}{Vishal}{V\bibinitperiod}{}{}{}{}}%
+      }
+      \list{institution}{1}{%
+        {Boise State University}%
+      }
+      \strng{namehash}{2a2f6cf329ff60b529d4d8724d2a6f82}
+      \strng{fullhash}{2a2f6cf329ff60b529d4d8724d2a6f82}
+      \field{sortinit}{S}
+      \field{sortinithash}{fd1e7c5ab79596b13dbbb67f8d70fb5a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{INDIRECT FEEDBACK COMPENSATI ON TECHNIQUES FOR MULTI-STAGE OPERATIONAL AMPLIFIERS}
+      \field{year}{"2007"}
+    \endentry
   \endsortlist
 \endrefsection
 \endinput

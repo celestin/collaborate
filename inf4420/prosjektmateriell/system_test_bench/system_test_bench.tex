@@ -72,9 +72,10 @@ The SAR\_system is the complete schematic for the whole system. It consists of a
 \end{figure}
 
 \section*{Schematic: sample\_hold}
-The sample and hold (S/H) is based on a circuit provided by R. Jacob Baker in the book CMOS Mixed-Signal Circuit Design \cite{baker}. The implementation is a single-ended S/H implementation. 
-When $\phi_{1}$ and $\phi_{2}$ is high, $\phi_{3}$ is low, and the bottom plate of the hold capacitor is charged by the input signal, while the top plate is held to ground by the feedback around the 
-op amp. When the $\phi_{2}$ is turned off, its charge will be injected into the low impedance input, VIN, since the impedance looking into the left of the $\phi_{2}$ switch is large.\\
+The sample and hold (S/H) is based on a circuit provided by R. Jacob Baker in the book CMOS Mixed-Signal Circuit Design \cite{baker}, and can be seen in Figure \ref{sample:hold}. 
+The implementation is a single-ended S/H implementation. When $\phi_{1}$ and $\phi_{2}$ is high, $\phi_{3}$ is low, and the bottom plate of the hold capacitor is charged by the input signal, 
+while the top plate is held to ground by the feedback around the opamp. When the $\phi_{2}$ is turned off, its charge will be injected into the low impedance input, VIN, since the impedance 
+looking into the left of the $\phi_{2}$ switch is large.\\
 \\
 This implementation has not yet been tested, and may therefor be changed during the project.\\
 \begin{figure}[!ht]
@@ -92,7 +93,7 @@ This implementation has not yet been tested, and may therefor be changed during 
 
 
 \section*{Schematic: comparator}
-The design of the comparator is based on a design in the book Analog Integrated Circuit Design by Carusone, Johns and Martin \cite{carusone}. 
+The design of the comparator is based on a design in the book Analog Integrated Circuit Design by Carusone, Johns and Martin \cite{carusone}, and can be seen in Figure \ref{comparator}. 
 \begin{figure}[!ht]
  \centering
    \includegraphics[width=\textwidth]{img/comparator}
@@ -108,7 +109,7 @@ The design of the comparator is based on a design in the book Analog Integrated 
 %    \caption{Single-ended S/H opartion \cite{CMOS-baker}}
 %    \label{timing}
 % \end{figure}
-We have not completed the schematics for the SAR logic.
+We have not completed the schematics for the SAR logic. The chematic for the SAR is therefor not invluded in this document.
 
 \section*{Schematic: dac}
 \begin{figure}[!ht]
@@ -118,19 +119,19 @@ We have not completed the schematics for the SAR logic.
    \label{dac}
 \end{figure}
 This DAC circuit is based on the R-2R ladder from the book Analog Integrated Circuit Design by Carusone, Johns and Martin \cite{carusone}. This design commonly used in many applications, and
-is therefor the main reason for why we have chosen to make this design.
+is therefor the main reason for why we have chosen to make this design. The DAC schematic can be seen in Figure \ref{dac}.
 
 \section*{Schematic: op\_amp}
 The op-amp circuit is based on a design from CMOSedu.com (R. Jacob Baker), and is a commonly used differential pair op-amp. We have tried some different designs, but we have not succeeded in 
 any of the other designs. This is not the final version, since it is not fully tested. The dimensions for the NMOS and PMOS transistors are based on a former thesis that R. Jacob Baker has 
-referred to in his web-page. For the NMOS and the PMOS, we have used the relation 10/2 and 22/2 respectively. The final design can be seen in Figure \ref{opamp}\\
+referred to in his web-page. For the NMOS and the PMOS, we have used the relation 10/2 and 22/2 respectively \cite{Saxena}. The final design can be seen in Figure \ref{opamp}\\
 \\
 To test the op-amp, we have made a simple test-bench that can be seen in section \textbf{Schematic: SIM\_op\_amp}.
 \begin{figure}[!ht]
  \centering
    \includegraphics[width=\textwidth]{img/op_amp_3}
    \caption{Opamp}
-   \label{opamp}
+   \label{op-amp}
 \end{figure}
 
 
@@ -144,13 +145,13 @@ In this section a short overview of the different test-benches for our component
    \caption{Test bench for SAR-ADC circuit}
    \label{sim:system}
 \end{figure}
-This is a complete system test bench. Here all the different components come together to form the full SAR-ADC architecture. 
-
-Testing on a system level is necessary to ensure that the circuit performs according to the interface the circuit provides to the outside world.
-
+This is a complete system test bench.Here all the different components come together to form the full SAR-ADC architecture.\\ 
+\\
+Testing on a system level is necessary to ensure that the circuit performs according to the interface the circuit provides to the outside world.\\
+\\
 This test scenario is quite hard to set up since many signals have to be timed to each other. The verification of the circuit is also challenging since many signals has to be considered.
 In order to manage this test we need to generate a test procedure with the specified stimuli and check the results to a expected pattern.
-See figure \ref{sim:system}.
+See Figure \ref{sim:system}.
 
 \section*{Schematic: SIM\_sample\_hold}
 \begin{figure}[!ht]
@@ -161,7 +162,7 @@ See figure \ref{sim:system}.
 \end{figure}
 To test the sample and hold we need to generate 3 clocks (see timing diagram in figure \ref{timing}). 
 The output is ideally expected to match the input value and hold it in the phi\_3 phase.
-See figure \ref{sim:sh}.
+See Figure \ref{sim:sh}.
 
 \section*{Schematic: SIM\_comparator}
 \begin{figure}[!ht]
@@ -171,8 +172,8 @@ See figure \ref{sim:sh}.
    \label{sim:comparator}
 \end{figure}
 In the test bench for the comparator we need 3 clocks for the timing. 
-When sweeping the input (let's say v-) we expect that at some point (, dependent on v+,) that the comparator will change state. 
-See figure \ref{sim:comparator}.
+When sweeping the input (let's say VIN-) we expect that at some point (dependent on VIN+,) that the comparator will change state. 
+See Figure \ref{sim:comparator}.
 
 \section*{Schematic: SIM\_SAR\_logic}
 \begin{figure}[!ht]
@@ -185,7 +186,7 @@ Some of the circuit in the SAR-logic is given but some extra circuitry is needed
 that the acquisition state is started when the SoC signal is pulsed. And that we receive a EoC after N-bits clock pulses.
 We also need to test the reset functionality. 
 The main function of generating the digital output is easy to test since the input signal decides the value of the current bit.
-See figure \ref{sim:logic}.
+See Figure \ref{sim:logic}.
 
 \section*{Schematic: SIM\_dac}
 \begin{figure}[!ht]
@@ -209,7 +210,7 @@ In our test bench for the op-amp we have an open circuit amplifier that expect i
 This simulation is a test to check for response and not performance.
 This simple test gives little information about the performance of the op-amp. 
 To get a better test of the performance of the circuit we need more tests where we test other configurations of the op-amp. 
-See figure \ref{sim:opamp} and \ref{sim:opamp_ac_responce_and_bode_plot}.
+See Figure \ref{sim:opamp} and \ref{sim:opamp_ac_responce_and_bode_plot}.
 
 \begin{figure}[!ht]
  \centering
@@ -218,6 +219,6 @@ See figure \ref{sim:opamp} and \ref{sim:opamp_ac_responce_and_bode_plot}.
    \label{sim:opamp_ac_responce_and_bode_plot}
 \end{figure}
 
-
+\newpage
 \printbibliography{}
 \end{document}
