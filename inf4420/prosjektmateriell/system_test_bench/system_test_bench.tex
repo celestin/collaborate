@@ -85,6 +85,8 @@ This implementation has not yet beed tested, and may therefor be changed during 
    \caption{Sample and hold}
    \label{sample:hold}
 \end{figure}
+
+
 \section*{Schematic: comparator}
 The design of the comparator is based on a design in the book Analog Integrated Circuit Design by Carusone, Johns and Martin \cite{Analog-integrated}. 
 \begin{figure}[!ht]
@@ -93,6 +95,8 @@ The design of the comparator is based on a design in the book Analog Integrated 
    \caption{Comparator}
    \label{comparator}
 \end{figure}
+
+
 \section*{Schematic: SAR\_logic}
 % \begin{figure}[!ht]
 %  \centering
@@ -100,6 +104,8 @@ The design of the comparator is based on a design in the book Analog Integrated 
 %    \caption{Single-ended S/H opartion \cite{CMOS-baker}}
 %    \label{timing}
 % \end{figure}
+We have not completed the schematics for the SAR logic.
+
 \section*{Schematic: dac}
 \begin{figure}[!ht]
  \centering
@@ -116,69 +122,79 @@ This DAC circuit is based on the R-2R ladder from the book Analog Integrated Cir
 %    \caption{Single-ended S/H opartion \cite{CMOS-baker}}
 %    \label{timing}
 % \end{figure}
-The op-amp circuit is ....
+The op-amp circuit is based on a design from CMOSedu.com (R. Jacob Baker). 
 
 \section{Test bench}
 In this section a short overview of the different test-beches for our components is presented.
 
 
 \section*{Schematic: SIM\_system}
-% \begin{figure}[!ht]
-%  \centering
-%    \includegraphics[width=0.4\textwidth]{img/timing_sample_hold.jpg}
-%    \caption{Single-ended S/H opartion \cite{CMOS-baker}}
-%    \label{timing}
-% \end{figure}
+\begin{figure}[!ht]
+ \centering
+   \includegraphics[width=\textwidth]{img/SIM_system.png}
+   \caption{Test bench for SAR-ADC circuit}
+   \label{sim:system}
+\end{figure}
 This is a complete system test bench. Here all the different components come together to form the full SAR-ADC architechture. 
 Testing on a system level is nessesary to enshure that the circuit performes according to the interface the circuit provides to the outside world.
 This test senario is quite hard to set up since many signals have to be timed to each other. The verification of the circuit is also challanging since many signals has to be considerd.
 In order to manage this test we need to generate a test procedure with the spesified stimuli and check the results to a expected pattern.
 
 \section*{Schematic: SIM\_sample\_hold}
-% \begin{figure}[!ht]
-%  \centering
-%    \includegraphics[width=0.4\textwidth]{img/timing_sample_hold.jpg}
-%    \caption{Single-ended S/H opartion \cite{CMOS-baker}}
-%    \label{timing}
-% \end{figure}
-
+\begin{figure}[!ht]
+ \centering
+   \includegraphics[width=\textwidth]{img/SIM_sample_hold.png}
+   \caption{Test bench for sample and hold circuit}
+   \label{sim:sh}
+\end{figure}
+To test the sample and hold we need to generate 3 clocks (see timing diagram in figure \ref{timing}). 
+The output is ideely expected to match the input value and hold it in the phi\_3 phase.
 
 
 \section*{Schematic: SIM\_comparator}
-% \begin{figure}[!ht]
-%  \centering
-%    \includegraphics[width=0.4\textwidth]{img/timing_sample_hold.jpg}
-%    \caption{Single-ended S/H opartion \cite{CMOS-baker}}
-%    \label{timing}
-% \end{figure}
-
+\begin{figure}[!ht]
+ \centering
+   \includegraphics[width=\textwidth]{img/SIM_comparator.png}
+   \caption{Test bench for comparator circuit}
+   \label{sim:comparator}
+\end{figure}
+In the test bench for the comparator we need 3 clocks for the timing. 
+When sweeping the input (let's say v-) we expect that at some point (, dependent on v+,) that the comparator will change state. 
 
 \section*{Schematic: SIM\_SAR\_logic}
-% \begin{figure}[!ht]
-%  \centering
-%    \includegraphics[width=0.4\textwidth]{img/timing_sample_hold.jpg}
-%    \caption{Single-ended S/H opartion \cite{CMOS-baker}}
-%    \label{timing}
-% \end{figure}
+\begin{figure}[!ht]
+ \centering
+   \includegraphics[width=\textwidth]{img/SIM_SAR_logic.png}
+   \caption{Test bench for SAR-logic circuit}
+   \label{sim:logic}
+\end{figure}
+Some of the circuit in the SAR-logic is given but some extra circuitry is needed. In this test bench we want to test
+that the acquisition state is started when the SoC signal is pulsed. And that we recive a EoC after N-bits clock pulses.
+We also need to test the reset functionality. 
+The main function of generating the digital output is easy to test since the input signal decideds the value of the current bit.
 
 
 \section*{Schematic: SIM\_dac}
-% \begin{figure}[!ht]
-%  \centering
-%    \includegraphics[width=0.4\textwidth]{img/timing_sample_hold.jpg}
-%    \caption{Single-ended S/H opartion \cite{CMOS-baker}}
-%    \label{timing}
-% \end{figure}
-
+\begin{figure}[!ht]
+ \centering
+   \includegraphics[width=\textwidth]{img/SIM_dac.png}
+   \caption{Test bench for DAC circuit}
+   \label{sim:dac}
+\end{figure}
+The testbench for the DAC consists of N-bits pulse generators so that we can apply a binary pattern. 
+VOUT should be proportonal to the binary value.
 
 \section*{Schematic: SIM\_op\_amp}
-% \begin{figure}[!ht]
-%  \centering
-%    \includegraphics[width=0.4\textwidth]{img/timing_sample_hold.jpg}
-%    \caption{Single-ended S/H opartion \cite{CMOS-baker}}
-%    \label{timing}
-% \end{figure}
-
+\begin{figure}[!ht]
+ \centering
+   \includegraphics[width=\textwidth]{img/SIM_op_amp.png}
+   \caption{Test bench for op-amp circuit}
+   \label{sim:opamp}
+\end{figure}
+In our test bench for the opamp we have an open circuit amplifier that expect is going to saturate to either (almost) GND or VDD, if our gain is high enugh.
+This simulation is a test to check for response and not performence.
+This simple test gives litle information about the performence of the opamp. 
+To get a better test of the performence of the circuit we need more tests where we test other configurations of the opamp. 
 
 
 %\printbibliography{}
