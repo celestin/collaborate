@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.6 - CAT33 05/07/2013 21:21 (sjfnl896) $
 \o Sub version:		sub-version  s001 
-\o Arguments:		-unmapped -mpssession virtuoso35031 -mpshost vetur.ifi.uio.no 
+\o Arguments:		-unmapped -mpssession virtuoso48725 -mpshost vetur.ifi.uio.no 
 \o Working Directory:	vetur.ifi.uio.no:/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence
 \o 64-bit offsets
 \o Qt version: 		4.7.2
@@ -11,47 +11,101 @@
 \a nrSetWindowVisibility(cdsLibManager "show")
 \o MPS service: map window
 \o Library Manager customization server connected.
-\a nrResizeWindow(cdsLibManager list(1 28 1920 1099))
-\a nrResizeWindow(cdsLibManager list(1 28 1918 1098))
+\a nrResizeWindow(cdsLibManager list(1 67 1918 1098))
 \a nrSetCurrentWindow(cdsLibManager)
 \w Warning: The directory: '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar' does not exist
 \w 	but was defined in libFile '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/cds.lib' for Lib 'sar'.
 \a nrResizeWindow(cdsLibManager list(1 28 1920 1099))
 \a cdsLibManager->libListBox->value = "sar_adc"
 \a cdsLibManager->libLineEdit->value = "sar_adc"
-\a cdsLibManager->cellListBox->value = "SAR_logic"
-\a cdsLibManager->cellListBox->value = "sar"
-\a cdsLibManager->cellLineEdit->value = "sar"
-\a cdsLibManager->viewListBox->value = "veriloga"
-\a cdsLibManager->viewLineEdit->value = "veriloga"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "SAR_logic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "SAR_system"
-\a cdsLibManager->cellListBox->value = "SAR_logic"
-\a cdsLibManager->cellLineEdit->value = "SAR_logic"
+\a cdsLibManager->cellListBox->value = "cr2r"
+\a cdsLibManager->cellLineEdit->value = "cr2r"
 \a cdsLibManager->viewListBox->value = "symbol"
 \a cdsLibManager->viewLineEdit->value = "symbol"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "sar"
-\a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = "sar"
 \a cdsLibManager->viewListBox->value = "symbol"
 \a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->viewListBox->value = "veriloga"
-\a cdsLibManager->viewLineEdit->value = "veriloga"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "SIM_cr2r"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellLineEdit->value = "SIM_cr2r"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
 \o MPS request: edit design
 \a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: The directory: '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar' does not exist
+\w 	but was defined in libFile '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/cds.lib' for Lib 'sar'.
+\a cdsLibManager->libListBox->value = "sar_adc"
+\a cdsLibManager->libLineEdit->value = "sar_adc"
+\a cdsLibManager->cellListBox->value = "SIM_cr2r"
+\a cdsLibManager->cellLineEdit->value = "SIM_cr2r"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "cr2r"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 23 188 2 "cr2r")
+\a cdsLibManager->cellLineEdit->value = "cr2r"
+\a cdsLibManager->editRenameButton->value = t
+\a basicRenameForm->basicRenameFromEdit->value = "cr2r"
+\a nrSetWindowVisibility(basicRenameForm "show")
+\a basicRenameForm->basicRenameToEdit->value = "cr2r"
+\a nrSetCurrentWindow(basicRenameForm)
+\a nrResizeWindow(basicRenameForm list(779 326 343 180))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(basicRenameForm)
+\a basicRenameForm->OK->value = t
+\o ERROR (CLM-224): Cell sar_adc/cr2r already exists. \nSpecify another cell to rename to.
+\a nrSetWindowVisibility(errorDialog "show")
+\a nrSetCurrentWindow(errorDialog)
+\a nrResizeWindow(errorDialog list(820 525 261 120))
+\a errorDialog->errorOkButton->value = t
+\a nrSetCurrentWindow(basicRenameForm)
+\a basicRenameForm->OK->value = t
+\o ERROR (CLM-224): Cell sar_adc/cr2r already exists. \nSpecify another cell to rename to.
+\a nrSetWindowVisibility(errorDialog "show")
+\a nrSetCurrentWindow(errorDialog)
+\a nrResizeWindow(errorDialog list(810 492 261 120))
+\a errorDialog->errorOkButton->value = t
+\a nrSetCurrentWindow(basicRenameForm)
+\a basicRenameForm->Cancel->value = t
+\a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->viewListBox->value = "symbol"
 \a cdsLibManager->viewLineEdit->value = "symbol"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "SIM_dac"
+\a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "symbol"
+\a cdsLibManager->cellListBox->value = "SIM_cr2r"
+\a cdsLibManager->cellLineEdit->value = "SIM_cr2r"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
 \o MPS request: edit design
 \a nrListItemAction(cdsLibManager->gdmXTView 0 0)
 \a cdsLibManager->libListBox->value = nil
@@ -64,314 +118,141 @@
 \w 	but was defined in libFile '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/cds.lib' for Lib 'sar'.
 \a cdsLibManager->libListBox->value = "sar_adc"
 \a cdsLibManager->libLineEdit->value = "sar_adc"
-\a cdsLibManager->cellListBox->value = "sar"
-\a cdsLibManager->cellLineEdit->value = "sar"
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
+\a cdsLibManager->cellListBox->value = "SIM_cr2r"
+\a cdsLibManager->cellLineEdit->value = "SIM_cr2r"
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a cdsLibManager->cellListBox->value = "SAR_logic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "symbol"
-\a cdsLibManager->viewLineEdit->value = "symbol"
-\a nrListItemAction(cdsLibManager->cellListBox 0 0)
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\o MPS request: edit design
-\a cdsLibManager->cellLineEdit->value = "SAR_logic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "SAR_system"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_SAR_logic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a nrListItemAction(cdsLibManager->cellListBox 2 0)
-\a cdsLibManager->cellListBox->value = "SIM_SAR_logic"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\o MPS request: edit design
-\a cdsLibManager->cellLineEdit->value = "SIM_SAR_logic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "SIM_sample_hold"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_op_amp"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_op_amp_2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a nrListItemAction(cdsLibManager->cellListBox 6 0)
-\a cdsLibManager->cellListBox->value = "SIM_op_amp_2"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\o MPS request: edit design
-\a cdsLibManager->cellLineEdit->value = "SIM_op_amp_2"
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "SIM_SAR_logic"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SAR_system"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_SAR_logic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_comparator"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "op_amp_2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_comparator"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "SIM_comparator"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrResizeWindow(cdsLibManager list(1 28 1920 1127))
-\a nrResizeWindow(cdsLibManager list(1 28 1920 1099))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "SIM_dac"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_comparator"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_dac"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "SIM_dac"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "SIM_op_amp"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_dac"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_comparator"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_dac"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_op_amp"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_op_amp_2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_sample_hold"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_system"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_sample_hold"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a nrListItemAction(cdsLibManager->cellListBox 7 0)
-\a cdsLibManager->cellListBox->value = "SIM_sample_hold"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\o MPS request: edit design
-\a cdsLibManager->cellLineEdit->value = "SIM_sample_hold"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "SIM_system"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_sample_hold"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_op_amp_2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_op_amp"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_dac"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrResizeWindow(cdsLibManager list(1 28 1920 1127))
-\a nrResizeWindow(cdsLibManager list(1 28 1920 1099))
-\a cdsLibManager->cellListBox->value = "zpcellSCRATCHm35031"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->libLineEdit->value = ""
 \w Warning: The directory: '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar' does not exist
 \w 	but was defined in libFile '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/cds.lib' for Lib 'sar'.
 \a cdsLibManager->libListBox->value = "sar_adc"
 \a cdsLibManager->libLineEdit->value = "sar_adc"
-\o DB was auto refreshed.
-\a cdsLibManager->cellListBox->value = "sar"
-\a cdsLibManager->cellListBox->value = "sample_hold"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "op_amp_2"
+\a cdsLibManager->cellListBox->value = "SIM_cr2r"
+\a cdsLibManager->cellLineEdit->value = "SIM_cr2r"
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "op_amp"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "dac"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "comparator"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_system"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_sample_hold"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_op_amp_2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_op_amp"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_dac"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "SIM_dac"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "SAR_logic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SAR_system"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_SAR_logic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "SIM_SAR_logic"
-\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
+\a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a nrListItemAction(cdsLibManager->cellListBox 2 0)
-\a cdsLibManager->cellListBox->value = "SIM_SAR_logic"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: The directory: '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar' does not exist
+\w 	but was defined in libFile '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/cds.lib' for Lib 'sar'.
+\a cdsLibManager->libListBox->value = "sar_adc"
+\a cdsLibManager->libLineEdit->value = "sar_adc"
+\a cdsLibManager->cellListBox->value = "SIM_cr2r"
+\a cdsLibManager->cellLineEdit->value = "SIM_cr2r"
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: The directory: '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar' does not exist
+\w 	but was defined in libFile '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/cds.lib' for Lib 'sar'.
+\a cdsLibManager->libListBox->value = "sar_adc"
+\a cdsLibManager->libLineEdit->value = "sar_adc"
+\a cdsLibManager->cellListBox->value = "SIM_cr2r"
+\a cdsLibManager->cellLineEdit->value = "SIM_cr2r"
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "constraint"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: The directory: '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar' does not exist
+\w 	but was defined in libFile '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/cds.lib' for Lib 'sar'.
+\a cdsLibManager->libListBox->value = "sar_adc"
+\a cdsLibManager->libLineEdit->value = "sar_adc"
+\a cdsLibManager->cellListBox->value = "SIM_cr2r"
+\a cdsLibManager->cellLineEdit->value = "SIM_cr2r"
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: The directory: '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar' does not exist
+\w 	but was defined in libFile '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/cds.lib' for Lib 'sar'.
+\a cdsLibManager->libListBox->value = "sar_adc"
+\a cdsLibManager->libLineEdit->value = "sar_adc"
+\a cdsLibManager->cellListBox->value = "SIM_cr2r"
+\a cdsLibManager->cellLineEdit->value = "SIM_cr2r"
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: The directory: '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar' does not exist
+\w 	but was defined in libFile '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/cds.lib' for Lib 'sar'.
+\a cdsLibManager->libListBox->value = "sar_adc"
+\a cdsLibManager->libLineEdit->value = "sar_adc"
+\a cdsLibManager->cellListBox->value = "SIM_cr2r"
+\a cdsLibManager->cellLineEdit->value = "SIM_cr2r"
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = "adexl"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewLineEdit->value = ""
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = "SIM_system"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrListItemAction(cdsLibManager->cellListBox 10 0)
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \o MPS request: edit design
-\a cdsLibManager->cellLineEdit->value = "SIM_SAR_logic"
+\a cdsLibManager->cellLineEdit->value = "SIM_system"
 \a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1 28 1920 1127))
+\a nrResizeWindow(cdsLibManager list(1 28 1920 1099))
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->cellListBox->value = "SIM_comparator"
 \a cdsLibManager->viewListBox->value = "schematic"
@@ -394,7 +275,7 @@
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a nrListItemAction(cdsLibManager->cellListBox 4 0)
+\a nrListItemAction(cdsLibManager->cellListBox 5 0)
 \a cdsLibManager->cellListBox->value = "SIM_dac"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
@@ -402,240 +283,62 @@
 \a cdsLibManager->viewListBox->value = nil
 \o MPS request: edit design
 \a cdsLibManager->cellLineEdit->value = "SIM_dac"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "SIM_system"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_sample_hold"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a nrListItemAction(cdsLibManager->cellListBox 7 0)
-\a cdsLibManager->cellListBox->value = "SIM_sample_hold"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: The directory: '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar' does not exist
+\w 	but was defined in libFile '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/cds.lib' for Lib 'sar'.
+\a cdsLibManager->libListBox->value = "sar_adc"
+\a cdsLibManager->libLineEdit->value = "sar_adc"
+\a cdsLibManager->cellListBox->value = "SIM_dac"
+\a cdsLibManager->cellLineEdit->value = "SIM_dac"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\o MPS request: edit design
-\a cdsLibManager->cellLineEdit->value = "SIM_sample_hold"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "comparator"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SAR_logic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SAR_system"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_SAR_logic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "SIM_SAR_logic"
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "sample_hold"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(1 28 1920 1127))
+\a nrResizeWindow(cdsLibManager list(1 28 1920 1099))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->FileNewCVButton->value = t
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "dac_2"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "op_amp_2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "op_amp"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "op_amp_2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "op_amp_2"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\w Warning: The directory: '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar' does not exist
+\w 	but was defined in libFile '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/cds.lib' for Lib 'sar'.
+\a cdsLibManager->libListBox->value = "sar_adc"
+\a cdsLibManager->libLineEdit->value = "sar_adc"
+\o DB was auto refreshed.
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->FileNewCVButton->value = t
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->FileNewCVButton->value = t
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "op_amp"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "op_amp_3"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "op_amp_2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellLineEdit->value = "op_amp_2"
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->FileNewCVButton->value = t
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a nrListItemAction(cdsLibManager->cellListBox 13 0)
-\a cdsLibManager->cellListBox->value = "op_amp_2"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\o MPS request: edit design
-\a cdsLibManager->cellLineEdit->value = "op_amp_2"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "SIM_op_amp_3"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = "SIM_op_amp_2"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "SIM_op_amp"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a nrListItemAction(cdsLibManager->cellListBox 5 0)
-\a cdsLibManager->cellListBox->value = "SIM_op_amp"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\o MPS request: edit design
-\a cdsLibManager->cellLineEdit->value = "SIM_op_amp"
 \a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->libLineEdit->value = ""
 \w Warning: The directory: '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar' does not exist
 \w 	but was defined in libFile '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/cds.lib' for Lib 'sar'.
 \a cdsLibManager->libListBox->value = "sar_adc"
 \a cdsLibManager->libLineEdit->value = "sar_adc"
-\a cdsLibManager->cellListBox->value = "SIM_op_amp"
-\a cdsLibManager->cellLineEdit->value = "SIM_op_amp"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: The directory: '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar' does not exist
-\w 	but was defined in libFile '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/cds.lib' for Lib 'sar'.
-\a cdsLibManager->libListBox->value = "sar_adc"
-\a cdsLibManager->libLineEdit->value = "sar_adc"
-\a cdsLibManager->cellListBox->value = "SIM_op_amp"
-\a cdsLibManager->cellLineEdit->value = "SIM_op_amp"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: The directory: '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar' does not exist
-\w 	but was defined in libFile '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/cds.lib' for Lib 'sar'.
-\a cdsLibManager->libListBox->value = "sar_adc"
-\a cdsLibManager->libLineEdit->value = "sar_adc"
-\a cdsLibManager->cellListBox->value = "SIM_op_amp"
-\a cdsLibManager->cellLineEdit->value = "SIM_op_amp"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: The directory: '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar' does not exist
-\w 	but was defined in libFile '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/cds.lib' for Lib 'sar'.
-\a cdsLibManager->libListBox->value = "sar_adc"
-\a cdsLibManager->libLineEdit->value = "sar_adc"
-\a cdsLibManager->cellListBox->value = "SIM_op_amp"
-\a cdsLibManager->cellLineEdit->value = "SIM_op_amp"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: The directory: '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar' does not exist
-\w 	but was defined in libFile '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/cds.lib' for Lib 'sar'.
-\a cdsLibManager->libListBox->value = "sar_adc"
-\a cdsLibManager->libLineEdit->value = "sar_adc"
-\a cdsLibManager->cellListBox->value = "SIM_op_amp"
-\a cdsLibManager->cellLineEdit->value = "SIM_op_amp"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libLineEdit->value = ""
-\w Warning: The directory: '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar' does not exist
-\w 	but was defined in libFile '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/cds.lib' for Lib 'sar'.
-\a cdsLibManager->libListBox->value = "sar_adc"
-\a cdsLibManager->libLineEdit->value = "sar_adc"
-\a cdsLibManager->cellListBox->value = "SIM_op_amp"
-\a cdsLibManager->cellLineEdit->value = "SIM_op_amp"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \o libManager is exiting.
 \a exit(0)
+\a basicRenameForm->basicRenameFromEdit->value = "foo"
