@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.19)  29 MAR 2016 08:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2016.2.19)  7 APR 2016 12:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1273,7 +1273,7 @@ Package logreq Info: Writing requests to 'main_report.run.xml'.
 Here is how much of TeX's memory you used:
  10371 strings out of 493033
  168479 string characters out of 6121489
- 591784 words of memory out of 5000000
+ 591772 words of memory out of 5000000
  13665 multiletter control sequences out of 15000+600000
  75664 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1283,7 +1283,7 @@ uio-texmf/texmf-local/fonts/type1/private/microsoft/georgia/jgib8a.pfa></opt/te
 xlive/uio-texmf/texmf-local/fonts/type1/private/microsoft/georgia/jgir8a.pfa></
 opt/texlive/uio-texmf/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></opt/tex
 live/uio-texmf/texmf-local/fonts/type1/urw/arial/ua1r8a.pfb>
-Output written on main_report.pdf (29 pages, 5054084 bytes).
+Output written on main_report.pdf (29 pages, 5053709 bytes).
 PDF statistics:
  148 PDF objects out of 1000 (max. 8388607)
  91 compressed objects within 1 object stream
