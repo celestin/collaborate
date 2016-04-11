@@ -1,0 +1,832 @@
+<?xml version="1.0"?>
+<setupdb version="5">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test>sar_adc:SIM_dac_2:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>SIM_dac_2</value>
+					</option>
+					<option>lib
+						<value>sar_adc</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>sar_adc:SIM_dac_2:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>SIM_dac_2</value>
+					</option>
+					<option>lib
+						<value>sar_adc</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+		</tests>
+		<vars>
+			<var>B0
+				<value>1.2</value>
+				<dependentTests>
+					<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>B1
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>B2
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>B3
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>B4
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>B5
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>B6
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>B7
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>delay
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>fall
+				<value>1p</value>
+				<dependentTests>
+					<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>period
+				<value>1u</value>
+				<dependentTests>
+					<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>pulse_width
+				<value>500n</value>
+				<dependentTests>
+					<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>rise
+				<value>1p</value>
+				<dependentTests>
+					<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>v_dc
+				<value>1.2</value>
+				<dependentTests>
+					<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value>                            </value>
+			</plottingoption>
+		</plottingoptions>
+	</active>
+	<history>History
+		<historyentry>Interactive.0
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>sar_adc:SIM_dac_2:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_dac_2</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_dac_2:1_none_Interactive.0</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_dac_2</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>B0
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B4
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B5
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B6
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B7
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>delay
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fall
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>period
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>pulse_width
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>rise
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Apr 11 11:40:23 2016
+</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_dac_2/adexl/results/data/Interactive.0.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.0.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_114023732</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_dac_2/adexl/results/data/Interactive.0</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_dac_2/adexl/results/data/Interactive.0</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_dac_2/adexl/results/data/Interactive.0.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.0.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.1
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>sar_adc:SIM_dac_2:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_dac_2</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_dac_2:1_none_Interactive.1</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_dac_2</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>B0
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B4
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B5
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B6
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B7
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>delay
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fall
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>period
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>pulse_width
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>rise
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Apr 11 11:43:12 2016
+</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_dac_2/adexl/results/data/Interactive.1.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.1.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_114312796</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_dac_2/adexl/results/data/Interactive.1</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_dac_2/adexl/results/data/Interactive.1</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_dac_2/adexl/results/data/Interactive.1.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.1.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.2
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>sar_adc:SIM_dac_2:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_dac_2</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_dac_2:1_none_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_dac_2</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>B0
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B4
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B5
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B6
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B7
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>delay
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fall
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>period
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>pulse_width
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>rise
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Apr 11 11:46:57 2016
+</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_dac_2/adexl/results/data/Interactive.2.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_114657158</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_dac_2/adexl/results/data/Interactive.2</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_dac_2/adexl/results/data/Interactive.2</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_dac_2/adexl/results/data/Interactive.2.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.3
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>sar_adc:SIM_dac_2:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_dac_2</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_dac_2:1_none_Interactive.3</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_dac_2</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>B0
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B3
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B4
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B5
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B6
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>B7
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>delay
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fall
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>period
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>pulse_width
+						<value>500n</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>rise
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_dac_2:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Apr 11 11:52:50 2016
+</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_dac_2/adexl/results/data/Interactive.3.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.3.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_115250980</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_dac_2/adexl/results/data/Interactive.3</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_dac_2/adexl/results/data/Interactive.3</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_dac_2/adexl/results/data/Interactive.3.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.3.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>
