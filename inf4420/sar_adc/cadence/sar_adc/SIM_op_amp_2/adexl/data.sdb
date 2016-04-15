@@ -109,7 +109,7 @@
 				<value>no</value>
 			</plottingoption>
 			<plottingoption>waveformtemplate
-				<value>                            </value>
+				<value></value>
 			</plottingoption>
 		</plottingoptions>
 	</active>
@@ -224,13 +224,12 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Tue Mar 15 12:57:20 2016
-</timestamp>
+			<timestamp>Tue Mar 15 12:57:20 2016</timestamp>
 			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.0.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -355,13 +354,12 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Tue Mar 15 13:02:07 2016
-</timestamp>
+			<timestamp>Tue Mar 15 13:02:07 2016</timestamp>
 			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.1.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.1.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -486,13 +484,12 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Tue Mar 15 13:04:37 2016
-</timestamp>
+			<timestamp>Tue Mar 15 13:04:37 2016</timestamp>
 			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.2.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -617,13 +614,12 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Tue Mar 15 13:07:55 2016
-</timestamp>
+			<timestamp>Tue Mar 15 13:07:55 2016</timestamp>
 			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.3.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.3.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -757,13 +753,12 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value>                            </value>
+						<value></value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Tue Mar 15 13:11:38 2016
-</timestamp>
+			<timestamp>Tue Mar 15 13:11:38 2016</timestamp>
 			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp_2/adexl/results/data/Interactive.4.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.4.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>

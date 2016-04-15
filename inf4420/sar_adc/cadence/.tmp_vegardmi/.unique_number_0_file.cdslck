@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      vegardmi
+HostName                       vetur.ifi.uio.no
+ProcessIdentifier              51038
+ProcessCreationTime_UTC        1460721318
+ProcessCreationTime_Readable   Fri Apr 15 13:55:18 2016 CEST
+AppIdentifier                  /projects/nanos/programsrhel6/IC616/tools/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       Lock file for generating unique number for ICRP command and log file directories.
+FilePathUsedToEditLock         /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/.tmp_vegardmi/.unique_number_0_file
+TimeEditLocked                 Fri Apr 15 13:56:28 2016 CEST
