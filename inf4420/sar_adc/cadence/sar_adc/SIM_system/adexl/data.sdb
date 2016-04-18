@@ -122,145 +122,6 @@
 		</plottingoptions>
 	</active>
 	<history>History
-		<historyentry>Interactive.16
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>sar_adc:SIM_system:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>SIM_system</value>
-							</option>
-							<option>lib
-								<value>sar_adc</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>sar_adc:SIM_system:1_none_Interactive.16</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>SIM_system</value>
-							</option>
-							<option>lib
-								<value>sar_adc</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>clk_period
-						<value>10u</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar_adc:SIM_system:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>clk_width
-						<value>5u</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar_adc:SIM_system:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>hold_delay
-						<value>1u</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar_adc:SIM_system:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>hold_period
-						<value>100u</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar_adc:SIM_system:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>hold_width
-						<value>50u</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar_adc:SIM_system:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>soc_delay
-						<value>5u</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar_adc:SIM_system:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>soc_period
-						<value>80u</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar_adc:SIM_system:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>soc_width
-						<value>75u</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar_adc:SIM_system:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>freq_in
-						<value>10k</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar_adc:SIM_system:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Mon Apr 18 08:47:28 2016
-</timestamp>
-			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system/adexl/results/data/Interactive.16.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.16.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vor.ifi.uio.no_vegardmi_084728108</localpsfdir>
-			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_system/adexl/results/data/Interactive.16</psfdir>
-			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_system/adexl/results/data/Interactive.16</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system/adexl/results/data/Interactive.16.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.16.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
 		<historyentry>Interactive.17
 			<checkpoint>
 				<corners>
@@ -384,8 +245,7 @@
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Mon Apr 18 08:51:20 2016
-</timestamp>
+			<timestamp>Mon Apr 18 08:51:20 2016</timestamp>
 			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system/adexl/results/data/Interactive.17.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.17.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -523,8 +383,7 @@
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Mon Apr 18 08:53:55 2016
-</timestamp>
+			<timestamp>Mon Apr 18 08:53:55 2016</timestamp>
 			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system/adexl/results/data/Interactive.18.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.18.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -662,8 +521,7 @@
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Mon Apr 18 08:56:19 2016
-</timestamp>
+			<timestamp>Mon Apr 18 08:56:19 2016</timestamp>
 			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system/adexl/results/data/Interactive.19.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.19.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -801,8 +659,7 @@
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Mon Apr 18 08:59:06 2016
-</timestamp>
+			<timestamp>Mon Apr 18 08:59:06 2016</timestamp>
 			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system/adexl/results/data/Interactive.20.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.20.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -940,8 +797,7 @@
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Mon Apr 18 09:03:07 2016
-</timestamp>
+			<timestamp>Mon Apr 18 09:03:07 2016</timestamp>
 			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system/adexl/results/data/Interactive.21.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.21.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -1079,8 +935,7 @@
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Mon Apr 18 09:03:35 2016
-</timestamp>
+			<timestamp>Mon Apr 18 09:03:35 2016</timestamp>
 			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system/adexl/results/data/Interactive.22.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.22.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -1218,8 +1073,7 @@
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Mon Apr 18 09:05:38 2016
-</timestamp>
+			<timestamp>Mon Apr 18 09:05:38 2016</timestamp>
 			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system/adexl/results/data/Interactive.23.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.23.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -1357,8 +1211,7 @@
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Mon Apr 18 09:07:54 2016
-</timestamp>
+			<timestamp>Mon Apr 18 09:07:54 2016</timestamp>
 			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system/adexl/results/data/Interactive.24.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.24.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -1496,8 +1349,7 @@
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Mon Apr 18 11:02:27 2016
-</timestamp>
+			<timestamp>Mon Apr 18 11:02:27 2016</timestamp>
 			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system/adexl/results/data/Interactive.25.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.25.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -1509,6 +1361,145 @@
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
 			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system/adexl/results/data/Interactive.25.log</runlog>
 			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.25.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.26
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>sar_adc:SIM_system:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_system</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_system:1_none_Interactive.26</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_system</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>clk_period
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_system:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>clk_width
+						<value>50n</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_system:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>hold_delay
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_system:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>hold_period
+						<value>1.8u</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_system:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>hold_width
+						<value>0.9u</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_system:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>soc_delay
+						<value>0.1u</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_system:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>soc_period
+						<value>0.9u</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_system:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>soc_width
+						<value>0.8u</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_system:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>freq_in
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_system:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Apr 18 14:01:28 2016
+</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system/adexl/results/data/Interactive.26.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.26.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vor.ifi.uio.no_vegardmi_140128208</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_system/adexl/results/data/Interactive.26</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_system/adexl/results/data/Interactive.26</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system/adexl/results/data/Interactive.26.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.26.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>

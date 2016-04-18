@@ -5,12 +5,12 @@
 #
 LockStakeVersion               1.1
 LoginName                      vegardmi
-HostName                       vetur.ifi.uio.no
-ProcessIdentifier              10985
-ProcessCreationTime_UTC        1460022772
-ProcessCreationTime_Readable   Thu Apr  7 11:52:52 2016 CEST
+HostName                       odyr.ifi.uio.no
+ProcessIdentifier              4198
+ProcessCreationTime_UTC        1460986056
+ProcessCreationTime_Readable   Mon Apr 18 15:27:36 2016 CEST
 AppIdentifier                  OA File System Design Manager
 OSType                         unix
 ReasonForPlacingEditLock       OpenAccess edit lock
-FilePathUsedToEditLock         /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/dac/schematic/sch.oa.cdslck.dirlck
-TimeEditLocked                 Thu Apr  7 12:44:30 2016 CEST
+FilePathUsedToEditLock         /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/dac/schematic/sch.oa.cdslck
+TimeEditLocked                 Mon Apr 18 15:42:34 2016 CEST
