@@ -1,14 +1,15 @@
-\documentclass[english, 12pt, a4paper]{ifimaster}
+\documentclass[english, 12pt, a4paper]{article}
 \usepackage[utf8]{inputenc} 
 \usepackage[T1]{fontenc,url} %url
 \urlstyle{sf} %sf
-% \usepackage{lmodern}  % For times new roman : mathptmx
-% \usepackage{mathptmx}
 \usepackage[toc,page]{appendix}
 \usepackage{babel,textcomp,csquotes,ifikompendiumforside, varioref,graphicx, gensymb}
 % \usepackage[]{circuitikz}
-% \usepackage{tikz}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
 \usepackage[backend=biber,style=numeric-comp, sortcites]{biblatex} 
+
+\bibliography{ref.bib}
 
 % --------------------------------------------------
 \title{ \huge{Successive Approximation Register Analog-to-Digital Converter}}
@@ -16,32 +17,85 @@
 \author{By Espen Klein Nilsen\\ and Vegard Midtbøen}
 % --------------------------------------------------
 
-\bibliography{ref} 
+ 
 
 
 \begin{document}
-
 \ififorside{}
-\frontmatter{}
-\maketitle{}
-%-----------Acknowledgment---
-\chapter*{Acknowledgment}
+% \frontmatter{}
+\maketitle{} \newpage
 
-%-----------Abstract---------
-\chapter*{Abstract}
-
-\tableofcontents{}
-\listoffigures{}
-\listoftables{}
-
-%-----------Preface----------
-\chapter*{Preface}
+\tableofcontents{} \newpage
+\listoffigures{} 
+\listoftables{} \newpage
 
 
 %-----------Introduksjon-----
-\mainmatter{}        
+% \mainmatter{}        
 
-\chapter{Introduction}         
+\section{Introduction} 
+Successive Approximation Register (SAR) Analog-to-Digital Converter (ADC) is a common arctitecture whent talking about Analog-to-Digital (A/D) conversion. A/D conversion is used in almost every
+circuits today, and the purpose is to convert a signal from the analig to the digital domain. This is of great interest, because digital signals propagates more efficiently than analog singlals in a 
+circuit. By using digital signals, it is easier for the electronic circuit to distinguish from noise \cite{basic-dac}.\\
+\\
+This task, is as mentrioned, to design a SAR ADC. A block diagram of the system arcitecture is shown in Fig. \ref{block_diagram}
+
+\tikzstyle{block} = [draw, fill=blue!20, rectangle, 
+    minimum height=4em, minimum width=3em]
+\tikzstyle{input} = [coordinate]
+\tikzstyle{output} = [coordinate]
+\tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
+\begin{figure}[!ht]
+  \begin{tikzpicture}[auto, node distance=2cm,>=latex']
+      % We start by placing the blocks
+      \node [input, name=input] {};
+      \node [block, right of=input, node distance=2cm] (sample_and_hold) {S\&H};
+      \node [block, right of=sample_and_hold, node distance=4cm] (comparator) {Comparator};
+      \node [block, right of=comparator, node distance=4cm] (sar_logic) {SAR Logic};
+      
+      % We draw an edge between the controller and system block to 
+      % calculate the coordinate xsh(t). We need it to place the measurement block. 
+      \draw [->] (sample_and_hold) -- node[name=xsh(t)] {$x_{sh}(t)$} (comparator);
+      \draw [->] (comparator) -- node[name=xc(nT)] {$x_{c}(nT)$} (sar_logic);
+      \node [block, below of=sar_logic, node distance=3cm] (dac){DAC};
+      \node [output, right of=sar_logic, node distance=3cm] (output) {};
+    
+      % Once the nodes are placed, connecting them is easy. 
+      \draw [draw,->] (input) -- node [name=xc(t)] {$x_{c}(t)$}(sample_and_hold);
+      \draw [->] (sar_logic) -- node [name=digital_out] {Digital out}(output);
+      \draw [->] (sar_logic) -- node [name=nbit] {N-bit} (dac);
+      \draw [->] (dac) -| node [name=negfeedback, bend left] {Negative feedback}(comparator);     
+  \end{tikzpicture}
+  \caption{Block diagram}
+  \label{block_diagram}
+\end{figure}
+
+In todays technologies, it is importatint to consume as less power as possible, and be as fast as possible. Due to this, we are going to design a SAR ADC which are capable 
+of running with a powersupply of 1.2 V and have sampling frequency of 1 MHz. The overall requirements are listed bellow.\\
+\textbf{SAR ADC}
+\begin{itemize}
+ \item Input sampling rate: 1 M samples/s
+ \item Output resolution: 8 bits
+ \item Supply voltage: $V_{DD} = 1.2 V$, and $V_{SS} = 0 V$
+ \item No missing codes
+ \item Monotonic
+\end{itemize}
+\textbf{DAC}
+\begin{itemize}
+ \item Sampling rate: 8 M samples/s
+ \item Resolution: 8 bits
+ \item Supply voltage: $V_{DD} = 1.2 V$, and $V_{SS} = 0 V$
+ \item DNL < $\pm$ 0.5 LSB
+ \item INL < $\pm$ 0.5 LSB
+ \item $V_{OUT(P\_P)} \geq 0.6$
+ \item $C_{load} = 50 fF$
+\end{itemize}
+\textbf{Comparator}
+\begin{itemize}
+ \item 
+\end{itemize}
+
+
 Critical parts in SAR ADCs 
 \begin{itemize}
  \item Comparator
@@ -58,13 +112,6 @@ Comparator:
  \item The comparator does not effect the overall linearity 
 \end{itemize}
 
-
-
-
-\section{Overview of the report}
-
-\section{Summary}
-
 %-----------Background-------
 \chapter{Background}
 
@@ -73,18 +120,19 @@ Comparator:
 \chapter{Planning the project} 
 \section{Task 1}
 \subsection{Task 1.B}
-\begin{table}[]
-\centering
-\caption{Comparation of different ADCs}
-\label{comp:adc}
-\begin{tabular}{|l|l|l|l|l|}
-\hline
-                 & SAR        & Flash   & Sigma-Delta  & Integrating                      \\ \hline
-Conversion speed & Low-medium & Fast    & Low          & Depending on reolution and clock \\ \hline
-Sampling rate    & Nyquist    & Nyquist & Oversampling & Nyquist                          \\ \hline
-Area             & Low        & High    & Medium       &                                  \\ \hline
-\end{tabular}
-\end{table}
+\begin{table}
+ \centering
+ \caption{Comparation of different ADCs}
+ \label{comp:adc}
+ \begin{tabular}{|l|l|l|l|l|}
+ \hline
+                  & SAR        & Flash   & Sigma-Delta  & Integrating                      \\ \hline
+ Conversion speed & Low-medium & Fast    & Low          & Depending on \\
+		  &	       &	 &		&reolution and clock 		   \\ \hline
+ Sampling rate    & Nyquist    & Nyquist & Oversampling & Nyquist                          \\ \hline
+ Area             & Low        & High    & Medium       &                                  \\ \hline
+ \end{tabular}
+ \end{table}
 
 
 
@@ -95,7 +143,7 @@ Area             & Low        & High    & Medium       &                        
 \subsection{Proposal of improvement}
 \section{Conclusion}
 
-\backmatter{}
+% \backmatter{}
 
 
 \begin{appendices}
