@@ -1,0 +1,34 @@
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.09s.
+
+*WARNING* (icLic-3) Could not get license Virtuoso_Schematic_Editor_L
+
+*WARNING* (icLic-21) License Virtuoso_Schematic_Editor_L ("Schematics L") is not available to run Schematics L.
+Trying to check out the license Virtuoso_Schematic_Editor_XL ("Schematics XL") instead.
+
+*INFO* (icLic-25) License Virtuoso_Schematic_Editor_XL ("Schematics XL") was used to run Schematics L.
+
+*WARNING* The directory: '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar' does not exist
+	but was defined in libFile '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/cds.lib' for Lib 'sar'.
+
+*WARNING* The directory: '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar' does not exist
+	but was defined in libFile '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/cds.lib' for Lib 'sar'.
+
+Initializing from libInit.il for library tsmcN90rf...
+   --  /ifi/asgard/project0/nanos/design_kit/TSMC90nmLPRF_616OA/tsmcN90rf/../skill/pc90_1.cdn
+   --  /ifi/asgard/project0/nanos/design_kit/TSMC90nmLPRF_616OA/tsmcN90rf/../skill/pc90_2.cdn
+   --  /ifi/asgard/project0/nanos/design_kit/TSMC90nmLPRF_616OA/tsmcN90rf/../skill/pc90_3.cdn
+   --  /ifi/asgard/project0/nanos/design_kit/TSMC90nmLPRF_616OA/tsmcN90rf/../skill/pc90mom_9.cdn
+   --  /ifi/asgard/project0/nanos/design_kit/TSMC90nmLPRF_616OA/tsmcN90rf/../skill/mom61.cdn
+   --  /ifi/asgard/project0/nanos/design_kit/TSMC90nmLPRF_616OA/tsmcN90rf/../skill/tsmcN90.crtmom_mx.20120116.cxt1
+   --  tsmcN90rf_updateCDFs.il
+   --  tsAbutFunction.il
+   --  tsmcPdkParamTable.il
+   --  tsmc_esti.ile
+   --  tsmcN90rf.cxt
+   --  tsmcN90Tool.cxt
+
+Running Artist Hierarchical Netlisting ...
+
+Loading cdf.cxt 
+End netlisting Apr 19 20:56:36 2016
+

@@ -1,0 +1,11 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/sample_hold_3.dv
+dv_start unmatched                                
+dv_cell {sample_hold_3} {sample_hold_3} unmatched
+dv_obj_count -transformed_nets {6 6} -transformed_inst {4 4} -transformed_port {5 5}
+dv_discrep 1 {Property Errors}
+dv_discrep_line {} -linst {X4} {} -lloc {(36.835,15.470)} {  mimcap_2p0_sin                         } -sinst {XC1} {  mimcap_2p0_sin}
+dv_discrep_line {}  {lt} {: }  {2.206e-05 } {                                            }  {lt} {: }  {2.2065e-05 } {       }  {    0.0227%} {}
+dv_discrep_line {}  {wt} {: }  {2.206e-05 } {                                            }  {wt} {: }  {2.2065e-05 } {       }  {    0.0227%} {}
+dv_discrep_line {}
+dv_end

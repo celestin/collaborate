@@ -1,0 +1,142 @@
+comparator_rail2rail_input_external_current_small 1000
+LUP.6
+14 14 8 Apr 22 17:12:34 2016                   
+LUP.6 { @ Any point inside NMOS source/drain space to the nearest PW STRAP in the same PW <= 30 um
+        @ Any point inside PMOS source/drain space to the nearest NW STRAP in the same NW <= 30 um
+        @ In SRAM bit cell region, the rule is relaxed to 40 um
+  PACT_CHECK_NON_SRAM NOT NSTP_OS
+  PACT_CHECK_SRAM NOT (NSTP_OS OR NSTP_OS_SRAM)
+  NACT_CHECK_NON_SRAM NOT PSTP_OS
+  NACT_CHECK_SRAM NOT (PSTP_OS OR PSTP_OS_SRAM)
+}
+p 1 4
+CN nch_mac_CDNS_461337950274 c 0 1 -1 0 3085 7630 5
+-230 0
+0 0
+0 2000
+-230 2000
+p 2 4
+100 0
+330 0
+330 2000
+100 2000
+p 3 4
+CN nch_mac_CDNS_4613379502712 c 0 1 -1 0 7445 10445 3
+-230 0
+0 0
+0 2000
+-230 2000
+p 4 4
+100 0
+330 0
+330 2000
+100 2000
+p 5 4
+CN nch_mac_CDNS_461337950273 c 1 0 0 1 13105 11310 2
+-230 0
+0 0
+0 2000
+-230 2000
+p 6 4
+500 0
+730 0
+730 2000
+500 2000
+p 7 4
+CN comparator_rail2rail_input_external_current_small c 1 0 0 1 0 0 0
+12960 6145
+13190 6145
+13190 8145
+12960 8145
+p 8 4
+13390 6145
+13620 6145
+13620 8145
+13390 8145
+p 9 4
+16085 9120
+16315 9120
+16315 11120
+16085 11120
+p 10 4
+16085 12435
+16315 12435
+16315 13435
+16085 13435
+p 11 4
+16515 9120
+16745 9120
+16745 11120
+16515 11120
+p 12 4
+16515 12435
+16745 12435
+16745 13435
+16515 13435
+p 13 4
+17005 12435
+17235 12435
+17235 13435
+17005 13435
+p 14 4
+17735 12435
+17965 12435
+17965 13435
+17735 13435
+NET_AREA_RATIO_RDBS
+0 0 17 Apr 22 17:12:34 2016
+MOM.A.1.rep 0
+MOM.A.2.rep 0
+M1.DN.5.M1.density 0
+M1.DN.5.M2.density 0
+M2.DN.5.M2.density 0
+M1.DN.5.M3.density 0
+M2.DN.5.M3.density 0
+M3.DN.5.M3.density 0
+M2.DN.5.M4.density 0
+M3.DN.5.M4.density 0
+M4.DN.5.M4.density 0
+M3.DN.5.M5.density 0
+M4.DN.5.M5.density 0
+M5.DN.5.M5.density 0
+M4.DN.5.M6.density 0
+M5.DN.5.M6.density 0
+M5.DN.5.M7.density 0
+DENSITY_PRINT_FILES
+0 0 36 Apr 22 17:12:34 2016
+OD.DN.2L.density
+OD.DN.2H_IO.density
+OD.DN.2H_CORE.density
+PO_DN_2.density
+M1.DN.3L.density
+M1.DN.1H.density
+M1.DN.2.density
+M2.DN.3L.density
+M2.DN.1H.density
+M2.DN.2.density
+M3.DN.3L.density
+M3.DN.1H.density
+M3.DN.2.density
+M4.DN.3L.density
+M4.DN.1H.density
+M4.DN.2.density
+M5.DN.3L.density
+M5.DN.1H.density
+M5.DN.2.density
+M6.DN.3L.density
+M6.DN.1H.density
+M6.DN.2.density
+M7.DN.3L.density
+M7.DN.1H.density
+M7.DN.2.density
+M8.DN.3L.density
+M8.DN.1H.density
+M8.DN.2.density
+MD.DN.3L.density
+MD.DN.1H.density
+MD.DN.2.density
+Mn.DN.5L.density
+Mn.DN.5H.density
+UTM.DN.1L.density
+UTM.DN.1H.density
+UTM.DN.5.density

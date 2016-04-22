@@ -1,0 +1,9 @@
+CADENCE IHNL01070
+$model
+tsmcN90rf/inv/schematic inv
+sar_adc/sample_hold_3/schematic sample_hold_3
+$endmodel
+$net
+$endnet
+$param
+$endparam

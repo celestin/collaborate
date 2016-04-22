@@ -1,0 +1,72 @@
+//
+//  Rule file generated on Tue Apr 19 20:56:36 CEST 2016
+//     by Calibre Interactive - LVS (v2013.4_15.12)
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH  "sample_hold_3.calibre.db"
+LAYOUT PRIMARY "sample_hold_3"
+LAYOUT SYSTEM GDSII
+
+SOURCE PATH "/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sample_hold_3.src.net"
+SOURCE PRIMARY "sample_hold_3"
+SOURCE SYSTEM SPICE
+
+MASK SVDB DIRECTORY "svdb" QUERY
+
+LVS REPORT "sample_hold_3.lvs.report"
+
+LVS REPORT OPTION NONE
+LVS FILTER UNUSED OPTION NONE SOURCE
+LVS FILTER UNUSED OPTION NONE LAYOUT
+LVS REPORT MAXIMUM 50
+LVS POWER NAME
+	"VDD"
+	"vdd"
+	"vdd!"
+	"vdd;"
+	"VDDS"
+	"vdds"
+	"vdds!"
+	"vdds;"
+
+LVS GROUND NAME
+	"GND"
+	"gnd"
+	"gnd!"
+	"gnd;"
+	"GNDS"
+	"gnds"
+	"gnds!"
+	"gnds;"
+
+
+LVS RECOGNIZE GATES ALL
+
+
+LVS ABORT ON SOFTCHK NO
+LVS ABORT ON SUPPLY ERROR YES
+LVS IGNORE PORTS NO
+LVS SHOW SEED PROMOTIONS NO
+LVS SHOW SEED PROMOTIONS MAXIMUM 50
+
+LVS ISOLATE SHORTS NO
+
+
+VIRTUAL CONNECT COLON NO
+VIRTUAL CONNECT REPORT NO
+
+LVS EXECUTE ERC YES
+ERC RESULTS DATABASE "sample_hold_3.erc.results"
+ERC SUMMARY REPORT "sample_hold_3.erc.summary" REPLACE HIER
+ERC CELL NAME YES CELL SPACE XFORM
+ERC MAXIMUM RESULTS 1000
+ERC MAXIMUM VERTEX 4096
+
+DRC ICSTATION YES
+
+
+INCLUDE "/projects/nanos/design_kit/TSMC90nmLPRF_616OA/Calibre/lvs/calibre.lvs"
+

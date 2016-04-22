@@ -1,0 +1,44 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  sar_adc
+* Top Cell Name: sample_hold_3
+* View Name:     schematic
+* Netlisted on:  Apr 19 20:56:36 2016
+************************************************************************
+
+.INCLUDE  /projects/nanos/design_kit/TSMC90nmLPRF_616OA/Calibre/lvs/source_added
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: tsmcN90rf
+* Cell Name:    inv
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv G Gb IN OUT P Pb
+*.PININFO G:I Gb:I IN:I P:I Pb:I OUT:O
+MNM1 OUT IN G Gb nch l=nl w=nw m=1*nf
+MPM1 OUT IN P Pb pch l=pl w=pw m=1*pf
+.ENDS
+
+************************************************************************
+* Library Name: sar_adc
+* Cell Name:    sample_hold_3
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT sample_hold_3 GND PHI_1 VDD VIN VOUT
+*.PININFO PHI_1:I VIN:I VOUT:O GND:B VDD:B
+MM2 VIN net012 VOUT GND nch l=100n w=200n m=1
+XC1 VOUT GND mimcap_2p0_sin lt=22.065u wt=22.065u m=1
+XI1 GND GND PHI_1 net012 VDD VDD / inv pf=1 pw=200n pl=100n nf=1 nw=200n 
++ nl=100n
+MM0 VIN PHI_1 VOUT VDD pch l=100n w=200n m=1
+.ENDS
+

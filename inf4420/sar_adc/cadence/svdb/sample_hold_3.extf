@@ -1,0 +1,12 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1461092197 1461092198
+lvs_ExtOutFile RUNDIR /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence
+lvs_ExtOutFile RULES_FILE /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoErcSummary {6 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sample_hold_3.sp
+lvs_ExtOutFile EXTRACTION_REPORT sample_hold_3.lvs.report.ext
+lvs_ExtOutFile ERC_DATABASE sample_hold_3.erc.results
+lvs_ExtOutFile ERC_SUMMARY sample_hold_3.erc.summary
