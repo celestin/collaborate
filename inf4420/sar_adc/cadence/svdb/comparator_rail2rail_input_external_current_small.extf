@@ -1,0 +1,12 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1461414686 1461414687
+lvs_ExtOutFile RUNDIR /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence
+lvs_ExtOutFile RULES_FILE /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoErcSummary {6 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/comparator_rail2rail_input_external_current_small.sp
+lvs_ExtOutFile EXTRACTION_REPORT comparator_rail2rail_input_external_current_small.lvs.report.ext
+lvs_ExtOutFile ERC_DATABASE comparator_rail2rail_input_external_current_small.erc.results
+lvs_ExtOutFile ERC_SUMMARY comparator_rail2rail_input_external_current_small.erc.summary

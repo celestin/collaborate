@@ -1,0 +1,14 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Apr 18 13:56:23 2016 
+Best design point: 1
+Design specs: 
+	sar_adc:SIM_sample_hold_3:1	corner	Nominal - 
+Design parameters: 
+	res		1k
+
+Interactive.13
+Number of points completed: 4
+Number of simulation errors: 0
+Interactive.13 completed. 
+Current time: Mon Apr 18 13:56:54 2016 

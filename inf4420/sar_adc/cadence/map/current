@@ -1,7 +1,7 @@
 ( ( nil
   version "2.1"
   mapType "incremental"
-  blockName "sample_hold_3"
+  blockName "comparator_rail2rail_input_external_current_small"
   repList "auCdl schematic"
   stopList "auCdl"
   hierDelim "."
@@ -14,13 +14,11 @@
 ( inst
  )
 ( model
-( "tsmcN90rf/inv/schematic" "inv" )
-( "sar_adc/sample_hold_3/schematic" "sample_hold_3" )
+( "sar_adc/comparator_rail2rail_input_external_current_small/schematic" "comparator_rail2rail_input_external_current_small" )
  )
 ( term
  )
 ( param
  )
-( "sample_hold_3" "ihnl/cds1/map" )
-( "inv" "ihnl/cds0/map" )
+( "comparator_rail2rail_input_external_current_small" "ihnl/cds0/map" )
  )

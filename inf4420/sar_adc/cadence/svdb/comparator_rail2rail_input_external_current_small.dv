@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/comparator_rail2rail_input_external_current_small.dv
+dv_start matched                                  
+dv_cell {comparator_rail2rail_input_external_current_small} {comparator_rail2rail_input_external_current_small} matched
+dv_obj_count -transformed_nets {14 14} -transformed_inst {19 19} -transformed_port {7 7}
+dv_end

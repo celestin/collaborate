@@ -1,4 +1,3 @@
-CADENCE IHNL01072
+CADENCE IHNL01071
 
-tsmcN90rf inv schematic cds0
-sar_adc sample_hold_3 schematic cds1
+sar_adc comparator_rail2rail_input_external_current_small schematic cds0

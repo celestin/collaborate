@@ -1,0 +1,29 @@
+*lvsRulesFile: /projects/nanos/design_kit/TSMC90nmLPRF_616OA/Calibre/lvs/calibre.lvs
+*lvsRunDir: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence
+*lvsLayoutPaths: comparator_rail2rail_input_external_current_small.calibre.db
+*lvsLayoutPrimary: comparator_rail2rail_input_external_current_small
+*lvsLayoutLibrary: sar_adc
+*lvsLayoutView: layout
+*lvsLayoutGetFromViewer: 1
+*lvsSourcePath: comparator_rail2rail_input_external_current_small.src.net
+*lvsSourcePrimary: comparator_rail2rail_input_external_current_small
+*lvsSourceLibrary: sar_adc
+*lvsSourceView: schematic
+*lvsSourceGetFromViewer: 1
+*lvsSpiceFile: comparator_rail2rail_input_external_current_small.sp
+*lvsPowerNames: VDD vdd "vdd!" "vdd;" VDDS vdds "vdds!" "vdds;"
+*lvsGroundNames: GND gnd "gnd!" "gnd;" GNDS gnds "gnds!" "gnds;"
+*lvsERCDatabase: comparator_rail2rail_input_external_current_small.erc.results
+*lvsERCSummaryFile: comparator_rail2rail_input_external_current_small.erc.summary
+*lvsReportFile: comparator_rail2rail_input_external_current_small.lvs.report
+*lvsMaskDBFile: comparator_rail2rail_input_external_current_small.maskdb
+*cmnWarnLayoutOverwrite: 0
+*cmnWarnSourceOverwrite: 0
+*cmnShowOptions: 1
+*cmnRunHyperCompare: 1
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnFDILayoutLibrary: sar_adc
+*cmnFDILayoutView: layout
+*cmnFDIDEFLayoutPath: comparator_rail2rail_input_external_current_small.def

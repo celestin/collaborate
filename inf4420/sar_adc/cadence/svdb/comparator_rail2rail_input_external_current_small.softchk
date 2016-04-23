@@ -1,0 +1,34 @@
+comparator_rail2rail_input_external_current_small 1000
+SOFTCHK DNW CONTACT.
+0 0 0 Apr 23 13:19:06 2016                                                      
+SOFTCHK poly_term CONTACT.
+0 0 0 Apr 23 13:19:06 2016                                                      
+SOFTCHK poly_term CONTACT.
+0 0 0 Apr 23 13:19:06 2016                                                      
+SOFTCHK nxwell CONTACT.
+2 2 4 Apr 23 13:19:06 2016                                                      
+Net Vdd is selected for stamping.
+Rejected nets: 13
+Net Vdd is selected for stamping.
+Rejected nets: 13
+p 1 4
+CN comparator_rail2rail_input_external_current_small c 1 0 0 1 0 0
+DN 13
+8805 4040
+9045 4040
+9045 6040
+8805 6040
+p 2 4
+DN 13
+10890 4040
+11130 4040
+11130 6040
+10890 6040
+SOFTCHK coll1 CONTACT.
+0 0 0 Apr 23 13:19:06 2016                                                      
+SOFTCHK n_psub CONTACT.
+0 0 0 Apr 23 13:19:06 2016                                                      
+SOFTCHK psub CONTACT.
+0 0 0 Apr 23 13:19:06 2016                                                      
+SOFTCHK psub_term CONTACT.
+0 0 0 Apr 23 13:19:06 2016                                                      

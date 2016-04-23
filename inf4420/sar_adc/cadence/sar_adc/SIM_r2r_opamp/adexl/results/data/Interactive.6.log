@@ -1,0 +1,14 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Fri Apr 15 15:11:40 2016 
+Best design point: 1
+Design specs: 
+	sar_adc:SIM_r2r_opamp:1	corner	Nominal - 
+Design parameters: 
+	freq_in		32k
+
+Interactive.6
+Number of points completed: 3
+Number of simulation errors: 0
+Interactive.6 completed. 
+Current time: Fri Apr 15 15:15:11 2016 
