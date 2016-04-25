@@ -1,4 +1,0 @@
-(
- (nil name "2" fundName "" freqVar "1/(period-0)" freq "200.000000000000029103830456734K" signal "Moderate" srcId "V7" maxHarms "3" freqIndex "freq" oversample "1")
- (nil name "1" fundName "" freqVar "frequency" freq "20K" signal "Moderate" srcId "V0" maxHarms "3" freqIndex "freq" oversample "1")
-)
