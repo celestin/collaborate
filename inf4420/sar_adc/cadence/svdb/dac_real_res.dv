@@ -1,0 +1,121 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/dac_real_res.dv
+dv_start unmatched                                
+dv_cell {dac_real_res} {dac_real_res} unmatched
+dv_obj_count -transformed_nets {27 26} -transformed_inst {24 24} -transformed_port {11 11}
+dv_discrep 1 {Incorrect Nets} -inst_count { 0 0}
+dv_discrep_line {Net } -lnet {36} {                                                    ** no similar net **}
+dv_discrep_line {}
+dv_discrep 2 {Incorrect Instances}
+dv_discrep_line {} -ldev {X16/X0/X1/M0} {} -lloc {(6.190,12.240)} {  MN(NCH)                       } -sdev {XI2/MNM1} {  MN(NCH)}
+dv_discrep_line {  } -lport {g} {: } -lnet {B<0>} {                                                   } -sport {g} {: } -snet {B<0>} {}
+dv_discrep_line {  } -lport {d} {: } -lnet {GND} {                                                    } -sport {d} {: } -snet {GND} {}
+dv_discrep_line {  } -lport {b} {: } -lnet {36} {                                                     ** no similar net **}
+dv_discrep_line {  ** } -lnet {GND} { **                                                 } -sport {b} {: } -snet {GND} {}
+dv_discrep_line {}
+dv_discrep 3 {Incorrect Instances}
+dv_discrep_line {} -ldev {X16/X0/X0/M0} {} -lloc {(9.935,12.240)} {  MN(NCH)                       } -sdev {XI3/MNM1} {  MN(NCH)}
+dv_discrep_line {  } -lport {s} {: } -lnet {26} {                                                     } -sport {s} {: } -snet {net015} {}
+dv_discrep_line {  } -lport {d} {: } -lnet {GND} {                                                    } -sport {d} {: } -snet {GND} {}
+dv_discrep_line {  } -lport {b} {: } -lnet {36} {                                                     ** no similar net **}
+dv_discrep_line {  ** } -lnet {GND} { **                                                 } -sport {b} {: } -snet {GND} {}
+dv_discrep_line {}
+dv_discrep 4 {Incorrect Instances}
+dv_discrep_line {} -ldev {X16/X1/X1/M0} {} -lloc {(6.190,15.145)} {  MN(NCH)                       } -sdev {XI5/MNM1} {  MN(NCH)}
+dv_discrep_line {  } -lport {g} {: } -lnet {B<1>} {                                                   } -sport {g} {: } -snet {B<1>} {}
+dv_discrep_line {  } -lport {d} {: } -lnet {GND} {                                                    } -sport {d} {: } -snet {GND} {}
+dv_discrep_line {  } -lport {b} {: } -lnet {36} {                                                     ** no similar net **}
+dv_discrep_line {  ** } -lnet {GND} { **                                                 } -sport {b} {: } -snet {GND} {}
+dv_discrep_line {}
+dv_discrep 5 {Incorrect Instances}
+dv_discrep_line {} -ldev {X16/X1/X0/M0} {} -lloc {(9.935,15.145)} {  MN(NCH)                       } -sdev {XI4/MNM1} {  MN(NCH)}
+dv_discrep_line {  } -lport {s} {: } -lnet {25} {                                                     } -sport {s} {: } -snet {net068} {}
+dv_discrep_line {  } -lport {d} {: } -lnet {GND} {                                                    } -sport {d} {: } -snet {GND} {}
+dv_discrep_line {  } -lport {b} {: } -lnet {36} {                                                     ** no similar net **}
+dv_discrep_line {  ** } -lnet {GND} { **                                                 } -sport {b} {: } -snet {GND} {}
+dv_discrep_line {}
+dv_discrep 6 {Incorrect Instances}
+dv_discrep_line {} -ldev {X17/X0/X1/M0} {} -lloc {(6.190,18.050)} {  MN(NCH)                       } -sdev {XI7/MNM1} {  MN(NCH)}
+dv_discrep_line {  } -lport {g} {: } -lnet {B<2>} {                                                   } -sport {g} {: } -snet {B<2>} {}
+dv_discrep_line {  } -lport {d} {: } -lnet {GND} {                                                    } -sport {d} {: } -snet {GND} {}
+dv_discrep_line {  } -lport {b} {: } -lnet {36} {                                                     ** no similar net **}
+dv_discrep_line {  ** } -lnet {GND} { **                                                 } -sport {b} {: } -snet {GND} {}
+dv_discrep_line {}
+dv_discrep 7 {Incorrect Instances}
+dv_discrep_line {} -ldev {X17/X0/X0/M0} {} -lloc {(9.935,18.050)} {  MN(NCH)                       } -sdev {XI6/MNM1} {  MN(NCH)}
+dv_discrep_line {  } -lport {s} {: } -lnet {24} {                                                     } -sport {s} {: } -snet {net063} {}
+dv_discrep_line {  } -lport {d} {: } -lnet {GND} {                                                    } -sport {d} {: } -snet {GND} {}
+dv_discrep_line {  } -lport {b} {: } -lnet {36} {                                                     ** no similar net **}
+dv_discrep_line {  ** } -lnet {GND} { **                                                 } -sport {b} {: } -snet {GND} {}
+dv_discrep_line {}
+dv_discrep 8 {Incorrect Instances}
+dv_discrep_line {} -ldev {X17/X1/X1/M0} {} -lloc {(6.190,20.955)} {  MN(NCH)                       } -sdev {XI8/MNM1} {  MN(NCH)}
+dv_discrep_line {  } -lport {g} {: } -lnet {B<3>} {                                                   } -sport {g} {: } -snet {B<3>} {}
+dv_discrep_line {  } -lport {d} {: } -lnet {GND} {                                                    } -sport {d} {: } -snet {GND} {}
+dv_discrep_line {  } -lport {b} {: } -lnet {36} {                                                     ** no similar net **}
+dv_discrep_line {  ** } -lnet {GND} { **                                                 } -sport {b} {: } -snet {GND} {}
+dv_discrep_line {}
+dv_discrep 9 {Incorrect Instances}
+dv_discrep_line {} -ldev {X17/X1/X0/M0} {} -lloc {(9.935,20.955)} {  MN(NCH)                       } -sdev {XI9/MNM1} {  MN(NCH)}
+dv_discrep_line {  } -lport {s} {: } -lnet {23} {                                                     } -sport {s} {: } -snet {net037} {}
+dv_discrep_line {  } -lport {d} {: } -lnet {GND} {                                                    } -sport {d} {: } -snet {GND} {}
+dv_discrep_line {  } -lport {b} {: } -lnet {36} {                                                     ** no similar net **}
+dv_discrep_line {  ** } -lnet {GND} { **                                                 } -sport {b} {: } -snet {GND} {}
+dv_discrep_line {}
+dv_discrep 10 {Incorrect Instances}
+dv_discrep_line {} -ldev {X18/X0/X1/M0} {} -lloc {(6.190,23.860)} {  MN(NCH)                       } -sdev {XI11/MNM1} {  MN(NCH)}
+dv_discrep_line {  } -lport {g} {: } -lnet {B<4>} {                                                   } -sport {g} {: } -snet {B<4>} {}
+dv_discrep_line {  } -lport {d} {: } -lnet {GND} {                                                    } -sport {d} {: } -snet {GND} {}
+dv_discrep_line {  } -lport {b} {: } -lnet {36} {                                                     ** no similar net **}
+dv_discrep_line {  ** } -lnet {GND} { **                                                 } -sport {b} {: } -snet {GND} {}
+dv_discrep_line {}
+dv_discrep 11 {Incorrect Instances}
+dv_discrep_line {} -ldev {X18/X0/X0/M0} {} -lloc {(9.935,23.860)} {  MN(NCH)                       } -sdev {XI10/MNM1} {  MN(NCH)}
+dv_discrep_line {  } -lport {s} {: } -lnet {21} {                                                     } -sport {s} {: } -snet {net038} {}
+dv_discrep_line {  } -lport {d} {: } -lnet {GND} {                                                    } -sport {d} {: } -snet {GND} {}
+dv_discrep_line {  } -lport {b} {: } -lnet {36} {                                                     ** no similar net **}
+dv_discrep_line {  ** } -lnet {GND} { **                                                 } -sport {b} {: } -snet {GND} {}
+dv_discrep_line {}
+dv_discrep 12 {Incorrect Instances}
+dv_discrep_line {} -ldev {X18/X1/X1/M0} {} -lloc {(6.190,26.765)} {  MN(NCH)                       } -sdev {XI12/MNM1} {  MN(NCH)}
+dv_discrep_line {  } -lport {g} {: } -lnet {B<5>} {                                                   } -sport {g} {: } -snet {B<5>} {}
+dv_discrep_line {  } -lport {d} {: } -lnet {GND} {                                                    } -sport {d} {: } -snet {GND} {}
+dv_discrep_line {  } -lport {b} {: } -lnet {36} {                                                     ** no similar net **}
+dv_discrep_line {  ** } -lnet {GND} { **                                                 } -sport {b} {: } -snet {GND} {}
+dv_discrep_line {}
+dv_discrep 13 {Incorrect Instances}
+dv_discrep_line {} -ldev {X18/X1/X0/M0} {} -lloc {(9.935,26.765)} {  MN(NCH)                       } -sdev {XI13/MNM1} {  MN(NCH)}
+dv_discrep_line {  } -lport {s} {: } -lnet {20} {                                                     } -sport {s} {: } -snet {net046} {}
+dv_discrep_line {  } -lport {d} {: } -lnet {GND} {                                                    } -sport {d} {: } -snet {GND} {}
+dv_discrep_line {  } -lport {b} {: } -lnet {36} {                                                     ** no similar net **}
+dv_discrep_line {  ** } -lnet {GND} { **                                                 } -sport {b} {: } -snet {GND} {}
+dv_discrep_line {}
+dv_discrep 14 {Incorrect Instances}
+dv_discrep_line {} -ldev {X19/X0/X1/M0} {} -lloc {(6.190,29.670)} {  MN(NCH)                       } -sdev {XI15/MNM1} {  MN(NCH)}
+dv_discrep_line {  } -lport {g} {: } -lnet {B<6>} {                                                   } -sport {g} {: } -snet {B<6>} {}
+dv_discrep_line {  } -lport {d} {: } -lnet {GND} {                                                    } -sport {d} {: } -snet {GND} {}
+dv_discrep_line {  } -lport {b} {: } -lnet {36} {                                                     ** no similar net **}
+dv_discrep_line {  ** } -lnet {GND} { **                                                 } -sport {b} {: } -snet {GND} {}
+dv_discrep_line {}
+dv_discrep 15 {Incorrect Instances}
+dv_discrep_line {} -ldev {X19/X0/X0/M0} {} -lloc {(9.935,29.670)} {  MN(NCH)                       } -sdev {XI14/MNM1} {  MN(NCH)}
+dv_discrep_line {  } -lport {s} {: } -lnet {19} {                                                     } -sport {s} {: } -snet {net035} {}
+dv_discrep_line {  } -lport {d} {: } -lnet {GND} {                                                    } -sport {d} {: } -snet {GND} {}
+dv_discrep_line {  } -lport {b} {: } -lnet {36} {                                                     ** no similar net **}
+dv_discrep_line {  ** } -lnet {GND} { **                                                 } -sport {b} {: } -snet {GND} {}
+dv_discrep_line {}
+dv_discrep 16 {Incorrect Instances}
+dv_discrep_line {} -ldev {X19/X1/X1/M0} {} -lloc {(6.190,32.575)} {  MN(NCH)                       } -sdev {XI16/MNM1} {  MN(NCH)}
+dv_discrep_line {  } -lport {g} {: } -lnet {B<7>} {                                                   } -sport {g} {: } -snet {B<7>} {}
+dv_discrep_line {  } -lport {d} {: } -lnet {GND} {                                                    } -sport {d} {: } -snet {GND} {}
+dv_discrep_line {  } -lport {b} {: } -lnet {36} {                                                     ** no similar net **}
+dv_discrep_line {  ** } -lnet {GND} { **                                                 } -sport {b} {: } -snet {GND} {}
+dv_discrep_line {}
+dv_discrep 17 {Incorrect Instances}
+dv_discrep_line {} -ldev {X19/X1/X0/M0} {} -lloc {(9.935,32.575)} {  MN(NCH)                       } -sdev {XI17/MNM1} {  MN(NCH)}
+dv_discrep_line {  } -lport {s} {: } -lnet {22} {                                                     } -sport {s} {: } -snet {net022} {}
+dv_discrep_line {  } -lport {d} {: } -lnet {GND} {                                                    } -sport {d} {: } -snet {GND} {}
+dv_discrep_line {  } -lport {b} {: } -lnet {36} {                                                     ** no similar net **}
+dv_discrep_line {  ** } -lnet {GND} { **                                                 } -sport {b} {: } -snet {GND} {}
+dv_discrep_line {}
+dv_end

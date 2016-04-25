@@ -1,0 +1,74 @@
+ladder_R 1000
+M1.A.1
+2 2 3 Apr 25 11:58:19 2016                     
+M1.A.1 { @ Area >= 0.058 
+  (AREA M1s < M1_A_1) NOT INSIDE SRAM_EXCLUDE
+}
+p 1 4
+CN ladder_R c 1 0 0 1 0 0 0
+770 -8570
+890 -8570
+890 -8310
+770 -8310
+p 2 4
+770 -3260
+890 -3260
+890 -3000
+770 -3000
+NET_AREA_RATIO_RDBS
+0 0 17 Apr 25 11:58:19 2016
+MOM.A.1.rep 0
+MOM.A.2.rep 0
+M1.DN.5.M1.density 0
+M1.DN.5.M2.density 0
+M2.DN.5.M2.density 0
+M1.DN.5.M3.density 0
+M2.DN.5.M3.density 0
+M3.DN.5.M3.density 0
+M2.DN.5.M4.density 0
+M3.DN.5.M4.density 0
+M4.DN.5.M4.density 0
+M3.DN.5.M5.density 0
+M4.DN.5.M5.density 0
+M5.DN.5.M5.density 0
+M4.DN.5.M6.density 0
+M5.DN.5.M6.density 0
+M5.DN.5.M7.density 0
+DENSITY_PRINT_FILES
+0 0 36 Apr 25 11:58:19 2016
+OD.DN.2L.density
+OD.DN.2H_IO.density
+OD.DN.2H_CORE.density
+PO_DN_2.density
+M1.DN.3L.density
+M1.DN.1H.density
+M1.DN.2.density
+M2.DN.3L.density
+M2.DN.1H.density
+M2.DN.2.density
+M3.DN.3L.density
+M3.DN.1H.density
+M3.DN.2.density
+M4.DN.3L.density
+M4.DN.1H.density
+M4.DN.2.density
+M5.DN.3L.density
+M5.DN.1H.density
+M5.DN.2.density
+M6.DN.3L.density
+M6.DN.1H.density
+M6.DN.2.density
+M7.DN.3L.density
+M7.DN.1H.density
+M7.DN.2.density
+M8.DN.3L.density
+M8.DN.1H.density
+M8.DN.2.density
+MD.DN.3L.density
+MD.DN.1H.density
+MD.DN.2.density
+Mn.DN.5L.density
+Mn.DN.5H.density
+UTM.DN.1L.density
+UTM.DN.1H.density
+UTM.DN.5.density

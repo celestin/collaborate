@@ -1,0 +1,792 @@
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         dac_real_res.lvs.report
+LAYOUT NAME:              /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/dac_real_res.sp ('dac_real_res')
+SOURCE NAME:              /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/dac_real_res.src.net ('dac_real_res')
+RULE FILE:                /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
+CREATION TIME:            Mon Apr 25 15:14:44 2016
+CURRENT DIRECTORY:        /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence
+USER NAME:                vegardmi
+CALIBRE VERSION:          v2013.4_15.12    Wed Nov 13 16:58:14 PST 2013
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of nets.
+  Error:    Connectivity errors.
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  INCORRECT      dac_real_res                  dac_real_res
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   // LVS COMPONENT TYPE PROPERTY
+   // LVS COMPONENT SUBTYPE PROPERTY
+   // LVS PIN NAME PROPERTY
+   LVS POWER NAME                         "VDD" "vdd" "vdd!" "vdd;" "VDDS" "vdds" "vdds!" "vdds;"
+   LVS GROUND NAME                        "GND" "gnd" "gnd!" "gnd;" "GNDS" "gnds" "gnds!" "gnds;"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    ALL
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   YES
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            YES
+   LVS ALL CAPACITOR PINS SWAPPABLE       YES
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                NO
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS REVERSE WL                         NO
+   LVS SPICE PREFER PINS                  YES
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            NO
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    YES
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            NO
+   SOURCE CASE                            NO
+   LVS COMPARE CASE                       NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     50
+   LVS PROPERTY RESOLUTION MAXIMUM        65536
+   // LVS SIGNATURE MAXIMUM
+   // LVS FILTER UNUSED OPTION
+   // LVS REPORT OPTION
+   LVS REPORT UNITS                       YES
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+   // LVS IGNORE DEVICE PIN
+
+   // Device Type Map
+
+   LVS DEVICE TYPE                        RESISTOR "rm1" "rm10" "rm2" "rm3" "rm4" "rm5" "rm6" "rm7" "rm8" "rm9" "rnodl" "rnodl_m"
+                                                   "rnods" "rnods_m" "rnodwo" "rnodwo_m" "rnpolyl" "rnpolyl_dis" "rnpolys"
+                                                   "rnpolys_dis" "rnpolywo" "rnpolywo_dis" "rnwod" "rnwod_m" "rnwsti" "rnwsti_m"
+                                                   "rpodl" "rpodl_m" "rpods" "rpods_m" "rpodwo" "rpodwo_m" "rppolyl" "rppolyl_dis"
+                                                   "rppolyl_rf" "rppolys" "rppolys_dis" "rppolys_rf" "rppolywo" "rppolywo_dis"
+                                                   "rppolywo_rf" [ POS=PLUS NEG=MINUS ]  SOURCE LAYOUT
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  NO
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             NO
+   LVS REDUCE SPLIT GATES                 NO
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           YES
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+
+   LVS REDUCE  rnwsti  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnwsti  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnwod  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnwod  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rppolywo  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rppolywo  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnpolywo  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnpolywo  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rpodwo  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rpodwo  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnodwo  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnodwo  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rppolyl  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rppolyl  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnpolyl  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnpolyl  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rpodl  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rpodl  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnodl  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnodl  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rppolys  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rppolys  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnpolys  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnpolys  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rpods  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rpods  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnods  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnods  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm1  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm1  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm2  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm2  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm3  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm3  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm4  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm4  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm5  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm5  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm6  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm6  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm7  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm7  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm8  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm8  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm9  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm9  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm10  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm10  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnwsti_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnwsti_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rnwod_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnwod_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rpodwo_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rpodwo_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rnodwo_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnodwo_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rpodl_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rpodl_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rnodl_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnodl_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rpods_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rpods_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rnods_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnods_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rppolys_dis  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rppolys_dis  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnpolys_dis  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnpolys_dis  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rppolyl_dis  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rppolyl_dis  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnpolyl_dis  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnpolyl_dis  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rppolywo_dis  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rppolywo_dis  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnpolywo_dis  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnpolywo_dis  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rppolyl_rf  PARALLEL NO
+   LVS REDUCE  rppolyl_rf  SERIES PLUS MINUS NO
+   LVS REDUCE  rppolys_rf  PARALLEL NO
+   LVS REDUCE  rppolys_rf  SERIES PLUS MINUS NO
+   LVS REDUCE  rppolywo_rf  PARALLEL NO
+   LVS REDUCE  rppolywo_rf  SERIES PLUS MINUS NO
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Trace Property
+
+   TRACE PROPERTY  mn(nch)  l l 0
+   TRACE PROPERTY  mn(nch)  w w 0
+   TRACE PROPERTY  mn(nch_18)  l l 0
+   TRACE PROPERTY  mn(nch_18)  w w 0
+   TRACE PROPERTY  mn(nch_18_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_18_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_25)  l l 0
+   TRACE PROPERTY  mn(nch_25)  w w 0
+   TRACE PROPERTY  mn(nch_25_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_25_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_25od)  l l 0
+   TRACE PROPERTY  mn(nch_25od)  w w 0
+   TRACE PROPERTY  mn(nch_25od_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_25od_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_33)  l l 0
+   TRACE PROPERTY  mn(nch_33)  w w 0
+   TRACE PROPERTY  mn(nch_33_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_33_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_dnw_w)  l l 0
+   TRACE PROPERTY  mn(nch_dnw_w)  w w 0
+   TRACE PROPERTY  mn(nch_hvt)  l l 0
+   TRACE PROPERTY  mn(nch_hvt)  w w 0
+   TRACE PROPERTY  mn(nch_hvt_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_hvt_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_lvt)  l l 0
+   TRACE PROPERTY  mn(nch_lvt)  w w 0
+   TRACE PROPERTY  mn(nch_lvt_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_lvt_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_na)  l l 0
+   TRACE PROPERTY  mn(nch_na)  w w 0
+   TRACE PROPERTY  mn(nch_na18)  l l 0
+   TRACE PROPERTY  mn(nch_na18)  w w 0
+   TRACE PROPERTY  mn(nch_na25)  l l 0
+   TRACE PROPERTY  mn(nch_na25)  w w 0
+   TRACE PROPERTY  mn(nch_na33)  l l 0
+   TRACE PROPERTY  mn(nch_na33)  w w 0
+   TRACE PROPERTY  mn(nch_ulvt)  l l 0
+   TRACE PROPERTY  mn(nch_ulvt)  w w 0
+   TRACE PROPERTY  mn(nch_ulvt_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_ulvt_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_uthvt)  l l 0
+   TRACE PROPERTY  mn(nch_uthvt)  w w 0
+   TRACE PROPERTY  mn(nch_uthvt_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_uthvt_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_w)  l l 0
+   TRACE PROPERTY  mn(nch_w)  w w 0
+   TRACE PROPERTY  mn(nchpd_hvtsr)  l l 0
+   TRACE PROPERTY  mn(nchpd_hvtsr)  w w 0
+   TRACE PROPERTY  mn(nchpd_sr)  l l 0
+   TRACE PROPERTY  mn(nchpd_sr)  w w 0
+   TRACE PROPERTY  mn(nchpd_ulpsr)  l l 0
+   TRACE PROPERTY  mn(nchpd_ulpsr)  w w 0
+   TRACE PROPERTY  mn(nchpg_hvtsr)  l l 0
+   TRACE PROPERTY  mn(nchpg_hvtsr)  w w 0
+   TRACE PROPERTY  mn(nchpg_sr)  l l 0
+   TRACE PROPERTY  mn(nchpg_sr)  w w 0
+   TRACE PROPERTY  mn(nchpg_ulpsr)  l l 0
+   TRACE PROPERTY  mn(nchpg_ulpsr)  w w 0
+   TRACE PROPERTY  mp(pch)  l l 0
+   TRACE PROPERTY  mp(pch)  w w 0
+   TRACE PROPERTY  mp(pch_18)  l l 0
+   TRACE PROPERTY  mp(pch_18)  w w 0
+   TRACE PROPERTY  mp(pch_1tr)  l l 0
+   TRACE PROPERTY  mp(pch_1tr)  w w 0
+   TRACE PROPERTY  mp(pch_25)  l l 0
+   TRACE PROPERTY  mp(pch_25)  w w 0
+   TRACE PROPERTY  mp(pch_25od)  l l 0
+   TRACE PROPERTY  mp(pch_25od)  w w 0
+   TRACE PROPERTY  mp(pch_33)  l l 0
+   TRACE PROPERTY  mp(pch_33)  w w 0
+   TRACE PROPERTY  mp(pch_hvt)  l l 0
+   TRACE PROPERTY  mp(pch_hvt)  w w 0
+   TRACE PROPERTY  mp(pch_lvt)  l l 0
+   TRACE PROPERTY  mp(pch_lvt)  w w 0
+   TRACE PROPERTY  mp(pch_ulvt)  l l 0
+   TRACE PROPERTY  mp(pch_ulvt)  w w 0
+   TRACE PROPERTY  mp(pch_uthvt)  l l 0
+   TRACE PROPERTY  mp(pch_uthvt)  w w 0
+   TRACE PROPERTY  mp(pch_w)  l l 0
+   TRACE PROPERTY  mp(pch_w)  w w 0
+   TRACE PROPERTY  mp(pchpu_hvtsr)  l l 0
+   TRACE PROPERTY  mp(pchpu_hvtsr)  w w 0
+   TRACE PROPERTY  mp(pchpu_sr)  l l 0
+   TRACE PROPERTY  mp(pchpu_sr)  w w 0
+   TRACE PROPERTY  mp(pchpu_ulpsr)  l l 0
+   TRACE PROPERTY  mp(pchpu_ulpsr)  w w 0
+   TRACE PROPERTY  q(npn10)  a a 0
+   TRACE PROPERTY  q(npn2)  a a 0
+   TRACE PROPERTY  q(npn5)  a a 0
+   TRACE PROPERTY  q(pnp10)  a a 0
+   TRACE PROPERTY  q(pnp2)  a a 0
+   TRACE PROPERTY  q(pnp5)  a a 0
+   TRACE PROPERTY  d(ndio)  a a 0
+   TRACE PROPERTY  d(ndio_18)  a a 0
+   TRACE PROPERTY  d(ndio_25)  a a 0
+   TRACE PROPERTY  d(ndio_25od)  a a 0
+   TRACE PROPERTY  d(ndio_33)  a a 0
+   TRACE PROPERTY  d(ndio_esd)  a a 0
+   TRACE PROPERTY  d(ndio_hvt)  a a 0
+   TRACE PROPERTY  d(ndio_lvt)  a a 0
+   TRACE PROPERTY  d(ndio_na)  a a 0
+   TRACE PROPERTY  d(ndio_na18)  a a 0
+   TRACE PROPERTY  d(ndio_na25)  a a 0
+   TRACE PROPERTY  d(ndio_na33)  a a 0
+   TRACE PROPERTY  d(ndio_ulvt)  a a 0
+   TRACE PROPERTY  d(ndio_uthvt)  a a 0
+   TRACE PROPERTY  d(ndio_w)  a a 0
+   TRACE PROPERTY  d(nwdio)  a a 0
+   TRACE PROPERTY  d(nwdio_18)  a a 0
+   TRACE PROPERTY  d(nwdio_25)  a a 0
+   TRACE PROPERTY  d(nwdio_33)  a a 0
+   TRACE PROPERTY  d(nwdio_w)  a a 0
+   TRACE PROPERTY  d(pdio)  a a 0
+   TRACE PROPERTY  d(pdio_18)  a a 0
+   TRACE PROPERTY  d(pdio_25)  a a 0
+   TRACE PROPERTY  d(pdio_25od)  a a 0
+   TRACE PROPERTY  d(pdio_33)  a a 0
+   TRACE PROPERTY  d(pdio_hvt)  a a 0
+   TRACE PROPERTY  d(pdio_lvt)  a a 0
+   TRACE PROPERTY  d(pdio_ulvt)  a a 0
+   TRACE PROPERTY  d(pdio_uthvt)  a a 0
+   TRACE PROPERTY  d(pdio_w)  a a 0
+   TRACE PROPERTY  crtmom  nv nv 0
+   TRACE PROPERTY  crtmom  nh nh 0
+   TRACE PROPERTY  crtmom  s s 0
+   TRACE PROPERTY  crtmom  w w 0
+   TRACE PROPERTY  crtmom  stm stm 0
+   TRACE PROPERTY  crtmom  spm spm 0
+   TRACE PROPERTY  crtmom  busflag busflag 0
+   TRACE PROPERTY  crtmom_mx  nv nv 0
+   TRACE PROPERTY  crtmom_mx  nh nh 0
+   TRACE PROPERTY  crtmom_mx  s s 0
+   TRACE PROPERTY  crtmom_mx  w w 0
+   TRACE PROPERTY  crtmom_mx  stm stm 0
+   TRACE PROPERTY  crtmom_mx  spm spm 0
+   TRACE PROPERTY  crtmom_mx  mf mf 0
+   TRACE PROPERTY  crtmom_mx  busflag busflag 0
+   TRACE PROPERTY  crtmom_rf  nv nv 0
+   TRACE PROPERTY  crtmom_rf  nh nh 0
+   TRACE PROPERTY  crtmom_rf  s s 0
+   TRACE PROPERTY  crtmom_rf  w w 0
+   TRACE PROPERTY  crtmom_rf  stm stm 0
+   TRACE PROPERTY  crtmom_rf  spm spm 0
+   TRACE PROPERTY  crtmom_rf  busflag busflag 0
+   TRACE PROPERTY  mimcap_2p0_sin_3t  lt lt 0
+   TRACE PROPERTY  mimcap_2p0_sin_3t  wt wt 0
+   TRACE PROPERTY  mimcap_2p0_sin_3t  lay lay 0
+   TRACE PROPERTY  mimcap_2p0_sin  lt lt 0
+   TRACE PROPERTY  mimcap_2p0_sin  wt wt 0
+   TRACE PROPERTY  mimcap_woum_2p0_sin_rf  lt lt 0
+   TRACE PROPERTY  mimcap_woum_2p0_sin_rf  wt wt 0
+   TRACE PROPERTY  mimcap_woum_2p0_sin_rf  lay lay 0
+   TRACE PROPERTY  mimcap_um_2p0_sin_rf  lt lt 0
+   TRACE PROPERTY  mimcap_um_2p0_sin_rf  wt wt 0
+   TRACE PROPERTY  moscap_rf  lr lr 0
+   TRACE PROPERTY  moscap_rf  wr wr 0
+   TRACE PROPERTY  moscap_rf  br br 0
+   TRACE PROPERTY  moscap_rf  gr gr 0
+   TRACE PROPERTY  moscap_rf18  lr lr 0
+   TRACE PROPERTY  moscap_rf18  wr wr 0
+   TRACE PROPERTY  moscap_rf18  br br 0
+   TRACE PROPERTY  moscap_rf18  gr gr 0
+   TRACE PROPERTY  moscap_rf18_nw  lr lr 0
+   TRACE PROPERTY  moscap_rf18_nw  wr wr 0
+   TRACE PROPERTY  moscap_rf18_nw  br br 0
+   TRACE PROPERTY  moscap_rf18_nw  gr gr 0
+   TRACE PROPERTY  moscap_rf25  lr lr 0
+   TRACE PROPERTY  moscap_rf25  wr wr 0
+   TRACE PROPERTY  moscap_rf25  br br 0
+   TRACE PROPERTY  moscap_rf25  gr gr 0
+   TRACE PROPERTY  moscap_rf25_nw  lr lr 0
+   TRACE PROPERTY  moscap_rf25_nw  wr wr 0
+   TRACE PROPERTY  moscap_rf25_nw  br br 0
+   TRACE PROPERTY  moscap_rf25_nw  gr gr 0
+   TRACE PROPERTY  moscap_rf33  lr lr 0
+   TRACE PROPERTY  moscap_rf33  wr wr 0
+   TRACE PROPERTY  moscap_rf33  br br 0
+   TRACE PROPERTY  moscap_rf33  gr gr 0
+   TRACE PROPERTY  moscap_rf33_nw  lr lr 0
+   TRACE PROPERTY  moscap_rf33_nw  wr wr 0
+   TRACE PROPERTY  moscap_rf33_nw  br br 0
+   TRACE PROPERTY  moscap_rf33_nw  gr gr 0
+   TRACE PROPERTY  moscap_rf_nw  lr lr 0
+   TRACE PROPERTY  moscap_rf_nw  wr wr 0
+   TRACE PROPERTY  moscap_rf_nw  br br 0
+   TRACE PROPERTY  moscap_rf_nw  gr gr 0
+   TRACE PROPERTY  nmos_rf  wr wr 0
+   TRACE PROPERTY  nmos_rf  lr lr 0
+   TRACE PROPERTY  nmos_rf  nr nr 0
+   TRACE PROPERTY  nmos_rf18  wr wr 0
+   TRACE PROPERTY  nmos_rf18  lr lr 0
+   TRACE PROPERTY  nmos_rf18  nr nr 0
+   TRACE PROPERTY  nmos_rf25  wr wr 0
+   TRACE PROPERTY  nmos_rf25  lr lr 0
+   TRACE PROPERTY  nmos_rf25  nr nr 0
+   TRACE PROPERTY  nmos_rf33  wr wr 0
+   TRACE PROPERTY  nmos_rf33  lr lr 0
+   TRACE PROPERTY  nmos_rf33  nr nr 0
+   TRACE PROPERTY  nmoscap  wr wr 0
+   TRACE PROPERTY  nmoscap  lr lr 0
+   TRACE PROPERTY  nmoscap_18  wr wr 0
+   TRACE PROPERTY  nmoscap_18  lr lr 0
+   TRACE PROPERTY  nmoscap_25  wr wr 0
+   TRACE PROPERTY  nmoscap_25  lr lr 0
+   TRACE PROPERTY  nmoscap_33  wr wr 0
+   TRACE PROPERTY  nmoscap_33  lr lr 0
+   TRACE PROPERTY  pmos_rf  wr wr 0
+   TRACE PROPERTY  pmos_rf  lr lr 0
+   TRACE PROPERTY  pmos_rf  nr nr 0
+   TRACE PROPERTY  pmos_rf18  wr wr 0
+   TRACE PROPERTY  pmos_rf18  lr lr 0
+   TRACE PROPERTY  pmos_rf18  nr nr 0
+   TRACE PROPERTY  pmos_rf25  wr wr 0
+   TRACE PROPERTY  pmos_rf25  lr lr 0
+   TRACE PROPERTY  pmos_rf25  nr nr 0
+   TRACE PROPERTY  pmos_rf33  wr wr 0
+   TRACE PROPERTY  pmos_rf33  lr lr 0
+   TRACE PROPERTY  pmos_rf33  nr nr 0
+   TRACE PROPERTY  rm1  w w 0
+   TRACE PROPERTY  rm1  l l 0
+   TRACE PROPERTY  rm10  w w 0
+   TRACE PROPERTY  rm10  l l 0
+   TRACE PROPERTY  rm2  w w 0
+   TRACE PROPERTY  rm2  l l 0
+   TRACE PROPERTY  rm3  w w 0
+   TRACE PROPERTY  rm3  l l 0
+   TRACE PROPERTY  rm4  w w 0
+   TRACE PROPERTY  rm4  l l 0
+   TRACE PROPERTY  rm5  w w 0
+   TRACE PROPERTY  rm5  l l 0
+   TRACE PROPERTY  rm6  w w 0
+   TRACE PROPERTY  rm6  l l 0
+   TRACE PROPERTY  rm7  w w 0
+   TRACE PROPERTY  rm7  l l 0
+   TRACE PROPERTY  rm8  w w 0
+   TRACE PROPERTY  rm8  l l 0
+   TRACE PROPERTY  rm9  w w 0
+   TRACE PROPERTY  rm9  l l 0
+   TRACE PROPERTY  rnodl  l l 0
+   TRACE PROPERTY  rnodl  w w 0
+   TRACE PROPERTY  rnodl_m  lr lr 0
+   TRACE PROPERTY  rnodl_m  wr wr 0
+   TRACE PROPERTY  rnods  l l 0
+   TRACE PROPERTY  rnods  w w 0
+   TRACE PROPERTY  rnods_m  lr lr 0
+   TRACE PROPERTY  rnods_m  wr wr 0
+   TRACE PROPERTY  rnodwo  l l 0
+   TRACE PROPERTY  rnodwo  w w 0
+   TRACE PROPERTY  rnodwo_m  lr lr 0
+   TRACE PROPERTY  rnodwo_m  wr wr 0
+   TRACE PROPERTY  rnpolyl  l l 0
+   TRACE PROPERTY  rnpolyl  w w 0
+   TRACE PROPERTY  rnpolyl_dis  l l 0
+   TRACE PROPERTY  rnpolyl_dis  w w 0
+   TRACE PROPERTY  rnpolys  l l 0
+   TRACE PROPERTY  rnpolys  w w 0
+   TRACE PROPERTY  rnpolys_dis  l l 0
+   TRACE PROPERTY  rnpolys_dis  w w 0
+   TRACE PROPERTY  rnpolywo  l l 0
+   TRACE PROPERTY  rnpolywo  w w 0
+   TRACE PROPERTY  rnpolywo_dis  l l 0
+   TRACE PROPERTY  rnpolywo_dis  w w 0
+   TRACE PROPERTY  rnwod  l l 0
+   TRACE PROPERTY  rnwod  w w 0
+   TRACE PROPERTY  rnwod_m  lr lr 0
+   TRACE PROPERTY  rnwod_m  wr wr 0
+   TRACE PROPERTY  rnwsti  l l 0
+   TRACE PROPERTY  rnwsti  w w 0
+   TRACE PROPERTY  rnwsti_m  lr lr 0
+   TRACE PROPERTY  rnwsti_m  wr wr 0
+   TRACE PROPERTY  rpodl  l l 0
+   TRACE PROPERTY  rpodl  w w 0
+   TRACE PROPERTY  rpodl_m  lr lr 0
+   TRACE PROPERTY  rpodl_m  wr wr 0
+   TRACE PROPERTY  rpods  l l 0
+   TRACE PROPERTY  rpods  w w 0
+   TRACE PROPERTY  rpods_m  lr lr 0
+   TRACE PROPERTY  rpods_m  wr wr 0
+   TRACE PROPERTY  rpodwo  l l 0
+   TRACE PROPERTY  rpodwo  w w 0
+   TRACE PROPERTY  rpodwo_m  lr lr 0
+   TRACE PROPERTY  rpodwo_m  wr wr 0
+   TRACE PROPERTY  rppolyl  l l 0
+   TRACE PROPERTY  rppolyl  w w 0
+   TRACE PROPERTY  rppolyl_dis  l l 0
+   TRACE PROPERTY  rppolyl_dis  w w 0
+   TRACE PROPERTY  rppolyl_rf  l l 0
+   TRACE PROPERTY  rppolyl_rf  w w 0
+   TRACE PROPERTY  rppolys  l l 0
+   TRACE PROPERTY  rppolys  w w 0
+   TRACE PROPERTY  rppolys_dis  l l 0
+   TRACE PROPERTY  rppolys_dis  w w 0
+   TRACE PROPERTY  rppolys_rf  l l 0
+   TRACE PROPERTY  rppolys_rf  w w 0
+   TRACE PROPERTY  rppolywo  l l 0
+   TRACE PROPERTY  rppolywo  w w 0
+   TRACE PROPERTY  rppolywo_dis  l l 0
+   TRACE PROPERTY  rppolywo_dis  w w 0
+   TRACE PROPERTY  rppolywo_rf  l l 0
+   TRACE PROPERTY  rppolywo_rf  w w 0
+   TRACE PROPERTY  sbd_rf  nf nf 0
+   TRACE PROPERTY  sbd_rf  w w 0
+   TRACE PROPERTY  sbd_rf  l l 0
+   TRACE PROPERTY  sbd_rf_nw  nf nf 0
+   TRACE PROPERTY  sbd_rf_nw  w w 0
+   TRACE PROPERTY  sbd_rf_nw  l l 0
+   TRACE PROPERTY  spiral_std  lay lay 0
+   TRACE PROPERTY  spiral_std  w w 0
+   TRACE PROPERTY  spiral_std  nr nr 0
+   TRACE PROPERTY  spiral_std  rad rad 0
+   TRACE PROPERTY  spiral_sym  lay lay 0
+   TRACE PROPERTY  spiral_sym  w w 0
+   TRACE PROPERTY  spiral_sym  nr nr 0
+   TRACE PROPERTY  spiral_sym  rad rad 0
+   TRACE PROPERTY  spiral_sym_ct  lay lay 0
+   TRACE PROPERTY  spiral_sym_ct  w w 0
+   TRACE PROPERTY  spiral_sym_ct  nr nr 0
+   TRACE PROPERTY  spiral_sym_ct  rad rad 0
+   TRACE PROPERTY  xjvar  w w 0
+   TRACE PROPERTY  xjvar  l l 0
+   TRACE PROPERTY  xjvar  nr nr 0
+   TRACE PROPERTY  xjvar_nw  w w 0
+   TRACE PROPERTY  xjvar_nw  l l 0
+   TRACE PROPERTY  xjvar_nw  nr nr 0
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of nets (see below).
+  Error:    Connectivity errors.
+
+LAYOUT CELL NAME:         dac_real_res
+SOURCE CELL NAME:         dac_real_res
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             11        11
+
+ Nets:             119       118    *
+
+ Instances:         16        16         MN (4 pins)
+                    16        16         MP (4 pins)
+                   100       100         rppolywo (2 pins)
+                ------    ------
+ Total Inst:       132       132
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             11        11
+
+ Nets:              27        26    *
+
+ Instances:         16        16         rppolywo (2 pins)
+                     8         8         _invx2v (4 pins)
+                ------    ------
+ Total Inst:        24        24
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                                 INCORRECT OBJECTS
+**************************************************************************************************************
+
+
+LEGEND:
+-------
+
+  ne  = Naming Error (same layout name found in source
+        circuit, but object was matched otherwise).
+
+
+**************************************************************************************************************
+                                   INCORRECT NETS
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+  1    Net 36                                                    ** no similar net **
+
+
+**************************************************************************************************************
+                                 INCORRECT INSTANCES
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+  2    X16/X0/X1/M0(6.190,12.240)  MN(NCH)                       XI2/MNM1  MN(NCH)
+         g: B<0>                                                   g: B<0>
+         d: GND                                                    d: GND
+         b: 36                                                     ** no similar net **
+         ** GND **                                                 b: GND
+
+--------------------------------------------------------------------------------------------------------------
+
+  3    X16/X0/X0/M0(9.935,12.240)  MN(NCH)                       XI3/MNM1  MN(NCH)
+         s: 26                                                     s: net015
+         d: GND                                                    d: GND
+         b: 36                                                     ** no similar net **
+         ** GND **                                                 b: GND
+
+--------------------------------------------------------------------------------------------------------------
+
+  4    X16/X1/X1/M0(6.190,15.145)  MN(NCH)                       XI5/MNM1  MN(NCH)
+         g: B<1>                                                   g: B<1>
+         d: GND                                                    d: GND
+         b: 36                                                     ** no similar net **
+         ** GND **                                                 b: GND
+
+--------------------------------------------------------------------------------------------------------------
+
+  5    X16/X1/X0/M0(9.935,15.145)  MN(NCH)                       XI4/MNM1  MN(NCH)
+         s: 25                                                     s: net068
+         d: GND                                                    d: GND
+         b: 36                                                     ** no similar net **
+         ** GND **                                                 b: GND
+
+--------------------------------------------------------------------------------------------------------------
+
+  6    X17/X0/X1/M0(6.190,18.050)  MN(NCH)                       XI7/MNM1  MN(NCH)
+         g: B<2>                                                   g: B<2>
+         d: GND                                                    d: GND
+         b: 36                                                     ** no similar net **
+         ** GND **                                                 b: GND
+
+--------------------------------------------------------------------------------------------------------------
+
+  7    X17/X0/X0/M0(9.935,18.050)  MN(NCH)                       XI6/MNM1  MN(NCH)
+         s: 24                                                     s: net063
+         d: GND                                                    d: GND
+         b: 36                                                     ** no similar net **
+         ** GND **                                                 b: GND
+
+--------------------------------------------------------------------------------------------------------------
+
+  8    X17/X1/X1/M0(6.190,20.955)  MN(NCH)                       XI8/MNM1  MN(NCH)
+         g: B<3>                                                   g: B<3>
+         d: GND                                                    d: GND
+         b: 36                                                     ** no similar net **
+         ** GND **                                                 b: GND
+
+--------------------------------------------------------------------------------------------------------------
+
+  9    X17/X1/X0/M0(9.935,20.955)  MN(NCH)                       XI9/MNM1  MN(NCH)
+         s: 23                                                     s: net037
+         d: GND                                                    d: GND
+         b: 36                                                     ** no similar net **
+         ** GND **                                                 b: GND
+
+--------------------------------------------------------------------------------------------------------------
+
+ 10    X18/X0/X1/M0(6.190,23.860)  MN(NCH)                       XI11/MNM1  MN(NCH)
+         g: B<4>                                                   g: B<4>
+         d: GND                                                    d: GND
+         b: 36                                                     ** no similar net **
+         ** GND **                                                 b: GND
+
+--------------------------------------------------------------------------------------------------------------
+
+ 11    X18/X0/X0/M0(9.935,23.860)  MN(NCH)                       XI10/MNM1  MN(NCH)
+         s: 21                                                     s: net038
+         d: GND                                                    d: GND
+         b: 36                                                     ** no similar net **
+         ** GND **                                                 b: GND
+
+--------------------------------------------------------------------------------------------------------------
+
+ 12    X18/X1/X1/M0(6.190,26.765)  MN(NCH)                       XI12/MNM1  MN(NCH)
+         g: B<5>                                                   g: B<5>
+         d: GND                                                    d: GND
+         b: 36                                                     ** no similar net **
+         ** GND **                                                 b: GND
+
+--------------------------------------------------------------------------------------------------------------
+
+ 13    X18/X1/X0/M0(9.935,26.765)  MN(NCH)                       XI13/MNM1  MN(NCH)
+         s: 20                                                     s: net046
+         d: GND                                                    d: GND
+         b: 36                                                     ** no similar net **
+         ** GND **                                                 b: GND
+
+--------------------------------------------------------------------------------------------------------------
+
+ 14    X19/X0/X1/M0(6.190,29.670)  MN(NCH)                       XI15/MNM1  MN(NCH)
+         g: B<6>                                                   g: B<6>
+         d: GND                                                    d: GND
+         b: 36                                                     ** no similar net **
+         ** GND **                                                 b: GND
+
+--------------------------------------------------------------------------------------------------------------
+
+ 15    X19/X0/X0/M0(9.935,29.670)  MN(NCH)                       XI14/MNM1  MN(NCH)
+         s: 19                                                     s: net035
+         d: GND                                                    d: GND
+         b: 36                                                     ** no similar net **
+         ** GND **                                                 b: GND
+
+--------------------------------------------------------------------------------------------------------------
+
+ 16    X19/X1/X1/M0(6.190,32.575)  MN(NCH)                       XI16/MNM1  MN(NCH)
+         g: B<7>                                                   g: B<7>
+         d: GND                                                    d: GND
+         b: 36                                                     ** no similar net **
+         ** GND **                                                 b: GND
+
+--------------------------------------------------------------------------------------------------------------
+
+ 17    X19/X1/X0/M0(9.935,32.575)  MN(NCH)                       XI17/MNM1  MN(NCH)
+         s: 22                                                     s: net022
+         d: GND                                                    d: GND
+         b: 36                                                     ** no similar net **
+         ** GND **                                                 b: GND
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:              11         11            0            0
+
+   Nets:               26         26            1            0
+
+   Instances:          16         16            0            0    rppolywo
+                        8          8            0            0    _invx2v
+                  -------    -------    ---------    ---------
+   Total Inst:         24         24            0            0
+
+
+o Statistics:
+
+   100 series layout resistors were reduced to 16.  84 connecting nets were deleted.
+   100 series source resistors were reduced to 16.  84 connecting nets were deleted.
+
+
+o Initial Correspondence Points:
+
+   Ports:        GND VREF B<1> B<2> B<6> B<3> B<5> B<7> B<0> B<4> VOUT
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      0 sec
+Total Elapsed Time:  0 sec

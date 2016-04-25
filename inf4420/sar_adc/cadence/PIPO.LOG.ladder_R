@@ -1,0 +1,58 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.6-64b 07/05/2013 16:44 (sjfnl155) $
+          : sub-version  IC6.1.6-64b.500.1 
+Started at: 25-Apr-2016  11:58:15
+User Name : vegardmi
+Host Name : vetur.ifi.uio.no
+Directory : /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-20): Output Stream file '/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/ladder_R.calibre.db' already exists. It will be overwritten.
+INFO (XSTRM-217): Reading the layer map file, /ifi/asgard/project0/nanos/design_kit/TSMC90nmLPRF_616OA/tsmcN90rf/tsmcN90rf.layermap
+INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design has native oaVia instances, use the -viaMap option for preserving oaVia instances in a Stream Out - Stream In round trip. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design.  For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options :
+library                                 sar_adc
+strmFile                                /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/ladder_R.calibre.db
+topCell                                 ladder_R
+view                                    layout
+runDir                                  /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/
+logFile                                 PIPO.LOG.ladder_R
+layerMap                                /ifi/asgard/project0/nanos/design_kit/TSMC90nmLPRF_616OA/tsmcN90rf/tsmcN90rf.layermap
+case                                    Preserve
+convertDot                              node
+
+INFO (XSTRM-223): 1. Translating cellView tsmcN90rf/rppolywo/layout as STRUCTURE rppolywo_CDNS_461578295750
+INFO (XSTRM-223): 2. Translating cellView sar_adc/ladder_R/layout as STRUCTURE ladder_R
+INFO (XSTRM-180): You have not used the objectMap option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the objectMap option to translate/preserve these objects using XStream. For details on the objectMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Objects Translated:
+	Scalar Instances:                       4
+	Array Instances:                        0
+	Polygons:                               0
+	Paths:                                  0
+	Rectangles:                             11
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Standard Vias                           0
+	Custom Vias:                            0
+	CdsGen Vias:                            0
+	Pathsegs:                               3
+	Text:                                   9
+	TextDisplay:                            0
+	Cells:                                  2
+
+Elapsed Time: 1.4s   User Time: 1.0s   CPU Time: 0.3s   Peak VM: 83564KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '1' warning(s) found.

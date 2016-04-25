@@ -1,7 +1,7 @@
 ( ( nil
   version "2.1"
   mapType "incremental"
-  blockName "comparator_rail2rail_input_external_current_small"
+  blockName "dac_real_res"
   repList "auCdl schematic"
   stopList "auCdl"
   hierDelim "."
@@ -14,11 +14,17 @@
 ( inst
  )
 ( model
-( "sar_adc/comparator_rail2rail_input_external_current_small/schematic" "comparator_rail2rail_input_external_current_small" )
+( "sar_adc/ladder_R/schematic" "ladder_R" )
+( "tsmcN90rf/inv/schematic" "inv" )
+( "sar_adc/dac_real_res/schematic" "dac_real_res" )
+( "sar_adc/ladder_2R/schematic" "ladder_2R" )
  )
 ( term
  )
 ( param
  )
-( "comparator_rail2rail_input_external_current_small" "ihnl/cds0/map" )
+( "ladder_2R" "ihnl/cds2/map" )
+( "dac_real_res" "ihnl/cds3/map" )
+( "ladder_R" "ihnl/cds1/map" )
+( "inv" "ihnl/cds0/map" )
  )

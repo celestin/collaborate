@@ -1,6 +1,9 @@
 CADENCE IHNL01070
 $model
-sar_adc/comparator_rail2rail_input_external_current_small/schematic comparator_rail2rail_input_external_current_small
+sar_adc/ladder_2R/schematic ladder_2R
+tsmcN90rf/inv/schematic inv
+sar_adc/ladder_R/schematic ladder_R
+sar_adc/dac_real_res/schematic dac_real_res
 $endmodel
 $net
 $endnet

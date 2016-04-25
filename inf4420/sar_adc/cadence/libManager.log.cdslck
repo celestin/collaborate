@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      vegardmi
+HostName                       vetur.ifi.uio.no
+ProcessIdentifier              13244
+ProcessCreationTime_UTC        1461579466
+ProcessCreationTime_Readable   Mon Apr 25 12:17:46 2016 CEST
+AppIdentifier                  /projects/nanos/programsrhel6/IC616/tools/dfII/bin/64bit/libManager
+OSType                         lnx86
+ReasonForPlacingEditLock       log file
+FilePathUsedToEditLock         /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/libManager.log
+TimeEditLocked                 Mon Apr 25 12:18:07 2016 CEST

@@ -1,0 +1,66 @@
+dac_real_res 1000
+mnpg
+0 0 2 Apr 25 15:14:44 2016                                                      
+Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
+MOS connected to both power and ground
+mppg
+0 0 2 Apr 25 15:14:44 2016                                                      
+Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
+MOS connected to both power and ground
+floating.nxwell_float
+0 0 3 Apr 25 15:14:44 2016
+ERROR IN PATHCHK                                     
+Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
+Floating nxwell_float is not allowed
+floating.psub
+1 1 2 Apr 25 15:14:44 2016                                                      
+Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
+Floating psub is not allowed
+p 1 38
+CN dac_real_res c 1 0 0 1 0 0
+3545 6220
+196990 6220
+196990 93280
+10155 93280
+10155 12815
+5770 12815
+5770 14145
+10155 14145
+10155 15720
+5770 15720
+5770 17050
+10155 17050
+10155 18625
+5770 18625
+5770 19955
+10155 19955
+10155 21530
+5770 21530
+5770 22860
+10155 22860
+10155 24435
+5770 24435
+5770 25765
+10155 25765
+10155 27340
+5770 27340
+5770 28670
+10155 28670
+10155 30245
+5770 30245
+5770 31575
+10155 31575
+10155 33150
+5770 33150
+5770 34480
+10155 34480
+10155 93280
+3545 93280
+npvss49
+0 0 2 Apr 25 15:14:44 2016                                                      
+Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
+ntap connected to GROUND
+ppvdd49
+0 0 2 Apr 25 15:14:44 2016                                                      
+Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
+ptap connected to POWER

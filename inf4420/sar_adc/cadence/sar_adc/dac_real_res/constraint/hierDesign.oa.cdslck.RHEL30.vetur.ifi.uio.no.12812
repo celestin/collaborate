@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      vegardmi
+HostName                       vetur.ifi.uio.no
+ProcessIdentifier              12812
+ProcessCreationTime_UTC        1461579463
+ProcessCreationTime_Readable   Mon Apr 25 12:17:43 2016 CEST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/dac_real_res/constraint/hierDesign.oa.cdslck
+TimeEditLocked                 Mon Apr 25 12:20:01 2016 CEST

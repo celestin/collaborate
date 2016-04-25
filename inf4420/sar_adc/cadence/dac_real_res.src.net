@@ -1,0 +1,114 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  sar_adc
+* Top Cell Name: dac_real_res
+* View Name:     schematic
+* Netlisted on:  Apr 25 15:14:42 2016
+************************************************************************
+
+.INCLUDE  /projects/nanos/design_kit/TSMC90nmLPRF_616OA/Calibre/lvs/source_added
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: tsmcN90rf
+* Cell Name:    inv
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv G Gb IN OUT P Pb
+*.PININFO G:I Gb:I IN:I P:I Pb:I OUT:O
+MNM1 OUT IN G Gb nch l=nl w=nw m=1*nf
+MPM1 OUT IN P Pb pch l=pl w=pw m=1*pf
+.ENDS
+
+************************************************************************
+* Library Name: sar_adc
+* Cell Name:    ladder_R
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT ladder_R Ra Rb
+*.PININFO Ra:B Rb:B
+XR1 net07 net8 rppolywo l=85.34u w=500n m=1
+XR46 net05 Rb rppolywo l=85.34u w=500n m=1
+XR0 net05 net8 rppolywo l=85.34u w=500n m=1
+XR2 net07 Ra rppolywo l=85.34u w=500n m=1
+.ENDS
+
+************************************************************************
+* Library Name: sar_adc
+* Cell Name:    ladder_2R
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT ladder_2R Ra Rb
+*.PININFO Ra:B Rb:B
+XI2 Ra net5 / ladder_R
+XI3 net5 Rb / ladder_R
+.ENDS
+
+************************************************************************
+* Library Name: sar_adc
+* Cell Name:    dac_real_res
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT dac_real_res B<7> B<6> B<5> B<4> B<3> B<2> B<1> B<0> GND VOUT VREF
+*.PININFO B<7>:I B<6>:I B<5>:I B<4>:I B<3>:I B<2>:I B<1>:I B<0>:I VOUT:O GND:B 
+*.PININFO VREF:B
+XI17 GND GND net072 net022 VREF VREF / inv pf=1 pw=2.5u pl=100n nf=1 nw=2.5u 
++ nl=100n
+XI16 GND GND B<7> net072 VREF VREF / inv pf=1 pw=200n pl=100n nf=1 nw=200n 
++ nl=100n
+XI15 GND GND B<6> net027 VREF VREF / inv pf=1 pw=200n pl=100n nf=1 nw=200n 
++ nl=100n
+XI14 GND GND net027 net035 VREF VREF / inv pf=1 pw=2.5u pl=100n nf=1 nw=2.5u 
++ nl=100n
+XI13 GND GND net028 net046 VREF VREF / inv pf=1 pw=2.5u pl=100n nf=1 nw=2.5u 
++ nl=100n
+XI12 GND GND B<5> net028 VREF VREF / inv pf=1 pw=200n pl=100n nf=1 nw=200n 
++ nl=100n
+XI11 GND GND B<4> net029 VREF VREF / inv pf=1 pw=200n pl=100n nf=1 nw=200n 
++ nl=100n
+XI10 GND GND net029 net038 VREF VREF / inv pf=1 pw=2.5u pl=100n nf=1 nw=2.5u 
++ nl=100n
+XI9 GND GND net030 net037 VREF VREF / inv pf=1 pw=2.5u pl=100n nf=1 nw=2.5u 
++ nl=100n
+XI2 GND GND B<0> net016 VREF VREF / inv pf=1 pw=200n pl=100n nf=1 nw=200n 
++ nl=100n
+XI3 GND GND net016 net015 VREF VREF / inv pf=1 pw=2.5u pl=100n nf=1 nw=2.5u 
++ nl=100n
+XI4 GND GND net032 net068 VREF VREF / inv pf=1 pw=2.5u pl=100n nf=1 nw=2.5u 
++ nl=100n
+XI5 GND GND B<1> net032 VREF VREF / inv pf=1 pw=200n pl=100n nf=1 nw=200n 
++ nl=100n
+XI6 GND GND net031 net063 VREF VREF / inv pf=1 pw=2.5u pl=100n nf=1 nw=2.5u 
++ nl=100n
+XI7 GND GND B<2> net031 VREF VREF / inv pf=1 pw=200n pl=100n nf=1 nw=200n 
++ nl=100n
+XI8 GND GND B<3> net030 VREF VREF / inv pf=1 pw=200n pl=100n nf=1 nw=200n 
++ nl=100n
+XI51 net015 net9 / ladder_2R
+XI50 net068 net10 / ladder_2R
+XI49 net063 net11 / ladder_2R
+XI48 net037 net12 / ladder_2R
+XI47 net038 net13 / ladder_2R
+XI46 net046 net14 / ladder_2R
+XI45 net035 net15 / ladder_2R
+XI52 GND net9 / ladder_2R
+XI44 net022 VOUT / ladder_2R
+XI36 net9 net10 / ladder_R
+XI37 net10 net11 / ladder_R
+XI39 net12 net13 / ladder_R
+XI40 net13 net14 / ladder_R
+XI41 net14 net15 / ladder_R
+XI42 net15 VOUT / ladder_R
+XI38 net11 net12 / ladder_R
+.ENDS
+
