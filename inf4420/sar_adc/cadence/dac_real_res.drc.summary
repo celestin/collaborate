@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Mon Apr 25 14:40:29 2016
+Execution Date/Time:       Mon Apr 25 16:20:15 2016
 Calibre Version:           v2013.4_15.12    Wed Nov 13 16:58:14 PST 2013
 Rule File Pathname:        /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.drc_
 Rule File Title:           
@@ -47,11 +47,11 @@ PROJECTING constraint only supported with PARALLEL ONLY - setting PARALLEL ONLY.
 LAYER FW_CUi .................... TOTAL Original Geometry Count = 0   (0)
 LAYER FW_APi .................... TOTAL Original Geometry Count = 0   (0)
 LAYER DOD ....................... TOTAL Original Geometry Count = 0   (0)
-LAYER ODi ....................... TOTAL Original Geometry Count = 14  (112)
+LAYER ODi ....................... TOTAL Original Geometry Count = 18  (113)
 LAYER DPO ....................... TOTAL Original Geometry Count = 0   (0)
-LAYER POi ....................... TOTAL Original Geometry Count = 17  (228)
+LAYER POi ....................... TOTAL Original Geometry Count = 21  (228)
 LAYER DUM1 ...................... TOTAL Original Geometry Count = 0   (0)
-LAYER M1i ....................... TOTAL Original Geometry Count = 248 (683)
+LAYER M1i ....................... TOTAL Original Geometry Count = 252 (684)
 LAYER DUM2 ...................... TOTAL Original Geometry Count = 0   (0)
 LAYER M2i ....................... TOTAL Original Geometry Count = 42  (94)
 LAYER DUM3 ...................... TOTAL Original Geometry Count = 0   (0)
@@ -82,9 +82,9 @@ LAYER OD_25i .................... TOTAL Original Geometry Count = 0   (0)
 LAYER OD_2533 ................... TOTAL Original Geometry Count = 0   (0)
 LAYER OD_33i .................... TOTAL Original Geometry Count = 0   (0)
 LAYER OD_DECAP .................. TOTAL Original Geometry Count = 0   (0)
-LAYER PPi ....................... TOTAL Original Geometry Count = 5   (132)
-LAYER NPi ....................... TOTAL Original Geometry Count = 6   (48)
-LAYER COi ....................... TOTAL Original Geometry Count = 54  (616)
+LAYER PPi ....................... TOTAL Original Geometry Count = 6   (133)
+LAYER NPi ....................... TOTAL Original Geometry Count = 8   (48)
+LAYER COi ....................... TOTAL Original Geometry Count = 80  (623)
 LAYER CBi ....................... TOTAL Original Geometry Count = 0   (0)
 LAYER CB2i ...................... TOTAL Original Geometry Count = 0   (0)
 LAYER RPOi ...................... TOTAL Original Geometry Count = 1   (100)
@@ -116,7 +116,7 @@ LAYER CTMi ...................... TOTAL Original Geometry Count = 0   (0)
 LAYER SRM ....................... TOTAL Original Geometry Count = 0   (0)
 LAYER LMARK ..................... TOTAL Original Geometry Count = 0   (0)
 LAYER IO_buffer ................. TOTAL Original Geometry Count = 0   (0)
-LAYER M1_real ................... TOTAL Original Geometry Count = 248 (683)
+LAYER M1_real ................... TOTAL Original Geometry Count = 252 (684)
 LAYER M2_real ................... TOTAL Original Geometry Count = 42  (94)
 LAYER M3_real ................... TOTAL Original Geometry Count = 9   (16)
 LAYER M4_real ................... TOTAL Original Geometry Count = 0   (0)
@@ -1390,7 +1390,7 @@ RULECHECK SR.EN.1.MD .................... TOTAL Result Count = 0 (0)
 RULECHECK SR.CO_VIA.WARN ................ TOTAL Result Count = 0 (0)
 RULECHECK CDU.R.1 ....................... TOTAL Result Count = 0 (0)
 RULECHECK CDU.R.2 ....................... TOTAL Result Count = 0 (0)
-RULECHECK LUP.6 ......................... TOTAL Result Count = 4 (32)
+RULECHECK LUP.6 ......................... TOTAL Result Count = 0 (0)
 RULECHECK PO.S.11m ...................... TOTAL Result Count = 0 (0)
 RULECHECK PO.EN.1m ...................... TOTAL Result Count = 0 (0)
 RULECHECK PO.EN.2m ...................... TOTAL Result Count = 0 (0)
@@ -1491,10 +1491,6 @@ RULECHECK SBD.R.5 ....................... TOTAL Result Count = 0 (0)
 ----------------------------------------------------------------------------------
 --- RULECHECK RESULTS STATISTICS (BY CELL)
 ---
-CELL nch_CDNS_461588028134 ........ TOTAL Result Count = 2 (16)
-    RULECHECK LUP.6 ............... TOTAL Result Count = 2 (16)
-CELL nch_CDNS_461588028133 ........ TOTAL Result Count = 2 (16)
-    RULECHECK LUP.6 ............... TOTAL Result Count = 2 (16)
 CELL dac_real_res ................. TOTAL Result Count = 2 (2)
     RULECHECK OD.DN.2L_OD.DN.3L ... TOTAL Result Count = 1 (1)
     RULECHECK UTM.DN.1L ........... TOTAL Result Count = 1 (1)
@@ -1503,6 +1499,6 @@ CELL dac_real_res ................. TOTAL Result Count = 2 (2)
 ---
 TOTAL CPU Time:                  0
 TOTAL REAL Time:                 1
-TOTAL Original Layer Geometries: 710 (3101)
+TOTAL Original Layer Geometries: 755 (3112)
 TOTAL DRC RuleChecks Executed:   1262
-TOTAL DRC Results Generated:     6 (34)
+TOTAL DRC Results Generated:     2 (2)

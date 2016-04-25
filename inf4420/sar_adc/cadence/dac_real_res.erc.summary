@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::ERC-H SUMMARY REPORT
 ===
-Execution Date/Time:          Mon Apr 25 15:14:42 2016
+Execution Date/Time:          Mon Apr 25 16:19:05 2016
 Calibre Version:              v2013.4_15.12    Wed Nov 13 16:58:14 PST 2013
 Rule File Pathname:           /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
 Rule File Title:              
@@ -182,21 +182,21 @@ There is no data for layout net name VDWELL.
 ---
 LAYER LVID ........ TOTAL Original Geometry Count = 0   (0)
 LAYER DPO ......... TOTAL Original Geometry Count = 0   (0)
-LAYER POI ......... TOTAL Original Geometry Count = 17  (228)
+LAYER POI ......... TOTAL Original Geometry Count = 21  (228)
 LAYER RH .......... TOTAL Original Geometry Count = 1   (100)
 LAYER RPO ......... TOTAL Original Geometry Count = 1   (100)
 LAYER HRI ......... TOTAL Original Geometry Count = 0   (0)
 LAYER RPDMY1 ...... TOTAL Original Geometry Count = 0   (0)
 LAYER RPDMYi ...... TOTAL Original Geometry Count = 1   (100)
 LAYER DOD ......... TOTAL Original Geometry Count = 0   (0)
-LAYER ODI ......... TOTAL Original Geometry Count = 14  (112)
+LAYER ODI ......... TOTAL Original Geometry Count = 18  (113)
 LAYER SRM ......... TOTAL Original Geometry Count = 0   (0)
 LAYER RODMY ....... TOTAL Original Geometry Count = 0   (0)
 LAYER MOMDMY21 .... TOTAL Original Geometry Count = 0   (0)
-LAYER CO .......... TOTAL Original Geometry Count = 54  (616)
+LAYER CO .......... TOTAL Original Geometry Count = 80  (623)
 LAYER RHRI ........ TOTAL Original Geometry Count = 0   (0)
-LAYER NP .......... TOTAL Original Geometry Count = 6   (48)
-LAYER PP .......... TOTAL Original Geometry Count = 5   (132)
+LAYER NP .......... TOTAL Original Geometry Count = 8   (48)
+LAYER PP .......... TOTAL Original Geometry Count = 6   (133)
 LAYER MOMDMY0 ..... TOTAL Original Geometry Count = 0   (0)
 LAYER RFDMY ....... TOTAL Original Geometry Count = 0   (0)
 LAYER DRAIN ....... TOTAL Original Geometry Count = 0   (0)
@@ -235,7 +235,7 @@ LAYER BJTDMY ...... TOTAL Original Geometry Count = 0   (0)
 LAYER crown ....... TOTAL Original Geometry Count = 0   (0)
 LAYER blc ......... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM1 ........ TOTAL Original Geometry Count = 0   (0)
-LAYER M1 .......... TOTAL Original Geometry Count = 293 (683)
+LAYER M1 .......... TOTAL Original Geometry Count = 297 (684)
 LAYER RMDMY1 ...... TOTAL Original Geometry Count = 0   (0)
 LAYER MOMDMY1 ..... TOTAL Original Geometry Count = 0   (0)
 LAYER DUM2 ........ TOTAL Original Geometry Count = 0   (0)
@@ -305,19 +305,17 @@ RULECHECK CT_IND_CHECK ............ NOT EXECUTED
 RULECHECK mnpg .................... TOTAL Result Count = 0  (0)
 RULECHECK mppg .................... TOTAL Result Count = 0  (0)
 RULECHECK floating.nxwell_float ... NOT EXECUTED DUE TO PATHCHK ERRORS
-RULECHECK floating.psub ........... TOTAL Result Count = 1  (1)
+RULECHECK floating.psub ........... TOTAL Result Count = 0  (0)
 RULECHECK npvss49 ................. TOTAL Result Count = 0  (0)
 RULECHECK ppvdd49 ................. TOTAL Result Count = 0  (0)
 ----------------------------------------------------------------------------------
 --- ERC RULECHECK RESULTS STATISTICS (BY CELL)
 ---
-CELL dac_real_res ............. TOTAL Result Count = 1 (1)
-    ERC CHECK floating.psub ... TOTAL Result Count = 1 (1)
 ----------------------------------------------------------------------------------
 --- SUMMARY
 ---
 TOTAL CPU Time:                              0
 TOTAL REAL Time:                             1
-TOTAL Original Layer Geometries:             567 (2308)
+TOTAL Original Layer Geometries:             608 (2318)
 TOTAL ERC RuleChecks Executed:               6
-TOTAL ERC RuleCheck Results Generated:       1 (1)
+TOTAL ERC RuleCheck Results Generated:       0 (0)

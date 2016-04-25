@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Tue Apr 19 20:54:50 2016
+Execution Date/Time:       Mon Apr 25 16:48:02 2016
 Calibre Version:           v2013.4_15.12    Wed Nov 13 16:58:14 PST 2013
 Rule File Pathname:        /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.drc_
 Rule File Title:           
@@ -51,9 +51,9 @@ LAYER ODi ....................... TOTAL Original Geometry Count = 16  (16)
 LAYER DPO ....................... TOTAL Original Geometry Count = 0   (0)
 LAYER POi ....................... TOTAL Original Geometry Count = 16  (16)
 LAYER DUM1 ...................... TOTAL Original Geometry Count = 0   (0)
-LAYER M1i ....................... TOTAL Original Geometry Count = 50  (54)
+LAYER M1i ....................... TOTAL Original Geometry Count = 48  (50)
 LAYER DUM2 ...................... TOTAL Original Geometry Count = 0   (0)
-LAYER M2i ....................... TOTAL Original Geometry Count = 9   (14)
+LAYER M2i ....................... TOTAL Original Geometry Count = 6   (9)
 LAYER DUM3 ...................... TOTAL Original Geometry Count = 0   (0)
 LAYER M3i ....................... TOTAL Original Geometry Count = 2   (4)
 LAYER DUM4 ...................... TOTAL Original Geometry Count = 0   (0)
@@ -116,8 +116,8 @@ LAYER CTMi ...................... TOTAL Original Geometry Count = 1   (1)
 LAYER SRM ....................... TOTAL Original Geometry Count = 0   (0)
 LAYER LMARK ..................... TOTAL Original Geometry Count = 0   (0)
 LAYER IO_buffer ................. TOTAL Original Geometry Count = 0   (0)
-LAYER M1_real ................... TOTAL Original Geometry Count = 50  (54)
-LAYER M2_real ................... TOTAL Original Geometry Count = 9   (14)
+LAYER M1_real ................... TOTAL Original Geometry Count = 48  (50)
+LAYER M2_real ................... TOTAL Original Geometry Count = 6   (9)
 LAYER M3_real ................... TOTAL Original Geometry Count = 2   (4)
 LAYER M4_real ................... TOTAL Original Geometry Count = 2   (4)
 LAYER M5_real ................... TOTAL Original Geometry Count = 2   (4)
@@ -126,13 +126,13 @@ LAYER M7_real ................... TOTAL Original Geometry Count = 2   (4)
 LAYER M8_real ................... TOTAL Original Geometry Count = 19  (20)
 LAYER M9_real ................... TOTAL Original Geometry Count = 0   (0)
 LAYER MD_real ................... TOTAL Original Geometry Count = 0   (0)
-LAYER VIA1i ..................... TOTAL Original Geometry Count = 8   (18)
-LAYER VIA2i ..................... TOTAL Original Geometry Count = 7   (14)
-LAYER VIA3i ..................... TOTAL Original Geometry Count = 7   (14)
-LAYER VIA4i ..................... TOTAL Original Geometry Count = 7   (14)
-LAYER VIA5i ..................... TOTAL Original Geometry Count = 7   (14)
-LAYER VIA6i ..................... TOTAL Original Geometry Count = 7   (14)
-LAYER VIA7i ..................... TOTAL Original Geometry Count = 383 (386)
+LAYER VIA1i ..................... TOTAL Original Geometry Count = 5   (10)
+LAYER VIA2i ..................... TOTAL Original Geometry Count = 4   (8)
+LAYER VIA3i ..................... TOTAL Original Geometry Count = 4   (8)
+LAYER VIA4i ..................... TOTAL Original Geometry Count = 4   (8)
+LAYER VIA5i ..................... TOTAL Original Geometry Count = 4   (8)
+LAYER VIA6i ..................... TOTAL Original Geometry Count = 4   (8)
+LAYER VIA7i ..................... TOTAL Original Geometry Count = 382 (384)
 LAYER VIA8i ..................... TOTAL Original Geometry Count = 0   (0)
 LAYER VIADi ..................... TOTAL Original Geometry Count = 0   (0)
 LAYER ODi_RFDRAIN ............... TOTAL Original Geometry Count = 0   (0)
@@ -1500,6 +1500,6 @@ CELL sample_hold_3 ................ TOTAL Result Count = 3 (3)
 ---
 TOTAL CPU Time:                  0
 TOTAL REAL Time:                 1
-TOTAL Original Layer Geometries: 668 (756)
+TOTAL Original Layer Geometries: 639 (698)
 TOTAL DRC RuleChecks Executed:   1262
 TOTAL DRC Results Generated:     3 (3)

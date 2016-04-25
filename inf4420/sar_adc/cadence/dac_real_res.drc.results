@@ -1,6 +1,6 @@
 dac_real_res 1000
 OD.DN.2L_OD.DN.3L
-1 1 5 Apr 25 14:40:31 2016                     
+1 1 5 Apr 25 16:20:15 2016                     
 OD.DN.2L_OD.DN.3L { @ Min. OD density over window 150 step 75 20% 
   ERR_WIN = DENSITY ODx_L CHIP_NOT_ODEXC_L < 0.2 WINDOW 150 STEP 75 BACKUP PRINT OD.DN.2L.density
 		[ AREA(ODx_L)/AREA(CHIP_NOT_ODEXC_L) ]
@@ -12,40 +12,8 @@ CN dac_real_res c 1 0 0 1 0 0 0
 196985 6225
 196985 93275
 3550 93275
-LUP.6
-4 4 8 Apr 25 14:40:31 2016                     
-LUP.6 { @ Any point inside NMOS source/drain space to the nearest PW STRAP in the same PW <= 30 um
-        @ Any point inside PMOS source/drain space to the nearest NW STRAP in the same NW <= 30 um
-        @ In SRAM bit cell region, the rule is relaxed to 40 um
-  PACT_CHECK_NON_SRAM NOT NSTP_OS
-  PACT_CHECK_SRAM NOT (NSTP_OS OR NSTP_OS_SRAM)
-  NACT_CHECK_NON_SRAM NOT PSTP_OS
-  NACT_CHECK_SRAM NOT (PSTP_OS OR PSTP_OS_SRAM)
-}
-p 1 4
-CN nch_CDNS_461588028134 c 0 1 -1 0 9935 12240 8
--230 0
-0 0
-0 2500
--230 2500
-p 2 4
-100 0
-330 0
-330 2500
-100 2500
-p 3 4
-CN nch_CDNS_461588028133 c 0 1 -1 0 6190 12240 8
--230 0
-0 0
-0 200
--230 200
-p 4 4
-100 0
-330 0
-330 200
-100 200
 UTM.DN.1L
-1 1 5 Apr 25 14:40:31 2016                     
+1 1 5 Apr 25 16:20:16 2016                     
   UTM.DN.1L { @ UTM area coverage must be > 20% range over 100umx100um area by step 50um 
     ERR_WIN = DENSITY M9_NOT_EXC_L CHIP_NOT_M9_EXC_L < 0.2 WINDOW 100 STEP 50 BACKUP PRINT UTM.DN.1L.density 
                   [ AREA(M9_NOT_EXC_L)/AREA(CHIP_NOT_M9_EXC_L) ]
@@ -58,7 +26,7 @@ CN dac_real_res c 1 0 0 1 0 0 0
 196985 93275
 3550 93275
 NET_AREA_RATIO_RDBS
-0 0 17 Apr 25 14:40:31 2016
+0 0 17 Apr 25 16:20:16 2016
 MOM.A.1.rep 0
 MOM.A.2.rep 0
 M1.DN.5.M1.density 0
@@ -77,7 +45,7 @@ M4.DN.5.M6.density 0
 M5.DN.5.M6.density 0
 M5.DN.5.M7.density 0
 DENSITY_PRINT_FILES
-0 0 36 Apr 25 14:40:31 2016
+0 0 36 Apr 25 16:20:16 2016
 OD.DN.2L.density
 OD.DN.2H_IO.density
 OD.DN.2H_CORE.density

@@ -228,10 +228,10 @@
 ***************************************
 .SUBCKT sample_hold_3 GND VDD VIN VOUT PHI_1
 ** N=6 EP=5 IP=0 FDC=5
-M0 3 PHI_1 GND GND nch L=1e-07 W=2e-07 $X=8050 $Y=7225 $D=28
-M1 VOUT 3 VIN GND nch L=1e-07 W=2e-07 $X=10015 $Y=7225 $D=28
-M2 3 PHI_1 VDD VDD pch L=1e-07 W=2e-07 $X=8050 $Y=8465 $D=62
-M3 VOUT PHI_1 VIN VDD pch L=1e-07 W=2e-07 $X=10015 $Y=8465 $D=62
-X4 VOUT GND mimcap_2p0_sin lt=2.206e-05 wt=2.206e-05 $X=36835 $Y=15470 $D=151
+M0 3 PHI_1 GND GND nch L=1e-07 W=2e-07 $X=32840 $Y=26105 $D=28
+M1 VOUT 3 VIN GND nch L=1e-07 W=2e-07 $X=34805 $Y=26105 $D=28
+M2 3 PHI_1 VDD VDD pch L=1e-07 W=2e-07 $X=32840 $Y=27345 $D=62
+M3 VOUT PHI_1 VIN VDD pch L=1e-07 W=2e-07 $X=34805 $Y=27345 $D=62
+X4 VOUT GND mimcap_2p0_sin lt=2.2065e-05 wt=2.2065e-05 $X=22575 $Y=15705 $D=151
 .ENDS
 ***************************************

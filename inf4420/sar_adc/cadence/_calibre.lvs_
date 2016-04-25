@@ -1,22 +1,22 @@
 //
-//  Rule file generated on Mon Apr 25 15:14:42 CEST 2016
+//  Rule file generated on Mon Apr 25 16:48:38 CEST 2016
 //     by Calibre Interactive - LVS (v2013.4_15.12)
 //
 //      *** PLEASE DO NOT MODIFY THIS FILE ***
 //
 //
 
-LAYOUT PATH  "dac_real_res.calibre.db"
-LAYOUT PRIMARY "dac_real_res"
+LAYOUT PATH  "sample_hold_3.calibre.db"
+LAYOUT PRIMARY "sample_hold_3"
 LAYOUT SYSTEM GDSII
 
-SOURCE PATH "/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/dac_real_res.src.net"
-SOURCE PRIMARY "dac_real_res"
+SOURCE PATH "/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sample_hold_3.src.net"
+SOURCE PRIMARY "sample_hold_3"
 SOURCE SYSTEM SPICE
 
 MASK SVDB DIRECTORY "svdb" QUERY
 
-LVS REPORT "dac_real_res.lvs.report"
+LVS REPORT "sample_hold_3.lvs.report"
 
 LVS REPORT OPTION NONE
 LVS FILTER UNUSED OPTION NONE SOURCE
@@ -59,8 +59,8 @@ VIRTUAL CONNECT COLON NO
 VIRTUAL CONNECT REPORT NO
 
 LVS EXECUTE ERC YES
-ERC RESULTS DATABASE "dac_real_res.erc.results"
-ERC SUMMARY REPORT "dac_real_res.erc.summary" REPLACE HIER
+ERC RESULTS DATABASE "sample_hold_3.erc.results"
+ERC SUMMARY REPORT "sample_hold_3.erc.summary" REPLACE HIER
 ERC CELL NAME YES CELL SPACE XFORM
 ERC MAXIMUM RESULTS 1000
 ERC MAXIMUM VERTEX 4096

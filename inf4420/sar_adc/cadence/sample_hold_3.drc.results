@@ -1,6 +1,6 @@
 sample_hold_3 1000
 OD.DN.2L_OD.DN.3L
-1 1 5 Apr 19 20:54:51 2016                     
+1 1 5 Apr 25 16:48:03 2016                     
 OD.DN.2L_OD.DN.3L { @ Min. OD density over window 150 step 75 20% 
   ERR_WIN = DENSITY ODx_L CHIP_NOT_ODEXC_L < 0.2 WINDOW 150 STEP 75 BACKUP PRINT OD.DN.2L.density
 		[ AREA(ODx_L)/AREA(CHIP_NOT_ODEXC_L) ]
@@ -8,12 +8,12 @@ OD.DN.2L_OD.DN.3L { @ Min. OD density over window 150 step 75 20%
 }
 p 1 4
 CN sample_hold_3 c 1 0 0 1 0 0 0
-6370 2730
-69295 2730
-69295 50270
-6370 50270
+12175 2965
+55040 2965
+55040 50510
+12175 50510
 PO.DN.2
-1 1 7 Apr 19 20:54:51 2016                     
+1 1 7 Apr 25 16:48:03 2016                     
 PO.DN.2 { @ {OD OR DOD OR PO OR DPO } local density (minimun) over window 20um x 20um stepping 10um >= 0.1%
   ERR_WIN = DENSITY ALL_POD CHIP < 0.001 WINDOW 20 STEP 10 BACKUP
     [ AREA(ALL_POD)/AREA(CHIP) ]
@@ -21,16 +21,20 @@ PO.DN.2 { @ {OD OR DOD OR PO OR DPO } local density (minimun) over window 20um x
   DENSITY K ALL_POD CHIP < 0.001 WINDOW 20 STEP 10 BACKUP PRINT PO_DN_2.density 
     [ !AREA(K)+AREA(ALL_POD)/AREA(CHIP) ]
 }
-p 1 6
+p 1 10
 CN sample_hold_3 c 1 0 0 1 0 0 0
-6370 12730
-16370 12730
-16370 2730
-69295 2730
-69295 50270
-6370 50270
+12175 2965
+55040 2965
+55040 50510
+35040 50510
+35040 22965
+32175 22965
+32175 30510
+35040 30510
+35040 50510
+12175 50510
 UTM.DN.1L
-1 1 5 Apr 19 20:54:51 2016                     
+1 1 5 Apr 25 16:48:03 2016                     
   UTM.DN.1L { @ UTM area coverage must be > 20% range over 100umx100um area by step 50um 
     ERR_WIN = DENSITY M9_NOT_EXC_L CHIP_NOT_M9_EXC_L < 0.2 WINDOW 100 STEP 50 BACKUP PRINT UTM.DN.1L.density 
                   [ AREA(M9_NOT_EXC_L)/AREA(CHIP_NOT_M9_EXC_L) ]
@@ -38,12 +42,12 @@ UTM.DN.1L
   }
 p 1 4
 CN sample_hold_3 c 1 0 0 1 0 0 0
-6370 2730
-69295 2730
-69295 50270
-6370 50270
+12175 2965
+55040 2965
+55040 50510
+12175 50510
 NET_AREA_RATIO_RDBS
-0 0 17 Apr 19 20:54:51 2016
+0 0 17 Apr 25 16:48:03 2016
 MOM.A.1.rep 0
 MOM.A.2.rep 0
 M1.DN.5.M1.density 0
@@ -62,7 +66,7 @@ M4.DN.5.M6.density 0
 M5.DN.5.M6.density 0
 M5.DN.5.M7.density 0
 DENSITY_PRINT_FILES
-0 0 36 Apr 19 20:54:51 2016
+0 0 36 Apr 25 16:48:03 2016
 OD.DN.2L.density
 OD.DN.2H_IO.density
 OD.DN.2H_CORE.density

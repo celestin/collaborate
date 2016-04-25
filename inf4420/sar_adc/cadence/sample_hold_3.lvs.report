@@ -15,7 +15,7 @@ REPORT FILE NAME:         sample_hold_3.lvs.report
 LAYOUT NAME:              /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sample_hold_3.sp ('sample_hold_3')
 SOURCE NAME:              /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sample_hold_3.src.net ('sample_hold_3')
 RULE FILE:                /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
-CREATION TIME:            Tue Apr 19 20:56:38 2016
+CREATION TIME:            Mon Apr 25 16:48:40 2016
 CURRENT DIRECTORY:        /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence
 USER NAME:                vegardmi
 CALIBRE VERSION:          v2013.4_15.12    Wed Nov 13 16:58:14 PST 2013
@@ -26,14 +26,13 @@ CALIBRE VERSION:          v2013.4_15.12    Wed Nov 13 16:58:14 PST 2013
 
 
 
-                  #   #         #####################  
-                   # #          #                   #  
-                    #           #     INCORRECT     #  
-                   # #          #                   #  
-                  #   #         #####################  
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
 
 
-  Error:    Property errors.
 
 
 **************************************************************************************************************
@@ -42,7 +41,7 @@ CALIBRE VERSION:          v2013.4_15.12    Wed Nov 13 16:58:14 PST 2013
 
   Result         Layout                        Source
   -----------    -----------                   --------------
-  INCORRECT      sample_hold_3                 sample_hold_3
+  CORRECT        sample_hold_3                 sample_hold_3
 
 
 
@@ -549,14 +548,13 @@ o LVS Setup:
 
 
 
-                  #   #         #####################  
-                   # #          #                   #  
-                    #           #     INCORRECT     #  
-                   # #          #                   #  
-                  #   #         #####################  
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
 
 
-  Error:    Property errors.
 
 LAYOUT CELL NAME:         sample_hold_3
 SOURCE CELL NAME:         sample_hold_3
@@ -594,18 +592,6 @@ NUMBERS OF OBJECTS AFTER TRANSFORMATION
                      1         1         _invv (4 pins)
                 ------    ------
  Total Inst:         4         4
-
-
-
-**************************************************************************************************************
-                                      PROPERTY ERRORS
-
-DISC#  LAYOUT                                                    SOURCE                      ERROR
-**************************************************************************************************************
-
-  1    X4(36.835,15.470)  mimcap_2p0_sin                         XC1  mimcap_2p0_sin
-       lt: 2.206e-05                                             lt: 2.2065e-05            0.0227%
-       wt: 2.206e-05                                             wt: 2.2065e-05            0.0227%
 
 
 

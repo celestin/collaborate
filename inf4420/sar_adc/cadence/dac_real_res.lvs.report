@@ -15,7 +15,7 @@ REPORT FILE NAME:         dac_real_res.lvs.report
 LAYOUT NAME:              /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/dac_real_res.sp ('dac_real_res')
 SOURCE NAME:              /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/dac_real_res.src.net ('dac_real_res')
 RULE FILE:                /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
-CREATION TIME:            Mon Apr 25 15:14:44 2016
+CREATION TIME:            Mon Apr 25 16:19:07 2016
 CURRENT DIRECTORY:        /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence
 USER NAME:                vegardmi
 CALIBRE VERSION:          v2013.4_15.12    Wed Nov 13 16:58:14 PST 2013
@@ -26,15 +26,13 @@ CALIBRE VERSION:          v2013.4_15.12    Wed Nov 13 16:58:14 PST 2013
 
 
 
-                  #   #         #####################  
-                   # #          #                   #  
-                    #           #     INCORRECT     #  
-                   # #          #                   #  
-                  #   #         #####################  
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
 
 
-  Error:    Different numbers of nets.
-  Error:    Connectivity errors.
 
 
 **************************************************************************************************************
@@ -43,7 +41,7 @@ CALIBRE VERSION:          v2013.4_15.12    Wed Nov 13 16:58:14 PST 2013
 
   Result         Layout                        Source
   -----------    -----------                   --------------
-  INCORRECT      dac_real_res                  dac_real_res
+  CORRECT        dac_real_res                  dac_real_res
 
 
 
@@ -550,15 +548,13 @@ o LVS Setup:
 
 
 
-                  #   #         #####################  
-                   # #          #                   #  
-                    #           #     INCORRECT     #  
-                   # #          #                   #  
-                  #   #         #####################  
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
 
 
-  Error:    Different numbers of nets (see below).
-  Error:    Connectivity errors.
 
 LAYOUT CELL NAME:         dac_real_res
 SOURCE CELL NAME:         dac_real_res
@@ -572,7 +568,7 @@ INITIAL NUMBERS OF OBJECTS
                 ------    ------         --------------
  Ports:             11        11
 
- Nets:             119       118    *
+ Nets:             118       118
 
  Instances:         16        16         MN (4 pins)
                     16        16         MP (4 pins)
@@ -588,170 +584,12 @@ NUMBERS OF OBJECTS AFTER TRANSFORMATION
                 ------    ------         --------------
  Ports:             11        11
 
- Nets:              27        26    *
+ Nets:              26        26
 
  Instances:         16        16         rppolywo (2 pins)
                      8         8         _invx2v (4 pins)
                 ------    ------
  Total Inst:        24        24
-
-
-       * = Number of objects in layout different from number in source.
-
-
-
-**************************************************************************************************************
-                                 INCORRECT OBJECTS
-**************************************************************************************************************
-
-
-LEGEND:
--------
-
-  ne  = Naming Error (same layout name found in source
-        circuit, but object was matched otherwise).
-
-
-**************************************************************************************************************
-                                   INCORRECT NETS
-
-DISC#  LAYOUT NAME                                               SOURCE NAME
-**************************************************************************************************************
-
-  1    Net 36                                                    ** no similar net **
-
-
-**************************************************************************************************************
-                                 INCORRECT INSTANCES
-
-DISC#  LAYOUT NAME                                               SOURCE NAME
-**************************************************************************************************************
-
-  2    X16/X0/X1/M0(6.190,12.240)  MN(NCH)                       XI2/MNM1  MN(NCH)
-         g: B<0>                                                   g: B<0>
-         d: GND                                                    d: GND
-         b: 36                                                     ** no similar net **
-         ** GND **                                                 b: GND
-
---------------------------------------------------------------------------------------------------------------
-
-  3    X16/X0/X0/M0(9.935,12.240)  MN(NCH)                       XI3/MNM1  MN(NCH)
-         s: 26                                                     s: net015
-         d: GND                                                    d: GND
-         b: 36                                                     ** no similar net **
-         ** GND **                                                 b: GND
-
---------------------------------------------------------------------------------------------------------------
-
-  4    X16/X1/X1/M0(6.190,15.145)  MN(NCH)                       XI5/MNM1  MN(NCH)
-         g: B<1>                                                   g: B<1>
-         d: GND                                                    d: GND
-         b: 36                                                     ** no similar net **
-         ** GND **                                                 b: GND
-
---------------------------------------------------------------------------------------------------------------
-
-  5    X16/X1/X0/M0(9.935,15.145)  MN(NCH)                       XI4/MNM1  MN(NCH)
-         s: 25                                                     s: net068
-         d: GND                                                    d: GND
-         b: 36                                                     ** no similar net **
-         ** GND **                                                 b: GND
-
---------------------------------------------------------------------------------------------------------------
-
-  6    X17/X0/X1/M0(6.190,18.050)  MN(NCH)                       XI7/MNM1  MN(NCH)
-         g: B<2>                                                   g: B<2>
-         d: GND                                                    d: GND
-         b: 36                                                     ** no similar net **
-         ** GND **                                                 b: GND
-
---------------------------------------------------------------------------------------------------------------
-
-  7    X17/X0/X0/M0(9.935,18.050)  MN(NCH)                       XI6/MNM1  MN(NCH)
-         s: 24                                                     s: net063
-         d: GND                                                    d: GND
-         b: 36                                                     ** no similar net **
-         ** GND **                                                 b: GND
-
---------------------------------------------------------------------------------------------------------------
-
-  8    X17/X1/X1/M0(6.190,20.955)  MN(NCH)                       XI8/MNM1  MN(NCH)
-         g: B<3>                                                   g: B<3>
-         d: GND                                                    d: GND
-         b: 36                                                     ** no similar net **
-         ** GND **                                                 b: GND
-
---------------------------------------------------------------------------------------------------------------
-
-  9    X17/X1/X0/M0(9.935,20.955)  MN(NCH)                       XI9/MNM1  MN(NCH)
-         s: 23                                                     s: net037
-         d: GND                                                    d: GND
-         b: 36                                                     ** no similar net **
-         ** GND **                                                 b: GND
-
---------------------------------------------------------------------------------------------------------------
-
- 10    X18/X0/X1/M0(6.190,23.860)  MN(NCH)                       XI11/MNM1  MN(NCH)
-         g: B<4>                                                   g: B<4>
-         d: GND                                                    d: GND
-         b: 36                                                     ** no similar net **
-         ** GND **                                                 b: GND
-
---------------------------------------------------------------------------------------------------------------
-
- 11    X18/X0/X0/M0(9.935,23.860)  MN(NCH)                       XI10/MNM1  MN(NCH)
-         s: 21                                                     s: net038
-         d: GND                                                    d: GND
-         b: 36                                                     ** no similar net **
-         ** GND **                                                 b: GND
-
---------------------------------------------------------------------------------------------------------------
-
- 12    X18/X1/X1/M0(6.190,26.765)  MN(NCH)                       XI12/MNM1  MN(NCH)
-         g: B<5>                                                   g: B<5>
-         d: GND                                                    d: GND
-         b: 36                                                     ** no similar net **
-         ** GND **                                                 b: GND
-
---------------------------------------------------------------------------------------------------------------
-
- 13    X18/X1/X0/M0(9.935,26.765)  MN(NCH)                       XI13/MNM1  MN(NCH)
-         s: 20                                                     s: net046
-         d: GND                                                    d: GND
-         b: 36                                                     ** no similar net **
-         ** GND **                                                 b: GND
-
---------------------------------------------------------------------------------------------------------------
-
- 14    X19/X0/X1/M0(6.190,29.670)  MN(NCH)                       XI15/MNM1  MN(NCH)
-         g: B<6>                                                   g: B<6>
-         d: GND                                                    d: GND
-         b: 36                                                     ** no similar net **
-         ** GND **                                                 b: GND
-
---------------------------------------------------------------------------------------------------------------
-
- 15    X19/X0/X0/M0(9.935,29.670)  MN(NCH)                       XI14/MNM1  MN(NCH)
-         s: 19                                                     s: net035
-         d: GND                                                    d: GND
-         b: 36                                                     ** no similar net **
-         ** GND **                                                 b: GND
-
---------------------------------------------------------------------------------------------------------------
-
- 16    X19/X1/X1/M0(6.190,32.575)  MN(NCH)                       XI16/MNM1  MN(NCH)
-         g: B<7>                                                   g: B<7>
-         d: GND                                                    d: GND
-         b: 36                                                     ** no similar net **
-         ** GND **                                                 b: GND
-
---------------------------------------------------------------------------------------------------------------
-
- 17    X19/X1/X0/M0(9.935,32.575)  MN(NCH)                       XI17/MNM1  MN(NCH)
-         s: 22                                                     s: net022
-         d: GND                                                    d: GND
-         b: 36                                                     ** no similar net **
-         ** GND **                                                 b: GND
 
 
 
@@ -765,7 +603,7 @@ DISC#  LAYOUT NAME                                               SOURCE NAME
                   -------    -------    ---------    ---------    ---------
    Ports:              11         11            0            0
 
-   Nets:               26         26            1            0
+   Nets:               26         26            0            0
 
    Instances:          16         16            0            0    rppolywo
                         8          8            0            0    _invx2v

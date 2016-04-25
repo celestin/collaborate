@@ -1,25 +1,25 @@
 sample_hold_3 1000
 mnpg
-0 0 2 Apr 19 20:56:38 2016                                                      
+0 0 2 Apr 25 16:48:40 2016                                                      
 Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
 MOS connected to both power and ground
 mppg
-0 0 2 Apr 19 20:56:38 2016                                                      
+0 0 2 Apr 25 16:48:40 2016                                                      
 Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
 MOS connected to both power and ground
 floating.nxwell_float
-0 0 2 Apr 19 20:56:38 2016                                                      
+0 0 2 Apr 25 16:48:40 2016                                                      
 Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
 Floating nxwell_float is not allowed
 floating.psub
-0 0 2 Apr 19 20:56:38 2016                                                      
+0 0 2 Apr 25 16:48:40 2016                                                      
 Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
 Floating psub is not allowed
 npvss49
-0 0 2 Apr 19 20:56:38 2016                                                      
+0 0 2 Apr 25 16:48:40 2016                                                      
 Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
 ntap connected to GROUND
 ppvdd49
-0 0 2 Apr 19 20:56:38 2016                                                      
+0 0 2 Apr 25 16:48:40 2016                                                      
 Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
 ptap connected to POWER

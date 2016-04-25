@@ -1,6 +1,4 @@
-CADENCE IHNL01074
+CADENCE IHNL01072
 
 tsmcN90rf inv schematic cds0
-sar_adc ladder_R schematic cds1
-sar_adc ladder_2R schematic cds2
-sar_adc dac_real_res schematic cds3
+sar_adc sample_hold_3 schematic cds1
