@@ -37,7 +37,7 @@
 \section{Introduction} 
 Successive Approximation Register (SAR) Analog-to-Digital Converter (ADC) is a common arctitecture whent talking about Analog-to-Digital (A/D) conversion. A/D conversion is used in almost every
 circuits today, and the purpose is to convert a signal from the analig to the digital domain. This is of great interest, because digital signals propagates more efficiently than analog singlals in a 
-circuit. By using digital signals, it is easier for the electronic circuit to distinguish from noise \cite{basic-adc}.\\
+circuit. By using digital signals, it is easier for the electronic circuit to distinguish the signal from the noise \cite{basic-adc}.\\
 \\
 This task, is as mentrioned, to design a SAR ADC. A block diagram of the system arcitecture is shown in Fig. \ref{block_diagram}. The system includes a sample and hold, a comparator, digital-to-analog 
 converter (DAC) and a logic block. The task was to design all this blocks, exept the logic block. The solution for each blocks are discussed in detail in the next chapters.  
@@ -177,6 +177,7 @@ at the moment the switch opend \cite{basic-sample-hold}.
 
 
 \subsubsection{Comparator}
+
 \subsubsection{Digital-to-analog converter}
 \subsubsection{Logic}
 \
@@ -201,24 +202,27 @@ of running with a powersupply of 1.2 V and have sampling frequency of 1 MHz. The
  \item $V_{OUT(P\_P)} \geq 0.6$
  \item $C_{load} = 50 fF$
 \end{itemize}
+
 \textbf{Comparator}
-\begin{itemize}
- \item 
-\end{itemize}
 
 
 Critical parts in SAR ADCs 
+
 \begin{itemize}
  \item Comparator
  \item DAC
 \end{itemize}
+
 SAR ADCs limitations:
+
 \begin{itemize}
  \item The settling time is the DAC, whick must settle within the resolution of the overall converterm for example, 1/2 LSB (Least significant bit)
  \item The comparator, which must resolve small differences in $V_{in}$ and $V_{DAC}$ within the specified time
  \item The logic overhead
-\end{itemize}
+
+ \end{itemize}
 Comparator:
+
 \begin{itemize}
  \item The comparator does not effect the overall linearity 
 \end{itemize}
