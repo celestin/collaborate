@@ -1,9 +1,7 @@
 hnlLastStopCellInfo = '(
                            ( "tsmcN90rf" "nch_mac" "auCdl" "53" "1325068807" )
-                          ( "tsmcN90rf" "mimcap" "auCdl" "36" "1392376494" )
-                          ( "tsmcN90rf" "nch" "auCdl" "53" "1325068852" )
-                          ( "tsmcN90rf" "pch" "auCdl" "54" "1325068799" )
                           ( "tsmcN90rf" "pch_mac" "auCdl" "54" "1325068830" )
+                          ( "tsmcN90rf" "rppolywo" "auCdl" "35" "1326964407" )
                        )
 hnlLastMaxNameLength = 60
 hnlLastNamePrefix = "hnl_"
@@ -79,7 +77,6 @@ hnlLastNetNameDifferentFrom = '( )
 hnlLastTermNameDifferentFrom = '( )
 hnlLastParamNameDifferentFrom = '( )
 hnlLastLibInfo = '(
-                    ( "tsmcN90rf" "1325068866" )
-                   ( "sar_adc" "1456834777" )
+                    ( "sar_adc" "1456834777" )
                   )
 hnlLastDesignVars = '( )

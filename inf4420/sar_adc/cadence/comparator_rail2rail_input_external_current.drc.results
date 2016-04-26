@@ -1,0 +1,71 @@
+comparator_rail2rail_input_external_current 1000
+UTM.DN.1L
+1 1 5 Apr 26 22:04:22 2016                     
+  UTM.DN.1L { @ UTM area coverage must be > 20% range over 100umx100um area by step 50um 
+    ERR_WIN = DENSITY M9_NOT_EXC_L CHIP_NOT_M9_EXC_L < 0.2 WINDOW 100 STEP 50 BACKUP PRINT UTM.DN.1L.density 
+                  [ AREA(M9_NOT_EXC_L)/AREA(CHIP_NOT_M9_EXC_L) ]
+    SIZE (ERR_WIN NOT M9_EXC_L2) BY (25-0.002)/2 UNDEROVER TRUNCATE (25-0.002)/2
+  }
+p 1 4
+CN comparator_rail2rail_input_external_current c 1 0 0 1 0 0 0
+915 615
+54215 615
+54215 46720
+915 46720
+NET_AREA_RATIO_RDBS
+0 0 17 Apr 26 22:04:22 2016
+MOM.A.1.rep 0
+MOM.A.2.rep 0
+M1.DN.5.M1.density 0
+M1.DN.5.M2.density 0
+M2.DN.5.M2.density 0
+M1.DN.5.M3.density 0
+M2.DN.5.M3.density 0
+M3.DN.5.M3.density 0
+M2.DN.5.M4.density 0
+M3.DN.5.M4.density 0
+M4.DN.5.M4.density 0
+M3.DN.5.M5.density 0
+M4.DN.5.M5.density 0
+M5.DN.5.M5.density 0
+M4.DN.5.M6.density 0
+M5.DN.5.M6.density 0
+M5.DN.5.M7.density 0
+DENSITY_PRINT_FILES
+0 0 36 Apr 26 22:04:22 2016
+OD.DN.2L.density
+OD.DN.2H_IO.density
+OD.DN.2H_CORE.density
+PO_DN_2.density
+M1.DN.3L.density
+M1.DN.1H.density
+M1.DN.2.density
+M2.DN.3L.density
+M2.DN.1H.density
+M2.DN.2.density
+M3.DN.3L.density
+M3.DN.1H.density
+M3.DN.2.density
+M4.DN.3L.density
+M4.DN.1H.density
+M4.DN.2.density
+M5.DN.3L.density
+M5.DN.1H.density
+M5.DN.2.density
+M6.DN.3L.density
+M6.DN.1H.density
+M6.DN.2.density
+M7.DN.3L.density
+M7.DN.1H.density
+M7.DN.2.density
+M8.DN.3L.density
+M8.DN.1H.density
+M8.DN.2.density
+MD.DN.3L.density
+MD.DN.1H.density
+MD.DN.2.density
+Mn.DN.5L.density
+Mn.DN.5H.density
+UTM.DN.1L.density
+UTM.DN.1H.density
+UTM.DN.5.density

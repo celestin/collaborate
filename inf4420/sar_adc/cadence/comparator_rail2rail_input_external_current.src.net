@@ -1,0 +1,48 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  sar_adc
+* Top Cell Name: comparator_rail2rail_input_external_current
+* View Name:     schematic
+* Netlisted on:  Apr 26 22:26:44 2016
+************************************************************************
+
+.INCLUDE  /projects/nanos/design_kit/TSMC90nmLPRF_616OA/Calibre/lvs/source_added
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: sar_adc
+* Cell Name:    comparator_rail2rail_input_external_current
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT comparator_rail2rail_input_external_current Gnd In Out Ref Vdd
+*.PININFO In:I Ref:I Out:O Gnd:B Vdd:B
+MM18 net30 net07 Gnd Gnd nch l=2u w=20u m=1
+MM17 net07 net07 Gnd Gnd nch l=2u w=20u m=1
+MM15 Out net38 Gnd Gnd nch l=500n w=1u m=1
+MM13 net38 net07 Gnd Gnd nch l=2u w=2.05u m=2
+MM11 net65 net65 Gnd Gnd nch l=1u w=20u m=2
+MM10 net24 net65 Gnd Gnd nch l=1u w=20u m=2
+MM5 net53 net48 Gnd Gnd nch l=1u w=20u m=2
+MM4 net48 net48 Gnd Gnd nch l=1u w=20u m=2
+MM1 net53 Ref net30 Gnd nch l=5u w=20u m=1
+MM0 net24 In net30 Gnd nch l=5u w=20u m=1
+MM19 net45 net010 Vdd Vdd pch l=2u w=20u m=1
+MM16 net010 net010 Vdd Vdd pch l=2u w=20u m=1
+MM14 Out net38 Vdd Vdd pch l=500n w=2u m=1
+MM12 net38 net53 Vdd Vdd pch l=1u w=20u m=2
+MM9 net53 net53 Vdd Vdd pch l=1u w=20u m=2
+MM8 net24 net53 Vdd Vdd pch l=1u w=20.3u m=2
+MM7 net53 net24 Vdd Vdd pch l=1u w=20.3u m=2
+MM6 net24 net24 Vdd Vdd pch l=1u w=20u m=2
+MM3 net65 Ref net45 Vdd pch l=5u w=20u m=1
+MM2 net48 In net45 Vdd pch l=5u w=20u m=1
+XR0 net010 net07 rppolywo l=38.31u w=800n m=1
+.ENDS
+

@@ -1,3 +1,6 @@
-mgc_rve_context_lcv "" "sample_hold_3" "" 1000
-mp 10 12.175 2.965 55.04 2.965 55.04 50.51 35.04 50.51 35.04 22.965 32.175 22.965 32.175 30.51 35.04 30.51 35.04 50.51 12.175 50.51
-mgc_rve_zoom 2.99 -7.223 64.225 60.698 1
+mgc_rve_context_lcv "" "comparator_rail2rail_input_external_current" "" 1000
+mgc_rve_highlight_index 0 "X2" "#00000000FFFF"
+mgc_rve_property "l" 3.831e-05  "w" 8e-07 
+mgc_rve_layer "rppolywo_r"
+mr 4.87 2.205 5.67 40.515
+mgc_rve_zoom 4.699 -6.004 5.841 48.724 1

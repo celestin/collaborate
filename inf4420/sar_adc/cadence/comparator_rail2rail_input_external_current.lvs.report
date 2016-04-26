@@ -1,0 +1,1051 @@
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         comparator_rail2rail_input_external_current.lvs.report
+LAYOUT NAME:              /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/comparator_rail2rail_input_external_current.sp ('comparator_rail2rail_input_external_current')
+SOURCE NAME:              /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/comparator_rail2rail_input_external_current.src.net ('comparator_rail2rail_input_external_current')
+RULE FILE:                /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
+CREATION TIME:            Tue Apr 26 22:26:48 2016
+CURRENT DIRECTORY:        /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence
+USER NAME:                vegardmi
+CALIBRE VERSION:          v2013.4_15.12    Wed Nov 13 16:58:14 PST 2013
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of nets.
+  Error:    Different numbers of instances.
+  Error:    Connectivity errors.
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  INCORRECT      comparator_rail2rail_input_external_current comparator_rail2rail_input_external_current
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   // LVS COMPONENT TYPE PROPERTY
+   // LVS COMPONENT SUBTYPE PROPERTY
+   // LVS PIN NAME PROPERTY
+   LVS POWER NAME                         "VDD" "vdd" "vdd!" "vdd;" "VDDS" "vdds" "vdds!" "vdds;"
+   LVS GROUND NAME                        "GND" "gnd" "gnd!" "gnd;" "GNDS" "gnds" "gnds!" "gnds;"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    ALL
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   YES
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            YES
+   LVS ALL CAPACITOR PINS SWAPPABLE       YES
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                NO
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS REVERSE WL                         NO
+   LVS SPICE PREFER PINS                  YES
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            NO
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    YES
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            NO
+   SOURCE CASE                            NO
+   LVS COMPARE CASE                       NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     50
+   LVS PROPERTY RESOLUTION MAXIMUM        65536
+   // LVS SIGNATURE MAXIMUM
+   // LVS FILTER UNUSED OPTION
+   // LVS REPORT OPTION
+   LVS REPORT UNITS                       YES
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+   // LVS IGNORE DEVICE PIN
+
+   // Device Type Map
+
+   LVS DEVICE TYPE                        RESISTOR "rm1" "rm10" "rm2" "rm3" "rm4" "rm5" "rm6" "rm7" "rm8" "rm9" "rnodl" "rnodl_m"
+                                                   "rnods" "rnods_m" "rnodwo" "rnodwo_m" "rnpolyl" "rnpolyl_dis" "rnpolys"
+                                                   "rnpolys_dis" "rnpolywo" "rnpolywo_dis" "rnwod" "rnwod_m" "rnwsti" "rnwsti_m"
+                                                   "rpodl" "rpodl_m" "rpods" "rpods_m" "rpodwo" "rpodwo_m" "rppolyl" "rppolyl_dis"
+                                                   "rppolyl_rf" "rppolys" "rppolys_dis" "rppolys_rf" "rppolywo" "rppolywo_dis"
+                                                   "rppolywo_rf" [ POS=PLUS NEG=MINUS ]  SOURCE LAYOUT
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  NO
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             NO
+   LVS REDUCE SPLIT GATES                 NO
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           YES
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+
+   LVS REDUCE  rnwsti  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnwsti  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnwod  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnwod  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rppolywo  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rppolywo  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnpolywo  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnpolywo  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rpodwo  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rpodwo  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnodwo  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnodwo  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rppolyl  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rppolyl  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnpolyl  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnpolyl  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rpodl  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rpodl  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnodl  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnodl  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rppolys  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rppolys  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnpolys  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnpolys  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rpods  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rpods  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnods  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnods  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm1  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm1  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm2  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm2  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm3  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm3  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm4  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm4  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm5  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm5  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm6  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm6  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm7  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm7  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm8  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm8  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm9  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm9  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm10  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm10  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnwsti_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnwsti_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rnwod_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnwod_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rpodwo_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rpodwo_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rnodwo_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnodwo_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rpodl_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rpodl_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rnodl_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnodl_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rpods_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rpods_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rnods_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnods_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rppolys_dis  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rppolys_dis  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnpolys_dis  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnpolys_dis  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rppolyl_dis  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rppolyl_dis  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnpolyl_dis  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnpolyl_dis  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rppolywo_dis  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rppolywo_dis  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnpolywo_dis  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnpolywo_dis  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rppolyl_rf  PARALLEL NO
+   LVS REDUCE  rppolyl_rf  SERIES PLUS MINUS NO
+   LVS REDUCE  rppolys_rf  PARALLEL NO
+   LVS REDUCE  rppolys_rf  SERIES PLUS MINUS NO
+   LVS REDUCE  rppolywo_rf  PARALLEL NO
+   LVS REDUCE  rppolywo_rf  SERIES PLUS MINUS NO
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Trace Property
+
+   TRACE PROPERTY  mn(nch)  l l 0
+   TRACE PROPERTY  mn(nch)  w w 0
+   TRACE PROPERTY  mn(nch_18)  l l 0
+   TRACE PROPERTY  mn(nch_18)  w w 0
+   TRACE PROPERTY  mn(nch_18_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_18_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_25)  l l 0
+   TRACE PROPERTY  mn(nch_25)  w w 0
+   TRACE PROPERTY  mn(nch_25_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_25_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_25od)  l l 0
+   TRACE PROPERTY  mn(nch_25od)  w w 0
+   TRACE PROPERTY  mn(nch_25od_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_25od_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_33)  l l 0
+   TRACE PROPERTY  mn(nch_33)  w w 0
+   TRACE PROPERTY  mn(nch_33_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_33_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_dnw_w)  l l 0
+   TRACE PROPERTY  mn(nch_dnw_w)  w w 0
+   TRACE PROPERTY  mn(nch_hvt)  l l 0
+   TRACE PROPERTY  mn(nch_hvt)  w w 0
+   TRACE PROPERTY  mn(nch_hvt_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_hvt_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_lvt)  l l 0
+   TRACE PROPERTY  mn(nch_lvt)  w w 0
+   TRACE PROPERTY  mn(nch_lvt_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_lvt_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_na)  l l 0
+   TRACE PROPERTY  mn(nch_na)  w w 0
+   TRACE PROPERTY  mn(nch_na18)  l l 0
+   TRACE PROPERTY  mn(nch_na18)  w w 0
+   TRACE PROPERTY  mn(nch_na25)  l l 0
+   TRACE PROPERTY  mn(nch_na25)  w w 0
+   TRACE PROPERTY  mn(nch_na33)  l l 0
+   TRACE PROPERTY  mn(nch_na33)  w w 0
+   TRACE PROPERTY  mn(nch_ulvt)  l l 0
+   TRACE PROPERTY  mn(nch_ulvt)  w w 0
+   TRACE PROPERTY  mn(nch_ulvt_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_ulvt_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_uthvt)  l l 0
+   TRACE PROPERTY  mn(nch_uthvt)  w w 0
+   TRACE PROPERTY  mn(nch_uthvt_dnw)  l l 0
+   TRACE PROPERTY  mn(nch_uthvt_dnw)  w w 0
+   TRACE PROPERTY  mn(nch_w)  l l 0
+   TRACE PROPERTY  mn(nch_w)  w w 0
+   TRACE PROPERTY  mn(nchpd_hvtsr)  l l 0
+   TRACE PROPERTY  mn(nchpd_hvtsr)  w w 0
+   TRACE PROPERTY  mn(nchpd_sr)  l l 0
+   TRACE PROPERTY  mn(nchpd_sr)  w w 0
+   TRACE PROPERTY  mn(nchpd_ulpsr)  l l 0
+   TRACE PROPERTY  mn(nchpd_ulpsr)  w w 0
+   TRACE PROPERTY  mn(nchpg_hvtsr)  l l 0
+   TRACE PROPERTY  mn(nchpg_hvtsr)  w w 0
+   TRACE PROPERTY  mn(nchpg_sr)  l l 0
+   TRACE PROPERTY  mn(nchpg_sr)  w w 0
+   TRACE PROPERTY  mn(nchpg_ulpsr)  l l 0
+   TRACE PROPERTY  mn(nchpg_ulpsr)  w w 0
+   TRACE PROPERTY  mp(pch)  l l 0
+   TRACE PROPERTY  mp(pch)  w w 0
+   TRACE PROPERTY  mp(pch_18)  l l 0
+   TRACE PROPERTY  mp(pch_18)  w w 0
+   TRACE PROPERTY  mp(pch_1tr)  l l 0
+   TRACE PROPERTY  mp(pch_1tr)  w w 0
+   TRACE PROPERTY  mp(pch_25)  l l 0
+   TRACE PROPERTY  mp(pch_25)  w w 0
+   TRACE PROPERTY  mp(pch_25od)  l l 0
+   TRACE PROPERTY  mp(pch_25od)  w w 0
+   TRACE PROPERTY  mp(pch_33)  l l 0
+   TRACE PROPERTY  mp(pch_33)  w w 0
+   TRACE PROPERTY  mp(pch_hvt)  l l 0
+   TRACE PROPERTY  mp(pch_hvt)  w w 0
+   TRACE PROPERTY  mp(pch_lvt)  l l 0
+   TRACE PROPERTY  mp(pch_lvt)  w w 0
+   TRACE PROPERTY  mp(pch_ulvt)  l l 0
+   TRACE PROPERTY  mp(pch_ulvt)  w w 0
+   TRACE PROPERTY  mp(pch_uthvt)  l l 0
+   TRACE PROPERTY  mp(pch_uthvt)  w w 0
+   TRACE PROPERTY  mp(pch_w)  l l 0
+   TRACE PROPERTY  mp(pch_w)  w w 0
+   TRACE PROPERTY  mp(pchpu_hvtsr)  l l 0
+   TRACE PROPERTY  mp(pchpu_hvtsr)  w w 0
+   TRACE PROPERTY  mp(pchpu_sr)  l l 0
+   TRACE PROPERTY  mp(pchpu_sr)  w w 0
+   TRACE PROPERTY  mp(pchpu_ulpsr)  l l 0
+   TRACE PROPERTY  mp(pchpu_ulpsr)  w w 0
+   TRACE PROPERTY  q(npn10)  a a 0
+   TRACE PROPERTY  q(npn2)  a a 0
+   TRACE PROPERTY  q(npn5)  a a 0
+   TRACE PROPERTY  q(pnp10)  a a 0
+   TRACE PROPERTY  q(pnp2)  a a 0
+   TRACE PROPERTY  q(pnp5)  a a 0
+   TRACE PROPERTY  d(ndio)  a a 0
+   TRACE PROPERTY  d(ndio_18)  a a 0
+   TRACE PROPERTY  d(ndio_25)  a a 0
+   TRACE PROPERTY  d(ndio_25od)  a a 0
+   TRACE PROPERTY  d(ndio_33)  a a 0
+   TRACE PROPERTY  d(ndio_esd)  a a 0
+   TRACE PROPERTY  d(ndio_hvt)  a a 0
+   TRACE PROPERTY  d(ndio_lvt)  a a 0
+   TRACE PROPERTY  d(ndio_na)  a a 0
+   TRACE PROPERTY  d(ndio_na18)  a a 0
+   TRACE PROPERTY  d(ndio_na25)  a a 0
+   TRACE PROPERTY  d(ndio_na33)  a a 0
+   TRACE PROPERTY  d(ndio_ulvt)  a a 0
+   TRACE PROPERTY  d(ndio_uthvt)  a a 0
+   TRACE PROPERTY  d(ndio_w)  a a 0
+   TRACE PROPERTY  d(nwdio)  a a 0
+   TRACE PROPERTY  d(nwdio_18)  a a 0
+   TRACE PROPERTY  d(nwdio_25)  a a 0
+   TRACE PROPERTY  d(nwdio_33)  a a 0
+   TRACE PROPERTY  d(nwdio_w)  a a 0
+   TRACE PROPERTY  d(pdio)  a a 0
+   TRACE PROPERTY  d(pdio_18)  a a 0
+   TRACE PROPERTY  d(pdio_25)  a a 0
+   TRACE PROPERTY  d(pdio_25od)  a a 0
+   TRACE PROPERTY  d(pdio_33)  a a 0
+   TRACE PROPERTY  d(pdio_hvt)  a a 0
+   TRACE PROPERTY  d(pdio_lvt)  a a 0
+   TRACE PROPERTY  d(pdio_ulvt)  a a 0
+   TRACE PROPERTY  d(pdio_uthvt)  a a 0
+   TRACE PROPERTY  d(pdio_w)  a a 0
+   TRACE PROPERTY  crtmom  nv nv 0
+   TRACE PROPERTY  crtmom  nh nh 0
+   TRACE PROPERTY  crtmom  s s 0
+   TRACE PROPERTY  crtmom  w w 0
+   TRACE PROPERTY  crtmom  stm stm 0
+   TRACE PROPERTY  crtmom  spm spm 0
+   TRACE PROPERTY  crtmom  busflag busflag 0
+   TRACE PROPERTY  crtmom_mx  nv nv 0
+   TRACE PROPERTY  crtmom_mx  nh nh 0
+   TRACE PROPERTY  crtmom_mx  s s 0
+   TRACE PROPERTY  crtmom_mx  w w 0
+   TRACE PROPERTY  crtmom_mx  stm stm 0
+   TRACE PROPERTY  crtmom_mx  spm spm 0
+   TRACE PROPERTY  crtmom_mx  mf mf 0
+   TRACE PROPERTY  crtmom_mx  busflag busflag 0
+   TRACE PROPERTY  crtmom_rf  nv nv 0
+   TRACE PROPERTY  crtmom_rf  nh nh 0
+   TRACE PROPERTY  crtmom_rf  s s 0
+   TRACE PROPERTY  crtmom_rf  w w 0
+   TRACE PROPERTY  crtmom_rf  stm stm 0
+   TRACE PROPERTY  crtmom_rf  spm spm 0
+   TRACE PROPERTY  crtmom_rf  busflag busflag 0
+   TRACE PROPERTY  mimcap_2p0_sin_3t  lt lt 0
+   TRACE PROPERTY  mimcap_2p0_sin_3t  wt wt 0
+   TRACE PROPERTY  mimcap_2p0_sin_3t  lay lay 0
+   TRACE PROPERTY  mimcap_2p0_sin  lt lt 0
+   TRACE PROPERTY  mimcap_2p0_sin  wt wt 0
+   TRACE PROPERTY  mimcap_woum_2p0_sin_rf  lt lt 0
+   TRACE PROPERTY  mimcap_woum_2p0_sin_rf  wt wt 0
+   TRACE PROPERTY  mimcap_woum_2p0_sin_rf  lay lay 0
+   TRACE PROPERTY  mimcap_um_2p0_sin_rf  lt lt 0
+   TRACE PROPERTY  mimcap_um_2p0_sin_rf  wt wt 0
+   TRACE PROPERTY  moscap_rf  lr lr 0
+   TRACE PROPERTY  moscap_rf  wr wr 0
+   TRACE PROPERTY  moscap_rf  br br 0
+   TRACE PROPERTY  moscap_rf  gr gr 0
+   TRACE PROPERTY  moscap_rf18  lr lr 0
+   TRACE PROPERTY  moscap_rf18  wr wr 0
+   TRACE PROPERTY  moscap_rf18  br br 0
+   TRACE PROPERTY  moscap_rf18  gr gr 0
+   TRACE PROPERTY  moscap_rf18_nw  lr lr 0
+   TRACE PROPERTY  moscap_rf18_nw  wr wr 0
+   TRACE PROPERTY  moscap_rf18_nw  br br 0
+   TRACE PROPERTY  moscap_rf18_nw  gr gr 0
+   TRACE PROPERTY  moscap_rf25  lr lr 0
+   TRACE PROPERTY  moscap_rf25  wr wr 0
+   TRACE PROPERTY  moscap_rf25  br br 0
+   TRACE PROPERTY  moscap_rf25  gr gr 0
+   TRACE PROPERTY  moscap_rf25_nw  lr lr 0
+   TRACE PROPERTY  moscap_rf25_nw  wr wr 0
+   TRACE PROPERTY  moscap_rf25_nw  br br 0
+   TRACE PROPERTY  moscap_rf25_nw  gr gr 0
+   TRACE PROPERTY  moscap_rf33  lr lr 0
+   TRACE PROPERTY  moscap_rf33  wr wr 0
+   TRACE PROPERTY  moscap_rf33  br br 0
+   TRACE PROPERTY  moscap_rf33  gr gr 0
+   TRACE PROPERTY  moscap_rf33_nw  lr lr 0
+   TRACE PROPERTY  moscap_rf33_nw  wr wr 0
+   TRACE PROPERTY  moscap_rf33_nw  br br 0
+   TRACE PROPERTY  moscap_rf33_nw  gr gr 0
+   TRACE PROPERTY  moscap_rf_nw  lr lr 0
+   TRACE PROPERTY  moscap_rf_nw  wr wr 0
+   TRACE PROPERTY  moscap_rf_nw  br br 0
+   TRACE PROPERTY  moscap_rf_nw  gr gr 0
+   TRACE PROPERTY  nmos_rf  wr wr 0
+   TRACE PROPERTY  nmos_rf  lr lr 0
+   TRACE PROPERTY  nmos_rf  nr nr 0
+   TRACE PROPERTY  nmos_rf18  wr wr 0
+   TRACE PROPERTY  nmos_rf18  lr lr 0
+   TRACE PROPERTY  nmos_rf18  nr nr 0
+   TRACE PROPERTY  nmos_rf25  wr wr 0
+   TRACE PROPERTY  nmos_rf25  lr lr 0
+   TRACE PROPERTY  nmos_rf25  nr nr 0
+   TRACE PROPERTY  nmos_rf33  wr wr 0
+   TRACE PROPERTY  nmos_rf33  lr lr 0
+   TRACE PROPERTY  nmos_rf33  nr nr 0
+   TRACE PROPERTY  nmoscap  wr wr 0
+   TRACE PROPERTY  nmoscap  lr lr 0
+   TRACE PROPERTY  nmoscap_18  wr wr 0
+   TRACE PROPERTY  nmoscap_18  lr lr 0
+   TRACE PROPERTY  nmoscap_25  wr wr 0
+   TRACE PROPERTY  nmoscap_25  lr lr 0
+   TRACE PROPERTY  nmoscap_33  wr wr 0
+   TRACE PROPERTY  nmoscap_33  lr lr 0
+   TRACE PROPERTY  pmos_rf  wr wr 0
+   TRACE PROPERTY  pmos_rf  lr lr 0
+   TRACE PROPERTY  pmos_rf  nr nr 0
+   TRACE PROPERTY  pmos_rf18  wr wr 0
+   TRACE PROPERTY  pmos_rf18  lr lr 0
+   TRACE PROPERTY  pmos_rf18  nr nr 0
+   TRACE PROPERTY  pmos_rf25  wr wr 0
+   TRACE PROPERTY  pmos_rf25  lr lr 0
+   TRACE PROPERTY  pmos_rf25  nr nr 0
+   TRACE PROPERTY  pmos_rf33  wr wr 0
+   TRACE PROPERTY  pmos_rf33  lr lr 0
+   TRACE PROPERTY  pmos_rf33  nr nr 0
+   TRACE PROPERTY  rm1  w w 0
+   TRACE PROPERTY  rm1  l l 0
+   TRACE PROPERTY  rm10  w w 0
+   TRACE PROPERTY  rm10  l l 0
+   TRACE PROPERTY  rm2  w w 0
+   TRACE PROPERTY  rm2  l l 0
+   TRACE PROPERTY  rm3  w w 0
+   TRACE PROPERTY  rm3  l l 0
+   TRACE PROPERTY  rm4  w w 0
+   TRACE PROPERTY  rm4  l l 0
+   TRACE PROPERTY  rm5  w w 0
+   TRACE PROPERTY  rm5  l l 0
+   TRACE PROPERTY  rm6  w w 0
+   TRACE PROPERTY  rm6  l l 0
+   TRACE PROPERTY  rm7  w w 0
+   TRACE PROPERTY  rm7  l l 0
+   TRACE PROPERTY  rm8  w w 0
+   TRACE PROPERTY  rm8  l l 0
+   TRACE PROPERTY  rm9  w w 0
+   TRACE PROPERTY  rm9  l l 0
+   TRACE PROPERTY  rnodl  l l 0
+   TRACE PROPERTY  rnodl  w w 0
+   TRACE PROPERTY  rnodl_m  lr lr 0
+   TRACE PROPERTY  rnodl_m  wr wr 0
+   TRACE PROPERTY  rnods  l l 0
+   TRACE PROPERTY  rnods  w w 0
+   TRACE PROPERTY  rnods_m  lr lr 0
+   TRACE PROPERTY  rnods_m  wr wr 0
+   TRACE PROPERTY  rnodwo  l l 0
+   TRACE PROPERTY  rnodwo  w w 0
+   TRACE PROPERTY  rnodwo_m  lr lr 0
+   TRACE PROPERTY  rnodwo_m  wr wr 0
+   TRACE PROPERTY  rnpolyl  l l 0
+   TRACE PROPERTY  rnpolyl  w w 0
+   TRACE PROPERTY  rnpolyl_dis  l l 0
+   TRACE PROPERTY  rnpolyl_dis  w w 0
+   TRACE PROPERTY  rnpolys  l l 0
+   TRACE PROPERTY  rnpolys  w w 0
+   TRACE PROPERTY  rnpolys_dis  l l 0
+   TRACE PROPERTY  rnpolys_dis  w w 0
+   TRACE PROPERTY  rnpolywo  l l 0
+   TRACE PROPERTY  rnpolywo  w w 0
+   TRACE PROPERTY  rnpolywo_dis  l l 0
+   TRACE PROPERTY  rnpolywo_dis  w w 0
+   TRACE PROPERTY  rnwod  l l 0
+   TRACE PROPERTY  rnwod  w w 0
+   TRACE PROPERTY  rnwod_m  lr lr 0
+   TRACE PROPERTY  rnwod_m  wr wr 0
+   TRACE PROPERTY  rnwsti  l l 0
+   TRACE PROPERTY  rnwsti  w w 0
+   TRACE PROPERTY  rnwsti_m  lr lr 0
+   TRACE PROPERTY  rnwsti_m  wr wr 0
+   TRACE PROPERTY  rpodl  l l 0
+   TRACE PROPERTY  rpodl  w w 0
+   TRACE PROPERTY  rpodl_m  lr lr 0
+   TRACE PROPERTY  rpodl_m  wr wr 0
+   TRACE PROPERTY  rpods  l l 0
+   TRACE PROPERTY  rpods  w w 0
+   TRACE PROPERTY  rpods_m  lr lr 0
+   TRACE PROPERTY  rpods_m  wr wr 0
+   TRACE PROPERTY  rpodwo  l l 0
+   TRACE PROPERTY  rpodwo  w w 0
+   TRACE PROPERTY  rpodwo_m  lr lr 0
+   TRACE PROPERTY  rpodwo_m  wr wr 0
+   TRACE PROPERTY  rppolyl  l l 0
+   TRACE PROPERTY  rppolyl  w w 0
+   TRACE PROPERTY  rppolyl_dis  l l 0
+   TRACE PROPERTY  rppolyl_dis  w w 0
+   TRACE PROPERTY  rppolyl_rf  l l 0
+   TRACE PROPERTY  rppolyl_rf  w w 0
+   TRACE PROPERTY  rppolys  l l 0
+   TRACE PROPERTY  rppolys  w w 0
+   TRACE PROPERTY  rppolys_dis  l l 0
+   TRACE PROPERTY  rppolys_dis  w w 0
+   TRACE PROPERTY  rppolys_rf  l l 0
+   TRACE PROPERTY  rppolys_rf  w w 0
+   TRACE PROPERTY  rppolywo  l l 0
+   TRACE PROPERTY  rppolywo  w w 0
+   TRACE PROPERTY  rppolywo_dis  l l 0
+   TRACE PROPERTY  rppolywo_dis  w w 0
+   TRACE PROPERTY  rppolywo_rf  l l 0
+   TRACE PROPERTY  rppolywo_rf  w w 0
+   TRACE PROPERTY  sbd_rf  nf nf 0
+   TRACE PROPERTY  sbd_rf  w w 0
+   TRACE PROPERTY  sbd_rf  l l 0
+   TRACE PROPERTY  sbd_rf_nw  nf nf 0
+   TRACE PROPERTY  sbd_rf_nw  w w 0
+   TRACE PROPERTY  sbd_rf_nw  l l 0
+   TRACE PROPERTY  spiral_std  lay lay 0
+   TRACE PROPERTY  spiral_std  w w 0
+   TRACE PROPERTY  spiral_std  nr nr 0
+   TRACE PROPERTY  spiral_std  rad rad 0
+   TRACE PROPERTY  spiral_sym  lay lay 0
+   TRACE PROPERTY  spiral_sym  w w 0
+   TRACE PROPERTY  spiral_sym  nr nr 0
+   TRACE PROPERTY  spiral_sym  rad rad 0
+   TRACE PROPERTY  spiral_sym_ct  lay lay 0
+   TRACE PROPERTY  spiral_sym_ct  w w 0
+   TRACE PROPERTY  spiral_sym_ct  nr nr 0
+   TRACE PROPERTY  spiral_sym_ct  rad rad 0
+   TRACE PROPERTY  xjvar  w w 0
+   TRACE PROPERTY  xjvar  l l 0
+   TRACE PROPERTY  xjvar  nr nr 0
+   TRACE PROPERTY  xjvar_nw  w w 0
+   TRACE PROPERTY  xjvar_nw  l l 0
+   TRACE PROPERTY  xjvar_nw  nr nr 0
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of nets (see below).
+  Error:    Different numbers of instances (see below).
+  Error:    Connectivity errors.
+
+LAYOUT CELL NAME:         comparator_rail2rail_input_external_current
+SOURCE CELL NAME:         comparator_rail2rail_input_external_current
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              5         5
+
+ Nets:              81        14    *
+
+ Instances:         15        10    *    MN (4 pins)
+                    15        10    *    MP (4 pins)
+                     1         1         rppolywo (2 pins)
+                ------    ------
+ Total Inst:        31        21
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              5         5
+
+ Nets:              81        14    *
+
+ Instances:         15         9    *    MN (4 pins)
+                    15         9    *    MP (4 pins)
+                     1         1         rppolywo (2 pins)
+                     0         1    *    _invv (4 pins)
+                ------    ------
+ Total Inst:        31        20
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                                 INCORRECT OBJECTS
+**************************************************************************************************************
+
+
+LEGEND:
+-------
+
+  ne  = Naming Error (same layout name found in source
+        circuit, but object was matched otherwise).
+
+
+**************************************************************************************************************
+                                   INCORRECT NETS
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+  1    Net VDD                                                   VDD
+       --------------------------                                --------------------------
+       
+       ** missing connection **                                  (_invv):sup1
+                                                                   MM14:b
+                                                                   MM14:s
+       
+       
+       ** missing connection **                                  MM2:b
+       ** missing connection **                                  MM3:b
+       ** missing connection **                                  MM12:b
+       ** missing connection **                                  MM12:s
+       ** missing connection **                                  MM16:b
+       ** missing connection **                                  MM16:s
+       ** missing connection **                                  MM19:b
+       ** missing connection **                                  MM19:s
+       ** missing connection **                                  MM7:b
+       ** missing connection **                                  MM7:s
+       ** missing connection **                                  MM9:b
+       ** missing connection **                                  MM9:s
+       ** missing connection **                                  MM6:b
+       ** missing connection **                                  MM6:s
+       ** missing connection **                                  MM8:b
+       ** missing connection **                                  MM8:s
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  2    Net GND                                                   GND
+       --------------------------                                --------------------------
+       
+       M0(48.070,20.955):s                                       ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_invv):sup2
+                                                                   MM15:b
+                                                                   MM15:s
+       
+       
+       ** missing connection **                                  MM0:b
+       ** missing connection **                                  MM1:b
+       ** missing connection **                                  MM4:b
+       ** missing connection **                                  MM5:b
+       ** missing connection **                                  MM10:b
+       ** missing connection **                                  MM11:b
+       ** missing connection **                                  MM13:b
+       ** missing connection **                                  MM17:b
+       ** missing connection **                                  MM18:b
+       
+       X28/M0(21.320,1.955):s                                    ** unmatched connection **
+       X27/M0(19.330,1.955):s                                    ** unmatched connection **
+       X22/M0(9.380,1.955):s                                     ** unmatched connection **
+       X21/M0(7.390,1.955):s                                     ** unmatched connection **
+       X15/M0(23.310,1.960):s                                    ** unmatched connection **
+       X4/M0(45.080,19.905):s                                    ** unmatched connection **
+       X3/M0(42.090,19.905):s                                    ** unmatched connection **
+       X24/M0(13.360,1.955):s                                    ** unmatched connection **
+       X23/M0(11.370,1.955):s                                    ** unmatched connection **
+       X26/M0(17.340,1.955):s                                    ** unmatched connection **
+       X25/M0(15.350,1.955):s                                    ** unmatched connection **
+       
+       ** unmatched connection **                                MM4:s
+       ** unmatched connection **                                MM5:s
+       ** unmatched connection **                                MM10:s
+       ** unmatched connection **                                MM11:s
+       ** unmatched connection **                                MM13:s
+       ** unmatched connection **                                MM17:s
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  3    Net OUT                                                   OUT
+       --------------------------                                --------------------------
+       
+       M1(49.280,25.305):d                                       ** missing connection **
+       M0(48.070,20.955):d                                       ** missing connection **
+       
+       
+       
+       ** missing connection **                                  (_invv):out
+                                                                   MM15:d
+                                                                   MM14:d
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  4    Net REF                                                   REF
+       --------------------------                                --------------------------
+       
+       ** missing connection **                                  MM3:g
+       ** missing connection **                                  MM1:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  5    Net IN                                                    IN
+       --------------------------                                --------------------------
+       
+       ** missing connection **                                  MM2:g
+       ** missing connection **                                  MM0:g
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  6    Net 22                                                    net45
+       --------------------------                                --------------------------
+       
+       ** missing connection **                                  MM2:s
+       ** missing connection **                                  MM3:s
+       
+       X30/M0(10.950,25.305):d                                   ** unmatched connection **
+       X6/M0(43.050,25.305):s                                    ** unmatched connection **
+       X5/M0(36.650,25.305):s                                    ** unmatched connection **
+       
+       ** unmatched connection **                                MM19:d
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  7    Net 27                                                    ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+  8    Net 30                                                    ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+  9    Net 28                                                    ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 10    Net 3                                                     ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 11    Net 31                                                    ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 12    Net 10                                                    ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 13    Net 18                                                    ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 14    Net 9                                                     ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 15    Net 20                                                    ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 16    Net 25                                                    ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 17    Net 5                                                     ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 18    Net 6                                                     ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 19    Net 7                                                     ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 20    Net 8                                                     ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 21    Net 11                                                    ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 22    Net 12                                                    ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 23    Net 13                                                    ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 24    Net 14                                                    ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 25    Net 15                                                    ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 26    Net 21                                                    ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 27    Net X3/5                                                  ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 28    Net X4/5                                                  ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 29    Net X5/5                                                  ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 30    Net X5/6                                                  ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 31    Net X6/5                                                  ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 32    Net X6/6                                                  ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 33    Net X7/5                                                  ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 34    Net X8/5                                                  ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 35    Net X9/5                                                  ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 36    Net X9/4                                                  ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 37    Net X9/6                                                  ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 38    Net X10/5                                                 ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 39    Net X10/4                                                 ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 40    Net X10/6                                                 ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 41    Net X11/5                                                 ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 42    Net X11/4                                                 ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 43    Net X11/6                                                 ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 44    Net X12/5                                                 ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 45    Net X12/4                                                 ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 46    Net X12/6                                                 ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 47    Net X13/5                                                 ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 48    Net X13/4                                                 ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 49    Net X13/6                                                 ** no similar net **
+
+--------------------------------------------------------------------------------------------------------------
+
+ 50    Net X14/5                                                 ** no similar net **
+
+
+**************************************************************************************************************
+                                 INCORRECT INSTANCES
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+ 51    ** missing injected instance **                           (_invv)
+
+                                                                 Devices: 
+                                                                   MM14  MP(PCH)
+                                                                   MM15  MN(NCH)
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               5          5            0            0
+
+   Nets:                7          7           74            7
+
+   Instances:           1          1           14            8    MN(NCH)
+                        0          0           15            9    MP(PCH)
+                        1          1            0            0    rppolywo
+                        0          0            0            1    _invv
+                  -------    -------    ---------    ---------
+   Total Inst:          2          2           29           18
+
+
+o Statistics:
+
+   3 passthrough layout nets were found.
+
+
+o Passthrough Layout Nets And Their Ports:
+
+      (Layout nets which are connected only to ports).
+
+   VDD (port: VDD), IN (port: IN), REF (port: REF),
+
+
+o Initial Correspondence Points:
+
+   Ports:        VDD GND OUT REF IN
+
+
+**************************************************************************************************************
+                             DETAILED INSTANCE CONNECTIONS
+
+       LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+          (This section contains detailed information about connections of
+           matched instances that are involved in net discrepancies).
+
+--------------------------------------------------------------------------------------------------------------
+
+       X16/M0(26.300,1.960)  MN(NCH)                             MM18  MN(NCH)
+         s: GND                                                    s: GND
+         d: 4                                                      d: net30
+         g: X16/5                                                  ** no similar net **
+         b: 30                                                     ** no similar net **
+         ** no similar net **                                      g: net07
+         ** GND **                                                 b: GND
+
+
+
+**************************************************************************************************************
+                                  UNMATCHED OBJECTS
+       LAYOUT                                                    SOURCE
+**************************************************************************************************************
+
+       X25/M0(15.350,1.955)  MN(NCH)                             ** unmatched instance **
+       X26/M0(17.340,1.955)  MN(NCH)                             ** unmatched instance **
+       X23/M0(11.370,1.955)  MN(NCH)                             ** unmatched instance **
+       X24/M0(13.360,1.955)  MN(NCH)                             ** unmatched instance **
+       X3/M0(42.090,19.905)  MN(NCH)                             ** unmatched instance **
+       X4/M0(45.080,19.905)  MN(NCH)                             ** unmatched instance **
+       M0(48.070,20.955)  MN(NCH)                                ** unmatched instance **
+       M1(49.280,25.305)  MP(PCH)                                ** unmatched instance **
+       X5/M0(36.650,25.305)  MP(PCH)                             ** unmatched instance **
+       X6/M0(43.050,25.305)  MP(PCH)                             ** unmatched instance **
+       X7/M0(29.700,1.955)  MN(NCH)                              ** unmatched instance **
+       X8/M0(36.100,1.955)  MN(NCH)                              ** unmatched instance **
+       X9/M0(14.180,25.305)  MP(PCH)                             ** unmatched instance **
+       X10/M0(16.410,25.305)  MP(PCH)                            ** unmatched instance **
+       X11/M0(27.560,25.305)  MP(PCH)                            ** unmatched instance **
+       X12/M0(29.790,25.305)  MP(PCH)                            ** unmatched instance **
+       X13/M0(32.020,25.305)  MP(PCH)                            ** unmatched instance **
+       X14/M0(34.250,25.305)  MP(PCH)                            ** unmatched instance **
+       X15/M0(23.310,1.960)  MN(NCH)                             ** unmatched instance **
+       X17/M0(18.640,25.005)  MP(PCH)                            ** unmatched instance **
+       X18/M0(20.870,25.005)  MP(PCH)                            ** unmatched instance **
+       X19/M0(23.100,25.005)  MP(PCH)                            ** unmatched instance **
+       X20/M0(25.330,25.005)  MP(PCH)                            ** unmatched instance **
+       X21/M0(7.390,1.955)  MN(NCH)                              ** unmatched instance **
+       X22/M0(9.380,1.955)  MN(NCH)                              ** unmatched instance **
+       X27/M0(19.330,1.955)  MN(NCH)                             ** unmatched instance **
+       X28/M0(21.320,1.955)  MN(NCH)                             ** unmatched instance **
+       X29/M0(7.720,25.305)  MP(PCH)                             ** unmatched instance **
+       X30/M0(10.950,25.305)  MP(PCH)                            ** unmatched instance **
+
+       ** unmatched instance **                                  MM8  MP(PCH)
+       ** unmatched instance **                                  MM6  MP(PCH)
+       ** unmatched instance **                                  MM9  MP(PCH)
+       ** unmatched instance **                                  MM7  MP(PCH)
+       ** unmatched instance **                                  MM17  MN(NCH)
+       ** unmatched instance **                                  MM13  MN(NCH)
+       ** unmatched instance **                                  MM11  MN(NCH)
+       ** unmatched instance **                                  MM10  MN(NCH)
+       ** unmatched instance **                                  MM5  MN(NCH)
+       ** unmatched instance **                                  MM4  MN(NCH)
+       ** unmatched instance **                                  MM1  MN(NCH)
+       ** unmatched instance **                                  MM0  MN(NCH)
+       ** unmatched instance **                                  MM19  MP(PCH)
+       ** unmatched instance **                                  MM16  MP(PCH)
+       ** unmatched instance **                                  MM12  MP(PCH)
+       ** unmatched instance **                                  MM3  MP(PCH)
+       ** unmatched instance **                                  MM2  MP(PCH)
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      0 sec
+Total Elapsed Time:  1 sec

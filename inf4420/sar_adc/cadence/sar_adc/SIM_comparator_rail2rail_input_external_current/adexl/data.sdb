@@ -2,22 +2,7 @@
 <setupdb version="5">data
 	<active>Active Setup
 		<corners>
-			<corner enabled="0">_default</corner>
-			<corner enabled="1">C2
-				<vars>
-					<var>temperature
-						<value>-25 0 25 100</value>
-					</var>
-				</vars>
-				<models>
-					<model enabled="1">crn90lp_2d5_lk_v1d2.scs
-						<modelfile>/projects/nanos/design_kit/TSMC90nmLPRF_616OA/models/spectre/crn90lp_2d5_lk_v1d2.scs</modelfile>
-						<modelsection>"tt" "ss" "ff" "sf" "fs"</modelsection>
-						<modeltest>All</modeltest>
-						<modelblock>Global</modelblock>
-					</model>
-				</models>
-			</corner>
+			<corner enabled="1">_default</corner>
 		</corners>
 		<currentmode>Single Run, Sweeps and Corners</currentmode>
 		<extensions>
@@ -29,14 +14,14 @@
 		</extensions>
 		<overwritehistory>0</overwritehistory>
 		<tests>
-			<test enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1
+			<test>sar_adc:SIM_comparator_rail2rail_input_external_current:1
 				<tool>ADE</tool>
 				<tooloptions>
 					<option>cell
 						<value>SIM_comparator_rail2rail_input_external_current</value>
 					</option>
 					<option>lib
-						<value>sar</value>
+						<value>sar_adc</value>
 					</option>
 					<option>sim
 						<value>spectre</value>
@@ -48,7 +33,7 @@
 						<value>$AXL_SETUPDB_DIR/test_states</value>
 					</option>
 					<option>state
-						<value>sar:SIM_comparator_rail2rail_input_external_current:1_active</value>
+						<value>sar_adc:SIM_comparator_rail2rail_input_external_current:1_active</value>
 					</option>
 				</tooloptions>
 				<origoptions>
@@ -56,7 +41,7 @@
 						<value>SIM_comparator_rail2rail_input_external_current</value>
 					</option>
 					<option>lib
-						<value>sar</value>
+						<value>sar_adc</value>
 					</option>
 					<option>sim
 						<value>spectre</value>
@@ -68,34 +53,28 @@
 			</test>
 		</tests>
 		<vars>
-			<var>vin_ac
-				<value>0.6</value>
+			<var>freq_in
+				<value>10k</value>
 				<dependentTests>
-					<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
+					<dependentTest omitted="0">sar_adc:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>v_ref
+				<value>{From/To}Linear:100m:100m:1100m{From/To}</value>
+				<dependentTests>
+					<dependentTest omitted="0">sar_adc:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>vin_ac
+				<value>600m</value>
+				<dependentTests>
+					<dependentTest omitted="0">sar_adc:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
 				</dependentTests>
 			</var>
 			<var>vin_dc
-				<value>0.6</value>
+				<value>600m</value>
 				<dependentTests>
-					<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-				</dependentTests>
-			</var>
-			<var>freq_in
-				<value>{Inclusion List}8M{Inclusion List}</value>
-				<dependentTests>
-					<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-				</dependentTests>
-			</var>
-			<var enabled="0">v_ref
-				<value>{From/To}Linear:0.4:0.2:0.8{From/To}</value>
-				<dependentTests>
-					<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-				</dependentTests>
-			</var>
-			<var enabled="0">vbias_current
-				<value>{From/To}Linear:0.8:0.05:1.2{From/To}</value>
-				<dependentTests>
-					<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
+					<dependentTest omitted="0">sar_adc:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
 				</dependentTests>
 			</var>
 		</vars>
@@ -108,12 +87,12 @@
 				<value>no</value>
 			</plottingoption>
 			<plottingoption>waveformtemplate
-				<value></value>
+				<value>                            </value>
 			</plottingoption>
 		</plottingoptions>
 	</active>
 	<history>History
-		<historyentry>Interactive.8
+		<historyentry>Interactive.0
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -128,14 +107,14 @@
 				</extensions>
 				<overwritehistory>0</overwritehistory>
 				<tests>
-					<test>sar:SIM_comparator_rail2rail_input_external_current:1
+					<test>sar_adc:SIM_comparator_rail2rail_input_external_current:1
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
 								<value>SIM_comparator_rail2rail_input_external_current</value>
 							</option>
 							<option>lib
-								<value>sar</value>
+								<value>sar_adc</value>
 							</option>
 							<option>sim
 								<value>spectre</value>
@@ -147,7 +126,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>sar:SIM_comparator_rail2rail_input_external_current:1_none_Interactive.8</value>
+								<value>sar_adc:SIM_comparator_rail2rail_input_external_current:1_none_Interactive.0</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -155,7 +134,7 @@
 								<value>SIM_comparator_rail2rail_input_external_current</value>
 							</option>
 							<option>lib
-								<value>sar</value>
+								<value>sar_adc</value>
 							</option>
 							<option>sim
 								<value>spectre</value>
@@ -167,154 +146,28 @@
 					</test>
 				</tests>
 				<vars>
-					<var>vin_ac
-						<value>0.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vin_dc
-						<value>0.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
 					<var>freq_in
 						<value>10k</value>
 						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
+							<dependentTest omitted="0">sar_adc:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
 						</dependentTests>
 					</var>
-					<var enabled="0">v_ref
-						<value>{From/To}Linear:0:0.05:1.2{From/To}</value>
+					<var>v_ref
+						<value>{From/To}Linear:100m:100m:1100m{From/To}</value>
 						<dependentTests>
-							<dependentTest enabled="0">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
+							<dependentTest omitted="0">sar_adc:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
 						</dependentTests>
 					</var>
-					<var>vbias_current
-						<value>{From/To}Linear:0.8:0.05:1.2{From/To}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Thu Apr 7 17:36:03 2016</timestamp>
-			<resultsname>/ifi/bifrost/m00/eanilse/work/github/inf4420_priv/cadence/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.8.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.8.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vetur.ifi.uio.no_eanilse_173603371</localpsfdir>
-			<psfdir>/ifi/bifrost/m00/eanilse/simulation/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.8</psfdir>
-			<simdir>$AXL_PROJECT_DIR/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.8</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/ifi/bifrost/m00/eanilse/work/github/inf4420_priv/cadence/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.8.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.8.log</runlogfile>
-			<schematicpoint>
-				<vars>
-					<var>vbias_current
-						<value></value>
-					</var>
-				</vars>
-			</schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.9
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>sar:SIM_comparator_rail2rail_input_external_current:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>SIM_comparator_rail2rail_input_external_current</value>
-							</option>
-							<option>lib
-								<value>sar</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>sar:SIM_comparator_rail2rail_input_external_current:1_none_Interactive.9</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>SIM_comparator_rail2rail_input_external_current</value>
-							</option>
-							<option>lib
-								<value>sar</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
 					<var>vin_ac
-						<value>0.6</value>
+						<value>600m</value>
 						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
+							<dependentTest omitted="0">sar_adc:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
 						</dependentTests>
 					</var>
 					<var>vin_dc
-						<value>0.6</value>
+						<value>600m</value>
 						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>freq_in
-						<value>10k</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">v_ref
-						<value>{From/To}Linear:0:0.05:1.2{From/To}</value>
-						<dependentTests>
-							<dependentTest enabled="0">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vbias_current
-						<value>{From/To}Linear:0.8:0.05:1.2{From/To}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
+							<dependentTest omitted="0">sar_adc:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -327,1008 +180,31 @@
 						<value>no</value>
 					</plottingoption>
 					<plottingoption>waveformtemplate
-						<value></value>
+						<value>                            </value>
 					</plottingoption>
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Thu Apr 7 17:39:05 2016</timestamp>
-			<resultsname>/ifi/bifrost/m00/eanilse/work/github/inf4420_priv/cadence/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.9.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.9.rdb</simresults>
+			<timestamp>Tue Apr 26 17:03:13 2016
+</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.0.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vetur.ifi.uio.no_eanilse_173905039</localpsfdir>
-			<psfdir>/ifi/bifrost/m00/eanilse/simulation/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.9</psfdir>
-			<simdir>$AXL_PROJECT_DIR/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.9</simdir>
+			<localpsfdir>/tmp/vor.ifi.uio.no_vegardmi_170313771</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.0</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.0</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/ifi/bifrost/m00/eanilse/work/github/inf4420_priv/cadence/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.9.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.9.log</runlogfile>
-			<schematicpoint>
-				<vars>
-					<var>vbias_current
-						<value></value>
-					</var>
-				</vars>
-			</schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.10
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>sar:SIM_comparator_rail2rail_input_external_current:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>SIM_comparator_rail2rail_input_external_current</value>
-							</option>
-							<option>lib
-								<value>sar</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>sar:SIM_comparator_rail2rail_input_external_current:1_none_Interactive.10</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>SIM_comparator_rail2rail_input_external_current</value>
-							</option>
-							<option>lib
-								<value>sar</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>vin_ac
-						<value>0.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vin_dc
-						<value>0.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>freq_in
-						<value>10k</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="1">v_ref
-						<value>{From/To}Linear:0:0.05:1.2{From/To}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">vbias_current
-						<value>{From/To}Linear:0.8:0.05:1.2{From/To}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Thu Apr 7 18:02:04 2016</timestamp>
-			<resultsname>/ifi/bifrost/m00/eanilse/work/github/inf4420_priv/cadence/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.10.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.10.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vetur.ifi.uio.no_eanilse_180204461</localpsfdir>
-			<psfdir>/ifi/bifrost/m00/eanilse/simulation/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.10</psfdir>
-			<simdir>$AXL_PROJECT_DIR/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.10</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/ifi/bifrost/m00/eanilse/work/github/inf4420_priv/cadence/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.10.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.10.log</runlogfile>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.0.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.0.log</runlogfile>
 			<schematicpoint>
 				<vars>
 					<var>v_ref
-						<value>0.6</value>
+						<value></value>
 					</var>
 				</vars>
 			</schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.11
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>sar:SIM_comparator_rail2rail_input_external_current:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>SIM_comparator_rail2rail_input_external_current</value>
-							</option>
-							<option>lib
-								<value>sar</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>sar:SIM_comparator_rail2rail_input_external_current:1_none_Interactive.11</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>SIM_comparator_rail2rail_input_external_current</value>
-							</option>
-							<option>lib
-								<value>sar</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>vin_ac
-						<value>0.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vin_dc
-						<value>0.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>freq_in
-						<value>10k</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="1">v_ref
-						<value>{From/To}Linear:0:0.05:1.2{From/To}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">vbias_current
-						<value>{From/To}Linear:0.8:0.05:1.2{From/To}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Thu Apr 7 18:02:11 2016</timestamp>
-			<resultsname>/ifi/bifrost/m00/eanilse/work/github/inf4420_priv/cadence/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.11.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.11.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vetur.ifi.uio.no_eanilse_180211479</localpsfdir>
-			<psfdir>/ifi/bifrost/m00/eanilse/simulation/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.11</psfdir>
-			<simdir>$AXL_PROJECT_DIR/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.11</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/ifi/bifrost/m00/eanilse/work/github/inf4420_priv/cadence/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.11.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.11.log</runlogfile>
-			<schematicpoint>
-				<vars>
-					<var>v_ref
-						<value>0.6</value>
-					</var>
-				</vars>
-			</schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.12
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>sar:SIM_comparator_rail2rail_input_external_current:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>SIM_comparator_rail2rail_input_external_current</value>
-							</option>
-							<option>lib
-								<value>sar</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>sar:SIM_comparator_rail2rail_input_external_current:1_none_Interactive.12</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>SIM_comparator_rail2rail_input_external_current</value>
-							</option>
-							<option>lib
-								<value>sar</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>vin_ac
-						<value>0.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vin_dc
-						<value>0.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>freq_in
-						<value>10k</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="1">v_ref
-						<value>{From/To}Linear:0.1:0.1:1.1{From/To}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">vbias_current
-						<value>{From/To}Linear:0.8:0.05:1.2{From/To}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Thu Apr 7 18:02:49 2016</timestamp>
-			<resultsname>/ifi/bifrost/m00/eanilse/work/github/inf4420_priv/cadence/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.12.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.12.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vetur.ifi.uio.no_eanilse_180249990</localpsfdir>
-			<psfdir>/ifi/bifrost/m00/eanilse/simulation/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.12</psfdir>
-			<simdir>$AXL_PROJECT_DIR/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.12</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/ifi/bifrost/m00/eanilse/work/github/inf4420_priv/cadence/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.12.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.12.log</runlogfile>
-			<schematicpoint>
-				<vars>
-					<var>v_ref
-						<value>0.6</value>
-					</var>
-				</vars>
-			</schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.13
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>sar:SIM_comparator_rail2rail_input_external_current:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>SIM_comparator_rail2rail_input_external_current</value>
-							</option>
-							<option>lib
-								<value>sar</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>sar:SIM_comparator_rail2rail_input_external_current:1_none_Interactive.13</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>SIM_comparator_rail2rail_input_external_current</value>
-							</option>
-							<option>lib
-								<value>sar</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>vin_ac
-						<value>0.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vin_dc
-						<value>0.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>freq_in
-						<value>{Inclusion List}8M{Inclusion List}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="1">v_ref
-						<value>{From/To}Auto:0.1:3:1.1{From/To}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">vbias_current
-						<value>{From/To}Linear:0.8:0.05:1.2{From/To}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Thu Apr 7 18:07:46 2016</timestamp>
-			<resultsname>/ifi/bifrost/m00/eanilse/work/github/inf4420_priv/cadence/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.13.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.13.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vetur.ifi.uio.no_eanilse_180746314</localpsfdir>
-			<psfdir>/ifi/bifrost/m00/eanilse/simulation/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.13</psfdir>
-			<simdir>$AXL_PROJECT_DIR/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.13</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/ifi/bifrost/m00/eanilse/work/github/inf4420_priv/cadence/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.13.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.13.log</runlogfile>
-			<schematicpoint>
-				<vars>
-					<var>v_ref
-						<value>0.6</value>
-					</var>
-				</vars>
-			</schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.14
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>sar:SIM_comparator_rail2rail_input_external_current:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>SIM_comparator_rail2rail_input_external_current</value>
-							</option>
-							<option>lib
-								<value>sar</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>sar:SIM_comparator_rail2rail_input_external_current:1_none_Interactive.14</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>SIM_comparator_rail2rail_input_external_current</value>
-							</option>
-							<option>lib
-								<value>sar</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>vin_ac
-						<value>0.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vin_dc
-						<value>0.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>freq_in
-						<value>{Inclusion List}8M{Inclusion List}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="1">v_ref
-						<value>{From/To}Auto:0.1:3:1.1{From/To}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">vbias_current
-						<value>{From/To}Linear:0.8:0.05:1.2{From/To}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Thu Apr 7 18:09:29 2016</timestamp>
-			<resultsname>/ifi/bifrost/m00/eanilse/work/github/inf4420_priv/cadence/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.14.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.14.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vetur.ifi.uio.no_eanilse_180929409</localpsfdir>
-			<psfdir>/ifi/bifrost/m00/eanilse/simulation/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.14</psfdir>
-			<simdir>$AXL_PROJECT_DIR/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.14</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/ifi/bifrost/m00/eanilse/work/github/inf4420_priv/cadence/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.14.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.14.log</runlogfile>
-			<schematicpoint>
-				<vars>
-					<var>v_ref
-						<value>0.6</value>
-					</var>
-				</vars>
-			</schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.15
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>sar:SIM_comparator_rail2rail_input_external_current:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>SIM_comparator_rail2rail_input_external_current</value>
-							</option>
-							<option>lib
-								<value>sar</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>sar:SIM_comparator_rail2rail_input_external_current:1_none_Interactive.15</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>SIM_comparator_rail2rail_input_external_current</value>
-							</option>
-							<option>lib
-								<value>sar</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>vin_ac
-						<value>0.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vin_dc
-						<value>0.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>freq_in
-						<value>{Inclusion List}8M{Inclusion List}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="1">v_ref
-						<value>{From/To}Linear:0.4:0.2:0.8{From/To}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">vbias_current
-						<value>{From/To}Linear:0.8:0.05:1.2{From/To}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Thu Apr 7 18:13:29 2016</timestamp>
-			<resultsname>/ifi/bifrost/m00/eanilse/work/github/inf4420_priv/cadence/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.15.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.15.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vetur.ifi.uio.no_eanilse_181329183</localpsfdir>
-			<psfdir>/ifi/bifrost/m00/eanilse/simulation/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.15</psfdir>
-			<simdir>$AXL_PROJECT_DIR/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.15</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/ifi/bifrost/m00/eanilse/work/github/inf4420_priv/cadence/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.15.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.15.log</runlogfile>
-			<schematicpoint>
-				<vars>
-					<var>v_ref
-						<value>0.6</value>
-					</var>
-				</vars>
-			</schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.16
-			<checkpoint>
-				<corners>
-					<corner enabled="0">_default</corner>
-					<corner enabled="1">C2
-						<vars>
-							<var>temperature
-								<value>-25 0 25 100</value>
-							</var>
-						</vars>
-						<models>
-							<model enabled="1">crn90lp_2d5_lk_v1d2.scs
-								<modelfile>/projects/nanos/design_kit/TSMC90nmLPRF_616OA/models/spectre/crn90lp_2d5_lk_v1d2.scs</modelfile>
-								<modelsection>"tt" "ss" "ff" "sf" "fs"</modelsection>
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-							</model>
-						</models>
-					</corner>
-				</corners>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>SIM_comparator_rail2rail_input_external_current</value>
-							</option>
-							<option>lib
-								<value>sar</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>sar:SIM_comparator_rail2rail_input_external_current:1_none_Interactive.16</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>SIM_comparator_rail2rail_input_external_current</value>
-							</option>
-							<option>lib
-								<value>sar</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>vin_ac
-						<value>0.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vin_dc
-						<value>0.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>freq_in
-						<value>{Inclusion List}8M{Inclusion List}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">v_ref
-						<value>{From/To}Linear:0.4:0.2:0.8{From/To}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">vbias_current
-						<value>{From/To}Linear:0.8:0.05:1.2{From/To}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Thu Apr 7 18:59:47 2016</timestamp>
-			<resultsname>/ifi/bifrost/m00/eanilse/work/github/inf4420_priv/cadence/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.16.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.16.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vetur.ifi.uio.no_eanilse_185947134</localpsfdir>
-			<psfdir>/ifi/bifrost/m00/eanilse/simulation/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.16</psfdir>
-			<simdir>$AXL_PROJECT_DIR/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.16</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/ifi/bifrost/m00/eanilse/work/github/inf4420_priv/cadence/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.16.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.16.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.17
-			<checkpoint>
-				<corners>
-					<corner enabled="0">_default</corner>
-					<corner enabled="1">C2
-						<vars>
-							<var>temperature
-								<value>-25 0 25 100</value>
-							</var>
-						</vars>
-						<models>
-							<model enabled="1">crn90lp_2d5_lk_v1d2.scs
-								<modelfile>/projects/nanos/design_kit/TSMC90nmLPRF_616OA/models/spectre/crn90lp_2d5_lk_v1d2.scs</modelfile>
-								<modelsection>"tt" "ss" "ff" "sf" "fs"</modelsection>
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-							</model>
-						</models>
-					</corner>
-				</corners>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>SIM_comparator_rail2rail_input_external_current</value>
-							</option>
-							<option>lib
-								<value>sar</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>sar:SIM_comparator_rail2rail_input_external_current:1_none_Interactive.17</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>SIM_comparator_rail2rail_input_external_current</value>
-							</option>
-							<option>lib
-								<value>sar</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var>vin_ac
-						<value>0.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>vin_dc
-						<value>0.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>freq_in
-						<value>{Inclusion List}8M{Inclusion List}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">v_ref
-						<value>{From/To}Linear:0.4:0.2:0.8{From/To}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">vbias_current
-						<value>{From/To}Linear:0.8:0.05:1.2{From/To}</value>
-						<dependentTests>
-							<dependentTest enabled="1">sar:SIM_comparator_rail2rail_input_external_current:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Thu Apr 7 19:01:08 2016</timestamp>
-			<resultsname>/ifi/bifrost/m00/eanilse/work/github/inf4420_priv/cadence/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.17.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.17.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vetur.ifi.uio.no_eanilse_190108427</localpsfdir>
-			<psfdir>/ifi/bifrost/m00/eanilse/simulation/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.17</psfdir>
-			<simdir>$AXL_PROJECT_DIR/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.17</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/ifi/bifrost/m00/eanilse/work/github/inf4420_priv/cadence/sar/SIM_comparator_rail2rail_input_external_current/adexl/results/data/Interactive.17.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.17.log</runlogfile>
-			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
 	</history>
