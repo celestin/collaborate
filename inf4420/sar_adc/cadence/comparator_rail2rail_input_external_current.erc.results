@@ -1,151 +1,25 @@
 comparator_rail2rail_input_external_current 1000
 mnpg
-0 0 2 Apr 26 22:26:48 2016                                                      
+0 0 2 Apr 27 18:40:55 2016                                                      
 Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
 MOS connected to both power and ground
 mppg
-0 0 2 Apr 26 22:26:48 2016                                                      
+0 0 2 Apr 27 18:40:55 2016                                                      
 Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
 MOS connected to both power and ground
 floating.nxwell_float
-5 5 2 Apr 26 22:26:48 2016                                                      
+0 0 2 Apr 27 18:40:55 2016                                                      
 Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
 Floating nxwell_float is not allowed
-p 1 4
-CN comparator_rail2rail_input_external_current c 1 0 0 1 0 0
-48830 25085
-50230 25085
-50230 27525
-48830 27525
-p 2 4
-CN pch_mac_CDNS_461702396345 c 1 0 0 1 7720 25305
--450 -220
-2450 -220
-2450 20220
--450 20220
-p 3 4
-CN pch_mac_CDNS_4617023963410 c 1 0 0 1 18640 25005
--450 -220
-1450 -220
-1450 20520
--450 20520
-p 4 4
-CN pch_mac_CDNS_461702396343 c 1 0 0 1 14180 25305
--450 -220
-1450 -220
-1450 20220
--450 20220
-p 5 4
-CN pch_mac_CDNS_461702396342 c 1 0 0 1 36650 25305
--450 -220
-5450 -220
-5450 20220
--450 20220
 floating.psub
-1 1 2 Apr 26 22:26:48 2016                                                      
+0 0 2 Apr 27 18:40:55 2016                                                      
 Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
 Floating psub is not allowed
-p 1 94
-CN comparator_rail2rail_input_external_current c 1 0 0 1 0 0
-910 610
-54220 610
-54220 46725
-50230 46725
-50230 25085
-48830 25085
-48830 27525
-50230 27525
-50230 46725
-48500 46725
-48500 25085
-42600 25085
-42600 45525
-48500 45525
-48500 46725
-42100 46725
-42100 25085
-36200 25085
-36200 45525
-42100 45525
-42100 46725
-35700 46725
-35700 25085
-33800 25085
-33800 45525
-35700 45525
-35700 46725
-33470 46725
-33470 25085
-31570 25085
-31570 45525
-33470 45525
-33470 46725
-31240 46725
-31240 25085
-29340 25085
-29340 45525
-31240 45525
-31240 46725
-29010 46725
-29010 25085
-27110 25085
-27110 45525
-29010 45525
-29010 46725
-26780 46725
-26780 24785
-24880 24785
-24880 45525
-26780 45525
-26780 46725
-24550 46725
-24550 24785
-22650 24785
-22650 45525
-24550 45525
-24550 46725
-22320 46725
-22320 24785
-20420 24785
-20420 45525
-22320 45525
-22320 46725
-20090 46725
-20090 24785
-18190 24785
-18190 45525
-20090 45525
-20090 46725
-17860 46725
-17860 25085
-15960 25085
-15960 45525
-17860 45525
-17860 46725
-15630 46725
-15630 25085
-13730 25085
-13730 45525
-15630 45525
-15630 46725
-13400 46725
-13400 25085
-10500 25085
-10500 45525
-13400 45525
-13400 46725
-10170 46725
-10170 25085
-7270 25085
-7270 45525
-10170 45525
-10170 46725
-910 46725
 npvss49
-0 0 2 Apr 26 22:26:48 2016                                                      
+0 0 2 Apr 27 18:40:55 2016                                                      
 Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
 ntap connected to GROUND
 ppvdd49
-0 0 2 Apr 26 22:26:48 2016                                                      
+0 0 2 Apr 27 18:40:55 2016                                                      
 Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
 ptap connected to POWER

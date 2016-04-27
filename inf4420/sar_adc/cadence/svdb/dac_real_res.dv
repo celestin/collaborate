@@ -2,5 +2,5 @@
 # FILE: svdb/dac_real_res.dv
 dv_start matched                                  
 dv_cell {dac_real_res} {dac_real_res} matched
-dv_obj_count -transformed_nets {26 26} -transformed_inst {24 24} -transformed_port {11 11}
+dv_obj_count -transformed_nets {34 34} -transformed_inst {48 48} -transformed_port {11 11}
 dv_end

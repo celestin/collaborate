@@ -1,0 +1,15 @@
+NOTE: Creating CalibreView for cell SR_latch ...
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+The "nch_mac" device contains the following un-matched parametr(s):
+("lpe")
+The "pch_mac" device contains the following un-matched parametr(s):
+("lpe")
+Calibre View generation completed with 0 WARNINGs and 0 ERRORs.
+Please consult the CIW transcript for messages.

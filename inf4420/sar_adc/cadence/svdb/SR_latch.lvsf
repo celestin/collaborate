@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence
+lvs_LvsfVersion 2
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {3 0 0 0}
+lvs_LvsOutFile LVS_REPORT SR_latch.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/SR_latch.src.net
+lvs_LvsOutFile RULES_FILE /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.rcx_
+lvs_LvsRunTimes 1461777718 1461777718

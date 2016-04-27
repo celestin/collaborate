@@ -5,5 +5,5 @@ lvs_LvsInputSummary {0 0 0}
 lvs_LvsComparisonSummary {3 0 0 0}
 lvs_LvsOutFile LVS_REPORT dac_real_res.lvs.report
 lvs_LvsOutFile SOURCE_NETLIST /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/dac_real_res.src.net
-lvs_LvsOutFile RULES_FILE /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
-lvs_LvsRunTimes 1461593947 1461593947
+lvs_LvsOutFile RULES_FILE /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.rcx_
+lvs_LvsRunTimes 1461777359 1461777360

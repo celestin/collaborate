@@ -1,0 +1,117 @@
+* Calibre pushdown separate-properties (back-annotation) data
+***************************************
+*
+* These lvs-actionable properties, indexed by DEVICE element(model) will be kept in the netlist:
+*
+* KEEP_PROP_BEGIN
+* KEEP_PROP D(ndio) A
+* KEEP_PROP D(ndio_18) A
+* KEEP_PROP D(ndio_25) A
+* KEEP_PROP D(ndio_25od) A
+* KEEP_PROP D(ndio_33) A
+* KEEP_PROP D(ndio_esd) A
+* KEEP_PROP D(ndio_hvt) A
+* KEEP_PROP D(ndio_lvt) A
+* KEEP_PROP D(ndio_na) A
+* KEEP_PROP D(ndio_na18) A
+* KEEP_PROP D(ndio_na25) A
+* KEEP_PROP D(ndio_na33) A
+* KEEP_PROP D(ndio_ulvt) A
+* KEEP_PROP D(ndio_uthvt) A
+* KEEP_PROP D(ndio_w) A
+* KEEP_PROP D(nwdio) A
+* KEEP_PROP D(nwdio_18) A
+* KEEP_PROP D(nwdio_25) A
+* KEEP_PROP D(nwdio_33) A
+* KEEP_PROP D(nwdio_w) A
+* KEEP_PROP D(pdio) A
+* KEEP_PROP D(pdio_18) A
+* KEEP_PROP D(pdio_25) A
+* KEEP_PROP D(pdio_25od) A
+* KEEP_PROP D(pdio_33) A
+* KEEP_PROP D(pdio_hvt) A
+* KEEP_PROP D(pdio_lvt) A
+* KEEP_PROP D(pdio_ulvt) A
+* KEEP_PROP D(pdio_uthvt) A
+* KEEP_PROP D(pdio_w) A
+* KEEP_PROP crtmom nv nh s w stm spm busflag
+* KEEP_PROP crtmom_mx nv nh s w stm spm mf busflag
+* KEEP_PROP crtmom_rf nv nh s w stm spm busflag
+* KEEP_PROP mimcap_2p0_sin lt wt
+* KEEP_PROP mimcap_2p0_sin_3t lt wt lay
+* KEEP_PROP mimcap_um_2p0_sin_rf lt wt
+* KEEP_PROP mimcap_woum_2p0_sin_rf lt wt lay
+* KEEP_PROP moscap_rf lr wr br gr
+* KEEP_PROP moscap_rf18 lr wr br gr
+* KEEP_PROP moscap_rf18_nw lr wr br gr
+* KEEP_PROP moscap_rf25 lr wr br gr
+* KEEP_PROP moscap_rf25_nw lr wr br gr
+* KEEP_PROP moscap_rf33 lr wr br gr
+* KEEP_PROP moscap_rf33_nw lr wr br gr
+* KEEP_PROP moscap_rf_nw lr wr br gr
+* KEEP_PROP nmos_rf wr lr nr
+* KEEP_PROP nmos_rf18 wr lr nr
+* KEEP_PROP nmos_rf25 wr lr nr
+* KEEP_PROP nmos_rf33 wr lr nr
+* KEEP_PROP nmoscap wr lr
+* KEEP_PROP nmoscap_18 wr lr
+* KEEP_PROP nmoscap_25 wr lr
+* KEEP_PROP nmoscap_33 wr lr
+* KEEP_PROP pmos_rf wr lr nr
+* KEEP_PROP pmos_rf18 wr lr nr
+* KEEP_PROP pmos_rf25 wr lr nr
+* KEEP_PROP pmos_rf33 wr lr nr
+* KEEP_PROP rm1 w l
+* KEEP_PROP rm10 w l
+* KEEP_PROP rm2 w l
+* KEEP_PROP rm3 w l
+* KEEP_PROP rm4 w l
+* KEEP_PROP rm5 w l
+* KEEP_PROP rm6 w l
+* KEEP_PROP rm7 w l
+* KEEP_PROP rm8 w l
+* KEEP_PROP rm9 w l
+* KEEP_PROP rnodl l w
+* KEEP_PROP rnodl_m lr wr
+* KEEP_PROP rnods l w
+* KEEP_PROP rnods_m lr wr
+* KEEP_PROP rnodwo l w
+* KEEP_PROP rnodwo_m lr wr
+* KEEP_PROP rnpolyl l w
+* KEEP_PROP rnpolyl_dis l w
+* KEEP_PROP rnpolys l w
+* KEEP_PROP rnpolys_dis l w
+* KEEP_PROP rnpolywo l w
+* KEEP_PROP rnpolywo_dis l w
+* KEEP_PROP rnwod l w
+* KEEP_PROP rnwod_m lr wr
+* KEEP_PROP rnwsti l w
+* KEEP_PROP rnwsti_m lr wr
+* KEEP_PROP rpodl l w
+* KEEP_PROP rpodl_m lr wr
+* KEEP_PROP rpods l w
+* KEEP_PROP rpods_m lr wr
+* KEEP_PROP rpodwo l w
+* KEEP_PROP rpodwo_m lr wr
+* KEEP_PROP rppolyl l w
+* KEEP_PROP rppolyl_dis l w
+* KEEP_PROP rppolyl_rf l w
+* KEEP_PROP rppolys l w
+* KEEP_PROP rppolys_dis l w
+* KEEP_PROP rppolys_rf l w
+* KEEP_PROP rppolywo l w
+* KEEP_PROP rppolywo_dis l w
+* KEEP_PROP rppolywo_rf l w
+* KEEP_PROP sbd_rf nf w l
+* KEEP_PROP sbd_rf_nw nf w l
+* KEEP_PROP spiral_std lay w nr rad
+* KEEP_PROP spiral_sym lay w nr rad
+* KEEP_PROP spiral_sym_ct lay w nr rad
+* KEEP_PROP xjvar w l nr
+* KEEP_PROP xjvar_nw w l nr
+* KEEP_PROP_END
+*
+.SUBCKT sample_hold_3
+* nothing transcripted
+.ENDS
+***************************************

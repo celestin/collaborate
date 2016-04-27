@@ -11,13 +11,10 @@
 
 REPORT FILE NAME:         dac_real_res.lvs.report.ext
 LAYOUT NAME:              dac_real_res.calibre.db ('dac_real_res')
-CREATION TIME:            Mon Apr 25 16:19:05 2016
+CREATION TIME:            Wed Apr 27 19:15:55 2016
 CURRENT DIRECTORY:        /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence
 USER NAME:                vegardmi
 CALIBRE VERSION:          v2013.4_15.12    Wed Nov 13 16:58:14 PST 2013
 
 
-
-
-WARNING: Invalid PATHCHK request "! POWER": no POWER nets present, operation aborted.
 

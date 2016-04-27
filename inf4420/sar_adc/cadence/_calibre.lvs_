@@ -1,22 +1,22 @@
 //
-//  Rule file generated on Tue Apr 26 22:26:44 CEST 2016
+//  Rule file generated on Wed Apr 27 19:18:48 CEST 2016
 //     by Calibre Interactive - LVS (v2013.4_15.12)
 //
 //      *** PLEASE DO NOT MODIFY THIS FILE ***
 //
 //
 
-LAYOUT PATH  "comparator_rail2rail_input_external_current.calibre.db"
-LAYOUT PRIMARY "comparator_rail2rail_input_external_current"
+LAYOUT PATH  "output_buffers.calibre.db"
+LAYOUT PRIMARY "output_buffers"
 LAYOUT SYSTEM GDSII
 
-SOURCE PATH "/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/comparator_rail2rail_input_external_current.src.net"
-SOURCE PRIMARY "comparator_rail2rail_input_external_current"
+SOURCE PATH "/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/output_buffers.src.net"
+SOURCE PRIMARY "output_buffers"
 SOURCE SYSTEM SPICE
 
 MASK SVDB DIRECTORY "svdb" QUERY
 
-LVS REPORT "comparator_rail2rail_input_external_current.lvs.report"
+LVS REPORT "output_buffers.lvs.report"
 
 LVS REPORT OPTION NONE
 LVS FILTER UNUSED OPTION NONE SOURCE
@@ -59,8 +59,8 @@ VIRTUAL CONNECT COLON NO
 VIRTUAL CONNECT REPORT NO
 
 LVS EXECUTE ERC YES
-ERC RESULTS DATABASE "comparator_rail2rail_input_external_current.erc.results"
-ERC SUMMARY REPORT "comparator_rail2rail_input_external_current.erc.summary" REPLACE HIER
+ERC RESULTS DATABASE "output_buffers.erc.results"
+ERC SUMMARY REPORT "output_buffers.erc.summary" REPLACE HIER
 ERC CELL NAME YES CELL SPACE XFORM
 ERC MAXIMUM RESULTS 1000
 ERC MAXIMUM VERTEX 4096

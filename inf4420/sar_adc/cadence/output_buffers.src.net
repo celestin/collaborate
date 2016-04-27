@@ -1,0 +1,62 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  sar_adc
+* Top Cell Name: output_buffers
+* View Name:     schematic
+* Netlisted on:  Apr 27 19:19:39 2016
+************************************************************************
+
+.INCLUDE  /projects/nanos/design_kit/TSMC90nmLPRF_616OA/Calibre/lvs/source_added
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: tsmcN90rf
+* Cell Name:    inv
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv G Gb IN OUT P Pb
+*.PININFO G:I Gb:I IN:I P:I Pb:I OUT:O
+MNM1 OUT IN G Gb nch l=nl w=nw m=1*nf
+MPM1 OUT IN P Pb pch l=pl w=pw m=1*pf
+.ENDS
+
+************************************************************************
+* Library Name: sar_adc
+* Cell Name:    buffer
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT buffer GND IN OUT VDD
+*.PININFO IN:I OUT:O GND:B VDD:B
+XI1 GND GND net11 OUT VDD VDD / inv pf=1 pw=200n pl=100n nf=1 nw=200n nl=100n
+XI0 GND GND IN net11 VDD VDD / inv pf=1 pw=200n pl=100n nf=1 nw=200n nl=100n
+.ENDS
+
+************************************************************************
+* Library Name: sar_adc
+* Cell Name:    output_buffers
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT output_buffers BIN<7> BIN<6> BIN<5> BIN<4> BIN<3> BIN<2> BIN<1> BIN<0> 
++ BOUT<7> BOUT<6> BOUT<5> BOUT<4> BOUT<3> BOUT<2> BOUT<1> BOUT<0> GND VDD
+*.PININFO BIN<7>:I BIN<6>:I BIN<5>:I BIN<4>:I BIN<3>:I BIN<2>:I BIN<1>:I 
+*.PININFO BIN<0>:I BOUT<7>:O BOUT<6>:O BOUT<5>:O BOUT<4>:O BOUT<3>:O BOUT<2>:O 
+*.PININFO BOUT<1>:O BOUT<0>:O GND:B VDD:B
+XI7 GND BIN<0> BOUT<0> VDD / buffer
+XI6 GND BIN<1> BOUT<1> VDD / buffer
+XI5 GND BIN<2> BOUT<2> VDD / buffer
+XI4 GND BIN<3> BOUT<3> VDD / buffer
+XI3 GND BIN<4> BOUT<4> VDD / buffer
+XI2 GND BIN<5> BOUT<5> VDD / buffer
+XI1 GND BIN<6> BOUT<6> VDD / buffer
+XI0 GND BIN<7> BOUT<7> VDD / buffer
+.ENDS
+

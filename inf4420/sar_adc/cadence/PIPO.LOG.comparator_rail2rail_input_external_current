@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.6-64b 07/05/2013 16:44 (sjfnl155) $
           : sub-version  IC6.1.6-64b.500.1 
-Started at: 26-Apr-2016  22:26:36
+Started at: 27-Apr-2016  18:42:28
 User Name : vegardmi
 Host Name : vor.ifi.uio.no
 Directory : /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence
@@ -25,75 +25,52 @@ layerMap                                /ifi/asgard/project0/nanos/design_kit/TS
 case                                    Preserve
 convertDot                              node
 
-INFO (XSTRM-223): 1. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461702396340
-INFO (XSTRM-223): 2. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461702396341
-INFO (XSTRM-223): 3. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461702396342
-INFO (XSTRM-223): 4. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461702396343
-INFO (XSTRM-223): 5. Translating cellView tsmcN90rf/M3_M2/layout as STRUCTURE M3_M2_CDNS_461702396344
-INFO (XSTRM-223): 6. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461702396345
-INFO (XSTRM-223): 7. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461702396346
-INFO (XSTRM-223): 8. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461702396347
-INFO (XSTRM-223): 9. Translating cellView tsmcN90rf/M3_M2/layout as STRUCTURE M3_M2_CDNS_461702396348
-INFO (XSTRM-223): 10. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461702396349
-INFO (XSTRM-223): 11. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_4617023963410
-INFO (XSTRM-223): 12. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_4617023963411
-INFO (XSTRM-223): 13. Translating cellView tsmcN90rf/M3_M2/layout as STRUCTURE M3_M2_CDNS_4617023963412
-INFO (XSTRM-223): 14. Translating cellView tsmcN90rf/M3_M2/layout as STRUCTURE M3_M2_CDNS_4617023963413
-INFO (XSTRM-223): 15. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_4617023963414
-INFO (XSTRM-223): 16. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_4617023963415
-INFO (XSTRM-223): 17. Translating cellView tsmcN90rf/M4_M3/layout as STRUCTURE M4_M3_CDNS_4617023963416
-INFO (XSTRM-223): 18. Translating cellView tsmcN90rf/M3_M2/layout as STRUCTURE M3_M2_CDNS_4617023963417
-INFO (XSTRM-223): 19. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_4617023963418
-INFO (XSTRM-223): 20. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_4617023963419
-INFO (XSTRM-223): 21. Translating cellView tsmcN90rf/M4_M3/layout as STRUCTURE M4_M3_CDNS_4617023963420
-INFO (XSTRM-223): 22. Translating cellView tsmcN90rf/nch_mac/layout as STRUCTURE nch_mac_CDNS_461702396340
+INFO (XSTRM-223): 1. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461775348290
+INFO (XSTRM-223): 2. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461775348291
+INFO (XSTRM-223): 3. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461775348292
+INFO (XSTRM-223): 4. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461775348293
+INFO (XSTRM-223): 5. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461775348294
+INFO (XSTRM-223): 6. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461775348295
+INFO (XSTRM-223): 7. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461775348296
+INFO (XSTRM-223): 8. Translating cellView tsmcN90rf/M3_M2/layout as STRUCTURE M3_M2_CDNS_461775348297
+INFO (XSTRM-223): 9. Translating cellView tsmcN90rf/M3_M2/layout as STRUCTURE M3_M2_CDNS_461775348298
+INFO (XSTRM-223): 10. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461775348299
+INFO (XSTRM-223): 11. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_4617753482910
+INFO (XSTRM-223): 12. Translating cellView tsmcN90rf/M4_M3/layout as STRUCTURE M4_M3_CDNS_4617753482911
+INFO (XSTRM-223): 13. Translating cellView tsmcN90rf/nch_mac/layout as STRUCTURE nch_mac_CDNS_461775348290
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/nch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
 WARNING (XSTRM-35): The objects in the layer-purpose pair 'instance:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
-INFO (XSTRM-223): 23. Translating cellView tsmcN90rf/nch_mac/layout as STRUCTURE nch_mac_CDNS_461702396341
+INFO (XSTRM-223): 14. Translating cellView tsmcN90rf/nch_mac/layout as STRUCTURE nch_mac_CDNS_461775348291
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/nch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 24. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_461702396342
+INFO (XSTRM-223): 15. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_461775348292
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/pch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 25. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_461702396343
-WARNING (XSTRM-315): The cellview 'tsmcN90rf/pch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 26. Translating cellView tsmcN90rf/nch_mac/layout as STRUCTURE nch_mac_CDNS_461702396344
+INFO (XSTRM-223): 16. Translating cellView tsmcN90rf/nch_mac/layout as STRUCTURE nch_mac_CDNS_461775348293
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/nch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 27. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_461702396345
+INFO (XSTRM-223): 17. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_461775348294
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/pch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 28. Translating cellView tsmcN90rf/nch_mac/layout as STRUCTURE nch_mac_CDNS_461702396346
+INFO (XSTRM-223): 18. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_461775348295
+WARNING (XSTRM-315): The cellview 'tsmcN90rf/pch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
+INFO (XSTRM-223): 19. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_461775348296
+WARNING (XSTRM-315): The cellview 'tsmcN90rf/pch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
+INFO (XSTRM-223): 20. Translating cellView tsmcN90rf/nch_mac/layout as STRUCTURE nch_mac_CDNS_461775348297
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/nch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 29. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_461702396347
+INFO (XSTRM-223): 21. Translating cellView tsmcN90rf/rppolywo/layout as STRUCTURE rppolywo_CDNS_461775348298
+INFO (XSTRM-223): 22. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_461775348299
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/pch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 30. Translating cellView tsmcN90rf/rppolywo/layout as STRUCTURE rppolywo_CDNS_461702396348
-INFO (XSTRM-223): 31. Translating cellView tsmcN90rf/nch_mac/layout as STRUCTURE nch_mac_CDNS_461702396349
+INFO (XSTRM-223): 23. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_4617753482910
+WARNING (XSTRM-315): The cellview 'tsmcN90rf/pch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
+INFO (XSTRM-223): 24. Translating cellView tsmcN90rf/nch_mac/layout as STRUCTURE nch_mac_CDNS_4617753482911
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/nch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 32. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_4617023963410
-WARNING (XSTRM-315): The cellview 'tsmcN90rf/pch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 33. Translating cellView sar_adc/comparator_rail2rail_input_external_current/layout as STRUCTURE comparator_rail2rail_input_external_current
+INFO (XSTRM-223): 25. Translating cellView sar_adc/comparator_rail2rail_input_external_current/layout as STRUCTURE comparator_rail2rail_input_external_current
 INFO (XSTRM-180): You have not used the objectMap option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the objectMap option to translate/preserve these objects using XStream. For details on the objectMap option, refer to the "Design Data Translator's Reference" guide for XStream.
-WARNING (XSTRM-206): Path length 490 at location (38600,21615) on layer 31 is less than 1/2 of path width 2000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 350 at location (33090,42820) on layer 31 is less than 1/2 of path width 1000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 340 at location (34980,42820) on layer 31 is less than 1/2 of path width 1000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
 WARNING (XSTRM-206): Path length 275 at location (26125,42855) on layer 31 is less than 1/2 of path width 1000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
 WARNING (XSTRM-206): Path length 360 at location (24170,42855) on layer 31 is less than 1/2 of path width 1000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 490 at location (32200,21615) on layer 31 is less than 1/2 of path width 2000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 600 at location (50445,26305) on layer 31 is less than 1/2 of path width 2020. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 775 at location (49970,26305) on layer 31 is less than 1/2 of path width 2020. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 440 at location (28370,16230) on layer 31 is less than 1/2 of path width 2000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 440 at location (28370,20060) on layer 31 is less than 1/2 of path width 2000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 440 at location (28370,12570) on layer 31 is less than 1/2 of path width 2000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 440 at location (27930,9035) on layer 31 is less than 1/2 of path width 2000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 440 at location (27930,4950) on layer 31 is less than 1/2 of path width 2000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 515 at location (36030,20060) on layer 31 is less than 1/2 of path width 2000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 515 at location (36030,16230) on layer 31 is less than 1/2 of path width 2000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 515 at location (36030,12570) on layer 31 is less than 1/2 of path width 2000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 515 at location (36545,9035) on layer 31 is less than 1/2 of path width 2000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 515 at location (36545,4950) on layer 31 is less than 1/2 of path width 2000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 375 at location (29630,4950) on layer 31 is less than 1/2 of path width 2000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 375 at location (29630,9035) on layer 31 is less than 1/2 of path width 2000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 375 at location (30005,12570) on layer 31 is less than 1/2 of path width 2000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 375 at location (30005,16230) on layer 31 is less than 1/2 of path width 2000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 375 at location (30005,20060) on layer 31 is less than 1/2 of path width 2000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 520 at location (45550,44935) on layer 31 is less than 1/2 of path width 3000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
+WARNING (XSTRM-206): Path length 145 at location (31485,18320) on layer 31 is less than 1/2 of path width 500. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
+WARNING (XSTRM-206): Path length 795 at location (30290,11130) on layer 31 is less than 1/2 of path width 2000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
+WARNING (XSTRM-206): Path length 400 at location (28830,2960) on layer 31 is less than 1/2 of path width 2020. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
+WARNING (XSTRM-206): Path length 330 at location (29100,2960) on layer 31 is less than 1/2 of path width 2020. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
+WARNING (XSTRM-206): Path length 405 at location (27300,22230) on layer 31 is less than 1/2 of path width 1000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
+WARNING (XSTRM-206): Path length 475 at location (31505,23235) on layer 31 is less than 1/2 of path width 1020. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
 WARNING (XSTRM-206): Path length 460 at location (34750,45575) on layer 31 is less than 1/2 of path width 1000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
 WARNING (XSTRM-206): Path length 460 at location (32520,45575) on layer 31 is less than 1/2 of path width 1000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
 WARNING (XSTRM-206): Path length 460 at location (25830,45575) on layer 31 is less than 1/2 of path width 1000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
@@ -103,16 +80,13 @@ WARNING (XSTRM-206): Path length 460 at location (19140,45575) on layer 31 is le
 WARNING (XSTRM-206): Path length 460 at location (14680,45575) on layer 31 is less than 1/2 of path width 1000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
 WARNING (XSTRM-206): Path length 460 at location (11950,45575) on layer 31 is less than 1/2 of path width 2000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
 WARNING (XSTRM-206): Path length 465 at location (8720,45575) on layer 31 is less than 1/2 of path width 2000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 410 at location (46080,22635) on layer 31 is less than 1/2 of path width 1000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 410 at location (43090,22225) on layer 31 is less than 1/2 of path width 1000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-WARNING (XSTRM-206): Path length 405 at location (27300,22230) on layer 31 is less than 1/2 of path width 1000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
 
 Summary of Objects Translated:
 	Scalar Instances:                       31
 	Array Instances:                        0
 	Polygons:                               0
-	Paths:                                  0
-	Rectangles:                             1393
+	Paths:                                  20
+	Rectangles:                             1557
 	Lines:                                  0
 	Arcs:                                   0
 	Donuts:                                 0
@@ -124,13 +98,13 @@ Summary of Objects Translated:
 	Area Halos:                             0
 	Markers:                                0
 	Rows:                                   0
-	Standard Vias                           119
+	Standard Vias                           86
 	Custom Vias:                            0
 	CdsGen Vias:                            0
-	Pathsegs:                               209
-	Text:                                   122
+	Pathsegs:                               237
+	Text:                                   140
 	TextDisplay:                            0
-	Cells:                                  33
+	Cells:                                  25
 
-Elapsed Time: 1.3s   User Time: 1.2s   CPU Time: 0.4s   Peak VM: 85088KB
-INFO (XSTRM-234): Translation completed. '0' error(s) and '48' warning(s) found.
+Elapsed Time: 1.6s   User Time: 1.2s   CPU Time: 0.4s   Peak VM: 86016KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '30' warning(s) found.

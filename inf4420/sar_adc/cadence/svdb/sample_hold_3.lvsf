@@ -5,5 +5,5 @@ lvs_LvsInputSummary {0 0 0}
 lvs_LvsComparisonSummary {3 0 0 0}
 lvs_LvsOutFile LVS_REPORT sample_hold_3.lvs.report
 lvs_LvsOutFile SOURCE_NETLIST /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sample_hold_3.src.net
-lvs_LvsOutFile RULES_FILE /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
-lvs_LvsRunTimes 1461595720 1461595720
+lvs_LvsOutFile RULES_FILE /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.rcx_
+lvs_LvsRunTimes 1461777230 1461777230

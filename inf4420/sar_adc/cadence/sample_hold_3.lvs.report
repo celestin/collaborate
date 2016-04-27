@@ -12,10 +12,10 @@
 
 
 REPORT FILE NAME:         sample_hold_3.lvs.report
-LAYOUT NAME:              /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sample_hold_3.sp ('sample_hold_3')
+LAYOUT NAME:              /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/svdb/sample_hold_3.sp ('sample_hold_3')
 SOURCE NAME:              /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sample_hold_3.src.net ('sample_hold_3')
-RULE FILE:                /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
-CREATION TIME:            Mon Apr 25 16:48:40 2016
+RULE FILE:                /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.rcx_
+CREATION TIME:            Wed Apr 27 19:13:50 2016
 CURRENT DIRECTORY:        /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence
 USER NAME:                vegardmi
 CALIBRE VERSION:          v2013.4_15.12    Wed Nov 13 16:58:14 PST 2013
@@ -55,8 +55,12 @@ o LVS Setup:
    // LVS COMPONENT TYPE PROPERTY
    // LVS COMPONENT SUBTYPE PROPERTY
    // LVS PIN NAME PROPERTY
-   LVS POWER NAME                         "VDD" "vdd" "vdd!" "vdd;" "VDDS" "vdds" "vdds!" "vdds;"
-   LVS GROUND NAME                        "GND" "gnd" "gnd!" "gnd;" "GNDS" "gnds" "gnds!" "gnds;"
+   LVS POWER NAME                         "AHVDD" "AHVDDB" "AHVDDG" "AHVDDR" "AHVDDWELL" "AVDD" "AVDDB" "AVDDBG" "AVDDG" "AVDDR"
+                                          "AVDWELL" "DHVDD" "DVDD" "HVDDWELL" "TACVDD" "TAVD33" "TAVD33PST" "TAVDD" "TAVDDPST"
+                                          "VD33" "VDD" "VDD5V" "VDDG" "VDDPST" "VDDSA" "VDWELL"
+   LVS GROUND NAME                        "AGND" "AHVSS" "AHVSSB" "AHVSSG" "AHVSSR" "AHVSSUB" "AVSS" "AVSSB" "AVSSBG" "AVSSG"
+                                          "AVSSR" "AVSSUB" "DHVSS" "DVSS" "GND" "HVSSUB" "TAVSS" "TAVSSPST" "VS33" "VSS" "VSSG"
+                                          "VSSPST" "VSSUB"
    LVS CELL SUPPLY                        NO
    LVS RECOGNIZE GATES                    ALL
    LVS IGNORE PORTS                       NO
@@ -66,7 +70,7 @@ o LVS Setup:
    LVS ALL CAPACITOR PINS SWAPPABLE       YES
    LVS DISCARD PINS BY DEVICE             NO
    LVS SOFT SUBSTRATE PINS                NO
-   LVS INJECT LOGIC                       YES
+   LVS INJECT LOGIC                       NO
    LVS EXPAND UNBALANCED CELLS            YES
    LVS FLATTEN INSIDE CELL                NO
    LVS EXPAND SEED PROMOTIONS             NO
@@ -94,7 +98,7 @@ o LVS Setup:
    SOURCE CASE                            NO
    LVS COMPARE CASE                       NO
    LVS DOWNCASE DEVICE                    NO
-   LVS REPORT MAXIMUM                     50
+   LVS REPORT MAXIMUM                     1000
    LVS PROPERTY RESOLUTION MAXIMUM        65536
    // LVS SIGNATURE MAXIMUM
    // LVS FILTER UNUSED OPTION
@@ -215,100 +219,6 @@ o LVS Setup:
 
    // Trace Property
 
-   TRACE PROPERTY  mn(nch)  l l 0
-   TRACE PROPERTY  mn(nch)  w w 0
-   TRACE PROPERTY  mn(nch_18)  l l 0
-   TRACE PROPERTY  mn(nch_18)  w w 0
-   TRACE PROPERTY  mn(nch_18_dnw)  l l 0
-   TRACE PROPERTY  mn(nch_18_dnw)  w w 0
-   TRACE PROPERTY  mn(nch_25)  l l 0
-   TRACE PROPERTY  mn(nch_25)  w w 0
-   TRACE PROPERTY  mn(nch_25_dnw)  l l 0
-   TRACE PROPERTY  mn(nch_25_dnw)  w w 0
-   TRACE PROPERTY  mn(nch_25od)  l l 0
-   TRACE PROPERTY  mn(nch_25od)  w w 0
-   TRACE PROPERTY  mn(nch_25od_dnw)  l l 0
-   TRACE PROPERTY  mn(nch_25od_dnw)  w w 0
-   TRACE PROPERTY  mn(nch_33)  l l 0
-   TRACE PROPERTY  mn(nch_33)  w w 0
-   TRACE PROPERTY  mn(nch_33_dnw)  l l 0
-   TRACE PROPERTY  mn(nch_33_dnw)  w w 0
-   TRACE PROPERTY  mn(nch_dnw)  l l 0
-   TRACE PROPERTY  mn(nch_dnw)  w w 0
-   TRACE PROPERTY  mn(nch_dnw_w)  l l 0
-   TRACE PROPERTY  mn(nch_dnw_w)  w w 0
-   TRACE PROPERTY  mn(nch_hvt)  l l 0
-   TRACE PROPERTY  mn(nch_hvt)  w w 0
-   TRACE PROPERTY  mn(nch_hvt_dnw)  l l 0
-   TRACE PROPERTY  mn(nch_hvt_dnw)  w w 0
-   TRACE PROPERTY  mn(nch_lvt)  l l 0
-   TRACE PROPERTY  mn(nch_lvt)  w w 0
-   TRACE PROPERTY  mn(nch_lvt_dnw)  l l 0
-   TRACE PROPERTY  mn(nch_lvt_dnw)  w w 0
-   TRACE PROPERTY  mn(nch_na)  l l 0
-   TRACE PROPERTY  mn(nch_na)  w w 0
-   TRACE PROPERTY  mn(nch_na18)  l l 0
-   TRACE PROPERTY  mn(nch_na18)  w w 0
-   TRACE PROPERTY  mn(nch_na25)  l l 0
-   TRACE PROPERTY  mn(nch_na25)  w w 0
-   TRACE PROPERTY  mn(nch_na33)  l l 0
-   TRACE PROPERTY  mn(nch_na33)  w w 0
-   TRACE PROPERTY  mn(nch_ulvt)  l l 0
-   TRACE PROPERTY  mn(nch_ulvt)  w w 0
-   TRACE PROPERTY  mn(nch_ulvt_dnw)  l l 0
-   TRACE PROPERTY  mn(nch_ulvt_dnw)  w w 0
-   TRACE PROPERTY  mn(nch_uthvt)  l l 0
-   TRACE PROPERTY  mn(nch_uthvt)  w w 0
-   TRACE PROPERTY  mn(nch_uthvt_dnw)  l l 0
-   TRACE PROPERTY  mn(nch_uthvt_dnw)  w w 0
-   TRACE PROPERTY  mn(nch_w)  l l 0
-   TRACE PROPERTY  mn(nch_w)  w w 0
-   TRACE PROPERTY  mn(nchpd_hvtsr)  l l 0
-   TRACE PROPERTY  mn(nchpd_hvtsr)  w w 0
-   TRACE PROPERTY  mn(nchpd_sr)  l l 0
-   TRACE PROPERTY  mn(nchpd_sr)  w w 0
-   TRACE PROPERTY  mn(nchpd_ulpsr)  l l 0
-   TRACE PROPERTY  mn(nchpd_ulpsr)  w w 0
-   TRACE PROPERTY  mn(nchpg_hvtsr)  l l 0
-   TRACE PROPERTY  mn(nchpg_hvtsr)  w w 0
-   TRACE PROPERTY  mn(nchpg_sr)  l l 0
-   TRACE PROPERTY  mn(nchpg_sr)  w w 0
-   TRACE PROPERTY  mn(nchpg_ulpsr)  l l 0
-   TRACE PROPERTY  mn(nchpg_ulpsr)  w w 0
-   TRACE PROPERTY  mp(pch)  l l 0
-   TRACE PROPERTY  mp(pch)  w w 0
-   TRACE PROPERTY  mp(pch_18)  l l 0
-   TRACE PROPERTY  mp(pch_18)  w w 0
-   TRACE PROPERTY  mp(pch_1tr)  l l 0
-   TRACE PROPERTY  mp(pch_1tr)  w w 0
-   TRACE PROPERTY  mp(pch_25)  l l 0
-   TRACE PROPERTY  mp(pch_25)  w w 0
-   TRACE PROPERTY  mp(pch_25od)  l l 0
-   TRACE PROPERTY  mp(pch_25od)  w w 0
-   TRACE PROPERTY  mp(pch_33)  l l 0
-   TRACE PROPERTY  mp(pch_33)  w w 0
-   TRACE PROPERTY  mp(pch_hvt)  l l 0
-   TRACE PROPERTY  mp(pch_hvt)  w w 0
-   TRACE PROPERTY  mp(pch_lvt)  l l 0
-   TRACE PROPERTY  mp(pch_lvt)  w w 0
-   TRACE PROPERTY  mp(pch_ulvt)  l l 0
-   TRACE PROPERTY  mp(pch_ulvt)  w w 0
-   TRACE PROPERTY  mp(pch_uthvt)  l l 0
-   TRACE PROPERTY  mp(pch_uthvt)  w w 0
-   TRACE PROPERTY  mp(pch_w)  l l 0
-   TRACE PROPERTY  mp(pch_w)  w w 0
-   TRACE PROPERTY  mp(pchpu_hvtsr)  l l 0
-   TRACE PROPERTY  mp(pchpu_hvtsr)  w w 0
-   TRACE PROPERTY  mp(pchpu_sr)  l l 0
-   TRACE PROPERTY  mp(pchpu_sr)  w w 0
-   TRACE PROPERTY  mp(pchpu_ulpsr)  l l 0
-   TRACE PROPERTY  mp(pchpu_ulpsr)  w w 0
-   TRACE PROPERTY  q(npn10)  a a 0
-   TRACE PROPERTY  q(npn2)  a a 0
-   TRACE PROPERTY  q(npn5)  a a 0
-   TRACE PROPERTY  q(pnp10)  a a 0
-   TRACE PROPERTY  q(pnp2)  a a 0
-   TRACE PROPERTY  q(pnp5)  a a 0
    TRACE PROPERTY  d(ndio)  a a 0
    TRACE PROPERTY  d(ndio_18)  a a 0
    TRACE PROPERTY  d(ndio_25)  a a 0
@@ -589,7 +499,7 @@ NUMBERS OF OBJECTS AFTER TRANSFORMATION
  Instances:          1         1         MN (4 pins)
                      1         1         MP (4 pins)
                      1         1         mimcap_2p0_sin (2 pins)
-                     1         1         _invv (4 pins)
+                     1         1         INV (2 pins)
                 ------    ------
  Total Inst:         4         4
 
@@ -610,7 +520,7 @@ NUMBERS OF OBJECTS AFTER TRANSFORMATION
    Instances:           1          1            0            0    MN(NCH)
                         1          1            0            0    MP(PCH)
                         1          1            0            0    mimcap_2p0_sin
-                        1          1            0            0    _invv
+                        1          1            0            0    INV
                   -------    -------    ---------    ---------
    Total Inst:          4          4            0            0
 
@@ -624,5 +534,5 @@ o Initial Correspondence Points:
                                          SUMMARY
 **************************************************************************************************************
 
-Total CPU Time:      0 sec
-Total Elapsed Time:  0 sec
+Total CPU Time:      1 sec
+Total Elapsed Time:  1 sec

@@ -1,12 +1,9 @@
 # Automagically generated file: Please do not edit!
 lvs_ExtfVersion 3
-lvs_ExtRunTimes 1461593945 1461593947
+lvs_ExtRunTimes 1461777354 1461777358
 lvs_ExtOutFile RUNDIR /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence
-lvs_ExtOutFile RULES_FILE /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
+lvs_ExtOutFile RULES_FILE /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.rcx_
 lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
-lvs_ExtInfoErcSummary {6 0 0 0 0 0 0 0 0 1 0}
 lvs_ExtInfoDfmSummary {0}
-lvs_ExtOutFile LAYOUT_NETLIST /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/dac_real_res.sp
+lvs_ExtOutFile LAYOUT_NETLIST /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/svdb/dac_real_res.sp
 lvs_ExtOutFile EXTRACTION_REPORT dac_real_res.lvs.report.ext
-lvs_ExtOutFile ERC_DATABASE dac_real_res.erc.results
-lvs_ExtOutFile ERC_SUMMARY dac_real_res.erc.summary

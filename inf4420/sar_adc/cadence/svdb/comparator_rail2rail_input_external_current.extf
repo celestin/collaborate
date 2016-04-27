@@ -1,12 +1,9 @@
 # Automagically generated file: Please do not edit!
 lvs_ExtfVersion 3
-lvs_ExtRunTimes 1461702406 1461702408
+lvs_ExtRunTimes 1461775354 1461775358
 lvs_ExtOutFile RUNDIR /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence
-lvs_ExtOutFile RULES_FILE /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
+lvs_ExtOutFile RULES_FILE /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.rcx_
 lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
-lvs_ExtInfoErcSummary {6 6 16 0 0 0 0 0 0 0 0}
 lvs_ExtInfoDfmSummary {0}
-lvs_ExtOutFile LAYOUT_NETLIST /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/comparator_rail2rail_input_external_current.sp
+lvs_ExtOutFile LAYOUT_NETLIST /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/svdb/comparator_rail2rail_input_external_current.sp
 lvs_ExtOutFile EXTRACTION_REPORT comparator_rail2rail_input_external_current.lvs.report.ext
-lvs_ExtOutFile ERC_DATABASE comparator_rail2rail_input_external_current.erc.results
-lvs_ExtOutFile ERC_SUMMARY comparator_rail2rail_input_external_current.erc.summary

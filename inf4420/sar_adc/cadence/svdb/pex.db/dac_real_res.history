@@ -1,0 +1,8 @@
+//OK 
+//NUMBER_OF_HEADER_LINES: 6
+//VERSION: 1
+//TOKEN_DELIMITER: "
+//TOKEN_SEPARATOR: " "
+//FORMAT: "time" "calibre version" "command line"
+"Wed Apr 27 19:16:02 2016 " "v2013.4_15.12" "-xrc -pdb -rcclm -turbo 1 /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.rcx_"
+"Wed Apr 27 19:16:09 2016 " "v2013.4_15.12" "-xrc -fmt -all /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.rcx_"

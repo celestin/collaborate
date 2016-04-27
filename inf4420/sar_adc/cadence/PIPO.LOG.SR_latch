@@ -1,0 +1,66 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version 6.1.6-64b 07/05/2013 16:44 (sjfnl155) $
+          : sub-version  IC6.1.6-64b.500.1 
+Started at: 27-Apr-2016  19:21:48
+User Name : vegardmi
+Host Name : vor.ifi.uio.no
+Directory : /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+INFO (XSTRM-217): Reading the layer map file, /ifi/asgard/project0/nanos/design_kit/TSMC90nmLPRF_616OA/tsmcN90rf/tsmcN90rf.layermap
+INFO (XSTRM-162): You have not used the viaMap option. If the OpenAccess design has native oaVia instances, use the -viaMap option for preserving oaVia instances in a Stream Out - Stream In round trip. Using the -viaMap option improves performance and VM usage of applications using the Streamed-In design.  For details on the viaMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Options :
+library                                 sar_adc
+strmFile                                /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/SR_latch.calibre.db
+topCell                                 SR_latch
+view                                    layout
+runDir                                  /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/
+logFile                                 PIPO.LOG.SR_latch
+layerMap                                /ifi/asgard/project0/nanos/design_kit/TSMC90nmLPRF_616OA/tsmcN90rf/tsmcN90rf.layermap
+case                                    Preserve
+convertDot                              node
+
+INFO (XSTRM-223): 1. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461777708180
+INFO (XSTRM-223): 2. Translating cellView tsmcN90rf/pch/layout as STRUCTURE pch_CDNS_461777708180
+WARNING (XSTRM-315): The cellview 'tsmcN90rf/pch/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'instance:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+INFO (XSTRM-223): 3. Translating cellView tsmcN90rf/nch/layout as STRUCTURE nch_CDNS_461777708181
+WARNING (XSTRM-315): The cellview 'tsmcN90rf/nch/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
+INFO (XSTRM-223): 4. Translating cellView tsmcN90rf/pch/layout as STRUCTURE pch_CDNS_461777708182
+WARNING (XSTRM-315): The cellview 'tsmcN90rf/pch/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
+INFO (XSTRM-223): 5. Translating cellView tsmcN90rf/nch/layout as STRUCTURE nch_CDNS_461777708183
+WARNING (XSTRM-315): The cellview 'tsmcN90rf/nch/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
+INFO (XSTRM-223): 6. Translating cellView sar_adc/SR_latch/layout as STRUCTURE SR_latch
+INFO (XSTRM-180): You have not used the objectMap option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the objectMap option to translate/preserve these objects using XStream. For details on the objectMap option, refer to the "Design Data Translator's Reference" guide for XStream.
+
+Summary of Objects Translated:
+	Scalar Instances:                       8
+	Array Instances:                        0
+	Polygons:                               0
+	Paths:                                  8
+	Rectangles:                             85
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Standard Vias                           10
+	Custom Vias:                            0
+	CdsGen Vias:                            0
+	Pathsegs:                               56
+	Text:                                   54
+	TextDisplay:                            0
+	Cells:                                  6
+
+Elapsed Time: 1.2s   User Time: 1.1s   CPU Time: 0.4s   Peak VM: 84332KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '5' warning(s) found.

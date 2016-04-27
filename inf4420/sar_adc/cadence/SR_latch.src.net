@@ -1,0 +1,43 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  sar_adc
+* Top Cell Name: SR_latch
+* View Name:     schematic
+* Netlisted on:  Apr 27 19:21:51 2016
+************************************************************************
+
+.INCLUDE  /projects/nanos/design_kit/TSMC90nmLPRF_616OA/Calibre/lvs/source_added
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: tsmcN90rf
+* Cell Name:    nor2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT nor2 A B G Gb P Pb Y
+*.PININFO A:I B:I G:I Gb:I P:I Pb:I Y:O
+MM0 Y B net15 Pb pch l=pl w=pw m=1*pf
+MPM1 net15 A P Pb pch l=pl w=pw m=1*pf
+MNM1 Y B G Gb nch l=nl w=nw m=1*nf
+MM1 Y A G Gb nch l=nl w=nw m=1*nf
+.ENDS
+
+************************************************************************
+* Library Name: sar_adc
+* Cell Name:    SR_latch
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT SR_latch GND NQ Q R S VDD
+*.PININFO R:I S:I NQ:O Q:O GND:B VDD:B
+XI1 Q S GND GND VDD VDD NQ / nor2 nf=1 nw=200n nl=100n pf=1 pw=200n pl=100n
+XI0 R NQ GND GND VDD VDD Q / nor2 nf=1 nw=200n nl=100n pf=1 pw=200n pl=100n
+.ENDS
+
