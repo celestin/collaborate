@@ -1,4 +1,4 @@
-Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.08s.
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.14s.
 
 *WARNING* (icLic-3) Could not get license Virtuoso_Schematic_Editor_L
 
@@ -29,10 +29,6 @@ Initializing from libInit.il for library tsmcN90rf...
 
 Running Artist Hierarchical Netlisting ...
 
-ERROR (OSSHNL-116): Unable to descend into any of the views defined in the view list, 'auCdl schematic', for the
-instance 'I24' in cell 'SAR_system_3'. Either add one of these views to the library 'sar_adc',
-cell 'sar' or modify the view list to contain an existing view.
-
-End netlisting Apr 27 21:14:13 2016
-ERROR (OSSHNL-514): Netlist generation failed because of the errors reported above. The netlist might not have been generated at all or,if a netlist was produced, it might be corrupt.Fix the reported errors and generate the netlist again.
+Loading cdf.cxt 
+End netlisting Apr 29 12:04:10 2016
 

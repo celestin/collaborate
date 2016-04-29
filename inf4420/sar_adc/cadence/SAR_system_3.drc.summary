@@ -3,7 +3,7 @@
 ==================================================================================
 === CALIBRE::DRC-H SUMMARY REPORT
 ===
-Execution Date/Time:       Wed Apr 27 21:13:21 2016
+Execution Date/Time:       Thu Apr 28 14:12:59 2016
 Calibre Version:           v2013.4_15.12    Wed Nov 13 16:58:14 PST 2013
 Rule File Pathname:        /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.drc_
 Rule File Title:           
@@ -51,7 +51,7 @@ LAYER ODi ....................... TOTAL Original Geometry Count = 82   (396)
 LAYER DPO ....................... TOTAL Original Geometry Count = 0    (0)
 LAYER POi ....................... TOTAL Original Geometry Count = 92   (529)
 LAYER DUM1 ...................... TOTAL Original Geometry Count = 0    (0)
-LAYER M1i ....................... TOTAL Original Geometry Count = 672  (1589)
+LAYER M1i ....................... TOTAL Original Geometry Count = 678  (1595)
 LAYER DUM2 ...................... TOTAL Original Geometry Count = 0    (0)
 LAYER M2i ....................... TOTAL Original Geometry Count = 184  (368)
 LAYER DUM3 ...................... TOTAL Original Geometry Count = 0    (0)
@@ -116,7 +116,7 @@ LAYER CTMi ...................... TOTAL Original Geometry Count = 1    (1)
 LAYER SRM ....................... TOTAL Original Geometry Count = 0    (0)
 LAYER LMARK ..................... TOTAL Original Geometry Count = 0    (0)
 LAYER IO_buffer ................. TOTAL Original Geometry Count = 0    (0)
-LAYER M1_real ................... TOTAL Original Geometry Count = 672  (1589)
+LAYER M1_real ................... TOTAL Original Geometry Count = 678  (1595)
 LAYER M2_real ................... TOTAL Original Geometry Count = 184  (368)
 LAYER M3_real ................... TOTAL Original Geometry Count = 19   (31)
 LAYER M4_real ................... TOTAL Original Geometry Count = 3    (5)
@@ -1503,8 +1503,8 @@ CELL SAR_system_3 .................................. TOTAL Result Count = 6 (6)
 ----------------------------------------------------------------------------------
 --- SUMMARY
 ---
-TOTAL CPU Time:                  1
+TOTAL CPU Time:                  2
 TOTAL REAL Time:                 2
-TOTAL Original Layer Geometries: 3953 (11707)
+TOTAL Original Layer Geometries: 3965 (11719)
 TOTAL DRC RuleChecks Executed:   1262
 TOTAL DRC Results Generated:     9 (9)

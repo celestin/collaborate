@@ -2,7 +2,7 @@
 Product   : Virtuoso(R) XStream Out
 Program   : @(#)$CDS: strmout version 6.1.6-64b 07/05/2013 16:44 (sjfnl155) $
           : sub-version  IC6.1.6-64b.500.1 
-Started at: 27-Apr-2016  21:14:09
+Started at: 28-Apr-2016  14:16:36
 User Name : vegardmi
 Host Name : vor.ifi.uio.no
 Directory : /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence
@@ -25,55 +25,55 @@ layerMap                                /ifi/asgard/project0/nanos/design_kit/TS
 case                                    Preserve
 convertDot                              node
 
-INFO (XSTRM-223): 1. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461784449990
-INFO (XSTRM-223): 2. Translating cellView tsmcN90rf/M3_M2/layout as STRUCTURE M3_M2_CDNS_461784449991
-INFO (XSTRM-223): 3. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461784449992
-INFO (XSTRM-223): 4. Translating cellView tsmcN90rf/pch/layout as STRUCTURE pch_CDNS_461784449990
+INFO (XSTRM-223): 1. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461845796930
+INFO (XSTRM-223): 2. Translating cellView tsmcN90rf/M3_M2/layout as STRUCTURE M3_M2_CDNS_461845796931
+INFO (XSTRM-223): 3. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461845796932
+INFO (XSTRM-223): 4. Translating cellView tsmcN90rf/pch/layout as STRUCTURE pch_CDNS_461845796930
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/pch/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
 WARNING (XSTRM-35): The objects in the layer-purpose pair 'instance:drawing' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
-INFO (XSTRM-223): 5. Translating cellView tsmcN90rf/nch/layout as STRUCTURE nch_CDNS_461784449991
+INFO (XSTRM-223): 5. Translating cellView tsmcN90rf/nch/layout as STRUCTURE nch_CDNS_461845796931
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/nch/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
 INFO (XSTRM-223): 6. Translating cellView sar_adc/buffer/layout as STRUCTURE buffer
 INFO (XSTRM-180): You have not used the objectMap option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the objectMap option to translate/preserve these objects using XStream. For details on the objectMap option, refer to the "Design Data Translator's Reference" guide for XStream.
 INFO (XSTRM-223): 7. Translating cellView sar_adc/output_buffers/layout as STRUCTURE output_buffers
-INFO (XSTRM-223): 8. Translating cellView tsmcN90rf/pch/layout as STRUCTURE pch_CDNS_461784449992
+INFO (XSTRM-223): 8. Translating cellView tsmcN90rf/pch/layout as STRUCTURE pch_CDNS_461845796932
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/pch/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 9. Translating cellView tsmcN90rf/nch/layout as STRUCTURE nch_CDNS_461784449993
+INFO (XSTRM-223): 9. Translating cellView tsmcN90rf/nch/layout as STRUCTURE nch_CDNS_461845796933
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/nch/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 10. Translating cellView tsmcN90rf/pch/layout as STRUCTURE pch_CDNS_461784449994
+INFO (XSTRM-223): 10. Translating cellView tsmcN90rf/pch/layout as STRUCTURE pch_CDNS_461845796934
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/pch/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
 INFO (XSTRM-223): 11. Translating cellView sar_adc/SR_latch/layout as STRUCTURE SR_latch
-INFO (XSTRM-223): 12. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461784449993
-INFO (XSTRM-223): 13. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461784449994
-INFO (XSTRM-223): 14. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461784449995
-INFO (XSTRM-223): 15. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461784449996
-INFO (XSTRM-223): 16. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461784449997
-INFO (XSTRM-223): 17. Translating cellView tsmcN90rf/M3_M2/layout as STRUCTURE M3_M2_CDNS_461784449998
-INFO (XSTRM-223): 18. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461784449999
-INFO (XSTRM-223): 19. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_4617844499910
-INFO (XSTRM-223): 20. Translating cellView tsmcN90rf/M4_M3/layout as STRUCTURE M4_M3_CDNS_4617844499911
-INFO (XSTRM-223): 21. Translating cellView tsmcN90rf/nch_mac/layout as STRUCTURE nch_mac_CDNS_461784449995
+INFO (XSTRM-223): 12. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461845796933
+INFO (XSTRM-223): 13. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461845796934
+INFO (XSTRM-223): 14. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461845796935
+INFO (XSTRM-223): 15. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461845796936
+INFO (XSTRM-223): 16. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461845796937
+INFO (XSTRM-223): 17. Translating cellView tsmcN90rf/M3_M2/layout as STRUCTURE M3_M2_CDNS_461845796938
+INFO (XSTRM-223): 18. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_461845796939
+INFO (XSTRM-223): 19. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_4618457969310
+INFO (XSTRM-223): 20. Translating cellView tsmcN90rf/M4_M3/layout as STRUCTURE M4_M3_CDNS_4618457969311
+INFO (XSTRM-223): 21. Translating cellView tsmcN90rf/nch_mac/layout as STRUCTURE nch_mac_CDNS_461845796935
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/nch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 22. Translating cellView tsmcN90rf/nch_mac/layout as STRUCTURE nch_mac_CDNS_461784449996
+INFO (XSTRM-223): 22. Translating cellView tsmcN90rf/nch_mac/layout as STRUCTURE nch_mac_CDNS_461845796936
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/nch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 23. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_461784449997
+INFO (XSTRM-223): 23. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_461845796937
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/pch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 24. Translating cellView tsmcN90rf/nch_mac/layout as STRUCTURE nch_mac_CDNS_461784449998
+INFO (XSTRM-223): 24. Translating cellView tsmcN90rf/nch_mac/layout as STRUCTURE nch_mac_CDNS_461845796938
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/nch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 25. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_461784449999
+INFO (XSTRM-223): 25. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_461845796939
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/pch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 26. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_4617844499910
+INFO (XSTRM-223): 26. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_4618457969310
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/pch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 27. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_4617844499911
+INFO (XSTRM-223): 27. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_4618457969311
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/pch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 28. Translating cellView tsmcN90rf/nch_mac/layout as STRUCTURE nch_mac_CDNS_4617844499912
+INFO (XSTRM-223): 28. Translating cellView tsmcN90rf/nch_mac/layout as STRUCTURE nch_mac_CDNS_4618457969312
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/nch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 29. Translating cellView tsmcN90rf/rppolywo/layout as STRUCTURE rppolywo_CDNS_4617844499913
-INFO (XSTRM-223): 30. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_4617844499914
+INFO (XSTRM-223): 29. Translating cellView tsmcN90rf/rppolywo/layout as STRUCTURE rppolywo_CDNS_4618457969313
+INFO (XSTRM-223): 30. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_4618457969314
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/pch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 31. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_4617844499915
+INFO (XSTRM-223): 31. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_4618457969315
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/pch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 32. Translating cellView tsmcN90rf/nch_mac/layout as STRUCTURE nch_mac_CDNS_4617844499916
+INFO (XSTRM-223): 32. Translating cellView tsmcN90rf/nch_mac/layout as STRUCTURE nch_mac_CDNS_4618457969316
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/nch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
 INFO (XSTRM-223): 33. Translating cellView sar_adc/comparator_rail2rail_input_external_current/layout as STRUCTURE comparator_rail2rail_input_external_current
 WARNING (XSTRM-206): Path length 275 at location (26125,42855) on layer 31 is less than 1/2 of path width 1000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
@@ -93,31 +93,31 @@ WARNING (XSTRM-206): Path length 460 at location (19140,45575) on layer 31 is le
 WARNING (XSTRM-206): Path length 460 at location (14680,45575) on layer 31 is less than 1/2 of path width 1000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
 WARNING (XSTRM-206): Path length 460 at location (11950,45575) on layer 31 is less than 1/2 of path width 2000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
 WARNING (XSTRM-206): Path length 465 at location (8720,45575) on layer 31 is less than 1/2 of path width 2000. The path would be written in Stream file as is. To resolve this, fix the reported path in the input design and run the translator again.
-INFO (XSTRM-223): 34. Translating cellView tsmcN90rf/M3_M2/layout as STRUCTURE M3_M2_CDNS_4617844499912
-INFO (XSTRM-223): 35. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_4617844499913
-INFO (XSTRM-223): 36. Translating cellView tsmcN90rf/rppolywo/layout as STRUCTURE rppolywo_CDNS_4617844499917
+INFO (XSTRM-223): 34. Translating cellView tsmcN90rf/M3_M2/layout as STRUCTURE M3_M2_CDNS_4618457969312
+INFO (XSTRM-223): 35. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_4618457969313
+INFO (XSTRM-223): 36. Translating cellView tsmcN90rf/rppolywo/layout as STRUCTURE rppolywo_CDNS_4618457969317
 INFO (XSTRM-223): 37. Translating cellView sar_adc/ladder_R/layout as STRUCTURE ladder_R
 INFO (XSTRM-223): 38. Translating cellView sar_adc/ladder_2R/layout as STRUCTURE ladder_2R
-INFO (XSTRM-223): 39. Translating cellView tsmcN90rf/pch/layout as STRUCTURE pch_CDNS_4617844499918
+INFO (XSTRM-223): 39. Translating cellView tsmcN90rf/pch/layout as STRUCTURE pch_CDNS_4618457969318
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/pch/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 40. Translating cellView tsmcN90rf/nch/layout as STRUCTURE nch_CDNS_4617844499919
+INFO (XSTRM-223): 40. Translating cellView tsmcN90rf/nch/layout as STRUCTURE nch_CDNS_4618457969319
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/nch/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 41. Translating cellView tsmcN90rf/nch/layout as STRUCTURE nch_CDNS_4617844499920
+INFO (XSTRM-223): 41. Translating cellView tsmcN90rf/nch/layout as STRUCTURE nch_CDNS_4618457969320
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/nch/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 42. Translating cellView tsmcN90rf/nch/layout as STRUCTURE nch_CDNS_4617844499921
+INFO (XSTRM-223): 42. Translating cellView tsmcN90rf/nch/layout as STRUCTURE nch_CDNS_4618457969321
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/nch/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
 INFO (XSTRM-223): 43. Translating cellView sar_adc/dac_real_res/layout as STRUCTURE dac_real_res
-INFO (XSTRM-223): 44. Translating cellView tsmcN90rf/M3_M2/layout as STRUCTURE M3_M2_CDNS_4617844499914
-INFO (XSTRM-223): 45. Translating cellView tsmcN90rf/M4_M3/layout as STRUCTURE M4_M3_CDNS_4617844499915
-INFO (XSTRM-223): 46. Translating cellView tsmcN90rf/M5_M4/layout as STRUCTURE M5_M4_CDNS_4617844499916
-INFO (XSTRM-223): 47. Translating cellView tsmcN90rf/M6_M5/layout as STRUCTURE M6_M5_CDNS_4617844499917
-INFO (XSTRM-223): 48. Translating cellView tsmcN90rf/M7_M6/layout as STRUCTURE M7_M6_CDNS_4617844499918
-INFO (XSTRM-223): 49. Translating cellView tsmcN90rf/M8_M7/layout as STRUCTURE M8_M7_CDNS_4617844499919
-INFO (XSTRM-223): 50. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_4617844499920
-INFO (XSTRM-223): 51. Translating cellView tsmcN90rf/nch_mac/layout as STRUCTURE nch_mac_CDNS_4617844499922
+INFO (XSTRM-223): 44. Translating cellView tsmcN90rf/M3_M2/layout as STRUCTURE M3_M2_CDNS_4618457969314
+INFO (XSTRM-223): 45. Translating cellView tsmcN90rf/M4_M3/layout as STRUCTURE M4_M3_CDNS_4618457969315
+INFO (XSTRM-223): 46. Translating cellView tsmcN90rf/M5_M4/layout as STRUCTURE M5_M4_CDNS_4618457969316
+INFO (XSTRM-223): 47. Translating cellView tsmcN90rf/M6_M5/layout as STRUCTURE M6_M5_CDNS_4618457969317
+INFO (XSTRM-223): 48. Translating cellView tsmcN90rf/M7_M6/layout as STRUCTURE M7_M6_CDNS_4618457969318
+INFO (XSTRM-223): 49. Translating cellView tsmcN90rf/M8_M7/layout as STRUCTURE M8_M7_CDNS_4618457969319
+INFO (XSTRM-223): 50. Translating cellView tsmcN90rf/M2_M1/layout as STRUCTURE M2_M1_CDNS_4618457969320
+INFO (XSTRM-223): 51. Translating cellView tsmcN90rf/nch_mac/layout as STRUCTURE nch_mac_CDNS_4618457969322
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/nch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
-INFO (XSTRM-223): 52. Translating cellView tsmcN90rf/mimcap/layout as STRUCTURE mimcap_CDNS_4617844499923
-INFO (XSTRM-223): 53. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_4617844499924
+INFO (XSTRM-223): 52. Translating cellView tsmcN90rf/mimcap/layout as STRUCTURE mimcap_CDNS_4618457969323
+INFO (XSTRM-223): 53. Translating cellView tsmcN90rf/pch_mac/layout as STRUCTURE pch_mac_CDNS_4618457969324
 WARNING (XSTRM-315): The cellview 'tsmcN90rf/pch_mac/layout' has a label with multiple lines. This label will be translated as is. If a multiple lines label is not required, correct the label in the source file.
 INFO (XSTRM-223): 54. Translating cellView sar_adc/sample_hold_3/layout as STRUCTURE sample_hold_3
 INFO (XSTRM-223): 55. Translating cellView sar_adc/SAR_system_3/layout as STRUCTURE SAR_system_3
@@ -142,10 +142,10 @@ Summary of Objects Translated:
 	Standard Vias                           211
 	Custom Vias:                            0
 	CdsGen Vias:                            0
-	Pathsegs:                               744
+	Pathsegs:                               750
 	Text:                                   347
 	TextDisplay:                            0
 	Cells:                                  55
 
-Elapsed Time: 1.5s   User Time: 1.4s   CPU Time: 0.4s   Peak VM: 89596KB
+Elapsed Time: 1.6s   User Time: 1.5s   CPU Time: 0.4s   Peak VM: 89600KB
 INFO (XSTRM-234): Translation completed. '0' error(s) and '41' warning(s) found.

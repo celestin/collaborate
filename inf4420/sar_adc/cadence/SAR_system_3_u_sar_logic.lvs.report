@@ -1,0 +1,556 @@
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         SAR_system_3_u_sar_logic.lvs.report
+LAYOUT NAME:              /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/svdb/SAR_system_3_u_sar_logic.sp ('SAR_system_3_u_sar_logic')
+SOURCE NAME:              /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/SAR_system_3_u_sar_logic.src.net ('SAR_system_3_u_sar_logic')
+RULE FILE:                /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.rcx_
+CREATION TIME:            Fri Apr 29 12:04:19 2016
+CURRENT DIRECTORY:        /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence
+USER NAME:                vegardmi
+CALIBRE VERSION:          v2013.4_15.12    Wed Nov 13 16:58:14 PST 2013
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  CORRECT        SAR_system_3_u_sar_logic      SAR_system_3_u_sar_logic
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   // LVS COMPONENT TYPE PROPERTY
+   // LVS COMPONENT SUBTYPE PROPERTY
+   // LVS PIN NAME PROPERTY
+   LVS POWER NAME                         "AHVDD" "AHVDDB" "AHVDDG" "AHVDDR" "AHVDDWELL" "AVDD" "AVDDB" "AVDDBG" "AVDDG" "AVDDR"
+                                          "AVDWELL" "DHVDD" "DVDD" "HVDDWELL" "TACVDD" "TAVD33" "TAVD33PST" "TAVDD" "TAVDDPST"
+                                          "VD33" "VDD" "VDD5V" "VDDG" "VDDPST" "VDDSA" "VDWELL"
+   LVS GROUND NAME                        "AGND" "AHVSS" "AHVSSB" "AHVSSG" "AHVSSR" "AHVSSUB" "AVSS" "AVSSB" "AVSSBG" "AVSSG"
+                                          "AVSSR" "AVSSUB" "DHVSS" "DVSS" "GND" "HVSSUB" "TAVSS" "TAVSSPST" "VS33" "VSS" "VSSG"
+                                          "VSSPST" "VSSUB"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    ALL
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   YES
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            YES
+   LVS ALL CAPACITOR PINS SWAPPABLE       YES
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                NO
+   LVS INJECT LOGIC                       NO
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS REVERSE WL                         NO
+   LVS SPICE PREFER PINS                  YES
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            NO
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    YES
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            NO
+   SOURCE CASE                            NO
+   LVS COMPARE CASE                       NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     1000
+   LVS PROPERTY RESOLUTION MAXIMUM        65536
+   // LVS SIGNATURE MAXIMUM
+   // LVS FILTER UNUSED OPTION
+   // LVS REPORT OPTION
+   LVS REPORT UNITS                       YES
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+   // LVS IGNORE DEVICE PIN
+
+   // Device Type Map
+
+   LVS DEVICE TYPE                        RESISTOR "rm1" "rm10" "rm2" "rm3" "rm4" "rm5" "rm6" "rm7" "rm8" "rm9" "rnodl" "rnodl_m"
+                                                   "rnods" "rnods_m" "rnodwo" "rnodwo_m" "rnpolyl" "rnpolyl_dis" "rnpolys"
+                                                   "rnpolys_dis" "rnpolywo" "rnpolywo_dis" "rnwod" "rnwod_m" "rnwsti" "rnwsti_m"
+                                                   "rpodl" "rpodl_m" "rpods" "rpods_m" "rpodwo" "rpodwo_m" "rppolyl" "rppolyl_dis"
+                                                   "rppolyl_rf" "rppolys" "rppolys_dis" "rppolys_rf" "rppolywo" "rppolywo_dis"
+                                                   "rppolywo_rf" [ POS=PLUS NEG=MINUS ]  SOURCE LAYOUT
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  NO
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             NO
+   LVS REDUCE SPLIT GATES                 NO
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           YES
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+
+   LVS REDUCE  rnwsti  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnwsti  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnwod  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnwod  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rppolywo  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rppolywo  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnpolywo  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnpolywo  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rpodwo  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rpodwo  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnodwo  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnodwo  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rppolyl  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rppolyl  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnpolyl  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnpolyl  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rpodl  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rpodl  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnodl  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnodl  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rppolys  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rppolys  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnpolys  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnpolys  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rpods  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rpods  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnods  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnods  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm1  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm1  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm2  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm2  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm3  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm3  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm4  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm4  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm5  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm5  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm6  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm6  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm7  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm7  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm8  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm8  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm9  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm9  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rm10  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rm10  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnwsti_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnwsti_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rnwod_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnwod_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rpodwo_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rpodwo_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rnodwo_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnodwo_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rpodl_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rpodl_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rnodl_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnodl_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rpods_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rpods_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rnods_m  PARALLEL [ TOLERANCE lr 0 ]
+   LVS REDUCE  rnods_m  SERIES PLUS MINUS [ TOLERANCE wr 0 ]
+   LVS REDUCE  rppolys_dis  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rppolys_dis  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnpolys_dis  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnpolys_dis  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rppolyl_dis  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rppolyl_dis  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnpolyl_dis  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnpolyl_dis  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rppolywo_dis  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rppolywo_dis  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rnpolywo_dis  PARALLEL [ TOLERANCE l 0 ]
+   LVS REDUCE  rnpolywo_dis  SERIES PLUS MINUS [ TOLERANCE w 0 ]
+   LVS REDUCE  rppolyl_rf  PARALLEL NO
+   LVS REDUCE  rppolyl_rf  SERIES PLUS MINUS NO
+   LVS REDUCE  rppolys_rf  PARALLEL NO
+   LVS REDUCE  rppolys_rf  SERIES PLUS MINUS NO
+   LVS REDUCE  rppolywo_rf  PARALLEL NO
+   LVS REDUCE  rppolywo_rf  SERIES PLUS MINUS NO
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Trace Property
+
+   TRACE PROPERTY  d(ndio)  a a 0
+   TRACE PROPERTY  d(ndio_18)  a a 0
+   TRACE PROPERTY  d(ndio_25)  a a 0
+   TRACE PROPERTY  d(ndio_25od)  a a 0
+   TRACE PROPERTY  d(ndio_33)  a a 0
+   TRACE PROPERTY  d(ndio_esd)  a a 0
+   TRACE PROPERTY  d(ndio_hvt)  a a 0
+   TRACE PROPERTY  d(ndio_lvt)  a a 0
+   TRACE PROPERTY  d(ndio_na)  a a 0
+   TRACE PROPERTY  d(ndio_na18)  a a 0
+   TRACE PROPERTY  d(ndio_na25)  a a 0
+   TRACE PROPERTY  d(ndio_na33)  a a 0
+   TRACE PROPERTY  d(ndio_ulvt)  a a 0
+   TRACE PROPERTY  d(ndio_uthvt)  a a 0
+   TRACE PROPERTY  d(ndio_w)  a a 0
+   TRACE PROPERTY  d(nwdio)  a a 0
+   TRACE PROPERTY  d(nwdio_18)  a a 0
+   TRACE PROPERTY  d(nwdio_25)  a a 0
+   TRACE PROPERTY  d(nwdio_33)  a a 0
+   TRACE PROPERTY  d(nwdio_w)  a a 0
+   TRACE PROPERTY  d(pdio)  a a 0
+   TRACE PROPERTY  d(pdio_18)  a a 0
+   TRACE PROPERTY  d(pdio_25)  a a 0
+   TRACE PROPERTY  d(pdio_25od)  a a 0
+   TRACE PROPERTY  d(pdio_33)  a a 0
+   TRACE PROPERTY  d(pdio_hvt)  a a 0
+   TRACE PROPERTY  d(pdio_lvt)  a a 0
+   TRACE PROPERTY  d(pdio_ulvt)  a a 0
+   TRACE PROPERTY  d(pdio_uthvt)  a a 0
+   TRACE PROPERTY  d(pdio_w)  a a 0
+   TRACE PROPERTY  crtmom  nv nv 0
+   TRACE PROPERTY  crtmom  nh nh 0
+   TRACE PROPERTY  crtmom  s s 0
+   TRACE PROPERTY  crtmom  w w 0
+   TRACE PROPERTY  crtmom  stm stm 0
+   TRACE PROPERTY  crtmom  spm spm 0
+   TRACE PROPERTY  crtmom  busflag busflag 0
+   TRACE PROPERTY  crtmom_mx  nv nv 0
+   TRACE PROPERTY  crtmom_mx  nh nh 0
+   TRACE PROPERTY  crtmom_mx  s s 0
+   TRACE PROPERTY  crtmom_mx  w w 0
+   TRACE PROPERTY  crtmom_mx  stm stm 0
+   TRACE PROPERTY  crtmom_mx  spm spm 0
+   TRACE PROPERTY  crtmom_mx  mf mf 0
+   TRACE PROPERTY  crtmom_mx  busflag busflag 0
+   TRACE PROPERTY  crtmom_rf  nv nv 0
+   TRACE PROPERTY  crtmom_rf  nh nh 0
+   TRACE PROPERTY  crtmom_rf  s s 0
+   TRACE PROPERTY  crtmom_rf  w w 0
+   TRACE PROPERTY  crtmom_rf  stm stm 0
+   TRACE PROPERTY  crtmom_rf  spm spm 0
+   TRACE PROPERTY  crtmom_rf  busflag busflag 0
+   TRACE PROPERTY  mimcap_2p0_sin_3t  lt lt 0
+   TRACE PROPERTY  mimcap_2p0_sin_3t  wt wt 0
+   TRACE PROPERTY  mimcap_2p0_sin_3t  lay lay 0
+   TRACE PROPERTY  mimcap_2p0_sin  lt lt 0
+   TRACE PROPERTY  mimcap_2p0_sin  wt wt 0
+   TRACE PROPERTY  mimcap_woum_2p0_sin_rf  lt lt 0
+   TRACE PROPERTY  mimcap_woum_2p0_sin_rf  wt wt 0
+   TRACE PROPERTY  mimcap_woum_2p0_sin_rf  lay lay 0
+   TRACE PROPERTY  mimcap_um_2p0_sin_rf  lt lt 0
+   TRACE PROPERTY  mimcap_um_2p0_sin_rf  wt wt 0
+   TRACE PROPERTY  moscap_rf  lr lr 0
+   TRACE PROPERTY  moscap_rf  wr wr 0
+   TRACE PROPERTY  moscap_rf  br br 0
+   TRACE PROPERTY  moscap_rf  gr gr 0
+   TRACE PROPERTY  moscap_rf18  lr lr 0
+   TRACE PROPERTY  moscap_rf18  wr wr 0
+   TRACE PROPERTY  moscap_rf18  br br 0
+   TRACE PROPERTY  moscap_rf18  gr gr 0
+   TRACE PROPERTY  moscap_rf18_nw  lr lr 0
+   TRACE PROPERTY  moscap_rf18_nw  wr wr 0
+   TRACE PROPERTY  moscap_rf18_nw  br br 0
+   TRACE PROPERTY  moscap_rf18_nw  gr gr 0
+   TRACE PROPERTY  moscap_rf25  lr lr 0
+   TRACE PROPERTY  moscap_rf25  wr wr 0
+   TRACE PROPERTY  moscap_rf25  br br 0
+   TRACE PROPERTY  moscap_rf25  gr gr 0
+   TRACE PROPERTY  moscap_rf25_nw  lr lr 0
+   TRACE PROPERTY  moscap_rf25_nw  wr wr 0
+   TRACE PROPERTY  moscap_rf25_nw  br br 0
+   TRACE PROPERTY  moscap_rf25_nw  gr gr 0
+   TRACE PROPERTY  moscap_rf33  lr lr 0
+   TRACE PROPERTY  moscap_rf33  wr wr 0
+   TRACE PROPERTY  moscap_rf33  br br 0
+   TRACE PROPERTY  moscap_rf33  gr gr 0
+   TRACE PROPERTY  moscap_rf33_nw  lr lr 0
+   TRACE PROPERTY  moscap_rf33_nw  wr wr 0
+   TRACE PROPERTY  moscap_rf33_nw  br br 0
+   TRACE PROPERTY  moscap_rf33_nw  gr gr 0
+   TRACE PROPERTY  moscap_rf_nw  lr lr 0
+   TRACE PROPERTY  moscap_rf_nw  wr wr 0
+   TRACE PROPERTY  moscap_rf_nw  br br 0
+   TRACE PROPERTY  moscap_rf_nw  gr gr 0
+   TRACE PROPERTY  nmos_rf  wr wr 0
+   TRACE PROPERTY  nmos_rf  lr lr 0
+   TRACE PROPERTY  nmos_rf  nr nr 0
+   TRACE PROPERTY  nmos_rf18  wr wr 0
+   TRACE PROPERTY  nmos_rf18  lr lr 0
+   TRACE PROPERTY  nmos_rf18  nr nr 0
+   TRACE PROPERTY  nmos_rf25  wr wr 0
+   TRACE PROPERTY  nmos_rf25  lr lr 0
+   TRACE PROPERTY  nmos_rf25  nr nr 0
+   TRACE PROPERTY  nmos_rf33  wr wr 0
+   TRACE PROPERTY  nmos_rf33  lr lr 0
+   TRACE PROPERTY  nmos_rf33  nr nr 0
+   TRACE PROPERTY  nmoscap  wr wr 0
+   TRACE PROPERTY  nmoscap  lr lr 0
+   TRACE PROPERTY  nmoscap_18  wr wr 0
+   TRACE PROPERTY  nmoscap_18  lr lr 0
+   TRACE PROPERTY  nmoscap_25  wr wr 0
+   TRACE PROPERTY  nmoscap_25  lr lr 0
+   TRACE PROPERTY  nmoscap_33  wr wr 0
+   TRACE PROPERTY  nmoscap_33  lr lr 0
+   TRACE PROPERTY  pmos_rf  wr wr 0
+   TRACE PROPERTY  pmos_rf  lr lr 0
+   TRACE PROPERTY  pmos_rf  nr nr 0
+   TRACE PROPERTY  pmos_rf18  wr wr 0
+   TRACE PROPERTY  pmos_rf18  lr lr 0
+   TRACE PROPERTY  pmos_rf18  nr nr 0
+   TRACE PROPERTY  pmos_rf25  wr wr 0
+   TRACE PROPERTY  pmos_rf25  lr lr 0
+   TRACE PROPERTY  pmos_rf25  nr nr 0
+   TRACE PROPERTY  pmos_rf33  wr wr 0
+   TRACE PROPERTY  pmos_rf33  lr lr 0
+   TRACE PROPERTY  pmos_rf33  nr nr 0
+   TRACE PROPERTY  rm1  w w 0
+   TRACE PROPERTY  rm1  l l 0
+   TRACE PROPERTY  rm10  w w 0
+   TRACE PROPERTY  rm10  l l 0
+   TRACE PROPERTY  rm2  w w 0
+   TRACE PROPERTY  rm2  l l 0
+   TRACE PROPERTY  rm3  w w 0
+   TRACE PROPERTY  rm3  l l 0
+   TRACE PROPERTY  rm4  w w 0
+   TRACE PROPERTY  rm4  l l 0
+   TRACE PROPERTY  rm5  w w 0
+   TRACE PROPERTY  rm5  l l 0
+   TRACE PROPERTY  rm6  w w 0
+   TRACE PROPERTY  rm6  l l 0
+   TRACE PROPERTY  rm7  w w 0
+   TRACE PROPERTY  rm7  l l 0
+   TRACE PROPERTY  rm8  w w 0
+   TRACE PROPERTY  rm8  l l 0
+   TRACE PROPERTY  rm9  w w 0
+   TRACE PROPERTY  rm9  l l 0
+   TRACE PROPERTY  rnodl  l l 0
+   TRACE PROPERTY  rnodl  w w 0
+   TRACE PROPERTY  rnodl_m  lr lr 0
+   TRACE PROPERTY  rnodl_m  wr wr 0
+   TRACE PROPERTY  rnods  l l 0
+   TRACE PROPERTY  rnods  w w 0
+   TRACE PROPERTY  rnods_m  lr lr 0
+   TRACE PROPERTY  rnods_m  wr wr 0
+   TRACE PROPERTY  rnodwo  l l 0
+   TRACE PROPERTY  rnodwo  w w 0
+   TRACE PROPERTY  rnodwo_m  lr lr 0
+   TRACE PROPERTY  rnodwo_m  wr wr 0
+   TRACE PROPERTY  rnpolyl  l l 0
+   TRACE PROPERTY  rnpolyl  w w 0
+   TRACE PROPERTY  rnpolyl_dis  l l 0
+   TRACE PROPERTY  rnpolyl_dis  w w 0
+   TRACE PROPERTY  rnpolys  l l 0
+   TRACE PROPERTY  rnpolys  w w 0
+   TRACE PROPERTY  rnpolys_dis  l l 0
+   TRACE PROPERTY  rnpolys_dis  w w 0
+   TRACE PROPERTY  rnpolywo  l l 0
+   TRACE PROPERTY  rnpolywo  w w 0
+   TRACE PROPERTY  rnpolywo_dis  l l 0
+   TRACE PROPERTY  rnpolywo_dis  w w 0
+   TRACE PROPERTY  rnwod  l l 0
+   TRACE PROPERTY  rnwod  w w 0
+   TRACE PROPERTY  rnwod_m  lr lr 0
+   TRACE PROPERTY  rnwod_m  wr wr 0
+   TRACE PROPERTY  rnwsti  l l 0
+   TRACE PROPERTY  rnwsti  w w 0
+   TRACE PROPERTY  rnwsti_m  lr lr 0
+   TRACE PROPERTY  rnwsti_m  wr wr 0
+   TRACE PROPERTY  rpodl  l l 0
+   TRACE PROPERTY  rpodl  w w 0
+   TRACE PROPERTY  rpodl_m  lr lr 0
+   TRACE PROPERTY  rpodl_m  wr wr 0
+   TRACE PROPERTY  rpods  l l 0
+   TRACE PROPERTY  rpods  w w 0
+   TRACE PROPERTY  rpods_m  lr lr 0
+   TRACE PROPERTY  rpods_m  wr wr 0
+   TRACE PROPERTY  rpodwo  l l 0
+   TRACE PROPERTY  rpodwo  w w 0
+   TRACE PROPERTY  rpodwo_m  lr lr 0
+   TRACE PROPERTY  rpodwo_m  wr wr 0
+   TRACE PROPERTY  rppolyl  l l 0
+   TRACE PROPERTY  rppolyl  w w 0
+   TRACE PROPERTY  rppolyl_dis  l l 0
+   TRACE PROPERTY  rppolyl_dis  w w 0
+   TRACE PROPERTY  rppolyl_rf  l l 0
+   TRACE PROPERTY  rppolyl_rf  w w 0
+   TRACE PROPERTY  rppolys  l l 0
+   TRACE PROPERTY  rppolys  w w 0
+   TRACE PROPERTY  rppolys_dis  l l 0
+   TRACE PROPERTY  rppolys_dis  w w 0
+   TRACE PROPERTY  rppolys_rf  l l 0
+   TRACE PROPERTY  rppolys_rf  w w 0
+   TRACE PROPERTY  rppolywo  l l 0
+   TRACE PROPERTY  rppolywo  w w 0
+   TRACE PROPERTY  rppolywo_dis  l l 0
+   TRACE PROPERTY  rppolywo_dis  w w 0
+   TRACE PROPERTY  rppolywo_rf  l l 0
+   TRACE PROPERTY  rppolywo_rf  w w 0
+   TRACE PROPERTY  sbd_rf  nf nf 0
+   TRACE PROPERTY  sbd_rf  w w 0
+   TRACE PROPERTY  sbd_rf  l l 0
+   TRACE PROPERTY  sbd_rf_nw  nf nf 0
+   TRACE PROPERTY  sbd_rf_nw  w w 0
+   TRACE PROPERTY  sbd_rf_nw  l l 0
+   TRACE PROPERTY  spiral_std  lay lay 0
+   TRACE PROPERTY  spiral_std  w w 0
+   TRACE PROPERTY  spiral_std  nr nr 0
+   TRACE PROPERTY  spiral_std  rad rad 0
+   TRACE PROPERTY  spiral_sym  lay lay 0
+   TRACE PROPERTY  spiral_sym  w w 0
+   TRACE PROPERTY  spiral_sym  nr nr 0
+   TRACE PROPERTY  spiral_sym  rad rad 0
+   TRACE PROPERTY  spiral_sym_ct  lay lay 0
+   TRACE PROPERTY  spiral_sym_ct  w w 0
+   TRACE PROPERTY  spiral_sym_ct  nr nr 0
+   TRACE PROPERTY  spiral_sym_ct  rad rad 0
+   TRACE PROPERTY  xjvar  w w 0
+   TRACE PROPERTY  xjvar  l l 0
+   TRACE PROPERTY  xjvar  nr nr 0
+   TRACE PROPERTY  xjvar_nw  w w 0
+   TRACE PROPERTY  xjvar_nw  l l 0
+   TRACE PROPERTY  xjvar_nw  nr nr 0
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                         #       ###################       _   _   
+                        #        #                 #       *   *   
+                   #   #         #     CORRECT     #         |     
+                    # #          #                 #       \___/  
+                     #           ###################               
+
+
+
+LAYOUT CELL NAME:         SAR_system_3_u_sar_logic
+SOURCE CELL NAME:         SAR_system_3_u_sar_logic
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             24        24
+
+ Nets:             154       154
+
+ Instances:         53        48    *    MN (4 pins)
+                    53        48    *    MP (4 pins)
+                   101       101         rppolywo (2 pins)
+                     1         1         mimcap_2p0_sin (2 pins)
+                ------    ------
+ Total Inst:       208       198
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             24        24
+
+ Nets:              68        68
+
+ Instances:         26        26         MN (4 pins)
+                    26        26         MP (4 pins)
+                    17        17         rppolywo (2 pins)
+                     1         1         mimcap_2p0_sin (2 pins)
+                    18        18         INV (2 pins)
+                     2         2         NOR2 (3 pins)
+                ------    ------
+ Total Inst:        90        90
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:              24         24            0            0
+
+   Nets:               68         68            0            0
+
+   Instances:          26         26            0            0    MN(NCH)
+                       26         26            0            0    MP(PCH)
+                       17         17            0            0    rppolywo
+                        1          1            0            0    mimcap_2p0_sin
+                       18         18            0            0    INV
+                        2          2            0            0    NOR2
+                  -------    -------    ---------    ---------
+   Total Inst:         90         90            0            0
+
+
+o Statistics:
+
+   20 layout mos transistors were reduced to 10.
+     10 mos transistors were deleted by parallel reduction.
+
+   100 series layout resistors were reduced to 16.  84 connecting nets were deleted.
+   100 series source resistors were reduced to 16.  84 connecting nets were deleted.
+
+
+o Initial Correspondence Points:
+
+   Ports:        VDD GND VIN NQ B_BUF<0> B_BUF<1> B_BUF<2> B_BUF<3> B_BUF<4> B_BUF<5> B_BUF<6>
+                 B_BUF<7> VREF SOC EOC B<7> B<6> B<5> B<4> B<3> B<2> B<1> B<0> COMP_OUT
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      1 sec
+Total Elapsed Time:  1 sec

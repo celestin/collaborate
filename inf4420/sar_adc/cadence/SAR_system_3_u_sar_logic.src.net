@@ -1,0 +1,240 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  sar_adc
+* Top Cell Name: SAR_system_3_u_sar_logic
+* View Name:     schematic
+* Netlisted on:  Apr 29 12:04:09 2016
+************************************************************************
+
+.INCLUDE  /projects/nanos/design_kit/TSMC90nmLPRF_616OA/Calibre/lvs/source_added
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+
+
+************************************************************************
+* Library Name: tsmcN90rf
+* Cell Name:    nor2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT nor2 A B G Gb P Pb Y
+*.PININFO A:I B:I G:I Gb:I P:I Pb:I Y:O
+MM0 Y B net15 Pb pch l=pl w=pw m=1*pf
+MPM1 net15 A P Pb pch l=pl w=pw m=1*pf
+MNM1 Y B G Gb nch l=nl w=nw m=1*nf
+MM1 Y A G Gb nch l=nl w=nw m=1*nf
+.ENDS
+
+************************************************************************
+* Library Name: sar_adc
+* Cell Name:    SR_latch
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT SR_latch GND NQ Q R S VDD
+*.PININFO R:I S:I NQ:O Q:O GND:B VDD:B
+XI1 Q S GND GND VDD VDD NQ / nor2 nf=1 nw=200n nl=100n pf=1 pw=200n pl=100n
+XI0 R NQ GND GND VDD VDD Q / nor2 nf=1 nw=200n nl=100n pf=1 pw=200n pl=100n
+.ENDS
+
+************************************************************************
+* Library Name: tsmcN90rf
+* Cell Name:    inv
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inv G Gb IN OUT P Pb
+*.PININFO G:I Gb:I IN:I P:I Pb:I OUT:O
+MNM1 OUT IN G Gb nch l=nl w=nw m=1*nf
+MPM1 OUT IN P Pb pch l=pl w=pw m=1*pf
+.ENDS
+
+************************************************************************
+* Library Name: sar_adc
+* Cell Name:    sample_hold_3
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT sample_hold_3 GND PHI_1 VDD VIN VOUT
+*.PININFO PHI_1:I VIN:I VOUT:O GND:B VDD:B
+MM2 VIN net012 VOUT GND nch l=100n w=200n m=1
+XC1 VOUT GND mimcap_2p0_sin lt=22.065u wt=22.065u m=1
+XI1 GND GND PHI_1 net012 VDD VDD / inv pf=1 pw=200n pl=100n nf=1 nw=200n 
++ nl=100n
+MM0 VIN PHI_1 VOUT VDD pch l=100n w=200n m=1
+.ENDS
+
+************************************************************************
+* Library Name: sar_adc
+* Cell Name:    buffer
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT buffer GND IN OUT VDD
+*.PININFO IN:I OUT:O GND:B VDD:B
+XI1 GND GND net11 OUT VDD VDD / inv pf=1 pw=200n pl=100n nf=1 nw=200n nl=100n
+XI0 GND GND IN net11 VDD VDD / inv pf=1 pw=200n pl=100n nf=1 nw=200n nl=100n
+.ENDS
+
+************************************************************************
+* Library Name: sar_adc
+* Cell Name:    output_buffers
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT output_buffers BIN<7> BIN<6> BIN<5> BIN<4> BIN<3> BIN<2> BIN<1> BIN<0> 
++ BOUT<7> BOUT<6> BOUT<5> BOUT<4> BOUT<3> BOUT<2> BOUT<1> BOUT<0> GND VDD
+*.PININFO BIN<7>:I BIN<6>:I BIN<5>:I BIN<4>:I BIN<3>:I BIN<2>:I BIN<1>:I 
+*.PININFO BIN<0>:I BOUT<7>:O BOUT<6>:O BOUT<5>:O BOUT<4>:O BOUT<3>:O BOUT<2>:O 
+*.PININFO BOUT<1>:O BOUT<0>:O GND:B VDD:B
+XI7 GND BIN<0> BOUT<0> VDD / buffer
+XI6 GND BIN<1> BOUT<1> VDD / buffer
+XI5 GND BIN<2> BOUT<2> VDD / buffer
+XI4 GND BIN<3> BOUT<3> VDD / buffer
+XI3 GND BIN<4> BOUT<4> VDD / buffer
+XI2 GND BIN<5> BOUT<5> VDD / buffer
+XI1 GND BIN<6> BOUT<6> VDD / buffer
+XI0 GND BIN<7> BOUT<7> VDD / buffer
+.ENDS
+
+************************************************************************
+* Library Name: sar_adc
+* Cell Name:    ladder_R
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT ladder_R Ra Rb
+*.PININFO Ra:B Rb:B
+XR1 net07 net8 rppolywo l=85.34u w=500n m=1
+XR46 net05 Rb rppolywo l=85.34u w=500n m=1
+XR0 net05 net8 rppolywo l=85.34u w=500n m=1
+XR2 net07 Ra rppolywo l=85.34u w=500n m=1
+.ENDS
+
+************************************************************************
+* Library Name: sar_adc
+* Cell Name:    ladder_2R
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT ladder_2R Ra Rb
+*.PININFO Ra:B Rb:B
+XI2 Ra net5 / ladder_R
+XI3 net5 Rb / ladder_R
+.ENDS
+
+************************************************************************
+* Library Name: sar_adc
+* Cell Name:    dac_real_res
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT dac_real_res B<7> B<6> B<5> B<4> B<3> B<2> B<1> B<0> GND VOUT VREF
+*.PININFO B<7>:I B<6>:I B<5>:I B<4>:I B<3>:I B<2>:I B<1>:I B<0>:I VOUT:O GND:B 
+*.PININFO VREF:B
+XI17 GND GND net072 net022 VREF VREF / inv pf=1 pw=2.5u pl=100n nf=1 nw=2.5u 
++ nl=100n
+XI16 GND GND B<7> net072 VREF VREF / inv pf=1 pw=200n pl=100n nf=1 nw=200n 
++ nl=100n
+XI15 GND GND B<6> net027 VREF VREF / inv pf=1 pw=200n pl=100n nf=1 nw=200n 
++ nl=100n
+XI14 GND GND net027 net035 VREF VREF / inv pf=1 pw=2.5u pl=100n nf=1 nw=2.5u 
++ nl=100n
+XI13 GND GND net028 net046 VREF VREF / inv pf=1 pw=2.5u pl=100n nf=1 nw=2.5u 
++ nl=100n
+XI12 GND GND B<5> net028 VREF VREF / inv pf=1 pw=200n pl=100n nf=1 nw=200n 
++ nl=100n
+XI11 GND GND B<4> net029 VREF VREF / inv pf=1 pw=200n pl=100n nf=1 nw=200n 
++ nl=100n
+XI10 GND GND net029 net038 VREF VREF / inv pf=1 pw=2.5u pl=100n nf=1 nw=2.5u 
++ nl=100n
+XI9 GND GND net030 net037 VREF VREF / inv pf=1 pw=2.5u pl=100n nf=1 nw=2.5u 
++ nl=100n
+XI2 GND GND B<0> net016 VREF VREF / inv pf=1 pw=200n pl=100n nf=1 nw=200n 
++ nl=100n
+XI3 GND GND net016 net015 VREF VREF / inv pf=1 pw=2.5u pl=100n nf=1 nw=2.5u 
++ nl=100n
+XI4 GND GND net032 net068 VREF VREF / inv pf=1 pw=2.5u pl=100n nf=1 nw=2.5u 
++ nl=100n
+XI5 GND GND B<1> net032 VREF VREF / inv pf=1 pw=200n pl=100n nf=1 nw=200n 
++ nl=100n
+XI6 GND GND net031 net063 VREF VREF / inv pf=1 pw=2.5u pl=100n nf=1 nw=2.5u 
++ nl=100n
+XI7 GND GND B<2> net031 VREF VREF / inv pf=1 pw=200n pl=100n nf=1 nw=200n 
++ nl=100n
+XI8 GND GND B<3> net030 VREF VREF / inv pf=1 pw=200n pl=100n nf=1 nw=200n 
++ nl=100n
+XI51 net015 net9 / ladder_2R
+XI50 net068 net10 / ladder_2R
+XI49 net063 net11 / ladder_2R
+XI48 net037 net12 / ladder_2R
+XI47 net038 net13 / ladder_2R
+XI46 net046 net14 / ladder_2R
+XI45 net035 net15 / ladder_2R
+XI52 GND net9 / ladder_2R
+XI44 net022 VOUT / ladder_2R
+XI36 net9 net10 / ladder_R
+XI37 net10 net11 / ladder_R
+XI39 net12 net13 / ladder_R
+XI40 net13 net14 / ladder_R
+XI41 net14 net15 / ladder_R
+XI42 net15 VOUT / ladder_R
+XI38 net11 net12 / ladder_R
+.ENDS
+
+************************************************************************
+* Library Name: sar_adc
+* Cell Name:    comparator_rail2rail_input_external_current
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT comparator_rail2rail_input_external_current Gnd In Out Ref Vdd
+*.PININFO In:I Ref:I Out:O Gnd:B Vdd:B
+MM18 net30 net07 Gnd Gnd nch l=2u w=20u m=1
+MM17 net07 net07 Gnd Gnd nch l=2u w=20u m=1
+MM15 Out net38 Gnd Gnd nch l=500n w=1u m=1
+MM13 net38 net07 Gnd Gnd nch l=2u w=5u m=2
+MM11 net65 net65 Gnd Gnd nch l=1u w=20u m=2
+MM10 net24 net65 Gnd Gnd nch l=1u w=20u m=2
+MM5 net53 net48 Gnd Gnd nch l=1u w=20u m=2
+MM4 net48 net48 Gnd Gnd nch l=1u w=20u m=2
+MM1 net53 Ref net30 Gnd nch l=500n w=2u m=1
+MM0 net24 In net30 Gnd nch l=500n w=2u m=1
+MM19 net45 net010 Vdd Vdd pch l=2u w=20u m=1
+MM16 net010 net010 Vdd Vdd pch l=2u w=20u m=1
+MM14 Out net38 Vdd Vdd pch l=500n w=2u m=1
+MM12 net38 net53 Vdd Vdd pch l=1u w=20u m=2
+MM9 net53 net53 Vdd Vdd pch l=1u w=20u m=2
+MM8 net24 net53 Vdd Vdd pch l=1u w=20.3u m=2
+MM7 net53 net24 Vdd Vdd pch l=1u w=20.3u m=2
+MM6 net24 net24 Vdd Vdd pch l=1u w=20u m=2
+MM3 net65 Ref net45 Vdd pch l=500n w=2u m=1
+MM2 net48 In net45 Vdd pch l=500n w=2u m=1
+XR0 net010 net07 rppolywo l=38.31u w=800n m=1
+.ENDS
+
+************************************************************************
+* Library Name: sar_adc
+* Cell Name:    SAR_system_3_u_sar_logic
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT SAR_system_3_u_sar_logic B<0> B<1> B<2> B<3> B<4> B<5> B<6> B<7> 
++ B_Buf<7> B_Buf<6> B_Buf<5> B_Buf<4> B_Buf<3> B_Buf<2> B_Buf<1> B_Buf<0> 
++ COMP_OUT EoC GND NQ SoC VDD VIN VREF
+*.PININFO B<0>:I B<1>:I B<2>:I B<3>:I B<4>:I B<5>:I B<6>:I B<7>:I EoC:I SoC:I 
+*.PININFO VIN:I B_Buf<7>:O B_Buf<6>:O B_Buf<5>:O B_Buf<4>:O B_Buf<3>:O 
+*.PININFO B_Buf<2>:O B_Buf<1>:O B_Buf<0>:O COMP_OUT:O NQ:O GND:B VDD:B VREF:B
+XI19 GND NQ PHI_SH EoC SoC VDD / SR_latch
+XI16 GND PHI_SH VDD VIN SH_OUT / sample_hold_3
+XI18 B<0> B<1> B<2> B<3> B<4> B<5> B<6> B<7> B_Buf<7> B_Buf<6> B_Buf<5> 
++ B_Buf<4> B_Buf<3> B_Buf<2> B_Buf<1> B_Buf<0> GND VDD / output_buffers
+XI15 B<0> B<1> B<2> B<3> B<4> B<5> B<6> B<7> GND DAC_OUT VREF / dac_real_res
+XI22 GND SH_OUT COMP_OUT DAC_OUT VDD / 
++ comparator_rail2rail_input_external_current
+.ENDS
+

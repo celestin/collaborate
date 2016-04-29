@@ -1,6 +1,16 @@
 CADENCE IHNL01070
 $model
+sar_adc/ladder_2R/schematic ladder_2R
+tsmcN90rf/inv/schematic inv
+sar_adc/ladder_R/schematic ladder_R
+sar_adc/buffer/schematic buffer
+sar_adc/dac_real_res/schematic dac_real_res
+sar_adc/SAR_system_3_u_sar_logic/schematic SAR_system_3_u_sar_logic
 sar_adc/comparator_rail2rail_input_external_current/schematic comparator_rail2rail_input_external_current
+tsmcN90rf/nor2/schematic nor2
+sar_adc/SR_latch/schematic SR_latch
+sar_adc/sample_hold_3/schematic sample_hold_3
+sar_adc/output_buffers/schematic output_buffers
 $endmodel
 $net
 $endnet

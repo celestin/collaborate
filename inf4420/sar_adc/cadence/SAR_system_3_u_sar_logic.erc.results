@@ -1,0 +1,66 @@
+SAR_system_3_u_sar_logic 1000
+mnpg
+0 0 2 Apr 28 15:24:05 2016                                                      
+Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
+MOS connected to both power and ground
+mppg
+0 0 2 Apr 28 15:24:05 2016                                                      
+Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
+MOS connected to both power and ground
+floating.nxwell_float
+8 8 2 Apr 28 15:24:05 2016                                                      
+Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
+Floating nxwell_float is not allowed
+p 1 4
+CN SAR_system_3_u_sar_logic c 1 0 0 1 0 0
+24850 26715
+29235 26715
+29235 28045
+24850 28045
+p 2 4
+24850 29620
+29235 29620
+29235 30950
+24850 30950
+p 3 4
+24850 32525
+29235 32525
+29235 33855
+24850 33855
+p 4 4
+24850 35430
+29235 35430
+29235 36760
+24850 36760
+p 5 4
+24850 38335
+29235 38335
+29235 39665
+24850 39665
+p 6 4
+24850 41240
+29235 41240
+29235 42570
+24850 42570
+p 7 4
+24850 44145
+29235 44145
+29235 45475
+24850 45475
+p 8 4
+24850 47050
+29235 47050
+29235 48380
+24850 48380
+floating.psub
+0 0 2 Apr 28 15:24:05 2016                                                      
+Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
+Floating psub is not allowed
+npvss49
+0 0 2 Apr 28 15:24:05 2016                                                      
+Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
+ntap connected to GROUND
+ppvdd49
+0 0 2 Apr 28 15:24:05 2016                                                      
+Rule File Pathname: /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/_calibre.lvs_
+ptap connected to POWER

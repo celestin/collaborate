@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/SAR_system_3_u_sar_logic.dv
+dv_start matched                                  
+dv_cell {SAR_system_3_u_sar_logic} {SAR_system_3_u_sar_logic} matched
+dv_obj_count -transformed_nets {68 68} -transformed_inst {90 90} -transformed_port {24 24}
+dv_end

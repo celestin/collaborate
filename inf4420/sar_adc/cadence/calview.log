@@ -1,4 +1,31 @@
-NOTE: Creating CalibreView for cell SR_latch ...
+NOTE: Creating CalibreView for cell SAR_system_3_u_sar_logic ...
+WARNING: Not creating terminal B_BUF<0> in (SAR_system_3_u_sar_logic calibre) since matching terminal was not found on symbol.
+WARNING: Not creating terminal B_BUF<1> in (SAR_system_3_u_sar_logic calibre) since matching terminal was not found on symbol.
+WARNING: Not creating terminal B_BUF<2> in (SAR_system_3_u_sar_logic calibre) since matching terminal was not found on symbol.
+WARNING: Not creating terminal B_BUF<3> in (SAR_system_3_u_sar_logic calibre) since matching terminal was not found on symbol.
+WARNING: Not creating terminal B_BUF<4> in (SAR_system_3_u_sar_logic calibre) since matching terminal was not found on symbol.
+WARNING: Not creating terminal B_BUF<5> in (SAR_system_3_u_sar_logic calibre) since matching terminal was not found on symbol.
+WARNING: Not creating terminal B_BUF<6> in (SAR_system_3_u_sar_logic calibre) since matching terminal was not found on symbol.
+WARNING: Not creating terminal B_BUF<7> in (SAR_system_3_u_sar_logic calibre) since matching terminal was not found on symbol.
+WARNING: Not creating terminal SOC in (SAR_system_3_u_sar_logic calibre) since matching terminal was not found on symbol.
+WARNING: Not creating terminal EOC in (SAR_system_3_u_sar_logic calibre) since matching terminal was not found on symbol.
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
 NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
 NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
 NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
@@ -7,9 +34,62 @@ NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to in
 NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
 NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
 NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:nch:symbol) to instance of (tsmcN90rf:nch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+NOTE: Copying properties from schematic instance of (tsmcN90rf:pch:symbol) to instance of (tsmcN90rf:pch_mac:symbol).
+The "mimcap" device contains the following un-matched parametr(s):
+("lpe")
+The "rppolywo" device contains the following un-matched parametr(s):
+("lpe")
 The "nch_mac" device contains the following un-matched parametr(s):
 ("lpe")
 The "pch_mac" device contains the following un-matched parametr(s):
 ("lpe")
-Calibre View generation completed with 0 WARNINGs and 0 ERRORs.
+Calibre View generation completed with 50 WARNINGs and 0 ERRORs.
 Please consult the CIW transcript for messages.

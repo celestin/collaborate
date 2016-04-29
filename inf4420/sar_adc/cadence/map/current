@@ -1,7 +1,7 @@
 ( ( nil
   version "2.1"
   mapType "incremental"
-  blockName "comparator_rail2rail_input_external_current"
+  blockName "SAR_system_3_u_sar_logic"
   repList "auCdl schematic"
   stopList "auCdl"
   hierDelim "."
@@ -15,10 +15,30 @@
  )
 ( model
 ( "sar_adc/comparator_rail2rail_input_external_current/schematic" "comparator_rail2rail_input_external_current" )
+( "sar_adc/ladder_R/schematic" "ladder_R" )
+( "tsmcN90rf/inv/schematic" "inv" )
+( "tsmcN90rf/nor2/schematic" "nor2" )
+( "sar_adc/SAR_system_3_u_sar_logic/schematic" "SAR_system_3_u_sar_logic" )
+( "sar_adc/dac_real_res/schematic" "dac_real_res" )
+( "sar_adc/SR_latch/schematic" "SR_latch" )
+( "sar_adc/buffer/schematic" "buffer" )
+( "sar_adc/ladder_2R/schematic" "ladder_2R" )
+( "sar_adc/output_buffers/schematic" "output_buffers" )
+( "sar_adc/sample_hold_3/schematic" "sample_hold_3" )
  )
 ( term
  )
 ( param
  )
-( "comparator_rail2rail_input_external_current" "ihnl/cds0/map" )
+( "nor2" "ihnl/cds0/map" )
+( "ladder_2R" "ihnl/cds7/map" )
+( "SR_latch" "ihnl/cds1/map" )
+( "dac_real_res" "ihnl/cds8/map" )
+( "buffer" "ihnl/cds4/map" )
+( "sample_hold_3" "ihnl/cds3/map" )
+( "SAR_system_3_u_sar_logic" "ihnl/cds10/map" )
+( "ladder_R" "ihnl/cds6/map" )
+( "comparator_rail2rail_input_external_current" "ihnl/cds9/map" )
+( "output_buffers" "ihnl/cds5/map" )
+( "inv" "ihnl/cds2/map" )
  )

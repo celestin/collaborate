@@ -1,22 +1,22 @@
 //
-//  Rule file generated on Wed Apr 27 19:18:48 CEST 2016
+//  Rule file generated on Thu Apr 28 15:24:02 CEST 2016
 //     by Calibre Interactive - LVS (v2013.4_15.12)
 //
 //      *** PLEASE DO NOT MODIFY THIS FILE ***
 //
 //
 
-LAYOUT PATH  "output_buffers.calibre.db"
-LAYOUT PRIMARY "output_buffers"
+LAYOUT PATH  "SAR_system_3_u_sar_logic.calibre.db"
+LAYOUT PRIMARY "SAR_system_3_u_sar_logic"
 LAYOUT SYSTEM GDSII
 
-SOURCE PATH "/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/output_buffers.src.net"
-SOURCE PRIMARY "output_buffers"
+SOURCE PATH "/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/SAR_system_3_u_sar_logic.src.net"
+SOURCE PRIMARY "SAR_system_3_u_sar_logic"
 SOURCE SYSTEM SPICE
 
 MASK SVDB DIRECTORY "svdb" QUERY
 
-LVS REPORT "output_buffers.lvs.report"
+LVS REPORT "SAR_system_3_u_sar_logic.lvs.report"
 
 LVS REPORT OPTION NONE
 LVS FILTER UNUSED OPTION NONE SOURCE
@@ -59,8 +59,8 @@ VIRTUAL CONNECT COLON NO
 VIRTUAL CONNECT REPORT NO
 
 LVS EXECUTE ERC YES
-ERC RESULTS DATABASE "output_buffers.erc.results"
-ERC SUMMARY REPORT "output_buffers.erc.summary" REPLACE HIER
+ERC RESULTS DATABASE "SAR_system_3_u_sar_logic.erc.results"
+ERC SUMMARY REPORT "SAR_system_3_u_sar_logic.erc.summary" REPLACE HIER
 ERC CELL NAME YES CELL SPACE XFORM
 ERC MAXIMUM RESULTS 1000
 ERC MAXIMUM VERTEX 4096
