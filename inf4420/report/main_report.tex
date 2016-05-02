@@ -39,7 +39,7 @@ Successive Approximation Register (SAR) Analog-to-Digital Converter (ADC) is a c
 circuits today, and the purpose is to convert a signal from the analig to the digital domain. This is of great interest, because digital signals propagates more efficiently than analog singlals in a 
 circuit. By using digital signals, it is easier for the electronic circuit to distinguish the signal from the noise \cite{basic-adc}.\\
 \\
-This task, is as mentrioned, to design a SAR ADC. A block diagram of the system arcitecture is shown in Fig. \ref{block_diagram}. The system includes a sample and hold, a comparator, digital-to-analog 
+This task, is as mentrioned, to design a SAR ADC. A block diagram of the system arcitecture is shown in Fig. (\ref{block_diagram}). The system includes a sample and hold, a comparator, digital-to-analog 
 converter (DAC) and a logic block. The task was to design all this blocks, exept the logic block. The solution for each blocks are discussed in detail in the next chapters.  
 
 \tikzstyle{block} = [draw, fill=blue!20, rectangle, 
@@ -73,60 +73,65 @@ converter (DAC) and a logic block. The task was to design all this blocks, exept
 \end{figure}
 \subsection{System overview}
 A Successive Approximation Register is a binary search algorithm, that compares a sampled input signal with a clocked bit signal. For this task 8-bits are used. The 8-bits counts from 0 to 256, and 
-compares this values with the input signal. 
-
-% \begin{figure}
-%  \begin{tikzpicture}
-%     \foreach \x in {0,1,2,3,4}
-%    
-%       \draw (2*\x cm, 110pt)[dashed] -- (2*\x cm, -2pt) node[below] {Bit $\x$ };
-%     \foreach \y in {0,1,2,3,4}
-%       \draw ( 2pt, \y cm) -- (-2pt, \y cm) node[left] {$\y$};
-%      \draw [thick, ->] (0,0)--(8,0) node[right] {TIME};
-%      \draw [thick, ->] (0,0)--(0,4) node[above] {$V_{DAC}$};
-%     \draw (0,1.5) -- (8,1.5) node[above left]{$v_{in}$};
-%  \end{tikzpicture}
-% 
-% \end{figure}
-
-\begin{tikzpicture}[scale=1.1],
-\centering
-\begin{axis}[
-height=8cm,
-width=10cm,  
-  ymax=4,
-  ymin=0,
-  xmin=0,
-  xmax=4,
-  axis y line*=left,
-  axis x line*=bottom,
-  yticklabels={$1/4V_{ref}$, $1/2V_{ref}$, $3/4V_{ref}$, $V_{ref}$},ytick={1,...,4},
-  y tick label style={rotate=0,anchor=east}, 
-  xticklabels={BIT 3, BIT 2, BIT 1, BIT 0},xtick={1,...,4},
-  x tick label style={anchor= north east}]
-\addplot[solid] coordinates {(0,1.8) (10,1.8)};
-\end{axis}
-\end{tikzpicture}
-
-In this section, each step in the DAC process is discussed. 
-\subsubsection{Sample and Hold}
-The sample and hold (S/H) is the fist element in the chain. The S/H snatches a value of a analog signal, holds it and digitize it, as shown in Fig. \ref{sample:hold}. In Fig. \ref{sample:hold:2}
-we can se a simple circuit for a S/H. During \(\phi_{1}\), the switch is on, and the capacitor charges to \(V_{in}\). When the switch closes again $V_{out}$ has the same potential as the capacitor 
-at the moment the switch opend \cite{basic-sample-hold}. 
+compares this values with the input signal. Fig. (\ref{sar:adc}) shows a example of a 4-bit converter. With a 8-bit converter, it is possible i achieve a higher resolution for a better accuracy \cite{sar-adc-concept}.\\
+\\
+In the system overview section, each step in the DAC process is discussed. Fist we discuss the sample and hold, then the comparator, digital-to-analog converter and a small section of 
+the sar logic block. 
 
 \begin{figure} 
+\centering
+ \begin{tikzpicture}
+ \draw[thick, ->] (0,0) -- (10,0) node[right]{$time$};
+ \draw[thick, ->] (0,0) -- (0,8) node[left]{$V_{dac}$};
+ 
+ \draw[thick] (0,2) node[left]{$1/4 V_{ref}$} -- (0.2,2);
+ \draw[thick] (0,4) node[left]{$1/2 V_{ref}$}-- (0.2,4);
+ \draw[thick] (0,6) node[left]{$3/4 V_{ref}$}-- (0.2,6);
+ 
+ \draw (2,0) node[anchor= north east] {$BIT3 = 0$};
+ \draw (4,0) node[anchor= north east] {$BIT2 = 1$};
+ \draw (6,0) node[anchor= north east] {$BIT1 = 0$};
+ \draw (8,0) node[anchor= north east] {$BIT0 = 1$};
+ \draw [help lines, dashed] (2,0) -- (2,8);
+ \draw [help lines, dashed] (4,0) -- (4,8);
+ \draw [help lines, dashed] (6,0) -- (6,8);
+ \draw [help lines, dashed] (8,0) -- (8,8);
+ 
+ \draw [thick, -] (0,3) -- (10,3)node[right]{$V_{in}$};
+ 
+ \draw [ultra thick, -] (0,6) -- (2,6);
+ \draw [ultra thick, -] (2,6) -- (2,2);
+ \draw [ultra thick, -] (2,2) -- (4,2);
+ \draw [ultra thick, -] (4,2) -- (4,3.5);
+ \draw [ultra thick, -] (4,3.5) -- (6,3.5);
+ \draw [ultra thick, -] (6,3.5) -- (6,2.8);
+ \draw [ultra thick, -] (6,2.8) -- (8,2.8);
+ \end{tikzpicture}
+ \caption{Example of 4-bit SAR ADC conversion}
+ \label{sar:adc}
+\end{figure}
+
+
+\subsubsection{Sample and Hold}
+The sample and hold (S/H) is the fist element in the chain. The S/H snatches a value of a analog signal, holds it and digitize it, as shown in Fig. (\ref{sample:hold}). In Fig. (\ref{sample:hold:2})
+we can se a simple circuit for a S/H. During \(\phi_{1}\), the switch is on, and the capacitor charges to \(V_{in}\). When the switch closes again $V_{out}$ has the same potential as the capacitor 
+at the moment the switch opend \cite{basic-sample-hold}.\\
+\\
+In the SAR ADC architecture, the function for the sample and hold is to make a stable input calue for the comparator, which compares this input value to the bit sequence, as shown in Fig. (\ref{sar:adc}). 
+
+\begin{figure} 
+\centering
  \begin{tikzpicture} 
  %%Denne første modellen er input signalet
-    % We start by drawing the diagram:
-    \draw [thick, ->] (0,0)--(6,0);
-    \draw [thick, ->] (0,0)--(0,4);
+    \draw[thick, ->] (0,0)--(6,0);
+    \draw[thick, ->] (0,0)--(0,4);
+    
     \draw[ultra thick, red] (0,2) sin (1.5,4);
     \draw[ultra thick, red] (1.5,4) cos (3,2);
     \draw[ultra thick, red] (3,2) sin (4.5,0);
     \draw[ultra thick, red] (4.5,0) cos (6,2);
   
   %% Denne andre modellen er samplet signal
-    % We start by drawing the diagram:
     \draw [thick, ->] (7,0)--(13,0);
     \draw [thick, ->] (7,0)--(7,4);
     \draw[ultra thick, red] (7,2) sin (8.5,4);
@@ -160,9 +165,10 @@ at the moment the switch opend \cite{basic-sample-hold}.
     \draw[ultra thick, blue] (12.5,0.3) -- (12.5,1);
     \draw[ultra thick, blue] (12.5,1) -- (13,1);
     \draw[ultra thick, blue] (13,1) -- (13,2);
-  \end{tikzpicture}\caption{Input signal and sampled signal} \label{sample:hold}
+  \end{tikzpicture}
+  \caption{Input signal and sampled signal} 
+  \label{sample:hold}
 \end{figure}
-
 
 \begin{figure}
 \begin{center}
@@ -175,14 +181,218 @@ at the moment the switch opend \cite{basic-sample-hold}.
 \end{center}
 \end{figure}
 
-
 \subsubsection{Comparator}
+The comparator compares two signals, and outputs either a digital low or high. For a SAR ADC, we compare the sampled reference voltage (\(V_{ref}\)) from the S/H, by the bit sequence from the DAC. 
+If the first bit is higher than \(V_{ref}\), the comparator outputs a digital low. Then we know that the sampled value is lower than the value of the first bit. This bit is called the most 
+signifiacant bit, shorted as MSB. The calues for the each bit, is discussed in the next subsection.\\
+\\
+The complexity if the comparator depends on the speed and the accuracy. In some later sections, qe can find the requrements for the circuit and the comparator. Noise in a comparator is a 
+concern, and it is therefor important to design the comparator for as low noise as possible. In datacoversion it is often prefered to have a input reffered noise of less than 1 LSB 
+(Least Significant Bit). On the other hand, offset is not a concern since it does not affect the overall liniarity \cite{sar-adc-concept}. 
 
 \subsubsection{Digital-to-analog converter}
+The digital-to-analog converter (DAC) converts, as the name implies, a digital signal to a analog signal. Depending on the requirements for speed, accuracy, complexity, space and more, it is 
+important to find a design that suits the requirements. Table \ref{dac:comparison} shows pros and cons for three different DAC architectures, including R-2R DAC, Resistor string DAC and 
+Delta-Sigma DAC \cite{different-dac}. \\
+\\
+For this project, the R-2R DAC is used. More on why we choosed this architecture is explained in a later chapter. The R-2R is a simple DAC configuration, and consists of only two different 
+resistor values hence the name R-2R. Fig. (\ref{r2r:ladder}) shows an example of a 8-bit R-2R ladder, which also is used for this project. The bit sequence into the DAC is controlled by the SAR logic
+block, which is briefly discussed in the next subsection. The purpose of the R-2R ladder is to set a specific volage value for each bit. Fist, we test bit 7 (\(b7\)). By using Eq. (\ref{vlsb}), we 
+can calculate the output volage of the DAC (\(V_{out}\)) for each bit combination.\\
+\\
+As an example, we can use \(5V\) as reference volage (\(V_{ref}\)), and set bit 7 to logic high (i.e. 1). All other bits are set to logic low (0). We can now draw an equivalent circuit, 
+which is illustrated in Fig. (\ref{example:r2r}). We can se that the output volage is halv the input voltage, i.e 2.5V. 
+This bit causes most change to the circutit, and is therefor the MSB. Lets say that the reference voltage from the sample and hold is 1.5V, we notice that the output from the DAC is larger than 1.5V.
+This bit is therefor set to low again, and we calculate the output volage for the next bit. It repets these steps intill all the bits are checked. If the output volage is lower than the reference 
+volage, the bit is set to logic high, and if the reference volage is higher than the output volage of the DAC, it goes back to logic low.\\
+\\
+The purpose of the R-2R ladder, is therefor to represent a output value for all bit combinations. In some cases, if the differences between the output volage levels are difficult to separate, 
+it is desred to have a operational amplifier with a gain at the output. 
+
+\begin{table}[!ht]
+  \centering
+ \label{comp:adc}
+ \begin{tabular}{|l|l|l|}
+ \hline
+			& Pros       			& Cons   			\\ \hline
+R-2R DAC 		& - Can achieve high		& - Causing high output 	\\
+			& performance INL and DNL	& glitches		   	\\ 
+			& - Medium settling time	& - Need HV transistor input	\\
+			& capability			&  stage for HV DAC Buffer ->	\\
+			& - Low noise R-2R ladder	&  Low BW and setteling		\\
+			& - Inherently monotonic	& - Internally, requires high 	\\
+			& - Cost Effective		& common mode voltage swing 	\\
+			& - Simple to build 		& output amp		 	\\ \hline
+Resistor		& - No need for trimming	& - Requires 2\^N -1 matching 	\\
+String DAC		& - Good DNL performance	& resistors			\\
+			& - Low Glitch Energy		& - Resolution is limited	\\ 
+			& 				& - Size can grow with 		\\
+			&				& resolution requirement	\\
+			& 				& - High resolution is achieved \\
+			&				& by pipeline-like		\\
+			& 				& architectures which 		\\
+			&				& compromises monotonocity	\\ \hline
+Delta-Sigma		& - High resolution		& - Settling time \(\sim\) 2ms	\\
+DAC			& - Low Power			& - Long Latency		\\
+			& - Voltage output		& -  Not optimized for DC	\\
+			& - Good Linearity		&				\\
+			& - Low Cost			&				\\
+			& - In Audio: moving noise	&				\\
+			& out of audible range		&				\\ \hline
+ 		        &     				& 				\\ \hline
+ \end{tabular}
+ \caption{Comparation of different ADCs}
+ \label{dac:comparison}
+ \end{table}
+ 
+ \begin{figure}
+  \centering
+  \ctikzset{bipoles/length = 1cm}
+  \begin{circuitikz}[scale = 0.5]
+   \draw (0,0) -- (1,0);
+   \draw (0,0) -- (0,-1) to[R, l={$2R$}] (0,-3) node[ground]{};
+   \draw (0,0) -- (0,1) to[R, l={$2R$}] (0,3) -- (0,4)[-o,]node[above]{$b0$};
+   \draw (1,0) to[R, l={$R$}] (3,0) -- (4,0);
+   \draw (3.5,0) -- (3.5,1) to[R, l={$2R$}] (3.5,3) -- (3.5,4)[-o]node[above]{$b1$};
+   \draw (4,0) to[R, l={$R$}] (6,0) -- (7,0);
+   \draw (6.5,0) -- (6.5,1) to[R, l={$2R$}] (6.5,3) -- (6.5,4)[-o]node[above]{$b2$};
+   \draw (7,0) to[R, l={$R$}] (9,0) -- (10,0);
+   \draw (9.5,0) -- (9.5,1) to[R, l={$2R$}] (9.5,3) -- (9.5,4)[-o]node[above]{$b3$};
+   \draw (10,0) to[R, l={$R$}] (12,0) -- (13,0);
+   \draw (12.5,0) -- (12.5,1) to[R, l={$2R$}] (12.5,3) -- (12.5,4)[-o]node[above]{$b4$};
+   \draw (13,0) to[R, l={$R$}] (15,0) -- (16,0);
+   \draw (15.5,0) -- (15.5,1) to[R, l={$2R$}] (15.5,3) -- (15.5,4)[-o]node[above]{$b5$};
+   \draw (16,0) to[R, l={$R$}] (18,0) -- (19,0);
+   \draw (18.5,0) -- (18.5,1) to[R, l={$2R$}] (18.5,3) -- (18.5,4)[-o]node[above]{$b6$};
+   \draw (19,0) to[R, l={$R$}] (21,0);
+   \draw (21.5,0) -- (21.5,1) to[R, l={$2R$}] (21.5,3) -- (21.5,4)[-o]node[above]{$b7$};
+   \draw (21,0) -- (23,0)[-o] node[right]{$V_{out}$};
+  \end{circuitikz}
+  \caption{Example of 8-bit R-2R ladder}
+  \label{r2r:ladder}
+ \end{figure}
+ 
+\begin{equation}\label{vlsb}
+ V_{LSB} = V_{ref} \cdot \frac{1}{2^{N}}
+\end{equation}
+
+\begin{equation}
+ V_{Max} = V_{ref} \cdot \frac{2^{N}-1}{2^{N}}
+\end{equation}
+
+\begin{equation}
+ BinVal = \sum_{i=0}^{N-1} 2^{i} \cdot b_{i}
+\end{equation}
+
+\begin{equation}
+ V_{out} = V_{LSB} \cdot BinVal
+\end{equation}
+
+\begin{figure}
+\centering
+ \begin{circuitikz}
+ \draw (0,0)[o-]  node[left]{$V_{ref}$} -- (1,0);
+ \draw (1,0)to[R, l=$2R$] (3,0) -- (5,0)[-o] node[right]{$V_{out}$};
+ \draw (3.5,0) -- (3.5,-1) to[R, l={$2R$}] (3.5,-3) node[ground]{};
+ \end{circuitikz}
+ \caption{R-2R equivalent circuit is \(b7\) is set}
+ \label{example:r2r}
+\end{figure}
+
 \subsubsection{Logic}
-\
+The SAR logic block, is the ``brain'' of the circuit. The scope of the project is not to design this block, and is therefor not discussed in detail here. The block contains three inputs and 
+two outputs, where one of the outputs is a bit sequence of total 8-bits. The block with its I/Os are shown in Fig. (\ref{sar:logic}). Each I/O is briefly discussed under.
+\begin{figure}[!ht]
+ \centering
+ \begin{tikzpicture}
+  \draw [thick] (0,0) rectangle (4,4);
+  \draw[thick] (-2,1)[o-] node[left]{$keep$} -- (0,1);
+  \draw (-2,2)[o-]node[left]{$SoC$} -- (0,2);
+  \draw (-2,3)[o-]node[left]{$clk$} -- (0,3);
+  \draw (4,1) -- (6,1)[-o]node[right]{$done$};
+  \draw (4,3) -- (6,3)[-o]node[right]{$b<7:0>$};
+ \end{tikzpicture}
+ \caption{SAR logic block}
+ \label{sar:logic}
+\end{figure}
+
+\begin{figure}
+ \centering
+ \begin{tikzpicture}
+  \draw[thick, ->](0,0) -- (12,0);
+  \draw[thick, ->](0,0) -- (0,13);
+  
+  \draw (0.5,0) node[anchor= north] {$t=0$};
+  
+  \draw [help lines, dashed] (0.5,0) -- (0.5,13);
+  \draw [help lines, dashed] (1,0) -- (1,13);
+  \draw [help lines, dashed] (1.5,0) -- (1.5,13);
+  \draw [help lines, dashed] (2,0) -- (2,13);
+  \draw [help lines, dashed] (2.5,0) -- (2.5,13);
+  \draw [help lines, dashed] (3,0) -- (3,13);
+  \draw [help lines, dashed] (3.5,0) -- (3.5,13);
+  \draw [help lines, dashed] (4,0) -- (4,13);
+  \draw [help lines, dashed] (4.5,0) -- (4.5,13);
+  \draw [help lines, dashed] (5,0) -- (5,13);
+  \draw [help lines, dashed] (5.5,0) -- (5.5,13);
+  \draw [help lines, dashed] (6,0) -- (6,13);
+  \draw [help lines, dashed] (6.5,0) -- (6.5,13);
+  \draw [help lines, dashed] (7,0) -- (7,13);
+  \draw [help lines, dashed] (7.5,0) -- (7.5,13);
+  \draw [help lines, dashed] (8,0) -- (8,13);
+  \draw [help lines, dashed] (8.5,0) -- (8.5,13);
+  \draw [help lines, dashed] (9,0) -- (9,13);
+  \draw [help lines, dashed] (9.5,0) -- (9.5,13);
+  \draw [help lines, dashed] (10,0) -- (10,13);
+  \draw [help lines, dashed] (10.5,0) -- (10.5,13);
+  \draw [help lines, dashed] (11,0) -- (11,13);
+  \draw [help lines, dashed] (11.5,0) -- (11.5,13);
+  \draw [help lines, dashed] (12,0) -- (12,13);
+  
+  \draw(-0.2,1) node[left]{$b0$} -- (0,1);
+  \draw(-0.2,2) node[left]{$b1$} -- (0,2);
+  \draw(-0.2,3) node[left]{$b2$} -- (0,3);
+  \draw(-0.2,4) node[left]{$b3$} -- (0,4);
+  \draw(-0.2,5) node[left]{$b4$} -- (0,5);
+  \draw(-0.2,6) node[left]{$b5$} -- (0,6);
+  \draw(-0.2,7) node[left]{$b6$} -- (0,7);
+  \draw(-0.2,8) node[left]{$b7$} -- (0,8);
+  \draw(-0.2,9) node[left]{$done$} -- (0,9);
+  \draw(-0.2,10) node[left]{$keep$} -- (0,10);
+  \draw(-0.2,11) node[left]{$SoC$} -- (0,11);
+  \draw(-0.2,12) node[left]{$clk$} -- (0,12);
+  
+  \draw(0,12)--(0.5,12)--(0.5,12.5)--(1,12.5)--(1,12)--(1.5,12)--(1.5,12.5)--(2,12.5)--(2,12)--(2.5,12)--(2.5,12.5)--(3,12.5)--(3,12)--(3.5,12)--(3.5,12.5)--(4,12.5)--
+  (4,12)--(4.5,12)--(4.5,12.5)--(5,12.5)--(5,12)--(5.5,12)--(5.5,12.5)--(6,12.5)--(6,12)--(6.5,12)--(6.5,12.5)--(7,12.5)--(7,12)--(7.5,12)--(7.5,12.5)--(8,12.5)--(8,12)--(8.5,12)--
+  (8.5,12.5)--(9,12.5)--(9,12)--(9.5,12)--(9.5,12.5)--(10,12.5)--(10,12)--(10.5,12)--(10.5,12.5)--(11,12.5)--(11,12)--(11.5,12)--(11.5,12.5)--(12,12.5);
+  \draw(0,11)--(0.6,11)--(0.6,11.5)--(1.1,11.5)--(1.1,11)--(12,11);
+  \draw(0,10)--(1,10);
+  \draw(0,9);
+  \draw(0,8)--(0.5,8)--(0.5,8.5)--(1,8.5)--(1,8)--(4.5,8)--(4.5,8.5)--(5,8.5)--(5,8)--(8,8)--(8,8.5)--(8.5,8.5)--(8.5,8)--(12,8);
+  \draw(0,7)--(1,7)--(1,7.5)--(1.5,7.5)--(1.5,7)--(5,7)--(5,7.5)--(5.5,7.5)--(5.5,7)--(8.5,7)--(8.5,7.5)--(9,7.5)--(9,7)--(12,7);
+  \draw(0,6)--(1.5,6)--(1.5,6.5)--(2,6.5)--(2,6)--(5.5,6)--(5.5,6.5)--(6,6.5)--(6,6)--(9,6)--(9,6.5)--(9.5,6.5)--(9.5,6)--(12,6);
+  \draw(0,5)--(2,5)--(2,5.5)--(2.5,5.5)--(2.5,5)--(6,5)--(6,5.5)--(6.5,5.5)--(6.5,5)--(9.5,5)--(9.5,5.5)--(10,5.5)--(10,5)--(12,5);
+  \draw(0,4)--(2.5,4)--(2.5,4.5)--(3,4.5)--(3,4)--(6.5,4)--(6.5,4.5)--(7,4.5)--(7,4)--(10,4)--(10,4.5)--(10.5,4.5)--(10.5,4)--(12,4);
+  \draw(0,3)--(3,3)--(3,3.5)--(3.5,3.5)--(3.5,3)--(7,3)--(7,3.5)--(7.5,3.5)--(7.5,3)--(10.5,3)--(10.5,3.5)--(11,3.5)--(11,3)--(12,3);
+  \draw(0,2)--(3.5,2)--(3.5,2.5)--(4,2.5)--(4,2)--(7.5,2)--(7.5,2.5)--(8,2.5)--(8,2)--(11,2)--(11,2.5)--(11.5,2.5)--(11.5,2)--(12,2);
+  \draw(0,1)--(4,1)--(4,1.5)--(4.5,1.5)--(4.5,1)--(8,1)--(8,1.5)--(8.5,1.5)--(8.5,1)--(11.5,1)--(11.5,1.5)--(12,1.5)--(12,1)--(12,1);
+ \end{tikzpicture}
+
+\end{figure}
+
+
+\textbf{\(SoC\)}
+Start of conversion (\(SoC\)) is the first signal that happends. This starts the countung, and is 
+\textbf{\(clk\)}
+\textbf{\(keep\)}
+\textbf{\(b<7:0>\)}
+\textbf{\(done\)}
+
+
+
+
 \subsection{Requirements}
-In todays technologies, it is importatint to consume as low power as possible, and be as fast as possible. Due to this, we are going to design a SAR ADC which are capable 
+In todays technologies, it is important to consume as low power as possible, and be as fast as possible. Due to this, we are going to design a SAR ADC which are capable 
 of running with a powersupply of 1.2 V and have sampling frequency of 1 MHz. The overall requirements are listed bellow.\\
 \textbf{SAR ADC}
 \begin{itemize}
@@ -227,14 +437,9 @@ Comparator:
  \item The comparator does not effect the overall linearity 
 \end{itemize}
 
-%-----------Background-------
-\chapter{Background}
+  
+\section{Planning the project} 
 
-
-%-----------Main part--------          
-\chapter{Planning the project} 
-\section{Task 1}
-\subsection{Task 1.B}
 \begin{table}
  \centering
  \caption{Comparation of different ADCs}
@@ -252,8 +457,8 @@ Comparator:
 
 
 %-----------Results----------
-\chapter{Results} 
-\chapter{Discussion and conclusion}
+\section{Results} 
+\section{Discussion and conclusion}
 \section{Discussion}
 \subsection{Proposal of improvement}
 \section{Conclusion}
