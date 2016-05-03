@@ -171,14 +171,13 @@ In the SAR ADC architecture, the function for the sample and hold is to make a s
 \end{figure}
 
 \begin{figure}
-\begin{center}
+\centering
 \begin{circuitikz}
 \draw (0,0) node[anchor=east]{$v_{in}$}[o-] -- (1,0);
 \draw (1,0) to[push button, l=$\phi_{1}$] (3,0);
 \draw (3,0) to[C, l=$C$] (3,-2) node[ground] {};
 \draw (3,0) -- (5,0)node[anchor=west]{$v_{out}$}[-o];
 \end{circuitikz}\caption{Sample and Hold} \label{sample:hold:2}
-\end{center}
 \end{figure}
 
 \subsubsection{Comparator}
@@ -502,19 +501,66 @@ The component part is the actual schematic for the block. The subsentions is ran
 For the sample and hold, we have tried several different designs. 
 \subsubsection{SIM\_sample\_hold\_3}
 \subsubsection{sample\_hold\_3}
-\begin{figure}
- \begin{circuitikz}
-  \draw()
- \end{circuitikz}
-
+\begin{figure}[!ht]
+\centering
+ \begin{circuitikz} \draw 
+  (0,0)node[anchor=east]{$v_{in}$} to[short, o-] (2,0)
+  (1.5,2) node[not port](not1){}
+  (0,2)node[anchor=east]{$\phi$} to[short, o-](1,2) -- (not1.in)
+  
+  (2,0) to[Tnmos, n=n1] (4,0)
+  (not1.out) -| (n1.G)
+  (2,0) to[Tpmos, n=p1, mirror](4,0) -- (5,0)
+  (not1.in) |- (p1.G)
+  
+  (5,0) to[C, l=$C$] (5,-2) node[ground] {}
+  (5,0) -- (7,0)node[anchor=west]{$v_{out}$}[-o]
+ ;\end{circuitikz}
+\caption{Sample and Hold design} 
+\label{sample:hold:design}
 \end{figure}
-
-
 
 \subsection{Comparator}
 \subsubsection{SIM\_comparator\_rail2rail\_external\_current}
 \subsubsection{comparator\_rail2rail\_external\_current}
 
+\begin{figure}[!ht]
+\centering
+\ctikzset{bipoles/length = 0.8cm}
+ \begin{circuitikz}
+  \draw[yscale=0.8, xscale=0.6]
+  (3,5) -- (0,5) to[Tpmos, n=p1](0,3) to[R] (0,0) to[Tnmos, n=n1] (0,-1.5) node [ground]{}
+  (3,5) to[Tpmos, n=p2, mirror] (3,3) (p2.G) -- (p1.G)node[circ]{} |- (p1.S)node[circ]{}
+  
+  (3,5) -- (6,5) to[Tpmos, n=p3, mirror](6,3) -- (6,2.5) (p3.G) |- ($(p3.S)-(0,0.5)$)node[circ]{}
+  (6,5) -- (8,5) to[Tpmos, n=p4, mirror] (8,3)  ($(p3.S)-(0,0.5)$) -| (p4.G)
+  (8,5) -- (9,5) to[Tpmos, n=p5] (9,3) (p4.S)node[circ]{} -- ($(p5.G)-(1.63,1.46)$)node[circ]{} ($(p4.G)-(-1.63,1.46)$)node[circ]{} -- (p5.S)node[circ]{}
+  (9,5) -- (11,5) to[Tpmos, n=p6] (11,3) -- (11,2.5) (p5.G) |- ($(p6.S)-(0,0.5)$) (p6.G) |- ($(p6.S)-(0,0.5)$)node[circ]{}
+  
+  (4.37,2) to[Tnmos, n=n2, mirror] (4.37,0.5) (n2.S) -- ($(p3.G)-(0,1.46)$)node[circ]{} (n2.G)to[short, -o]($(n2.G)-(0.8,0)$)node[anchor=east]{In}
+  (12.63,2) to[Tnmos, n=n7](12.63,0.5) (n7.S) -- ($(p6.G)-(0,1.46)$)node[circ]{} (n7.D) -- (n2.D) (n7.G)to[short, -o]($(n7.G)+(1,0)$)node[anchor=west]{Ref}
+  
+  (4.37,-3) to[Tpmos, n=p7, mirror] (4.37,-4.5) (n2.G) -- (p7.G)
+  (12.63,-3) to[Tpmos, n=p8](12.63,-4.5) (p8.G) -- (n7.G) (p7.D) -- (p8.D) 
+  
+  (8.5,0) to[Tnmos, n=n4, mirror](8.5,-1.5)node[ground]{} (n1.G) -- (n4.G) (n4.S) -- ($(n2.D)+(4.13,0)$)node[circ]{} 
+  
+  (4.37,-5) to[Tnmos, n=n5](4.37,-6.5) node[ground]{} (p7.S) -- (n5.S) (n5.G)node[circ]{} |- (n5.S)node[circ]{}
+  (7.37,-5) to[Tnmos, n=n6, mirror](7.37,-6.5) node[ground]{} (n5.G) -- (n6.G) (n6.S) -- (7.37,1)node[circ]{} -- ($(p5.G)-(1.63,1.46)$) -- ($(p5.G)-(0,1.46)$) 
+  (9.63,-5) to[Tnmos, n=n8](9.63,-6.5) node[ground]{} (n8.S) -- (9.63, 1)node[circ]{} -- ($(p4.G)-(-1.63,1.46)$) -- ($(p4.G)-(0,1.46)$)
+  (12.63,-5) to[Tnmos, n=n9, mirror](12.63,-6.5) node[ground]{} (n8.G) -- (n9.G) (n9.G)node[circ]{} |- (n9.S)node[circ]{} (n9.S) -- (p8.S)
+  (p2.S) |- ($(p8.D)+(-4,0.5)$) -- ($(p8.D)-(4,0)$)node[circ]{} 
+  
+  (11,5) -| (17,4) to[Tpmos, n=p9, mirror](17,2) (p9.G) -- ($(p6.G)-(0,1)$)node[circ]{}
+  (17,0) to[Tnmos, n=n10, mirror](17,-2)node[ground]{} (n10.S) -- (p9.S) (n10.G) |- (n4.G)
+  (17,5) -| (20,3) to[Tpmos, n=p10, mirror](20,1) (p10.S) to[short, -o]($(p10.S)+(1,0)$)node[anchor=west]{OUT} 
+  (20,1) to[Tnmos, n=n11, mirror](20,-1)node[ground]{} (p10.G) -- (n11.G) ($(n11.G)+(0,1)$)node[circ]{} -- ($(n10.S)+(0,1.04)$)node[circ]{}
+  
+  (20,5) to[short, -o] (21,5)node[anchor=west]{$V_{DD}$}
+ ;\end{circuitikz}
+ \caption{Comparator design}
+ \label{comp:design}
+\end{figure}
 
 
 \subsection{Digital-to-analog converter}
@@ -554,6 +600,40 @@ For the sample and hold, we have tried several different designs.
 \subsection{SR latch}
 \subsubsection{SIM\_SR\_latch}
 \subsubsection{SR\_latch}
+
+\begin{figure}
+\centering
+ \begin{circuitikz}[yscale=1, xscale=1]\draw
+  
+  
+  (2,3) node[nor port](nor1){}
+  (nor1.in 1)--($(nor1.in 1)-(1,0)$)node[anchor=east]{\(R\)}
+  
+  (2,0) node[nor port](nor2){}
+  (nor2.in 2)--($(nor2.in 2)-(1,0)$)node[anchor=east]{\(S\)}
+  
+  (nor1.out) -- ($(nor1.out)+(1,0)$) -- ($(nor2.in 1)+(0,0.6)$) -| (nor2.in 1) (nor1.out)to[short, -o](4,3) node[anchor=west]{\(Q\)}
+  (nor2.out) -- ($(nor2.out)+(1,0)$) -- ($(nor1.in 2)-(0,0.6)$) -| (nor1.in 2) (nor2.out)to[short, -o](4,0) node[anchor=west]{\(\bar Q\)}
+ ;\end{circuitikz}
+ \caption{SR latch}
+ \label{sr:latch}
+\end{figure}
+
+\begin{table}[]
+\centering
+
+\begin{tabular}{|l|l|l|l|}
+\hline 
+			 &			    &			       &			   \\ 	
+\(S\)			 & \(R\)		    & \(Q\)		       & \(\bar Q\)		   \\ \hline
+0                        & 0                        & NC            	       & NC             	   \\ \hline
+0                        & 1                        & 0                        & 1                         \\ \hline
+1                        & 0                        & 1                        & 0                         \\ \hline
+1                        & 1                        & 0                        & 1                         \\ \hline
+\end{tabular}
+\caption{My caption}
+\label{my-label}
+\end{table}
 
 \subsection{Output buffers}
 \subsubsection{SIM\_output\_buffers}
