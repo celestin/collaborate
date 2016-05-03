@@ -211,7 +211,6 @@ it is desred to have a operational amplifier with a gain at the output.
 
 \begin{table}[!ht]
   \centering
- \label{comp:adc}
  \begin{tabular}{|l|l|l|}
  \hline
 			& Pros       			& Cons   			\\ \hline
@@ -301,7 +300,8 @@ DAC			& - Low Power			& - Long Latency		\\
 
 \subsubsection{Logic}
 The SAR logic block, is the ``brain'' of the circuit. The scope of the project is not to design this block, and is therefor not discussed in detail here. The block contains three inputs and 
-two outputs, where one of the outputs is a bit sequence of total 8-bits. The block with its I/Os are shown in Fig. (\ref{sar:logic}). Each I/O is briefly discussed under.
+two outputs, where one of the outputs is a bit sequence of total 8-bits. The block with its I/Os are shown in Fig. (\ref{sar:logic}). Each I/O is briefly discussed under, and Fig. (\ref{timing_sar})
+shows a typical timing diagram for the SAR logic block.
 \begin{figure}[!ht]
  \centering
  \begin{tikzpicture}
@@ -315,8 +315,7 @@ two outputs, where one of the outputs is a bit sequence of total 8-bits. The blo
  \caption{SAR logic block}
  \label{sar:logic}
 \end{figure}
-
-\begin{figure}
+\begin{figure}[!ht]
  \centering
  \begin{tikzpicture}
   \draw[thick, ->](0,0) -- (12,0);
@@ -365,29 +364,41 @@ two outputs, where one of the outputs is a bit sequence of total 8-bits. The blo
   \draw(0,12)--(0.5,12)--(0.5,12.5)--(1,12.5)--(1,12)--(1.5,12)--(1.5,12.5)--(2,12.5)--(2,12)--(2.5,12)--(2.5,12.5)--(3,12.5)--(3,12)--(3.5,12)--(3.5,12.5)--(4,12.5)--
   (4,12)--(4.5,12)--(4.5,12.5)--(5,12.5)--(5,12)--(5.5,12)--(5.5,12.5)--(6,12.5)--(6,12)--(6.5,12)--(6.5,12.5)--(7,12.5)--(7,12)--(7.5,12)--(7.5,12.5)--(8,12.5)--(8,12)--(8.5,12)--
   (8.5,12.5)--(9,12.5)--(9,12)--(9.5,12)--(9.5,12.5)--(10,12.5)--(10,12)--(10.5,12)--(10.5,12.5)--(11,12.5)--(11,12)--(11.5,12)--(11.5,12.5)--(12,12.5);
-  \draw(0,11)--(0.6,11)--(0.6,11.5)--(1.1,11.5)--(1.1,11)--(12,11);
-  \draw(0,10)--(1,10);
-  \draw(0,9);
-  \draw(0,8)--(0.5,8)--(0.5,8.5)--(1,8.5)--(1,8)--(4.5,8)--(4.5,8.5)--(5,8.5)--(5,8)--(8,8)--(8,8.5)--(8.5,8.5)--(8.5,8)--(12,8);
-  \draw(0,7)--(1,7)--(1,7.5)--(1.5,7.5)--(1.5,7)--(5,7)--(5,7.5)--(5.5,7.5)--(5.5,7)--(8.5,7)--(8.5,7.5)--(9,7.5)--(9,7)--(12,7);
-  \draw(0,6)--(1.5,6)--(1.5,6.5)--(2,6.5)--(2,6)--(5.5,6)--(5.5,6.5)--(6,6.5)--(6,6)--(9,6)--(9,6.5)--(9.5,6.5)--(9.5,6)--(12,6);
-  \draw(0,5)--(2,5)--(2,5.5)--(2.5,5.5)--(2.5,5)--(6,5)--(6,5.5)--(6.5,5.5)--(6.5,5)--(9.5,5)--(9.5,5.5)--(10,5.5)--(10,5)--(12,5);
-  \draw(0,4)--(2.5,4)--(2.5,4.5)--(3,4.5)--(3,4)--(6.5,4)--(6.5,4.5)--(7,4.5)--(7,4)--(10,4)--(10,4.5)--(10.5,4.5)--(10.5,4)--(12,4);
-  \draw(0,3)--(3,3)--(3,3.5)--(3.5,3.5)--(3.5,3)--(7,3)--(7,3.5)--(7.5,3.5)--(7.5,3)--(10.5,3)--(10.5,3.5)--(11,3.5)--(11,3)--(12,3);
-  \draw(0,2)--(3.5,2)--(3.5,2.5)--(4,2.5)--(4,2)--(7.5,2)--(7.5,2.5)--(8,2.5)--(8,2)--(11,2)--(11,2.5)--(11.5,2.5)--(11.5,2)--(12,2);
-  \draw(0,1)--(4,1)--(4,1.5)--(4.5,1.5)--(4.5,1)--(8,1)--(8,1.5)--(8.5,1.5)--(8.5,1)--(11.5,1)--(11.5,1.5)--(12,1.5)--(12,1)--(12,1);
+  \draw(0,11.5)--(0.5,11.5)--(0.5,11)--(9,11)--(9,11.5)--(9.5,11.5)--(9.5,11)--(10,11)--(12,11);
+  \draw(0,10)--(2.5,10)--(2.5,10.5)--(4,10.5)--(4,10)--(5.5,10)--(5.5,10.5)--(6,10.5)--(6,10)--(10.5,10)--(10.5,10.5)--(11,10.5)--(11,10)--(12,10);
+  \draw(0,9)--(8.5,9)--(8.5,9.5)--(9,9.5)--(9,9)--(12,9);
+  \draw(0,8)--(0.5,8)--(0.5,8.5)--(1,8.5)--(1,8)--(9.5,8)--(9.5,8.5)--(10,8.5)--(10,8)--(12,8);
+  \draw(0,7)--(1.5,7)--(1.5,7.5)--(2,7.5)--(2,7)--(10.5,7)--(10.5,7.5)--(11,7.5)--(12,7.5);
+  \draw(0,6)--(2.5,6)--(2.5,6.5)--(9,6.5)--(9,6)--(11.5,6)--(11.5,6.5)--(11.5,6.5)--(12,6.5);
+  \draw(0,5)--(3.5,5)--(3.5,5.5)--(9,5.5)--(9,5)--(12,5);
+  \draw(0,4)--(4.5,4)--(4.5,4.5)--(5,4.5)--(5,4)--(12,4);
+  \draw(0,3)--(5.5,3)--(5.5,3.5)--(9,3.5)--(9,3)--(12,3);
+  \draw(0,2)--(6.5,2)--(6.5,2.5)--(7,2.5)--(7,2)--(12,2);
+  \draw(0,1)--(7.5,1)--(7.5,1.5)--(8,1.5)--(8,1)--(12,1);
  \end{tikzpicture}
-
+ \caption{Typical timing diagram for the SAR logic block}
+ \label{timing_sar}
 \end{figure}
-
-
-\textbf{\(SoC\)}
-Start of conversion (\(SoC\)) is the first signal that happends. This starts the countung, and is 
-\textbf{\(clk\)}
-\textbf{\(keep\)}
-\textbf{\(b<7:0>\)}
-\textbf{\(done\)}
-
+\newline
+\textbf{Signal clk:}\\
+The clock signal (\(clk\)) is a contiues signal that cycles at a duty cycle of 50\% This signal is controlled by the microcontroller.\\
+\\
+\textbf{Signal SoC:}\\
+Start of conversion (\(SoC\)) is the first signal that happens. This is the trigger signal that starts the bit counting, and happens when the \(SoC\) goes logic low. It stays low during the 
+whole couning period. When the last bit is pulsed, it waits for a interrupt from the end of conversion (EoC), which is named \(done\) in this block. After \(done\) is pulsed, \(SoC\) goes
+high for one period, and then it starts again.\\
+\\
+\textbf{Signal done:}\\
+As mentrioned above, the \(done\) signal happens when all the bits has cycled once. The \(done\) signal indicates that the round is finnished, and the \(SoC\) can go high, and start a new turn.\\
+\\
+\textbf{Signal b<7:0>:}\\
+For this system, there are total 8-bits. All of these bits happens at different time, starting at the MSB and ending at the LSB. For more detailed information about how these bits operate, see
+the section for the DAC.\\
+\\
+\textbf{Signal keep:}\\
+The \(keep\) signal is the input to the SAR logic block from the comparator. If the DAC output is higher than the reference voltage from the S/H, the comparator outputs a logic low, indicating
+that the represented bit not will be kept. If the comparator outputs a logic high, the DAC output is lower than the reference voltage, and the bis is kept. More detaild information on how this works, 
+can be found in the subsention for the comparator.  
 
 
 
@@ -398,7 +409,7 @@ of running with a powersupply of 1.2 V and have sampling frequency of 1 MHz. The
 \begin{itemize}
  \item Input sampling rate: 1 M samples/s
  \item Output resolution: 8 bits
- \item Supply voltage: $V_{DD} = 1.2 V$, and $V_{SS} = 0 V$
+ \item Supply voltage: \(V_{DD} = 1.2 V\), and \(V_{SS} = 0 V\)
  \item No missing codes
  \item Monotonic
 \end{itemize}
@@ -406,16 +417,159 @@ of running with a powersupply of 1.2 V and have sampling frequency of 1 MHz. The
 \begin{itemize}
  \item Sampling rate: 8 M samples/s
  \item Resolution: 8 bits
- \item Supply voltage: $V_{DD} = 1.2 V$, and $V_{SS} = 0 V$
- \item DNL < $\pm$ 0.5 LSB
- \item INL < $\pm$ 0.5 LSB
- \item $V_{OUT(P\_P)} \geq 0.6$
- \item $C_{load} = 50 fF$
+ \item Supply voltage: \(V_{DD} = 1.2 V\), and \(V_{SS} = 0 V\)
+ \item DNL < \(\pm\) 0.5 LSB
+ \item INL < \(\pm\) 0.5 LSB
+ \item \(V_{OUT(P\_P)} \geq 0.6 V\)
+ \item \(C_{load} = 50 fF\)
+\end{itemize}
+\textbf{Comparator}
+\begin{itemize}
+ \item Delay \(\leq\) 0.5 clock cycle
+ \item Supply Voltage: \(V_{DD} = 1.2V\) and \(V_{SS} = 0V\) 
+ \item Offset < 0.5 LSB
+ \item Gain > \(V_{DD}/V_{ref}/2^{n}\)
+ \item \(C_{load} = 50 fF\)
 \end{itemize}
 
-\textbf{Comparator}
+\section{Planning the project} 
+Before stating the work on the shematics, we searched for litterature in textbooks and on the internet. There was also a mandatory handin for a prestudy for comparing different ADC types. This 
+comparison is losted in Table (\ref{comp:adc}) \cite{forstudie}. There has also been carried out a status report during the prosject. The total circuit was discussed at this stage of the prosject.
+After this report, there has beed done a lot of changes to the circuit. These changes are discussed in detail in the nest section. 
+
+\begin{table}[!ht]
+ \centering
+ \begin{tabular}{|l|l|l|l|l|}
+  \hline
+                   & SAR        & Flash   & Sigma-Delta  & Integrating          \\ \hline
+  Conversion speed & Low-medium & Fast    & Low          & Depending on 	\\
+		   &	        &	  &		 & reolution and 	\\
+		   &		&	  &		 & clock 		\\ \hline
+  Sampling rate    & Nyquist    & Nyquist & Oversampling & Nyquist              \\ \hline
+  Area             & Low        & High    & Medium       &                      \\ \hline
+ \end{tabular}
+ \caption{Comparation of different ADCs}
+ \label{comp:adc}
+\end{table}
+
+\newpage
+\section{Results} 
+In order to get a god overview of the different parts of the total system, each block in the system is separated into sections. As a summary all the blocks are duscussed together as a final, and 
+total system. To be sure that every part works as i should, we made own working directoris for each part. The naming for the blocks were kept consequently, so that there would not create any problem. 
+To get a better overview for the reader, we have listed the hierarchy bellow. Note that some of the blocks has a number at the end of the name. This indicates the verson. 
+\begin{itemize}
+ \item SIM\_SAR\_system\_3
+ \begin{itemize}
+  \item SAR\_system\_3
+ \end{itemize}
+ \item SIM\_sample\_hold\_3
+ \begin{itemize}
+  \item sample\_hold\_3
+ \end{itemize}
+ \item SIM\_comparator\_rail2rail\_external\_current
+ \begin{itemize}
+  \item comparator\_rail2rail\_external\_current
+ \end{itemize}
+ \item SIM\_dac\_real\_res
+  \begin{itemize}
+  \item dac\_real\_res
+ \end{itemize}
+ \item SIM\_SAR\_logic
+  \begin{itemize}
+  \item SAR\_logic
+ \end{itemize}
+ \item SIM\_SR\_latch
+  \begin{itemize}
+  \item SR\_latch
+ \end{itemize}
+ \item SIM\_output\_buffers
+  \begin{itemize}
+  \item output\_buffers
+ \end{itemize}
+\end{itemize}
+In addtion, there are also one more block, that was created when we simulated the layout. Since the SAR logic block is not supporting layout, we had to take this block out of the whole system, 
+and simulate it separately. These files are called:
+\begin{itemize}
+ \item SIM\_SAR\_system\_3\_u\_sar\_logic
+ \begin{itemize}
+  \item SAR\_system\_3\_u\_sar\_logic
+ \end{itemize}
+\end{itemize}
+The \textit{Results} section is divided into subsections, where each subsection repressent each block in the system. Each sub section contains a simulation part and a component part. 
+The component part is the actual schematic for the block. The subsentions is ranged in the same order as in the introduction. In the end, the addtional blocks, such as \textit{SR latch}, and 
+\textit{output buffers} are discussed. For the thery of each block, we refers to Section 1, Introduction. 
+\subsection{Sample and hold}
+For the sample and hold, we have tried several different designs. 
+\subsubsection{SIM\_sample\_hold\_3}
+\subsubsection{sample\_hold\_3}
+\begin{figure}
+ \begin{circuitikz}
+  \draw()
+ \end{circuitikz}
+
+\end{figure}
 
 
+
+\subsection{Comparator}
+\subsubsection{SIM\_comparator\_rail2rail\_external\_current}
+\subsubsection{comparator\_rail2rail\_external\_current}
+
+
+
+\subsection{Digital-to-analog converter}
+\subsubsection{SIM\_dac\_real\_res}
+\subsubsection{dac\_real\_res}
+ \begin{figure}
+  \centering
+  \ctikzset{bipoles/length = 1cm}
+  \begin{circuitikz}[scale = 0.5]
+   \draw (0,0) -- (1,0);
+   \draw (0,0) -- (0,-1) to[R, l={$2R$}] (0,-3) node[ground]{};
+   \draw (0,0) -- (0,1) to[R, l={$2R$}] (0,3) -- (0,4)[-o,]node[above]{$b0$};
+   \draw (1,0) to[R, l={$R$}] (3,0) -- (4,0);
+   \draw (3.5,0) -- (3.5,1) to[R, l={$2R$}] (3.5,3) -- (3.5,4)[-o]node[above]{$b1$};
+   \draw (4,0) to[R, l={$R$}] (6,0) -- (7,0);
+   \draw (6.5,0) -- (6.5,1) to[R, l={$2R$}] (6.5,3) -- (6.5,4)[-o]node[above]{$b2$};
+   \draw (7,0) to[R, l={$R$}] (9,0) -- (10,0);
+   \draw (9.5,0) -- (9.5,1) to[R, l={$2R$}] (9.5,3) -- (9.5,4)[-o]node[above]{$b3$};
+   \draw (10,0) to[R, l={$R$}] (12,0) -- (13,0);
+   \draw (12.5,0) -- (12.5,1) to[R, l={$2R$}] (12.5,3) -- (12.5,4)[-o]node[above]{$b4$};
+   \draw (13,0) to[R, l={$R$}] (15,0) -- (16,0);
+   \draw (15.5,0) -- (15.5,1) to[R, l={$2R$}] (15.5,3) -- (15.5,4)[-o]node[above]{$b5$};
+   \draw (16,0) to[R, l={$R$}] (18,0) -- (19,0);
+   \draw (18.5,0) -- (18.5,1) to[R, l={$2R$}] (18.5,3) -- (18.5,4)[-o]node[above]{$b6$};
+   \draw (19,0) to[R, l={$R$}] (21,0);
+   \draw (21.5,0) -- (21.5,1) to[R, l={$2R$}] (21.5,3) -- (21.5,4)[-o]node[above]{$b7$};
+   \draw (21,0) -- (23,0)[-o] node[right]{$V_{out}$};
+  \end{circuitikz}
+  \caption{Example of 8-bit R-2R ladder}
+  \label{r2r:ladder:real}
+ \end{figure}
+
+\subsection{SAR logic}
+\subsubsection{SIM\_SAR\_logic}
+\subsubsection{SAR\_logic}
+
+\subsection{SR latch}
+\subsubsection{SIM\_SR\_latch}
+\subsubsection{SR\_latch}
+
+\subsection{Output buffers}
+\subsubsection{SIM\_output\_buffers}
+\subsubsection{output\_buffers}
+
+\subsection{SAR system}
+\subsubsection{SIM\_SAR\_system\_3}
+\subsubsection{SAR\_system\_3}
+
+
+\section{Discussion and conclusion}
+\section{Discussion}
+\subsection{Proposal of improvement}
+\section{Conclusion}
+
+\section{Punkter som kanskje skal med}
 Critical parts in SAR ADCs 
 
 \begin{itemize}
@@ -437,34 +591,6 @@ Comparator:
  \item The comparator does not effect the overall linearity 
 \end{itemize}
 
-  
-\section{Planning the project} 
-
-\begin{table}
- \centering
- \caption{Comparation of different ADCs}
- \label{comp:adc}
- \begin{tabular}{|l|l|l|l|l|}
- \hline
-                  & SAR        & Flash   & Sigma-Delta  & Integrating                      \\ \hline
- Conversion speed & Low-medium & Fast    & Low          & Depending on \\
-		  &	       &	 &		&reolution and clock 		   \\ \hline
- Sampling rate    & Nyquist    & Nyquist & Oversampling & Nyquist                          \\ \hline
- Area             & Low        & High    & Medium       &                                  \\ \hline
- \end{tabular}
- \end{table}
-
-
-
-%-----------Results----------
-\section{Results} 
-\section{Discussion and conclusion}
-\section{Discussion}
-\subsection{Proposal of improvement}
-\section{Conclusion}
-
-% \backmatter{}
-
 
 \begin{appendices}
 \chapter{Software and instrument overview}
@@ -473,6 +599,10 @@ Comparator:
 \printbibliography{}
 
 \end{document}
+
+% TABELL FOR SAMMENLIGNING AV FORSKJELLIGE ADC
+
+
 
 
 % --------------------------------------------------------------------
