@@ -6,7 +6,7 @@
 \usepackage{babel,textcomp,csquotes,ifikompendiumforside, varioref,graphicx, gensymb}
 \usepackage[]{circuitikz}
 \usepackage{tikz}
-\usetikzlibrary{shapes,arrows, calc}
+\usetikzlibrary{shapes,arrows, calc, positioning}
 \usepackage[backend=biber,style=numeric-comp, sortcites]{biblatex} 
 \usepackage{pgfplots}
 
@@ -881,6 +881,23 @@ The functionality of this circuit is very simple and the correctness was therefo
   dblock/.style = {draw, shape=diamond, align=center},
   ]
   
+  \node [block] (srlatch) {SR Latch};
+  \node [block, right= of srlatch](samplehold){Sample and hold};
+  \node [block, below= of samplehold](dac){DAC};
+  \node [block, right= of samplehold](comparator){Comparator};
+  \node [block, right= of comparator](sarlogic){SAR logic\\block};
+  \node [block, below= of sarlogic](outputbuffer){Output Buffer};
+  
+  \begin{scope}[very thick]
+  \draw (srlatch) -- (samplehold); %
+  \draw (samplehold) -- (comparator); %
+  \draw (comparator) -- (sarlogic); %
+  \draw (comparator) -- (dac);
+  \draw (dac) -- (sarlogic);
+  \draw (sarlogic) -- (outputbuffer);
+  \end{scope}
+
+\end{tikzpicture}
 
 
 
