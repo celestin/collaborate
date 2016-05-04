@@ -628,18 +628,32 @@ The functional implementation is showed in the figure (\ref{comp:design}) and th
 \end{figure}
 
 \subsubsection{Simulation}
-The circuit is simulated by sweeping the Vref input voltage from 100mV to 1100mV in steps of 100mV.
+The circuit is simulated by sweeping the \(V_{ref}\) voltage from 100mV to 1100mV in steps of 100mV while applying a sine wave to the input.
+The output from the simulated comparator is shown in figure (\ref{figure:comparator:sim_output_greater}) and (\ref{figure:comparator:sim_output_less}).
 
-There is a slight shift in the window the of comparator. 
+The comparator is not perfect and has an average offset of about -5mV when determining the output e.g. 495mV at the input with a \(V_{ref}\) of 500mV would drive the output to be high,
+lower than 495mV at the input would drive the output low.
 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\textwidth]{img/comparator/comparator_r2r_less_600m_10k_scaled}
+    \caption{Comparator simulation output, \(V_{ref} \leq 600mV\) }
+    \label{figure:comparator:sim_output_less}
+\end{figure}
 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\textwidth]{img/comparator/comparator_r2r_greater_600m_10k_scaled}
+    \caption{Sample and Hold simulation output, \(V_{ref} > 600mV\)}
+    \label{figure:comparator:sim_output_greater}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% DAC
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Digital-to-analog converter}
 \subsubsection{Implementation}
-The implementation for the DAC is shown in Fig. (\ref{r2r:ladder:real}). After a long study on different types of DAC, we decided to use a R-2R implementation. This decision was mainly due to 
+The implementation for the DAC is shown in Fig. (\ref{fig:r2r:ladder:real}). After a long study on different types of DAC, we decided to use a R-2R implementation. This decision was mainly due to 
 complexity. A resistor string implementation has been considered, but this implementation is so complex for a 8-bit DAC. The resistor string needs a lot of digital logic circuit, but the main 
 reason is the large amount of resistors needed. For a 8-bit system, it is required to have \(2^N\) resistor \cite{carusone}. This means that there would be 256 resistors. Due to this large amount of resistor, 
 this circuit has not been simulated and tested. An other DAC architecture that has been considered, is a Charge-Redistribution Switched-Capacitor converter. The advantage for using this circuit 
@@ -693,10 +707,10 @@ timing issues and some problems modeling the logic. We used a lot of time modeli
 \newline
 In the ending, we ended up with the R-2R ladder. Many examples of this circuit is modeled with a operational amplifier. This is because the R-2R requires a high impedance at the output in order to
 work properly. This is not a problem in out design, because the comparator has a very high impedance, meaning that it would be a waste of space and time modeling a extra operational amplifier at
-the output. In Fig. (\ref{r2r:ladder:real}), there are implemented two inverters at the input for every bit. This is because we experienced that the SAR logic block did not output logic high at
+the output. In Fig. (\ref{fig:r2r:ladder:real}), there are implemented two inverters at the input for every bit. This is because we experienced that the SAR logic block did not output logic high at
 1.2V (\(V_{DD}\)), but 1V instead. Since we use \(V_{DD}\) as \(V_{ref}\), a logical high from the SAR logic of 1.2V would be fine but with the buffers we are able to generalize range of the ADC so that we can have a external \(V_{ref}\).
-
 It is important for the systems accuracy to have full swing at the DAC output. Therefor, we implemented two inverters at the input to act as a buffer. 
+
 Their sizing is important so that the they deliver enough current to drive the resistive load.
 The size of the resistors is set to be 320k\(\ohm\) and 640k\(\ohm\). More on why these sizes are used, is discussed in the simulation section. 
 
@@ -751,31 +765,51 @@ recalling from the paragraph above.
 \begin{figure}[!ht]
  \centering
  \includegraphics[width=\textwidth]{img/non_monotonic/non_monotonic_10K}
- \caption{Simulation using 10k\(\ohm\)}
+ \caption{Simulation using 10k (20k)\(\ohm\)}
  \label{fig:sim:dac:10k}
 \end{figure}
 \begin{figure}[!ht]
  \centering
  \includegraphics[width=\textwidth]{img/non_monotonic/non_monotonic_100K}
- \caption{Simulation using 100k\(\ohm\)}
+ \caption{Simulation using 100k (200k)\(\ohm\)}
  \label{fig:sim:dac:100k}
 \end{figure}
 \begin{figure}[!ht]
  \centering
  \includegraphics[width=\textwidth]{img/non_monotonic/non_monotonic_320K}
- \caption{Simulation using 320k\(\ohm\)}
+ \caption{Simulation using 320k (640k)\(\ohm\)}
  \label{fig:sim:dac:320k}
 \end{figure}
- 
-\subsection{SAR logic}
-\subsubsection{SIM\_SAR\_logic}
-\subsubsection{SAR\_logic}
 
-\subsection{SR latch}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SAR Logic
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{SAR Logic}
+In this task we where given the logic controller for the SAR ADC. This module is written in Verilog-A. 
+The purpose of this circuit is to determine which of the bits to keep when running the SAR algorithm.
+
+\subsubsection{Implementation}
+The original module that was given did not function properly and was only able to do one conversion. This module also did not have a \textit{start of conversion} (SoC) signal input.
+In order to control the conversion with this module we gated the clock and used a SR-latch to enable the gated clock when the SoC signal was applied.
+
+We got a updated version of this module that had been extended to included a SoC input. In this module you signaled the start of a conversion by strobing the SoC input.
+The updated module was able to do multiple conversion by signaling a new SoC after a conversion was done. 
+When the module was finished with a conversion it signaled \textit{End of Conversion} (EoC) by raising the EoC output to a high level. 
+
+The high output level of the module is fixed at 1V and not at system VDD voltage level.
+\subsubsection{Simulation}
+This module was simulated in conjunction with the entire system and not verified on it's own. 
+The functionality of this circuit is very simple and the correctness was therefore easily verified in the complete system simulation.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SR Latch
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{SR Latch}
+
 \subsubsection{SIM\_SR\_latch}
 \subsubsection{SR\_latch}
 
-%%------ SR LATCH
+%%------ SR LATCH ----------
 \begin{figure}
 \centering
  \begin{circuitikz}[yscale=1, xscale=1]\draw
