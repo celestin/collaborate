@@ -10,6 +10,7 @@
 \usepackage[backend=biber,style=numeric-comp, sortcites]{biblatex} 
 \usepackage{pgfplots}
 
+
 \bibliography{ref.bib}
 
 % --------------------------------------------------
@@ -185,7 +186,7 @@ The comparator compares two signals, and outputs either a digital low or high. F
 If the first bit is higher than \(V_{ref}\), the comparator outputs a digital low. Then we know that the sampled value is lower than the value of the first bit. This bit is called the most 
 signifiacant bit, shorted as MSB. The calues for the each bit, is discussed in the next subsection.\\
 \\
-The complexity if the comparator depends on the speed and the accuracy. In some later sections, qe can find the requrements for the circuit and the comparator. Noise in a comparator is a 
+The complexity if the comparator depends on the speed and the accuracy. In some later sections, qe can find the requirements for the circuit and the comparator. Noise in a comparator is a 
 concern, and it is therefor important to design the comparator for as low noise as possible. In datacoversion it is often prefered to have a input reffered noise of less than 1 LSB 
 (Least Significant Bit). On the other hand, offset is not a concern since it does not affect the overall liniarity \cite{sar-adc-concept}. 
 
@@ -272,17 +273,14 @@ DAC			& - Low Power			& - Long Latency		\\
 \begin{equation}\label{vlsb}
  V_{LSB} = V_{ref} \cdot \frac{1}{2^{N}}
 \end{equation}
-
-\begin{equation}
- V_{Max} = V_{ref} \cdot \frac{2^{N}-1}{2^{N}}
-\end{equation}
-
 \begin{equation}
  BinVal = \sum_{i=0}^{N-1} 2^{i} \cdot b_{i}
 \end{equation}
-
 \begin{equation}
  V_{out} = V_{LSB} \cdot BinVal
+\end{equation}
+\begin{equation}
+ V_{Max} = V_{ref} \cdot \frac{2^{N}-1}{2^{N}}
 \end{equation}
 
 \begin{figure}
@@ -656,17 +654,74 @@ In the ending, we ended up with the R-2R ladder. Many examples of this circuit i
 work properly. This is not a problem in out design, because the comparator has a very high impedance, meaning that it would be a waste of space and time modeling a extra operational amplifier at
 the output. In Fig. (\ref{r2r:ladder:real}), there are implemented two inverters at the input for every bit. This is because we experienced that the SAR logick block did not output logic high at
 1.2V, but 1V instead. It is important for the systems accuracy to have full swing at the DAC output. Therefor, we implemented two inverters at the input, the second for not inverting the signal. 
-The size of the resistors is set to be 380k\(\ohm\) and 760k\(\ohm\). More on why these sizes are used, is discussed in the simulation section. 
+The size of the resistors is set to be 320k\(\ohm\) and 640k\(\ohm\). More on why these sizes are used, is discussed in the simulation section. 
 
 \subsubsection{Simulation}
-\begin{figure}
+Simulating the DAC using external voltage sources and the properties for the SAR logic, is difficult. Therefor, we crated a table (Table \ref{tab:voltage:out:dac}) for representing the different 
+voltage values if one bit is on at the time. Recalling the formulas for calculating output voltage in Eq. (\ref{vlsb}), (\ref{binval}), (\ref{vout}) and (\ref{vmax}) from the introduction, 
+we can calculate the output voltage. A plot of the output is not included in the report, since this would just show a stable signal. The results shows on the other hand that the variations between 
+the actual and calculated values are negligible. 
+\begin{equation}\label{vlsb}
+ V_{LSB} = V_{ref} \cdot \frac{1}{2^{N}}
+\end{equation}
+\begin{equation}\label{binval}
+ BinVal = \sum_{i=0}^{N-1} 2^{i} \cdot b_{i}
+\end{equation}
+\begin{equation}\label{vout}
+ V_{out} = V_{LSB} \cdot BinVal
+\end{equation}
+\begin{equation}\label{vmax}
+ V_{Max} = V_{ref} \cdot \frac{2^{N}-1}{2^{N}}
+\end{equation}
+\begin{table}[!ht]
+\centering
+\begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
+\hline
+d7 & d6 & d5 & d4 & d3 & d2 & d1 & d0 & Voltage  & Bit \\ \hline
+0  & 0  & 0  & 0  & 0  & 0  & 0  & 1  & 4,687 mV & d0  \\ \hline
+0  & 0  & 0  & 0  & 0  & 0  & 1  & 0  & 9,375 mV & d1  \\ \hline
+0  & 0  & 0  & 0  & 0  & 1  & 0  & 0  & 18,75 mV & d2  \\ \hline
+0  & 0  & 0  & 0  & 1  & 0  & 0  & 0  & 37,50 mV & d3  \\ \hline
+0  & 0  & 0  & 1  & 0  & 0  & 0  & 0  & 75,00 mV & d4  \\ \hline
+0  & 0  & 1  & 0  & 0  & 0  & 0  & 0  & 150,0 mV & d5  \\ \hline
+0  & 1  & 0  & 0  & 0  & 0  & 0  & 0  & 300,0 mV & d6  \\ \hline
+1  & 0  & 0  & 0  & 0  & 0  & 0  & 0  & 600,0 mV & d7  \\ \hline
+1  & 1  & 1  & 1  & 1  & 1  & 1  & 1  & 1,195 mV & all \\ \hline
+\end{tabular}
+\caption{Output voltage DAC}
+\label{tab:voltage:out:dac}
+\end{table}
+\newline
+The first simulation were done using LTSpice. This is because LTSpice is easy and quick ti set up, comparing to Virtuoso. In the simulation we used 10 k\(\ohm\) 20 k\(\ohm\) as resistance values. 
+In this ideal simulation, it seemed like the circuit worked perfect. The next step then, was to make the circuit again in Virtuoso. When simulating this circuit again, it showed that the circuit 
+was very non monotonic. This can cause large errors to the output of the system, since the comparator can misinterpret the output of the DAC to the sampled signal. The simulation is plotted in 
+Fig. (\ref{fig:sim:dac:10k}). We can see from the figure that the errors are large, and there is therefor a high possibility for the comparator to take the wrong decision. This is therefor a problem
+considering the requirements for a accuracy. This state that the accuracy has to be better than 0.5 LSB. We have therefor tried different values for the resistors, taking the accuracy and 
+actual size in the layout into account. Resistors are very large in their actual size, and in many designs space is very limited. It is therefor desirable to eliminate, or create as small resistors 
+as possible. In this project, space is not a limitation, so we do not concern about the size, at lest not up to a point where there is difficult to handle the design in the layout. \\
+\\
+Fig (\ref{fig:sim:dac:100k}) shows a plot of the output using 100 k\(\ohm\) and 200 k\(\ohm\). We can see here that the linearity is better, but does not meet the requirement for the accuracy. In 
+Fig. (\ref{fig:sim:dac:320k}), values of 320 k\(\ohm\) and 640 k\(\ohm\) are used. This shows that the linearity is more or less perfect. The cost for using that large resistance is the space, 
+recalling from the paragraph above.  
+
+\begin{figure}[!ht]
  \centering
- \begin{circuitikz}
-  
- \end{circuitikz}
-
+ \includegraphics[width=\textwidth]{img/non_monotonic/non_monotonic_10K}
+ \caption{Simulation using 10k\(\ohm\)}
+ \label{fig:sim:dac:10k}
 \end{figure}
-
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth]{img/non_monotonic/non_monotonic_100K}
+ \caption{Simulation using 100k\(\ohm\)}
+ \label{fig:sim:dac:100k}
+\end{figure}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth]{img/non_monotonic/non_monotonic_320K}
+ \caption{Simulation using 320k\(\ohm\)}
+ \label{fig:sim:dac:320k}
+\end{figure}
  
 \subsection{SAR logic}
 \subsubsection{SIM\_SAR\_logic}
