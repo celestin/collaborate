@@ -569,11 +569,8 @@ complexity. A resistor string implementation has been considered, but this imple
 reason is the large amount of resistors needed. For a 8-bit system, it is required to have \(2^N\) resistor \cite{carusone}. This means that there would be 256 resistors. Due to this large amount of resistor, 
 this circuit has not been simulated and tested. An other DAC architecture that has been considered, is a Charge-Redistribution Switched-Capacitor converter. The advantage for using this circuit 
 is the elimination of all the resistors. In stead, this implementation uses capacitors, which is much smaller in size when talking about layout. An other advantage is low power consumption if the
-circuit is modeled properly.\\
-\\
-\\
-- Kompleksitet\\
-- Nøyaktig\\
+circuit is modeled properly. The Charge-Redistribution Switched-Capacitor converter has been tested and simulated. We founded this circuit difficult to model properly, and we experienced 
+timing issues and some problems modeling the logic. We used a lot of time modeling this circuit without any succeed.\\
 %%---------------DAC
  \begin{figure}[!ht]
    \centering
@@ -587,31 +584,52 @@ circuit is modeled properly.\\
     (15.5,5) node[not port, rotate=270](not7){}
     (18.5,5) node[not port, rotate=270](not8){}
     (21.5,5) node[not port, rotate=270](not9){}
+    (0,8) node[not port, rotate=270](not10){}
+    (3.5,8) node[not port, rotate=270](not11){}
+    (6.5,8) node[not port, rotate=270](not12){}
+    (9.5,8) node[not port, rotate=270](not13){}
+    (12.5,8) node[not port, rotate=270](not14){}
+    (15.5,8) node[not port, rotate=270](not15){}
+    (18.5,8) node[not port, rotate=270](not16){}
+    (21.5,8) node[not port, rotate=270](not17){}
     (0,0) -- (1,0)
     (0,0) -- (0,-1) to[R, l={$2R$}] (0,-3) node[ground]{}
-    (0,0) -- (0,1) to[R, l={$2R$}] (0,3) -- (not2.out) (not2.in) to[short, -o](0,7)node[above]{$b0$}
+    (0,0) -- (0,1) to[R, l={$2R$}] (0,3) -- (not2.out) (not2.in) --(not10.out) (not10.in) to[short, -o](0,10)node[above]{$b0$}
     (1,0) to[R, l={$R$}] (3,0) -- (4,0)
-    (3.5,0) -- (3.5,1) to[R, l={$2R$}] (3.5,3) -- (not3.out) (not3.in) to[short, -o](3.5,7)node[above]{$b1$}
+    (3.5,0) -- (3.5,1) to[R, l={$2R$}] (3.5,3) -- (not3.out) (not3.in) --(not11.out) (not11.in) to[short, -o](3.5,10)node[above]{$b1$}
     (4,0) to[R, l={$R$}] (6,0) -- (7,0)
-    (6.5,0) -- (6.5,1) to[R, l={$2R$}] (6.5,3) -- (not4.out) (not4.in) to[short, -o](6.5,7)node[above]{$b2$}
+    (6.5,0) -- (6.5,1) to[R, l={$2R$}] (6.5,3) -- (not4.out) (not4.in) --(not12.out) (not12.in) to[short, -o](6.5,10)node[above]{$b2$}
     (7,0) to[R, l={$R$}] (9,0) -- (10,0)
-    (9.5,0) -- (9.5,1) to[R, l={$2R$}] (9.5,3) -- (not5.out) (not5.in) to[short, -o](9.5,7)node[above]{$b3$}
+    (9.5,0) -- (9.5,1) to[R, l={$2R$}] (9.5,3) -- (not5.out) (not5.in) --(not13.out) (not13.in) to[short, -o](9.5,10)node[above]{$b3$}
     (10,0) to[R, l={$R$}] (12,0) -- (13,0)
-    (12.5,0) -- (12.5,1) to[R, l={$2R$}] (12.5,3) -- (not6.out) (not6.in) to[short, -o](12.5,7)node[above]{$b4$}
+    (12.5,0) -- (12.5,1) to[R, l={$2R$}] (12.5,3) -- (not6.out) (not6.in) --(not14.out) (not14.in) to[short, -o](12.5,10)node[above]{$b4$}
     (13,0) to[R, l={$R$}] (15,0) -- (16,0)
-    (15.5,0) -- (15.5,1) to[R, l={$2R$}] (15.5,3) -- (not7.out) (not7.in) to[short, -o](15.5,7)node[above]{$b5$}
+    (15.5,0) -- (15.5,1) to[R, l={$2R$}] (15.5,3) -- (not7.out) (not7.in) --(not15.out) (not15.in) to[short, -o](15.5,10)node[above]{$b5$}
     (16,0) to[R, l={$R$}] (18,0) -- (19,0)
-    (18.5,0) -- (18.5,1) to[R, l={$2R$}] (18.5,3) -- (not8.out) (not8.in) to[short, -o](18.5,7)node[above]{$b6$}
+    (18.5,0) -- (18.5,1) to[R, l={$2R$}] (18.5,3) -- (not8.out) (not8.in) --(not16.out) (not16.in) to[short, -o](18.5,10)node[above]{$b6$}
     (19,0) to[R, l={$R$}] (21,0)
-    (21.5,0) -- (21.5,1) to[R, l={$2R$}] (21.5,3) -- (not9.out) (not9.in) to[short, -o](21.5,7)node[above]{$b7$}
+    (21.5,0) -- (21.5,1) to[R, l={$2R$}] (21.5,3) -- (not9.out) (not9.in) --(not17.out) (not17.in) to[short, -o](21.5,10)node[above]{$b7$}
     (21,0) to[short, -o] (23,0)node[right]{$V_{out}$}
   ; \end{circuitikz}
    \caption{Implemented 8-bit R-2R ladder}
    \label{fig:r2r:ladder:real}
   \end{figure}
-
 %%--------------------
+\newline
+In the ending, we ended up with the R-2R ladder. Many examples of this circuit is modeled with a operational amplifier. This is because the R-2R requires a high impedance at the output in order to
+work properly. This is not a problem in out design, because the comparator has a very high impedance, meaning that it would be a waste of space and time modeling a extra operational amplifier at
+the output. In Fig. (\ref{r2r:ladder:real}), there are implemented two inverters at the input for every bit. This is because we experienced that the SAR logick block did not output logic high at
+1.2V, but 1V instead. It is important for the systems accuracy to have full swing at the DAC output. Therefor, we implemented two inverters at the input, the second for not inverting the signal. 
+The size of the resistors is set to be 380k\(\ohm\) and 760k\(\ohm\). More on why these sizes are used, is discussed in the simulation section. 
+
 \subsubsection{Simulation}
+\begin{figure}
+ \centering
+ \begin{circuitikz}
+  
+ \end{circuitikz}
+
+\end{figure}
 
  
 \subsection{SAR logic}
