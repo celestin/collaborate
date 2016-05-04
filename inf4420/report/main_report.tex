@@ -237,7 +237,6 @@ DAC			& - Low Power			& - Long Latency		\\
 			& - Low Cost			&				\\
 			& - In Audio: moving noise	&				\\
 			& out of audible range		&				\\ \hline
- 		        &     				& 				\\ \hline
  \end{tabular}
  \caption{Comparation of different ADCs}
  \label{dac:comparison}
@@ -566,33 +565,44 @@ For the sample and hold, we have tried several different designs.
 \subsection{Digital-to-analog converter}
 \subsubsection{SIM\_dac\_real\_res}
 \subsubsection{dac\_real\_res}
- \begin{figure}
-  \centering
-  \ctikzset{bipoles/length = 1cm}
-  \begin{circuitikz}[scale = 0.5]
-   \draw (0,0) -- (1,0);
-   \draw (0,0) -- (0,-1) to[R, l={$2R$}] (0,-3) node[ground]{};
-   \draw (0,0) -- (0,1) to[R, l={$2R$}] (0,3) -- (0,4)[-o,]node[above]{$b0$};
-   \draw (1,0) to[R, l={$R$}] (3,0) -- (4,0);
-   \draw (3.5,0) -- (3.5,1) to[R, l={$2R$}] (3.5,3) -- (3.5,4)[-o]node[above]{$b1$};
-   \draw (4,0) to[R, l={$R$}] (6,0) -- (7,0);
-   \draw (6.5,0) -- (6.5,1) to[R, l={$2R$}] (6.5,3) -- (6.5,4)[-o]node[above]{$b2$};
-   \draw (7,0) to[R, l={$R$}] (9,0) -- (10,0);
-   \draw (9.5,0) -- (9.5,1) to[R, l={$2R$}] (9.5,3) -- (9.5,4)[-o]node[above]{$b3$};
-   \draw (10,0) to[R, l={$R$}] (12,0) -- (13,0);
-   \draw (12.5,0) -- (12.5,1) to[R, l={$2R$}] (12.5,3) -- (12.5,4)[-o]node[above]{$b4$};
-   \draw (13,0) to[R, l={$R$}] (15,0) -- (16,0);
-   \draw (15.5,0) -- (15.5,1) to[R, l={$2R$}] (15.5,3) -- (15.5,4)[-o]node[above]{$b5$};
-   \draw (16,0) to[R, l={$R$}] (18,0) -- (19,0);
-   \draw (18.5,0) -- (18.5,1) to[R, l={$2R$}] (18.5,3) -- (18.5,4)[-o]node[above]{$b6$};
-   \draw (19,0) to[R, l={$R$}] (21,0);
-   \draw (21.5,0) -- (21.5,1) to[R, l={$2R$}] (21.5,3) -- (21.5,4)[-o]node[above]{$b7$};
-   \draw (21,0) -- (23,0)[-o] node[right]{$V_{out}$};
-  \end{circuitikz}
-  \caption{Example of 8-bit R-2R ladder}
-  \label{r2r:ladder:real}
- \end{figure}
+%%---------------DAC
+ \begin{figure}[!ht]
+   \centering
+   \ctikzset{bipoles/length = 1cm}
+   \begin{circuitikz}[scale = 0.5]\draw
+    (0,5) node[not port, rotate=270](not2){}
+    (3.5,5) node[not port, rotate=270](not3){}
+    (6.5,5) node[not port, rotate=270](not4){}
+    (9.5,5) node[not port, rotate=270](not5){}
+    (12.5,5) node[not port, rotate=270](not6){}
+    (15.5,5) node[not port, rotate=270](not7){}
+    (18.5,5) node[not port, rotate=270](not8){}
+    (21.5,5) node[not port, rotate=270](not9){}
+    (0,0) -- (1,0)
+    (0,0) -- (0,-1) to[R, l={$2R$}] (0,-3) node[ground]{}
+    (0,0) -- (0,1) to[R, l={$2R$}] (0,3) -- (not2.out) (not2.in) to[short, -o](0,7)node[above]{$b0$}
+    (1,0) to[R, l={$R$}] (3,0) -- (4,0)
+    (3.5,0) -- (3.5,1) to[R, l={$2R$}] (3.5,3) -- (not3.out) (not3.in) to[short, -o](3.5,7)node[above]{$b1$}
+    (4,0) to[R, l={$R$}] (6,0) -- (7,0)
+    (6.5,0) -- (6.5,1) to[R, l={$2R$}] (6.5,3) -- (not4.out) (not4.in) to[short, -o](6.5,7)node[above]{$b2$}
+    (7,0) to[R, l={$R$}] (9,0) -- (10,0)
+    (9.5,0) -- (9.5,1) to[R, l={$2R$}] (9.5,3) -- (not5.out) (not5.in) to[short, -o](9.5,7)node[above]{$b3$}
+    (10,0) to[R, l={$R$}] (12,0) -- (13,0)
+    (12.5,0) -- (12.5,1) to[R, l={$2R$}] (12.5,3) -- (not6.out) (not6.in) to[short, -o](12.5,7)node[above]{$b4$}
+    (13,0) to[R, l={$R$}] (15,0) -- (16,0)
+    (15.5,0) -- (15.5,1) to[R, l={$2R$}] (15.5,3) -- (not7.out) (not7.in) to[short, -o](15.5,7)node[above]{$b5$}
+    (16,0) to[R, l={$R$}] (18,0) -- (19,0)
+    (18.5,0) -- (18.5,1) to[R, l={$2R$}] (18.5,3) -- (not8.out) (not8.in) to[short, -o](18.5,7)node[above]{$b6$}
+    (19,0) to[R, l={$R$}] (21,0)
+    (21.5,0) -- (21.5,1) to[R, l={$2R$}] (21.5,3) -- (not9.out) (not9.in) to[short, -o](21.5,7)node[above]{$b7$}
+    (21,0) to[short, -o] (23,0)node[right]{$V_{out}$}
+  ; \end{circuitikz}
+   \caption{Implemented 8-bit R-2R ladder}
+   \label{r2r:ladder:real}
+  \end{figure}
 
+%%--------------------
+ 
 \subsection{SAR logic}
 \subsubsection{SIM\_SAR\_logic}
 \subsubsection{SAR\_logic}
@@ -601,6 +611,7 @@ For the sample and hold, we have tried several different designs.
 \subsubsection{SIM\_SR\_latch}
 \subsubsection{SR\_latch}
 
+%%------ SR LATCH
 \begin{figure}
 \centering
  \begin{circuitikz}[yscale=1, xscale=1]\draw
@@ -618,6 +629,7 @@ For the sample and hold, we have tried several different designs.
  \caption{SR latch}
  \label{sr:latch}
 \end{figure}
+%%------------
 
 \begin{table}[]
 \centering
