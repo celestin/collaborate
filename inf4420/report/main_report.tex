@@ -6,7 +6,7 @@
 \usepackage{babel,textcomp,csquotes,ifikompendiumforside, varioref,graphicx, gensymb}
 \usepackage[]{circuitikz}
 \usepackage{tikz}
-\usetikzlibrary{shapes,arrows}
+\usetikzlibrary{shapes,arrows, calc}
 \usepackage[backend=biber,style=numeric-comp, sortcites]{biblatex} 
 \usepackage{pgfplots}
 
@@ -536,7 +536,7 @@ The function of the input \(\phi\) is listed in table \ref{table:sample_and_hold
 \end{figure}
 
 %---------------------------- SH functional table --------------------------
-\begin{table}[]
+\begin{table}[!ht]
 \centering
 \begin{tabular}{|l|l|}
 \hline
@@ -761,21 +761,26 @@ recalling from the paragraph above.
  \caption{Simulation using 320k\(\ohm\)}
  \label{fig:sim:dac:320k}
 \end{figure}
- 
+
+
 \subsection{SAR logic}
-\subsubsection{SIM\_SAR\_logic}
-\subsubsection{SAR\_logic}
+sdf
+\subsubsection{Implementation}
+ssdf
+\subsubsection{Simulation}
+sf
 
 \subsection{SR latch}
-\subsubsection{SIM\_SR\_latch}
-\subsubsection{SR\_latch}
+sf
+\subsubsection{Implementation}
+sdf
+\subsubsection{Simulation}
+sdf
 
 %%------ SR LATCH
-\begin{figure}
+\begin{figure}[!ht]
 \centering
- \begin{circuitikz}[yscale=1, xscale=1]\draw
-  
-  
+ \begin{circuitikz}[yscale=1, xscale=1]\draw 
   (2,3) node[nor port](nor1){}
   (nor1.in 1)--($(nor1.in 1)-(1,0)$)node[anchor=east]{\(R\)}
   
@@ -790,9 +795,8 @@ recalling from the paragraph above.
 \end{figure}
 %%------------
 
-\begin{table}[]
+\begin{table}[!ht]
 \centering
-
 \begin{tabular}{|l|l|l|l|}
 \hline 
 			 &			    &			       &			   \\ 	
@@ -807,12 +811,59 @@ recalling from the paragraph above.
 \end{table}
 
 \subsection{Output buffers}
-\subsubsection{SIM\_output\_buffers}
-\subsubsection{output\_buffers}
+\subsubsection{Implementation}
+\begin{figure}[!ht]
+\centering
+ \begin{circuitikz}[yscale=1, xscale=0.8]\draw
+ (0,0) node[buffer, rotate=270](buff1){}
+ (2,0) node[buffer, rotate=270](buff2){}
+ (4,0) node[buffer, rotate=270](buff3){}
+ (6,0) node[buffer, rotate=270](buff4){}
+ (8,0) node[buffer, rotate=270](buff5){}
+ (10,0) node[buffer, rotate=270](buff6){}
+ (12,0) node[buffer, rotate=270](buff7){}
+ (14,0) node[buffer, rotate=270](buff8){}
+ 
+ (buff1.in) to[short, -o] (0,2)node[above]{$b7$} (buff1.out) to[short, -o] (0,-2)node[left]{$b_{out} 0$}
+ (buff2.in) to[short, -o] (2,2)node[above]{$b6$} (buff2.out) to[short, -o] (2,-2)node[left]{$b_{out} 1$}
+ (buff3.in) to[short, -o] (4,2)node[above]{$b5$} (buff3.out) to[short, -o] (4,-2)node[left]{$b_{out} 2$}
+ (buff4.in) to[short, -o] (6,2)node[above]{$b4$} (buff4.out) to[short, -o] (6,-2)node[left]{$b_{out} 3$}
+ (buff5.in) to[short, -o] (8,2)node[above]{$b3$} (buff5.out) to[short, -o] (8,-2)node[left]{$b_{out} 4$}
+ (buff6.in) to[short, -o] (10,2)node[above]{$b2$} (buff6.out) to[short, -o] (10,-2)node[left]{$b_{out} 5$}
+ (buff7.in) to[short, -o] (12,2)node[above]{$b1$} (buff7.out) to[short, -o] (12,-2)node[left]{$b_{out} 6$}
+ (buff8.in) to[short, -o] (14,2)node[above]{$b0$} (buff8.out) to[short, -o] (14,-2)node[left]{$b_{out} 7$}
+ ;\end{circuitikz}
+\caption{Output buffers}
+\label{fig:buffer:out}
+\end{figure}
+
+\subsubsection{Simulation}
 
 \subsection{SAR system}
-\subsubsection{SIM\_SAR\_system\_3}
-\subsubsection{SAR\_system\_3}
+\subsubsection{Implementation}
+
+\begin{tikzpicture}[node distance=1cm,>=latex,
+  block/.style = {draw, shape=rectangle, align=center,minimum height=2cm},
+  rblock/.style = {draw, shape=rectangle, rounded corners=0.5em, align=center,
+    minimum height=1cm},
+  dblock/.style = {draw, shape=diamond, align=center},
+  ]
+  
+
+
+
+% \begin{figure}
+% \centering
+%  \begin{circuitikz}[yscale=0.8, xscale=0.8]\draw
+%  (0,0) rectangle (2,2)
+%  (4,0) rectangle (6,2)
+%  (10,1) node[op amp](opamp){Comparator}
+%  (14,0) rectangle (16,2)
+%  (8,-5) rectangle (10,-7)
+% ; \end{circuitikz}
+% \end{figure}
+
+\subsubsection{Simulation}
 
 
 \section{Discussion and conclusion}
@@ -823,10 +874,6 @@ recalling from the paragraph above.
 \section{Punkter som kanskje skal med}
 Critical parts in SAR ADCs 
 
-\begin{itemize}
- \item Comparator
- \item DAC
-\end{itemize}
 
 SAR ADCs limitations:
 
@@ -850,11 +897,6 @@ Comparator:
 \printbibliography{}
 
 \end{document}
-
-% TABELL FOR SAMMENLIGNING AV FORSKJELLIGE ADC
-
-
-
 
 % --------------------------------------------------------------------
 % Fotnote eksempel
