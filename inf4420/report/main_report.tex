@@ -500,6 +500,7 @@ The component part is the actual schematic for the block. The subsentions is ran
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Sample and hold}
 In our design we have a sample and hold circuit that tracks the input signal. When the circuit should perform a conversion the signal is held constant.
+
 \subsubsection{Implementation}
 Our first implementation was a simple nmos transistor as the switch. In this case we was not able to get a clean signal when the signal was grater than VDD/2. 
 Simulations showed that the signal started to be distorted already at 700mV (about 58\% of VDD).
@@ -546,17 +547,46 @@ The function of the input \(\phi\) is listed in table \ref{table:sample_and_hold
 \caption{Sample and Hold function selection}
 \label{table:sample_and_hold:function}
 \end{table}
+
 \subsubsection{Simulation}
+The simulation of the sample and hold circuit is done by setting a sine wave at the input of the sample and hold and pulsing 
+the \(\phi\) input to toggle between \textit{track} and \textit{hold}. 
 
+The output of the simulation of the circuit (with parasitic properties extracted) is showed in figure (\ref{figure:sample_and_hold:sim_output}).
 
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\textwidth]{img/SH/sample_and_hold_pex_1M_233K}
+    \caption{Sample and Hold simulation output}
+    \label{figure:sample_and_hold:sim_output}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Comparator
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Comparator}
-\subsubsection{SIM\_comparator\_rail2rail\_external\_current}
-\subsubsection{comparator\_rail2rail\_external\_current}
+The comparator we have implemented is a comparator with \textit{rail to rail} inputs this implies that that the comparator should preform quite accurately even when the inputs are close to 
+GND or VDD. This circiut is a design from the book (Designing analog chips)\cite{MISSING}.
 
+
+
+\subsubsection{Implementation}
+The rail to rail inputs are realized by hawing two input differential pairs, one n-channel and one p-channel.
+The principle is to mirror the current of one of the pairs and sum the result with the currents of the other.
+
+We had several different iterations on this circuit.
+Our first implementation was the circuit as defined in the book.
+Our second implementation was a smaller version of the circuit where all of the transistors length and width was \( \frac{1}{10} \) of the original sizing. 
+This circuit performed OK at first glance, but after more study we concluded that the original implementation had better performance and higher gain. 
+
+The first implementation had very large input transistors that distorted the sample and hold to much to obtain a correct result.
+We decreased the size of the input transistors to a \( \frac{1}{10} \) of the original size and the circuit performed adequately.
+
+The functional implementation is showed in the figure (\ref{comp:design}) and the actual implementation is included in the appendix.
+
+
+
+%---------------------------- Comparator -------------------------------
 \begin{figure}[!ht]
 \centering
 \ctikzset{bipoles/length = 0.8cm}
@@ -595,7 +625,16 @@ The function of the input \(\phi\) is listed in table \ref{table:sample_and_hold
  \label{comp:design}
 \end{figure}
 
+\subsubsection{Simulation}
+The circuit is simulated by sweeping the Vref input voltage from 100mV to 1100mV in steps of 100mV.
 
+There is a slight shift in the window the of comparator. 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DAC
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Digital-to-analog converter}
 \subsubsection{Implementation}
 The implementation for the DAC is shown in Fig. (\ref{r2r:ladder:real}). After a long study on different types of DAC, we decided to use a R-2R implementation. This decision was mainly due to 
