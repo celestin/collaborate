@@ -582,9 +582,7 @@ Our second implementation was a smaller version of the circuit where all of the 
 This circuit performed OK at first glance, but after more study we concluded that the original implementation had better performance and higher gain. 
 
 The first implementation had very large input transistors that distorted the sample and hold to much to obtain a correct result.
-We decreased the size of the input transistors to a \( \frac{1}{10} \) of the size and the circuit performed adequately.
-
-There is a slight shift in the window the of comparator. 
+We decreased the size of the input transistors to a \( \frac{1}{10} \) of the original size and the circuit performed adequately.
 
 The functional implementation is showed in the figure (\ref{comp:design}) and the actual implementation is included in the appendix.
 
@@ -630,6 +628,9 @@ The functional implementation is showed in the figure (\ref{comp:design}) and th
 \end{figure}
 
 \subsubsection{Simulation}
+The circuit is simulated by sweeping the Vref input voltage from 100mV to 1100mV in steps of 100mV.
+
+There is a slight shift in the window the of comparator. 
 
 
 
