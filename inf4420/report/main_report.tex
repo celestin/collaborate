@@ -502,6 +502,7 @@ The component part is the actual schematic for the block. The subsentions is ran
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Sample and hold}
 In our design we have a sample and hold circuit that tracks the input signal. When the circuit should perform a conversion the signal is held constant.
+
 \subsubsection{Implementation}
 Our first implementation was a simple nmos transistor as the switch. In this case we was not able to get a clean signal when the signal was grater than VDD/2. 
 Simulations showed that the signal started to be distorted already at 700mV (about 58\% of VDD).
@@ -548,8 +549,14 @@ The function of the input \(\phi\) is listed in table \ref{table:sample_and_hold
 \caption{Sample and Hold function selection}
 \label{table:sample_and_hold:function}
 \end{table}
-\subsubsection{Simulation}
 
+\subsubsection{Simulation}
+The simulation of the sample and hold circuit is done by setting a sine wave at the input of the sample and hold and pulsing 
+the \(\phi\) input to toggle between \textit{track} and \textit{hold}. 
+
+The output of the simulation of the circuit (with parasitic properties extracted) is showed in figure().
+
+\includegraphics[width=\textwidth]{img/SH/sample_and_hold_pex_1M_233K}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
