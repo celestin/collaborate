@@ -563,8 +563,17 @@ For the sample and hold, we have tried several different designs.
 
 
 \subsection{Digital-to-analog converter}
-\subsubsection{SIM\_dac\_real\_res}
-\subsubsection{dac\_real\_res}
+\subsubsection{Implementation}
+The implementation for the DAC is shown in Fig. (\ref{r2r:ladder:real}). After a long study on different types of DAC, we decided to use a R-2R implementation. This decision was mainly due to 
+complexity. A resistor string implementation has been considered, but this implementation is so complex for a 8-bit DAC. The resistor string needs a lot of digital logic circuit, but the main 
+reason is the large amount of resistors needed. For a 8-bit system, it is required to have \(2^N\) resistor \cite{carusone}. This means that there would be 256 resistors. Due to this large amount of resistor, 
+this circuit has not been simulated and tested. An other DAC architecture that has been considered, is a Charge-Redistribution Switched-Capacitor converter. The advantage for using this circuit 
+is the elimination of all the resistors. In stead, this implementation uses capacitors, which is much smaller in size when talking about layout. An other advantage is low power consumption if the
+circuit is modeled properly.\\
+\\
+\\
+- Kompleksitet\\
+- Nøyaktig\\
 %%---------------DAC
  \begin{figure}[!ht]
    \centering
@@ -598,10 +607,12 @@ For the sample and hold, we have tried several different designs.
     (21,0) to[short, -o] (23,0)node[right]{$V_{out}$}
   ; \end{circuitikz}
    \caption{Implemented 8-bit R-2R ladder}
-   \label{r2r:ladder:real}
+   \label{fig:r2r:ladder:real}
   \end{figure}
 
 %%--------------------
+\subsubsection{Simulation}
+
  
 \subsection{SAR logic}
 \subsubsection{SIM\_SAR\_logic}
