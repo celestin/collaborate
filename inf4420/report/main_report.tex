@@ -561,6 +561,8 @@ The output of the simulation of the circuit (with parasitic properties extracted
     \label{figure:sample_and_hold:sim_output}
 \end{figure}
 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Comparator
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -691,8 +693,11 @@ timing issues and some problems modeling the logic. We used a lot of time modeli
 \newline
 In the ending, we ended up with the R-2R ladder. Many examples of this circuit is modeled with a operational amplifier. This is because the R-2R requires a high impedance at the output in order to
 work properly. This is not a problem in out design, because the comparator has a very high impedance, meaning that it would be a waste of space and time modeling a extra operational amplifier at
-the output. In Fig. (\ref{r2r:ladder:real}), there are implemented two inverters at the input for every bit. This is because we experienced that the SAR logick block did not output logic high at
-1.2V, but 1V instead. It is important for the systems accuracy to have full swing at the DAC output. Therefor, we implemented two inverters at the input, the second for not inverting the signal. 
+the output. In Fig. (\ref{r2r:ladder:real}), there are implemented two inverters at the input for every bit. This is because we experienced that the SAR logic block did not output logic high at
+1.2V (\(V_{DD}\)), but 1V instead. Since we use \(V_{DD}\) as \(V_{ref}\), a logical high from the SAR logic of 1.2V would be fine but with the buffers we are able to generalize range of the ADC so that we can have a external \(V_{ref}\).
+
+It is important for the systems accuracy to have full swing at the DAC output. Therefor, we implemented two inverters at the input to act as a buffer. 
+Their sizing is important so that the they deliver enough current to drive the resistive load.
 The size of the resistors is set to be 320k\(\ohm\) and 640k\(\ohm\). More on why these sizes are used, is discussed in the simulation section. 
 
 \subsubsection{Simulation}
