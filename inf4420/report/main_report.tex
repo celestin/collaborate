@@ -801,15 +801,24 @@ The high output level of the module is fixed at 1V and not at system VDD voltage
 This module was simulated in conjunction with the entire system and not verified on it's own. 
 The functionality of this circuit is very simple and the correctness was therefore easily verified in the complete system simulation.
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SR Latch
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{SR Latch}
+The SR latch is used in the system to hold the the \textit{sample and hold} circiut in hold mode during conversion. 
+The set-trigger for the latch is the SoC signal and reset is from the EoC signal. 
 
-\subsubsection{SIM\_SR\_latch}
-\subsubsection{SR\_latch}
+\subsubsection{Implementation}
+The SR Latch is implemented with two nor gates connected in the way shown in figure (\ref{sr:latch}).
+The function table for this implementation is given in table \ref{table:srlatch:functiontable}.
 
-%%------ SR LATCH ----------
+The circuit features both regular and invertered outputs \(Q\) and \(\overline{Q}\).
+
+\subsubsection{Simulation}
+The simulation of the circiut was done by cycling throug the 4 different combinations of the inputs \(S\) and \(R\) and observing the output of \(Q\) and \(\overline{Q}\).
+
+%%------ SR LATCH Figure ----------
 \begin{figure}[!ht]
 \centering
  \begin{circuitikz}[yscale=1, xscale=1]\draw 
@@ -820,28 +829,32 @@ The functionality of this circuit is very simple and the correctness was therefo
   (nor2.in 2)--($(nor2.in 2)-(1,0)$)node[anchor=east]{\(S\)}
   
   (nor1.out) -- ($(nor1.out)+(1,0)$) -- ($(nor2.in 1)+(0,0.6)$) -| (nor2.in 1) (nor1.out)to[short, -o](4,3) node[anchor=west]{\(Q\)}
-  (nor2.out) -- ($(nor2.out)+(1,0)$) -- ($(nor1.in 2)-(0,0.6)$) -| (nor1.in 2) (nor2.out)to[short, -o](4,0) node[anchor=west]{\(\bar Q\)}
+  (nor2.out) -- ($(nor2.out)+(1,0)$) -- ($(nor1.in 2)-(0,0.6)$) -| (nor1.in 2) (nor2.out)to[short, -o](4,0) node[anchor=west]{\(\overline{Q}\)}
  ;\end{circuitikz}
  \caption{SR latch}
  \label{sr:latch}
 \end{figure}
 %%------------
 
+%%------ SR LATCH function table----------
 \begin{table}[!ht]
 \centering
 \begin{tabular}{|l|l|l|l|}
 \hline 
 			 &			    &			       &			   \\ 	
-\(S\)			 & \(R\)		    & \(Q\)		       & \(\bar Q\)		   \\ \hline
+\(S\)			 & \(R\)		    & \(Q\)		       & \(\overline{Q}\)          \\ \hline
 0                        & 0                        & NC            	       & NC             	   \\ \hline
 0                        & 1                        & 0                        & 1                         \\ \hline
 1                        & 0                        & 1                        & 0                         \\ \hline
 1                        & 1                        & 0                        & 1                         \\ \hline
 \end{tabular}
-\caption{My caption}
-\label{my-label}
+\caption{SR latch function table}
+\label{table:srlatch:functiontable}
 \end{table}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Output Buffers
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Output buffers}
 \subsubsection{Implementation}
 \begin{figure}[!ht]
@@ -856,14 +869,14 @@ The functionality of this circuit is very simple and the correctness was therefo
  (12,0) node[buffer, rotate=270](buff7){}
  (14,0) node[buffer, rotate=270](buff8){}
  
- (buff1.in) to[short, -o] (0,2)node[above]{$b7$} (buff1.out) to[short, -o] (0,-2)node[left]{$b_{out} 0$}
- (buff2.in) to[short, -o] (2,2)node[above]{$b6$} (buff2.out) to[short, -o] (2,-2)node[left]{$b_{out} 1$}
- (buff3.in) to[short, -o] (4,2)node[above]{$b5$} (buff3.out) to[short, -o] (4,-2)node[left]{$b_{out} 2$}
- (buff4.in) to[short, -o] (6,2)node[above]{$b4$} (buff4.out) to[short, -o] (6,-2)node[left]{$b_{out} 3$}
- (buff5.in) to[short, -o] (8,2)node[above]{$b3$} (buff5.out) to[short, -o] (8,-2)node[left]{$b_{out} 4$}
- (buff6.in) to[short, -o] (10,2)node[above]{$b2$} (buff6.out) to[short, -o] (10,-2)node[left]{$b_{out} 5$}
- (buff7.in) to[short, -o] (12,2)node[above]{$b1$} (buff7.out) to[short, -o] (12,-2)node[left]{$b_{out} 6$}
- (buff8.in) to[short, -o] (14,2)node[above]{$b0$} (buff8.out) to[short, -o] (14,-2)node[left]{$b_{out} 7$}
+ (buff1.in) to[short, -o] (0,2)node[above]{$b7$} (buff1.out) to[short, -o] (0,-2)node[left]{$b_{out} 7$}
+ (buff2.in) to[short, -o] (2,2)node[above]{$b6$} (buff2.out) to[short, -o] (2,-2)node[left]{$b_{out} 6$}
+ (buff3.in) to[short, -o] (4,2)node[above]{$b5$} (buff3.out) to[short, -o] (4,-2)node[left]{$b_{out} 5$}
+ (buff4.in) to[short, -o] (6,2)node[above]{$b4$} (buff4.out) to[short, -o] (6,-2)node[left]{$b_{out} 4$}
+ (buff5.in) to[short, -o] (8,2)node[above]{$b3$} (buff5.out) to[short, -o] (8,-2)node[left]{$b_{out} 3$}
+ (buff6.in) to[short, -o] (10,2)node[above]{$b2$} (buff6.out) to[short, -o] (10,-2)node[left]{$b_{out} 2$}
+ (buff7.in) to[short, -o] (12,2)node[above]{$b1$} (buff7.out) to[short, -o] (12,-2)node[left]{$b_{out} 1$}
+ (buff8.in) to[short, -o] (14,2)node[above]{$b0$} (buff8.out) to[short, -o] (14,-2)node[left]{$b_{out} 0$}
  ;\end{circuitikz}
 \caption{Output buffers}
 \label{fig:buffer:out}
@@ -874,12 +887,12 @@ The functionality of this circuit is very simple and the correctness was therefo
 \subsection{SAR system}
 \subsubsection{Implementation}
 
-\begin{tikzpicture}[node distance=1cm,>=latex,
-  block/.style = {draw, shape=rectangle, align=center,minimum height=2cm},
-  rblock/.style = {draw, shape=rectangle, rounded corners=0.5em, align=center,
-    minimum height=1cm},
-  dblock/.style = {draw, shape=diamond, align=center},
-  ]
+%\begin{tikzpicture}[node distance=1cm,>=latex,
+%  block/.style = {draw, shape=rectangle, align=center,minimum height=2cm},
+%  rblock/.style = {draw, shape=rectangle, rounded corners=0.5em, align=center,
+%    minimum height=1cm},
+%  dblock/.style = {draw, shape=diamond, align=center},
+%  ]
   
   \node [block] (srlatch) {SR Latch};
   \node [block, right= of srlatch](samplehold){Sample and hold};
@@ -940,7 +953,7 @@ Comparator:
 
 
 \begin{appendices}
-\chapter{Software and instrument overview}
+\chapter{Schematics from Cadence Virtuoso}
 \end{appendices}
 
 \printbibliography{}
