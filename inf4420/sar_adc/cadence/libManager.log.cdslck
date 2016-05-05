@@ -6,11 +6,11 @@
 LockStakeVersion               1.1
 LoginName                      vegardmi
 HostName                       vor.ifi.uio.no
-ProcessIdentifier              39649
-ProcessCreationTime_UTC        1461679588
-ProcessCreationTime_Readable   Tue Apr 26 16:06:28 2016 CEST
+ProcessIdentifier              18863
+ProcessCreationTime_UTC        1462446697
+ProcessCreationTime_Readable   Thu May  5 13:11:37 2016 CEST
 AppIdentifier                  /projects/nanos/programsrhel6/IC616/tools/dfII/bin/64bit/libManager
 OSType                         lnx86
 ReasonForPlacingEditLock       log file
 FilePathUsedToEditLock         /ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/libManager.log
-TimeEditLocked                 Tue Apr 26 16:06:36 2016 CEST
+TimeEditLocked                 Thu May  5 13:11:41 2016 CEST
