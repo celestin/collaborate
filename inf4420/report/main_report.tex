@@ -896,7 +896,9 @@ This module was simulated in conjunction with the entire system and not verified
 The functionality of this circuit is very simple and the correctness was therefore easily verified in the complete system simulation.
 
 \subsection{Layout}
-
+As mentioned before, the SAR logic block is not supported for layout. The task does not require to make a schematic and layout for the SAR logic, so it is used a 
+virtual component that has been discussed in a previous chapter. In order to perform a simulation of the total system including the SAR logic, we moved the block 
+outside the symbol, and added it to the SIM version for the system. This can be seen in the schematic included in the appendix. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SR Latch
@@ -949,6 +951,8 @@ The simulation of the circiut was done by cycling throug the 4 different combina
 \end{table}
 
 \subsection{Layout}
+The layout for the SR latch is quite simple, and will not be discussed in detail. One improvement would be to make it more compact in order to save more space. 
+We concluded that compression is not relative for the task, and has therefor not focused on this. Fig. (\ref{fig:layout:srlatch}) shows how the SR latch is implemented. 
 
 % \begin{figure}[!ht]
 %  \centering
@@ -1003,6 +1007,8 @@ This module was simulated in conjunction with the entire system and not verified
 Since the circuit is so simple the functional verification was easy to do in the full system testbench.
 
 \subsection{Layout}
+As for the layout for the SR latch, the output buffers is also not very interesting. It consists of one buffer for each of the 8-bits. In stead of including 
+a picture for the whole output buffer, we have taken a snapshot of two buffers, including four transistors. This can be seen in Fig. (\ref{fig:layout:buff:out}). 
 
 %  \begin{figure}[!ht]
 %   \centering
@@ -1015,13 +1021,12 @@ Since the circuit is so simple the functional verification was easy to do in the
 %% SAR System
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{SAR system}
-The SAR system is the complete SAR system architecture as shown in the block diagram in figure (\ref{fig:block:complete:sys}).
-This system design overview given in the project handout features six inputs and two outputs as listed bellow.
+The SAR system is the complete SAR system architecture as shown in the block diagram in Fig. (\ref{fig:block:complete:sys}).
+This system design overview given in the project handout features six inputs and two outputs as listed bellow.\\
 
 \noindent \textbf{Inputs:} \(V_{in}\), \(V_{ref}\), \(Clk\), \(Rst\), \(SoC\) and \(Hold\).\\
-\noindent \textbf{Outputs:} \(B_{out}\) and \(EoC\).
-
-
+\noindent \textbf{Outputs:} \(B_{out}\) and \(EoC\).\\
+\\
 The SAR logic does not feature a \(Rst\) input and is not implemented in our design. 
 We created a "Controller" module (not included in this delivery) that provided a slightly different interface to the circuit in order to emulate reset functionality.
 This controller gave a new interface for signaling the DAC.
