@@ -561,6 +561,8 @@ The output of the simulation of the circuit (with parasitic properties extracted
     \label{figure:sample_and_hold:sim_output}
 \end{figure}
 
+\subsubsection{Layout}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -647,6 +649,11 @@ lower than 495mV at the input would drive the output low.
     \caption{Sample and Hold simulation output, \(V_{ref} > 600mV\)}
     \label{figure:comparator:sim_output_greater}
 \end{figure}
+
+
+\subsubsection{Layout}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% DAC
@@ -781,6 +788,10 @@ recalling from the paragraph above.
  \label{fig:sim:dac:320k}
 \end{figure}
 
+
+\subsubsection{Layout}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SAR Logic
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -801,6 +812,7 @@ The high output level of the module is fixed at 1V and not at system VDD voltage
 This module was simulated in conjunction with the entire system and not verified on it's own. 
 The functionality of this circuit is very simple and the correctness was therefore easily verified in the complete system simulation.
 
+\subsubsection{Layout}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SR Latch
@@ -852,11 +864,23 @@ The simulation of the circiut was done by cycling throug the 4 different combina
 \label{table:srlatch:functiontable}
 \end{table}
 
+\subsubsection{Layout}
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Output Buffers
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Output buffers}
+In order to attach a exteral circiut to read the value from the SAR ADC without disturbing the internal DAC we attached an outputbuffer between the SAR logic and the outputs.
+This has several benefits, first off all the output high levels are at VDD. Seccondly the buffers provide a high impedance for the dac so it's accuracy does not depend on the loding of the external circuit.
+
 \subsubsection{Implementation}
+The implementation of the buffers is in the form of two inverters in series as shown in the figure (\ref{fig:buffer:out}). All the chanals are independent of each other. 
+Their sizes are based on the minimal inverters from the process and they are not capable of delivering much current. 
+In a more optimal design the outputbuffers should probably be based on bigger transistors so the outputs could be used for a wider range of applications. If this DAC should be part of a bigger integreated system
+the buffers size is probably fine.
+
 \begin{figure}[!ht]
 \centering
  \begin{circuitikz}[yscale=1, xscale=0.8]\draw
@@ -884,6 +908,12 @@ The simulation of the circiut was done by cycling throug the 4 different combina
 
 \subsubsection{Simulation}
 
+\subsubsection{Layout}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% SAR System
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{SAR system}
 \subsubsection{Implementation}
 
@@ -927,6 +957,8 @@ The simulation of the circiut was done by cycling throug the 4 different combina
 
 \subsubsection{Simulation}
 
+
+\subsubsection{Layout}
 
 \section{Discussion and conclusion}
 \section{Discussion}
