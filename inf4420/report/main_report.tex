@@ -25,7 +25,7 @@
 
 \begin{document}
 \ififorside{}
-% \frontmatter{}
+ \frontmatter{}
 \maketitle{} \newpage
 
 \tableofcontents{} \newpage
@@ -34,7 +34,7 @@
 
 
 %-----------Introduksjon-----
-% \mainmatter{}        
+ \mainmatter{}        
 
 \chapter{Introduction} 
 Successive Approximation Register (SAR) Analog-to-Digital Converter (ADC) is a common arctitecture whent talking about Analog-to-Digital (A/D) conversion. A/D conversion is used in almost every
@@ -570,6 +570,12 @@ The output of the simulation of the circuit (with parasitic properties extracted
 \end{figure}
 
 \subsection{Layout}
+All the layout has been done using Virtuoso Layout XL. The library used, is the
+tmcN90rf, which is a 90nm process. Fig. (\ref{fig:layout:sh:u:cap}) shows
+the layout for the transistors used in the sample and hold circuit. In 
+Fig. (\ref{fig:layout:sh}), the sample and hold with the capacitor is inculded. 
+Since the capacitor lays in an other layer, it does not interrupt the tharansistors. 
+This allows us to save space, and place the capacitor on top of the transistor circuit.
 
 % \begin{figure}[!ht]
 %  \centering
@@ -592,26 +598,32 @@ The output of the simulation of the circuit (with parasitic properties extracted
 %% Comparator
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Comparator}
-The comparator we have implemented is a comparator with \textit{rail to rail} inputs this implies that that the comparator should preform quite accurately even when the inputs are close to 
+The comparator we have implemented is a comparator with \textit{rail to rail} inputs. This implies that that the comparator should preform quite accurately even when the inputs are close to 
 GND or VDD. This circiut is a design from the book \textit{Designing Analog Chips} by Hans Camenzind \cite{hansc}.
-
-
 
 \subsection{Implementation}
 The rail to rail inputs are realized by hawing two input differential pairs, one n-channel and one p-channel.
-The principle is to mirror the current of one of the pairs and sum the result with the currents of the other.
-
+The principle is to mirror the current of one of the pairs and sum the result with the currents of the other.\\
+\\
 We had several different iterations on this circuit.
-Our first implementation was the circuit as defined in the book.
+Our first implementation was the circuit as defined in the book. The size of the transistors in the original design varies a bit, but is typically in the order of 
+\( \frac{20\mu}{2\mu} \). This is quite large transistors, taken intro account that we use 90 nm process. 
 Our second implementation was a smaller version of the circuit where all of the transistors length and width was \( \frac{1}{10} \) of the original sizing. 
-This circuit performed OK at first glance, but after more study we concluded that the original implementation had better performance and higher gain. 
-
+This circuit performed fine at first glance, but after more study we concluded that the original implementation had better performance and higher gain.\\ 
+\\
 The first implementation had very large input transistors that distorted the sample and hold to much to obtain a correct result.
-We decreased the size of the input transistors to a \( \frac{1}{10} \) of the original size and the circuit performed adequately.
-
-The functional implementation is showed in the figure (\ref{comp:design}) and the actual implementation is included in the appendix.
-
-
+We decreased the size of the input transistors to a \( \frac{1}{10} \) of the original size and the circuit performed adequately.\\
+\\
+The design, also needs a stable bias current source at \(20 \mu A\). This has been realized using a resistor. The fist approach for fining a proper value for the resistor,
+was to perform a simulation using a ideal current source at \(20 \mu A\). Then, we measured the voltage across, and by using ohms law, we were able to calculate a resistance.
+The voltage was found to be 0.4262 V. This gives:
+\begin{equation}
+ U = RI
+\end{equation}
+\begin{equation}
+ \Rightarrow R = \frac{U}{I} = \frac{0.4262 V}{20 \mu A} = 21.31 k\ohm	
+\end{equation}
+The functional implementation is showed in the Fig. (\ref{comp:design}) and the actual implementation including sizes for the transistors are included in the appendix.
 
 %---------------------------- Comparator -------------------------------
 \begin{figure}[!ht]
@@ -654,10 +666,10 @@ The functional implementation is showed in the figure (\ref{comp:design}) and th
 
 \subsection{Simulation}
 The circuit is simulated by sweeping the \(V_{ref}\) voltage from 100mV to 1100mV in steps of 100mV while applying a sine wave to the input.
-The output from the simulated comparator is shown in figure (\ref{figure:comparator:sim_output_greater}) and (\ref{figure:comparator:sim_output_less}).
-
+The output from the simulated comparator is shown in figure (\ref{figure:comparator:sim_output_greater}) and (\ref{figure:comparator:sim_output_less}).\\
+\\
 The comparator is not perfect and has an average offset of about -5mV when determining the output e.g. 495mV at the input with a \(V_{ref}\) of 500mV would drive the output to be high,
-lower than 495mV at the input would drive the output low.
+lower than 495mV at the input would drive the output low.\\
 
 \begin{figure}[!ht]
     \centering
@@ -673,9 +685,21 @@ lower than 495mV at the input would drive the output low.
     \label{figure:comparator:sim_output_greater}
 \end{figure}
 
-
-
 \subsection{Layout}
+The layout for the comparator is the most complex design in the circuit. It consists 
+of total 39 transistors. The schematic shows a total of 20 transistors, but some of the
+transistors includes a multiplier. In a such large system it is important to think 
+of the placement for every transistor. As default, the workspace in Virtuoso is p-well. 
+This means that for a PMOS transistor, we need a n-well. Luckily, this p-well comes 
+with the default model for the tmcN90rf process. \\
+\\
+As a clean and good design approach, we have aligned all the PMOS transistors close 
+to each other, in order to get a common n-well. Also, in order to get a design that 
+is easy to produce for the manufacturer, and gives as less process errors as 
+possible, it is an major advantage to align the transistor in the same direction. 
+This has been taken into account during the layout.\\
+\\
+The layout for the comparator is shown in Fig. (\ref{fig:layout:comparator}). 
 % 
 % \begin{figure}[!ht]
 %  \centering
