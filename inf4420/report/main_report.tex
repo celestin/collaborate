@@ -634,6 +634,7 @@ The voltage was found to be 0.4262 V. This gives:
 \begin{equation}
  \Rightarrow R = \frac{U}{I} = \frac{0.4262 V}{20 \mu A} = 21.31 k\ohm	
 \end{equation}
+\newline
 The functional implementation is showed in the Fig. (\ref{comp:design}) and the actual implementation including sizes for the transistors are included in the appendix.
 
 %---------------------------- Comparator -------------------------------
@@ -784,8 +785,8 @@ In the ending, we ended up with the R-2R ladder. Many examples of this circuit i
 work properly. This is not a problem in out design, because the comparator has a very high impedance, meaning that it would be a waste of space and time modeling a extra operational amplifier at
 the output. In Fig. (\ref{fig:r2r:ladder:real}), there are implemented two inverters at the input for every bit. This is because we experienced that the SAR logic block did not output logic high at
 1.2V (\(V_{DD}\)), but 1V instead. Since we use \(V_{DD}\) as \(V_{ref}\), a logical high from the SAR logic of 1.2V would be fine but with the buffers we are able to generalize range of the ADC so that we can have a external \(V_{ref}\).
-It is important for the systems accuracy to have full swing at the DAC output. Therefor, we implemented two inverters at the input to act as a buffer. 
-
+It is important for the systems accuracy to have full swing at the DAC output. Therefor, we implemented two inverters at the input to act as a buffer.\\ 
+\\
 Their sizing is important so that the they deliver enough current to drive the resistive load.
 The size of the resistors is set to be 320k\(\ohm\) and 640k\(\ohm\). More on why these sizes are used, is discussed in the simulation section. 
 
@@ -858,8 +859,11 @@ recalling from the paragraph above.
 
 
 \subsection{Layout}
-
-
+In the subsection about implementation, it is mentioned that layout for resistors, are quite 
+large. We can see from the layout that the resistors used, consumes a lot of space relative to the total area. Originally, the values for the resistances are
+320 k\(\ohm\) and 640 k\(\ohm\) for R and 2R, respectively. If we would have used the full size of these resistances in the layout, each resistance would have been
+very large. The solution was therefor to divide 320 k\(\ohm\) into four, which gives a resistance of 80 k\(\ohm\). By using four 80 k\(\ohm\) in parallell, gives an huge
+advantage considering space consumption. Fig. (\ref{fig:layout:dac}) shows the layout for the DAC implementation.
 % \begin{figure}[!ht]
 %  \centering
 %  \includegraphics[width=\textwidth]{img/layout/dac}
