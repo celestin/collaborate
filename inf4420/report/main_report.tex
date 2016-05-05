@@ -1,7 +1,8 @@
-\documentclass[english, 12pt, a4paper]{article}
+\documentclass[english, 12pt, a4paper]{ifimaster}
 \usepackage[utf8]{inputenc} 
 \usepackage[T1]{fontenc,url} %url
 \urlstyle{sf} %sf
+\usepackage{tgtermes}
 \usepackage[toc,page]{appendix}
 \usepackage{babel,textcomp,csquotes,ifikompendiumforside, varioref,graphicx, gensymb}
 \usepackage[]{circuitikz}
@@ -35,7 +36,7 @@
 %-----------Introduksjon-----
 % \mainmatter{}        
 
-\section{Introduction} 
+\chapter{Introduction} 
 Successive Approximation Register (SAR) Analog-to-Digital Converter (ADC) is a common arctitecture whent talking about Analog-to-Digital (A/D) conversion. A/D conversion is used in almost every
 circuits today, and the purpose is to convert a signal from the analig to the digital domain. This is of great interest, because digital signals propagates more efficiently than analog singlals in a 
 circuit. By using digital signals, it is easier for the electronic circuit to distinguish the signal from the noise \cite{basic-adc}.\\
@@ -72,7 +73,7 @@ converter (DAC) and a logic block. The task was to design all this blocks, exept
   \caption{Block diagram}
   \label{block_diagram}
 \end{figure}
-\subsection{System overview}
+\section{System overview}
 A Successive Approximation Register is a binary search algorithm, that compares a sampled input signal with a clocked bit signal. For this task 8-bits are used. The 8-bits counts from 0 to 256, and 
 compares this values with the input signal. Fig. (\ref{sar:adc}) shows a example of a 4-bit converter. With a 8-bit converter, it is possible i achieve a higher resolution for a better accuracy \cite{sar-adc-concept}.\\
 \\
@@ -113,7 +114,7 @@ the sar logic block.
 \end{figure}
 
 
-\subsubsection{Sample and Hold}
+\subsection{Sample and Hold}
 The sample and hold (S/H) is the fist element in the chain. The S/H snatches a value of a analog signal, holds it and digitize it, as shown in Fig. (\ref{sample:hold}). In Fig. (\ref{sample:hold:2})
 we can se a simple circuit for a S/H. During \(\phi_{1}\), the switch is on, and the capacitor charges to \(V_{in}\). When the switch closes again $V_{out}$ has the same potential as the capacitor 
 at the moment the switch opend \cite{basic-sample-hold}.\\
@@ -181,7 +182,7 @@ In the SAR ADC architecture, the function for the sample and hold is to make a s
 \end{circuitikz}\caption{Sample and Hold} \label{sample:hold:2}
 \end{figure}
 
-\subsubsection{Comparator}
+\subsection{Comparator}
 The comparator compares two signals, and outputs either a digital low or high. For a SAR ADC, we compare the sampled reference voltage (\(V_{ref}\)) from the S/H, by the bit sequence from the DAC. 
 If the first bit is higher than \(V_{ref}\), the comparator outputs a digital low. Then we know that the sampled value is lower than the value of the first bit. This bit is called the most 
 signifiacant bit, shorted as MSB. The calues for the each bit, is discussed in the next subsection.\\
@@ -190,7 +191,7 @@ The complexity if the comparator depends on the speed and the accuracy. In some 
 concern, and it is therefor important to design the comparator for as low noise as possible. In datacoversion it is often prefered to have a input reffered noise of less than 1 LSB 
 (Least Significant Bit). On the other hand, offset is not a concern since it does not affect the overall liniarity \cite{sar-adc-concept}. 
 
-\subsubsection{Digital-to-analog converter}
+\subsection{Digital-to-analog converter}
 The digital-to-analog converter (DAC) converts, as the name implies, a digital signal to a analog signal. Depending on the requirements for speed, accuracy, complexity, space and more, it is 
 important to find a design that suits the requirements. Table \ref{dac:comparison} shows pros and cons for three different DAC architectures, including R-2R DAC, Resistor string DAC and 
 Delta-Sigma DAC \cite{different-dac}. \\
@@ -294,7 +295,7 @@ DAC			& - Low Power			& - Long Latency		\\
  \label{example:r2r}
 \end{figure}
 
-\subsubsection{Logic}
+\subsection{Logic}
 The SAR logic block, is the ``brain'' of the circuit. The scope of the project is not to design this block, and is therefor not discussed in detail here. The block contains three inputs and 
 two outputs, where one of the outputs is a bit sequence of total 8-bits. The block with its I/Os are shown in Fig. (\ref{sar:logic}). Each I/O is briefly discussed under, and Fig. (\ref{timing_sar})
 shows a typical timing diagram for the SAR logic block.
@@ -398,7 +399,7 @@ can be found in the subsention for the comparator.
 
 
 
-\subsection{Requirements}
+\section{Requirements}
 In todays technologies, it is important to consume as low power as possible, and be as fast as possible. Due to this, we are going to design a SAR ADC which are capable 
 of running with a powersupply of 1.2 V and have sampling frequency of 1 MHz. The overall requirements are listed bellow.\\
 \textbf{SAR ADC}
@@ -428,7 +429,7 @@ of running with a powersupply of 1.2 V and have sampling frequency of 1 MHz. The
  \item \(C_{load} = 50 fF\)
 \end{itemize}
 
-\section{Planning the project} 
+\chapter{Planning the project} 
 Before stating the work on the shematics, we searched for litterature in textbooks and on the internet. There was also a mandatory handin for a prestudy for comparing different ADC types. This 
 comparison is losted in Table (\ref{comp:adc}) \cite{forstudie}. There has also been carried out a status report during the prosject. The total circuit was discussed at this stage of the prosject.
 After this report, there has beed done a lot of changes to the circuit. These changes are discussed in detail in the nest section. 
@@ -448,8 +449,8 @@ After this report, there has beed done a lot of changes to the circuit. These ch
  \label{comp:adc}
 \end{table}
 
-\newpage
-\section{Results} 
+
+\chapter{Results} 
 In order to get a god overview of the different parts of the total system, each block in the system is separated into sections. As a summary all the blocks are duscussed together as a final, and 
 total system. To be sure that every part works as i should, we made own working directoris for each part. The naming for the blocks were kept consequently, so that there would not create any problem. 
 To get a better overview for the reader, we have listed the hierarchy bellow. Note that some of the blocks has a number at the end of the name. This indicates the verson. 
@@ -498,10 +499,10 @@ The component part is the actual schematic for the block. The subsentions is ran
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Sample and hold
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Sample and hold}
+\section{Sample and hold}
 In our design we have a sample and hold circuit that tracks the input signal. When the circuit should perform a conversion the signal is held constant.
 
-\subsubsection{Implementation}
+\subsection{Implementation}
 Our first implementation was a simple nmos transistor as the switch. In this case we was not able to get a clean signal when the signal was grater than VDD/2. 
 Simulations showed that the signal started to be distorted already at 700mV (about 58\% of VDD).
 
@@ -548,7 +549,7 @@ The function of the input \(\phi\) is listed in table \ref{table:sample_and_hold
 \label{table:sample_and_hold:function}
 \end{table}
 
-\subsubsection{Simulation}
+\subsection{Simulation}
 The simulation of the sample and hold circuit is done by setting a sine wave at the input of the sample and hold and pulsing 
 the \(\phi\) input to toggle between \textit{track} and \textit{hold}. 
 
@@ -568,13 +569,13 @@ The output of the simulation of the circuit (with parasitic properties extracted
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Comparator
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Comparator}
+\section{Comparator}
 The comparator we have implemented is a comparator with \textit{rail to rail} inputs this implies that that the comparator should preform quite accurately even when the inputs are close to 
 GND or VDD. This circiut is a design from the book (Designing analog chips)\cite{MISSING}.
 
 
 
-\subsubsection{Implementation}
+\subsection{Implementation}
 The rail to rail inputs are realized by hawing two input differential pairs, one n-channel and one p-channel.
 The principle is to mirror the current of one of the pairs and sum the result with the currents of the other.
 
@@ -629,7 +630,7 @@ The functional implementation is showed in the figure (\ref{comp:design}) and th
  \label{comp:design}
 \end{figure}
 
-\subsubsection{Simulation}
+\subsection{Simulation}
 The circuit is simulated by sweeping the \(V_{ref}\) voltage from 100mV to 1100mV in steps of 100mV while applying a sine wave to the input.
 The output from the simulated comparator is shown in figure (\ref{figure:comparator:sim_output_greater}) and (\ref{figure:comparator:sim_output_less}).
 
@@ -658,8 +659,8 @@ lower than 495mV at the input would drive the output low.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% DAC
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Digital-to-analog converter}
-\subsubsection{Implementation}
+\section{Digital-to-analog converter}
+\subsection{Implementation}
 The implementation for the DAC is shown in Fig. (\ref{fig:r2r:ladder:real}). After a long study on different types of DAC, we decided to use a R-2R implementation. This decision was mainly due to 
 complexity. A resistor string implementation has been considered, but this implementation is so complex for a 8-bit DAC. The resistor string needs a lot of digital logic circuit, but the main 
 reason is the large amount of resistors needed. For a 8-bit system, it is required to have \(2^N\) resistor \cite{carusone}. This means that there would be 256 resistors. Due to this large amount of resistor, 
@@ -721,7 +722,7 @@ It is important for the systems accuracy to have full swing at the DAC output. T
 Their sizing is important so that the they deliver enough current to drive the resistive load.
 The size of the resistors is set to be 320k\(\ohm\) and 640k\(\ohm\). More on why these sizes are used, is discussed in the simulation section. 
 
-\subsubsection{Simulation}
+\subsection{Simulation}
 Simulating the DAC using external voltage sources and the properties for the SAR logic, is difficult. Therefor, we crated a table (Table \ref{tab:voltage:out:dac}) for representing the different 
 voltage values if one bit is on at the time. Recalling the formulas for calculating output voltage in Eq. (\ref{vlsb}), (\ref{binval}), (\ref{vout}) and (\ref{vmax}) from the introduction, 
 we can calculate the output voltage. A plot of the output is not included in the report, since this would just show a stable signal. The results shows on the other hand that the variations between 
@@ -795,11 +796,11 @@ recalling from the paragraph above.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SAR Logic
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{SAR Logic}
+\section{SAR Logic}
 In this task we where given the logic controller for the SAR ADC. This module is written in Verilog-A. 
 The purpose of this circuit is to determine which of the bits to keep when running the SAR algorithm.
 
-\subsubsection{Implementation}
+\subsection{Implementation}
 The original module that was given did not function properly and was only able to do one conversion. This module also did not have a \textit{start of conversion} (SoC) signal input.
 In order to control the conversion with this module we gated the clock and used a SR-latch to enable the gated clock when the SoC signal was applied.
 
@@ -808,7 +809,7 @@ The updated module was able to do multiple conversion by signaling a new SoC aft
 When the module was finished with a conversion it signaled \textit{End of Conversion} (EoC) by raising the EoC output to a high level. 
 
 The high output level of the module is fixed at 1V and not at system VDD voltage level.
-\subsubsection{Simulation}
+\subsection{Simulation}
 This module was simulated in conjunction with the entire system and not verified on it's own. 
 The functionality of this circuit is very simple and the correctness was therefore easily verified in the complete system simulation.
 
@@ -817,17 +818,17 @@ The functionality of this circuit is very simple and the correctness was therefo
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SR Latch
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{SR Latch}
+\section{SR Latch}
 The SR latch is used in the system to hold the the \textit{sample and hold} circiut in hold mode during conversion. 
 The set-trigger for the latch is the SoC signal and reset is from the EoC signal. 
 
-\subsubsection{Implementation}
+\subsection{Implementation}
 The SR Latch is implemented with two nor gates connected in the way shown in figure (\ref{sr:latch}).
 The function table for this implementation is given in table \ref{table:srlatch:functiontable}.
 
 The circuit features both regular and invertered outputs \(Q\) and \(\overline{Q}\).
 
-\subsubsection{Simulation}
+\subsection{Simulation}
 The simulation of the circiut was done by cycling throug the 4 different combinations of the inputs \(S\) and \(R\) and observing the output of \(Q\) and \(\overline{Q}\).
 
 %%------ SR LATCH Figure ----------
@@ -871,15 +872,17 @@ The simulation of the circiut was done by cycling throug the 4 different combina
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Output Buffers
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Output buffers}
+
+\section{Output buffers}
 In order to attach a exteral circiut to read the value from the SAR ADC without disturbing the internal DAC we attached an outputbuffer between the SAR logic and the outputs.
 This has several benefits, first off all the output high levels are at VDD. Seccondly the buffers provide a high impedance for the dac so it's accuracy does not depend on the loding of the external circuit.
 
-\subsubsection{Implementation}
+\subsection{Implementation}
 The implementation of the buffers is in the form of two inverters in series as shown in the figure (\ref{fig:buffer:out}). All the chanals are independent of each other. 
 Their sizes are based on the minimal inverters from the process and they are not capable of delivering much current. 
 In a more optimal design the outputbuffers should probably be based on bigger transistors so the outputs could be used for a wider range of applications. If this DAC should be part of a bigger integreated system
 the buffers size is probably fine.
+
 
 \begin{figure}[!ht]
 \centering
@@ -906,16 +909,17 @@ the buffers size is probably fine.
 \label{fig:buffer:out}
 \end{figure}
 
-\subsubsection{Simulation}
+\subsection{Simulation}
 
-\subsubsection{Layout}
+
+\subsection{Layout}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SAR System
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{SAR system}
-\subsubsection{Implementation}
+\section{SAR system}
+\subsection{Implementation}
 
 \begin{tikzpicture}[node distance=1cm,>=latex,
   block/.style = {draw, shape=rectangle, align=center,minimum height=2cm},
@@ -923,24 +927,51 @@ the buffers size is probably fine.
     minimum height=1cm},
   dblock/.style = {draw, shape=diamond, align=center},
   ]
-  
+  \node [input, name=vin]{};
   \node [block] (srlatch) {SR Latch};
   \node [block, right= of srlatch](samplehold){Sample and hold};
-  \node [block, below= of samplehold](dac){DAC};
+  \node [block, below left=2cm and -2.95cm of comparator](dac){DAC};
   \node [block, right= of samplehold](comparator){Comparator};
   \node [block, right= of comparator](sarlogic){SAR logic\\block};
-  \node [block, below= of sarlogic](outputbuffer){Output Buffer};
+  \node [block, below right=1.845cm and 1cm of sarlogic](outputbuffer){Output Buffer};
   
   \begin{scope}[very thick]
+  \draw [draw] (vin) -- node[name=vin]{$v_{in}$}(srlatch);
   \draw (srlatch) -- (samplehold); %
   \draw (samplehold) -- (comparator); %
   \draw (comparator) -- (sarlogic); %
   \draw (comparator) -- (dac);
-  \draw (dac) -- (sarlogic);
-  \draw (sarlogic) -- (outputbuffer);
+  \draw (dac) -| (sarlogic);
+  \draw (sarlogic) |- (outputbuffer);
   \end{scope}
 
 \end{tikzpicture}
+
+\begin{figure}[!ht]
+  \begin{tikzpicture}[auto, node distance=2cm,>=latex']
+      % We start by placing the blocks
+      \node [input, name=input] {};
+      \node [block, right of=input, node distance=2cm] (sample_and_hold) {S\&H};
+      \node [block, right of=sample_and_hold, node distance=4cm] (comparator) {Comparator};
+      \node [block, right of=comparator, node distance=4cm] (sar_logic) {SAR Logic};
+      
+      % We draw an edge between the controller and system block to 
+      % calculate the coordinate xsh(t). We need it to place the measurement block. 
+      \draw [->] (sample_and_hold) -- node[name=xsh(t)] {$x_{sh}(t)$} (comparator);
+      \draw [->] (comparator) -- node[name=xc(nT)] {$x_{c}(nT)$} (sar_logic);
+      \node [block, below of=sar_logic, node distance=3cm] (dac){DAC};
+      \node [output, right of=sar_logic, node distance=3cm] (output) {};
+    
+      % Once the nodes are placed, connecting them is easy. 
+      \draw [draw,->] (input) -- node [name=xc(t)] {$x_{c}(t)$}(sample_and_hold);
+      \draw [->] (sar_logic) -- node [name=digital_out] {Digital out}(output);
+      \draw [->] (sar_logic) -- node [name=nbit] {N-bit} (dac);
+      \draw [->] (dac) -| node [name=negfeedback, bend left] {Negative feedback}(comparator);     
+  \end{tikzpicture}
+  \caption{Block diagram}
+  \label{block_diagram}
+\end{figure}
+
 
 
 
@@ -955,17 +986,17 @@ the buffers size is probably fine.
 % ; \end{circuitikz}
 % \end{figure}
 
-\subsubsection{Simulation}
+\subsection{Simulation}
 
 
-\subsubsection{Layout}
 
-\section{Discussion and conclusion}
-\section{Discussion}
-\subsection{Proposal of improvement}
-\section{Conclusion}
+\chapter{Discussion and conclusion}
+\chapter{Discussion}
+\section{Proposal of improvement}
+\chapter{Conclusion}
 
-\section{Punkter som kanskje skal med}
+
+\chapter{Punkter som kanskje skal med}
 Critical parts in SAR ADCs 
 
 
