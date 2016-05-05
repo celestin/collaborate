@@ -8,4 +8,4 @@ main_report.pdf
 *.toc
 *.bbl
 *.bcf
-
+main_report.run.xml
