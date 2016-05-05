@@ -525,17 +525,15 @@ In our design we have a sample and hold circuit that tracks the input signal. Wh
 
 \subsection{Implementation}
 Our first implementation was a simple nmos transistor as the switch. In this case we was not able to get a clean signal when the signal was grater than VDD/2. 
-Simulations showed that the signal started to be distorted already at 700mV (about 58\% of VDD).
-
-Since we have aimed at full range performance of our circuit we needed a better switch and changed the switch implementation into a transmission gate. 
-
+Simulations showed that the signal started to be distorted already at 700mV (about 58\% of VDD).\\
+\\
+Since we have aimed at full range performance of our circuit we needed a better switch and changed the switch implementation into a transmission gate. \\
+\\
 We also included a operational amplifier in our design but realized that our comparator had so high input impedance that this was not needed. The input capacitance of the 
-comparator is sufficiently small so the stored charge in the capacitor (and hence the voltage over the capacitor) is not very distorted during comparison.
-
-
+comparator is sufficiently small so the stored charge in the capacitor (and hence the voltage over the capacitor) is not very distorted during comparison.\\
+\\
 The functional implementation is illustrated in figure (\ref{sample:hold:design}) and the actual implementation is in the appendix. 
 The function of the input \(\phi\) is listed in table \ref{table:sample_and_hold:function}.
-
 
 %---------------------------- SH Circuit -------------------------------
 \begin{figure}[!ht]
@@ -572,8 +570,8 @@ The function of the input \(\phi\) is listed in table \ref{table:sample_and_hold
 
 \subsection{Simulation}
 The simulation of the sample and hold circuit is done by setting a sine wave at the input of the sample and hold and pulsing 
-the \(\phi\) input to toggle between \textit{track} and \textit{hold}. 
-
+the \(\phi\) input to toggle between \textit{track} and \textit{hold}. \\
+\\
 The output of the simulation of the circuit (with parasitic properties extracted) is showed in figure (\ref{figure:sample_and_hold:sim_output}).
 
 \begin{figure}[!ht]
@@ -591,19 +589,19 @@ Fig. (\ref{fig:layout:sh}), the sample and hold with the capacitor is inculded.
 Since the capacitor lays in an other layer, it does not interrupt the tharansistors. 
 This allows us to save space, and place the capacitor on top of the transistor circuit.
 
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=\textwidth]{img/layout/sample_hold_u_cap}
-%  \caption{Layout for Sample and hold without capacitor}
-%  \label{fig:layout:sh:u:cap}
-% \end{figure}
-% 
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=\textwidth]{img/layout/sample_hold}
-%  \caption{Layout for Sample and hold}
-%  \label{fig:layout:sh}
-% \end{figure}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth]{img/layout/sample_hold_u_cap}
+ \caption{Layout for Sample and hold without capacitor}
+ \label{fig:layout:sh:u:cap}
+\end{figure}
+
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth]{img/layout/sample_hold}
+ \caption{Layout for Sample and hold}
+ \label{fig:layout:sh}
+\end{figure}
 
 
 
@@ -715,13 +713,13 @@ possible, it is an major advantage to align the transistor in the same direction
 This has been taken into account during the layout.\\
 \\
 The layout for the comparator is shown in Fig. (\ref{fig:layout:comparator}). 
-% 
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=\textwidth]{img/layout/comparator}
-%  \caption{Layout for the Comparator}
-%  \label{fig:layout:comparator}
-% \end{figure}
+
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth]{img/layout/comparator}
+ \caption{Layout for the Comparator}
+ \label{fig:layout:comparator}
+\end{figure}
 
 
 \subsection{Requirement fulfilment}
@@ -867,16 +865,15 @@ large. We can see from the layout that the resistors used, consumes a lot of spa
 320 k\(\ohm\) and 640 k\(\ohm\) for R and 2R, respectively. If we would have used the full size of these resistances in the layout, each resistance would have been
 very large. The solution was therefor to divide 320 k\(\ohm\) into four, which gives a resistance of 80 k\(\ohm\). By using four 80 k\(\ohm\) in parallell, gives an huge
 advantage considering space consumption. Fig. (\ref{fig:layout:dac}) shows the layout for the DAC implementation.
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=\textwidth]{img/layout/dac}
-%  \caption{Layout for DAC}
-%  \label{fig:layout:dac}
-% \end{figure}
-
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth]{img/layout/dac}
+ \caption{Layout for DAC}
+ \label{fig:layout:dac}
+\end{figure}
 
 \subsection{Requirement fulfilment}
-
+In addition to the requirements that is given. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SAR Logic
@@ -887,12 +884,12 @@ The purpose of this circuit is to determine which of the bits to keep when runni
 
 \subsection{Implementation}
 The original module that was given did not function properly and was only able to do one conversion. This module also did not have a \textit{start of conversion} (SoC) signal input.
-In order to control the conversion with this module we gated the clock and used a SR-latch to enable the gated clock when the SoC signal was applied.
-
+In order to control the conversion with this module we gated the clock and used a SR-latch to enable the gated clock when the SoC signal was applied.\\
+\\
 We got a updated version of this module that had been extended to included a SoC input. In this module you signaled the start of a conversion by strobing the SoC input.
 The updated module was able to do multiple conversion by signaling a new SoC after a conversion was done. 
-When the module was finished with a conversion it signaled \textit{End of Conversion} (EoC) by raising the EoC output to a high level. 
-
+When the module was finished with a conversion it signaled \textit{End of Conversion} (EoC) by raising the EoC output to a high level. \\
+\\
 The high output level of the module is fixed at 1V and not at system VDD voltage level.
 \subsection{Simulation}
 This module was simulated in conjunction with the entire system and not verified on it's own. 
@@ -912,8 +909,8 @@ The set-trigger for the latch is the SoC signal and reset is from the EoC signal
 
 \subsection{Implementation}
 The SR Latch is implemented with two nor gates connected in the way shown in figure (\ref{sr:latch}).
-The function table for this implementation is given in table \ref{table:srlatch:functiontable}.
-
+The function table for this implementation is given in table \ref{table:srlatch:functiontable}.\\
+\\
 The circuit features both regular and invertered outputs \(Q\) and \(\overline{Q}\).
 
 \subsection{Simulation}
@@ -957,12 +954,12 @@ The simulation of the circiut was done by cycling throug the 4 different combina
 The layout for the SR latch is quite simple, and will not be discussed in detail. One improvement would be to make it more compact in order to save more space. 
 We concluded that compression is not relative for the task, and has therefor not focused on this. Fig. (\ref{fig:layout:srlatch}) shows how the SR latch is implemented. 
 
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=\textwidth]{img/layout/srlatch}
-%  \caption{Layout for the SR Latch}
-%  \label{fig:layout:srlatch}
-% \end{figure}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth]{img/layout/srlatch}
+ \caption{Layout for the SR Latch}
+ \label{fig:layout:srlatch}
+\end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1013,12 +1010,12 @@ Since the circuit is so simple the functional verification was easy to do in the
 As for the layout for the SR latch, the output buffers is also not very interesting. It consists of one buffer for each of the 8-bits. In stead of including 
 a picture for the whole output buffer, we have taken a snapshot of two buffers, including four transistors. This can be seen in Fig. (\ref{fig:layout:buff:out}). 
 
-%  \begin{figure}[!ht]
-%   \centering
-%   \includegraphics[width=\textwidth]{img/layout/bufferout_one}
-%   \caption{Layout for the Output buffers}
-%   \label{fig:layout:buff:out}
-%  \end{figure}
+ \begin{figure}[!ht]
+  \centering
+  \includegraphics[width=\textwidth]{img/layout/bufferout_one}
+  \caption{Layout for the Output buffers}
+  \label{fig:layout:buff:out}
+ \end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SAR System
@@ -1029,22 +1026,6 @@ This system design overview given in the project handout features six inputs and
 
 \noindent \textbf{Inputs:} \(V_{in}\), \(V_{ref}\), \(Clk\), \(Rst\), \(SoC\) and \(Hold\).\\
 \noindent \textbf{Outputs:} \(B_{out}\) and \(EoC\).\\
-\\
-The SAR logic does not feature a \(Rst\) input and is not implemented in our design. 
-We created a "Controller" module (not included in this delivery) that provided a slightly different interface to the circuit in order to emulate reset functionality.
-This controller gave a new interface for signaling the DAC.
-This interface had \textit{Reset} and \textit{Start} input and \textit{Ready} and \textit{Done} output, in addition to have the \(SoC\) and \(EoC\) signals to the ADC.
-The purpose of the controller was then to have our implementation comply with the specifications given in the task (i.e. add the reset input), but we concluded that it was not necessary to implement this circuit.
-
-We aimed at creating a \textit{rail to rail} SAR ADC and all our blocks are able to handle \textit{rail to rail} input.
-
-\subsection{Implementation}
-The SAR logic block, as mentioned earlier, is a virtual block and not implemented in MOSFET. 
-
-The \(Hold\) signal to the sample and hold circuit is not a external input in our design and is controlled internally.
-
-
-
 \begin{figure}[!ht]
 \centering
 \begin{tikzpicture}[node distance=1cm,>=latex,
@@ -1077,16 +1058,30 @@ The \(Hold\) signal to the sample and hold circuit is not a external input in ou
 \caption{Block diagram representing the complete system}
 \label{fig:block:complete:sys}
 \end{figure}
+\newline
+The SAR logic does not feature a \(Rst\) input and is not implemented in our design. 
+We created a "Controller" module (not included in this delivery) that provided a slightly different interface to the circuit in order to emulate reset functionality.
+This controller gave a new interface for signaling the DAC.
+This interface had \textit{Reset} and \textit{Start} input and \textit{Ready} and \textit{Done} output, in addition to have the \(SoC\) and \(EoC\) signals to the ADC.
+The purpose of the controller was then to have our implementation comply with the specifications given in the task (i.e. add the reset input), but we concluded that it 
+was not necessary to implement this circuit.\\
+\\
+We aimed at creating a \textit{rail to rail} SAR ADC and all our blocks are able to handle \textit{rail to rail} input.
+
+\subsection{Implementation}
+The SAR logic block, as mentioned earlier, is a virtual block and not implemented in MOSFET. \\
+\\
+The \(Hold\) signal to the sample and hold circuit is not a external input in our design and is controlled internally.
+
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=\textwidth]{img/layout/entire_design2}
+ \caption{Implementation of the SAR system in layout}
+ \label{fig:implemented:sar:system}
+\end{figure}
 
 
 \subsection{Simulation}
-
-
-% \subsection{Layout}[!ht]
-% \begin{figure}
-%  \centering
-%  \includegraphics[width=\textwidth]{img/layout/entire_design2}
-% \end{figure}
 
 
 \subsection{Requirement fulfillment}
