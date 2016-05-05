@@ -987,7 +987,27 @@ Since the circuit is so simple the functional verification was easy to do in the
 %% SAR System
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{SAR system}
+The SAR system is the complete SAR system architecture as shown in the block diagram in figure (\ref{fig:block:complete:sys}).
+This system design overview given in the project handout features six inputs and two outputs as listed bellow.
+
+\noindent \textbf{Inputs:} \(V_{in}\), \(V_{ref}\), \(Clk\), \(Rst\), \(SoC\) and \(Hold\).\\
+\noindent \textbf{Outputs:} \(B_{out}\) and \(EoC\).
+
+
+The SAR logic does not feature a \(Rst\) input and is not implemented in our design. 
+We created a "Controller" module (not included in this delivery) that provided a slightly different interface to the circuit in order to emulate reset functionality.
+This controller gave a new interface for signaling the DAC.
+This interface had \textit{Reset} and \textit{Start} input and \textit{Ready} and \textit{Done} output, in addition to have the \(SoC\) and \(EoC\) signals to the ADC.
+The purpose of the controller was then to have our implementation comply with the specifications given in the task (i.e. add the reset input), but we concluded that it was not necessary to implement this circuit.
+
+We aimed at creating a \textit{rail to rail} SAR ADC and all our blocks are able to handle \textit{rail to rail} input.
+
 \subsection{Implementation}
+The SAR logic block, as mentioned earlier, is a virtual block and not implemented in MOSFET. 
+
+The \(Hold\) signal to the sample and hold circuit is not a external input in our design and is controlled internally.
+
+
 
 \begin{figure}[!ht]
 \centering
@@ -1015,11 +1035,11 @@ Since the circuit is so simple the functional verification was easy to do in the
   \draw [->](sarlogic) |- (dac);
   \draw [->](sarlogic) |- (outputbuffer);
   \draw [->](sarlogic) |- (srlatch);
-  \draw [->](outputbuffer) -- node[name=vout, above]{$v_{out}$}(vout);
+  \draw [->](outputbuffer) -- node[name=vout, above]{$b_{out}$}(vout);
   \end{scope}
 \end{tikzpicture}
 \caption{Block diagram representing the complete system}
-\label{fig:blick:complete:sys}
+\label{fig:block:complete:sys}
 \end{figure}
 
 
@@ -1035,6 +1055,13 @@ Since the circuit is so simple the functional verification was easy to do in the
 
 \subsection{Requirement fulfilment}
 
+\subsection{Improvements}
+The SR-latch controlles the hold in the sample and hold and is has a implementation weakness (or bug). The \(SoC\) signal is connected to \(S\) and \(EoC\) to  \(R\) and \(Hold\) (\(\phi\)) is connected to \(Q\). 
+In our design we have connected the SR latch in a way that makes it "prioritize" reset over set, see table \ref{table:srlatch:functiontable}.
+The consequence is that signaling a new conversion is timing sensitive.
+The fix for this is very simple: connect the \(SoC\) to \(R\) and \(EoC\) to \(S\) and use \(\overline{Q}\) instead of \(Q\). This fix makes the circuit more robust.
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% CAP: Conclusion
@@ -1043,7 +1070,9 @@ Since the circuit is so simple the functional verification was easy to do in the
 \section{Proposal of improvement}
 
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Appendix
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{appendices}
 \chapter{Schematics from Cadence Virtuoso}
 \end{appendices}
