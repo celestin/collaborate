@@ -469,7 +469,11 @@ To get a better overview for the reader, we have listed the hierarchy bellow. No
  \end{itemize}
  \item SIM\_dac\_real\_res
   \begin{itemize}
-  \item dac\_real\_res
+    \item dac\_real\_res
+    \begin{itemize}
+        \item ladder\_R
+        \item ladder\_2R
+    \end{itemize}
  \end{itemize}
  \item SIM\_SAR\_logic
   \begin{itemize}
@@ -481,7 +485,10 @@ To get a better overview for the reader, we have listed the hierarchy bellow. No
  \end{itemize}
  \item SIM\_output\_buffers
   \begin{itemize}
-  \item output\_buffers
+    \item output\_buffers
+        \begin{itemize}
+            \item buffer
+        \end{itemize}
  \end{itemize}
 \end{itemize}
 In addtion, there are also one more block, that was created when we simulated the layout. Since the SAR logic block is not supporting layout, we had to take this block out of the whole system, 
