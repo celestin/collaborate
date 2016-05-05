@@ -40,12 +40,12 @@
 %% CAP: Intro
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Introduction} 
-Successive Approximation Register (SAR) Analog-to-Digital Converter (ADC) is a common arctitecture whent talking about Analog-to-Digital (A/D) conversion. A/D conversion is used in almost every
-circuits today, and the purpose is to convert a signal from the analig to the digital domain. This is of great interest, because digital signals propagates more efficiently than analog singlals in a 
+Successive Approximation Register (SAR) Analog-to-Digital Converter (ADC) is a common architecture when talking about Analog-to-Digital (A/D) conversion. A/D conversion is used in almost every
+circuits today, and the purpose is to convert a signal from the analog to the digital domain. This is of great interest, because digital signals propagates more efficiently than analog singlals in a 
 circuit. By using digital signals, it is easier for the electronic circuit to distinguish the signal from the noise \cite{basic-adc}.\\
 \\
-This task, is as mentrioned, to design a SAR ADC. A block diagram of the system arcitecture is shown in Fig. (\ref{block_diagram}). The system includes a sample and hold, a comparator, digital-to-analog 
-converter (DAC) and a logic block. The task was to design all this blocks, exept the logic block. The solution for each blocks are discussed in detail in the next chapters.  
+This task, is as mentioned, to design a SAR ADC. A block diagram of the system architecture is shown in Fig. (\ref{block_diagram}). The system includes a sample and hold, a comparator, digital-to-analog 
+converter (DAC) and a logic block. The task was to design all these blocks, except the logic block. The solution for each blocks are discussed in detail in the next chapters.  
 
 \tikzstyle{block} = [draw, fill=blue!20, rectangle, 
     minimum height=4em, minimum width=3em]
@@ -81,7 +81,7 @@ A Successive Approximation Register is a binary search algorithm, that compares 
 compares this values with the input signal. Fig. (\ref{sar:adc}) shows a example of a 4-bit converter. With a 8-bit converter, it is possible i achieve a higher resolution for a better accuracy \cite{sar-adc-concept}.\\
 \\
 In the system overview section, each step in the DAC process is discussed. Fist we discuss the sample and hold, then the comparator, digital-to-analog converter and a small section of 
-the sar logic block. 
+the SAR logic block. 
 
 \begin{figure} 
 \centering
@@ -118,11 +118,11 @@ the sar logic block.
 
 
 \subsection{Sample and Hold}
-The sample and hold (S/H) is the fist element in the chain. The S/H snatches a value of a analog signal, holds it and digitize it, as shown in Fig. (\ref{sample:hold}). In Fig. (\ref{sample:hold:2})
-we can se a simple circuit for a S/H. During \(\phi_{1}\), the switch is on, and the capacitor charges to \(V_{in}\). When the switch closes again $V_{out}$ has the same potential as the capacitor 
-at the moment the switch opend \cite{basic-sample-hold}.\\
+The sample and hold (S/H) is the fist element in the chain. The S/H snatches a value of a analog signal and holds it constant, as shown in Fig. (\ref{sample:hold}). In Fig. (\ref{sample:hold:2})
+we can see a simple circuit for a S/H. During \(\phi_{1}\), the switch is on, and the capacitor charges to \(V_{in}\). When the switch closes again $V_{out}$ has the same potential as the capacitor 
+at the moment the switch opened \cite{basic-sample-hold}.\\
 \\
-In the SAR ADC architecture, the function for the sample and hold is to make a stable input calue for the comparator, which compares this input value to the bit sequence, as shown in Fig. (\ref{sar:adc}). 
+In the SAR ADC architecture, the function for the sample and hold is to make a stable input value for the comparator, which compares this input value to the bit sequence, as shown in Fig. (\ref{sar:adc}). 
 
 \begin{figure} 
 \centering
@@ -188,30 +188,32 @@ In the SAR ADC architecture, the function for the sample and hold is to make a s
 \subsection{Comparator}
 The comparator compares two signals, and outputs either a digital low or high. For a SAR ADC, we compare the sampled reference voltage (\(V_{ref}\)) from the S/H, by the bit sequence from the DAC. 
 If the first bit is higher than \(V_{ref}\), the comparator outputs a digital low. Then we know that the sampled value is lower than the value of the first bit. This bit is called the most 
-signifiacant bit, shorted as MSB. The calues for the each bit, is discussed in the next subsection.\\
+significant bit, shorted as MSB. The values for the each bit, is discussed in the next subsection.\\
 \\
-The complexity if the comparator depends on the speed and the accuracy. In some later sections, qe can find the requirements for the circuit and the comparator. Noise in a comparator is a 
-concern, and it is therefor important to design the comparator for as low noise as possible. In datacoversion it is often prefered to have a input reffered noise of less than 1 LSB 
-(Least Significant Bit). On the other hand, offset is not a concern since it does not affect the overall liniarity \cite{sar-adc-concept}. 
+The complexity of the comparator depends on the requirements for speed and the accuracy. In later sections, we list the requirements for the system and the comparator circuit. Noise in a comparator is a 
+concern, and it is therefor important to design the comparator for as low noise as possible. In data-converters it is often required to have a input refereed noise of less than 1 LSB 
+(Least Significant Bit). On the other hand, offset is not a concern since it does not affect the overall linearity \cite{sar-adc-concept}. 
 
 \subsection{Digital-to-analog converter}
-The digital-to-analog converter (DAC) converts, as the name implies, a digital signal to a analog signal. Depending on the requirements for speed, accuracy, complexity, space and more, it is 
+The digital-to-analog converter (DAC), as the name implies, converts a digital signal to a analog signal. Depending on the requirements for speed, accuracy, complexity, space and more, it is 
 important to find a design that suits the requirements. Table \ref{dac:comparison} shows pros and cons for three different DAC architectures, including R-2R DAC, Resistor string DAC and 
 Delta-Sigma DAC \cite{different-dac}. \\
 \\
-For this project, the R-2R DAC is used. More on why we choosed this architecture is explained in a later chapter. The R-2R is a simple DAC configuration, and consists of only two different 
+For this project, the R-2R DAC is used. More on why we selected this architecture is explained in a later chapter. The R-2R is a simple DAC configuration, and consists of only two different 
 resistor values hence the name R-2R. Fig. (\ref{r2r:ladder}) shows an example of a 8-bit R-2R ladder, which also is used for this project. The bit sequence into the DAC is controlled by the SAR logic
-block, which is briefly discussed in the next subsection. The purpose of the R-2R ladder is to set a specific volage value for each bit. Fist, we test bit 7 (\(b7\)). By using Eq. (\ref{vlsb}), we 
-can calculate the output volage of the DAC (\(V_{out}\)) for each bit combination.\\
+block, which is briefly discussed in the next subsection. The purpose of the R-2R ladder is to set a specific voltage value for each bit. Fist, we test bit 7 (\(b7\)). By using Eq. (\ref{vlsb}), we 
+can calculate the output voltage of the DAC (\(V_{out}\)) for each bit combination.\\
 \\
-As an example, we can use \(5V\) as reference volage (\(V_{ref}\)), and set bit 7 to logic high (i.e. 1). All other bits are set to logic low (0). We can now draw an equivalent circuit, 
-which is illustrated in Fig. (\ref{example:r2r}). We can se that the output volage is halv the input voltage, i.e 2.5V. 
-This bit causes most change to the circutit, and is therefor the MSB. Lets say that the reference voltage from the sample and hold is 1.5V, we notice that the output from the DAC is larger than 1.5V.
-This bit is therefor set to low again, and we calculate the output volage for the next bit. It repets these steps intill all the bits are checked. If the output volage is lower than the reference 
-volage, the bit is set to logic high, and if the reference volage is higher than the output volage of the DAC, it goes back to logic low.\\
+As an example, we can use \(5V\) as reference voltage (\(V_{ref}\)), and set bit 7 to logic high (i.e. 1). All other bits are set to logic low (0). We can now draw an equivalent circuit, 
+which is illustrated in Fig. (\ref{example:r2r}). We can see that the output voltage is half the input voltage, i.e 2.5V. 
+This bit causes most change to the circuit, and is therefor the MSB. Lets say that the reference voltage from the sample and hold is 1.5V, we notice that the output from the DAC is larger than 1.5V.
+This bit is therefor set to low again, and we calculate the output voltage for the next bit. It repeats these steps until all the bits are checked. If the output voltage is lower than the reference 
+voltage, the bit is set to logic high, and if the reference voltage is higher than the output voltage of the DAC, it goes back to logic low.\\
 \\
-The purpose of the R-2R ladder, is therefor to represent a output value for all bit combinations. In some cases, if the differences between the output volage levels are difficult to separate, 
-it is desred to have a operational amplifier with a gain at the output. 
+The purpose of the R-2R ladder, is therefor to represent a output value for all bit combinations. In some cases, if the differences between the output voltage levels are difficult to separate, 
+it is desired to have a operational amplifier with a gain at the output. 
+%% KONTROLERER FORIGE SETTNIG!!
+
 
 \begin{table}[!ht]
   \centering
@@ -222,7 +224,7 @@ R-2R DAC 		& - Can achieve high		& - Causing high output 	\\
 			& performance INL and DNL	& glitches		   	\\ 
 			& - Medium settling time	& - Need HV transistor input	\\
 			& capability			&  stage for HV DAC Buffer ->	\\
-			& - Low noise R-2R ladder	&  Low BW and setteling		\\
+			& - Low noise R-2R ladder	&  Low BW and settling		\\
 			& - Inherently monotonic	& - Internally, requires high 	\\
 			& - Cost Effective		& common mode voltage swing 	\\
 			& - Simple to build 		& output amp		 	\\ \hline
@@ -234,7 +236,7 @@ String DAC		& - Good DNL performance	& resistors			\\
 			& 				& - High resolution is achieved \\
 			&				& by pipeline-like		\\
 			& 				& architectures which 		\\
-			&				& compromises monotonocity	\\ \hline
+			&				& compromises monotonicity	\\ \hline
 Delta-Sigma		& - High resolution		& - Settling time \(\sim\) 2ms	\\
 DAC			& - Low Power			& - Long Latency		\\
 			& - Voltage output		& -  Not optimized for DC	\\
@@ -243,7 +245,7 @@ DAC			& - Low Power			& - Long Latency		\\
 			& - In Audio: moving noise	&				\\
 			& out of audible range		&				\\ \hline
  \end{tabular}
- \caption{Comparation of different ADCs}
+ \caption{Comparison of different ADCs}
  \label{dac:comparison}
  \end{table}
  
@@ -299,7 +301,7 @@ DAC			& - Low Power			& - Long Latency		\\
 \end{figure}
 
 \subsection{Logic}
-The SAR logic block, is the ``brain'' of the circuit. The scope of the project is not to design this block, and is therefor not discussed in detail here. The block contains three inputs and 
+The SAR logic block, is the "brain" of the circuit. The scope of the project is not to design this block, and is therefor not discussed in detail here. The block contains three inputs and 
 two outputs, where one of the outputs is a bit sequence of total 8-bits. The block with its I/Os are shown in Fig. (\ref{sar:logic}). Each I/O is briefly discussed under, and Fig. (\ref{timing_sar})
 shows a typical timing diagram for the SAR logic block.
 \begin{figure}[!ht]
@@ -381,7 +383,7 @@ shows a typical timing diagram for the SAR logic block.
 \end{figure}
 \newline
 \textbf{Signal clk:}\\
-The clock signal (\(clk\)) is a contiues signal that cycles at a duty cycle of 50\% This signal is controlled by the microcontroller.\\
+The clock signal (\(clk\)) is a continues signal that cycles at a duty cycle of 50\% This signal is controlled by the microcontroller.\\
 \\
 \textbf{Signal SoC:}\\
 Start of conversion (\(SoC\)) is the first signal that happens. This is the trigger signal that starts the bit counting, and happens when the \(SoC\) goes logic low. It stays low during the 
@@ -732,9 +734,9 @@ The layout for the comparator is shown in Fig. (\ref{fig:layout:comparator}).
 The implementation for the DAC is shown in Fig. (\ref{fig:r2r:ladder:real}). After a long study on different types of DAC, we decided to use a R-2R implementation. This decision was mainly due to 
 complexity. A resistor string implementation has been considered, but this implementation is so complex for a 8-bit DAC. The resistor string needs a lot of digital logic circuit, but the main 
 reason is the large amount of resistors needed. For a 8-bit system, it is required to have \(2^N\) resistor \cite{carusone}. This means that there would be 256 resistors. Due to this large amount of resistor, 
-this circuit has not been simulated and tested. An other DAC architecture that has been considered, is a Charge-Redistribution Switched-Capacitor converter. The advantage for using this circuit 
+this circuit has not been simulated and tested. An other DAC architecture that has been considered, is a \textit{Charge-Redistribution Switched-Capacitor} converter. The advantage for using this circuit 
 is the elimination of all the resistors. In stead, this implementation uses capacitors, which is much smaller in size when talking about layout. An other advantage is low power consumption if the
-circuit is modeled properly. The Charge-Redistribution Switched-Capacitor converter has been tested and simulated. We founded this circuit difficult to model properly, and we experienced 
+circuit is modeled properly. The \textit{Charge-Redistribution Switched-Capacitor} converter has been tested and simulated. We founded this circuit difficult to model properly, and we experienced 
 timing issues and some problems modeling the logic. We used a lot of time modeling this circuit without any succeed.\\
 %%---------------DAC
  \begin{figure}[!ht]
@@ -1068,7 +1070,7 @@ The \(Hold\) signal to the sample and hold circuit is not a external input in ou
   \draw [->](sarlogic) |- (dac);
   \draw [->](sarlogic) |- (outputbuffer);
   \draw [->](sarlogic) |- (srlatch);
-  \draw [->](outputbuffer) -- node[name=vout, above]{$b_{out}$}(vout);
+  \draw [->](outputbuffer) -- node[name=vout, above]{$B_{out}$}(vout);
   \end{scope}
 \end{tikzpicture}
 \caption{Block diagram representing the complete system}
