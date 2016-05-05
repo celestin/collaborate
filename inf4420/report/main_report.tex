@@ -928,57 +928,38 @@ The
 \section{SAR system}
 \subsection{Implementation}
 
+\begin{figure}[!ht]
+\centering
 \begin{tikzpicture}[node distance=1cm,>=latex,
   block/.style = {draw, shape=rectangle, align=center,minimum height=2cm},
   rblock/.style = {draw, shape=rectangle, rounded corners=0.5em, align=center,
     minimum height=1cm},
-  dblock/.style = {draw, shape=diamond, align=center},
+  dblock/.style = {draw, shape=diamond, align=center}
   ]
   \node [input, name=vin]{};
-  \node [block] (srlatch) {SR Latch};
-  \node [block, right= of srlatch](samplehold){Sample and hold};
-  \node [block, below left=2cm and -2.95cm of comparator](dac){DAC};
+  \node [block, right= of vin](samplehold){Sample and hold};
+  \node [block, above =1cm of samplehold] (srlatch) {SR Latch};
+  \node [block, below left=2cm and -2cm of comparator](dac){DAC};
   \node [block, right= of samplehold](comparator){Comparator};
   \node [block, right= of comparator](sarlogic){SAR logic\\block};
-  \node [block, below right=1.845cm and 1cm of sarlogic](outputbuffer){Output Buffer};
+  \node [block, below right=1.845cm and 0.2cm of sarlogic](outputbuffer){Output Buffer};
+  \node [output, right of=outputbuffer, node distance=2.5cm, name=vout]{};
   
   \begin{scope}[very thick]
-  \draw [draw] (vin) -- node[name=vin]{$v_{in}$}(srlatch);
-  \draw (srlatch) -- (samplehold); %
-  \draw (samplehold) -- (comparator); %
-  \draw (comparator) -- (sarlogic); %
-  \draw (comparator) -- (dac);
-  \draw (dac) -| (sarlogic);
-  \draw (sarlogic) |- (outputbuffer);
+  \draw [draw, ->] (vin) -- node[name=vin, above]{$v_{in}$}(samplehold);
+  \draw [->](srlatch) -- (samplehold); %
+  \draw [->](samplehold) -- (comparator); %
+  \draw [->](comparator) -- (sarlogic); %
+  \draw [->](dac) -- (comparator);
+  \draw [->](sarlogic) |- (dac);
+  \draw [->](sarlogic) |- (outputbuffer);
+  \draw [->](sarlogic) |- (srlatch);
+  \draw [->](outputbuffer) -- node[name=vout, above]{$v_{out}$}(vout);
   \end{scope}
-
 \end{tikzpicture}
-
-\begin{figure}[!ht]
-  \begin{tikzpicture}[auto, node distance=2cm,>=latex']
-      % We start by placing the blocks
-      \node [input, name=input] {};
-      \node [block, right of=input, node distance=2cm] (sample_and_hold) {S\&H};
-      \node [block, right of=sample_and_hold, node distance=4cm] (comparator) {Comparator};
-      \node [block, right of=comparator, node distance=4cm] (sar_logic) {SAR Logic};
-      
-      % We draw an edge between the controller and system block to 
-      % calculate the coordinate xsh(t). We need it to place the measurement block. 
-      \draw [->] (sample_and_hold) -- node[name=xsh(t)] {$x_{sh}(t)$} (comparator);
-      \draw [->] (comparator) -- node[name=xc(nT)] {$x_{c}(nT)$} (sar_logic);
-      \node [block, below of=sar_logic, node distance=3cm] (dac){DAC};
-      \node [output, right of=sar_logic, node distance=3cm] (output) {};
-    
-      % Once the nodes are placed, connecting them is easy. 
-      \draw [draw,->] (input) -- node [name=xc(t)] {$x_{c}(t)$}(sample_and_hold);
-      \draw [->] (sar_logic) -- node [name=digital_out] {Digital out}(output);
-      \draw [->] (sar_logic) -- node [name=nbit] {N-bit} (dac);
-      \draw [->] (dac) -| node [name=negfeedback, bend left] {Negative feedback}(comparator);     
-  \end{tikzpicture}
-  \caption{Block diagram}
-  \label{block_diagram}
+\caption{Block diagram representing the complete system}
+\label{fig:blick:complete:sys}
 \end{figure}
-
 
 
 
