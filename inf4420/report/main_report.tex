@@ -1089,13 +1089,13 @@ The \(Hold\) signal to the sample and hold circuit is not a external input in ou
 % \end{figure}
 
 
-\subsection{Requirement fulfilment}
+\subsection{Requirement fulfillment}
 
 \subsection{Improvements}
-The SR-latch controlles the hold in the sample and hold and is has a implementation weakness (or bug). The \(SoC\) signal is connected to \(S\) and \(EoC\) to  \(R\) and \(Hold\) (\(\phi\)) is connected to \(Q\). 
+The SR-latch controlles the \(hold\) in the S/H and is has a implementation weakness (or bug). The \(SoC\) signal is connected to \(S\) and \(EoC\) to  \(R\) and \(Hold\) (\(\phi\)) is connected to \(Q\). 
 In our design we have connected the SR latch in a way that makes it "prioritize" reset over set, see table \ref{table:srlatch:functiontable}.
 The consequence is that signaling a new conversion is timing sensitive.
-The fix for this is very simple: connect the \(SoC\) to \(R\) and \(EoC\) to \(S\) and use \(\overline{Q}\) instead of \(Q\). This fix makes the circuit more robust.
+The fix for this is very simple: connect the \(SoC\) to \(R\) and \(EoC\) to \(S\) and use \(\overline{Q}\) instead of \(Q\). This fix makes the circuit timing in.
 
 
 
