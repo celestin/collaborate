@@ -674,7 +674,8 @@ lower than 495mV at the input would drive the output low.
 \end{figure}
 
 
-% \subsection{Layout}
+
+\subsection{Layout}
 % 
 % \begin{figure}[!ht]
 %  \centering
@@ -682,6 +683,9 @@ lower than 495mV at the input would drive the output low.
 %  \caption{Layout for the Comparator}
 %  \label{fig:layout:comparator}
 % \end{figure}
+
+
+\subsection{Requirement fulfilment}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -820,12 +824,16 @@ recalling from the paragraph above.
 
 \subsection{Layout}
 
+
 % \begin{figure}[!ht]
 %  \centering
 %  \includegraphics[width=\textwidth]{img/layout/dac}
 %  \caption{Layout for DAC}
 %  \label{fig:layout:dac}
 % \end{figure}
+
+
+\subsection{Requirement fulfilment}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -849,6 +857,7 @@ This module was simulated in conjunction with the entire system and not verified
 The functionality of this circuit is very simple and the correctness was therefore easily verified in the complete system simulation.
 
 \subsection{Layout}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SR Latch
@@ -951,7 +960,8 @@ the buffers size is probably fine.
 \end{figure}
 
 \subsection{Simulation}
-The 
+This module was simulated in conjunction with the entire system and not verified on it's own. 
+Since the circuit is so simple the functional verification was easy to do in the full system testbench.
 
 \subsection{Layout}
 
@@ -1002,27 +1012,17 @@ The
 \end{figure}
 
 
-
-% \begin{figure}
-% \centering
-%  \begin{circuitikz}[yscale=0.8, xscale=0.8]\draw
-%  (0,0) rectangle (2,2)
-%  (4,0) rectangle (6,2)
-%  (10,1) node[op amp](opamp){Comparator}
-%  (14,0) rectangle (16,2)
-%  (8,-5) rectangle (10,-7)
-% ; \end{circuitikz}
-% \end{figure}
-
 \subsection{Simulation}
 
-\subsection{Layout}[!ht]
-\begin{figure}
- \centering
- \includegraphics[width=\textwidth]{img/layout/entire_design2}
-\end{figure}
+
+% \subsection{Layout}[!ht]
+% \begin{figure}
+%  \centering
+%  \includegraphics[width=\textwidth]{img/layout/entire_design2}
+% \end{figure}
 
 
+\subsection{Requirement fulfilment}
 
 
 \chapter{Discussion and conclusion}
