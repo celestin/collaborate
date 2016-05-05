@@ -211,7 +211,7 @@ This bit is therefor set to low again, and we calculate the output voltage for t
 voltage, the bit is set to logic high, and if the reference voltage is higher than the output voltage of the DAC, it goes back to logic low.\\
 \\
 The purpose of the R-2R ladder, is therefor to represent a output value for all bit combinations. In some cases, if the differences between the output voltage levels are difficult to separate, 
-it is desired to have a operational amplifier with a gain at the output. 
+it is desired to have a operational amplifier with a gain at the output to re-scale the output (to map to a wider range). 
 %% KONTROLERER FORIGE SETTNIG!!
 
 
@@ -399,14 +399,15 @@ the section for the DAC.\\
 \\
 \textbf{Signal keep:}\\
 The \(keep\) signal is the input to the SAR logic block from the comparator. If the DAC output is higher than the reference voltage from the S/H, the comparator outputs a logic low, indicating
-that the represented bit not will be kept. If the comparator outputs a logic high, the DAC output is lower than the reference voltage, and the bis is kept. More detaild information on how this works, 
-can be found in the subsention for the comparator.  
+that the represented bit not will be kept. If the comparator outputs a logic high, the DAC output is lower than the reference voltage, and the bis is kept. More detailed information on how this works, 
+can be found in the subsection for the comparator.  
 
 
 
 \section{Requirements}
-In todays technologies, it is important to consume as low power as possible, and be as fast as possible. Due to this, we are going to design a SAR ADC which are capable 
-of running with a powersupply of 1.2 V and have sampling frequency of 1 MHz. The overall requirements are listed bellow.\\
+In today's technologies, it is important to consume as low power as possible, and be as fast as possible. Due to this, we are going to design a SAR ADC which are capable 
+of running with a power-supply of 1.2 V and have sampling frequency of 1 MHz. The overall requirements are listed bellow.\\
+\\
 \textbf{SAR ADC}
 \begin{itemize}
  \item Input sampling rate: 1 M samples/s
@@ -422,7 +423,7 @@ of running with a powersupply of 1.2 V and have sampling frequency of 1 MHz. The
  \item Supply voltage: \(V_{DD} = 1.2 V\), and \(V_{SS} = 0 V\)
  \item DNL < \(\pm\) 0.5 LSB
  \item INL < \(\pm\) 0.5 LSB
- \item \(V_{OUT(P\_P)} \geq 0.6 V\)
+ \item \(V_{OUT(P-P)} \geq 0.6 V\)
  \item \(C_{load} = 50 fF\)
 \end{itemize}
 \textbf{Comparator}
@@ -439,7 +440,7 @@ of running with a powersupply of 1.2 V and have sampling frequency of 1 MHz. The
 %% CAP: Planing
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Planning the project} 
-Before stating the work on the shematics, we searched for litterature in textbooks and on the internet. There was also a mandatory handin for a prestudy for comparing different ADC types. This 
+Before stating the work on the schematics, we searched for literature in textbooks and on the internet. There was also a mandatory handin for a prestudy for comparing different ADC types. This 
 comparison is losted in Table (\ref{comp:adc}) \cite{forstudie}. There has also been carried out a status report during the prosject. The total circuit was discussed at this stage of the prosject.
 After this report, there has beed done a lot of changes to the circuit. These changes are discussed in detail in the nest section. 
 
