@@ -571,19 +571,12 @@ The output of the simulation of the circuit (with parasitic properties extracted
 
 \subsection{Layout}
 
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=\textwidth]{img/layout/sample_hold_u_cap}
-%  \caption{Layout for Sample and hold without capacitor}
-%  \label{fig:layout:sh:u:cap}
-% \end{figure}
-% 
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=\textwidth]{img/layout/sample_hold}
-%  \caption{Layout for Sample and hold}
-%  \label{fig:layout:sh}
-% \end{figure}
+\begin{figure}
+ \centering
+ \includegraphics[width=\textwidth]{img/layout/sample_hold}
+ \caption{Layout for Sample and hold}
+ \label{fig:layout:sh}
+\end{figure}
 
 
 
@@ -674,14 +667,14 @@ lower than 495mV at the input would drive the output low.
 \end{figure}
 
 
-% \subsection{Layout}
-% 
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=\textwidth]{img/layout/comparator}
-%  \caption{Layout for the Comparator}
-%  \label{fig:layout:comparator}
-% \end{figure}
+\subsection{Layout}
+
+\begin{figure}
+ \centering
+ \includegraphics[width=\textwidth]{img/layout/comparator}
+ \caption{Layout for the Comparator}
+ \label{fig:layout:comparator}
+\end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -820,12 +813,12 @@ recalling from the paragraph above.
 
 \subsection{Layout}
 
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=\textwidth]{img/layout/dac}
-%  \caption{Layout for DAC}
-%  \label{fig:layout:dac}
-% \end{figure}
+\begin{figure}
+ \centering
+ \includegraphics[width=\textwidth]{img/layout/dac}
+ \caption{Layout for DAC}
+ \label{fig:layout:dac}
+\end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -902,12 +895,12 @@ The simulation of the circiut was done by cycling throug the 4 different combina
 
 \subsection{Layout}
 
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=\textwidth]{img/layout/srlatch}
-%  \caption{Layout for the SR Latch}
-%  \label{fig:layout:srlatch}
-% \end{figure}
+\begin{figure}
+ \centering
+ \includegraphics[width=\textwidth]{img/layout/srlatch}
+ \caption{Layout for the SR Latch}
+ \label{fig:layout:srlatch}
+\end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -955,12 +948,12 @@ The
 
 \subsection{Layout}
 
-%  \begin{figure}[!ht]
-%   \centering
-%   \includegraphics[width=\textwidth]{img/layout/bufferout_one}
-%   \caption{Layout for the Output buffers}
-%   \label{fig:layout:buff:out}
-%  \end{figure}
+\begin{figure}
+ \centering
+ \includegraphics[width=\textwidth]{img/layout/bufferout}
+ \caption{Layout for the Output buffers}
+ \label{fig:layout:buff:out}
+\end{figure}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SAR System
@@ -1016,7 +1009,7 @@ The
 
 \subsection{Simulation}
 
-\subsection{Layout}[!ht]
+\subsection{Layout}
 \begin{figure}
  \centering
  \includegraphics[width=\textwidth]{img/layout/entire_design2}
