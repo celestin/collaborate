@@ -36,6 +36,9 @@
 %-----------Introduksjon-----
 % \mainmatter{}        
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CAP: Intro
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Introduction} 
 Successive Approximation Register (SAR) Analog-to-Digital Converter (ADC) is a common arctitecture whent talking about Analog-to-Digital (A/D) conversion. A/D conversion is used in almost every
 circuits today, and the purpose is to convert a signal from the analig to the digital domain. This is of great interest, because digital signals propagates more efficiently than analog singlals in a 
@@ -429,6 +432,10 @@ of running with a powersupply of 1.2 V and have sampling frequency of 1 MHz. The
  \item \(C_{load} = 50 fF\)
 \end{itemize}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CAP: Planing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Planning the project} 
 Before stating the work on the shematics, we searched for litterature in textbooks and on the internet. There was also a mandatory handin for a prestudy for comparing different ADC types. This 
 comparison is losted in Table (\ref{comp:adc}) \cite{forstudie}. There has also been carried out a status report during the prosject. The total circuit was discussed at this stage of the prosject.
@@ -450,6 +457,10 @@ After this report, there has beed done a lot of changes to the circuit. These ch
 \end{table}
 
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CAP: Results
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Results} 
 In order to get a god overview of the different parts of the total system, each block in the system is separated into sections. As a summary all the blocks are duscussed together as a final, and 
 total system. To be sure that every part works as i should, we made own working directoris for each part. The naming for the blocks were kept consequently, so that there would not create any problem. 
@@ -1025,29 +1036,12 @@ Since the circuit is so simple the functional verification was easy to do in the
 \subsection{Requirement fulfilment}
 
 
-\chapter{Discussion and conclusion}
-\chapter{Discussion}
-\section{Proposal of improvement}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CAP: Conclusion
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Conclusion}
+\section{Proposal of improvement}
 
-
-\chapter{Punkter som kanskje skal med}
-Critical parts in SAR ADCs 
-
-
-SAR ADCs limitations:
-
-\begin{itemize}
- \item The settling time is the DAC, whick must settle within the resolution of the overall converterm for example, 1/2 LSB (Least significant bit)
- \item The comparator, which must resolve small differences in $V_{in}$ and $V_{DAC}$ within the specified time
- \item The logic overhead
-
- \end{itemize}
-Comparator:
-
-\begin{itemize}
- \item The comparator does not effect the overall linearity 
-\end{itemize}
 
 
 \begin{appendices}
