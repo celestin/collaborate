@@ -734,6 +734,21 @@ The layout for the comparator is shown in Fig. (\ref{fig:layout:comparator}).
 
 \subsection{Requirement fulfilment}
 
+Gain requirement: 
+\begin{math}
+K = VDD/V_{ref}/2^N \\
+VDD = V_{ref} => K = 2^N \\
+N = 8 => K = 256 \\
+\end{math}
+\begin{math}
+ \Delta t = 50\mu S - 50.1\mu S = 0.1\mu S \\
+ \Delta V_{in} = 600mV - 596.206mV = 3.794mV \\
+ \Delta V_{out} = 1.2V \\
+ Gain = \freq{1.2V}{3.794mV} = 316.289 \approx 316 \\
+\end{math}
+
+Gain \( 316 > 256 \) requirement met.
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% DAC
