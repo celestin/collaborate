@@ -1126,210 +1126,190 @@ In our design we have connected the SR latch in a way that makes it "prioritize"
 The consequence is that signaling a new conversion is timing sensitive.
 The fix for this is very simple: connect the \(SoC\) to \(R\) and \(EoC\) to \(S\) and use \(\overline{Q}\) instead of \(Q\). This fix makes the circuit timing in.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Discussion
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\chapter{Discussion}
-There are no such as a ``perfect'' design. It is therefor important to list different improvements that
-can be done differently for future work. This design is not giong to be produced, but it is still 
-interesting to reflect over improvements. 
-
-\section{Proposal of improvement}
-If there would have been more time, it would have been interesting to try out an other architecture
-for the DAC implementation. As discussed earlier, the sizes for resistors are very big, concerning
-layout. This could have been reduced if, for example a \textit{Charge-Redistribution Switched-Capacitor} 
-converter, had been implement. This is a very interesting architecture, because the power consumption
-can be very low. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% CAP: Conclusion
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Conclusion}
-A complete system, for a Successive Approximation Register, Analog to Digital Converter has been 
-made. The system is stable, and all the requirements has been fulfilled. The layout is complete, 
-and the parasitic extraction has been done. The oberservation from simulating the system with the
-parasitics extraced, is that the system is not affected in a way that it decreases the performance.\\
-\\
-The learning outcom from this project is huge, we feel that we have understood the concepts
-of evert part in a SAR ADC. Components like S/H, Comparator and DAC is also used separately in many
-applications, which makes this project relevant for a wide range of applications. All over we 
-are very pleast with the resylt, and it has been funn to work with this type of design project. 
+A complete system, for a Successive Approximation Register, Analog to Digital Converter has 
+\section{Proposal of improvement}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Appendix
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \begin{appendices}
-% \chapter{Schematics from Cadence Virtuoso}
-% \newpage
-% \section{SAR system}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=20cm, angle=90]{img/SAR_system_2_schem}
-% \end{figure}
-% \newpage
-% \section{SIM SAR system}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=20cm, angle=90]{img/SIM_system_2_schem}
-% \end{figure}
-% 
-% \newpage
-% \section{Sample and Hold}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=20cm, angle=90]{img/sample_hold_schem_3}
-% \end{figure}
-% \newpage
-% \section{SIM Sample and Hold}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=20cm, angle=90]{img/SIM_sample_hold_3_schem}
-% \end{figure}
-% 
-% \newpage
-% \section{Comparator}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=20cm, angle=90]{img/comparator_rail2rail_input_external_current_snall_schem}
-% \end{figure}
-% \newpage
-% \section{SIM Comparator}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=20cm, angle=90]{img/SIM_comparator_rail2rail_input_external_current_small_schem}
-% \end{figure}
-% 
-% \newpage
-% \section{Digital to analog converter}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=20cm, angle=90]{img/dac_schem}
-% \end{figure}
-% \newpage
-% \section{SIM Digital to analog converter}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=20cm, angle=90]{img/SIM_dac_schem}
-% \end{figure}
-% 
-% \newpage
-% \section{SAR logic}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=20cm, angle=90]{img/SAR_logic}
-% \end{figure}
-% \newpage
-% \section{SIM SAR logic}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=20cm, angle=90]{img/SIM_sar_logic_gated_2_schem}
-% \end{figure}
-% 
-% \newpage
-% \section{SR Latch}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=20cm, angle=90]{img/SR_latch_schem}
-% \end{figure}
-% 
-% \newpage
-% \section{Output buffers}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=20cm, angle=90]{img/output_buffers}
-% \end{figure}
-% 
-% \newpage
-% \section{Buffers}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=20cm, angle=90]{img/buffer}
-% \end{figure}
-% \newpage
-% 
-% \section{tsmcN90 inv}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=20cm, angle=90]{img/tsmcN90rf_inv_lvt_schem}
-% \end{figure}
-% 
-% \newpage
-% \section{tsmcN90 NOR2}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=20cm, angle=90]{img/tsmcN90_nor2_schem}
-% \end{figure}
-% 
-% \newpage
-% \section{tsmcN90rf NAND2}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=20cm, angle=90]{img/tsmcN90rf_nand2_lvt_schem}
-% \end{figure}
-% 
-% 
-% 
-% \chapter{Layout from Cadence Virtuoso}
-% 
-% \newpage
-% \section{Layout SAR system with seal ring}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=15cm]{img/layout/entire_design1}
-% \end{figure}
-% 
-% \newpage
-% \section{Layout SAR system}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=20cm, angle=90]{img/layout/entire_design2}
-% \end{figure}
-% 
-% \newpage
-% \section{Layout Sample and Hold without capacitor}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=20cm, angle=90]{img/layout/sample_hold_u_cap}
-% \end{figure}
-% 
-% \newpage
-% \section{Layout Sample and Hold}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=15cm, angle=90]{img/layout/sample_hold}
-% \end{figure}
-% 
-% \newpage
-% \section{Layout Comparator}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=12cm, angle=90]{img/layout/comparator}
-% \end{figure}
-% 
-% \newpage
-% \section{Layout Digital to Analog Converter}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=20cm, angle=90]{img/layout/dac}
-% \end{figure}
-% 
-% \newpage
-% \section{Layout SR Latch}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=20cm, angle=90]{img/layout/srlatch}
-% \end{figure}
-% 
-% \newpage
-% \section{Layout Output buffers}
-% \begin{figure}[!ht]
-%  \centering
-%  \includegraphics[width=20cm, angle=90]{img/layout/outputbuffer}
-% \end{figure}
-% 
-% 
-% \end{appendices}
+\begin{appendices}
+\chapter{Schematics from Cadence Virtuoso}
+\newpage
+\section{SAR system}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/SAR_system_2_schem}
+\end{figure}
+\newpage
+\section{SIM SAR system}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/SIM_system_2_schem}
+\end{figure}
+
+\newpage
+\section{Sample and Hold}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/sample_hold_schem_3}
+\end{figure}
+\newpage
+\section{SIM Sample and Hold}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/SIM_sample_hold_3_schem}
+\end{figure}
+
+\newpage
+\section{Comparator}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/comparator_rail2rail_input_external_current_snall_schem}
+\end{figure}
+\newpage
+\section{SIM Comparator}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/SIM_comparator_rail2rail_input_external_current_small_schem}
+\end{figure}
+
+\newpage
+\section{Digital to analog converter}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/dac_schem}
+\end{figure}
+\newpage
+\section{SIM Digital to analog converter}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/SIM_dac_schem}
+\end{figure}
+
+\newpage
+\section{SAR logic}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/SAR_logic}
+\end{figure}
+\newpage
+\section{SIM SAR logic}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/SIM_sar_logic_gated_2_schem}
+\end{figure}
+
+\newpage
+\section{SR Latch}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/SR_latch_schem}
+\end{figure}
+
+\newpage
+\section{Output buffers}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/output_buffers}
+\end{figure}
+
+\newpage
+\section{Buffers}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/buffer}
+\end{figure}
+\newpage
+
+\section{tsmcN90 inv}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/tsmcN90rf_inv_lvt_schem}
+\end{figure}
+
+\newpage
+\section{tsmcN90 NOR2}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/tsmcN90_nor2_schem}
+\end{figure}
+
+\newpage
+\section{tsmcN90rf NAND2}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/tsmcN90rf_nand2_lvt_schem}
+\end{figure}
+
+
+
+\chapter{Layout from Cadence Virtuoso}
+
+\newpage
+\section{Layout SAR system with seal ring}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm]{img/layout/entire_design1}
+\end{figure}
+
+\newpage
+\section{Layout SAR system}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/layout/entire_design2}
+\end{figure}
+
+\newpage
+\section{Layout Sample and Hold without capacitor}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/layout/sample_hold_u_cap}
+\end{figure}
+
+\newpage
+\section{Layout Sample and Hold}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/layout/sample_hold}
+\end{figure}
+
+\newpage
+\section{Layout Comparator}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/layout/comparator}
+\end{figure}
+
+\newpage
+\section{Layout Digital to Analog Converter}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/layout/dac}
+\end{figure}
+
+\newpage
+\section{Layout SR Latch}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/layout/srlatch}
+\end{figure}
+
+\newpage
+\section{Layout Output buffers}
+\begin{figure}[!ht]
+ \centering
+ \includegraphics[width=20cm, angle=90]{img/layout/bufferout}
+\end{figure}
+
+
+\end{appendices}
 
 \printbibliography{}
 
