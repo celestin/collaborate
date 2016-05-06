@@ -118,7 +118,7 @@ the SAR logic block.
 
 
 \subsection{Sample and Hold}
-The sample and hold (S/H) is the fist element in the chain. The S/H snatches a value of a analog signal and holds it constant, as shown in Fig. (\ref{sample:hold}). In Fig. (\ref{sample:hold:2})
+The sample and hold (S/H) is the first element in the chain. The S/H snatches a value of a analog signal and holds it constant, as shown in Fig. (\ref{sample:hold}). In Fig. (\ref{sample:hold:2})
 we can see a simple circuit for a S/H. During \(\phi_{1}\), the switch is on, and the capacitor charges to \(V_{in}\). When the switch closes again $V_{out}$ has the same potential as the capacitor 
 at the moment the switch opened \cite{basic-sample-hold}.\\
 \\
@@ -197,24 +197,7 @@ concern, and it is therefor important to design the comparator for as low noise 
 \subsection{Digital-to-analog converter}
 The digital-to-analog converter (DAC), as the name implies, converts a digital signal to a analog signal. Depending on the requirements for speed, accuracy, complexity, space and more, it is 
 important to find a design that suits the requirements. Table \ref{dac:comparison} shows pros and cons for three different DAC architectures, including R-2R DAC, Resistor string DAC and 
-Delta-Sigma DAC \cite{different-dac}. \\
-\\
-For this project, the R-2R DAC is used. More on why we selected this architecture is explained in a later chapter. The R-2R is a simple DAC configuration, and consists of only two different 
-resistor values hence the name R-2R. Fig. (\ref{r2r:ladder}) shows an example of a 8-bit R-2R ladder, which also is used for this project. The bit sequence into the DAC is controlled by the SAR logic
-block, which is briefly discussed in the next subsection. The purpose of the R-2R ladder is to set a specific voltage value for each bit. Fist, we test bit 7 (\(b7\)). By using Eq. (\ref{vlsb}), we 
-can calculate the output voltage of the DAC (\(V_{out}\)) for each bit combination.\\
-\\
-As an example, we can use \(5V\) as reference voltage (\(V_{ref}\)), and set bit 7 to logic high (i.e. 1). All other bits are set to logic low (0). We can now draw an equivalent circuit, 
-which is illustrated in Fig. (\ref{example:r2r}). We can see that the output voltage is half the input voltage, i.e 2.5V. 
-This bit causes most change to the circuit, and is therefor the MSB. Lets say that the reference voltage from the sample and hold is 1.5V, we notice that the output from the DAC is larger than 1.5V.
-This bit is therefor set to low again, and we calculate the output voltage for the next bit. It repeats these steps until all the bits are checked. If the output voltage is lower than the reference 
-voltage, the bit is set to logic high, and if the reference voltage is higher than the output voltage of the DAC, it goes back to logic low.\\
-\\
-The purpose of the R-2R ladder, is therefor to represent a output value for all bit combinations. In some cases, if the differences between the output voltage levels are difficult to separate, 
-it is desired to have a operational amplifier with a gain at the output to re-scale the output (to map to a wider range). 
-%% KONTROLERER FORIGE SETTNIG!!
-
-
+Delta-Sigma DAC \cite{different-dac}. 
 \begin{table}[!ht]
   \centering
  \begin{tabular}{|l|l|l|}
@@ -248,7 +231,21 @@ DAC			& - Low Power			& - Long Latency		\\
  \caption{Comparison of different ADCs}
  \label{dac:comparison}
  \end{table}
- 
+For this project, the R-2R DAC is used. More on why we selected this architecture is explained in a later chapter. The R-2R is a simple DAC configuration, and consists of only two different 
+resistor values hence the name R-2R. Fig. (\ref{r2r:ladder}) shows an example of a 8-bit R-2R ladder, which also is used for this project. The bit sequence into the DAC is controlled by the SAR logic
+block, which is briefly discussed in the next subsection. The purpose of the R-2R ladder is to set a specific voltage value for each bit. First, we test bit 7 (\(b7\)). By using Eq. (\ref{vlsb}), we 
+can calculate the output voltage of the DAC (\(V_{out}\)) for each bit combination.\\
+\\
+As an example, we can use \(5 V\) as reference voltage (\(V_{ref}\)), and set bit 7 to logic high (i.e. 1). All other bits are set to logic low (0). We can now draw an equivalent circuit, 
+which is illustrated in Fig. (\ref{example:r2r}). We can see that the output voltage is half the input voltage, i.e \(2.5 V\). 
+This bit causes most change to the circuit, and is therefor the MSB. Lets say that the reference voltage from the sample and hold is \(1.5 V\), we notice that the output from the DAC is larger than \(1.5 V\).
+This bit is therefor set to low again, and we calculate the output voltage for the next bit. It repeats these steps until all the bits are checked. If the output voltage is lower than the reference 
+voltage, the bit is set to logic high, and if the reference voltage is higher than the output voltage of the DAC, it goes back to logic low.\\
+\\
+The purpose of the R-2R ladder, is therefor to represent a output value for all bit combinations. In some cases, if the differences between the output voltage levels are difficult to separate, 
+it is desired to have a operational amplifier with a gain at the output to re-scale the output (to map to a wider range). 
+%% KONTROLERER FORIGE SETTNIG!!
+
  \begin{figure}
   \centering
   \ctikzset{bipoles/length = 1cm}
@@ -300,7 +297,7 @@ DAC			& - Low Power			& - Long Latency		\\
  \label{example:r2r}
 \end{figure}
 
-\subsection{Logic}
+\subsection{SAR Logic}
 The SAR logic block, is the "brain" of the circuit. The scope of the project is not to design this block, and is therefor not discussed in detail here. The block contains three inputs and 
 two outputs, where one of the outputs is a bit sequence of total 8-bits. The block with its I/Os are shown in Fig. (\ref{sar:logic}). Each I/O is briefly discussed under, and Fig. (\ref{timing_sar})
 shows a typical timing diagram for the SAR logic block.
@@ -381,13 +378,13 @@ shows a typical timing diagram for the SAR logic block.
  \caption{Typical timing diagram for the SAR logic block}
  \label{timing_sar}
 \end{figure}
-\newline
+\newline\\
 \textbf{Signal clk:}\\
 The clock signal (\(clk\)) is a continues signal that cycles at a duty cycle of 50\% This signal is controlled by the microcontroller.\\
 \\
 \textbf{Signal SoC:}\\
 Start of conversion (\(SoC\)) is the first signal that happens. This is the trigger signal that starts the bit counting, and happens when the \(SoC\) goes logic low. It stays low during the 
-whole couning period. When the last bit is pulsed, it waits for a interrupt from the end of conversion (EoC), which is named \(done\) in this block. After \(done\) is pulsed, \(SoC\) goes
+whole couning period. When the last bit is pulsed, it waits for a interrupt from the end of conversion (EoC), which is named \(done\) in the block. After \(done\) is pulsed, \(SoC\) goes
 high for one period, and then it starts again.\\
 \\
 \textbf{Signal done:}\\
@@ -441,8 +438,8 @@ of running with a power-supply of 1.2 V and have sampling frequency of 1 MHz. Th
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Planning the project} 
 Before stating the work on the schematics, we searched for literature in textbooks and on the internet. There was also a mandatory handin for a prestudy for comparing different ADC types. This 
-comparison is losted in Table (\ref{comp:adc}) \cite{forstudie}. There has also been carried out a status report during the prosject. The total circuit was discussed at this stage of the prosject.
-After this report, there has beed done a lot of changes to the circuit. These changes are discussed in detail in the nest section. 
+comparison is listed in Table (\ref{comp:adc}) \cite{forstudie}. There has also been carried out a status report during the prosject. The total circuit was discussed at this stage of the prosject.
+After this report, there has beed done a lot of changes to the circuit. These changes are discussed in detail in the next section. 
 
 \begin{table}[!ht]
  \centering
@@ -513,9 +510,9 @@ and simulate it separately. These files are called:
   \item SAR\_system\_3\_u\_sar\_logic
  \end{itemize}
 \end{itemize}
-The \textit{Results} section is divided into subsections, where each subsection repressent each block in the system. Each sub section contains a simulation part and a component part. 
+The \textit{Results} section is divided into subsections, where each subsection repressent each block in the system. Each sub section contains a simulation part, a component part and a layout part. 
 The component part is the actual schematic for the block. The subsentions is ranged in the same order as in the introduction. In the end, the addtional blocks, such as \textit{SR latch}, and 
-\textit{output buffers} are discussed. For the thery of each block, we refers to Section 1, Introduction. 
+\textit{output buffers} are discussed. For the theory of each block, we refers to Chapter 1, Introduction. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Sample and hold
@@ -524,16 +521,16 @@ The component part is the actual schematic for the block. The subsentions is ran
 In our design we have a sample and hold circuit that tracks the input signal. When the circuit should perform a conversion the signal is held constant.
 
 \subsection{Implementation}
-Our first implementation was a simple nmos transistor as the switch. In this case we was not able to get a clean signal when the signal was grater than VDD/2. 
-Simulations showed that the signal started to be distorted already at 700mV (about 58\% of VDD).\\
+Our first implementation was a simple NMOS transistor as the switch. In this case we was not able to get a clean signal when the signal was grater than \(V_{DD}\)/2. 
+Simulations showed that the signal started to be distorted already at \(700 mV\) (about 58\% of \(V_{DD}\)).\\
 \\
-Since we have aimed at full range performance of our circuit we needed a better switch and changed the switch implementation into a transmission gate. \\
+Since we have aimed at full range performance of our circuit, we needed a better switch and changed the switch implementation into a transmission gate. \\
 \\
 We also included a operational amplifier in our design but realized that our comparator had so high input impedance that this was not needed. The input capacitance of the 
 comparator is sufficiently small so the stored charge in the capacitor (and hence the voltage over the capacitor) is not very distorted during comparison.\\
 \\
-The functional implementation is illustrated in figure (\ref{sample:hold:design}) and the actual implementation is in the appendix. 
-The function of the input \(\phi\) is listed in table \ref{table:sample_and_hold:function}.
+The functional implementation is illustrated in Fig. (\ref{sample:hold:design}) and the actual implementation is in the appendix. 
+The function of the input \(\phi\) is listed in Table \ref{table:sample_and_hold:function}.
 
 %---------------------------- SH Circuit -------------------------------
 \begin{figure}[!ht]
@@ -569,10 +566,10 @@ The function of the input \(\phi\) is listed in table \ref{table:sample_and_hold
 \end{table}
 
 \subsection{Simulation}
-The simulation of the sample and hold circuit is done by setting a sine wave at the input of the sample and hold and pulsing 
+The simulation of the sample and hold circuit is done by setting a sine wave at the input of the sample and hold, and pulsing 
 the \(\phi\) input to toggle between \textit{track} and \textit{hold}. \\
 \\
-The output of the simulation of the circuit (with parasitic properties extracted) is showed in figure (\ref{figure:sample_and_hold:sim_output}).
+The output of the simulation of the circuit (with parasitic properties extracted) is showed in Fig. (\ref{figure:sample_and_hold:sim_output}).
 
 \begin{figure}[!ht]
     \centering
@@ -587,7 +584,7 @@ tmcN90rf, which is a 90nm process. Fig. (\ref{fig:layout:sh:u:cap}) shows
 the layout for the transistors used in the sample and hold circuit. In 
 Fig. (\ref{fig:layout:sh}), the sample and hold with the capacitor is inculded. 
 Since the capacitor lays in an other layer, it does not interrupt the tharansistors. 
-This allows us to save space, and place the capacitor on top of the transistor circuit.
+This allows us to save space, by placeing the capacitor on top of the transistor circuit.
 
 \begin{figure}[!ht]
  \centering
@@ -611,7 +608,7 @@ This allows us to save space, and place the capacitor on top of the transistor c
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Comparator}
 The comparator we have implemented is a comparator with \textit{rail to rail} inputs. This implies that that the comparator should preform quite accurately even when the inputs are close to 
-GND or VDD. This circiut is a design from the book \textit{Designing Analog Chips} by Hans Camenzind \cite{hansc}.
+GND or \(V_{DD}\). This circiut is a design from the book \textit{Designing Analog Chips} by Hans Camenzind \cite{hansc}.
 
 \subsection{Implementation}
 The rail to rail inputs are realized by hawing two input differential pairs, one n-channel and one p-channel.
@@ -623,7 +620,7 @@ Our first implementation was the circuit as defined in the book. The size of the
 Our second implementation was a smaller version of the circuit where all of the transistors length and width was \( \frac{1}{10} \) of the original sizing. 
 This circuit performed fine at first glance, but after more study we concluded that the original implementation had better performance and higher gain.\\ 
 \\
-The first implementation had very large input transistors that distorted the sample and hold to much to obtain a correct result.
+The first implementation had very large input transistors that distorted the sample and hold too much to obtain a correct result.
 We decreased the size of the input transistors to a \( \frac{1}{10} \) of the original size and the circuit performed adequately.\\
 \\
 The design, also needs a stable bias current source at \(20 \mu A\). This has been realized using a resistor. The fist approach for fining a proper value for the resistor,
@@ -636,7 +633,7 @@ The voltage was found to be 0.4262 V. This gives:
  \Rightarrow R = \frac{U}{I} = \frac{0.4262 V}{20 \mu A} = 21.31 k\ohm	
 \end{equation}
 \newline
-The functional implementation is showed in the Fig. (\ref{comp:design}) and the actual implementation including sizes for the transistors are included in the appendix.
+The functional implementation is shown in the Fig. (\ref{comp:design}) and the actual implementation, including sizes for the transistors, are included in the appendix.
 
 %---------------------------- Comparator -------------------------------
 \begin{figure}[!ht]
@@ -678,11 +675,11 @@ The functional implementation is showed in the Fig. (\ref{comp:design}) and the 
 \end{figure}
 
 \subsection{Simulation}
-The circuit is simulated by sweeping the \(V_{ref}\) voltage from 100mV to 1100mV in steps of 100mV while applying a sine wave to the input.
-The output from the simulated comparator is shown in figure (\ref{figure:comparator:sim_output_greater}) and (\ref{figure:comparator:sim_output_less}).\\
+The circuit is simulated by sweeping the \(V_{ref}\) voltage from \(100 mV\) to \(1100 mV\) in steps of \(100 mV\) while applying a sine wave to the input.
+The output from the simulated comparator is shown in Fig. (\ref{figure:comparator:sim_output_greater}) and (\ref{figure:comparator:sim_output_less}).\\
 \\
-The comparator is not perfect and has an average offset of about -5mV when determining the output e.g. 495mV at the input with a \(V_{ref}\) of 500mV would drive the output to be high,
-lower than 495mV at the input would drive the output low.\\
+The comparator is not perfect and has an average offset of about \(-5 mV\) when determining the output e.g. \(495 mV\) at the input with a \(V_{ref}\) of \(500 mV\) would drive the output to be high,
+lower than \(495 mV\) at the input would drive the output low.\\
 
 \begin{figure}[!ht]
     \centering
@@ -700,16 +697,16 @@ lower than 495mV at the input would drive the output low.\\
 
 \subsection{Layout}
 The layout for the comparator is the most complex design in the circuit. It consists 
-of total 39 transistors. The schematic shows a total of 20 transistors, but some of the
+of total 39 transistors. The schematic in Fig. (\ref{comp:design}), shows a total of 20 transistors, but some of the
 transistors includes a multiplier. In a such large system it is important to think 
 of the placement for every transistor. As default, the workspace in Virtuoso is p-well. 
-This means that for a PMOS transistor, we need a n-well. Luckily, this p-well comes 
+This means that for a PMOS transistor, we need a n-well. Luckily, this n-well comes 
 with the default model for the tmcN90rf process. \\
 \\
 As a clean and good design approach, we have aligned all the PMOS transistors close 
 to each other, in order to get a common n-well. Also, in order to get a design that 
-is easy to produce for the manufacturer, and gives as less process errors as 
-possible, it is an major advantage to align the transistor in the same direction. 
+is easy to produce for the manufacturer, and gives as few process errors as 
+possible, it is a major advantage to align the transistor in the same direction. 
 This has been taken into account during the layout.\\
 \\
 The layout for the comparator is shown in Fig. (\ref{fig:layout:comparator}). 
@@ -733,8 +730,8 @@ The layout for the comparator is shown in Fig. (\ref{fig:layout:comparator}).
 The implementation for the DAC is shown in Fig. (\ref{fig:r2r:ladder:real}). After a long study on different types of DAC, we decided to use a R-2R implementation. This decision was mainly due to 
 complexity. A resistor string implementation has been considered, but this implementation is so complex for a 8-bit DAC. The resistor string needs a lot of digital logic circuit, but the main 
 reason is the large amount of resistors needed. For a 8-bit system, it is required to have \(2^N\) resistor \cite{carusone}. This means that there would be 256 resistors. Due to this large amount of resistor, 
-this circuit has not been simulated and tested. An other DAC architecture that has been considered, is a \textit{Charge-Redistribution Switched-Capacitor} converter. The advantage for using this circuit 
-is the elimination of all the resistors. In stead, this implementation uses capacitors, which is much smaller in size when talking about layout. An other advantage is low power consumption if the
+this circuit has not been simulated and tested. Another DAC architecture that has been considered, is a \textit{Charge-Redistribution Switched-Capacitor} converter. The advantage for using this circuit 
+is the elimination of all the resistors. Instead, this implementation uses capacitors, which is much smaller in size when talking about layout. Another advantage is low power consumption if the
 circuit is modeled properly. The \textit{Charge-Redistribution Switched-Capacitor} converter has been tested and simulated. We founded this circuit difficult to model properly, and we experienced 
 timing issues and some problems modeling the logic. We used a lot of time modeling this circuit without any succeed.\\
 %%---------------DAC
@@ -785,16 +782,16 @@ timing issues and some problems modeling the logic. We used a lot of time modeli
 In the ending, we ended up with the R-2R ladder. Many examples of this circuit is modeled with a operational amplifier. This is because the R-2R requires a high impedance at the output in order to
 work properly. This is not a problem in out design, because the comparator has a very high impedance, meaning that it would be a waste of space and time modeling a extra operational amplifier at
 the output. In Fig. (\ref{fig:r2r:ladder:real}), there are implemented two inverters at the input for every bit. This is because we experienced that the SAR logic block did not output logic high at
-1.2V (\(V_{DD}\)), but 1V instead. Since we use \(V_{DD}\) as \(V_{ref}\), a logical high from the SAR logic of 1.2V would be fine but with the buffers we are able to generalize range of the ADC so that we can have a external \(V_{ref}\).
+\(1.2\) (\(V_{DD}\)), but \(1 V\) instead. Since we use \(V_{DD}\) as \(V_{ref}\), a logical high from the SAR logic of \(1.2 V\) would be fine, but with the buffers we were able to generalize range of the ADC so that we can have a external \(V_{ref}\).
 It is important for the systems accuracy to have full swing at the DAC output. Therefor, we implemented two inverters at the input to act as a buffer.\\ 
 \\
-Their sizing is important so that the they deliver enough current to drive the resistive load.
+The sizing of the resistors is important so that the they deliver enough current to drive the resistive load.
 The size of the resistors is set to be 320k\(\ohm\) and 640k\(\ohm\). More on why these sizes are used, is discussed in the simulation section. 
 
 \subsection{Simulation}
-Simulating the DAC using external voltage sources and the properties for the SAR logic, is difficult. Therefor, we crated a table (Table \ref{tab:voltage:out:dac}) for representing the different 
+Simulating the DAC using external voltage sources as replacement for the the SAR logic block, is difficult. Therefore, we created a table (Table \ref{tab:voltage:out:dac}) for representing the different 
 voltage values if one bit is on at the time. Recalling the formulas for calculating output voltage in Eq. (\ref{vlsb}), (\ref{binval}), (\ref{vout}) and (\ref{vmax}) from the introduction, 
-we can calculate the output voltage. A plot of the output is not included in the report, since this would just show a stable signal. The results shows on the other hand that the variations between 
+we can calculate the output voltage. A plot of the output is not included in the report, since this would just show a stable signal. The results shows on the other hand, that the variations between 
 the actual and calculated values are negligible. 
 \begin{equation}\label{vlsb}
  V_{LSB} = V_{ref} \cdot \frac{1}{2^{N}}
@@ -827,16 +824,16 @@ d7 & d6 & d5 & d4 & d3 & d2 & d1 & d0 & Voltage  & Bit \\ \hline
 \label{tab:voltage:out:dac}
 \end{table}
 \newline
-The first simulation were done using LTSpice. This is because LTSpice is easy and quick ti set up, comparing to Virtuoso. In the simulation we used 10 k\(\ohm\) 20 k\(\ohm\) as resistance values. 
-In this ideal simulation, it seemed like the circuit worked perfect. The next step then, was to make the circuit again in Virtuoso. When simulating this circuit again, it showed that the circuit 
+The first simulation were done using LTSpice. This is because LTSpice is easy and quick to set up, comparing to Virtuoso. In the simulation we used \(10\) and \(20 k\ohm\) as resistance values. 
+In this ideal simulation, it seemed like the circuit worked perfect. The next step, was to draw the circuit in Virtuoso. When simulating this circuit again, it showed that the circuit 
 was very non monotonic. This can cause large errors to the output of the system, since the comparator can misinterpret the output of the DAC to the sampled signal. The simulation is plotted in 
 Fig. (\ref{fig:sim:dac:10k}). We can see from the figure that the errors are large, and there is therefor a high possibility for the comparator to take the wrong decision. This is therefor a problem
-considering the requirements for a accuracy. This state that the accuracy has to be better than 0.5 LSB. We have therefor tried different values for the resistors, taking the accuracy and 
-actual size in the layout into account. Resistors are very large in their actual size, and in many designs space is very limited. It is therefor desirable to eliminate, or create as small resistors 
-as possible. In this project, space is not a limitation, so we do not concern about the size, at lest not up to a point where there is difficult to handle the design in the layout. \\
+considering the requirements for a accuracy. The requirements state that the accuracy has to be better than 0.5 LSB. We have therefor tried different values for the resistors, taking the accuracy and 
+actual size in the layout into account. Resistors are very large in their actual size, and in many designs, space is very limited. It is therefor desirable to eliminate, or create as small resistors 
+as possible. In this project, space is not a limitation, so we do not concern about the size, at least not up to a point where there is difficult to handle the design in the layout. \\
 \\
-Fig (\ref{fig:sim:dac:100k}) shows a plot of the output using 100 k\(\ohm\) and 200 k\(\ohm\). We can see here that the linearity is better, but does not meet the requirement for the accuracy. In 
-Fig. (\ref{fig:sim:dac:320k}), values of 320 k\(\ohm\) and 640 k\(\ohm\) are used. This shows that the linearity is more or less perfect. The cost for using that large resistance is the space, 
+Fig (\ref{fig:sim:dac:100k}) shows a plot of the output using \(100 k\ohm\) and \(200 k\ohm\). We can see here that the linearity is better, but does not meet the requirement for the accuracy. In 
+Fig. (\ref{fig:sim:dac:320k}), values of \(320 k\ohm\) and \(640 k\ohm\) are used. This shows that the linearity is more or less perfect. The cost for using that large resistance is the space, 
 recalling from the paragraph above.  
 
 \begin{figure}[!ht]
@@ -886,11 +883,11 @@ The purpose of this circuit is to determine which of the bits to keep when runni
 The original module that was given did not function properly and was only able to do one conversion. This module also did not have a \textit{start of conversion} (SoC) signal input.
 In order to control the conversion with this module we gated the clock and used a SR-latch to enable the gated clock when the SoC signal was applied.\\
 \\
-We got a updated version of this module that had been extended to included a SoC input. In this module you signaled the start of a conversion by strobing the SoC input.
+We got a updated version of this module that had been extended to included a SoC input. In this module, the start of conversion is signaled by strobing the SoC input.
 The updated module was able to do multiple conversion by signaling a new SoC after a conversion was done. 
 When the module was finished with a conversion it signaled \textit{End of Conversion} (EoC) by raising the EoC output to a high level. \\
 \\
-The high output level of the module is fixed at 1V and not at system VDD voltage level.
+The high output level of the module is fixed at \(1 V\) and not at system \(V_{DD}\) voltage level.
 \subsection{Simulation}
 This module was simulated in conjunction with the entire system and not verified on it's own. 
 The functionality of this circuit is very simple and the correctness was therefore easily verified in the complete system simulation.
@@ -905,16 +902,11 @@ outside the symbol, and added it to the SIM version for the system. This can be 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{SR Latch}
 The SR latch is used in the system to hold the the \textit{sample and hold} circiut in hold mode during conversion. 
-The set-trigger for the latch is the SoC signal and reset is from the EoC signal. 
+The set-trigger for the latch is the SoC signal, and reset is from the EoC signal. 
 
 \subsection{Implementation}
 The SR Latch is implemented with two nor gates connected in the way shown in figure (\ref{sr:latch}).
-The function table for this implementation is given in table \ref{table:srlatch:functiontable}.\\
-\\
-The circuit features both regular and invertered outputs \(Q\) and \(\overline{Q}\).
-
-\subsection{Simulation}
-The simulation of the circiut was done by cycling throug the 4 different combinations of the inputs \(S\) and \(R\) and observing the output of \(Q\) and \(\overline{Q}\).
+The function table for this implementation is given in table \ref{table:srlatch:functiontable}. The circuit features both regular and invertered outputs \(Q\) and \(\overline{Q}\).
 
 %%------ SR LATCH Figure ----------
 \begin{figure}[!ht]
@@ -933,6 +925,11 @@ The simulation of the circiut was done by cycling throug the 4 different combina
  \label{sr:latch}
 \end{figure}
 %%------------
+
+\subsection{Simulation}
+The simulation of the circiut was done by cycling throug the 4 different combinations of the inputs \(S\) and \(R\) and observing the output of \(Q\) and \(\overline{Q}\).
+
+
 
 %%------ SR LATCH function table----------
 \begin{table}[!ht]
@@ -967,13 +964,13 @@ We concluded that compression is not relative for the task, and has therefor not
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Output buffers}
-In order to attach a exteral circiut to read the value from the SAR ADC without disturbing the internal DAC we attached an outputbuffer between the SAR logic and the outputs.
-This has several benefits, first off all the output high levels are at VDD. Seccondly the buffers provide a high impedance for the dac so it's accuracy does not depend on the loding of the external circuit.
+In order to attach a exteral circiut to read the value from the SAR ADC without disturbing the internal DAC we attached an output buffer between the SAR logic and the outputs.
+This has several benefits, first off all the output high levels are at \(V_{DD}\). Seccondly the buffers provide a high impedance for the DAC so it's accuracy does not depend on the loading of the external circuit.
 
 \subsection{Implementation}
-The implementation of the buffers is in the form of two inverters in series as shown in the figure (\ref{fig:buffer:out}). All the chanals are independent of each other. 
+The implementation of the buffers is in the form of two inverters in series as shown in the Fig. (\ref{fig:buffer:out}). All the channals are independent of each other. 
 Their sizes are based on the minimal inverters from the process and they are not capable of delivering much current. 
-In a more optimal design the outputbuffers should probably be based on bigger transistors so the outputs could be used for a wider range of applications. If this DAC should be part of a bigger integreated system
+In a more optimal design the output buffers should probably be based on bigger transistors so the outputs could be used for a wider range of applications. If this DAC should be part of a bigger integreated system
 the buffers size is probably fine.
 
 
