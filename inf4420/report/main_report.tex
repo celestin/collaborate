@@ -733,19 +733,59 @@ The layout for the comparator is shown in Fig. (\ref{fig:layout:comparator}).
 
 
 \subsection{Requirement fulfilment}
+\subsubsection{Capacitive load and Supply Voltage}
+In the all the simulations the capactive load of \(50 f\) Farads have been in place. The performance of the comparator is (as good as) unaffected by the capacative load and handles this load well.
+The supply voltage we have used is \(V_{DD} = 1.2V\) and \(V_{SS} = 0V\).
 
-Gain requirement: 
+\subsubsection{Delay}
+Delay: The input to output time (lag test)...
+
+\subsubsection{Offset}
+The specifications states that the comparator should have a offset of less than 0.5 LSB, which in our case equals \(0.5 * 1.2V/2^8 \approx 2.344mV\). 
+Our comparator offset is dependent on the voltage at the reference input and the offset gets worse when the input is close too the voltage rails.
+In figure (\ref{figure:comparator:comparator_crossing}) there is a closeup of a typical offset with the reference at 600mV and a sine with \(600mV +    1.2V_{p-p} @ 10kHz\) at the input. 
+In this figure we observe the crossing of output with the input at approximately 597.773mV. This gives an offset of approximately 2.227mV, which is within the specifications. 
+However this requirement is not met over the entire input range.
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\textwidth]{img/comparator/comparator_crossing}
+    \caption{Comparator offset crossing}
+    \label{figure:comparator:comparator_crossing}
+\end{figure}
+
+
+\subsubsection{Gain}
+
+Gain requirement: \\
+
+\noindent
 \begin{math}
 K = VDD/V_{ref}/2^N \\
-VDD = V_{ref} => K = 2^N \\
+V_{DD} = V_{ref} => K = 2^N \\
 N = 8 => K = 256 \\
 \end{math}
+
+\noindent
+The specifications stats that the comparator should have a minimum gain as shown in the calculations above, which comes out too be 256.
+Looking at the figure (\ref{figure:comparator:comparator_linear_approx}) we can see that the transition time for the comparator is \(\Delta t = 50\mu S - 50.1\mu S = 0.1\mu S \).
+In this interval the comparator's gain is not linear. We can calculate an linear approximation as:
+
+\noindent
 \begin{math}
- \Delta t = 50\mu S - 50.1\mu S = 0.1\mu S \\
- \Delta V_{in} = 600mV - 596.206mV = 3.794mV \\
- \Delta V_{out} = 1.2V \\
+ \Delta V_{in}(t_1, t_2) = 600mV - 596.206mV = 3.794mV \\
+ \Delta V_{out}(t_1, t_2) = 1.2V \\
+ Gain = \frac{\Delta V_{out}}{\Delta V_{in}}\\
  Gain = \frac{1.2V}{3.794mV} = 316.289 \approx 316 \\
 \end{math}
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\textwidth]{img/comparator/comparator_crossing_full_with_linear_approx}
+    \caption{Comparator linear gain approximation}
+    \label{figure:comparator:comparator_linear_approx}
+\end{figure}
+
 
 Gain \( 316 > 256 \) requirement met.
 
