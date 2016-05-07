@@ -977,9 +977,21 @@ The this transition is the most demanding transition since all the bits change.
 
 \subsubsection{DNL}
 
+IKKE BERGENET
+
+Har brukt litt tid i kalkulatoren til cadence men ikke i mål
+
+
 \subsubsection{INL}
 
+IKKE BERGENET
+
+Har brukt litt tid i kalkulatoren til cadence men ikke i mål
+
+
 \subsubsection{Output Voltage}
+The requirement for the output voltage of the DAC is specified to be grater than 0.6V. 
+We have an max output that is less than \(1\mu V\) from the ideal maximum given in equation (\ref{vmax}) if it's given enough time to settle.
 
 
 
@@ -1009,6 +1021,8 @@ The functionality of this circuit is very simple and the correctness was therefo
 As mentioned before, the SAR logic block is not supported for layout. The task does not require to make a schematic and layout for the SAR logic, so it is used a 
 virtual component that has been discussed in a previous chapter. In order to perform a simulation of the total system including the SAR logic, we moved the block 
 outside the symbol, and added it to the SIM version for the system. This can be seen in the schematic included in the appendix. 
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SR Latch
@@ -1216,9 +1230,21 @@ input in our design and is controlled internally.
 
 
 \subsection{Simulation}
-
-
+In this simulation we apply a sinusoid input signal and trigger a series of conversions. A small section of the simulation output is shown in figure (\ref{fig:system:dynamics}). 
+In this figure clock is not shown (but can be inferred) and the output from S/H circuit is shown instead of the clean input signal.
+ 
+ \begin{figure}[!ht]
+  \centering
+  \includegraphics[width=\textwidth]{img/system/sar_system_dynamics}
+  \caption{SAR system performance dynamics}
+  \label{fig:system:dynamics}
+ \end{figure}
+ 
 \subsection{Requirement Fulfillment}
+
+\subsubsection{Supply Voltage and Output Resolution}
+The system is design for \(V_{DD} = 1.2V\) and \(V_{SS} = 0V \). The system is designed for 8 bits output resolution.
+
 
 \subsection{Improvements}
 The SR-latch controlles the \(hold\) in the S/H and is has a implementation weakness (or bug). The \(SoC\) signal is connected to \(S\) and \(EoC\) to  \(R\) and \(Hold\) (\(\phi\)) is connected to \(Q\). 
@@ -1241,6 +1267,8 @@ for the DAC implementation. As discussed earlier, the sizes for resistors are ve
 layout. This could have been reduced if, for example a \textit{Charge-Redistribution Switched-Capacitor} 
 converter, had been implement. This is a very interesting architecture, because the power consumption
 can be very low. 
+%%%%%%%%%%%%%%%%% BARE EN TAKE%%%%%%%%%%%
+Using the R-2R DAC design, we should have simulated using much larger transistors in order to get better performance.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% CAP: Conclusion
