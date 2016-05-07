@@ -779,6 +779,13 @@ In this interval the comparator's gain is not linear. We can calculate an linear
  Gain = \frac{1.2V}{3.794mV} = 316.289 \approx 316 \\
 \end{math}
 
+\noindent
+In this approximation the gain comes out to be approximately 316 and we conclude that since \( 316 > 256 \), the gain requirement is met. 
+The approximation is plotted in the figure as the dash-doted line.
+
+
+In the transition region we see that the actual transition is much steeper than the linear approximation. 
+If we look at the interval from \(t_1 = 50.0574982\mu S \textrm{ to } t_2 = 50.0614953\mu S\) the gain comes out to be \(\frac{518.879mV}{131\mu V} \approx 3960\). 
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=\textwidth]{img/comparator/comparator_crossing_full_with_linear_approx}
@@ -787,7 +794,7 @@ In this interval the comparator's gain is not linear. We can calculate an linear
 \end{figure}
 
 
-Gain \( 316 > 256 \) requirement met.
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
