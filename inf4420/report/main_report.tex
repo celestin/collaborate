@@ -732,7 +732,7 @@ The layout for the comparator is shown in Fig. (\ref{fig:layout:comparator}).
 % \end{figure}
 
 
-\subsection{Requirement fulfilment}
+\subsection{Requirement Fulfillment}
 \subsubsection{Capacitive load and Supply Voltage}
 In the all the simulations the capactive load of \(50 f\) Farads have been in place. The performance of the comparator is (virtually) unaffected by the capacative load and handles this load well.
 The supply voltage we have used is \(V_{DD} = 1.2V\) and \(V_{SS} = 0V\).
@@ -957,8 +957,33 @@ advantage considering space consumption. Fig. (\ref{fig:layout:dac}) shows the l
 %  \label{fig:layout:dac}
 % \end{figure}
 
-\subsection{Requirement fulfilment}
-In addition to the requirements that is given. 
+\subsection{Requirement Fulfillment}
+
+\subsubsection{Resolution, Supply voltage and Capacitive load}
+The design of the DAC is done in 8 bits. The design uses 1.2V as \(V_{DD}\) and 0V as \(V_{SS}\).
+The DAC has had an load of at least \(50fF\) in all simulations.
+
+\subsubsection{Sampling Rate}
+The sampling rate used in the plot in figure (\ref{figure:dac:closeup}) shows the settling dynamics of the DAC, when running on a downwards counting sequence at 10MHz.
+In the figure we have zoomed in to the region where the MSB changes so in this figure the binary code change from 1000 0000 to 0111 1111. 
+We see some overshoot but the output settles before the next bit changes. 
+The this transition is the most demanding transition since all the bits change.
+\begin{figure}[!ht]
+ \centering     
+ \includegraphics[width=\textwidth]{img/dac/dac_running_at_10MHz_closeup_at_center}
+ \caption{DAC output sequence zoomed in on MSB transition}
+ \label{figure:dac:closeup}
+\end{figure}
+
+\subsubsection{DNL}
+
+\subsubsection{INL}
+
+\subsubsection{Output Voltage}
+
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SAR Logic
@@ -1193,7 +1218,7 @@ input in our design and is controlled internally.
 \subsection{Simulation}
 
 
-\subsection{Requirement fulfillment}
+\subsection{Requirement Fulfillment}
 
 \subsection{Improvements}
 The SR-latch controlles the \(hold\) in the S/H and is has a implementation weakness (or bug). The \(SoC\) signal is connected to \(S\) and \(EoC\) to  \(R\) and \(Hold\) (\(\phi\)) is connected to \(Q\). 
