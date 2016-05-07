@@ -734,11 +734,24 @@ The layout for the comparator is shown in Fig. (\ref{fig:layout:comparator}).
 
 \subsection{Requirement fulfilment}
 \subsubsection{Capacitive load and Supply Voltage}
-In the all the simulations the capactive load of \(50 f\) Farads have been in place. The performance of the comparator is (as good as) unaffected by the capacative load and handles this load well.
+In the all the simulations the capactive load of \(50 f\) Farads have been in place. The performance of the comparator is (virtually) unaffected by the capacative load and handles this load well.
 The supply voltage we have used is \(V_{DD} = 1.2V\) and \(V_{SS} = 0V\).
 
 \subsubsection{Delay}
-Delay: The input to output time (lag test)...
+Delay: The input to output time is shown in figure (\ref{figure:comparator:comparator_delay}). 
+If we calculate the delay along the reference line in the graph we find that the crossing times is \( t_1 = 2.0005\mu S, t_2 = 2.01495\mu S \) which gives the difference \(\Delta t = 14.45nS \).
+The internal clocking frequency in the circuit to deliver 1M-samples is 10MHz. The clock period is therefore \(1/10MHz = 100nS\). 
+The requirement of a delay of less than 0.5 clock cycles (\(50nS\)) is met (since \(14.45nS < 50nS\)).
+
+
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\textwidth]{img/comparator/comparator_delay_1ns_tr_600mv_ref}
+    \caption{Comparator delay with a 1nS transition step/pulse applied to input with a 600mV reference}
+    \label{figure:comparator:comparator_delay}
+\end{figure}
+
+
 
 \subsubsection{Offset}
 The specifications states that the comparator should have a offset of less than 0.5 LSB, which in our case equals \(0.5 * 1.2V/2^8 \approx 2.344mV\). 
