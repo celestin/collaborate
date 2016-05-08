@@ -33,7 +33,7 @@
 						<value>$AXL_SETUPDB_DIR/test_states</value>
 					</option>
 					<option>state
-						<value>sar:SIM_dac_real_res:1_active</value>
+						<value>sar:SIM_dac_real_res:1_import</value>
 					</option>
 				</tooloptions>
 				<origoptions>
@@ -174,6 +174,7 @@
 				<value></value>
 			</plottingoption>
 		</plottingoptions>
+		<sortVariableValues>1</sortVariableValues>
 	</active>
 	<history>History
 		<historyentry>Interactive.0

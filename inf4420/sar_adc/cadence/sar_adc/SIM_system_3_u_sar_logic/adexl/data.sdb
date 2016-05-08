@@ -89,6 +89,12 @@
 					<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
 				</dependentTests>
 			</var>
+			<var>inital_phase
+				<value>120</value>
+				<dependentTests>
+					<dependentTest omitted="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
+				</dependentTests>
+			</var>
 		</vars>
 		<overwritehistoryname>Interactive.0</overwritehistoryname>
 		<plottingoptions>
@@ -105,366 +111,6 @@
 		<sortVariableValues>1</sortVariableValues>
 	</active>
 	<history>History
-		<historyentry>Interactive.47
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>sar_adc:SIM_system_3_u_sar_logic:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>SIM_system_3_u_sar_logic</value>
-							</option>
-							<option>lib
-								<value>sar_adc</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>sar_adc:SIM_system_3_u_sar_logic:1_none_Interactive.47</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>SIM_system_3_u_sar_logic</value>
-							</option>
-							<option>lib
-								<value>sar_adc</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var enabled="0">clk_period
-						<value>100n</value>
-						<dependentTests>
-							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">clk_width
-						<value>50n</value>
-						<dependentTests>
-							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">freq_in
-						<value>133k</value>
-						<dependentTests>
-							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">soc_delay
-						<value>2u</value>
-						<dependentTests>
-							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">soc_period
-						<value>3u</value>
-						<dependentTests>
-							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">soc_width
-						<value>0.5u</value>
-						<dependentTests>
-							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Fri Apr 29 14:54:52 2016</timestamp>
-			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.47.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.47.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_145452446</localpsfdir>
-			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.47</psfdir>
-			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.47</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.47.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.47.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.48
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>sar_adc:SIM_system_3_u_sar_logic:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>SIM_system_3_u_sar_logic</value>
-							</option>
-							<option>lib
-								<value>sar_adc</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>sar_adc:SIM_system_3_u_sar_logic:1_none_Interactive.48</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>SIM_system_3_u_sar_logic</value>
-							</option>
-							<option>lib
-								<value>sar_adc</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var enabled="0">clk_period
-						<value>100n</value>
-						<dependentTests>
-							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">clk_width
-						<value>50n</value>
-						<dependentTests>
-							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">freq_in
-						<value>133k</value>
-						<dependentTests>
-							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">soc_delay
-						<value>2u</value>
-						<dependentTests>
-							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">soc_period
-						<value>3u</value>
-						<dependentTests>
-							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">soc_width
-						<value>0.5u</value>
-						<dependentTests>
-							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Fri Apr 29 14:58:32 2016</timestamp>
-			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.48.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.48.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_145832104</localpsfdir>
-			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.48</psfdir>
-			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.48</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.48.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.48.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry>Interactive.49
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>sar_adc:SIM_system_3_u_sar_logic:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>SIM_system_3_u_sar_logic</value>
-							</option>
-							<option>lib
-								<value>sar_adc</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>sar_adc:SIM_system_3_u_sar_logic:1_none_Interactive.49</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>SIM_system_3_u_sar_logic</value>
-							</option>
-							<option>lib
-								<value>sar_adc</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var enabled="0">clk_period
-						<value>100n</value>
-						<dependentTests>
-							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">clk_width
-						<value>50n</value>
-						<dependentTests>
-							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">freq_in
-						<value>133k</value>
-						<dependentTests>
-							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">soc_delay
-						<value>2u</value>
-						<dependentTests>
-							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">soc_period
-						<value>3u</value>
-						<dependentTests>
-							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">soc_width
-						<value>0.5u</value>
-						<dependentTests>
-							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>1</sortVariableValues>
-			</checkpoint>
-			<timestamp>Fri Apr 29 14:59:47 2016</timestamp>
-			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.49.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.49.rdb</simresults>
-			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_145947669</localpsfdir>
-			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.49</psfdir>
-			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.49</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.49.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.49.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
 		<historyentry>Interactive.50
 			<checkpoint>
 				<corners>
@@ -1050,8 +696,7 @@
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Tue May  3 09:01:39 2016
-</timestamp>
+			<timestamp>Tue May 3 09:01:39 2016</timestamp>
 			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.54.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.54.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -1171,8 +816,7 @@
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Tue May  3 09:03:39 2016
-</timestamp>
+			<timestamp>Tue May 3 09:03:39 2016</timestamp>
 			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.55.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.55.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -1292,8 +936,7 @@
 				</plottingoptions>
 				<sortVariableValues>1</sortVariableValues>
 			</checkpoint>
-			<timestamp>Tue May  3 10:22:01 2016
-</timestamp>
+			<timestamp>Tue May 3 10:22:01 2016</timestamp>
 			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.56.rdb</resultsname>
 			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.56.rdb</simresults>
 			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
@@ -1305,6 +948,387 @@
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
 			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.56.log</runlog>
 			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.56.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.57
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>sar_adc:SIM_system_3_u_sar_logic:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_system_3_u_sar_logic</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_system_3_u_sar_logic:1_none_Interactive.57</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_system_3_u_sar_logic</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="0">clk_period
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">clk_width
+						<value>50n</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">freq_in
+						<value>133k</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">soc_delay
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">soc_period
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">soc_width
+						<value>0.5u</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>inital_phase
+						<value>66</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri May  6 11:48:49 2016
+</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.57.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.57.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_114849667</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.57</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.57</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.57.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.57.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.58
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>sar_adc:SIM_system_3_u_sar_logic:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_system_3_u_sar_logic</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_system_3_u_sar_logic:1_none_Interactive.58</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_system_3_u_sar_logic</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="0">clk_period
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">clk_width
+						<value>50n</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">freq_in
+						<value>133k</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">soc_delay
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">soc_period
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">soc_width
+						<value>0.5u</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>inital_phase
+						<value>88</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri May  6 11:50:13 2016
+</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.58.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.58.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_115013091</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.58</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.58</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.58.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.58.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.59
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>sar_adc:SIM_system_3_u_sar_logic:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_system_3_u_sar_logic</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_system_3_u_sar_logic:1_none_Interactive.59</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_system_3_u_sar_logic</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="0">clk_period
+						<value>100n</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">clk_width
+						<value>50n</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">freq_in
+						<value>133k</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">soc_delay
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">soc_period
+						<value>3u</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">soc_width
+						<value>0.5u</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>inital_phase
+						<value>120</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_system_3_u_sar_logic:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri May  6 11:52:20 2016
+</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.59.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.59.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_115220308</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.59</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.59</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_system_3_u_sar_logic/adexl/results/data/Interactive.59.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.59.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>

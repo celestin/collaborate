@@ -1228,8 +1228,8 @@ We aimed at creating a \textit{rail to rail} SAR ADC and all our blocks are able
 \subsection{Implementation}
 The SAR logic block, as mentioned earlier, is a virtual block and not implemented in MOSFET. 
 Fig. (\ref{fig:implemented:sar:system}) shows all the layout blocks for the different sections
-implemented together. The total area consumed is \(220 \mu m times 140 \mu m\), or \(30 800 \mu m^2\). 
-Fig. (\ref{fig:seal:ring}) shows the circuit implemented in a seal ring of \(1960 \mu m\) times 
+implemented together. The total area consumed is \(220 \mu m \) x \(140 \mu m\), or \(30 800 \mu m^2\). 
+Fig. (\ref{fig:seal:ring}) shows the circuit implemented in a seal ring of \(1960 \mu m\) x 
 \(1960 \mu m\). \\
 \\
 The \(Hold\) signal to the sample and hold circuit is not a external 
@@ -1251,8 +1251,10 @@ input in our design and is controlled internally.
 
 
 \subsection{Simulation}
-In this simulation we apply a sinusoid input signal and trigger a series of conversions. A small section of the simulation output is shown in figure (\ref{fig:system:dynamics}). 
-In this figure clock is not shown (but can be inferred) and the output from S/H circuit is shown instead of the clean input signal.
+In this simulation we apply a sinusoid input signal and trigger a series of conversions. A small section of the simulation output is shown in Fig. (\ref{fig:system:dynamics}). 
+In this figure the clock signal is not included (but can be inferred) and the output from S/H circuit is shown instead of the clean input signal.\\
+\\
+The results from the simulation shown in Fig. (\ref{fig:system:dynamics}) is done with the parasitics extraced for all the pars, exept the SAR logic block. 
  
  \begin{figure}[!ht]
   \centering
@@ -1264,7 +1266,7 @@ In this figure clock is not shown (but can be inferred) and the output from S/H 
 \subsection{Requirement Fulfillment}
 
 \subsubsection{Supply Voltage and Output Resolution}
-The system is design for \(V_{DD} = 1.2V\) and \(V_{SS} = 0V \). The system is designed for 8 bits output resolution.
+The system is design for \(V_{DD} = 1.2V\) and \(V_{SS} = 0V \). The system is designed for 8-bits output resolution.
 
 \subsubsection{Input sampling rate}
 
@@ -1273,11 +1275,6 @@ The system is design for \(V_{DD} = 1.2V\) and \(V_{SS} = 0V \). The system is d
 \subsubsection{Missing codes}
 Alle binære codes skal eksistere
 
-\subsection{Improvements}
-The SR-latch controlles the \(hold\) in the S/H and is has a implementation weakness (or bug). The \(SoC\) signal is connected to \(S\) and \(EoC\) to  \(R\) and \(Hold\) (\(\phi\)) is connected to \(Q\). 
-In our design we have connected the SR latch in a way that makes it "prioritize" reset over set, see table \ref{table:srlatch:functiontable}.
-The consequence is that signaling a new conversion is timing sensitive.
-The fix for this is very simple: connect the \(SoC\) to \(R\) and \(EoC\) to \(S\) and use \(\overline{Q}\) instead of \(Q\). This fix makes the circuit timing in.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Discussion
@@ -1289,6 +1286,7 @@ can be done differently for future work. This design is not giong to be produced
 interesting to reflect over improvements. 
 
 \section{Proposal of improvement}
+\subsubsection{DAC design}
 If there would have been more time, it would have been interesting to try out an other architecture
 for the DAC implementation. As discussed earlier, the sizes for resistors are very big, concerning
 layout. This could have been reduced if, for example a \textit{Charge-Redistribution Switched-Capacitor} 
@@ -1296,6 +1294,12 @@ converter, had been implement. This is a very interesting architecture, because 
 can be very low. 
 %%%%%%%%%%%%%%%%% BARE EN TAKE%%%%%%%%%%%
 Using the R-2R DAC design, we should have simulated using much larger transistors in order to get better performance.
+
+\subsubsection{SR latch}
+The SR-latch controlles the \(hold\) in the S/H and is has a implementation weakness (or bug). The \(SoC\) signal is connected to \(S\) and \(EoC\) to  \(R\) and \(Hold\) (\(\phi\)) is connected to \(Q\). 
+In our design we have connected the SR latch in a way that makes it "prioritize" reset over set, see table \ref{table:srlatch:functiontable}.
+The consequence is that signaling a new conversion is timing sensitive.
+The fix for this is very simple: connect the \(SoC\) to \(R\) and \(EoC\) to \(S\) and use \(\overline{Q}\) instead of \(Q\). This fix makes the circuit timing in.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% CAP: Conclusion
