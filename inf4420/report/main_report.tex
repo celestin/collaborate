@@ -980,34 +980,43 @@ The this transition is the most demanding transition since all the bits change.
 \subsubsection{DNL}
 
 The DNL data is extracted from Virtuoso by use of the built-in function "dnl". 
+The data is included in table \ref{table:data:dnl} in the appendix.
 
-The expression:
+\begin{tabular}[t]{|l|l|}
+ \hline 
+  
+Max DNL [LSB] & \(-225.60 \cdot 10^{-3} \) \\ \hline
+Max DNL voltage diff & \(-1.06 mV \) \\ \hline
 
+Mean DNL [LSB] & \(-590.55 \cdot 10^{-9}\) \\ \hline
+Mean DNL voltage diff & \(-2.77 nV \) \\ \hline
+\end{tabular}
 
-
-Max DNL [LSB]: -225.600000000000e-003
-Max DNL voltage diff: -1.05750000000000e-003
-
-Mean DNL [LSB]: -590.551181102051e-009
-Mean DNL voltage diff: -2.76820866141587e-009
-
-
+\hfill \break
+\noindent 
+The requirement of DNL less than 0.5 LSB is achieved (since \(-225.60 \cdot 10^{-3}  < 0.5 \)).
+ 
 
 \subsubsection{INL}
 The INL data is extracted from Virtuoso by use of the built-in function "inl". 
+The data is included in table \ref{table:data:inl} in the appendix.
 
-The expression:
+\begin{tabular}[t]{|l|l|}
+ \hline 
+  
+Max INL [LSB] & \(-206.00 \cdot 10^{-3} \) \\ \hline
+Max INL voltage diff & \(-965.62 \mu V \) \\ \hline
 
+Mean INL [LSB] & \(-25.21 \cdot 10^{-3} \) \\ \hline
+Mean INL voltage diff & \( -118.17 \mu V \) \\ \hline
+\end{tabular}
 
-Max INL [LSB]: -206.000000000000e-003
-Max INL voltage diff: 965.625000000000e-006 V
-
-Mean INL [LSB]: -25.2101981102362e-003
-Mean INL voltage diff: -118.172803641732e-006
-
+\hfill \break
+\noindent 
+The requirement of INL less than 0.5 LSB is achieved (since \(-206.00 \cdot 10^{-3}  < 0.5 \)).
 
 \subsubsection{Monotonic}
-SKRIV OM DETTE
+The system is monotonic as shown in figure (\ref{fig:sim:dac:320k}).
 
 
 \subsubsection{Output Voltage}
