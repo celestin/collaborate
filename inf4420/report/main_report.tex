@@ -403,7 +403,7 @@ whole couning period. When the last bit is pulsed, it waits for a interrupt from
 high for one period, and then it starts again.\\
 \\
 \textbf{Signal done:}\\
-As mentrioned above, the \(done\) signal happens when all the bits has cycled once. The \(done\) signal indicates that the round is finnished, and the \(SoC\) can go high, and start a new turn.\\
+As mentioned above, the \(done\) signal happens when all the bits has cycled once. The \(done\) signal indicates that the round is finnished, and the \(SoC\) can go high, and start a new turn.\\
 \\
 \textbf{Signal b<7:0>:}\\
 For this system, there are total 8-bits. All of these bits happens at different time, starting at the MSB and ending at the LSB. For more detailed information about how these bits operate, see
@@ -736,15 +736,14 @@ The layout for the comparator is shown in Fig. (\ref{fig:layout:comparator}).
 
 \subsection{Requirement Fulfillment}
 \subsubsection{Capacitive load and Supply Voltage}
-In the all the simulations the capactive load of \(50 f\) Farads have been in place. The performance of the comparator is (virtually) unaffected by the capacative load and handles this load well.
-The supply voltage we have used is \(V_{DD} = 1.2V\) and \(V_{SS} = 0V\).
+In all the simulations that has been done, a capactive load of \(50 fF\) has been used. The performance of the comparator is (virtually) unaffected by the capacitive load and handles this load perfectly.
+The supply voltage is \(V_{DD} = 1.2V\) and \(V_{SS} = 0V\).
 
 \subsubsection{Delay}
-Delay: The input to output time is shown in figure (\ref{figure:comparator:comparator_delay}). 
-If we calculate the delay along the reference line in the graph we find that the crossing times is \( t_1 = 2.0005\mu S, t_2 = 2.01495\mu S \) which gives the difference \(\Delta t = 14.45nS \).
-The internal clocking frequency in the circuit to deliver 1M-samples is 10MHz. The clock period is therefore \(1/10MHz = 100nS\). 
+The input to output time is shown in Fig. (\ref{figure:comparator:comparator_delay}). 
+If we calculate the delay along the reference line in the graph, we find that the crossing-times is \( t_1 = 2.0005\mu S\), \(t_2 = 2.01495\mu S \) which gives the difference \(\Delta t = 14.45nS \).
+The internal clocking frequency in the circuit to deliver 1 M-samples is 10 MHz. The clock period is therefore \(1/10MHz = 100nS\). 
 The requirement of a delay of less than 0.5 clock cycles (\(50nS\)) is met (since \(14.45nS < 50nS\)).
-
 
 \begin{figure}[!ht]
     \centering
@@ -753,13 +752,11 @@ The requirement of a delay of less than 0.5 clock cycles (\(50nS\)) is met (sinc
     \label{figure:comparator:comparator_delay}
 \end{figure}
 
-
-
 \subsubsection{Offset}
-The specifications states that the comparator should have a offset of less than 0.5 LSB, which in our case equals \(0.5 * 1.2V/2^8 \approx 2.344mV\). 
+The specifications states that the comparator should have a offset of less than 0.5 LSB, which in our case is equal to \(0.5 * 1.2V/2^8 \approx 2.344mV\). 
 Our comparator offset is dependent on the voltage at the reference input and the offset gets worse when the input is close too the voltage rails.
-In figure (\ref{figure:comparator:comparator_crossing}) there is a closeup of a typical offset with the reference at 600mV and a sine with \(600mV +    1.2V_{p-p} @ 10kHz\) at the input. 
-In this figure we observe the crossing of output with the input at approximately 597.773mV. This gives an offset of approximately 2.227mV, which is within the specifications. 
+In Fig. (\ref{figure:comparator:comparator_crossing}) the typical offset is zoomed in with the reference at \(600 mV\) and a sine wave with \(600 mV + 1.2V_{p-p}\) at 10 kHz at the input. 
+In this figure we observe the crossing of output with the input at approximately \(597.773 mV\). This gives an offset of approximately \(2.227 mV\), which is within the specifications. 
 However this requirement is not met over the entire input range.
 
 \begin{figure}[!ht]
@@ -769,36 +766,38 @@ However this requirement is not met over the entire input range.
     \label{figure:comparator:comparator_crossing}
 \end{figure}
 
-
 \subsubsection{Gain}
 
-Gain requirement: \\
+Gain requirement:
+\begin{itemize}
+\item K = \(V_{DD}/V_{ref}/2^N\)
+\item \(V_{DD} = V_{ref}\) => K = \(2^N\)
+\item N = 8 => K = 256 
 
-\noindent
-\begin{math}
-K = VDD/V_{ref}/2^N \\
-V_{DD} = V_{ref} => K = 2^N \\
-N = 8 => K = 256 \\
-\end{math}
+\end{itemize}
 
 \noindent
 The specifications stats that the comparator should have a minimum gain as shown in the calculations above, which comes out too be 256.
-Looking at the figure (\ref{figure:comparator:comparator_linear_approx}) we can see that the transition time for the comparator is \(\Delta t = 50\mu S - 50.1\mu S = 0.1\mu S \).
+Looking at Fig. (\ref{figure:comparator:comparator_linear_approx}), we can see that the transition time for the comparator is \(\Delta t = 50\mu S - 50.1\mu S = 0.1\mu S \).
 In this interval the comparator's gain is not linear. We can calculate an linear approximation as:
 
-\noindent
-\begin{math}
- \Delta V_{in}(t_1, t_2) = 600mV - 596.206mV = 3.794mV \\
+\begin{equation}
+ \Delta V_{in}(t_1, t_2) = 600mV - 596.206mV = 3.794mV 
+ \end{equation}
+ \begin{equation}
  \Delta V_{out}(t_1, t_2) = 1.2V \\
+ \end{equation}
+ \begin{equation}
  Gain = \frac{\Delta V_{out}}{\Delta V_{in}}\\
+ \end{equation}
+ \begin{equation}
  Gain = \frac{1.2V}{3.794mV} = 316.289 \approx 316 \\
-\end{math}
+\end{equation}
 
 \noindent
-In this approximation the gain comes out to be approximately 316 and we conclude that since \( 316 > 256 \), the gain requirement is met. 
-The approximation is plotted in the figure as the dash-doted line.
-
-
+In this approximation, the gain comes out to be approximately 316 and we conclude that since \( 316 > 256 \), the gain requirement is met. 
+The approximation is plotted in the Fig. (\ref{figure:comparator:comparator_linear_approx}) as the dash-doted line.\\
+\\
 In the transition region we see that the actual transition is much steeper than the linear approximation. 
 If we look at the interval from \(t_1 = 50.0574982\mu S \textrm{ to } t_2 = 50.0614953\mu S\) the gain comes out to be \(\frac{518.879mV}{131\mu V} \approx 3960\). 
 \begin{figure}[!ht]
@@ -807,10 +806,6 @@ If we look at the interval from \(t_1 = 50.0574982\mu S \textrm{ to } t_2 = 50.0
     \caption{Comparator linear gain approximation}
     \label{figure:comparator:comparator_linear_approx}
 \end{figure}
-
-
-
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% DAC
@@ -963,13 +958,13 @@ advantage considering space consumption. Fig. (\ref{fig:layout:dac}) shows the l
 
 \subsubsection{Resolution, Supply voltage and Capacitive load}
 The design of the DAC is done in 8 bits. The design uses 1.2V as \(V_{DD}\) and 0V as \(V_{SS}\).
-The DAC has had an load of at least \(50fF\) in all simulations.
+The DAC has been tested with a capacitive load of \(50fF\) in all simulations.
 
 \subsubsection{Sampling Rate}
-The sampling rate used in the plot in figure (\ref{figure:dac:closeup}) shows the settling dynamics of the DAC, when running on a downwards counting sequence at 10MHz.
-In the figure we have zoomed in to the region where the MSB changes so in this figure the binary code change from 1000 0000 to 0111 1111. 
-We see some overshoot but the output settles before the next bit changes. 
-The this transition is the most demanding transition since all the bits change.
+The sampling rate used in the plot in Fig. (\ref{figure:dac:closeup}) shows the settling dynamics of the DAC, when running on a downwards counting sequence at 10 MHz.
+In the Fig. (\ref{figure:dac:closeup}), we have zoomed in to the region where the MSB changes, so the plot in the figure is the sequence where the binary code change from 1000 0000 to 0111 1111. 
+We can see that there are some overshoot, but the output settles before the next bit changes. 
+This transition is the most demanding transition since all the bits changes.
 \begin{figure}[!ht]
  \centering     
  \includegraphics[width=\textwidth]{img/dac/dac_running_at_10MHz_closeup_at_center}
@@ -994,7 +989,7 @@ Mean DNL voltage diff & \(-2.77 nV \) \\ \hline
 
 \hfill \break
 \noindent 
-The requirement of DNL less than 0.5 LSB is achieved (since \(-225.60 \cdot 10^{-3}  < 0.5 \)).
+The requirement of DNL less than 0.5 LSB, is achieved (since \(-225.60 \cdot 10^{-3}  < 0.5 \)).
  
 
 \subsubsection{INL}
@@ -1013,14 +1008,14 @@ Mean INL voltage diff & \( -118.17 \mu V \) \\ \hline
 
 \hfill \break
 \noindent 
-The requirement of INL less than 0.5 LSB is achieved (since \(-206.00 \cdot 10^{-3}  < 0.5 \)).
+The requirement of INL less than 0.5 LSB, is achieved (since \(-206.00 \cdot 10^{-3}  < 0.5 \)).
 
 \subsubsection{Monotonic}
 The system is monotonic as shown in figure (\ref{fig:sim:dac:320k}).
 
 
 \subsubsection{Output Voltage}
-The requirement for the output voltage of the DAC is specified to be grater than 0.6V. 
+The requirement for the output voltage of the DAC is specified to be grater than \(0.6 V\). 
 We have an max output that is less than \(1\mu V\) from the ideal maximum given in equation (\ref{vmax}) if it's given enough time to settle.
 
 
@@ -1276,12 +1271,12 @@ The results from the simulation shown in Fig. (\ref{fig:system:dynamics}) is don
 
 
 \subsubsection{Supply Voltage and Output Resolution}
-The system is design for \(V_{DD} = 1.2V\) and \(V_{SS} = 0V \). The system is designed for 8-bits output resolution.
-
+The system is design for \(V_{DD} = 1.2V\) and \(V_{SS} = 0V \), with a output resolution is 8-bits. This has been accomplished.  
 
 \subsubsection{Input sampling rate}
-The system has been tested with sampling rate of 1M samples/s. The system performed adequately with this sampling rate.
-
+The system has been tested with sampling rate of 1 M samples/s. The system performed adequately with this sampling rate. Higher sampling rates of 10 and 100 M samples/s has also 
+been tested. With a sampling rate of 10 M samples/s, the system performed almost same as for 1 M samples/s. At 100 M samples/s, the system started to collapse. At this high 
+sampling rate, the comparator was not able to determine the right value for high or low. 
 
 \subsubsection{Missing codes}
 Alle binære codes skal eksistere
@@ -1311,6 +1306,11 @@ The SR-latch controlles the \(hold\) in the S/H and is has a implementation weak
 In our design we have connected the SR latch in a way that makes it "prioritize" reset over set, see table \ref{table:srlatch:functiontable}.
 The consequence is that signaling a new conversion is timing sensitive.
 The fix for this is very simple: connect the \(SoC\) to \(R\) and \(EoC\) to \(S\) and use \(\overline{Q}\) instead of \(Q\). This fix makes the circuit timing in.
+
+\subsubsection{Layout}
+Regarding layout, there are some improvements that can be mentioned. None of us has tried to do a layout before, and as a result of this, placement of components and 
+routing could have been more optimized. The width of the traces has not been taken into account, bur in many cases, the default width is chosen. The number of vias could also be a 
+improvement. In most cases, one via is used. This can be a problem, if something goes wring during production. As an improvement, two vias, instead of one, could been used. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% CAP: Conclusion
