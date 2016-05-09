@@ -601,7 +601,9 @@ the layout for the transistors used in the sample and hold circuit. In
 Fig. (\ref{fig:layout:sh}), the sample and hold with the capacitor is included. 
 Since the capacitor lays in an other layer, it does not interrupt the transistors. 
 This allows us to save space, by placing the capacitor on top of the transistor circuit.
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% REMEMBER TO UNCOMMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \begin{figure}[!ht]
 %  \centering
 %  \includegraphics[width=\textwidth]{img/layout/sample_hold_u_cap}
@@ -726,7 +728,9 @@ possible, it is a major advantage to align the transistor in the same direction.
 This has been taken into account during the layout.\\
 \\
 The layout for the comparator is shown in Fig. (\ref{fig:layout:comparator}). 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% REMEMBER TO UNCOMMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \begin{figure}[!ht]
 %  \centering
 %  \includegraphics[width=\textwidth]{img/layout/comparator}
@@ -948,6 +952,9 @@ large. We can see from the layout that the resistors used, consumes a lot of spa
 320 k\(\ohm\) and 640 k\(\ohm\) for R and 2R, respectively. If we would have used the full size of these resistances in the layout, each resistance would have been
 very large. The solution was therefor to divide 320 k\(\ohm\) into four, which gives a resistance of 80 k\(\ohm\). By using four 80 k\(\ohm\) in parallell, gives an huge
 advantage considering space consumption. Fig. (\ref{fig:layout:dac}) shows the layout for the DAC implementation.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% REMEMBER TO UNCOMMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \begin{figure}[!ht]
 %  \centering
 %  \includegraphics[width=\textwidth]{img/layout/dac}
@@ -990,7 +997,7 @@ Mean DNL voltage diff & \(-2.77 nV \) \\ \hline
 
 \hfill \break
 \noindent 
-The requirement of DNL less than 0.5 LSB, is achieved (since \(-225.60 \cdot 10^{-3}  < 0.5 \)).
+The requirement of DNL less than 0.5 LSB, is achieved (since \(|-225.60 \cdot 10^{-3}|  < 0.5 \)).
  
 
 \subsubsection{INL}
@@ -1009,7 +1016,7 @@ Mean INL voltage diff & \( -118.17 \mu V \) \\ \hline
 
 \hfill \break
 \noindent 
-The requirement of INL less than 0.5 LSB, is achieved (since \(-206.00 \cdot 10^{-3}  < 0.5 \)).
+The requirement of INL less than 0.5 LSB, is achieved (since \(|-206.00 \cdot 10^{-3}|  < 0.5 \)).
 
 \subsubsection{Monotonic}
 The system is monotonic as shown in figure (\ref{fig:sim:dac:320k}).
@@ -1104,6 +1111,9 @@ The simulation of the circuit was done by cycling through the 4 different combin
 The layout for the SR latch is quite simple, and will not be discussed in detail. One improvement would be to make it more compact in order to save more space. 
 We concluded that compression is not relative for the task, and has therefor not focused on this. Fig. (\ref{fig:layout:srlatch}) shows how the SR latch is implemented. 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% REMEMBER TO UNCOMMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \begin{figure}[!ht]
 %  \centering
 %  \includegraphics[width=\textwidth]{img/layout/srlatch}
@@ -1242,6 +1252,9 @@ Fig. (\ref{fig:seal:ring}) shows the circuit implemented in a seal ring of \(196
 The \(Hold\) signal to the sample and hold circuit is not a external 
 input in our design and is controlled internally. 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% REMEMBER TO UNCOMMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % \begin{figure}[!ht]
 %  \centering
 %  \includegraphics[width=\textwidth]{img/layout/entire_design2}
@@ -1312,7 +1325,7 @@ The fix for this is very simple: connect the \(SoC\) to \(R\) and \(EoC\) to \(S
 
 \subsubsection{Layout}
 Regarding layout, there are some improvements that can be mentioned. None of us has tried to do a layout before, and as a result of this, placement of components and 
-routing could have been more optimized. The width of the traces has not been taken into account, bur in many cases, the default width is chosen. The number of vias could also be a 
+routing could have been more optimized. The width of the traces has not been taken into account and in many cases the default width is chosen. The number of vias could also be a 
 improvement. In most cases, one via is used. This can be a problem, if something goes wring during production. As an improvement, two vias, instead of one, could been used. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1385,6 +1398,11 @@ dnl(
 \end{lstlisting}
 \subfile{latex_DNL_table}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% REMEMBER TO UNCOMMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
 % \chapter{Schematics from Cadence Virtuoso}
 % \newpage
 % \section{SAR system}
@@ -1552,8 +1570,8 @@ dnl(
 %  \centering
 %  \includegraphics[width=20cm, angle=90]{img/layout/outputbuffer}
 % \end{figure}
-% 
-% 
+
+
 \end{appendices}
 
 \printbibliography{}
