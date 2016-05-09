@@ -1,0 +1,19 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Apr 18 12:03:30 2016 
+Best design point: 1
+Design specs: 
+	sar_adc:SIM_SR_latch:1	corner	Nominal - 
+Design parameters: 
+	RESET_delay		0
+	RESET_period		1
+	RESET_width		1u
+	SET_delay		1u
+	SET_period		4
+	SET_width		2u
+
+Interactive.0
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.0 completed. 
+Current time: Mon Apr 18 12:03:41 2016 

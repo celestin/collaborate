@@ -1,0 +1,27 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Fri Apr 15 14:53:33 2016 
+Best design point: 1
+Design specs: 
+	sar_adc:SIM_sample_hold:1	corner	Nominal - 
+Design parameters: 
+	delay		0
+	fall		1p
+	period		2u
+	pulse_width		1u
+	rise		1p
+	V_ac		0
+	V_dc		1.2
+	frequency		10k
+	v_amplitude		600m
+	v_offset		600m
+	vsin_dc		600m
+	v_off		0
+	v_on		1.2
+	vbias_dc		1.2
+
+Interactive.9
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.9 completed. 
+Current time: Fri Apr 15 14:53:53 2016 

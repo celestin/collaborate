@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      eanilse
+HostName                       vetur.ifi.uio.no
+ProcessIdentifier              26564
+ProcessCreationTime_UTC        1461754189
+ProcessCreationTime_Readable   Wed Apr 27 12:49:49 2016 CEST
+AppIdentifier                  OA File System Design Manager
+OSType                         unix
+ReasonForPlacingEditLock       OpenAccess edit lock
+FilePathUsedToEditLock         /ifi/bifrost/m00/eanilse/work/github/inf4420_priv/cadence/sar/SAR_system_3/symbol/symbol.oa.cdslck
+TimeEditLocked                 Wed Apr 27 13:29:18 2016 CEST

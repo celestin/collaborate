@@ -1,0 +1,18 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sun May  8 16:25:06 2016 
+Best design point: 1
+Design specs: 
+	sar_adc:SIM_system_3_u_sar_logic_test_for_missing_codes:1	corner	Nominal - 
+Design parameters: 
+	clk_period		100n
+	clk_width		50n
+	soc_delay		1u
+	soc_period		2u
+	soc_width		100n
+
+Interactive.2
+Number of points completed: 1
+Number of simulation errors: 1
+Interactive.2 completed. 
+Current time: Sun May  8 16:25:21 2016 

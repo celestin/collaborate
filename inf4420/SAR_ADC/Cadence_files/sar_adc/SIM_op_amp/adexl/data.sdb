@@ -1,0 +1,1369 @@
+<?xml version="1.0"?>
+<setupdb version="5">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+			<corner enabled="0">C2
+				<vars>
+					<var>temperature
+						<value>-25 0 25 100</value>
+					</var>
+				</vars>
+				<models>
+					<model enabled="1">crn90lp_2d5_lk_v1d2.scs
+						<modelfile>/projects/nanos/design_kit/TSMC90nmLPRF_616OA/models/spectre/crn90lp_2d5_lk_v1d2.scs</modelfile>
+						<modelsection>"tt" "ss" "ff" "sf" "fs"</modelsection>
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+					</model>
+				</models>
+			</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test enabled="1">sar_adc:SIM_op_amp:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>SIM_op_amp</value>
+					</option>
+					<option>lib
+						<value>sar_adc</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>sar_adc:SIM_op_amp:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>SIM_op_amp</value>
+					</option>
+					<option>lib
+						<value>sar_adc</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+		</tests>
+		<vars>
+			<var>S_AC
+				<value>0.6</value>
+				<dependentTests>
+					<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>S_AMPLITUDE
+				<value>0.6</value>
+				<dependentTests>
+					<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>S_DC
+				<value>0.6</value>
+				<dependentTests>
+					<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>S_FREQ
+				<value>10k</value>
+				<dependentTests>
+					<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VBIAS
+				<value>{From/To}Auto:0.1:4:1.2{From/To}</value>
+				<dependentTests>
+					<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">V
+				<value></value>
+			</var>
+			<var>VDC
+				<value>5</value>
+				<dependentTests>
+					<dependentTest omitted="0">sar_adc:SIM_op_amp:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+		</plottingoptions>
+		<allcornersenabled>0</allcornersenabled>
+	</active>
+	<history>History
+		<historyentry>Interactive.0
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">C2
+						<vars>
+							<var>temperature
+								<value>-25 0 25 100</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">crn90lp_2d5_lk_v1d2.scs
+								<modelfile>/projects/nanos/design_kit/TSMC90nmLPRF_616OA/models/spectre/crn90lp_2d5_lk_v1d2.scs</modelfile>
+								<modelsection>"tt" "ss" "ff" "sf" "fs"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">sar_adc:SIM_op_amp:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_op_amp</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_op_amp:1_none_Interactive.0</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_op_amp</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>S_AC
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_AMPLITUDE
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_DC
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_FREQ
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBIAS
+						<value>{Inclusion List}0.2{Inclusion List}{From/To}Auto:0.2:10:1.2{From/To}</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Mar 14 19:13:08 2016</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.0.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_191308889</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp/adexl/results/data/Interactive.0.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.0.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>VBIAS
+						<value>0.2</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.1
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">C2
+						<vars>
+							<var>temperature
+								<value>-25 0 25 100</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">crn90lp_2d5_lk_v1d2.scs
+								<modelfile>/projects/nanos/design_kit/TSMC90nmLPRF_616OA/models/spectre/crn90lp_2d5_lk_v1d2.scs</modelfile>
+								<modelsection>"tt" "ss" "ff" "sf" "fs"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">sar_adc:SIM_op_amp:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_op_amp</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_op_amp:1_none_Interactive.1</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_op_amp</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>S_AC
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_AMPLITUDE
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_DC
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_FREQ
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBIAS
+						<value>{From/To}Auto:0.1:4:1.2{From/To}</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Mar 14 19:18:59 2016</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp/adexl/results/data/Interactive.1.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.1.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_191859631</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.1</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_op_amp/adexl/results/data/Interactive.1</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp/adexl/results/data/Interactive.1.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.1.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>VBIAS
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.2
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">C2
+						<vars>
+							<var>temperature
+								<value>-25 0 25 100</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">crn90lp_2d5_lk_v1d2.scs
+								<modelfile>/projects/nanos/design_kit/TSMC90nmLPRF_616OA/models/spectre/crn90lp_2d5_lk_v1d2.scs</modelfile>
+								<modelsection>"tt" "ss" "ff" "sf" "fs"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">sar_adc:SIM_op_amp:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_op_amp</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_op_amp:1_none_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_op_amp</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>S_AC
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_AMPLITUDE
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_DC
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_FREQ
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBIAS
+						<value>{From/To}Auto:0.1:4:1.2{From/To}</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Mar 14 19:35:26 2016</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp/adexl/results/data/Interactive.2.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_193526962</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.2</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_op_amp/adexl/results/data/Interactive.2</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp/adexl/results/data/Interactive.2.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>VBIAS
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.3
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">C2
+						<vars>
+							<var>temperature
+								<value>-25 0 25 100</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">crn90lp_2d5_lk_v1d2.scs
+								<modelfile>/projects/nanos/design_kit/TSMC90nmLPRF_616OA/models/spectre/crn90lp_2d5_lk_v1d2.scs</modelfile>
+								<modelsection>"tt" "ss" "ff" "sf" "fs"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">sar_adc:SIM_op_amp:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_op_amp</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_op_amp:1_none_Interactive.3</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_op_amp</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>S_AC
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_AMPLITUDE
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_DC
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_FREQ
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBIAS
+						<value>{From/To}Auto:0.1:4:1.2{From/To}</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<allcornersenabled>0</allcornersenabled>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Mar 14 19:35:39 2016</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp/adexl/results/data/Interactive.3.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.3.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_193539619</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.3</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_op_amp/adexl/results/data/Interactive.3</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp/adexl/results/data/Interactive.3.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.3.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>VBIAS
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.4
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">C2
+						<vars>
+							<var>temperature
+								<value>-25 0 25 100</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">crn90lp_2d5_lk_v1d2.scs
+								<modelfile>/projects/nanos/design_kit/TSMC90nmLPRF_616OA/models/spectre/crn90lp_2d5_lk_v1d2.scs</modelfile>
+								<modelsection>"tt" "ss" "ff" "sf" "fs"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">sar_adc:SIM_op_amp:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_op_amp</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_op_amp:1_none_Interactive.4</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_op_amp</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>S_AC
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_AMPLITUDE
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_DC
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_FREQ
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBIAS
+						<value>{From/To}Auto:0.1:4:1.2{From/To}</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<allcornersenabled>0</allcornersenabled>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Mar 14 19:37:02 2016</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp/adexl/results/data/Interactive.4.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.4.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_193702500</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.4</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_op_amp/adexl/results/data/Interactive.4</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp/adexl/results/data/Interactive.4.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.4.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>VBIAS
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.5
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">C2
+						<vars>
+							<var>temperature
+								<value>-25 0 25 100</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">crn90lp_2d5_lk_v1d2.scs
+								<modelfile>/projects/nanos/design_kit/TSMC90nmLPRF_616OA/models/spectre/crn90lp_2d5_lk_v1d2.scs</modelfile>
+								<modelsection>"tt" "ss" "ff" "sf" "fs"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">sar_adc:SIM_op_amp:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_op_amp</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_op_amp:1_none_Interactive.5</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_op_amp</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>S_AC
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_AMPLITUDE
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_DC
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_FREQ
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBIAS
+						<value>{From/To}Auto:0.1:4:1.2{From/To}</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<allcornersenabled>0</allcornersenabled>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Mar 14 19:39:46 2016</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp/adexl/results/data/Interactive.5.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.5.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_193946373</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.5</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_op_amp/adexl/results/data/Interactive.5</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp/adexl/results/data/Interactive.5.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.5.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>VBIAS
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.6
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">C2
+						<vars>
+							<var>temperature
+								<value>-25 0 25 100</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">crn90lp_2d5_lk_v1d2.scs
+								<modelfile>/projects/nanos/design_kit/TSMC90nmLPRF_616OA/models/spectre/crn90lp_2d5_lk_v1d2.scs</modelfile>
+								<modelsection>"tt" "ss" "ff" "sf" "fs"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">sar_adc:SIM_op_amp:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_op_amp</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_op_amp:1_none_Interactive.6</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_op_amp</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>S_AC
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_AMPLITUDE
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_DC
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_FREQ
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBIAS
+						<value>{From/To}Auto:0.1:4:1.2{From/To}</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">V
+						<value></value>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<allcornersenabled>0</allcornersenabled>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Mar 14 19:43:46 2016</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp/adexl/results/data/Interactive.6.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.6.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_194346596</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.6</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_op_amp/adexl/results/data/Interactive.6</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp/adexl/results/data/Interactive.6.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.6.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>VBIAS
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.7
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">C2
+						<vars>
+							<var>temperature
+								<value>-25 0 25 100</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">crn90lp_2d5_lk_v1d2.scs
+								<modelfile>/projects/nanos/design_kit/TSMC90nmLPRF_616OA/models/spectre/crn90lp_2d5_lk_v1d2.scs</modelfile>
+								<modelsection>"tt" "ss" "ff" "sf" "fs"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">sar_adc:SIM_op_amp:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_op_amp</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_op_amp:1_none_Interactive.7</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_op_amp</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>S_AC
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_AMPLITUDE
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_DC
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_FREQ
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBIAS
+						<value>{From/To}Auto:0.1:4:1.2{From/To}</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">V
+						<value></value>
+					</var>
+					<var>VDC
+						<value>5</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<allcornersenabled>0</allcornersenabled>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Mar 14 19:47:57 2016</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp/adexl/results/data/Interactive.7.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.7.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_194757138</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.7</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_op_amp/adexl/results/data/Interactive.7</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp/adexl/results/data/Interactive.7.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.7.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>VBIAS
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.8
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">C2
+						<vars>
+							<var>temperature
+								<value>-25 0 25 100</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">crn90lp_2d5_lk_v1d2.scs
+								<modelfile>/projects/nanos/design_kit/TSMC90nmLPRF_616OA/models/spectre/crn90lp_2d5_lk_v1d2.scs</modelfile>
+								<modelsection>"tt" "ss" "ff" "sf" "fs"</modelsection>
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">sar_adc:SIM_op_amp:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_op_amp</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_op_amp:1_none_Interactive.8</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_op_amp</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>S_AC
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_AMPLITUDE
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_DC
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S_FREQ
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VBIAS
+						<value>{From/To}Auto:0.1:4:1.2{From/To}</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">V
+						<value></value>
+					</var>
+					<var>VDC
+						<value>5</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_op_amp:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<allcornersenabled>0</allcornersenabled>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Mar 14 19:48:25 2016</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp/adexl/results/data/Interactive.8.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.8.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_194825872</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_op_amp/adexl/results/data/Interactive.8</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_op_amp/adexl/results/data/Interactive.8</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_op_amp/adexl/results/data/Interactive.8.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.8.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>VBIAS
+						<value></value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

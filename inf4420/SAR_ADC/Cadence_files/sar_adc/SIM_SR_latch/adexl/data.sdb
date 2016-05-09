@@ -1,0 +1,471 @@
+<?xml version="1.0"?>
+<setupdb version="5">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test>sar_adc:SIM_SR_latch:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>SIM_SR_latch</value>
+					</option>
+					<option>lib
+						<value>sar_adc</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>sar_adc:SIM_SR_latch:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>SIM_SR_latch</value>
+					</option>
+					<option>lib
+						<value>sar_adc</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+		</tests>
+		<vars>
+			<var enabled="0">RESET_delay
+				<value>0</value>
+				<dependentTests>
+					<dependentTest enabled="0" omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">RESET_period
+				<value>1</value>
+				<dependentTests>
+					<dependentTest enabled="0" omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">RESET_width
+				<value>1u</value>
+				<dependentTests>
+					<dependentTest enabled="0" omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">SET_delay
+				<value>1u</value>
+				<dependentTests>
+					<dependentTest enabled="0" omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">SET_period
+				<value>4</value>
+				<dependentTests>
+					<dependentTest enabled="0" omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">SET_width
+				<value>2u</value>
+				<dependentTests>
+					<dependentTest enabled="0" omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value>                            </value>
+			</plottingoption>
+		</plottingoptions>
+	</active>
+	<history>History
+		<historyentry>Interactive.0
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>sar_adc:SIM_SR_latch:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_SR_latch</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_SR_latch:1_none_Interactive.0</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_SR_latch</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>RESET_delay
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RESET_period
+						<value>1</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RESET_width
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>SET_delay
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>SET_period
+						<value>4</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>SET_width
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Apr 18 12:03:26 2016
+</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_SR_latch/adexl/results/data/Interactive.0.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.0.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vor.ifi.uio.no_vegardmi_120326850</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_SR_latch/adexl/results/data/Interactive.0</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_SR_latch/adexl/results/data/Interactive.0</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_SR_latch/adexl/results/data/Interactive.0.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.0.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.1
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>sar_adc:SIM_SR_latch:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_SR_latch</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_SR_latch:1_none_Interactive.1</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_SR_latch</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="0">RESET_delay
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">RESET_period
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">RESET_width
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">SET_delay
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">SET_period
+						<value>4</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">SET_width
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Apr 18 12:04:57 2016
+</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_SR_latch/adexl/results/data/Interactive.1.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.1.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vor.ifi.uio.no_vegardmi_120457647</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_SR_latch/adexl/results/data/Interactive.1</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_SR_latch/adexl/results/data/Interactive.1</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_SR_latch/adexl/results/data/Interactive.1.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.1.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.2
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>sar_adc:SIM_SR_latch:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_SR_latch</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_SR_latch:1_none_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_SR_latch</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="0">RESET_delay
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">RESET_period
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">RESET_width
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">SET_delay
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">SET_period
+						<value>4</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">SET_width
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">sar_adc:SIM_SR_latch:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value>                            </value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Apr 18 12:07:06 2016
+</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_SR_latch/adexl/results/data/Interactive.2.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vor.ifi.uio.no_vegardmi_120706739</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_SR_latch/adexl/results/data/Interactive.2</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_SR_latch/adexl/results/data/Interactive.2</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_SR_latch/adexl/results/data/Interactive.2.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

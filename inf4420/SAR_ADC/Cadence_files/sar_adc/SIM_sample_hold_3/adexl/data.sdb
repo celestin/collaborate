@@ -1,0 +1,1995 @@
+<?xml version="1.0"?>
+<setupdb version="5">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test>sar_adc:SIM_sample_hold_3:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>SIM_sample_hold_3</value>
+					</option>
+					<option>lib
+						<value>sar_adc</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>sar_adc:SIM_sample_hold_3:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>SIM_sample_hold_3</value>
+					</option>
+					<option>lib
+						<value>sar_adc</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+		</tests>
+		<vars>
+			<var enabled="0">delay
+				<value>0</value>
+				<dependentTests>
+					<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">fall
+				<value>1p</value>
+				<dependentTests>
+					<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">period
+				<value>2u</value>
+				<dependentTests>
+					<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">pulse_width
+				<value>1u</value>
+				<dependentTests>
+					<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">rise
+				<value>1p</value>
+				<dependentTests>
+					<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">v1
+				<value>1.2</value>
+				<dependentTests></dependentTests>
+			</var>
+			<var enabled="0">v2
+				<value>0</value>
+				<dependentTests></dependentTests>
+			</var>
+			<var enabled="0">V_ac
+				<value>0</value>
+				<dependentTests>
+					<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">v_dc
+				<value>1.2</value>
+				<dependentTests></dependentTests>
+			</var>
+			<var enabled="0">V_dc
+				<value>1.2</value>
+				<dependentTests>
+					<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">frequency
+				<value>10k</value>
+				<dependentTests>
+					<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">v_amplitude
+				<value>600m</value>
+				<dependentTests>
+					<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">v_offset
+				<value>600m</value>
+				<dependentTests>
+					<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">vsin_dc
+				<value>600m</value>
+				<dependentTests>
+					<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">v_off
+				<value>0</value>
+				<dependentTests>
+					<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">v_on
+				<value>1.2</value>
+				<dependentTests>
+					<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="0">vbias_dc
+				<value>1.2</value>
+				<dependentTests></dependentTests>
+			</var>
+			<var enabled="1">res
+				<value>{From/To}Decade:1K:1:1M{From/To}</value>
+				<dependentTests>
+					<dependentTest enabled="1">sar_adc:SIM_sample_hold_3:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+		</plottingoptions>
+	</active>
+	<history>History
+		<historyentry>Interactive.4
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>sar_adc:SIM_sample_hold:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_sample_hold</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_sample_hold:1_none_Interactive.4</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_sample_hold</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>delay
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fall
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>period
+						<value>5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>pulse_width
+						<value>2.5u</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>rise
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v1
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V_ac
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>frequency
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_amplitude
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_offset
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vsin_dc
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Apr 7 12:27:33 2016</timestamp>
+			<resultsname></resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.4.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_122733445</localpsfdir>
+			<psfdir></psfdir>
+			<simdir></simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog></runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.4.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.5
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>sar_adc:SIM_sample_hold:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_sample_hold</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_sample_hold:1_none_Interactive.5</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_sample_hold</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>delay
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fall
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>period
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>pulse_width
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>rise
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v1
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V_ac
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>frequency
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_amplitude
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_offset
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vsin_dc
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest omitted="0">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Apr 7 12:31:21 2016</timestamp>
+			<resultsname></resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.5.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_123121170</localpsfdir>
+			<psfdir></psfdir>
+			<simdir></simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog></runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.5.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.6
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>sar_adc:SIM_sample_hold:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_sample_hold</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_sample_hold:1_none_Interactive.6</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_sample_hold</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>delay
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fall
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>period
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>pulse_width
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>rise
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v1
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V_ac
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>frequency
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_amplitude
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_offset
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vsin_dc
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_off
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_on
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vbias_dc
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Apr 7 12:34:57 2016</timestamp>
+			<resultsname></resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.6.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_123457342</localpsfdir>
+			<psfdir></psfdir>
+			<simdir></simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog></runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.6.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.7
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>sar_adc:SIM_sample_hold:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_sample_hold</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_sample_hold:1_none_Interactive.7</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_sample_hold</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>delay
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fall
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>period
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>pulse_width
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>rise
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v1
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V_ac
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>frequency
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_amplitude
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_offset
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vsin_dc
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_off
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_on
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vbias_dc
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Thu Apr 7 12:37:46 2016</timestamp>
+			<resultsname></resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.7.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_123746587</localpsfdir>
+			<psfdir></psfdir>
+			<simdir></simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog></runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.7.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.8
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>sar_adc:SIM_sample_hold:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_sample_hold</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_sample_hold:1_none_Interactive.8</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_sample_hold</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>delay
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fall
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>period
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>pulse_width
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>rise
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v1
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V_ac
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>frequency
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_amplitude
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_offset
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vsin_dc
+						<value>500m</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_off
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_on
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vbias_dc
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Apr 15 14:51:58 2016</timestamp>
+			<resultsname></resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.8.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_145158451</localpsfdir>
+			<psfdir></psfdir>
+			<simdir></simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog></runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.8.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.9
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>sar_adc:SIM_sample_hold:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_sample_hold</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_sample_hold:1_none_Interactive.9</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_sample_hold</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>delay
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fall
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>period
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>pulse_width
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>rise
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v1
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V_ac
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>frequency
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_amplitude
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_offset
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vsin_dc
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_off
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_on
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vbias_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Apr 15 14:53:30 2016</timestamp>
+			<resultsname></resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.9.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_145330529</localpsfdir>
+			<psfdir></psfdir>
+			<simdir></simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog></runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.9.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.10
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>sar_adc:SIM_sample_hold:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_sample_hold</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_sample_hold:1_none_Interactive.10</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_sample_hold</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>delay
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fall
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>period
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>pulse_width
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>rise
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v1
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V_ac
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>frequency
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_amplitude
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_offset
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vsin_dc
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_off
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_on
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vbias_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Fri Apr 15 14:56:02 2016</timestamp>
+			<resultsname></resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.10.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vetur.ifi.uio.no_vegardmi_145602701</localpsfdir>
+			<psfdir></psfdir>
+			<simdir></simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog></runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.10.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.11
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>sar_adc:SIM_sample_hold:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_sample_hold</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_sample_hold:1_none_Interactive.11</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_sample_hold</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>delay
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>fall
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>period
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>pulse_width
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>rise
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v1
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V_ac
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>V_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>frequency
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_amplitude
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_offset
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vsin_dc
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_off
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>v_on
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>vbias_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Apr 18 13:44:27 2016
+</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_sample_hold_3/adexl/results/data/Interactive.11.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.11.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vor.ifi.uio.no_vegardmi_134427926</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_sample_hold_3/adexl/results/data/Interactive.11</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_sample_hold_3/adexl/results/data/Interactive.11</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_sample_hold_3/adexl/results/data/Interactive.11.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.11.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.12
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>sar_adc:SIM_sample_hold_3:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_sample_hold_3</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_sample_hold_3:1_none_Interactive.12</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_sample_hold_3</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="0">delay
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">fall
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">period
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">pulse_width
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">rise
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v1
+						<value>1.2</value>
+						<dependentTests></dependentTests>
+					</var>
+					<var enabled="0">v2
+						<value>0</value>
+						<dependentTests></dependentTests>
+					</var>
+					<var enabled="0">V_ac
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v_dc
+						<value>1.2</value>
+						<dependentTests></dependentTests>
+					</var>
+					<var enabled="0">V_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">frequency
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v_amplitude
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v_offset
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">vsin_dc
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v_off
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v_on
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">vbias_dc
+						<value>1.2</value>
+						<dependentTests></dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Apr 18 13:51:49 2016
+</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_sample_hold_3/adexl/results/data/Interactive.12.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.12.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vor.ifi.uio.no_vegardmi_135149727</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_sample_hold_3/adexl/results/data/Interactive.12</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_sample_hold_3/adexl/results/data/Interactive.12</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_sample_hold_3/adexl/results/data/Interactive.12.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.12.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry>Interactive.13
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>sar_adc:SIM_sample_hold_3:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>SIM_sample_hold_3</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>sar_adc:SIM_sample_hold_3:1_none_Interactive.13</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>SIM_sample_hold_3</value>
+							</option>
+							<option>lib
+								<value>sar_adc</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="0">delay
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">fall
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">period
+						<value>2u</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">pulse_width
+						<value>1u</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">rise
+						<value>1p</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v1
+						<value>1.2</value>
+						<dependentTests></dependentTests>
+					</var>
+					<var enabled="0">v2
+						<value>0</value>
+						<dependentTests></dependentTests>
+					</var>
+					<var enabled="0">V_ac
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v_dc
+						<value>1.2</value>
+						<dependentTests></dependentTests>
+					</var>
+					<var enabled="0">V_dc
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">frequency
+						<value>10k</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v_amplitude
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v_offset
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">vsin_dc
+						<value>600m</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v_off
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">v_on
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="0">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">vbias_dc
+						<value>1.2</value>
+						<dependentTests></dependentTests>
+					</var>
+					<var enabled="1">res
+						<value>{From/To}Decade:1K:1:1M{From/To}</value>
+						<dependentTests>
+							<dependentTest enabled="1">sar_adc:SIM_sample_hold_3:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>1</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mon Apr 18 13:56:20 2016
+</timestamp>
+			<resultsname>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_sample_hold_3/adexl/results/data/Interactive.13.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.13.rdb</simresults>
+			<rawdatadelstrategy>SaveAll</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/vor.ifi.uio.no_vegardmi_135620189</localpsfdir>
+			<psfdir>/ifi/bifrost/m00/vegardmi/simulation/sar_adc/SIM_sample_hold_3/adexl/results/data/Interactive.13</psfdir>
+			<simdir>$AXL_PROJECT_DIR/sar_adc/SIM_sample_hold_3/adexl/results/data/Interactive.13</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/ifi/bifrost/m00/vegardmi/work/github/collaborate/inf4420/sar_adc/cadence/sar_adc/SIM_sample_hold_3/adexl/results/data/Interactive.13.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.13.log</runlogfile>
+			<schematicpoint>
+				<vars>
+					<var>res
+						<value>1M</value>
+					</var>
+				</vars>
+			</schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

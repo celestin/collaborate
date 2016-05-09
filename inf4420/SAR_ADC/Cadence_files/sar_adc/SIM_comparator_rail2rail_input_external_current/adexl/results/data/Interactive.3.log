@@ -1,0 +1,16 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Fri May  6 12:27:13 2016 
+Best design point: 1
+Design specs: 
+	sar_adc:SIM_comparator_rail2rail_input_external_current:1	corner	Nominal - 
+Design parameters: 
+	freq_in		10k
+	vin_ac		600m
+	vin_dc		600m
+
+Interactive.3
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.3 completed. 
+Current time: Fri May  6 12:27:28 2016 

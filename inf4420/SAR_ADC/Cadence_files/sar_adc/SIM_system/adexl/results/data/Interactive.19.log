@@ -1,0 +1,22 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Apr 18 08:56:22 2016 
+Best design point: 1
+Design specs: 
+	sar_adc:SIM_system:1	corner	Nominal - 
+Design parameters: 
+	clk_period		1u
+	clk_width		500n
+	hold_delay		0
+	hold_period		10u
+	hold_width		5u
+	soc_delay		1u
+	soc_period		80u
+	soc_width		75u
+	freq_in		10k
+
+Interactive.19
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.19 completed. 
+Current time: Mon Apr 18 08:56:44 2016 

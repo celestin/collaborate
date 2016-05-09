@@ -1,0 +1,36 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Apr  7 20:00:32 2016 
+Best design point: 1
+Design specs: 
+	sar_adc:SIM_switch_block:1	corner	C2_0 - 
+	sar_adc:SIM_switch_block:1	corner	C2_1 - 
+	sar_adc:SIM_switch_block:1	corner	C2_2 - 
+	sar_adc:SIM_switch_block:1	corner	C2_3 - 
+	sar_adc:SIM_switch_block:1	corner	C2_4 - 
+	sar_adc:SIM_switch_block:1	corner	C2_5 - 
+	sar_adc:SIM_switch_block:1	corner	C2_6 - 
+	sar_adc:SIM_switch_block:1	corner	C2_7 - 
+	sar_adc:SIM_switch_block:1	corner	C2_8 - 
+	sar_adc:SIM_switch_block:1	corner	C2_9 - 
+	sar_adc:SIM_switch_block:1	corner	C2_10 - 
+	sar_adc:SIM_switch_block:1	corner	C2_11 - 
+	sar_adc:SIM_switch_block:1	corner	C2_12 - 
+	sar_adc:SIM_switch_block:1	corner	C2_13 - 
+	sar_adc:SIM_switch_block:1	corner	C2_14 - 
+	sar_adc:SIM_switch_block:1	corner	C2_15 - 
+	sar_adc:SIM_switch_block:1	corner	C2_16 - 
+	sar_adc:SIM_switch_block:1	corner	C2_17 - 
+	sar_adc:SIM_switch_block:1	corner	C2_18 - 
+	sar_adc:SIM_switch_block:1	corner	C2_19 - 
+Design parameters: 
+	period		20u
+	pulse_width		10u
+	V_off		0
+	v_on		1.2
+
+Interactive.7
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.7 completed. 
+Current time: Thu Apr  7 20:02:04 2016 
