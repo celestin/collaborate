@@ -1,0 +1,17 @@
+//Revision 1
+//NOTE
+// Default austriamicrosystems template for spectre
+//END_NOTE
+
+config SIM_system_3_u_sar_logic;
+design sar_adc.SIM_system_3_u_sar_logic:schematic;
+liblist myLib;
+
+viewlist spectre, cmos_sch, schematic, veriloga, ahdl;
+stoplist spectre;
+
+
+cell sar_adc.SAR_system_3_u_sar_logic binding :calibre;
+
+
+endconfig
