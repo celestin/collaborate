@@ -1287,7 +1287,7 @@ The results from the simulation shown in Fig. (\ref{fig:system:dynamics}) is don
 
 
 \subsubsection{Supply Voltage and Output Resolution}
-The system is design for \(V_{DD} = 1.2V\) and \(V_{SS} = 0V \), with a output resolution is 8-bits. This has been accomplished.  
+The system is design for \(V_{DD} = 1.2V\) and \(V_{SS} = 0V \), with a output resolution of 8-bits. This has been accomplished.  
 
 \subsubsection{Input sampling rate}
 The system has been tested with sampling rate of 1 M samples/s. The system performed adequately with this sampling rate. Higher sampling rates of 10 and 100 M samples/s has also 
@@ -1295,7 +1295,14 @@ been tested. With a sampling rate of 10 M samples/s, the system performed almost
 sampling rate, the comparator was not able to determine the right value for high or low. 
 
 \subsubsection{Missing codes}
-Alle binære codes skal eksistere
+The specifications states that the system should have no missing codes. 
+To prove this is in simulation is quite demanding since we have to do a lot of simulations over the entire input range.
+We had a plan to simulate the conversions from 0V at the input to 1.2V in steps of a half LSB. This results in over 500 tests. 
+The simulation data grows quickly when running so many tests, which makes it hard to crunch. 
+The plan was to export the data to a CSV file and have Matlab sample the results form the conversions.
+In Matlab we could then traverse the result and check if all binary values in the range was represented.
+We where able to break down the simulation in smaller sections to make the task possible to handle, but in the end the data sets was so vast that this was a big undertaking.
+We were not able to complete this verification in time, and are not able to make any conclusions if we have achieved this goal.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1303,7 +1310,7 @@ Alle binære codes skal eksistere
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Discussion}
-There are no such as a ``perfect'' design. It is therefor important to list different improvements that
+There are no such as a "perfect" design. It is therefor important to list different improvements that
 can be done differently for future work. This design is not gong to be produced, but it is still 
 interesting to reflect over improvements. 
 
