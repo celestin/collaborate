@@ -59,7 +59,7 @@ Successive Approximation Register (SAR) Analog-to-Digital Converter (ADC) is a c
 circuits today, and the purpose is to convert a signal from the analog to the digital domain. This is of great interest, because digital signals propagates more efficiently than analog signals in a 
 circuit. By using digital signals, it is easier for the electronic circuit to distinguish the signal from the noise \cite{basic-adc}.\\
 \\
-This task, is as mentioned, to design a SAR ADC. A block diagram of the system architecture is shown in Fig. (\ref{block_diagram}). The system includes a sample and hold, a comparator, digital-to-analog 
+The task is to design a SAR ADC. A block diagram of the system architecture is shown in Fig. (\ref{block_diagram}). The system includes a sample and hold, a comparator, a digital-to-analog 
 converter (DAC) and a logic block. The task was to design all these blocks, except the logic block. The solution for each blocks are discussed in detail in the next chapters.  
 
 \tikzstyle{block} = [draw, fill=blue!20, rectangle, 
@@ -96,7 +96,7 @@ A Successive Approximation Register is a binary search algorithm, that compares 
 compares this values with the input signal. Fig. (\ref{sar:adc}) shows a example of a 4-bit converter. 
 With a 8-bit converter, it is possible i achieve a higher resolution for a better accuracy \cite{sar-adc-concept}.\\
 \\
-In the system overview section, each step in the DAC process is discussed. Fist we discuss the sample and hold, then the comparator, digital-to-analog converter and a small section of 
+In the system overview section, each step in the DAC process is discussed. First we discuss the sample and hold, then the comparator, digital-to-analog converter and a small section of 
 the SAR logic block. 
 
 \begin{figure} 
@@ -202,8 +202,9 @@ In the SAR ADC architecture, the function for the sample and hold is to make a s
 \end{figure}
 
 \subsection{Comparator}
-The comparator compares two signals, and outputs either a digital low or high. For a SAR ADC, we compare the sampled reference voltage (\(V_{ref}\)) from the S/H, by the bit sequence from the DAC. 
-If the first bit is higher than \(V_{ref}\), the comparator outputs a digital low. Then we know that the sampled value is lower than the value of the first bit. This bit is called the most 
+The comparator compares two signals, and outputs either a digital low or high. For a SAR ADC, we compare the sampled reference voltage (\(V_{out}\)) from the S/H (referred to 
+Fig. (\ref{sample:hold:2})), by the bit sequence from the DAC. 
+If the first bit is higher than \(V_{out}\), the comparator outputs a digital low. Then we know that the sampled value is lower than the value of the first bit. This bit is called the most 
 significant bit, shorted as MSB. The values for the each bit, is discussed in the next subsection.\\
 \\
 The complexity of the comparator depends on the requirements for speed and the accuracy. In later sections, we list the requirements for the system and the comparator circuit. Noise in a comparator is a 
@@ -252,11 +253,11 @@ resistor values hence the name R-2R. Fig. (\ref{r2r:ladder}) shows an example of
 block, which is briefly discussed in the next subsection. The purpose of the R-2R ladder is to set a specific voltage value for each bit. First, we test bit 7 (\(b7\)). By using Eq. (\ref{vlsb}), we 
 can calculate the output voltage of the DAC (\(V_{out}\)) for each bit combination.\\
 \\
-As an example, we can use \(5 V\) as reference voltage (\(V_{ref}\)), and set bit 7 to logic high (i.e. 1). All other bits are set to logic low (0). We can now draw an equivalent circuit, 
-which is illustrated in Fig. (\ref{example:r2r}). We can see that the output voltage is half the input voltage, i.e \(2.5 V\). 
-This bit causes most change to the circuit, and is therefor the MSB. Lets say that the reference voltage from the sample and hold is \(1.5 V\), we notice that the output from the DAC is larger than \(1.5 V\).
-This bit is therefor set to low again, and we calculate the output voltage for the next bit. It repeats these steps until all the bits are checked. If the output voltage is lower than the reference 
-voltage, the bit is set to logic high, and if the reference voltage is higher than the output voltage of the DAC, it goes back to logic low.\\
+As an example, we can use \(5 V\) as reference voltage (\(V_{ref}\)), and set bit 7 to logic high (i.e. 1). All other bits are set to logic low (0). We can now draw an 
+equivalent circuit, which is illustrated in Fig. (\ref{example:r2r}). We can see that the output voltage is half the reference voltage, i.e \(2.5 V\). 
+This bit causes most change to the circuit, and is therefor the MSB. Lets say that the output voltage from the sample and hold is \(1.5 V\), we notice that the output from the DAC is larger than \(1.5 V\).
+This bit is therefor set to low again, and we calculate the output voltage for the next bit. It repeats these steps until all the bits are checked. If the output voltage of the DAC is lower than the output
+voltage of the sample and hold, the bit is set to logic high, and if the output of the sample and hold is higher than the output voltage of the DAC, it goes back to logic low.\\
 \\
 The purpose of the R-2R ladder, is therefor to represent a output value for all bit combinations. In some cases, if the differences between the output voltage levels are difficult to separate, 
 it is desired to have a operational amplifier with a gain at the output to re-scale the output (to map to a wider range). 
@@ -419,7 +420,7 @@ can be found in the subsection for the comparator.
 
 \section{Requirements}
 In today's technologies, it is important to consume as low power as possible, and be as fast as possible. Due to this, we are going to design a SAR ADC which are capable 
-of running with a power-supply of 1.2 V and have sampling frequency of 1 MHz. The overall requirements are listed bellow.\\
+of running with a power-supply of \(1.2 V\) and have sampling frequency of 1 MHz. The overall requirements are listed bellow.\\
 \\
 \textbf{SAR ADC}
 \begin{itemize}
@@ -479,55 +480,52 @@ After this report, there has been done a lot of changes to the circuit. These ch
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \chapter{Results} 
 In order to get a god overview of the different parts of the total system, each block in the system is separated into sections. As a summary all the blocks are discussed together as a final, and 
-total system. To be sure that every part works as i should, we made own working directories for each part. The naming for the blocks were kept consequently, so that there would not create any problem. 
+total system. To be sure that every part works as i should, we made own working directories for each part in Virtuoso. The naming for the blocks were kept consequently, so that there would not create any problem. 
 To get a better overview for the reader, we have listed the hierarchy bellow. Note that some of the blocks has a number at the end of the name. This indicates the version. 
 \begin{itemize}
- \item SIM\_SAR\_system\_3
+ \item SAR\_system\_3
  \begin{itemize}
-  \item SAR\_system\_3
+  \item SIM\_SAR\_system\_3
  \end{itemize}
- \item SIM\_sample\_hold\_3
+ \item sample\_hold\_3
  \begin{itemize}
-  \item sample\_hold\_3
+  \item SIM\_sample\_hold\_3
  \end{itemize}
- \item SIM\_comparator\_rail2rail\_external\_current
+ \item comparator\_rail2rail\_external\_current
  \begin{itemize}
-  \item comparator\_rail2rail\_external\_current
+  \item SIM\_comparator\_rail2rail\_external\_current
  \end{itemize}
- \item SIM\_dac\_real\_res
+ \item dac\_real\_res
   \begin{itemize}
-    \item dac\_real\_res
+    \item SIM\_dac\_real\_res
     \begin{itemize}
         \item ladder\_R
         \item ladder\_2R
     \end{itemize}
  \end{itemize}
- \item SIM\_SAR\_logic
+ \item SAR\_logic
   \begin{itemize}
-  \item SAR\_logic
+  \item SIM\_SAR\_logic
  \end{itemize}
- \item SIM\_SR\_latch
+ \item SR\_latch
   \begin{itemize}
-  \item SR\_latch
+  \item SIM\_SR\_latch
  \end{itemize}
- \item SIM\_output\_buffers
-  \begin{itemize}
-    \item output\_buffers
-        \begin{itemize}
-            \item buffer
-        \end{itemize}
- \end{itemize}
+  \item output\_buffers
+    \begin{itemize}
+      \item buffer
+    \end{itemize}
 \end{itemize}
-In addtion, there are also one more block, that was created when we simulated the layout. Since the SAR logic block is not supporting layout, we had to take this block out of the whole system, 
+In addition, there are also one more block, that was created when we simulated the layout. Since the SAR logic block is not supporting layout, we had to take this block out of the whole system, 
 and simulate it separately. These files are called:
 \begin{itemize}
- \item SIM\_SAR\_system\_3\_u\_sar\_logic
+ \item SAR\_system\_3\_u\_sar\_logic
  \begin{itemize}
-  \item SAR\_system\_3\_u\_sar\_logic
+  \item SIM\_SAR\_system\_3\_u\_sar\_logic
  \end{itemize}
 \end{itemize}
-The \textit{Results} section is divided into subsections, where each subsection represent each block in the system. Each sub section contains a simulation part, a component part and a layout part. 
-The component part is the actual schematic for the block. The sub-sections is ranged in the same order as in the introduction. In the end, the additional blocks, such as \textit{SR latch}, and 
+The \textit{Results} section is divided into subsections, where each subsection represent each block in the system. Each sub section contains a implementation par, a simulation part, and a layout part. 
+The implementation part is the actual schematic for the block. The sub-sections is ranged in the same order as in the introduction. In the end, the additional blocks, such as \textit{SR latch}, and 
 \textit{output buffers} are discussed. For the theory of each block, we refers to Chapter 1, Introduction. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -629,7 +627,7 @@ The comparator we have implemented is a comparator with \textit{rail to rail} in
 GND or \(V_{DD}\). This circuit is a design from the book \textit{Designing Analog Chips} by Hans Camenzind \cite{hansc}.
 
 \subsection{Implementation}
-The rail to rail inputs are realized by hawing two input differential pairs, one n-channel and one p-channel.
+The rail to rail inputs are realized by having two input differential pairs, one n-channel and one p-channel.
 The principle is to mirror the current of one of the pairs and sum the result with the currents of the other.\\
 \\
 We had several different iterations on this circuit.
@@ -641,9 +639,9 @@ This circuit performed fine at first glance, but after more study we concluded t
 The first implementation had very large input transistors that distorted the sample and hold too much to obtain a correct result.
 We decreased the size of the input transistors to a \( \frac{1}{10} \) of the original size and the circuit performed adequately.\\
 \\
-The design, also needs a stable bias current source at \(20 \mu A\). This has been realized using a resistor. The fist approach for fining a proper value for the resistor,
+The design, also needs a stable bias current source at \(20 \mu A\). This has been realized using a resistor. The first approach for fining a proper value for the resistor,
 was to perform a simulation using a ideal current source at \(20 \mu A\). Then, we measured the voltage across, and by using ohms law, we were able to calculate a resistance.
-The voltage was found to be 0.4262 V. This gives:
+The voltage was found to be \(0.4262 V\). This gives:
 \begin{equation}
  U = RI
 \end{equation}
@@ -798,19 +796,18 @@ In this interval the comparator's gain is not linear. We can calculate an linear
  \begin{equation}
  Gain = \frac{1.2V}{3.794mV} = 316.289 \approx 316 \\
 \end{equation}
-
-\noindent
-In this approximation, the gain comes out to be approximately 316 and we conclude that since \( 316 > 256 \), the gain requirement is met. 
-The approximation is plotted in the Fig. (\ref{figure:comparator:comparator_linear_approx}) as the dash-doted line.\\
-\\
-In the transition region we see that the actual transition is much steeper than the linear approximation. 
-If we look at the interval from \(t_1 = 50.0574982\mu S \textrm{ to } t_2 = 50.0614953\mu S\) the gain comes out to be \(\frac{518.879mV}{131\mu V} \approx 3960\). 
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=\textwidth]{img/comparator/comparator_crossing_full_with_linear_approx}
     \caption{Comparator linear gain approximation}
     \label{figure:comparator:comparator_linear_approx}
 \end{figure}
+\noindent
+In this approximation, the gain comes out to be approximately 316 and we conclude that since \( 316 > 256 \), the gain requirement is met. 
+The approximation is plotted in the Fig. (\ref{figure:comparator:comparator_linear_approx}) as the dash-doted line.\\
+\\
+In the transition region we see that the actual transition is much steeper than the linear approximation. 
+If we look at the interval from \(t_1 = 50.0574982\mu S \textrm{ to } t_2 = 50.0614953\mu S\) the gain comes out to be \(\frac{518.879mV}{131\mu V} \approx 3960\). 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% DAC
@@ -822,7 +819,7 @@ complexity. A resistor string implementation has been considered, but this imple
 reason is the large amount of resistors needed. For a 8-bit system, it is required to have \(2^N\) resistor \cite{carusone}. This means that there would be 256 resistors. Due to this large amount of resistor, 
 this circuit has not been simulated and tested. Another DAC architecture that has been considered, is a \textit{Charge-Redistribution Switched-Capacitor} converter. The advantage for using this circuit 
 is the elimination of all the resistors. Instead, this implementation uses capacitors, which is much smaller in size when talking about layout. Another advantage is low power consumption if the
-circuit is modeled properly. The \textit{Charge-Redistribution Switched-Capacitor} converter has been tested and simulated. We founded this circuit difficult to model properly, and we experienced 
+circuit is modeled properly. The \textit{Charge-Redistribution Switched-Capacitor} converter has been tested and simulated. We founded this circuit difficult to model properly, and experienced 
 timing issues and some problems modeling the logic. We used a lot of time modeling this circuit without any succeed.\\
 %%---------------DAC
  \begin{figure}[!ht]
@@ -869,10 +866,10 @@ timing issues and some problems modeling the logic. We used a lot of time modeli
   \end{figure}
 %%--------------------
 \newline
-In the ending, we ended up with the R-2R ladder. Many examples of this circuit is modeled with a operational amplifier. This is because the R-2R requires a high impedance at the output in order to
+% In the end, we ended up with the R-2R ladder. Many examples of this circuit is modeled with a operational amplifier. This is because the R-2R requires a high impedance at the output in order to
 work properly. This is not a problem in out design, because the comparator has a very high impedance, meaning that it would be a waste of space and time modeling a extra operational amplifier at
 the output. In Fig. (\ref{fig:r2r:ladder:real}), there are implemented two inverters at the input for every bit. This is because we experienced that the SAR logic block did not output logic high at
-\(1.2\) (\(V_{DD}\)), but \(1 V\) instead. Since we use \(V_{DD}\) as \(V_{ref}\), a logical high from the SAR logic of \(1.2 V\) would be fine, but with the buffers we were able to generalize range of the ADC so that we can have a external \(V_{ref}\).
+\(1.2 V\) (\(V_{DD}\)), but \(1 V\) instead. Since we use \(V_{DD}\) as \(V_{ref}\), a logical high from the SAR logic of \(1.2 V\) would be fine, but with the buffers we were able to generalize range of the ADC so that we can have a external \(V_{ref}\).
 It is important for the systems accuracy to have full swing at the DAC output. Therefor, we implemented two inverters at the input to act as a buffer.\\ 
 \\
 The sizing of the resistors is important so that the they deliver enough current to drive the resistive load.
@@ -916,7 +913,7 @@ d7 & d6 & d5 & d4 & d3 & d2 & d1 & d0 & Voltage  & Bit \\ \hline
 \newline
 The first simulation were done using LTSpice. This is because LTSpice is easy and quick to set up, comparing to Virtuoso. In the simulation we used \(10\) and \(20 k\ohm\) as resistance values. 
 In this ideal simulation, it seemed like the circuit worked perfect. The next step, was to draw the circuit in Virtuoso. When simulating this circuit again, it showed that the circuit 
-was very non monotonic. This can cause large errors to the output of the system, since the comparator can misinterpret the output of the DAC to the sampled signal. The simulation is plotted in 
+was non-monotonic. This can cause large errors to the output of the system, since the comparator can misinterpret the output of the DAC to the sampled signal. The simulation is plotted in 
 Fig. (\ref{fig:sim:dac:10k}). We can see from the figure that the errors are large, and there is therefor a high possibility for the comparator to take the wrong decision. This is therefor a problem
 considering the requirements for a accuracy. The requirements state that the accuracy has to be better than 0.5 LSB. We have therefor tried different values for the resistors, taking the accuracy and 
 actual size in the layout into account. Resistors are very large in their actual size, and in many designs, space is very limited. It is therefor desirable to eliminate, or create as small resistors 
@@ -1066,7 +1063,7 @@ The set-trigger for the latch is the SoC signal, and reset is from the EoC signa
 
 \subsection{Implementation}
 The SR Latch is implemented with two nor gates connected in the way shown in figure (\ref{sr:latch}).
-The function table for this implementation is given in table \ref{table:srlatch:functiontable}. The circuit features both regular and inverted outputs \(Q\) and \(\overline{Q}\).
+The function table for this implementation is given in Table \ref{table:srlatch:functiontable}. The circuit features both regular and inverted outputs \(Q\) and \(\overline{Q}\).
 
 %%------ SR LATCH Figure ----------
 \begin{figure}[!ht]
@@ -1233,6 +1230,7 @@ each of the signals that are not included.
  \label{fig:system:architecture:desc}
 \end{figure}
 
+\noindent
 The SAR logic does not feature a \(Rst\) input and is not implemented in our design. 
 We created a "Controller" module (not included in this delivery) that provided a slightly different interface to the circuit in order to emulate reset functionality.
 This controller gave a new interface for signaling the DAC.
@@ -1332,8 +1330,8 @@ The fix for this is very simple: connect the \(SoC\) to \(R\) and \(EoC\) to \(S
 
 \subsubsection{Layout}
 Regarding layout, there are some improvements that can be mentioned. None of us has tried to do a layout before, and as a result of this, placement of components and 
-routing could have been more optimized. The width of the traces has not been taken into account and in many cases the default width is chosen. The number of vias could also be a 
-improvement. In most cases, one via is used. This can be a problem, if something goes wring during production. As an improvement, two vias, instead of one, could been used. 
+routing could have been more optimized. The width of the traces has not been taken into account, and in many cases the default width is chosen. The number of vias could also be a 
+improvement. In most cases, one via is used. This can be a problem, if something goes wrong during production. As an improvement, two vias, instead of one, could been used. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% CAP: Conclusion
@@ -1412,89 +1410,102 @@ dnl(
 % 
 % \chapter{Schematics from Cadence Virtuoso}
 % \newpage
-% \section{SAR system}
+% \section{SAR_system_3}
 % \begin{figure}[!ht]
 %  \centering
 %  \includegraphics[width=20cm, angle=90]{img/SAR_system_2_schem}
+%  \label{app:sar:system:3}
 % \end{figure}
 % \newpage
-% \section{SIM SAR system}
+% \section{SIM_SAR_system_3}
 % \begin{figure}[!ht]
 %  \centering
 %  \includegraphics[width=20cm, angle=90]{img/SIM_system_2_schem}
+%  \label{app:SIM:sar:system:3}
 % \end{figure}
 % 
 % \newpage
-% \section{Sample and Hold}
+% \section{sample_hold_3}
 % \begin{figure}[!ht]
 %  \centering
 %  \includegraphics[width=20cm, angle=90]{img/sample_hold_schem_3}
+%  \label{app:sample:hold:3}
 % \end{figure}
 % \newpage
-% \section{SIM Sample and Hold}
+% \section{SIM_sample_hold_3}
 % \begin{figure}[!ht]
 %  \centering
 %  \includegraphics[width=20cm, angle=90]{img/SIM_sample_hold_3_schem}
+%  \label{app:SIM:sample:hold:3}
 % \end{figure}
 % 
 % \newpage
-% \section{Comparator}
+% \section{comparator_rail2rail_input_external_current}
 % \begin{figure}[!ht]
 %  \centering
 %  \includegraphics[width=20cm, angle=90]{img/comparator_rail2rail_input_external_current_snall_schem}
+%  \label{app:somparator:rail2rail}
 % \end{figure}
 % \newpage
-% \section{SIM Comparator}
+% \section{SIM_comparator_rail2rail_input_external_current}
 % \begin{figure}[!ht]
 %  \centering
 %  \includegraphics[width=20cm, angle=90]{img/SIM_comparator_rail2rail_input_external_current_small_schem}
+%  \label{app:SIM:somparator:rail2rail}
 % \end{figure}
 % 
 % \newpage
-% \section{Digital to analog converter}
+% \section{dac_real_res}
 % \begin{figure}[!ht]
 %  \centering
 %  \includegraphics[width=20cm, angle=90]{img/dac_schem}
+%  \label{app:dac:real:res}
 % \end{figure}
 % \newpage
-% \section{SIM Digital to analog converter}
+% \section{SIM_dac_real_res}
 % \begin{figure}[!ht]
 %  \centering
 %  \includegraphics[width=20cm, angle=90]{img/SIM_dac_schem}
+%  \label{app:SIM:dac:real:res}
 % \end{figure}
 % 
 % \newpage
-% \section{SAR logic}
+% \section{SAR_logic}
 % \begin{figure}[!ht]
 %  \centering
 %  \includegraphics[width=20cm, angle=90]{img/SAR_logic}
+%  \label{app:sar:logic}
 % \end{figure}
 % \newpage
-% \section{SIM SAR logic}
+% \section{SIM_SAR_logic}
 % \begin{figure}[!ht]
 %  \centering
 %  \includegraphics[width=20cm, angle=90]{img/SIM_sar_logic_gated_2_schem}
+%  \label{app:SIM:sar:logic}
 % \end{figure}
 % 
 % \newpage
-% \section{SR Latch}
+% \section{SR_latch}
 % \begin{figure}[!ht]
 %  \centering
 %  \includegraphics[width=20cm, angle=90]{img/SR_latch_schem}
+%  \label{app:sr:latch}
 % \end{figure}
 % 
 % \newpage
-% \section{Output buffers}
+% \section{output_buffers}
 % \begin{figure}[!ht]
 %  \centering
 %  \includegraphics[width=20cm, angle=90]{img/output_buffers}
+%  \label{app:buff:out}
 % \end{figure}
 % 
 % \newpage
-% \section{Buffers}
+% \section{buffer}
 % \begin{figure}[!ht]
 %  \centering
 %  \includegraphics[width=20cm, angle=90]{img/buffer}
+%  \label{app:buff}
 % \end{figure}
 % \newpage
 % 
